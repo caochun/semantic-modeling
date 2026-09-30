@@ -11,7 +11,7 @@ from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from .agent import ModelingAgent
+from .task_agent import TaskModelingAgent
 from .config import Settings
 from .ingest import index_corpus
 from .store import Store
@@ -19,7 +19,7 @@ from .store import Store
 
 class Question(BaseModel):
     question: str = Field(min_length=5, max_length=6000)
-    max_steps: int = Field(default=10, ge=3, le=16)
+    max_steps: int | None = Field(default=None, ge=1)
 
 
 def create_app(settings=None):
@@ -103,7 +103,7 @@ def create_app(settings=None):
         if not settings.api_url:
             raise HTTPException(409, "请先配置 .env 中的 GLM_API_URL")
         run_id = store.create_run("analysis", body.question.strip())
-        launch(run_id, ModelingAgent(settings, store).run(run_id, body.question.strip(), body.max_steps))
+        launch(run_id, TaskModelingAgent(settings, store).run(run_id, body.question.strip(), body.max_steps))
         return {"id": run_id}
 
     @app.get("/api/runs")
@@ -160,6 +160,22 @@ def create_app(settings=None):
         if model is None:
             raise HTTPException(404, "本次分析尚未形成局部模型")
         return model
+
+    @app.get("/api/runs/{run_id}/task-model")
+    def task_model(run_id: str):
+        model = store.task_model(run_id)
+        if model is None:
+            raise HTTPException(404, "本次分析尚未形成任务模型")
+        pids = {e['passage_id'] for field in ('facts', 'rules', 'concept_links') for x in model.get(field, []) for e in x.get('evidence', [])}
+        stale = [pid for pid in pids if not store.source_current(pid)]
+        model['source_validation'] = {'current': not stale, 'stale_passage_ids': stale}
+        return model
+
+    @app.get("/api/runs/{run_id}/task-model/versions")
+    def task_model_versions(run_id: str):
+        if not store.get_run(run_id, include_trace=False):
+            raise HTTPException(404, '分析记录不存在')
+        return store.task_model_versions(run_id)
 
     @app.get("/api/knowledge-links")
     def knowledge_links(q: str = ""):

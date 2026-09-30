@@ -3,7 +3,7 @@ import asyncio
 import json
 from pathlib import Path
 
-from .agent import ModelingAgent
+from .task_agent import TaskModelingAgent
 from .config import Settings
 from .ingest import index_corpus
 from .store import Store
@@ -17,7 +17,7 @@ def main():
     sub.add_parser("index", help="建立或增量更新资料索引")
     ask = sub.add_parser("ask", help="从命令行提出业务问题")
     ask.add_argument("question")
-    ask.add_argument("--max-steps", type=int, default=10)
+    ask.add_argument("--max-steps", type=int, default=None, help='可选轮数上限，默认不限制')
     ask.add_argument("--output", type=Path)
     sub.add_parser("status", help="显示资料及知识数量")
     args = parser.parse_args()
@@ -37,7 +37,7 @@ def main():
             parser.error("请先执行 semantic-agent index")
         run_id = store.create_run("analysis", args.question)
         print("运行记录：" + run_id, flush=True)
-        result = asyncio.run(ModelingAgent(settings, store).run(run_id, args.question, args.max_steps))
+        result = asyncio.run(TaskModelingAgent(settings, store).run(run_id, args.question, args.max_steps))
         if not result:
             print(store.get_run(run_id)["error"])
             raise SystemExit(1)

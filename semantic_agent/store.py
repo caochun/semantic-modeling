@@ -87,6 +87,13 @@ class Store(OrganizationStore):
                 CREATE TABLE IF NOT EXISTS problem_models (
                     run_id TEXT PRIMARY KEY, payload TEXT NOT NULL, created_at TEXT NOT NULL
                 );
+                CREATE TABLE IF NOT EXISTS task_models (
+                    run_id TEXT PRIMARY KEY, payload TEXT NOT NULL, created_at TEXT NOT NULL
+                );
+                CREATE TABLE IF NOT EXISTS task_model_versions (
+                    run_id TEXT, version INTEGER, phase TEXT, payload TEXT NOT NULL, created_at TEXT NOT NULL,
+                    PRIMARY KEY(run_id,version,phase)
+                );
                 CREATE TABLE IF NOT EXISTS model_usages (
                     run_id TEXT, knowledge_id TEXT, role TEXT, origin TEXT, created_at TEXT,
                     PRIMARY KEY(run_id,knowledge_id)
@@ -155,6 +162,25 @@ class Store(OrganizationStore):
         with self.connect() as db:
             db.execute("UPDATE runs SET status=?, result=?, error=?, updated_at=? WHERE id=?",
                        (status, json.dumps(result, ensure_ascii=False), error, now(), run_id))
+
+    def save_task_model(self, run_id, model):
+        """Persist every model version independently from the answer/knowledge tables."""
+        with self.connect() as db:
+            db.execute("INSERT OR REPLACE INTO task_models VALUES(?,?,?)",
+                       (run_id, json.dumps(model, ensure_ascii=False), now()))
+            db.execute("INSERT OR REPLACE INTO task_model_versions VALUES(?,?,?,?,?)",
+                       (run_id, model['version'], model['phase'], json.dumps(model, ensure_ascii=False), now()))
+        return model
+
+    def task_model_versions(self, run_id):
+        with self.connect() as db:
+            rows = db.execute('SELECT version,phase,payload,created_at FROM task_model_versions WHERE run_id=? ORDER BY version,created_at', (run_id,)).fetchall()
+        return [{**dict(r), 'payload': json.loads(r['payload'])} for r in rows]
+
+    def task_model(self, run_id):
+        with self.connect() as db:
+            row = db.execute("SELECT payload FROM task_models WHERE run_id=?", (run_id,)).fetchone()
+        return json.loads(row["payload"]) if row else None
 
     def get_run(self, run_id, *, include_trace=True):
         with self.connect() as db:

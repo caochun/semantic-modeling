@@ -102,6 +102,8 @@ class StreamReporter:
         content = message.get("content") or ""
         if self.review:
             answer = json_string_prefix(content, ("answer_review", "answer"))
+            if self.step == 'answer-review':
+                answer = json_string_prefix(content, ('answer',))
             if answer:
                 self.publish("answer", {"text": answer, "stage": "review", "step": self.step})
         else:
@@ -117,11 +119,19 @@ class StreamReporter:
                 self.publish("progress", {"text": content[:4000], "step": self.step})
             for call in message.get("tool_calls") or []:
                 fn = call.get("function", {})
-                if fn.get("name") == "submit_result":
+                if fn.get("name") in {"submit_result", "submit_model_answer"}:
                     answer = json_string_prefix(fn.get("arguments", ""), ("answer",))
                     if answer:
                         self.publish("answer", {"text": answer, "stage": "draft", "step": self.step})
                     break
+                elif fn.get('name') in {'propose_model_update', 'induce_concepts'}:
+                    summary = json_string_prefix(fn.get('arguments', ''), ('summary',))
+                    if summary:
+                        self.publish('progress', {'text': summary, 'step': self.step})
+                elif fn.get('name') == 'initialize_task':
+                    objective = json_string_prefix(fn.get('arguments', ''), ('objective',))
+                    if objective:
+                        self.publish('progress', {'text': '建立任务：' + objective, 'step': self.step})
 
     def publish(self, kind, data):
         if self.last.get(kind) != data:

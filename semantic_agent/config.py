@@ -18,6 +18,7 @@ class Settings:
     timeout: float | None
     ipv4_first: bool
     soffice: str
+    max_output_tokens: int = 0
 
     @classmethod
     def load(cls, root: Path | None = None):
@@ -37,6 +38,7 @@ class Settings:
             timeout=None if timeout_ms == 0 else timeout_ms / 1000,
             ipv4_first=os.getenv("GLM_DNS_RESULT_ORDER", "") == "ipv4first",
             soffice=os.getenv("SEMANTIC_SOFFICE_PATH", ""),
+            max_output_tokens=max(0, int(os.getenv("GLM_MAX_OUTPUT_TOKENS", "0"))),
         )
 
     @property

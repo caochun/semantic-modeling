@@ -132,7 +132,7 @@ function renderResult(run) {
     $('#answer-sources').innerHTML='<span class="small-label">引用来源</span>'+r.sources.map(s=>`<button class="source-link" data-passage="${esc(s.id)}">${esc(s.path.split('/').pop())}<small>${esc(s.locator)}</small></button>`).join('');
     $('#reuse-count').textContent=`当时复用 ${r.reused_knowledge_ids.length} 条已有知识`;
     const historyNote=run.knowledge_cleared?'<div class="empty">知识库已清空。以下仅为当时的积累记录，不参与后续问题的自动复用。</div>':'';
-    $('#changes').innerHTML=historyNote+(r.knowledge_changes.length?r.knowledge_changes.map(k=>`<div class="knowledge-card">${pill(k.status)}<h3>${esc(k.title)}</h3><p>${esc(k.review.reason)}</p>${k.review.quote_check_errors?.length?`<p>${esc(k.review.quote_check_errors.join('；'))}</p>`:''}${run.knowledge_cleared?'':`<button class="subtle" data-open-knowledge="${esc(k.id)}">查看完整知识与依据</button>`}</div>`).join(''):'<div class="empty">本轮没有新增知识。已存在或证据不足的内容无需重复沉淀。</div>');
+    $('#changes').innerHTML=historyNote+(r.knowledge_changes.length?r.knowledge_changes.map(k=>`<div class="knowledge-card">${pill(k.status)}<h3>${esc(k.title)}</h3><p>${esc(k.review?.reason||'任务模型条目已完成独立复核')}</p>${k.review?.quote_check_errors?.length?`<p>${esc(k.review.quote_check_errors.join('；'))}</p>`:''}${run.knowledge_cleared?'':`<button class="subtle" data-open-knowledge="${esc(k.id)}">查看完整知识与依据</button>`}</div>`).join(''):'<div class="empty">本轮没有新增知识。已存在或证据不足的内容无需重复沉淀。</div>');
     if(r.review_warning)notice(r.review_warning);
   } else if(run.result&&run.kind==='index') {
     $('#answer-state').textContent='';
@@ -161,6 +161,7 @@ async function loadRun(id) {
     liveRun=run;liveRun.stream=run.stream||{};eventCursor=run.event_cursor||0;
     runHeader(run);run.trace.forEach(appendTrace);
     if(run.status==='running') {
+      loadLocalModel(run);
       $('#answer').innerHTML='<div class="waiting"><span class="pulse"></span>正在查找依据，进展会实时显示。</div>';
       $('#changes').innerHTML='<p class="muted">知识复核和保存情况会显示在工作过程中。</p>';
       for(const kind of ['progress','answer'])if(run.stream[kind])showStream(kind,run.stream[kind]);
@@ -181,13 +182,23 @@ function connectStream(id,version) {
   const stream=new EventSource(`/api/runs/${encodeURIComponent(id)}/events?after=${eventCursor}`);
   eventSource=stream;
   const valid=()=>version===viewVersion&&eventSource===stream;
-  for(const kind of ['trace','progress','answer'])stream.addEventListener(kind,event=>{
+  for(const kind of ['trace','progress','answer','task_model'])stream.addEventListener(kind,event=>{
     if(!valid())return;
     const seq=Number(event.lastEventId);
     if(seq<=eventCursor)return;
     eventCursor=seq;
     const data=JSON.parse(event.data);
-    if(kind==='trace')appendTrace(data);else showStream(kind,data);
+    if(kind==='trace')appendTrace(data);
+    else if(kind==='task_model') {
+      modelRequest++;
+      showPhase(data.phase==='inference'?'正在基于任务模型推理':'正在更新任务级语义模型');
+      $('#answer-state').textContent=data.phase==='inference'?'模型推理中 · 正在验证':'任务模型构建中 · 正在补齐证据';
+      if(data.model?.schema_version===2) {
+        $('#local-model-panel').classList.remove('hidden');
+        $('#local-model-state').innerHTML=taskModelStatus(data.model);
+        $('#local-model').innerHTML=taskModelView(data.model);
+      }
+    } else showStream(kind,data);
   });
   stream.addEventListener('heartbeat',()=>{if(valid())updateElapsed();});
   stream.addEventListener('done',async event=>{
@@ -215,7 +226,7 @@ async function loadKnowledge() {
   if(memoryView==='links')return loadLinks();
   try {
     const items=await api('/api/knowledge?q='+encodeURIComponent($('#knowledge-search').value));
-    $('#knowledge-list').innerHTML=items.length?items.map(k=>`<article class="knowledge-card" id="${esc(k.id)}">${pill(k.status)} ${!k.sources_current?'<span class="pill stale">来源版本已过期</span>':''}<span class="scope"> ${esc(k.kind)}</span><h3>${esc(k.title)}</h3><p>${esc(k.statement)}</p><p class="scope">适用范围：${esc(k.scope)}</p>${k.conditions.length?'<ul>'+k.conditions.map(c=>`<li>${esc(c)}</li>`).join('')+'</ul>':''}${fragmentView(k.model_fragment)}${usagesView(k.used_in)}<details><summary>依据与复核说明</summary><p>${esc(k.review.reason)}</p>${k.evidence.map(e=>`<button class="source-link" data-passage="${esc(e.passage_id)}">“${esc(e.quote)}”</button>`).join('')}</details><div class="actions"><button data-run="${esc(k.run_id)}">回到产生它的问题</button><button data-knowledge-action="${k.status==='withdrawn'?'restore':'withdraw'}" data-id="${esc(k.id)}">${k.status==='withdrawn'?'恢复为候选':'撤回'}</button></div></article>`).join(''):'<div class="empty">这里会保留问题解决过程中积累的知识。先提出一个业务问题。</div>';
+    $('#knowledge-list').innerHTML=items.length?items.map(k=>`<article class="knowledge-card" id="${esc(k.id)}">${pill(k.status)} ${!k.sources_current?'<span class="pill stale">来源版本已过期</span>':''}<span class="scope"> ${esc(k.kind)}</span><h3>${esc(k.title)}</h3><p>${esc(k.statement)}</p><p class="scope">适用范围：${esc(k.scope)}</p>${k.conditions.length?'<ul>'+k.conditions.map(c=>`<li>${esc(c)}</li>`).join('')+'</ul>':''}${fragmentView(k.model_fragment)}${usagesView(k.used_in)}<details><summary>依据与复核说明</summary><p>${esc(k.review?.reason||'任务模型条目已完成独立复核')}</p>${k.evidence.map(e=>`<button class="source-link" data-passage="${esc(e.passage_id)}">“${esc(e.quote)}”</button>`).join('')}</details><div class="actions"><button data-run="${esc(k.run_id)}">回到产生它的问题</button><button data-knowledge-action="${k.status==='withdrawn'?'restore':'withdraw'}" data-id="${esc(k.id)}">${k.status==='withdrawn'?'恢复为候选':'撤回'}</button></div></article>`).join(''):'<div class="empty">这里会保留问题解决过程中积累的知识。先提出一个业务问题。</div>';
   }catch(e){notice(e.message);}
 }
 async function evidence(pid) {

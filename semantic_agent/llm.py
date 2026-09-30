@@ -35,8 +35,10 @@ class GLMClient:
         headers = {"Content-Type": "application/json", "Accept": "text/event-stream"}
         if settings.api_key:
             headers["Authorization"] = "Bearer " + settings.api_key
-        payload = {"model": settings.model, "messages": messages, "max_tokens": 10000,
+        payload = {"model": settings.model, "messages": messages,
                    "stream": True, "stream_options": {"include_usage": True}}
+        if settings.max_output_tokens:
+            payload["max_tokens"] = settings.max_output_tokens
         if settings.reasoning_effort:
             payload["reasoning_effort"] = settings.reasoning_effort
         if tools:
@@ -108,7 +110,7 @@ class GLMClient:
                                 if on_delta and (first or delta.get("content") or delta.get("tool_calls")):
                                     await on_delta({k: message[k] for k in ("content", "tool_calls") if k in message})
                 if finish_reason == "length":
-                    raise ModelError("模型输出达到长度限制；请缩小问题范围后重试")
+                    raise ModelError("模型输出达到接口长度限制，本次输出未完整结束")
                 if finish_reason not in {"stop", "tool_calls", "function_call"}:
                     raise ModelError("模型输出中途断开或未完整结束，请重试；已生成内容仅供参考")
                 if not message.get("content") and not message.get("tool_calls"):
