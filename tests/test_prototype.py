@@ -312,6 +312,28 @@ def test_clear_knowledge_preserves_corpus_and_labels_history(workspace):
     assert not store.knowledge(reusable_only=True)
 
 
+def test_reset_workspace_clears_application_state_and_preserves_raw_sources(workspace):
+    settings,store=workspace
+    pid=store.search('系统切换')[0]['id']
+    rid=store.create_run('analysis','需要从头开始的问题')
+    store.save_knowledge(candidate(pid),rid,'reviewed',{'reason':'支持'})
+    store.save_task_model(rid,{'version':1,'phase':'planning'})
+    store.trace(rid,'start','开始任务')
+    store.event(rid,'progress',{'text':'正在建模'})
+    with TestClient(create_app(settings)) as client:
+        active=store.create_run('analysis','仍在运行')
+        assert client.post('/api/reset').status_code==409
+        store.finish_run(active,'cancelled')
+        response=client.post('/api/reset')
+        assert response.status_code==200
+        assert response.json()['reset'] is True
+    assert store.stats()=={'documents':[],'passages':0,'knowledge':0}
+    assert store.recent_runs()==[]
+    assert store.task_model(rid) is None
+    assert (settings.doc_dir/'姑苏站规程.md').is_file()
+    assert not store.search('系统切换')
+
+
 def test_cancellation_stops_stream_and_does_not_save_knowledge(workspace):
     settings,store=workspace
     started=asyncio.Event()

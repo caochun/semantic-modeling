@@ -24,6 +24,23 @@ function taskModelStatus(model) {
   const phase={planning:'任务规格',modeled:'模型已构建',inference:'已完成模型推理',answered:'已生成模型回答'}[model.phase]||model.phase;
   return `<span class="pill ${ok?'reviewed':'candidate'}">${esc(phase)} · v${esc(model.version)}</span>`;
 }
+function modelOverview(model,nodes,graph,rules,gaps) {
+  const results=model.inference?.results||[];
+  const edges=graph.edges||[], paths=graph.paths||[];
+  const supported=results.filter(r=>r.status==='supported').length;
+  const unknown=results.filter(r=>r.status==='unknown'||r.status==='insufficient').length;
+  const nodeKind={entity:'实体',event:'事件',concept:'概念'};
+  const labelById=new Map((nodes||[]).map(n=>[n.id,n.label]));
+  const nodeLabel=id=>esc(labelById.get(id)||id);
+  const nodeCards=(nodes||[]).slice(0,12).map(n=>`<span class="graph-node ${esc(n.kind||'concept')}"><i>${esc(nodeKind[n.kind]||'节点')}</i>${esc(n.label)}</span>`).join('');
+  const edgeRows=edges.slice(0,9).map(e=>`<div class="graph-edge"><span>${nodeLabel(e.source_id)}</span><b>${esc(e.predicate||e.relation||'关联')}</b><span>${nodeLabel(e.target_id)}</span></div>`).join('');
+  return `<div class="model-overview">
+    <div class="model-overview-head"><div><span class="section-kicker">TASK MODEL / ${esc(model.phase||'MODELED')}</span><p class="model-objective">${esc(model.task?.objective||'')}</p><p class="scope">${esc(model.task?.scope||'')}</p></div><div class="model-confidence"><span>模型状态</span>${taskModelStatus(model)}</div></div>
+    <div class="model-metrics"><div><strong>${nodes.length}</strong><span>语义节点</span></div><div><strong>${edges.length}</strong><span>带证据关系</span></div><div><strong>${rules.length}</strong><span>条件规则</span></div><div><strong>${supported}</strong><span>支持的判断</span></div><div><strong>${unknown}</strong><span>待补数据</span></div></div>
+    <div class="graph-preview"><div class="graph-preview-head"><div><span class="section-kicker">SEMANTIC GRAPH</span><strong>当前问题的最小语义空间</strong></div><span class="graph-count">${paths.length} 条可重放路径</span></div><div class="graph-canvas"><div class="graph-node-cloud">${nodeCards||'<span class="muted">尚未形成节点</span>'}</div><div class="graph-edge-list">${edgeRows||'<span class="muted">尚未形成带证据关系</span>'}</div></div></div>
+    <div class="model-boundary-strip"><span><b>开放缺口</b>${gaps.filter(g=>g.status!=='resolved').length} 项</span><span><b>验证状态</b>${model.inference?.validation?.valid?'推理重放通过':'等待复核'}</span><span><b>证据原则</b>每条关系均可回到原文</span></div>
+  </div>`;
+}
 function taskModelView(model) {
   const task=model.task||{}, nodes=model.nodes||[], rules=model.rules||[], gaps=model.gaps||[];
   const graph=model.graph||{}, labels=new Map(nodes.map(n=>[n.id,n.label]));
@@ -38,7 +55,7 @@ function taskModelView(model) {
   const pathCards=(paths,proof=false)=>grid((paths||[]).map(p=>`<div class="knowledge-card">${status(p.status)}<p class="scope">${esc(p.id)}</p>${proof?'<p class="muted">合取前提的证明依赖（各前提均需成立）</p>':''}<ol>${p.steps.map(s=>`<li>${atom({subject:s.source_id,object:s.target_id,...s})} ${evidenceButtons(s.evidence)}</li>`).join('')}</ol></div>`).join(''));
   const results=(model.inference?.results||[]).map(r=>`<div class="knowledge-card">${status(r.status)}<h3>${esc(r.question)}</h3>${r.missing?.length?`<pre>${esc(r.missing.map(m=>typeof m==='string'?m:JSON.stringify(m,null,2)).join('\n'))}</pre>`:''}<p class="scope">${esc([...(r.model_ids||[]),...(r.path_ids||[]),...(r.proof_ids||[])].join('、'))}</p></div>`).join('');
   const open=gaps.filter(g=>g.status!=='resolved'), resolved=gaps.filter(g=>g.status==='resolved');
-  return `<p class="model-objective">${esc(task.objective||'')}</p><p class="scope">${esc(task.scope||'')}</p><p class="muted">这是本次问题的模型快照。节点名称是组织线索；事实、规则和概念映射分别复核。</p>
+  return `${modelOverview(model,nodes,graph,rules,gaps)}<p class="muted model-note">这是本次问题的模型快照。节点名称是组织线索；事实、规则和概念映射分别复核。</p>
     ${model.source_validation?.current===false?'<p class="notice">部分原文已变化；此处保留历史模型，后续使用需重新建模。</p>':''}
     ${section('任务目标',modelList('',(task.goals||[]).map(g=>g.question)))}
     ${section('对象、事件与概念',grid(nodes.map(n=>`<div class="knowledge-card"><span class="pill">${esc({entity:'实体',event:'事件',concept:'概念'}[n.kind])}</span><h3>${esc(n.label)}</h3><p>${esc(n.description)}</p><p class="scope">${esc(n.scope)}</p></div>`).join('')))}

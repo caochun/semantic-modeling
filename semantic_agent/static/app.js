@@ -14,6 +14,9 @@ function notice(message='') { $('#notice').textContent=message; $('#notice').cla
 function tab(name) {
   document.querySelectorAll('.tab').forEach(el=>el.classList.toggle('active',el.id===name));
   document.querySelectorAll('.nav').forEach(el=>el.classList.toggle('active',el.dataset.tab===name));
+  const context={workspace:'问题与建模',knowledge:'可复用知识',sources:'资料覆盖'}[name]||name;
+  const contextNode=$('#topbar-context');
+  if(contextNode)contextNode.textContent=context;
   if(name==='knowledge') selectMemoryView(memoryView);
   if(name==='sources') refreshStatus();
 }
@@ -74,6 +77,8 @@ function stopStream() {
 }
 function showPhase(message) {
   $('#live-phase').textContent=message;
+  const brief=$('#brief-phase');
+  if(brief)brief.textContent=message;
 }
 function updateElapsed() {
   if(!liveRun||liveRun.status!=='running')return;
@@ -86,7 +91,9 @@ function runHeader(run) {
   $('#cancel-button').classList.toggle('hidden',run.status!=='running'||run.kind!=='analysis');
   $('#cancel-button').disabled=false;
   $('#ask-button').disabled=run.status==='running';
+  $('#active-run-dot')?.classList.toggle('hidden',run.status!=='running');
   $('#live-status').classList.toggle('hidden',run.status!=='running');
+  if(run.status!=='running'&&$('#brief-phase'))$('#brief-phase').textContent=labels[run.status]||run.status;
   $('#answer').setAttribute('aria-busy',String(run.status==='running'));
   updateElapsed();
 }
@@ -222,11 +229,37 @@ function connectStream(id,version) {
     pollTimer=setTimeout(()=>{if(valid())loadRun(id);},5000);
   };
 }
+function knowledgeCard(k) {
+  const kind={
+    '任务模型事实':'事实',
+    '任务模型规则':'条件规则',
+    fact:'事实',
+    rule:'条件规则',
+    relation:'关系'
+  }[k.kind]||k.kind||'知识单元';
+  const usageCount=k.used_in?.length||0;
+  const evidenceCount=k.evidence?.length||0;
+  const state=k.status==='withdrawn'?'withdrawn':(!k.sources_current?'unavailable':k.status);
+  const stateLabel=state==='reviewed'?'可复用':state==='unavailable'?'需重新核查':labels[state]||state;
+  const origin=k.used_in?.[0]?.question;
+  return `<article class="knowledge-card reusable-card" id="${esc(k.id)}">
+    <div class="knowledge-card-head"><span class="pill ${esc(state)}">${esc(stateLabel)}</span><span class="knowledge-type">${esc(kind)}</span></div>
+    <h3>${esc(k.title)}</h3>
+    <p class="knowledge-statement">${esc(k.statement)}</p>
+    <div class="knowledge-metadata"><span><b>${evidenceCount}</b> 条原文证据</span><span><b>${usageCount}</b> 个问题使用</span><span class="${k.sources_current?'source-current':'source-stale'}">${k.sources_current?'来源仍有效':'来源版本已变化'}</span></div>
+    <p class="scope">适用范围：${esc(k.scope)}</p>
+    ${origin?`<p class="knowledge-origin">首次来自：${esc(origin)}</p>`:''}
+    ${k.conditions?.length?'<ul>'+k.conditions.map(c=>`<li>${esc(c)}</li>`).join('')+'</ul>':''}
+    ${fragmentView(k.model_fragment)}${usagesView(k.used_in)}
+    <details><summary>查看依据与复核说明</summary><p>${esc(k.review?.reason||'任务模型条目已完成独立复核')}</p>${(k.evidence||[]).map(e=>`<button class="source-link" data-passage="${esc(e.passage_id)}">“${esc(e.quote)}”</button>`).join('')}</details>
+    <div class="actions"><button data-run="${esc(k.run_id)}">查看来源问题</button><button data-knowledge-action="${k.status==='withdrawn'?'restore':'withdraw'}" data-id="${esc(k.id)}">${k.status==='withdrawn'?'恢复为候选':'撤回'}</button></div>
+  </article>`;
+}
 async function loadKnowledge() {
   if(memoryView==='links')return loadLinks();
   try {
     const items=await api('/api/knowledge?q='+encodeURIComponent($('#knowledge-search').value));
-    $('#knowledge-list').innerHTML=items.length?items.map(k=>`<article class="knowledge-card" id="${esc(k.id)}">${pill(k.status)} ${!k.sources_current?'<span class="pill stale">来源版本已过期</span>':''}<span class="scope"> ${esc(k.kind)}</span><h3>${esc(k.title)}</h3><p>${esc(k.statement)}</p><p class="scope">适用范围：${esc(k.scope)}</p>${k.conditions.length?'<ul>'+k.conditions.map(c=>`<li>${esc(c)}</li>`).join('')+'</ul>':''}${fragmentView(k.model_fragment)}${usagesView(k.used_in)}<details><summary>依据与复核说明</summary><p>${esc(k.review?.reason||'任务模型条目已完成独立复核')}</p>${k.evidence.map(e=>`<button class="source-link" data-passage="${esc(e.passage_id)}">“${esc(e.quote)}”</button>`).join('')}</details><div class="actions"><button data-run="${esc(k.run_id)}">回到产生它的问题</button><button data-knowledge-action="${k.status==='withdrawn'?'restore':'withdraw'}" data-id="${esc(k.id)}">${k.status==='withdrawn'?'恢复为候选':'撤回'}</button></div></article>`).join(''):'<div class="empty">这里会保留问题解决过程中积累的知识。先提出一个业务问题。</div>';
+    $('#knowledge-list').innerHTML=items.length?items.map(knowledgeCard).join(''):'<div class="empty">这里会保留经过复核、可跨问题复用的事实和规则。先提出一个业务问题。</div>';
   }catch(e){notice(e.message);}
 }
 async function evidence(pid) {
@@ -259,4 +292,22 @@ $('#cancel-button').addEventListener('click',async()=>{try{await api(`/api/runs/
 $('#refresh-knowledge').addEventListener('click',loadKnowledge);
 $('#knowledge-search').addEventListener('input',()=>{clearTimeout(window.searchTimer);window.searchTimer=setTimeout(loadKnowledge,250);});
 $('#close-dialog').addEventListener('click',()=>$('#evidence-dialog').close());
+const resetDialog=$('#reset-dialog');
+function closeResetDialog(){if(resetDialog?.open)resetDialog.close();}
+$('#reset-button').addEventListener('click',()=>resetDialog.showModal());
+$('#close-reset').addEventListener('click',closeResetDialog);
+$('#cancel-reset').addEventListener('click',closeResetDialog);
+$('#confirm-reset').addEventListener('click',async()=>{
+  const button=$('#confirm-reset');
+  button.disabled=true;
+  try {
+    await api('/api/reset',{method:'POST',body:'{}'});
+    stopStream();
+    window.location.reload();
+  }catch(e){
+    button.disabled=false;
+    closeResetDialog();
+    notice(e.message);
+  }
+});
 (async()=>{await refreshStatus();const runs=await refreshHistory();const active=runs.find(r=>r.status==='running');if(active)await loadRun(active.id);})();

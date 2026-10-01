@@ -1,48 +1,122 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>循知 · 从问题到知识</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#172e2b">
+  <title>循知 · 问题驱动的语义建模</title>
   <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-  <aside class="sidebar">
-    <a class="brand" href="/"><span class="brand-mark">循</span><span>循知<small>从问题到知识</small></span></a>
-    <div class="sidebar-label">工作空间</div>
-    <button class="nav active" data-tab="workspace"><span>01</span>问题与建模</button>
-    <button class="nav" data-tab="knowledge"><span>02</span>已积累的知识 <b id="knowledge-count">0</b></button>
-    <button class="nav" data-tab="sources"><span>03</span>资料与覆盖</button>
-    <div class="sidebar-label history-label">最近的问题</div>
-    <div id="history" class="history"><p>从第一个问题开始。</p></div>
-    <div class="sidebar-bottom"><span class="status-dot"></span><span id="model-name">连接本地服务…</span><small>知识保存在本机 · 原型 v0.1</small></div>
-  </aside>
-  <main>
-    <header><span>业务问题驱动的语义建模</span><span class="local-badge">LOCAL WORKSPACE</span></header>
-    <section id="workspace" class="tab active">
-      <div class="intro"><span class="eyebrow">QUESTION → EVIDENCE → KNOWLEDGE</span><h1>从一个真实问题开始。</h1><p>查找依据，补齐理解，把这次学到的知识留给下一个问题。</p></div>
-      <form id="question-form" class="question-card">
-        <label for="question">你想解决什么业务问题？</label>
-        <textarea id="question" rows="4" maxlength="6000" placeholder="例如：收到直流站的日志后，如何判断各系统是否存在异常？请从现有资料建立最小判断模型，并说明还缺少哪些信息。" required></textarea>
-        <div class="question-footer"><span id="corpus-summary">正在读取资料状态…</span><button class="primary" id="ask-button" type="submit">开始分析 <span>↗</span></button></div>
-      </form>
-      <div class="examples"><span>试一个问题</span><button data-example="收到直流站的日志后，如何判断各系统是否存在异常？请根据姑苏站资料建立最小判断模型：说明应区分哪些概念、需要哪些关系和状态、哪些知识已有依据、哪些信息仍然缺少。此处没有提供实时数据，不要判断当前全站是否正常。">日志异常判断</button><button data-example="监盘时看到控制系统切换，如何判断它是正常操作还是故障响应？请根据姑苏站资料说明判断依据和信息缺口，把新发现的可复用知识保留下来。">控制系统切换</button><button data-example="请复用已有知识，解释为什么监盘不能把没有报警直接理解为系统正常。请引用姑苏站资料，明确哪些是原文规定，哪些是建模建议。">复用已有知识</button></div>
-      <div id="notice" role="status" class="notice hidden"></div>
-      <div id="run-area" class="hidden">
-        <div class="run-heading"><h2 id="run-title">本次分析</h2><div><span id="run-status" class="pill"></span><button id="cancel-button" class="subtle hidden">停止</button></div></div>
-        <div id="live-status" class="live-status hidden" role="status"><span class="pulse"></span><span id="live-phase">正在连接…</span><span id="elapsed"></span></div>
-        <div class="run-grid">
-          <article class="panel answer-panel"><div class="panel-heading"><span class="small-label">01 / 回答</span><span id="usage"></span></div><div id="answer-state" class="answer-state"></div><div id="answer" class="answer" aria-busy="false"><div class="waiting"><span class="pulse"></span>正在理解问题并寻找依据…</div></div><div id="unknowns"></div><div id="answer-sources"></div></article>
-          <aside class="panel activity-panel"><div class="panel-heading"><span class="small-label">02 / 工作过程</span><span id="step-count"></span></div><div id="live-progress" class="live-progress hidden"></div><div id="trace" class="trace"></div></aside>
-        </div>
-        <article id="local-model-panel" class="panel changes-panel hidden"><div class="panel-heading"><span class="small-label">03 / 本次局部模型</span><span id="local-model-state"></span></div><div id="local-model"></div></article>
-        <article class="panel changes-panel"><div class="panel-heading"><span class="small-label">04 / 本次知识变化</span><span id="reuse-count"></span></div><p class="muted">模型复核通过表示摘录校验与独立模型复核通过，仍可查看证据并撤回。</p><div id="changes" class="knowledge-grid"></div></article>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="/">
+        <span class="brand-mark">循</span>
+        <span class="brand-copy">循知<small>QUESTION-LED MODELING</small></span>
+      </a>
+
+      <div class="workspace-switcher">
+        <span class="workspace-icon">◈</span>
+        <span><small>当前工作空间</small><strong>姑苏站 · 运行知识</strong></span>
+        <span class="workspace-chevron">⌄</span>
       </div>
-    </section>
-    <section id="knowledge" class="tab"><div class="intro"><span class="eyebrow">KNOWLEDGE MEMORY</span><h1>每次理解，都可以积累。</h1><p>知识可被多个问题引用。查看它承担过的判断作用，以及逐步得到复核的联系。</p></div><div class="memory-views" role="group" aria-label="知识视图"><button id="view-items" class="selected" data-memory-view="items">知识条目</button><button id="view-links" data-memory-view="links">知识之间的联系</button></div><div class="toolbar"><input id="knowledge-search" placeholder="搜索概念、规则或设备…"><button id="refresh-knowledge">刷新</button></div><div id="knowledge-list" class="knowledge-grid"></div><div id="knowledge-links" class="hidden"></div></section>
-    <section id="sources" class="tab"><div class="intro"><span class="eyebrow">SOURCE LIBRARY</span><h1>每个判断，都有来处。</h1><p>本地资料按页、段落和表格提取。扫描图纸及未解析内容会明确列出。</p></div><div class="panel source-summary"><div><h2>本地资料库</h2><p id="source-stats"></p></div><button id="index-button" class="primary">更新资料索引 ↗</button></div><h2 class="section-title">需要补充识别或核读的资料</h2><p class="muted">“部分提取”仍可检索正文，但不代表图片、图纸或表格含义已完整识别。</p><div id="source-issues"></div></section>
-    <footer>问题决定建模范围，证据约束知识边界。</footer>
-  </main>
-  <dialog id="evidence-dialog"><div class="dialog-heading"><h2>原文依据</h2><button id="close-dialog" aria-label="关闭">✕</button></div><div id="evidence-content"></div></dialog>
+
+      <div class="sidebar-label">工作台</div>
+      <nav class="primary-nav" aria-label="主导航">
+        <button class="nav active" data-tab="workspace"><span class="nav-index">01</span><span class="nav-icon">↗</span><span>问题与建模</span><b id="active-run-dot" class="nav-live hidden">●</b></button>
+        <button class="nav" data-tab="knowledge"><span class="nav-index">02</span><span class="nav-icon">◇</span><span>可复用知识</span><b id="knowledge-count">0</b></button>
+        <button class="nav" data-tab="sources"><span class="nav-index">03</span><span class="nav-icon">▤</span><span>资料覆盖</span></button>
+      </nav>
+
+      <div class="sidebar-label history-label">最近的问题</div>
+      <div id="history" class="history"><p>从第一个问题开始。</p></div>
+
+      <div class="sidebar-bottom">
+        <div class="connection-state"><span class="status-dot"></span><span id="model-name">连接本地服务…</span></div>
+        <small>知识保存在本机 · 原型 v0.2</small>
+      </div>
+    </aside>
+
+    <main class="main-shell">
+      <header class="topbar">
+        <div class="breadcrumb"><span>工作台</span><i>/</i><strong id="topbar-context">问题与建模</strong></div>
+        <div class="topbar-right"><span class="secure-label"><span class="secure-dot"></span>LOCAL WORKSPACE</span><button id="reset-button" class="topbar-reset" title="清除当前工作区数据并重新开始">重新开始</button><button class="topbar-help" title="本地语义建模工作台">?</button></div>
+      </header>
+
+      <section id="workspace" class="tab active">
+        <div class="hero-grid">
+          <div class="intro">
+            <span class="eyebrow">QUESTION → EVIDENCE → MODEL → REASONING</span>
+            <h1>从一个问题，<em>建立一套判断。</em></h1>
+            <p>输入真实业务问题。系统会围绕问题发现证据、组织语义关系，并把可验证的任务级模型留存下来。</p>
+          </div>
+          <aside class="hero-contract">
+            <span class="contract-kicker">本工作台的约束</span>
+            <strong>每个结论都要知道<br>它依赖哪些证据。</strong>
+            <div class="contract-flow"><span>问题</span><i>→</i><span>证据</span><i>→</i><span>模型</span><i>→</i><span>判断</span></div>
+          </aside>
+        </div>
+
+        <form id="question-form" class="question-card">
+          <div class="composer-head"><div><span class="section-kicker">01 / 定义任务</span><label for="question">你想解决什么业务问题？</label></div><span class="composer-hint">支持中文自然语言问题</span></div>
+          <textarea id="question" rows="4" maxlength="6000" placeholder="例如：收到直流站的日志后，如何判断各系统是否存在异常？请从现有资料建立最小判断模型，并说明还缺少哪些信息。" required></textarea>
+          <div class="question-footer"><span id="corpus-summary">正在读取资料状态…</span><button class="primary" id="ask-button" type="submit"><span>开始构建模型</span><b>↗</b></button></div>
+        </form>
+
+        <div class="examples"><span>快速开始</span><button data-example="收到直流站的日志后，如何判断各系统是否存在异常？请根据姑苏站资料建立最小判断模型：识别需要关注的系统、状态和日志关系，说明哪些判断有文档依据，以及判断一次实际异常还缺少哪些现场数据。此处没有提供实时数据，不要判断当前全站是否正常。">日志异常建模 <i>↗</i></button><button data-example="监盘时看到控制系统切换，如何判断它是正常操作还是故障响应？请围绕这次问题建立任务级语义模型，沿证据关系说明判断依据，并明确还需要哪些时序、告警和操作信息才能判断这一次切换。">系统切换判定 <i>↗</i></button><button data-example="请复用已有知识，解释为什么监盘不能把没有报警直接理解为系统正常。请引用已有知识和姑苏站资料，分别说明可复用的事实、适用边界和仍需重新核对的证据。">复用并验证知识 <i>↗</i></button></div>
+        <div id="notice" role="status" class="notice hidden"></div>
+
+        <div id="run-area" class="hidden">
+          <div class="run-heading"><div><span class="section-kicker">CURRENT RUN</span><h2 id="run-title">本次分析</h2></div><div class="run-actions"><span id="run-status" class="pill"></span><button id="cancel-button" class="subtle hidden">停止任务</button></div></div>
+          <div id="live-status" class="live-status hidden" role="status"><span class="pulse"></span><span id="live-phase">正在连接…</span><span id="elapsed"></span></div>
+
+          <div class="run-grid">
+            <aside class="panel run-brief">
+              <div class="panel-heading"><span class="small-label">任务状态</span><span class="brief-mark">●</span></div>
+              <div class="brief-block"><span class="brief-label">当前阶段</span><strong id="brief-phase">等待开始</strong></div>
+              <div class="brief-stats"><div><strong id="step-count">0</strong><span>过程记录</span></div><div><strong id="usage">—</strong><span>模型用量</span></div></div>
+              <div class="brief-divider"></div>
+              <div class="brief-block"><span class="brief-label">判断边界</span><p>规范要求、现场事实和知识缺口分别呈现。</p></div>
+              <div id="unknowns" class="unknowns-brief"></div>
+            </aside>
+
+            <article class="panel answer-panel">
+              <div class="panel-heading"><span class="small-label">02 / 回答与判断</span><span id="answer-state"></span></div>
+              <div id="answer" class="answer" aria-busy="false"><div class="waiting"><span class="pulse"></span>正在理解问题并寻找依据…</div></div>
+              <div id="answer-sources"></div>
+            </article>
+
+            <aside class="panel activity-panel">
+              <div class="panel-heading"><span class="small-label">03 / 建模过程</span><span class="activity-live"><span class="pulse"></span>LIVE</span></div>
+              <div id="live-progress" class="live-progress hidden"></div>
+              <div id="trace" class="trace"></div>
+            </aside>
+          </div>
+
+          <article id="local-model-panel" class="panel model-panel hidden"><div class="panel-heading"><div><span class="small-label">04 / 任务级语义模型</span><p class="panel-subtitle">围绕当前问题形成的局部知识空间</p></div><span id="local-model-state"></span></div><div id="local-model"></div></article>
+          <article class="panel changes-panel"><div class="panel-heading"><div><span class="small-label">05 / 知识变化</span><p class="panel-subtitle">通过复核的内容才会进入共享知识</p></div><span id="reuse-count"></span></div><div id="changes" class="knowledge-grid"></div></article>
+        </div>
+      </section>
+
+      <section id="knowledge" class="tab">
+        <div class="page-heading"><span class="eyebrow">REUSABLE KNOWLEDGE</span><h1>可复用知识</h1><p>这里保存已经从任务模型中提炼、经过复核并仍可追溯到原文的事实和规则。</p></div>
+        <div class="knowledge-principle"><div class="principle-copy"><span class="section-kicker">两个层次，两个用途</span><strong>任务级模型负责解决当前问题，<em>可复用知识负责帮助下一个问题。</em></strong><p>完整的节点、关系、路径和知识缺口仍保存在每个问题的任务结果中；只有证据充分且来源有效的模型单元才会进入这里。</p></div><div class="principle-layers"><div><span>当前问题</span><b>任务级模型</b><small>节点 · 关系 · 路径 · 缺口</small></div><i>提炼<br>↘</i><div class="layer-reusable"><span>跨问题复用</span><b>事实 / 规则</b><small>复核 · 范围 · 原文</small></div></div></div>
+        <div class="memory-toolbar"><div class="memory-views" role="group" aria-label="知识视图"><button id="view-items" class="selected" data-memory-view="items">知识单元</button><button id="view-links" data-memory-view="links">知识之间的联系</button></div><div class="toolbar"><input id="knowledge-search" placeholder="搜索概念、规则或设备…"><button id="refresh-knowledge">刷新</button></div></div>
+        <div id="knowledge-list" class="knowledge-grid"></div><div id="knowledge-links" class="hidden"></div>
+      </section>
+
+      <section id="sources" class="tab">
+        <div class="page-heading"><span class="eyebrow">SOURCE LIBRARY</span><h1>资料覆盖</h1><p>每个判断都保留原始文档、页码和片段位置。提取不完整的资料会明确标记。</p></div>
+        <div class="panel source-summary"><div><span class="section-kicker">LOCAL CORPUS</span><h2>姑苏站资料库</h2><p id="source-stats"></p></div><button id="index-button" class="primary"><span>更新资料索引</span><b>↗</b></button></div>
+        <div class="section-heading"><h2>需要补充识别或核读的资料</h2><span>部分提取 ≠ 完整理解</span></div><p class="muted">扫描图纸、图片和复杂表格仍需要单独核读，系统不会将它们默认为已理解。</p><div id="source-issues"></div>
+      </section>
+
+      <footer>问题决定建模范围，证据约束知识边界。</footer>
+    </main>
+  </div>
+
+  <dialog id="evidence-dialog"><div class="dialog-heading"><div><span class="section-kicker">SOURCE EVIDENCE</span><h2>原文依据</h2></div><button id="close-dialog" aria-label="关闭">✕</button></div><div id="evidence-content"></div></dialog>
+  <dialog id="reset-dialog" class="reset-dialog"><div class="dialog-heading"><div><span class="section-kicker">RESET WORKSPACE</span><h2>重新开始</h2></div><button id="close-reset" aria-label="关闭">✕</button></div><p>这会清空当前工作区中已经积累的索引、问题记录、任务级模型、可复用知识和关系验证。</p><p class="reset-preserve"><strong>原始资料文件会保留。</strong>清空后需要重新点击“更新资料索引”，再开始提出问题。</p><div class="dialog-actions"><button id="cancel-reset" class="subtle">取消</button><button id="confirm-reset" class="destructive">清空并重新开始</button></div></dialog>
   <script src="/static/models.js"></script>
   <script src="/static/app.js"></script>
 </body>

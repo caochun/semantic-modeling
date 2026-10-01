@@ -151,6 +151,26 @@ class Store(OrganizationStore):
             db.execute("INSERT OR REPLACE INTO metadata VALUES('knowledge_cleared_at',?)", (now(),))
         return count
 
+    def reset_workspace(self):
+        """Remove all persisted application state while retaining raw source files."""
+        with self.connect() as db:
+            db.execute("BEGIN IMMEDIATE")
+            if db.execute("SELECT 1 FROM runs WHERE status='running'").fetchone():
+                raise ValueError("请等待当前任务结束后再重新开始")
+            counts = {
+                "documents": db.execute("SELECT count(*) FROM documents").fetchone()[0],
+                "passages": db.execute("SELECT count(*) FROM passages").fetchone()[0],
+                "runs": db.execute("SELECT count(*) FROM runs").fetchone()[0],
+                "knowledge": db.execute("SELECT count(*) FROM knowledge").fetchone()[0],
+            }
+            # The corpus files live outside SQLite and remain available for a fresh index.
+            db.execute("DELETE FROM passage_fts")
+            for table in ("passages", "documents", "trace", "run_events", "knowledge_structure",
+                          "knowledge", "problem_models", "task_models", "task_model_versions",
+                          "model_usages", "link_validations", "runs", "metadata"):
+                db.execute(f"DELETE FROM {table}")
+        return counts
+
     def create_run(self, kind, question=""):
         run_id = uid("run")
         with self.connect() as db:

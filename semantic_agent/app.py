@@ -205,6 +205,16 @@ def create_app(settings=None):
             raise HTTPException(409, str(exc)) from None
         return {"cleared": count}
 
+    @app.post("/api/reset")
+    async def reset_workspace():
+        if jobs or index_busy:
+            raise HTTPException(409, "请等待当前任务结束后再重新开始")
+        try:
+            counts = store.reset_workspace()
+        except ValueError as exc:
+            raise HTTPException(409, str(exc)) from None
+        return {"reset": True, **counts}
+
     @app.post("/api/knowledge/{kid}/withdraw")
     def withdraw(kid: str):
         if not store.set_knowledge_status(kid, "withdrawn"):
