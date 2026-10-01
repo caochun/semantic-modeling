@@ -105,6 +105,23 @@ class Store(OrganizationStore):
                     PRIMARY KEY(run_id,ordinal)
                 );
                 CREATE INDEX IF NOT EXISTS validations_link ON link_validations(link_id);
+                CREATE TABLE IF NOT EXISTS model_spaces (
+                    id TEXT PRIMARY KEY, source_run_id TEXT NOT NULL, version INTEGER NOT NULL,
+                    title TEXT NOT NULL, objective TEXT NOT NULL, scope TEXT NOT NULL,
+                    status TEXT NOT NULL, fingerprint TEXT NOT NULL UNIQUE,
+                    snapshot TEXT NOT NULL, created_at TEXT NOT NULL, updated_at TEXT NOT NULL
+                );
+                CREATE INDEX IF NOT EXISTS model_spaces_updated ON model_spaces(updated_at);
+                CREATE TABLE IF NOT EXISTS agent_sessions (
+                    id TEXT PRIMARY KEY, model_space_id TEXT NOT NULL, model_version INTEGER NOT NULL,
+                    status TEXT NOT NULL, created_at TEXT NOT NULL, updated_at TEXT NOT NULL
+                );
+                CREATE INDEX IF NOT EXISTS sessions_space ON agent_sessions(model_space_id);
+                CREATE TABLE IF NOT EXISTS session_messages (
+                    id TEXT PRIMARY KEY, session_id TEXT NOT NULL, run_id TEXT,
+                    role TEXT NOT NULL, content TEXT NOT NULL, created_at TEXT NOT NULL
+                );
+                CREATE INDEX IF NOT EXISTS messages_session ON session_messages(session_id,created_at);
             """)
 
     @contextmanager
@@ -152,7 +169,7 @@ class Store(OrganizationStore):
         return count
 
     def reset_workspace(self):
-        """Remove all persisted application state while retaining raw source files."""
+        """Clear runs and knowledge while retaining the indexed corpus."""
         with self.connect() as db:
             db.execute("BEGIN IMMEDIATE")
             if db.execute("SELECT 1 FROM runs WHERE status='running'").fetchone():
@@ -163,11 +180,12 @@ class Store(OrganizationStore):
                 "runs": db.execute("SELECT count(*) FROM runs").fetchone()[0],
                 "knowledge": db.execute("SELECT count(*) FROM knowledge").fetchone()[0],
             }
-            # The corpus files live outside SQLite and remain available for a fresh index.
-            db.execute("DELETE FROM passage_fts")
-            for table in ("passages", "documents", "trace", "run_events", "knowledge_structure",
-                          "knowledge", "problem_models", "task_models", "task_model_versions",
-                          "model_usages", "link_validations", "runs", "metadata"):
+            # Keep documents, passages and FTS rows so a fresh question can run
+            # immediately. Raw corpus files remain outside SQLite as before.
+            for table in ("trace", "run_events", "knowledge_structure", "knowledge",
+                          "problem_models", "task_models", "task_model_versions",
+                          "model_usages", "link_validations", "model_spaces", "agent_sessions",
+                          "session_messages", "runs", "metadata"):
                 db.execute(f"DELETE FROM {table}")
         return counts
 
@@ -192,15 +210,90 @@ class Store(OrganizationStore):
                        (run_id, model['version'], model['phase'], json.dumps(model, ensure_ascii=False), now()))
         return model
 
+    def create_model_space(self, run_id, title=None):
+        """Register an answered task model as an immutable, read-only knowledge space."""
+        model = self.task_model(run_id)
+        if not model or model.get('phase') != 'answered':
+            raise ValueError('只有已完成回答的任务模型可以作为模型空间')
+        task = model.get('task', {})
+        payload = json.dumps(model, ensure_ascii=False, sort_keys=True)
+        fingerprint = digest(payload)
+        with self.connect() as db:
+            existing = db.execute('SELECT id FROM model_spaces WHERE fingerprint=?', (fingerprint,)).fetchone()
+            if existing:
+                return existing['id'], False
+            space_id = uid('space')
+            label = (title or task.get('objective') or '未命名模型空间').strip()[:200]
+            db.execute('INSERT INTO model_spaces VALUES(?,?,?,?,?,?,?,?,?,?,?)', (
+                space_id, run_id, model.get('version', 0), label,
+                task.get('objective', ''), task.get('scope', ''), 'active', fingerprint,
+                payload, now(), now()))
+        return space_id, True
+
+    def model_spaces(self):
+        # Migrate completed task-model snapshots created before model spaces
+        # existed, without changing their immutable payloads.
+        with self.connect() as db:
+            legacy = [row['run_id'] for row in db.execute('SELECT run_id FROM task_models WHERE payload LIKE ?', ('%"phase": "answered"%',)).fetchall()]
+        for run_id in legacy:
+            try:
+                self.create_model_space(run_id)
+            except ValueError:
+                pass
+        with self.connect() as db:
+            rows = db.execute('SELECT id,source_run_id,version,title,objective,scope,status,created_at,updated_at FROM model_spaces ORDER BY updated_at DESC').fetchall()
+        return [dict(row) for row in rows]
+
+    def model_space(self, space_id):
+        with self.connect() as db:
+            row = db.execute('SELECT * FROM model_spaces WHERE id=?', (space_id,)).fetchone()
+        if not row:
+            return None
+        result = dict(row)
+        result['snapshot'] = json.loads(result['snapshot'])
+        return result
+
+    def create_agent_session(self, space_id):
+        space = self.model_space(space_id)
+        if not space or space['status'] != 'active':
+            raise ValueError('模型空间不存在或不可用')
+        session_id = uid('session')
+        with self.connect() as db:
+            db.execute('INSERT INTO agent_sessions VALUES(?,?,?,?,?,?)',
+                       (session_id, space_id, space['version'], 'active', now(), now()))
+        return session_id
+
+    def agent_session(self, session_id):
+        with self.connect() as db:
+            row = db.execute('SELECT * FROM agent_sessions WHERE id=?', (session_id,)).fetchone()
+        return dict(row) if row else None
+
+    def session_messages(self, session_id):
+        with self.connect() as db:
+            rows = db.execute('SELECT * FROM session_messages WHERE session_id=? ORDER BY created_at', (session_id,)).fetchall()
+        return [dict(row) for row in rows]
+
+    def add_session_message(self, session_id, role, content, run_id=None):
+        message_id = uid('msg')
+        with self.connect() as db:
+            db.execute('INSERT INTO session_messages VALUES(?,?,?,?,?,?)',
+                       (message_id, session_id, run_id, role, content, now()))
+            db.execute('UPDATE agent_sessions SET updated_at=? WHERE id=?', (now(), session_id))
+        return message_id
+
     def task_model_versions(self, run_id):
         with self.connect() as db:
             rows = db.execute('SELECT version,phase,payload,created_at FROM task_model_versions WHERE run_id=? ORDER BY version,created_at', (run_id,)).fetchall()
-        return [{**dict(r), 'payload': json.loads(r['payload'])} for r in rows]
+        from .task_model import sync_model_layers
+        return [{**dict(r), 'payload': sync_model_layers(json.loads(r['payload']))} for r in rows]
 
     def task_model(self, run_id):
         with self.connect() as db:
             row = db.execute("SELECT payload FROM task_models WHERE run_id=?", (run_id,)).fetchone()
-        return json.loads(row["payload"]) if row else None
+        if not row:
+            return None
+        from .task_model import sync_model_layers
+        return sync_model_layers(json.loads(row["payload"]))
 
     def get_run(self, run_id, *, include_trace=True):
         with self.connect() as db:
@@ -223,6 +316,11 @@ class Store(OrganizationStore):
                 result["stream"] = {}
                 for event in streams:
                     result["stream"][event["kind"]] = json.loads(event["data"])
+                history = db.execute("SELECT seq,kind,data FROM run_events WHERE run_id=? AND kind IN ('answer','progress') ORDER BY seq DESC LIMIT 200", (run_id,)).fetchall()
+                result["stream_history"] = [
+                    {"seq": event["seq"], "kind": event["kind"], "data": json.loads(event["data"])}
+                    for event in reversed(history)
+                ]
             return result
 
     def recent_runs(self):

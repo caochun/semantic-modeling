@@ -12,6 +12,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from .task_agent import TaskModelingAgent
+from .session_agent import ModelSessionAgent
 from .config import Settings
 from .ingest import index_corpus
 from .store import Store
@@ -20,6 +21,12 @@ from .store import Store
 class Question(BaseModel):
     question: str = Field(min_length=5, max_length=6000)
     max_steps: int | None = Field(default=None, ge=1)
+    model: str | None = None
+    reasoning_effort: str | None = None
+
+
+class SessionQuestion(BaseModel):
+    question: str = Field(min_length=2, max_length=6000)
 
 
 def create_app(settings=None):
@@ -71,6 +78,11 @@ def create_app(settings=None):
                 "key_configured": bool(settings.api_key), "indexing": index_busy,
                 "stats": store.stats(), "issues": store.source_issues()}
 
+    @app.get("/api/models")
+    def models():
+        return {'models': settings.model_profiles(), 'default_model': settings.model,
+                'default_reasoning_effort': settings.reasoning_effort}
+
     @app.post("/api/index")
     async def index():
         nonlocal index_busy
@@ -100,10 +112,15 @@ def create_app(settings=None):
             raise HTTPException(409, "原型一次处理一个任务，请等待当前任务完成")
         if not store.stats()["passages"]:
             raise HTTPException(409, "请先点击“更新资料索引”")
-        if not settings.api_url:
-            raise HTTPException(409, "请先配置 .env 中的 GLM_API_URL")
+        try:
+            run_settings = settings.for_model(body.model, body.reasoning_effort)
+        except ValueError as exc:
+            raise HTTPException(400, str(exc)) from None
+        if not run_settings.api_url or not run_settings.api_key:
+            raise HTTPException(409, "所选模型尚未配置 API Key 或 API URL")
         run_id = store.create_run("analysis", body.question.strip())
-        launch(run_id, TaskModelingAgent(settings, store).run(run_id, body.question.strip(), body.max_steps))
+        store.trace(run_id, 'config', f"本次使用模型 {run_settings.model}，推理强度 {run_settings.reasoning_effort}")
+        launch(run_id, TaskModelingAgent(run_settings, store).run(run_id, body.question.strip(), body.max_steps))
         return {"id": run_id}
 
     @app.get("/api/runs")
@@ -176,6 +193,51 @@ def create_app(settings=None):
         if not store.get_run(run_id, include_trace=False):
             raise HTTPException(404, '分析记录不存在')
         return store.task_model_versions(run_id)
+
+    @app.get("/api/model-spaces")
+    def model_spaces():
+        return store.model_spaces()
+
+    @app.get("/api/model-spaces/{space_id}")
+    def model_space(space_id: str):
+        space = store.model_space(space_id)
+        if not space:
+            raise HTTPException(404, '模型空间不存在')
+        return space
+
+    @app.post("/api/model-spaces/{space_id}/sessions")
+    async def create_session(space_id: str):
+        if index_busy or jobs:
+            raise HTTPException(409, '请等待当前任务结束后再启动会话')
+        if not settings.api_url:
+            raise HTTPException(409, '请先配置 .env 中的 GLM_API_URL')
+        try:
+            session_id = store.create_agent_session(space_id)
+        except ValueError as exc:
+            raise HTTPException(404, str(exc)) from None
+        return {'id': session_id, 'model_space_id': space_id}
+
+    @app.get("/api/sessions/{session_id}")
+    def session(session_id: str):
+        item = store.agent_session(session_id)
+        if not item:
+            raise HTTPException(404, '会话不存在')
+        space = store.model_space(item['model_space_id'])
+        return {**item, 'model_space': {key: space[key] for key in ('id', 'title', 'version', 'objective', 'scope', 'status')},
+                'messages': store.session_messages(session_id)}
+
+    @app.post("/api/sessions/{session_id}/messages")
+    async def session_message(session_id: str, body: SessionQuestion):
+        if index_busy or jobs:
+            raise HTTPException(409, '请等待当前任务结束后再发送会话问题')
+        if not settings.api_url:
+            raise HTTPException(409, '请先配置 .env 中的 GLM_API_URL')
+        if not store.agent_session(session_id):
+            raise HTTPException(404, '会话不存在')
+        run_id = store.create_run('session_message', body.question.strip())
+        store.add_session_message(session_id, 'user', body.question.strip(), run_id)
+        launch(run_id, ModelSessionAgent(settings, store, session_id).run(run_id, body.question.strip()))
+        return {'run_id': run_id}
 
     @app.get("/api/knowledge-links")
     def knowledge_links(q: str = ""):

@@ -25,7 +25,8 @@
       <nav class="primary-nav" aria-label="主导航">
         <button class="nav active" data-tab="workspace"><span class="nav-index">01</span><span class="nav-icon">↗</span><span>问题与建模</span><b id="active-run-dot" class="nav-live hidden">●</b></button>
         <button class="nav" data-tab="knowledge"><span class="nav-index">02</span><span class="nav-icon">◇</span><span>可复用知识</span><b id="knowledge-count">0</b></button>
-        <button class="nav" data-tab="sources"><span class="nav-index">03</span><span class="nav-icon">▤</span><span>资料覆盖</span></button>
+        <button class="nav" data-tab="model-spaces"><span class="nav-index">03</span><span class="nav-icon">◎</span><span>模型会话</span></button>
+        <button class="nav" data-tab="sources"><span class="nav-index">04</span><span class="nav-icon">▤</span><span>资料覆盖</span></button>
       </nav>
 
       <div class="sidebar-label history-label">最近的问题</div>
@@ -60,6 +61,7 @@
         <form id="question-form" class="question-card">
           <div class="composer-head"><div><span class="section-kicker">01 / 定义任务</span><label for="question">你想解决什么业务问题？</label></div><span class="composer-hint">支持中文自然语言问题</span></div>
           <textarea id="question" rows="4" maxlength="6000" placeholder="例如：收到直流站的日志后，如何判断各系统是否存在异常？请从现有资料建立最小判断模型，并说明还缺少哪些信息。" required></textarea>
+          <div class="model-controls"><label><span>模型</span><select id="model-select"></select></label><label><span>推理强度</span><select id="reasoning-select"></select></label><span id="model-hint" class="scope">正在读取模型配置…</span></div>
           <div class="question-footer"><span id="corpus-summary">正在读取资料状态…</span><button class="primary" id="ask-button" type="submit"><span>开始构建模型</span><b>↗</b></button></div>
         </form>
 
@@ -88,7 +90,10 @@
 
             <aside class="panel activity-panel">
               <div class="panel-heading"><span class="small-label">03 / 建模过程</span><span class="activity-live"><span class="pulse"></span>LIVE</span></div>
-              <div id="live-progress" class="live-progress hidden"></div>
+              <details id="live-output" class="live-output hidden" open>
+                <summary><span>模型实时输出</span><span id="live-output-state">输出中</span></summary>
+                <div id="live-progress" class="live-progress" aria-live="polite"></div>
+              </details>
               <div id="trace" class="trace"></div>
             </aside>
           </div>
@@ -111,12 +116,22 @@
         <div class="section-heading"><h2>需要补充识别或核读的资料</h2><span>部分提取 ≠ 完整理解</span></div><p class="muted">扫描图纸、图片和复杂表格仍需要单独核读，系统不会将它们默认为已理解。</p><div id="source-issues"></div>
       </section>
 
+      <section id="model-spaces" class="tab">
+        <div class="page-heading"><span class="eyebrow">READ-ONLY MODEL SESSIONS</span><h1>模型会话</h1><p>选择一个已完成的任务模型，启动只读 Agent 会话。会话不会修改或发布模型。</p></div>
+        <div id="model-space-list" class="knowledge-grid"></div>
+        <article id="session-panel" class="panel session-panel hidden">
+          <div class="panel-heading"><div><span class="small-label">MODEL SESSION</span><p id="session-title" class="panel-subtitle"></p></div><span id="session-readonly" class="pill reviewed">只读知识增强</span></div>
+          <div id="session-messages" class="session-messages"></div>
+          <form id="session-form" class="session-form"><textarea id="session-question" rows="3" maxlength="6000" placeholder="针对当前模型提问，例如：这批日志是否命中了模型中的异常判据？" required></textarea><div><span id="session-model-scope" class="scope"></span><button class="primary" type="submit">发送问题 <b>↗</b></button></div></form>
+        </article>
+      </section>
+
       <footer>问题决定建模范围，证据约束知识边界。</footer>
     </main>
   </div>
 
   <dialog id="evidence-dialog"><div class="dialog-heading"><div><span class="section-kicker">SOURCE EVIDENCE</span><h2>原文依据</h2></div><button id="close-dialog" aria-label="关闭">✕</button></div><div id="evidence-content"></div></dialog>
-  <dialog id="reset-dialog" class="reset-dialog"><div class="dialog-heading"><div><span class="section-kicker">RESET WORKSPACE</span><h2>重新开始</h2></div><button id="close-reset" aria-label="关闭">✕</button></div><p>这会清空当前工作区中已经积累的索引、问题记录、任务级模型、可复用知识和关系验证。</p><p class="reset-preserve"><strong>原始资料文件会保留。</strong>清空后需要重新点击“更新资料索引”，再开始提出问题。</p><div class="dialog-actions"><button id="cancel-reset" class="subtle">取消</button><button id="confirm-reset" class="destructive">清空并重新开始</button></div></dialog>
+  <dialog id="reset-dialog" class="reset-dialog"><div class="dialog-heading"><div><span class="section-kicker">RESET WORKSPACE</span><h2>重新开始</h2></div><button id="close-reset" aria-label="关闭">✕</button></div><p>这会清空当前工作区中的问题记录、任务级模型、可复用知识和关系验证。</p><p class="reset-preserve"><strong>原始资料和资料索引会保留。</strong>清空后可以直接开始新的问题。</p><div class="dialog-actions"><button id="cancel-reset" class="subtle">取消</button><button id="confirm-reset" class="destructive">清空并重新开始</button></div></dialog>
   <script src="/static/models.js"></script>
   <script src="/static/app.js"></script>
 </body>

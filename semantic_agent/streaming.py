@@ -116,22 +116,47 @@ class StreamReporter:
                     self.publish("answer", {"text": answer, "stage": "draft", "step": self.step})
                 return
             elif content:
-                self.publish("progress", {"text": content[:4000], "step": self.step})
+                self.publish("progress", {"text": content[:4000], "step": self.step, "channel": "model"})
             for call in message.get("tool_calls") or []:
                 fn = call.get("function", {})
-                if fn.get("name") in {"submit_result", "submit_model_answer"}:
+                name = fn.get("name") or "未知工具"
+                arguments = fn.get("arguments", "")
+                if name in {"submit_result", "submit_model_answer"}:
                     answer = json_string_prefix(fn.get("arguments", ""), ("answer",))
                     if answer:
                         self.publish("answer", {"text": answer, "stage": "draft", "step": self.step})
-                    break
-                elif fn.get('name') in {'propose_model_update', 'induce_concepts'}:
-                    summary = json_string_prefix(fn.get('arguments', ''), ('summary',))
-                    if summary:
-                        self.publish('progress', {'text': summary, 'step': self.step})
-                elif fn.get('name') == 'initialize_task':
-                    objective = json_string_prefix(fn.get('arguments', ''), ('objective',))
-                    if objective:
-                        self.publish('progress', {'text': '建立任务：' + objective, 'step': self.step})
+                    self.publish('progress', {'text': '正在整理模型回答', 'step': self.step, 'channel': 'tool'})
+                    continue
+                summary = self.tool_summary(name, arguments)
+                if summary:
+                    self.publish('progress', {'text': summary, 'step': self.step, 'channel': 'tool', 'tool': name})
+
+    @staticmethod
+    def tool_summary(name, arguments):
+        """Turn streamed tool arguments into a small, user-readable status line."""
+        if name in {'propose_model_update', 'induce_concepts'}:
+            summary = json_string_prefix(arguments, ('summary',))
+            return ('更新任务模型：' if name == 'propose_model_update' else '归纳概念层：') + summary if summary else '正在更新任务模型'
+        if name == 'initialize_task':
+            objective = json_string_prefix(arguments, ('objective',))
+            return '建立任务：' + objective if objective else '正在建立任务规格'
+        if name == 'search_sources':
+            query = json_string_prefix(arguments, ('query',))
+            return '检索资料：' + query if query else '正在检索资料'
+        if name == 'search_knowledge':
+            query = json_string_prefix(arguments, ('query',))
+            return '检索已有知识：' + query if query else '检索已有知识'
+        if name == 'search_task_graph':
+            query = json_string_prefix(arguments, ('query',))
+            return '检索当前语义图：' + query if query else '检索当前语义图'
+        if name == 'read_passages':
+            ids = json_string_prefix(arguments, ('ids',))
+            if isinstance(ids, list):
+                return '阅读原文片段：' + '、'.join(str(x) for x in ids[:4])
+            return '正在阅读原文片段'
+        if name == 'infer_model':
+            return '基于复核通过的模型执行推理'
+        return None
 
     def publish(self, kind, data):
         if self.last.get(kind) != data:

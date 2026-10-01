@@ -48,7 +48,7 @@ class TaskSpec(Strict):
 
 class Node(Strict):
     id: str
-    kind: Literal['entity', 'event', 'concept']
+    kind: Literal['entity', 'event', 'concept'] = Field(description='entity/event 属于实例层；concept 属于概念层')
     label: str
     scope: str
     description: str = ''
@@ -73,14 +73,14 @@ class Fact(Strict):
     atom: Atom
     evidence: list[Evidence] = Field(min_length=1)
     edge_kind: EdgeKind = 'other'
-    relation_concept_ids: list[str] = Field(default_factory=list, description='未复核的检索线索；正式关系概念化请提交 concept_links')
+    relation_concept_ids: list[str] = Field(default_factory=list, description='未复核的检索线索；正式关系概念化请提交 mapping_layer 的 concept_links')
 
 
 class ConceptLink(Strict):
     id: str
     element_id: str = Field(description='role=node 时为实体/事件 ID；role=relation 时为事实边 ID')
     concept_id: str
-    role: Literal['node', 'relation']
+    role: Literal['node', 'relation'] = Field(description='mapping_layer 中的实例到概念映射；node 对应实体/事件，relation 对应实例事实边')
     evidence: list[Evidence] = Field(min_length=1)
 
 
@@ -163,6 +163,37 @@ class ModelReview(Strict):
 
 
 FIELDS = ('nodes', 'facts', 'concept_links', 'rules', 'bindings', 'gap_resolutions')
+
+
+def sync_model_layers(model):
+    """Expose explicit concept, instance, and mapping layers.
+
+    The original snapshot fields remain as compatibility views for existing
+    inference and historical runs.  The layered views are derived from those
+    immutable elements, so they cannot drift apart.
+    """
+    result = copy.deepcopy(model)
+    nodes = result.get('nodes', [])
+    concepts = [n for n in nodes if n.get('kind') == 'concept']
+    instances = [n for n in nodes if n.get('kind') in {'entity', 'event'}]
+    links = result.get('concept_links', [])
+    result['layer_schema_version'] = 1
+    result['concept_layer'] = {
+        'nodes': concepts,
+        'description': '描述业务类别、状态和关系类别的概念层；不直接代表现场发生的事实。',
+    }
+    result['instance_layer'] = {
+        'nodes': instances,
+        'facts': copy.deepcopy(result.get('facts', [])),
+        'rules': copy.deepcopy(result.get('rules', [])),
+        'description': '描述站点、装置、事件和带上下文的实例事实；规则在此层上重放。',
+    }
+    result['mapping_layer'] = {
+        'node_to_concept': [copy.deepcopy(x) for x in links if x.get('role') == 'node'],
+        'relation_to_concept': [copy.deepcopy(x) for x in links if x.get('role') == 'relation'],
+        'description': '连接实例层元素与概念层，不把概念映射本身当作现场事实。',
+    }
+    return result
 
 
 def variables(atom):
@@ -268,10 +299,11 @@ def check_delta(delta, model, sources):
 
 
 def empty_model(task):
-    return {'schema_version': 2, 'graph_schema_version': 1, 'version': 0, 'task': task.model_dump(),
+    model = {'schema_version': 2, 'graph_schema_version': 1, 'version': 0, 'task': task.model_dump(),
             **{f: [] for f in FIELDS}, 'gaps': [dict(g.model_dump(), status='open') for g in task.gaps],
             'graph': {'nodes': [], 'edges': [], 'concept_links': [], 'paths': []},
             'inference': None, 'validation': {}, 'phase': 'planning'}
+    return sync_model_layers(model)
 
 
 def build_graph(model):
@@ -287,11 +319,24 @@ def build_graph(model):
         edges.append({'id': fact['id'], 'fact_id': fact['id'], 'source_id': a['subject'],
                       'predicate': a['predicate'], 'target_id': a['object'], 'context': a['context'],
                       'negative': a['negative'], 'kind': edge_kind(a, node_map),
+                      'layer': 'instance',
                       'statement': fact['statement'], 'evidence': fact['evidence'],
                       'concept_ids': [l['concept_id'] for l in links if l['element_id'] == fact['id']
                                       and l['role'] == 'relation' and l.get('status') == 'supported'],
                       'status': fact.get('status', 'candidate'), 'review': fact.get('review')})
-    return {'nodes': nodes, 'edges': edges, 'concept_links': links, 'paths': []}
+    return {
+        'nodes': nodes,
+        'concept_nodes': [n for n in nodes if n.get('kind') == 'concept'],
+        'instance_nodes': [n for n in nodes if n.get('kind') in {'entity', 'event'}],
+        'edges': edges,
+        'instance_edges': edges,
+        'concept_links': links,
+        'mapping_layer': {
+            'node_to_concept': [l for l in links if l.get('role') == 'node'],
+            'relation_to_concept': [l for l in links if l.get('role') == 'relation'],
+        },
+        'paths': []
+    }
 
 
 def apply_delta(model, delta, review, checks):
@@ -351,4 +396,4 @@ def apply_delta(model, delta, review, checks):
     result['phase'] = 'modeled'
     result['inference'] = None
     result['graph'] = build_graph(result)
-    return result
+    return sync_model_layers(result)

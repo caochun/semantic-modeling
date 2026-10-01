@@ -1,7 +1,9 @@
 const $ = selector => document.querySelector(selector);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let currentRun=null, pollTimer=null, eventSource=null, elapsedTimer=null;
-let liveRun=null, eventCursor=0, traceIds=new Set(), viewVersion=0;
+let liveRun=null, eventCursor=0, traceIds=new Set(), liveOutputKeys=new Set(), viewVersion=0;
+let currentSession=null, sessionPoll=null;
+let modelProfiles=[];
 const labels = {running:'进行中',completed:'已完成',failed:'未完成',cancelled:'已停止',interrupted:'已中断',reviewed:'模型复核通过',candidate:'候选知识',withdrawn:'已撤回',indexed:'已提取',partial:'部分提取',needs_ocr:'待 OCR',error:'未提取'};
 
 async function api(path, options={}) {
@@ -10,14 +12,38 @@ async function api(path, options={}) {
   if (!response.ok) throw new Error(typeof data.detail === 'string' ? data.detail : '请求失败，请检查输入后重试');
   return data;
 }
+function updateReasoningOptions() {
+  const model=$('#model-select')?.value;
+  const profile=modelProfiles.find(x=>x.id===model);
+  const select=$('#reasoning-select');
+  if(!select||!profile)return;
+  const effortLabels={on:'开启思考',off:'关闭思考',low:'low · 较快',high:'high · 深度',max:'max · 最强'};
+  select.innerHTML=profile.efforts.map(x=>`<option value="${esc(x)}">${esc(effortLabels[x]||x)}</option>`).join('');
+  select.value=profile.default_effort||profile.efforts[0];
+  $('#model-hint').textContent=profile.configured?`${profile.provider} · 本次任务使用此模型配置`:`${profile.provider} 未配置 API Key`;
+  $('#ask-button').disabled=!profile.configured;
+}
+async function refreshModels() {
+  try {
+    const data=await api('/api/models');
+    modelProfiles=data.models||[];
+    const select=$('#model-select');
+    if(!select)return;
+    select.innerHTML=modelProfiles.map(x=>`<option value="${esc(x.id)}" ${x.configured?'':'disabled'}>${esc(x.id)}${x.configured?'':'（未配置）'}</option>`).join('');
+    const preferred=modelProfiles.find(x=>x.id===data.default_model&&x.configured)||modelProfiles.find(x=>x.configured);
+    if(preferred)select.value=preferred.id;
+    updateReasoningOptions();
+  }catch(e){$('#model-hint').textContent='模型配置读取失败：'+e.message;}
+}
 function notice(message='') { $('#notice').textContent=message; $('#notice').classList.toggle('hidden', !message); }
 function tab(name) {
   document.querySelectorAll('.tab').forEach(el=>el.classList.toggle('active',el.id===name));
   document.querySelectorAll('.nav').forEach(el=>el.classList.toggle('active',el.dataset.tab===name));
-  const context={workspace:'问题与建模',knowledge:'可复用知识',sources:'资料覆盖'}[name]||name;
+  const context={workspace:'问题与建模',knowledge:'可复用知识','model-spaces':'模型会话',sources:'资料覆盖'}[name]||name;
   const contextNode=$('#topbar-context');
   if(contextNode)contextNode.textContent=context;
   if(name==='knowledge') selectMemoryView(memoryView);
+  if(name==='model-spaces') refreshModelSpaces();
   if(name==='sources') refreshStatus();
 }
 function inline(text) {
@@ -106,20 +132,42 @@ function appendTrace(item) {
   if(follow)list.scrollTop=list.scrollHeight;
   if(liveRun?.status==='running') {
     showPhase(item.message);
-    if(item.kind==='model'||item.kind==='review') {
-      $('#live-progress').textContent='';$('#live-progress').classList.add('hidden');
-    }
     if(item.kind==='review'&&liveRun.stream?.answer)$('#answer-state').textContent='草稿已生成 · 正在核对证据';
   }
 }
-function showStream(kind, data) {
+function clearLiveOutput() {
+  liveOutputKeys=new Set();
+  $('#live-progress').textContent='';
+  $('#live-output').classList.add('hidden');
+  $('#live-output').open=true;
+  $('#live-output-state').textContent='输出中';
+}
+function appendLiveOutput(data, seq) {
+  if(!data?.text)return;
+  const key=String(seq??`${data.channel||'model'}|${data.step||''}|${data.text}`);
+  if(liveOutputKeys.has(key))return;
+  liveOutputKeys.add(key);
+  const item=document.createElement('div');
+  const channel=data.channel==='tool'?'工具调用':'模型公开输出';
+  item.className=`live-output-item ${data.channel==='tool'?'tool':'model'}`;
+  item.innerHTML=`<span class="live-output-meta">第 ${esc(data.step??'')} 轮 · ${channel}</span>${esc(data.text)}`;
+  $('#live-progress').appendChild(item);
+  $('#live-progress').scrollTop=$('#live-progress').scrollHeight;
+}
+function showStream(kind, data, seq, record=true) {
   if(!liveRun||liveRun.status!=='running')return;
   liveRun.stream[kind]=data;
+  if(record) {
+    liveRun.stream_history=liveRun.stream_history||[];
+    if(!liveRun.stream_history.some(x=>x.seq===seq && seq!==undefined))liveRun.stream_history.push({seq,kind,data});
+  }
   if(kind==='progress') {
-    $('#live-progress').textContent=data.text;
-    $('#live-progress').classList.remove('hidden');
+    appendLiveOutput(data,seq);
+    $('#live-output').classList.remove('hidden');
+    $('#live-output').open=true;
+    $('#live-output-state').textContent='输出中';
   } else if(kind==='answer') {
-    $('#live-progress').classList.add('hidden');
+    $('#live-output-state').textContent=data.stage==='review'?'复核回答':'生成回答';
     $('#answer').innerHTML=markdown(data.text);
     $('#answer').classList.add('streaming');
     $('#answer-state').textContent=data.stage==='review'?'复核修订中 · 尚未完成':'草稿生成中 · 待复核';
@@ -129,7 +177,18 @@ function showStream(kind, data) {
 function renderResult(run) {
   loadLocalModel(run);
   $('#answer').classList.remove('streaming');
-  $('#live-progress').classList.add('hidden');
+  clearLiveOutput();
+  const history=(liveRun?.stream_history||[]).filter(x=>x.kind==='progress');
+  for(const event of history)appendLiveOutput(event.data,event.seq);
+  const streamedProgress=liveRun?.stream?.progress;
+  if(history.length || streamedProgress?.text) {
+    if(!history.length)appendLiveOutput(streamedProgress);
+    $('#live-output').classList.remove('hidden');
+    $('#live-output').open=false;
+    $('#live-output-state').textContent='过程输出';
+  } else {
+    $('#live-output').classList.add('hidden');
+  }
   if(run.result&&run.kind==='analysis') {
     const r=run.result;
     $('#answer').innerHTML=markdown(r.answer);
@@ -157,21 +216,26 @@ async function loadRun(id) {
   traceIds=new Set();liveRun=null;notice();modelRequest++;
   $('#local-model-panel').classList.add('hidden');$('#local-model').textContent='';$('#local-model-state').textContent='';
   $('#run-area').classList.remove('hidden');tab('workspace');
-  for(const selector of ['#usage','#unknowns','#changes','#answer-sources','#reuse-count','#trace','#step-count','#answer-state','#live-progress'])$(selector).textContent='';
-  $('#live-progress').classList.add('hidden');$('#live-status').classList.remove('hidden');
+  for(const selector of ['#usage','#unknowns','#changes','#answer-sources','#reuse-count','#trace','#step-count','#answer-state'])$(selector).textContent='';
+  clearLiveOutput();
+  $('#live-status').classList.remove('hidden');
   $('#answer').classList.remove('streaming');
   $('#answer').innerHTML='<div class="waiting"><span class="pulse"></span>正在读取本次分析…</div>';
   showPhase('正在连接…');$('#elapsed').textContent='';
   try {
     const run=await api('/api/runs/'+id);
     if(version!==viewVersion)return;
-    liveRun=run;liveRun.stream=run.stream||{};eventCursor=run.event_cursor||0;
+    liveRun=run;liveRun.stream=run.stream||{};liveRun.stream_history=run.stream_history||[];eventCursor=run.event_cursor||0;
     runHeader(run);run.trace.forEach(appendTrace);
     if(run.status==='running') {
       loadLocalModel(run);
       $('#answer').innerHTML='<div class="waiting"><span class="pulse"></span>正在查找依据，进展会实时显示。</div>';
       $('#changes').innerHTML='<p class="muted">知识复核和保存情况会显示在工作过程中。</p>';
-      for(const kind of ['progress','answer'])if(run.stream[kind])showStream(kind,run.stream[kind]);
+      if(liveRun.stream_history.length) {
+        for(const event of liveRun.stream_history)showStream(event.kind,event.data,event.seq,false);
+      } else {
+        for(const kind of ['progress','answer'])if(run.stream[kind])showStream(kind,run.stream[kind],undefined,false);
+      }
       elapsedTimer=setInterval(updateElapsed,1000);
       connectStream(id,version);
     } else renderResult(run);
@@ -205,13 +269,13 @@ function connectStream(id,version) {
         $('#local-model-state').innerHTML=taskModelStatus(data.model);
         $('#local-model').innerHTML=taskModelView(data.model);
       }
-    } else showStream(kind,data);
+    } else showStream(kind,data,seq);
   });
   stream.addEventListener('heartbeat',()=>{if(valid())updateElapsed();});
   stream.addEventListener('done',async event=>{
     if(!valid())return;
     const run=JSON.parse(event.data);
-    run.stream=liveRun.stream;liveRun=run;
+    run.stream=liveRun.stream;run.stream_history=liveRun.stream_history;liveRun=run;
     stopStream();runHeader(run);renderResult(run);
     try {await refreshStatus();await refreshHistory();}catch(e){notice(e.message);}
   });
@@ -255,6 +319,48 @@ function knowledgeCard(k) {
     <div class="actions"><button data-run="${esc(k.run_id)}">查看来源问题</button><button data-knowledge-action="${k.status==='withdrawn'?'restore':'withdraw'}" data-id="${esc(k.id)}">${k.status==='withdrawn'?'恢复为候选':'撤回'}</button></div>
   </article>`;
 }
+function modelSpaceCard(space) {
+  return `<article class="knowledge-card reusable-card"><div class="knowledge-card-head"><span class="pill reviewed">只读可用</span><span class="knowledge-type">模型 v${esc(space.version)}</span></div><h3>${esc(space.title)}</h3><p class="knowledge-statement">${esc(space.objective)}</p><p class="scope">适用范围：${esc(space.scope)}</p><button class="primary" data-model-space="${esc(space.id)}">启动只读 Agent 会话 <b>↗</b></button></article>`;
+}
+async function refreshModelSpaces() {
+  try {
+    const spaces=await api('/api/model-spaces');
+    $('#model-space-list').innerHTML=spaces.length?spaces.map(modelSpaceCard).join(''):'<div class="empty">暂无已完成的模型空间。完成一次任务级模型分析后，这里会出现可启动的只读会话。</div>';
+  }catch(e){notice(e.message);}
+}
+function renderSessionMessages(messages) {
+  const list=$('#session-messages');
+  list.innerHTML=messages.length?messages.map(m=>`<div class="session-message ${m.role==='user'?'user':'assistant'}"><span class="session-role">${m.role==='user'?'你':'只读模型 Agent'}</span>${m.role==='assistant'?markdown(m.content):esc(m.content)}</div>`).join(''):'<p class="muted">会话已绑定模型。你可以继续提问，模型不会被修改。</p>';
+  list.scrollTop=list.scrollHeight;
+}
+async function openModelSession(spaceId) {
+  try {
+    const session=await api(`/api/model-spaces/${encodeURIComponent(spaceId)}/sessions`,{method:'POST',body:'{}'});
+    currentSession=session.id;
+    const data=await api(`/api/sessions/${encodeURIComponent(currentSession)}`);
+    $('#session-panel').classList.remove('hidden');
+    $('#session-title').textContent=`${data.model_space.title} · v${data.model_space.version}`;
+    $('#session-model-scope').textContent=`只读模型范围：${data.model_space.scope}`;
+    renderSessionMessages(data.messages||[]);
+    $('#session-question').focus();
+  }catch(e){notice(e.message);}
+}
+async function pollSessionRun(runId) {
+  clearTimeout(sessionPoll);
+  try {
+    const run=await api('/api/runs/'+encodeURIComponent(runId));
+    if(run.status==='running') {
+      $('#session-model-scope').textContent='Agent 正在读取固定模型并生成回答…';
+      sessionPoll=setTimeout(()=>pollSessionRun(runId),900);
+      return;
+    }
+    if(run.result?.answer) {
+      const data=await api(`/api/sessions/${encodeURIComponent(currentSession)}`);
+      renderSessionMessages(data.messages||[]);
+      $('#session-model-scope').textContent=`只读模型范围：${data.model_space.scope}`;
+    } else if(run.error) notice(run.error);
+  }catch(e){notice(e.message);}
+}
 async function loadKnowledge() {
   if(memoryView==='links')return loadLinks();
   try {
@@ -277,6 +383,7 @@ document.addEventListener('click',async event=>{
     if(button.dataset.example){$('#question').value=button.dataset.example;$('#question').focus();}
     if(button.dataset.passage)await evidence(button.dataset.passage);
     if(button.dataset.run)await loadRun(button.dataset.run);
+    if(button.dataset.modelSpace)await openModelSession(button.dataset.modelSpace);
     if(button.dataset.openKnowledge){memoryView='items';tab('knowledge');await loadKnowledge();document.getElementById(button.dataset.openKnowledge)?.scrollIntoView({behavior:'smooth',block:'center'});}
     if(button.dataset.knowledgeAction){await api(`/api/knowledge/${button.dataset.id}/${button.dataset.knowledgeAction}`,{method:'POST'});await loadKnowledge();await refreshStatus();}
   }catch(e){notice(e.message);}
@@ -285,7 +392,24 @@ $('#question-form').addEventListener('submit',async event=>{
   event.preventDefault();notice();const question=$('#question').value.trim();
   if(question.length<5){notice('请补充一个具体的业务问题。');return;}
   $('#ask-button').disabled=true;
-  try {const r=await api('/api/runs',{method:'POST',body:JSON.stringify({question})});await refreshHistory();await loadRun(r.id);}catch(e){notice(e.message);$('#ask-button').disabled=false;}
+  try {const r=await api('/api/runs',{method:'POST',body:JSON.stringify({question,model:$('#model-select').value,reasoning_effort:$('#reasoning-select').value})});await refreshHistory();await loadRun(r.id);}catch(e){notice(e.message);$('#ask-button').disabled=false;}
+});
+$('#model-select').addEventListener('change',updateReasoningOptions);
+$('#session-form').addEventListener('submit',async event=>{
+  event.preventDefault();
+  if(!currentSession)return;
+  const input=$('#session-question'), question=input.value.trim();
+  if(question.length<2)return;
+  const button=event.submitter||$('#session-form .primary');
+  button.disabled=true; input.disabled=true;
+  try {
+    const result=await api(`/api/sessions/${encodeURIComponent(currentSession)}/messages`,{method:'POST',body:JSON.stringify({question})});
+    input.value='';
+    const data=await api(`/api/sessions/${encodeURIComponent(currentSession)}`);
+    renderSessionMessages(data.messages||[]);
+    pollSessionRun(result.run_id);
+  }catch(e){notice(e.message);}
+  finally {button.disabled=false;input.disabled=false;}
 });
 $('#index-button').addEventListener('click',async()=>{try{notice();const r=await api('/api/index',{method:'POST',body:'{}'});await loadRun(r.id);}catch(e){tab('workspace');notice(e.message);}});
 $('#cancel-button').addEventListener('click',async()=>{try{await api(`/api/runs/${currentRun}/cancel`,{method:'POST'});$('#cancel-button').disabled=true;showPhase('正在停止分析…');}catch(e){notice(e.message);}});
@@ -310,4 +434,4 @@ $('#confirm-reset').addEventListener('click',async()=>{
     notice(e.message);
   }
 });
-(async()=>{await refreshStatus();const runs=await refreshHistory();const active=runs.find(r=>r.status==='running');if(active)await loadRun(active.id);})();
+(async()=>{await refreshModels();await refreshStatus();const runs=await refreshHistory();const active=runs.find(r=>r.status==='running');if(active)await loadRun(active.id);})();

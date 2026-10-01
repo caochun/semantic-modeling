@@ -266,6 +266,7 @@ def test_reporter_streams_only_answer_field_and_refresh_snapshot(workspace):
     later=store.events(rid,cursor)
     assert [e['data']['text'] for e in later if e['kind']=='answer']==['正在输出回答。','修订后']
     assert store.get_run(rid)['stream']['answer']['stage']=='review'
+    assert [x['kind'] for x in store.get_run(rid)['stream_history'] if x['kind']=='answer']==['answer','answer','answer']
     assert 'PRIVATE' not in json.dumps(store.get_run(rid))
 
 
@@ -320,6 +321,7 @@ def test_reset_workspace_clears_application_state_and_preserves_raw_sources(work
     store.save_task_model(rid,{'version':1,'phase':'planning'})
     store.trace(rid,'start','开始任务')
     store.event(rid,'progress',{'text':'正在建模'})
+    before_passages=store.stats()['passages']
     with TestClient(create_app(settings)) as client:
         active=store.create_run('analysis','仍在运行')
         assert client.post('/api/reset').status_code==409
@@ -327,11 +329,13 @@ def test_reset_workspace_clears_application_state_and_preserves_raw_sources(work
         response=client.post('/api/reset')
         assert response.status_code==200
         assert response.json()['reset'] is True
-    assert store.stats()=={'documents':[],'passages':0,'knowledge':0}
+    assert store.stats()['documents']==[{'status':'indexed','count':1}]
+    assert store.stats()['passages']==before_passages
+    assert store.stats()['knowledge']==0
     assert store.recent_runs()==[]
     assert store.task_model(rid) is None
     assert (settings.doc_dir/'姑苏站规程.md').is_file()
-    assert not store.search('系统切换')
+    assert store.search('系统切换')
 
 
 def test_cancellation_stops_stream_and_does_not_save_knowledge(workspace):

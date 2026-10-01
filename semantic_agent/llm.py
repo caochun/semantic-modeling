@@ -39,6 +39,8 @@ class GLMClient:
                    "stream": True, "stream_options": {"include_usage": True}}
         if settings.max_output_tokens:
             payload["max_tokens"] = settings.max_output_tokens
+        if settings.thinking_enabled is not None:
+            payload["thinking"] = {"type": "enabled" if settings.thinking_enabled else "disabled"}
         if settings.reasoning_effort:
             payload["reasoning_effort"] = settings.reasoning_effort
         if tools:

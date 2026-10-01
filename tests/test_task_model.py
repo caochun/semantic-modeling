@@ -6,6 +6,7 @@ from fastapi.testclient import TestClient
 from semantic_agent.app import create_app
 from semantic_agent.inference import infer
 from semantic_agent.task_agent import TaskModelingAgent
+from semantic_agent.session_agent import ModelSessionAgent
 from semantic_agent.task_model import (
     Assessment, Atom, Binding, ConceptLink, Evidence, Fact, Gap, Goal, ModelDelta,
     ModelReview, Node, PathQuery, Rule, TaskSpec, apply_delta, check_delta, empty_model,
@@ -41,6 +42,16 @@ def test_task_model_has_evidence_backed_replayable_inference():
     report = infer(model)
     assert report['results'][0]['status'] == 'supported'
     assert report['proofs'] and report['validation']['valid']
+
+
+def test_task_model_exposes_explicit_concept_instance_and_mapping_layers():
+    model = simple_model()
+    assert model['layer_schema_version'] == 1
+    assert {n['id'] for n in model['concept_layer']['nodes']} == {'standby'}
+    assert {n['id'] for n in model['instance_layer']['nodes']} == {'system'}
+    assert [x['id'] for x in model['instance_layer']['facts']] == ['fact.standby']
+    assert model['mapping_layer']['node_to_concept'] == []
+    assert model['mapping_layer']['relation_to_concept'] == []
 
 
 def test_unknown_is_not_treated_as_contradiction():
@@ -178,6 +189,45 @@ def test_task_model_versions_keep_planning_and_inference_snapshots(workspace):
     store.save_task_model(run_id, model)
     versions = store.task_model_versions(run_id)
     assert [(x['version'], x['phase']) for x in versions] == [(0, 'planning'), (1, 'modeled')]
+
+
+def test_completed_task_model_can_start_read_only_model_session(workspace):
+    _, store = workspace
+    model = simple_model()
+    model['phase'] = 'answered'
+    run_id = store.create_run('analysis', '只读模型空间')
+    store.save_task_model(run_id, model)
+    space_id, created = store.create_model_space(run_id)
+    assert created and store.model_space(space_id)['version'] == model['version']
+    session_id = store.create_agent_session(space_id)
+    store.add_session_message(session_id, 'user', '模型是否支持这个问题？')
+    session = store.agent_session(session_id)
+    assert session['model_space_id'] == space_id
+    assert store.session_messages(session_id)[0]['role'] == 'user'
+
+
+def test_read_only_model_session_does_not_write_model_or_knowledge(workspace):
+    settings, store = workspace
+    model = simple_model()
+    model['phase'] = 'answered'
+    run_id = store.create_run('analysis', '只读会话模型')
+    store.save_task_model(run_id, model)
+    space_id, _ = store.create_model_space(run_id)
+    session_id = store.create_agent_session(space_id)
+    store.add_session_message(session_id, 'user', '请解释当前模型的结论')
+
+    class SessionClient:
+        async def chat(self, messages, tools=None, *, review=False, on_delta=None):
+            content = '当前模型支持该结论，但本次只读会话不会修改模型。'
+            if on_delta:
+                await on_delta({'content': content})
+            return {'role': 'assistant', 'content': content}, {'total_tokens': 3}
+
+    message_run = store.create_run('session_message', '请解释当前模型的结论')
+    result = asyncio.run(ModelSessionAgent(settings, store, session_id, SessionClient()).run(message_run, '请解释当前模型的结论'))
+    assert result['read_only'] is True
+    assert store.task_model(run_id)['version'] == model['version']
+    assert store.knowledge() == []
 
 
 def test_task_model_api_exposes_snapshot_and_versions(workspace):
