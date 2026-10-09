@@ -1,0 +1,562 @@
+[
+  {
+    "id": "black_start/whole",
+    "verdict": "hold",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "uncertain",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_98d56bcdf0e49412/page16:34:686"
+    ],
+    "reason": "全部14条事实与3.1.1.1—3.1.2.13逐条对应；答案开头明确'按适用条件选择分支，不是将所有分支依次执行'，分支处理正确；顺序与原文编号一致。独立复答补充的2.2节内容（2.2.5.3可不待调度指令恢复站用电电源、2.1.4记录汇报要求）在扩展上下文中有依据，且候选未作矛盾表述，属补充而非冲突。",
+    "suggested_revision": "",
+    "provider_verdict": "pass",
+    "provider_checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "format_issues": {
+      "missing_required_checks": [],
+      "unknown_evidence_ids": [
+        "d_98d56bcdf0e49412/page16:34:686"
+      ]
+    }
+  },
+  {
+    "id": "black_start/external_available",
+    "verdict": "hold",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "uncertain",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_98d56bcdf0e49412/page16:34:686",
+      "d_98d56bcdf0e49412/page12:232:969"
+    ],
+    "reason": "聚焦题仅要求report/initial_state/external三条，候选覆盖且顺序正确；明确本情形不采用3.1.2.4/3.1.2.5路径（复答中体现，候选本身未误引）。无越权或无依据结论。",
+    "suggested_revision": "",
+    "provider_verdict": "pass",
+    "provider_checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "format_issues": {
+      "missing_required_checks": [],
+      "unknown_evidence_ids": [
+        "d_98d56bcdf0e49412/page12:232:969",
+        "d_98d56bcdf0e49412/page16:34:686"
+      ]
+    }
+  },
+  {
+    "id": "black_start/external_unavailable",
+    "verdict": "hold",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "uncertain",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_98d56bcdf0e49412/page16:34:686"
+    ],
+    "reason": "回答'不直接请求应急电源车'与原文3.1.2.5条件（'均不具备带电条件'）一致，分支判断正确；lead明确不混用两类条件。复答中'3.1.2.2、3.1.2.7'处'3.1.2.2'为笔误（应为仅3.1.2.7），但候选答案本身无误。",
+    "suggested_revision": "",
+    "provider_verdict": "pass",
+    "provider_checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "format_issues": {
+      "missing_required_checks": [],
+      "unknown_evidence_ids": [
+        "d_98d56bcdf0e49412/page16:34:686"
+      ]
+    }
+  },
+  {
+    "id": "black_start/both_unavailable",
+    "verdict": "hold",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "uncertain",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohabitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass",
+      "prohibitions_and_permissions": "uncertain"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_98d56bcdf0e49412/page16:34:686"
+    ],
+    "reason": "回答'联系当地供电公司请求应急电源车、恢复站用电400V系统'与3.1.2.5完全一致；tail正确声明文档未给出容量/接线/操作票，未补造。",
+    "suggested_revision": "",
+    "provider_verdict": "pass",
+    "provider_checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohabitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "format_issues": {
+      "missing_required_checks": [
+        "prohibitions_and_permissions"
+      ],
+      "unknown_evidence_ids": [
+        "d_98d56bcdf0e49412/page16:34:686"
+      ]
+    }
+  },
+  {
+    "id": "black_start/restore_checks",
+    "verdict": "hold",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "uncertain",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_98d56bcdf0e49412/page16:34:686"
+    ],
+    "reason": "lead正确否定'站用电恢复即恢复直流'；8条检查与恢复顺序完全对应3.1.2.6—3.1.2.13。复答中'3.1.2.6～3.1.12'编号笔误（应为3.1.2.12），不影响候选本身；复答补充的'须重新投入因3.1.2.2曾退出'在原文中有依据。",
+    "suggested_revision": "",
+    "provider_verdict": "pass",
+    "provider_checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "format_issues": {
+      "missing_required_checks": [],
+      "unknown_evidence_ids": [
+        "d_98d56bcdf0e49412/page16:34:686"
+      ]
+    }
+  },
+  {
+    "id": "black_start/safety_control",
+    "verdict": "hold",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "uncertain",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_98d56bcdf0e49412/page16:34:686"
+    ],
+    "reason": "false_premise题，lead正确否定前提；initial_state(退出)→ac_restore→normal_supply→dc_restore(投入安控)的先后顺序与3.1.2.2、3.1.2.11—3.1.2.13一致；'投入安控装置，恢复直流系统运行'原文支持重新投入结论。",
+    "suggested_revision": "",
+    "provider_verdict": "pass",
+    "provider_checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "format_issues": {
+      "missing_required_checks": [],
+      "unknown_evidence_ids": [
+        "d_98d56bcdf0e49412/page16:34:686"
+      ]
+    }
+  },
+  {
+    "id": "main_pump_failure/whole",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page63:898:1035",
+      "d_98d56bcdf4e49412/page64:0:368"
+    ],
+    "reason": "全链条复述与10.4.1.1—10.4.2.6一致，开头声明分支择一执行，未串行执行 overheated/normal_appearance，试合次数限定为一次，禁令和单泵监视要求均保留。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "main_pump_failure/power_ban",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page64:0:368"
+    ],
+    "reason": "引导语正确否定虚假前提，引用10.4.2.2禁止隔离检查期间站用电切换，并以10.4.2.6佐证，无越权解除结论。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "main_pump_failure/motor_hot",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page63:898:1035",
+      "d_98d56bcdf4e49412/page64:0:368"
+    ],
+    "reason": "选中overheated分支，先汇报后处置的顺序符合10.4.2.1→10.4.2.3，切断顺序（400V开关、安全开关、安措、灭火）与原文一致，禁令与单泵监视一并保留，未串入normal_appearance。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "main_pump_failure/appearance_normal",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page64:0:368"
+    ],
+    "reason": "正确否定“继续运行”的推断：外观及开关无异常时规程要求断开安全开关隔离并通知检修，未规定恢复运行条件，无无依据恢复结论。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "main_pump_failure/one_reclose",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page64:0:368"
+    ],
+    "reason": "正确否定多次试合：10.4.2.5明确“试合一次”，成功加强监视、失败通知检修均忠实。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "main_pump_failure/repaired_restore",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "独立复答末尾建议查阅其他章节并按10.4.2.1汇报机制请示，属合理检索建议而非编造规程内容，可保留但不增强候选结论"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page63:898:1035",
+      "d_98d56bcdf4e49412/page64:0:368"
+    ],
+    "reason": "source_gap题处理正确：候选答案明确10.4无复役顺序和禁令解除条件，不补造流程或许可，尾句恰当限定资料范围仅指10.4；required facts（power_ban、single_pump）均已覆盖。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "national_dispatch_reporting/whole",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp21224_21327:0:103",
+      "d_4b964d3ff677714b/cp21328_21388:0:59",
+      "d_4b964d3ff677714b/cp21389_21469:0:80",
+      "d_4b964d3ff677714b/cp21470_21526:0:56",
+      "d_4b964d3ff677714b/cp21527_21591:0:64"
+    ],
+    "reason": "五个必答事实均覆盖且与原文一致，时限顺序（立即→5→15→30）正确，注记补充信息包含，引导语合理，复答一致。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "national_dispatch_reporting/wait_recording",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp21224_21327:0:103",
+      "d_4b964d3ff677714b/cp21328_21388:0:59"
+    ],
+    "reason": "错误前提题：答案正确否定推迟汇报，覆盖立即和5分钟两个必答事实，依据原文“立即向国调汇报”。复答补充15/30分钟信息不冲突。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "national_dispatch_reporting/fifteen",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp21389_21469:0:80",
+      "d_4b964d3ff677714b/cp21470_21526:0:56"
+    ],
+    "reason": "15分钟汇报内容与原文一致，注记作为配套说明合理且与“合闸电阻配备情况”条款衔接，引导语否定“仅外观正常”符合原文要求。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "national_dispatch_reporting/station_notes",
+    "verdict": "hold",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohabitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass",
+      "prohibitions_and_permissions": "uncertain"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp21470_21526:0:56"
+    ],
+    "reason": "注记内容（5032/5042合闸电阻、5W09/5W08重合闸停用、汇报时需说明）与原文一致，尾句限定不泛化恰当。",
+    "suggested_revision": "",
+    "provider_verdict": "pass",
+    "provider_checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohabitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "format_issues": {
+      "missing_required_checks": [
+        "prohibitions_and_permissions"
+      ],
+      "unknown_evidence_ids": []
+    }
+  },
+  {
+    "id": "national_dispatch_reporting/thirty",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp21527_21591:0:64"
+    ],
+    "reason": "30分钟汇报内容（全部保护动作、故障测距、四类材料）与原文逐项一致，聚焦题未要求复述全链路，覆盖恰当。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "national_dispatch_reporting/dispatch_scope",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp21224_21327:0:103",
+      "d_4b964d3ff677714b/cp21328_21388:0:59",
+      "d_4b964d3ff677714b/cp21389_21469:0:80",
+      "d_4b964d3ff677714b/cp21527_21591:0:64"
+    ],
+    "reason": "泛化防范题：正确限定于国调直调系统故障及姑苏站规定，四个必答事实按序覆盖，无无依据结论。",
+    "suggested_revision": ""
+  }
+]

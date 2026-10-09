@@ -1,0 +1,1475 @@
+{
+  "reviewer": "Codex（AI整条来源覆盖检查，非业务专家）",
+  "scope": "仅所列完整提取文本，未认证现行性、表格或现场操作票；降压争议保留为适用边界知识",
+  "status": "bound_to_batch05_v3",
+  "notes_origin_sha256": "26fde9caea31a3a120961eca855020db6d5c95015aebd9136055c2a0384bd68a",
+  "already_reviewed_units_retaining_prior_assessment": [],
+  "rows": [
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.2.1.1",
+      "unit_sha256": "4ab9736c682fefa749a4060f7c1f1eb99e1a4ffc8558c3b443510cbbf0e575d3",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:bipole_block/signal"
+      ],
+      "facts_sha256": "4f28b0d6b38bfecc4605de770615a6c9f810dff1bdc19a56243003b3b0251c35",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "OWS保护信号及故障录波启动两项完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.2.1.2",
+      "unit_sha256": "6f45cd781f7a79f37e7c87a7e16d0bb2f4b51be7fba483b379f277cbb430a058",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:bipole_block/bipole_block"
+      ],
+      "facts_sha256": "5f60f95ddd973bd1b43b29b93ae8bcc355eb69b30b93c74ffcad3f624f93fa9f",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "双极对象保留，不改为只一个换流器或单极。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.2.1.3",
+      "unit_sha256": "4f4c2b49f08c52c836332d9f79aa3387ebe541fff8064cce4f6aecfccb786b1c",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:bipole_block/ac_locked"
+      ],
+      "facts_sha256": "f3fd0b061cfb0d8be76749914554b12af6bae9423357923940120e61d9adacfb",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "所有换流器、交流侧开关、跳闸及锁定均有。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.2.1.4",
+      "unit_sha256": "1ce4b9b11821267d904fd5eafd5cc494fedb6f5192d94c6f3308d5912c1d2c78",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:bipole_block/isolated"
+      ],
+      "facts_sha256": "fa93c25847b1860b577e58a8e014ee02f366943b3f81cdb95453a6abce358779",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "双极均隔离状态，不把闭锁与现场确认混为一项。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.2.1.5",
+      "unit_sha256": "1bef253e0a3fa783b6a4c04c939a21012f4d5ad49650a4ae49a49e62758265d6",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:bipole_block/filters_out"
+      ],
+      "facts_sha256": "adb674e01c106568c2018d84d845626fef5faf21665725cc1618d07f2d80d3a5",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "现象为全部退出，后续仍需核实实际退出。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.2.2.1",
+      "unit_sha256": "8ad998cf118aa03afe014eb8f1a32208e6b47015bbcee0b5c22cb236f4d066e4",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:bipole_block/ac_limits"
+      ],
+      "facts_sha256": "a78d49cc2c7e124fc3da4517d9640d4917e9a1439dde56abfe4254ae3fcad15d",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "潮流、电压、频率三对象及调度领导均保留。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.2.2.2",
+      "unit_sha256": "6399f663d4a6d3e34c10e9df2df5961f7cfd7ba5815ed29fbac9c37cf1cefadc",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:bipole_block/verify_filters"
+      ],
+      "facts_sha256": "cf597c42bdf1c6dc86583474a38df3d1e70d14c5d463ef408cd3fc763160deb4",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "是否全部退出的检查要求完整，未将现象描述当作确认结果。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.2.2.3",
+      "unit_sha256": "3a8b3f15b52f95cf735b31de937b3bcc91473938b13b7d16f3ff17b4de1302ef",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:bipole_block/primary_report"
+      ],
+      "facts_sha256": "f0ab27f87100df1fdffb3c0755328e7ee380ade755266c60e76244ecee4fa53c",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "一次状态、保护范围设备、及时详细汇报两对象齐全。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.2.2.4",
+      "unit_sha256": "ed4fcc6d18b9a30d0847a7da6bac0d9e06f9558043ea61becbbbe5026c9a31e5",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:bipole_block/recording"
+      ],
+      "facts_sha256": "0924973028e55f620a22cb8a692408e7d5114da302f7e59f66117de148579840",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "保护动作、录波、及时传真及接收对象完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.2.2.5",
+      "unit_sha256": "52cbda0d53a5c8e361dc7bc0802733a32b013c04e3e431fdbaa84a6597ee5c77",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:bipole_block/maintenance"
+      ],
+      "facts_sha256": "4436008d45bef3ea68d1d56989cde1d01e46a0dc3016b8e251d68fb0d79ad076",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "隔离、转检修、检修人员对象完整，没有补故障设备恢复动作。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.3.1.1",
+      "unit_sha256": "6b20e9b42bd43e8467787a1b92f59c53d8015c9f2d47bd00e7cbafbf944bbdb8",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/signal"
+      ],
+      "facts_sha256": "65ab1c95bee7f12954a85a02aa0f8d3f7ac9b91abe9fbad2f817d4295cdf90a5",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "OWS保护信号及故障录波启动两项完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.3.1.2",
+      "unit_sha256": "8e2cafe0bc94855e1202c3e2c365a92f5ab8335dcaf430087f314bd8718bc358",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/transfer"
+      ],
+      "facts_sha256": "181927a3fc2ab90cce15810195b9b0dfdbbf7e99107dd0f6e601cfff9a675b19",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "故障极、功率全部或部分转移两种范围完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.3.1.3",
+      "unit_sha256": "c1c4d660d6f23fb72f76e7f974292361d4af1abd481eeeefe5e13457d04cb545",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/ac_locked"
+      ],
+      "facts_sha256": "7f7854cb76875ab804f9dcd4b1560baaf6a96a207730113f591685cd8cdd9e9f",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "范围是故障极内的换流器，不外推全部换流器。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.3.1.4",
+      "unit_sha256": "ec1ca0516bd115847bbdee10126e61decfc39dfaa194219cdfdcacc0183907d9",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/isolated"
+      ],
+      "facts_sha256": "4ea45aaa652985d807bc2489ecb4e485383264d762d6e75a5bc6efba3aee1b26",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "故障极隔离，未将另一极也自动算隔离。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp44192_44290",
+      "unit_sha256": "500064beec4730601ce9fc5515869b8a8a534eaed0ca833caf1f32082f776021",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/master_emergency",
+        "qa_quality_batch05_20261008_v3:single_converter_block/master_emergency"
+      ],
+      "facts_sha256": "a0bb473b140a2e891117248406e2ee2ea7f3779458dbe112c6f97f21a9845696",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "正常不用过负荷、两类闭锁、过负荷前提、主控站角色、不待指令、当前电压最大允许功率和立即事后报告完整。 同一紧急条款明确包括单换流器闭锁，主控站角色和事后立即汇报完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.3.2.1",
+      "unit_sha256": "f347961683580449d3100cda409aba12c6dbe3339880522ac413f643cbb50e99",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/power_filters"
+      ],
+      "facts_sha256": "dd232d46c55ff613ffc69882bf3d43f2c65f873eae82037eeac5871d3b86e87e",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "功率变化和滤波器退出、及时汇报两对象完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.3.2.2",
+      "unit_sha256": "336a4a2fabd72eeae2e70afa034da040429927d37e6abf970c2a3dd319ceb551",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/overload_mode"
+      ],
+      "facts_sha256": "95a39191aa6b20dd5af74600af55ef1ea315eabdda54e423bc59fc6b5b4b5e81",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "由闭锁引起另一极过负荷的条件及调度申请保留。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.3.2.3",
+      "unit_sha256": "7b4040bea2e6c252fc0a74fea7488f8a79633c0a2781804a9868f9e2ca73ba31",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/primary_report"
+      ],
+      "facts_sha256": "8c62eee73f6d084d7117ec5f9469f546b67822ba71105a88a9a520ddb37fdc11",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "一次状态、保护范围及报告完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.3.2.4",
+      "unit_sha256": "5d7685664524509cdb6dc19160ce579862df0f059f5326962953836e05957f8f",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/recording"
+      ],
+      "facts_sha256": "879b31e85544319d11b6c11108a92efb7932e0567a36860f92d1ed776d5fd57b",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "保护、录波、及时传真及对象完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.3.2.5",
+      "unit_sha256": "4034c19fa669b3fd4289ce7bc4f1bdc0d80d03b1de8f8954e4b1e1197171fc0a",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/maintenance"
+      ],
+      "facts_sha256": "2f1ad89c40f37ad02621c7f41e85bb1c1aec070c15bb74c3f4cd8d6d3dac13f8",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "申请主体、故障极对象、转检修和检修人员完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.3.2.6",
+      "unit_sha256": "12eea8b293d3a28c106391d5be57b8ba661e044329f3b7434b03d6372ac4df5a",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/ground_attention"
+      ],
+      "facts_sha256": "139da5c88175d2e04f2b91fd47c92a0973f670f15cf7e0e8af881c84af5ad6b2",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "关注接地极电流和准备两要求完整，不仅关注传输功率。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp47550_47813",
+      "unit_sha256": "7fc5676b7ab6cebdcbd0577d73150bf041701d5b3b2e3d6cfe6c26cded923d6d",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/ground_limit",
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/nonline_branch",
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/line_branch",
+        "qa_quality_batch05_20261008_v3:dc_line_protection_trip/line_fault_ground"
+      ],
+      "facts_sha256": "5347c62fe00677bbbf6acec8881025cf90beaa76e3c5d5cc2f87a4dc8e04f55c",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "3000A、单极闭锁另极过负荷、2小时以内控制安全限值以下或消除入地电流，两种消除路径完整。 非线路故障、运行极、已核实具备条件、立即转换、无条件或失败立即限流完整。 线路故障、闭锁极、具备带线路OLT条件、立即试验、成功恢复、不具备/失败立即限流完整。 只抽线路故障适用子分支；该完整段落的其余命题由单极业务单元三项事实覆盖，不单独冒充全段覆盖。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp42776_42910",
+      "unit_sha256": "015a1008fd39142e169e3eb0eb814e54494474bf20146cb4135170e039b73965",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/metallic_conversion_checks"
+      ],
+      "facts_sha256": "4b30b40fea007f30def34ea5214ccd52dcccf3f870caf482f58b70d423445e3f",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "完整保留一般顺控、旁路接地刀闸步进、两端前后核查和过程中联系。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp42911_42940",
+      "unit_sha256": "6a42ca1cba958ca630c080808ef09db6752e5dee66def76787701435b74e0d95",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/shared_ground_check"
+      ],
+      "facts_sha256": "bce00625e9ba45cc5dcc7228e1f7a398e438cc697f8125a05183a5f1d2933354",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "共用接地极电流不超限、转换前时序及对象完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp43073_43165",
+      "unit_sha256": "10d64e8bb9a17ddb125dbbf77fb9ada20af91ceda181fbe231b024abced680ff",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:pole_block_and_ground_current/metallic_conversion_failure"
+      ],
+      "facts_sha256": "fcee28513858e3b7ce7b080c070d504a9764e0100acdc14932af2c0ff11f87af",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "转换失败、主控协调对站返原、不能返回申请正常停运、待转换后恢复四组命题完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.4.1.1",
+      "unit_sha256": "3a4775b2446ecb122a497d1e4018fdc4681b2f85322f09bed6617b463f9d83f8",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:single_converter_block/signal"
+      ],
+      "facts_sha256": "610e50110f39a086a12ab1b2d54d57752ff7b537485ba42777ab296824a9be85",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "OWS保护信号及故障录波启动两项完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.4.1.2",
+      "unit_sha256": "eb4821a6138a4ab86d26eb49fb7221d5ac8c85053f0935f7116bff700194307e",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:single_converter_block/transfer"
+      ],
+      "facts_sha256": "361aa30c4763caad20a35d279299b159614b205627f3e459788ad99531454231",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "对象为单个换流器，不改成故障极全部闭锁。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.4.1.3",
+      "unit_sha256": "5a52c853ec3b1b3076baf876c85393f531f86b2de15ff9b1e8eb959ff663e679",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:single_converter_block/ac_locked"
+      ],
+      "facts_sha256": "214bda60c6291dd37f31b37df3b89cddd1a87aa6b9267abf0988a61d320651cb",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "锁定范围限故障换流器交流侧。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.4.1.4",
+      "unit_sha256": "168a44c5114dfada1bdbdcad0582c16d403226b83d035a18cc8ceaab858d301b",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:single_converter_block/isolated"
+      ],
+      "facts_sha256": "7dfcc6fb23a428b6522d8cf52996bc5195c42ecf7918c2e8c00907f0597fccb1",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "隔离对象是故障换流器，非全部极。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.4.2.1",
+      "unit_sha256": "685c5d252e461ddfbc83ecf526d7bf5291b8f76957a63fd12cf914121b91ec69",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:single_converter_block/power_filters"
+      ],
+      "facts_sha256": "5ef66ebd6cf95075ca80f7860505a8b882782d2afd8f09b2992e6ddba0c68e20",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "功率、滤波器退出及及时汇报完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.4.2.2",
+      "unit_sha256": "482f605383e1bb67d9627343d7e385a8216dda5e9aa84cde4d547e378abcf47b",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:single_converter_block/overload_scope"
+      ],
+      "facts_sha256": "b0064f134cb2ea353fa837a8476b730d4de5af0ba270c63238a277a93e8a12b5",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "本极另一台与另一极两个过负荷对象完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.4.2.3",
+      "unit_sha256": "a34e64f2f20d2bc4877a52715f7341da32201399ebd57c0a58700da2f828a192",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:single_converter_block/primary_report"
+      ],
+      "facts_sha256": "31e7e6cb7fdae2a2dca5429fbcbfdacdfdd874be4b64c72198c7372fca4b0976",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "完整提取跨页条款，保留设备检查及报告，不把页码当步骤。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.4.2.4",
+      "unit_sha256": "2d58aab4d6336395c4e0a6710e8a9ed49b0e07d711325e4f5734b04b94b65d7a",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:single_converter_block/recording"
+      ],
+      "facts_sha256": "7e639b2471c3d5b9aa06c8f97fc7b1b03f5828e641c95bd83d206cab6b388da0",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "保护、录波、时限与接收对象齐全。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.4.2.5",
+      "unit_sha256": "93d3628cec711b547f19d040451b57af908e2e54512e828cee92aaf239f90c0e",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:single_converter_block/maintenance"
+      ],
+      "facts_sha256": "5c1d0f15153ce3b0d280396bd8bed54b86d4706e8b6e14d6de39908fcb319c82",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "故障换流器对象、调度申请、检修齐全，不扩大为全部直流必须检修。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.5.1.1",
+      "unit_sha256": "17d48f314875aba3d5076fdecb8a251314ea2909f4816857b97633c33deb3f4b",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/rundown_signal"
+      ],
+      "facts_sha256": "bb6da51d1f8d1feb9f84f6dd401e7c65e2d2a2925bb21683cbc8c9bce75ea9b9",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "四类触发来源和录波启动齐全，未把列举改成全部同时存在。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.5.1.2",
+      "unit_sha256": "02ee4828f7548f23f81e66d3f76de83d39cb18db28fd1838e941dde02e6ff1f1",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/current_power_down"
+      ],
+      "facts_sha256": "50c751e4450d98d5a381a03c04b5c7afd3d18dd07d1e758faab256e6fda6850e",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "现象电流功率下降完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.5.1.3",
+      "unit_sha256": "c4fb1ce986d253ef0ebf5e8957a1970b97413aa16bf5c86f81f788a980646caf",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/reactive_filters"
+      ],
+      "facts_sha256": "6f2e174b3c3d94a40b6ecc50ed56f707a54b9b01dbff909c712d01570c0cd146",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "视无功情况而定的条件完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.5.2.1",
+      "unit_sha256": "e5011a2c41f2d0cabb192bd88d04af4ebbbe9ad3ed865df9f6080b190b7896aa",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/report"
+      ],
+      "facts_sha256": "014dd4a1c08f088e019fd4f21c211d1c6feaae3bb0fe047d17e2623101ee1eaf",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "两个报告对象完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.5.2.2",
+      "unit_sha256": "5d4d2347b38acf27d01359286b56d41fe31195e7d3ec28e89a04f8b9b820a23b",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/overload_mode"
+      ],
+      "facts_sha256": "3d55705ad7ac3dc487c85a6c044a2eef6c928650601d17d6c2e340716ff80b1f",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "两类设备对象、过负荷前提及申请完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.5.2.3",
+      "unit_sha256": "0c8ac5bd7dabf69557b183c02005196ead22c6c3b71d67ad51f81750833791d8",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/temperature_check"
+      ],
+      "facts_sha256": "cf250d99a6fd9ffca7bf2c1c0b544561e8efa786ed27ff1daa49cbbe3fe05d80",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "结温、进水、出水检查对象完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.5.2.4",
+      "unit_sha256": "cf29d89769ec6c714321fe3a2cbedb021c927c30917494e1609467d2a13df96d",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/cooling_branch"
+      ],
+      "facts_sha256": "efea0bfc3a46a8cf39b454cc31a1d92ad27456b42133a264b34c3ff6c4a0fa48",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "温度高才查水冷，水冷异常才转对应预案，不由报警直接确定故障泵。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.5.2.6",
+      "unit_sha256": "91432a194f93a051a9192ec4471ad48eaa35e4c3c2ba97449db4c5eaf096ae02",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/ground_overload"
+      ],
+      "facts_sha256": "9711eab124b6b29c5bca7784b135d086378da048552741207d04804db6a11222",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "接地极线路过负荷原因和调度方式调整完整，不统一套滤波器更换。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp75721_75736",
+      "unit_sha256": "39700f76064dbb6366ba7e299d1e4ae6c57625c9518854766853b59fe183246d",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/bus_available"
+      ],
+      "facts_sha256": "0abd4b6ee6d08249d8a8127b09f9e4c8cb1a58bc6db730081c34dd69a5ccfca1",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "第一个可用条件大组母线运行。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp75737_75755",
+      "unit_sha256": "8a4312af6c6b5ac7e7f762ba2acca7afbc463e29e17c67df2a2808f2b1f98a9c",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/hot_standby"
+      ],
+      "facts_sha256": "47ded461fd19ad737d47bfb9a29c5eb95281356e1712a5d8850ba1b5c3338381",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "第二个可用条件小组热备用。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp75756_75797",
+      "unit_sha256": "64aa006d2c6ee6c8eb01251a02114ad2b1ec07c6234bacedb0d4b39bac061c34",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/switch_available"
+      ],
+      "facts_sha256": "c19366ade2fc6e3c1c1c754666a3a99b707ab7fe4bcd69279c5f9ea2bf242d0a",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "第三组可用条件四项齐全。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp75798_75821",
+      "unit_sha256": "222f6c07b34566e40bd155551172c3738dafab0ab7aa7194e5dc38465d978c29",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/available_time"
+      ],
+      "facts_sha256": "f492ff38277a4aa599d0554b437115a8aba97845812fae3253e501aeac149548",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "第四个条件超过10min的严格表述保留，不抹成至少10min。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp76488_76520",
+      "unit_sha256": "e17f8e02165364de7e061c06f31d1198f4a9d262f385cdb3efaede0b502e805b",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/manual_forbidden_during_ramp"
+      ],
+      "facts_sha256": "cfe6753a8f7003febcaa7a11860d5981ade058d376519be065a89f66d1b048b2",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "功率升降及方式转换两类状态、手动投切禁令完整；适用到3.5手动投入需确认不在该状态。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp76521_76641",
+      "unit_sha256": "59edbaeebcee9e6f08d7e52c24a7f1abcafc07a426363ab55f3d6582248c027a",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/manual_sequence_limits"
+      ],
+      "facts_sha256": "4c9e9d1290ba9230f0086f33f161781e505579656132f3dced8589c7ae7514cc",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "先投后切、两设备、足够备用、切后ABS/Umax/Qmax三约束及预先调功率申请齐全。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp76642_76702",
+      "unit_sha256": "0e87f4ed901b43f5c959871d32c8c37634602154e22b494e1a71575fad10aaea",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/discharge_time"
+      ],
+      "facts_sha256": "f3c8dd94bb8433daa93050b5a06dda1f36d44a3171f8395859a0bdd7fed79b10",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "退出后手动再投、足够放电、本站500kV交流滤波器10分钟条件完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/6.15.2.2",
+      "unit_sha256": "12a20cb264cd9f10faf5956e1ac691f289ac2c9547e83234f4c6f00ab74282be",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/small_group_request"
+      ],
+      "facts_sha256": "7be8aff9af0a0baecf6b5c07eb40eeba6592345775bf1ac342b9d1e0fbe9194e",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "小组动作检查正常投入、需求不满足申请手动投入保留，两个申请对象不混。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.5.2.5",
+      "unit_sha256": "7594bc99dbdfa8b1675d3f27cc5dd02635c05cd0d5d766da85b50193fe7e3019",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/filter_branches"
+      ],
+      "facts_sha256": "618ed24e0c415cb18ae5e04b4c3b5e986dbea7112cb403917e8fc837cd37027b",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "跳闸原因、可用/不可用两分支、先投再申请恢复、降低至报警复归全部完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp74857_74904",
+      "unit_sha256": "2885eb9357e64f7c3a63985b28d8f03e1538b87967895f538b6063f3140d4639",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_power_rundown/notify_master"
+      ],
+      "facts_sha256": "d6ee96e2d74e7b4265dcdc7cb85223ec134c0603c20123605997dbc9710644c1",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "非主控身份、滤波器故障可能造成N-1回降、及时通知主控站完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/6.11.1.1",
+      "unit_sha256": "e40a60d5a53f42b253bc874b79e06bc2ba5a80f466a9c8382e69075829101ad1",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:minimum_filter_and_rpc/alarm"
+      ],
+      "facts_sha256": "493df27a978e7a4c0fe42a52337ca5bbd43c66a6421b1b83bf33ebf98eeedbee",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "最小滤波器报警对象准确，与ABS保留术语区别。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/6.11.2.1",
+      "unit_sha256": "45573533b5093a1e7c00c9271e62fe364c5bc450f2c36c7c4ebda4700bb90146",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:minimum_filter_and_rpc/monitor_report"
+      ],
+      "facts_sha256": "568cbc6a969e4093e56a33adfbee63e83e33a69636969afcfff22ea1c6e4db0b",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "报告领导与密切监视两个要求。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/6.11.2.2",
+      "unit_sha256": "800c2fc1b5f39a6f10a468edb32263a4f8d281404928fa2a9e10ab6d78c7fba8",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:minimum_filter_and_rpc/rpc_check"
+      ],
+      "facts_sha256": "a3b44df23879e59ae4b96c09cfe065ec34758d4923e087d564615adb548afb69",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "检查无功模式的要求保留，不跳过模式诊断。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/6.11.2.3",
+      "unit_sha256": "1cf7b1572980c0d0e4e5c322bd5cb04316579901ad99bf0bd40388a26edf334d",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:minimum_filter_and_rpc/switch_check"
+      ],
+      "facts_sha256": "03a94024d1eb8d84288a7de77e71658c7bcfda3176b9731d67f1062de900bbab",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "可用滤波器开关方式及弹簧储能两项检查保留。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/6.11.2.4",
+      "unit_sha256": "5c370abebd64ee2a8a65049e608a6656118062a7c9ca94c9fa271cc04f85e6fc",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:minimum_filter_and_rpc/normal_checks"
+      ],
+      "facts_sha256": "4af95b446dd0a6c05d9dc8ff6c0da2971e84825cc77e83a94315b4ff43eb32dc",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "以上均正常、加强监视、必要时申请投入，未改成检查正常就可自行投入。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/6.11.2.5",
+      "unit_sha256": "482756e4e3b5ee674341e82a2c0cc4bb9fc1f6825091d478cbe36f57bc2df569",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:minimum_filter_and_rpc/no_backup"
+      ],
+      "facts_sha256": "b8b568eeb0a50b2e3aac5aaad596eccbf02fb6fcff1b55507578b60ffe1d1bbd",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "暂时无可用的前提、加快检修及恢复备用完整；不补无据的固定功率或停极动作。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp75597_75709",
+      "unit_sha256": "736dcd03d91975f2f08f4d5f0538191bc1e03cf911465d4c020ec197d98e5174",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:minimum_filter_and_rpc/rpc_manual"
+      ],
+      "facts_sha256": "dabbad39ba50dddc5dc4bbb5303537538d99a648f318e7de9e4e8044be1584f9",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "人工投切两低优先级及四类仍自动策略完整，不改成手动模式关闭全部保护。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp76794_76995",
+      "unit_sha256": "cbdcfc62bca03d57e9ed528cd09da300cca4ff6f3aeb430ddc50122e175138df",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:minimum_filter_and_rpc/rpc_priorities"
+      ],
+      "facts_sha256": "9f891266073b6b843ab1bb9677217747d78d6f4c4a45b8fd6a29a692176d4150",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "手动模式高优先级四类、低优先级两类失效，保留Umin补充；人工接管关系与前段共同核对。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp206303_206482",
+      "unit_sha256": "f3a1c0645bfd122d9d4e6788de7b6294443b338072304e85c2cc174ecbbe77a3",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:minimum_filter_and_rpc/abs_behavior"
+      ],
+      "facts_sha256": "4eb654c6dab7905f3b8cb37761a394c053a7cfc1cc216f210dc1a73b350e016b",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "ABS目的、降功率、最低级仍不足预设延时停运、配置表引用全部完整，未编造秒数。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp206781_206953",
+      "unit_sha256": "cc8e17603f41c974467dbed15566a982c79fed7ed25943924f4c7a276f79b922",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:minimum_filter_and_rpc/min_behavior"
+      ],
+      "facts_sha256": "360e71066647fe2d1cddbf12768ea8063ae2161eb1b173c5a5ef0e684e6a8b81",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "Min所依四状态参数、补投至满足、不能直接切除及较低优先级关系完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp207082_207205",
+      "unit_sha256": "70e610f99917d2cd1391fdcb93a71e33aee2528735814bbffd562fa5eebbddc6",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:minimum_filter_and_rpc/replacement_times"
+      ],
+      "facts_sha256": "e0de0842d451c3e10faef0d4b7c99b7070c2facf8e5bfafe300865b622d4c0ac",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "保护跳闸、替代组、ABS1s/Min5s齐全；再投原故障组没有授权。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.6.1.1",
+      "unit_sha256": "e322a82cc373a982319536351f05922ab00c4c8c6b3bc972eb447eeda20299b2",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_restart_boundary/alarm"
+      ],
+      "facts_sha256": "7a718d1091cc173e56a730bdd4960cac217bc81f52f63fde082f8d536704dac9",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "直流线路保护动作报警完整，未自动等同Y闭锁。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.6.1.2",
+      "unit_sha256": "3e3d366aa58b20cb42c2ceab40bf4fd7f65c3a79c5bdcbb49ebdc232bc7d4469",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_restart_boundary/recording_start"
+      ],
+      "facts_sha256": "1ac628eef9627c4cfccc6d802547cac38b269d8dadb1c0abf396fb16f897c0f4",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "录波启动现象完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.6.2.1",
+      "unit_sha256": "e7f924611cd77bec79c6f810fad599e83df19499c5625ad56371cfec772b7ddf",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_restart_boundary/immediate_report"
+      ],
+      "facts_sha256": "752a4861ebef5e478e2bc7d589a81f3a0cff13783be7b5253e536d55efba8716",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "立即首报两对象完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.6.2.2",
+      "unit_sha256": "69c4e73e65db0ba723f2300a921f62dac5cb82e58208d36d8874e2ed4ef89dd2",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_restart_boundary/restart_overload"
+      ],
+      "facts_sha256": "86f65124899bb8a66289d6dcbc7eed30bb54fcc28a7b897733a5223bc2e734b1",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "再启动、电压电流、过负荷核查及条件报告申请完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.6.2.3",
+      "unit_sha256": "c23d1f0297545b19b63a6535798b92f8b774406de9941ed8a4af7ccdede1a516",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_restart_boundary/protection_distance"
+      ],
+      "facts_sha256": "f95ddcc00807acc00abfb6ec0892db141be28ca86e8924abf37f43553cc6748e",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "保护、安控、录波、再启动及故障测距齐全。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.6.2.4",
+      "unit_sha256": "5b6aaefe06bc8b5847e92101f704247a4c8ce35824e444339a6cbdda835f4167",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_restart_boundary/pole_bus"
+      ],
+      "facts_sha256": "088033c8425e84b25bd61f381d8e7d128111d0f2324843711d1cc0df2492d0f5",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "极母线设备对象完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.6.2.5",
+      "unit_sha256": "c71963ccdfa81ebb3d00fc6d0c082ba264b78c48a779e58823cd436af109ff8b",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_restart_boundary/flashover_ref"
+      ],
+      "facts_sha256": "d2832e0af5b73743691a6d3e343b28f457f2885a0085b31b4df4de2b5e9e13ec",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "闪络条件和7.8专项引用保留，其未闭合电压方式边界另外列明。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.6.2.6",
+      "unit_sha256": "25763231271649fbff190d67b61ba49377a635ca8230682da11ea357b58aa326",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_restart_boundary/abnormal_device"
+      ],
+      "facts_sha256": "4f36182c6654330c1c13716e2823b801bb81f5b6ee3012bc085339612e4534ee",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "明显异常、领导批准、申请停极、必要时功率调整、隔离及检修全部完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.6.2.7",
+      "unit_sha256": "47525984b54138fffe7297fb374d900b71c29179810602ec7fb6c0d3c79d58a1",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_restart_boundary/fifth_reduced_voltage"
+      ],
+      "facts_sha256": "55be8c5c106db9590ab07f0a7c71dbcd4ff340a8f8b346a935a3bff46308f116",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "频繁、短时间内、全压再启动成功三条件与向调度建议完整；降压适用性保留真实跨册疑点。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp107245_107341",
+      "unit_sha256": "f605a2661d82f450020fc776319cba87860ff229f021faae0f42fa6e5ce42485",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_restart_boundary/restart_attempts"
+      ],
+      "facts_sha256": "f50a2d57e0952abef82add0904c31c651f2f521c1e1e6caf2395adceaec5be57",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "投入前提、整流站启动、正常2次、通信故障或融冰1次、降压0次及故障仍在闭锁均保留；段落自身编号不用于修复全册编号。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp107342_107368",
+      "unit_sha256": "d3467638644ff6b5b65991bcc1cde22b3e058e394996ca4e5970bb463d70ae36",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_restart_boundary/restart_permission"
+      ],
+      "facts_sha256": "85a5c1dc1e2f5bfdfa1304a09133ea508e633988faf507ed45e8e47f9d8ed924",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "两项功能和国调许可完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp107369_107391",
+      "unit_sha256": "5094f38b0567e6dee8e7bbc5e37a6e77add9306287ef77afd9835c2b7ee2fd85",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_restart_boundary/disable_at_rectifier"
+      ],
+      "facts_sha256": "2735cba19b74f664f2aa2c2d425da6b9b8bdd08a0a7b295eb22c01e686b2a4f4",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "停用与整流站操作主体保留，不推成本站可自行停用。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp107392_107436",
+      "unit_sha256": "f44b87ef99bd48eadcb19ec62ea217405bcf293821846ac1c5e47c7eec0385e9",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_restart_boundary/live_work_disable"
+      ],
+      "facts_sha256": "b04430f4aa28c26f9592001cef40e7981f5d46cd6e74f4238c014736524b5376",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "带电作业前提、reboot与线路再启动两个功能、分别退出完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp123914_123965",
+      "unit_sha256": "9c6e36c092b1491bababc76d2dfdca8a0100411500e56c45456f96bd68d2d43c",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_restart_boundary/distance_peer"
+      ],
+      "facts_sha256": "7e1715dbab832050d30eff93c90dcd6c03e2dc7a31c91439a63fcf1ae6aef346",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "三种触发情形、及时测距、对站核对及调度报告完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp176281_176301",
+      "unit_sha256": "fd6f5e3f611f009b0f0217c3ff4158e114abfaec54b127e4162f3f97485d8983",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_restart_boundary/no_reduced_voltage"
+      ],
+      "facts_sha256": "e9e490fabd5e25e71920ffd9ef8d01f60c1c7e465bca8be79dab74ceec6378c0",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "附录D.3无降压表述完整；保存跨册不同表述，不自行按日期选一条覆盖另一条。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.7.1.1",
+      "unit_sha256": "28829b193737d73e85e1717e44e3435108b5d3283ab02ecb57d49e26d7493c6d",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_protection_trip/y_block"
+      ],
+      "facts_sha256": "6948f0973c4f4973d1532b97ae2f2c5658437b8ffd42e6d3c38da44da6486065",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "Y闭锁原始名称保留，不擅自解释为所有类型闭锁的同一种动作。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.7.1.2",
+      "unit_sha256": "f8bda8cd1d4de31beb54e87cbc694f5ddb27d8e3043e36f1e86e8683f46ab284",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_protection_trip/ac_locked"
+      ],
+      "facts_sha256": "8c86428eebaef70706f475caca679cdcb965601c5321e2e6a0a9073aa0a28247",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "跳闸和锁定两状态完整，不补自动解除锁定。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.7.1.3",
+      "unit_sha256": "633db19011baeaa7ed386917466e1822a017eea06f38d14ce9da3b445b0f0dbd",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_protection_trip/pole_isolated"
+      ],
+      "facts_sha256": "5bc792079a77c2ab7c676a68deb775c90e1a1410aa8defd18c22a9f96c3bdf6e",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "现象極隔离保留，后续现场核实仍需要。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.7.2.1",
+      "unit_sha256": "605fca93796b0ce5aac02be26c96337cdc7f75510be14f5601b9cc735e21ece5",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_protection_trip/immediate_report"
+      ],
+      "facts_sha256": "3d8cb6fc6102fb932db2bfff892feda106dba6a7766bc17d5c663d749e109339",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "立即两对象报告完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.7.2.2",
+      "unit_sha256": "082bda10f6588eda11bb5c7635a5a15d7c971f7b1c50bbf5f416f9867fc8703f",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_protection_trip/healthy_pole"
+      ],
+      "facts_sha256": "e0c7110edb21548430f55e45547528baa8debe90378034c4af16dcc25fb0062b",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "另一极、直流过负荷、必要时调度申请完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.7.2.3",
+      "unit_sha256": "a37f2dc2dedc99a5be9ad847835b52a294777d5f72e7ce0d744095369f8a9af7",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_protection_trip/onsite_isolation_filters"
+      ],
+      "facts_sha256": "f089682a023f27fc654bf92791f852dc84c02452dabece97a898fcbfca06293d",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "现场两个对象完整，未只靠信号确认。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.7.2.4",
+      "unit_sha256": "0bda15d6a8abfb8c14c38eafd8be7825538ec10319a88ab1969fb6e7b4644d65",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_protection_trip/records"
+      ],
+      "facts_sha256": "62c95a9c9ba1d4d425e57c9165ff08524d65075f50c71404444185a8e89ff845",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "录波、事件、传真及接收对象完整。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/9.7.2.5",
+      "unit_sha256": "26746d4ffd85d5c24e4df9a7e0bdc0b0a3486c0ffaaab26b31aa83e685e073c9",
+      "fact_keys": [
+        "qa_quality_batch05_20261008_v3:dc_line_protection_trip/repair"
+      ],
+      "facts_sha256": "5e684e3c01a96685363a3f38fb890677cb17f65d59c501554633eba78a46095b",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "通知检修要求保留，不补无条件复役动作。",
+      "reviewer": "Codex（整条提取文本对照，非业务专家）"
+    }
+  ]
+}

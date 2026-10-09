@@ -1,0 +1,605 @@
+{
+  "reviewer": "Codex（AI来源核对，非业务专家）",
+  "scope": "逐题对照所列来源及相邻边界；不认证来源现行性，不估计全量正确率",
+  "bound_files": {
+    "candidates.jsonl": "c2c01385354ad93b36fbd7b6055be7e4bb871a5cc7e52b5a91775a479fa074df",
+    "chains.json": "b9a2333c63422f28d8511605cf865cefc291ed9541dae2b698c82b85a38d446a",
+    "blind_prompts.jsonl": "e4a473e4391a66f1f4385024862d4c52e03bfb2370e0e9e6124654e6bd485562",
+    "fact_review/run.json": "b22253b11e1b75e337b3b8daaacc22a10ed47ce5770b6e4b91a99530bc6227f9",
+    "fact_review/responses.jsonl": "c90d83cf7de07dd3c9fdb5e1bcf6a2ed5361d1d67077c84fe04a46c8d8e620c3",
+    "blind_reanswer/run.json": "7cf62a67c7253def04e2481b1cdf4fc7e1378ccd252f1ddb04c9b37e33b02f37",
+    "blind_reanswer/responses.jsonl": "85bde8bc437a519df07aa2c7af73d4a367d3cac6d1f321bc3a7085387241534e",
+    "semantic_review/run.json": "9ae1c038bd90981c55d92c7f3fe78de639265029ac6763a5731c01df4edc3dd1",
+    "semantic_review/responses.jsonl": "4ac922c1364641eab64d8348091a829ffdd5e6b298834ba185f27b599abd7d03",
+    "model_fact_reviews.json": "56cc78bf964ffd03131f7a2dfa4a8c350ed8ec9eb256b77edaf22a306fdd9e95",
+    "model_semantic_reviews.json": "d79f77d965d688f50f74aa91dddb4ecab26b299e1c83b2c1b12cd4e97cc9de97"
+  },
+  "rows": [
+    {
+      "id": "black_start/whole",
+      "candidate_sha256": "e93b1ff30d0cc41c3246ef86fb693a53bf241973e0d031c0b920d4d2f6005cba",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "phenomenon",
+        "report",
+        "initial_state",
+        "external",
+        "ac_supply",
+        "emergency_vehicle",
+        "loads",
+        "protections",
+        "secondary",
+        "communications",
+        "auxiliary",
+        "ac_restore",
+        "normal_supply",
+        "dc_restore"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page16:34:686"
+      ],
+      "unresolved_issues": [],
+      "notes": "对照3.1.1.1及3.1.2.1—13，完整保留现象、汇报、退出安控、三类电源恢复条件、负荷与装置确认、按调度恢复交流、正常站用电方式及投入安控恢复直流。问题限定3.1，不声称覆盖2.1/2.2全部事故处理义务；这些公共规定在扩展上下文可读且仍由覆盖台账追踪。 模型原始引文或审核字段有格式错误，保留原始响应；本次重新按真实来源ID核对，不静默纠正模型证据。",
+      "model_advisory_verdict": "hold",
+      "model_format_issues": {
+        "missing_required_checks": [],
+        "unknown_evidence_ids": [
+          "d_98d56bcdf0e49412/page16:34:686"
+        ]
+      },
+      "training_eligible": false
+    },
+    {
+      "id": "black_start/external_available",
+      "candidate_sha256": "9142c043b7e12add6459b6f082e11e1289b08656d8f12625fcf945421f58c2b0",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "report",
+        "initial_state",
+        "external"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page16:34:686"
+      ],
+      "unresolved_issues": [],
+      "notes": "原文3.1.2.1—3要求汇报、拉开已合交流开关并退出安控、立即申请调度恢复可恢复的外来站用电。聚焦最初处置，不冒称完成全部黑启动或免除后续检查。 模型原始引文或审核字段有格式错误，保留原始响应；本次重新按真实来源ID核对，不静默纠正模型证据。",
+      "model_advisory_verdict": "hold",
+      "model_format_issues": {
+        "missing_required_checks": [],
+        "unknown_evidence_ids": [
+          "d_98d56bcdf0e49412/page12:232:969",
+          "d_98d56bcdf0e49412/page16:34:686"
+        ]
+      },
+      "training_eligible": false
+    },
+    {
+      "id": "black_start/external_unavailable",
+      "candidate_sha256": "8e20c9d341d3ebab6b77f7a1b4607d21a503dab05de6b09f70005bd72c7fc2ed",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "report",
+        "initial_state",
+        "ac_supply"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page16:34:686"
+      ],
+      "unresolved_issues": [],
+      "notes": "题设交流具备充电条件，3.1.2.4经调度充电和站用变恢复；3.1.2.5应急车前提为两类电源均不能带电。没有混用条件，也没有增加接线和操作票。 模型原始引文或审核字段有格式错误，保留原始响应；本次重新按真实来源ID核对，不静默纠正模型证据。",
+      "model_advisory_verdict": "hold",
+      "model_format_issues": {
+        "missing_required_checks": [],
+        "unknown_evidence_ids": [
+          "d_98d56bcdf0e49412/page16:34:686"
+        ]
+      },
+      "training_eligible": false
+    },
+    {
+      "id": "black_start/both_unavailable",
+      "candidate_sha256": "2ecb4e1c17180ae38a1faf07f2c58bd2d859c92ed08e5f0d196a82daf16d6d4c",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "emergency_vehicle"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page16:34:686"
+      ],
+      "unresolved_issues": [],
+      "notes": "3.1.2.5完整核对双方均无带电条件、当地供电公司、应急车及400V目标。容量和接口尾句仅指本条未列，不能推广全部文档不存在。另行核对权限项；模型拼错字段不视为有效审核。 模型原始引文或审核字段有格式错误，保留原始响应；本次重新按真实来源ID核对，不静默纠正模型证据。",
+      "model_advisory_verdict": "hold",
+      "model_format_issues": {
+        "missing_required_checks": [
+          "prohibitions_and_permissions"
+        ],
+        "unknown_evidence_ids": [
+          "d_98d56bcdf0e49412/page16:34:686"
+        ]
+      },
+      "training_eligible": false
+    },
+    {
+      "id": "black_start/restore_checks",
+      "candidate_sha256": "e27a15be8440c3e61cc92ebe295cee1b7c20a55b17a7a4fe4a2ba71324fbfa94",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "loads",
+        "protections",
+        "secondary",
+        "communications",
+        "auxiliary",
+        "ac_restore",
+        "normal_supply",
+        "dc_restore"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page16:34:686"
+      ],
+      "unresolved_issues": [],
+      "notes": "3.1.2.6—13负荷、控保与安控、二次设备、远动通信、辅助系统和现场一次状态均保留；按调度恢复交流后恢复正常站用电，再投入安控恢复直流。问题没有要求虚构逐项测量标准。 模型原始引文或审核字段有格式错误，保留原始响应；本次重新按真实来源ID核对，不静默纠正模型证据。",
+      "model_advisory_verdict": "hold",
+      "model_format_issues": {
+        "missing_required_checks": [],
+        "unknown_evidence_ids": [
+          "d_98d56bcdf0e49412/page16:34:686"
+        ]
+      },
+      "training_eligible": false
+    },
+    {
+      "id": "black_start/safety_control",
+      "candidate_sha256": "22a92e458c7017a0458caa4b47b708a3389a90d54f62ca65ed64dfe1ab332e6f",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "initial_state",
+        "ac_restore",
+        "normal_supply",
+        "dc_restore"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page16:34:686"
+      ],
+      "unresolved_issues": [],
+      "notes": "3.1.2.2退出安控与3.1.2.13重新投入明确首尾对应，保留11—13的恢复阶段；不编造退出原因或投入验收标准。 模型原始引文或审核字段有格式错误，保留原始响应；本次重新按真实来源ID核对，不静默纠正模型证据。",
+      "model_advisory_verdict": "hold",
+      "model_format_issues": {
+        "missing_required_checks": [],
+        "unknown_evidence_ids": [
+          "d_98d56bcdf0e49412/page16:34:686"
+        ]
+      },
+      "training_eligible": false
+    },
+    {
+      "id": "main_pump_failure/whole",
+      "candidate_sha256": "5bb7a4d5c975d3128f788a99a9db84feb058512512df6c0ffb43f9d22bfaba3f",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "scope",
+        "report",
+        "power_ban",
+        "overheated",
+        "normal_appearance",
+        "tripped",
+        "single_pump"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page63:898:1035",
+        "d_98d56bcdf4e49412/page64:0:368"
+      ],
+      "unresolved_issues": [],
+      "notes": "10.4.1.1及2.1—6逐条核对。备用泵正常是范围前提；严重发热和外观正常按状态选择，跳开开关一次试合及成功/失败后续不串成全体执行。隔离期间禁切换与单泵防丢电保留。另读相邻10.5，备用泵未切入或也故障属于另一预案，未混入本题。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "training_eligible": false
+    },
+    {
+      "id": "main_pump_failure/power_ban",
+      "candidate_sha256": "7a4e845d6f74c39d2a02a53ae911f6a527d3490683b78bd5c48d97b7f40f598f",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "power_ban",
+        "single_pump"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page64:0:368"
+      ],
+      "unresolved_issues": [],
+      "notes": "10.4.2.2前提和隔离检查期间的禁令完整，2.6监视与防丢电补充；没有把禁令扩成永远禁切换或认为备用正常解禁。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "training_eligible": false
+    },
+    {
+      "id": "main_pump_failure/motor_hot",
+      "candidate_sha256": "b60a3e7748d612cfd243124766a7d87185503619212679ecee201530db4a87fa",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "report",
+        "overheated",
+        "power_ban",
+        "single_pump"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page63:898:1035",
+        "d_98d56bcdf4e49412/page64:0:368"
+      ],
+      "unresolved_issues": [],
+      "notes": "10.4.2.3立即拉400V开关、断安全开关、安措检修、灭火均保留；汇报与持续监视不解释为延迟立即断电的先决审批。禁令前提不丢失。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "training_eligible": false
+    },
+    {
+      "id": "main_pump_failure/appearance_normal",
+      "candidate_sha256": "8bbbc4e2e8fbb1d8cdaec756cb4395c4ce2ab85117fa17798422762713dc38e3",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "normal_appearance",
+        "power_ban",
+        "single_pump"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page64:0:368"
+      ],
+      "unresolved_issues": [],
+      "notes": "10.4.2.4同时要求外观正常且电源和安全开关检查无异常，随后断故障泵安全开关、安措检修；未用外观正常直接推出可继续运行。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "training_eligible": false
+    },
+    {
+      "id": "main_pump_failure/one_reclose",
+      "candidate_sha256": "9425c6af293821b6a681b9d8366c39e68d656a8ccb5ded463663d9d179aff45f",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "tripped",
+        "power_ban",
+        "single_pump"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page64:0:368"
+      ],
+      "unresolved_issues": [],
+      "notes": "10.4.2.5只试合一次，成功监视、失败检修两结果均保留；电源限制和单泵状态亦明确。没有添加试合间隔或额外试合次数。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "training_eligible": false
+    },
+    {
+      "id": "main_pump_failure/repaired_restore",
+      "candidate_sha256": "d9a28bd99b5139599490f5bc25faf8780763b557ea131763745ff90eb49dbdf1",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "power_ban",
+        "single_pump"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page64:0:368"
+      ],
+      "unresolved_issues": [],
+      "notes": "读完10.4，确未列检修后复役动作序列与独立解禁验收。资料缺口仅限定10.4，不声称全部rawdoc无说明；不自动延长或解除隔离检查期间禁令。其他章节复役规定留作跨文档补查。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "training_eligible": false
+    },
+    {
+      "id": "national_dispatch_reporting/whole",
+      "candidate_sha256": "d9a95bde7edc4f671fc602fa17288eed0e021d89346e48736c508dd4812e85f1",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "immediate",
+        "five_minutes",
+        "fifteen_minutes",
+        "station_configuration",
+        "thirty_minutes"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp21224_21327:0:103",
+        "d_4b964d3ff677714b/cp21328_21388:0:59",
+        "d_4b964d3ff677714b/cp21389_21469:0:80",
+        "d_4b964d3ff677714b/cp21470_21526:0:56",
+        "d_4b964d3ff677714b/cp21527_21591:0:64"
+      ],
+      "unresolved_issues": [],
+      "notes": "逐段cp21224_21327至cp21527_21591，立即/5/15/30分钟的对象、检查与材料全部保留；本站合闸电阻与停用线路注记独立明确。v1无据混入配置事实的权限句已删除。时间节点不是相互选择的分支。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "training_eligible": false
+    },
+    {
+      "id": "national_dispatch_reporting/wait_recording",
+      "candidate_sha256": "b08f27db673f12d92324b71c19bd1133523191b67cce13796cf19b4903de3892",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "immediate",
+        "five_minutes"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp21224_21327:0:103",
+        "d_4b964d3ff677714b/cp21328_21388:0:59"
+      ],
+      "unresolved_issues": [],
+      "notes": "原文立即汇报和5分钟补报是不同义务，不能用30分钟材料要求推迟首次。没有将尚未确定的保护动作编成已确认现场结论。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "training_eligible": false
+    },
+    {
+      "id": "national_dispatch_reporting/fifteen",
+      "candidate_sha256": "7bfa64f903d797b5fbdd42e3e2eafaeda6f62315f52727566df837632343d44a",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "fifteen_minutes",
+        "station_configuration"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp21389_21469:0:80",
+        "d_4b964d3ff677714b/cp21470_21526:0:56"
+      ],
+      "unresolved_issues": [],
+      "notes": "15分钟段保护安控正确动作、合闸电阻、退出重合闸必要性及试送条件全保留，并按本站注记补充配置。未增加试送许可或具体试送动作。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "training_eligible": false
+    },
+    {
+      "id": "national_dispatch_reporting/station_notes",
+      "candidate_sha256": "db140216a62d1761ec3ca0446e920a015047e8086330693aeb735c26fdf4d2c4",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "station_configuration"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp21470_21526:0:56"
+      ],
+      "unresolved_issues": [],
+      "notes": "cp21470_21526逐项核对5032/5042、熟姑5W09/常苏5W08、停用状态及汇报说明义务；不能把历史版本状态泛化未来。模型权限检查字段拼写错误另行由Codex逐项核对，未据模型pass直接放行。 模型原始引文或审核字段有格式错误，保留原始响应；本次重新按真实来源ID核对，不静默纠正模型证据。",
+      "model_advisory_verdict": "hold",
+      "model_format_issues": {
+        "missing_required_checks": [
+          "prohibitions_and_permissions"
+        ],
+        "unknown_evidence_ids": []
+      },
+      "training_eligible": false
+    },
+    {
+      "id": "national_dispatch_reporting/thirty",
+      "candidate_sha256": "41921067e58235c40871f97ba972fc8c22802c4eaf834707efbe82f1425fdfe9",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "thirty_minutes"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp21527_21591:0:64"
+      ],
+      "unresolved_issues": [],
+      "notes": "cp21527_21591全部保护动作、线路故障测距及按国调要求的四类材料完整；未把按要求传送改成所有材料无条件同时上传。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "training_eligible": false
+    },
+    {
+      "id": "national_dispatch_reporting/dispatch_scope",
+      "candidate_sha256": "42c86c70a65a716df8d7011dc67e885ec3a61a02cdffa2a3aef2e9310f1955b4",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "immediate",
+        "five_minutes",
+        "fifteen_minutes",
+        "thirty_minutes"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp21224_21327:0:103",
+        "d_4b964d3ff677714b/cp21328_21388:0:59",
+        "d_4b964d3ff677714b/cp21389_21469:0:80",
+        "d_4b964d3ff677714b/cp21527_21591:0:64"
+      ],
+      "unresolved_issues": [],
+      "notes": "国调直调故障是明确范围，同节华东分中心有另行规定。限定本站所列版本，不泛化所有调度系统和换流站。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "training_eligible": false
+    }
+  ]
+}

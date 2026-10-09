@@ -116,6 +116,16 @@ flowchart LR
 旧分析可查看历史知识引用，但不会自动补造联系或标为组合复核通过。新分析会保存每条知识在各个问题中的用途，可以从知识条目返回这些问题。
 
 
+## 文档 QA 语料工作流
+
+文档 QA 构建与质量核对已整理为独立 `qa_pipeline/` 包。[当前 180 条 QA](data/qa/releases/20261008-batch05/qa.md) 和五批最终规划位于 `data/qa/`，随仓库版本管理；[离线阅读](data/qa/releases/20261008-batch05/index.html) 和 [打印版](data/qa/releases/20261008-batch05/print.html) 无需运行服务。来源现行性与业务专家审核未认证，当前不发布训练数据。
+
+```sh
+python3 -m qa_pipeline verify-snapshot --dataset data/qa/releases/20261008-batch05
+```
+
+[目录与命令说明](docs/qa/README.md) · [数据入口](QA_DATASET.md) · [研究综述](docs/qa/research.md)。训练代码在 `experiments/qa_finetuning/`；原始文档、提取审计、完整模型调用和检查点继续保留在本地。
+
 ## 资料与数据
 
 - 原始业务资料、`.env` 和本地运行数据不提交到 Git。克隆后需自行提供资料和模型配置。

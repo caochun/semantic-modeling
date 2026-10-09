@@ -1,0 +1,3140 @@
+[
+  {
+    "id": "accident_principles",
+    "title": "事故处理公共原则：诊断、安全、供电与记录",
+    "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 2.1",
+    "facts": [
+      {
+        "id": "limit",
+        "text": "事故处理中应尽快限制事故扩大，消除对人员和设备的危险。",
+        "source_quote": "2.1.1尽快限制事故扩大，消除人身及设备危险。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:44:70"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "station_supply",
+        "text": "应尽力保证恢复站用电源。",
+        "source_quote": "2.1.2尽力保证恢复站用电源。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:70:88"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "restore_without_misoperation",
+        "text": "应及时处理设备事故、尽快恢复设备送电，同时严防误操作。",
+        "source_quote": "2.1.3及时处理设备事故，尽快恢复设备送电，处理事故时，严防误操作。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:88:125"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "record_report",
+        "text": "记录事故发生及主要操作的时间，并及时向有关领导和调度报告情况。",
+        "source_quote": "2.1.4事故发生和主要操作的时间应做记录，及时将情况报告有关领导和调",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:125:164"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "diagnostic_basis",
+        "text": "根据表计、保护、报警信号和自动装置动作进行分析判断并制定处理方案；处置中防止非同期并列和系统事故扩大。",
+        "source_quote": "2.1.5事故发生时应根据表计、保护、报警信号及自动装置动作情况，进行",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:164:234"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      }
+    ],
+    "order_edges": [],
+    "branches": [],
+    "direct_spans": [
+      {
+        "id": "d_98d56bcdf4e49412/page12:44:70",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 44,
+        "end": 70,
+        "text": "2.1.1 尽快限制事故扩大，消除人身及设备危险。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:70:88",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 70,
+        "end": 88,
+        "text": "2.1.2 尽力保证恢复站用电源。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:88:125",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 88,
+        "end": 125,
+        "text": "2.1.3 及时处理设备事故，尽快恢复设备送电，处理事故时，严防误操作。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:125:164",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 125,
+        "end": 164,
+        "text": "2.1.4 事故发生和主要操作的时间应做记录，及时将情况报告有关领导和调度。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:164:234",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 164,
+        "end": 234,
+        "text": "2.1.5 事故发生时应根据表计、保护、报警信号及自动装置动作情况，进行分析判断，做出\n处理方案，处理中防止非同期并列和系统事故扩大。\n\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      }
+    ],
+    "context_spans": [
+      {
+        "id": "d_98d56bcdf4e49412/page11:140:213",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page11",
+        "start": 140,
+        "end": 213,
+        "text": "1.2.1 姑苏换流站当班值长是安全生产的第一负责人，应熟练掌握并组织全值人员贯彻执行\n本规定，在设备、系统出现异常或事故时，应积极组织处理。\n\n",
+        "locator": "PDF 物理页 11（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page11:213:348",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page11",
+        "start": 213,
+        "end": 348,
+        "text": "1.2.2 各运行值班员是反事故措施和事故处理预案的具体实施人员，要严格遵守各项规章制\n度，认真学习并熟练掌握换流站反事故措施和事故处理预案，及时发现设备缺陷和异常情况，\n在当班值长的组织下及时正确地进行事故处理。\n\n\n\n\n                     1\n",
+        "locator": "PDF 物理页 11（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:245:292",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 245,
+        "end": 292,
+        "text": "2.2.1 国调值班调度员是国调管辖系统事故处理的指挥者。事故处理时，运行值班人员应做\n到：\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:292:341",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 292,
+        "end": 341,
+        "text": "     2.2.1.1   迅速限制事故发展，消除事故根源，解除对人身、设备和电网安全的威胁。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:341:390",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 341,
+        "end": 390,
+        "text": "     2.2.1.2   用一切可能的方法保持正常设备的运行和对重要设备及站用电的正常供电。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:390:421",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 390,
+        "end": 421,
+        "text": "     2.2.1.3   电网解列后要尽快恢复并列运行。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:421:452",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 421,
+        "end": 452,
+        "text": "     2.2.1.4   尽快恢复对已停电的设备供电。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:452:473",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 452,
+        "end": 473,
+        "text": "2.2.2 调整并恢复正常电网运行方式。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:473:572",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 473,
+        "end": 572,
+        "text": "2.2.3 当有关电网发生影响国调管辖系统安全运行的事故时，运行值班员应尽快将事故简要\n情况汇报国调值班调度员；事故处理完毕后，运行值班员应及时提交事故原始报告并向国调\n值班调度员汇报详细情况。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:572:669",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 572,
+        "end": 669,
+        "text": "2.2.4 国调管辖系统发生事故时，运行值班员应立即向国调汇报事故概况，在查明情况后，\n应尽快详细汇报。汇报内容应包括事故发生的时间及现象、跳闸开关、继电保护动作情况及\n电压、潮流的变化等。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:669:706",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 669,
+        "end": 706,
+        "text": "2.2.5 为防止事故扩大，运行值班员可不待调度指令自行进行以下紧急操作\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:706:739",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 706,
+        "end": 739,
+        "text": "     2.2.5.1   对人身和设备安全有威胁的设备停电。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:739:769",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 739,
+        "end": 769,
+        "text": "     2.2.5.2   将故障停运已损坏的设备隔离。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:769:804",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 769,
+        "end": 804,
+        "text": "     2.2.5.3   当站用电部分或全部停电时，恢复其电源。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:804:841",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 804,
+        "end": 841,
+        "text": "     2.2.5.4   站规程中规定可以不待调度指令自行处理者。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:841:894",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 841,
+        "end": 894,
+        "text": "2.2.6 电压互感器或电流互感器发生异常情况时，应迅速按规程规定进行处理，并向国调值\n班调度员汇报。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:894:969",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 894,
+        "end": 969,
+        "text": "2.2.7 事故处理时，只允许与事故处理有关的领导和工作人员留在控制室内，其他无关人员\n\n                            2\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:0:48",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 0,
+        "end": 48,
+        "text": "应迅速离开；非事故单位不应在事故处理当时向运行值班员询问事故原因和过程，以免影响\n事故处理。\n\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:48:81",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 48,
+        "end": 81,
+        "text": "2.2.8 事故处理完毕后，应将事故情况详细记录，并按规定报告。\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:81:114",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 81,
+        "end": 114,
+        "text": "2.2.9 事故调查工作按《国家电网公司安全事故调查规程》进行。\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:114:155",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 114,
+        "end": 155,
+        "text": "2.2.10 频率、电压发生异常情况时，运行值班员应加强监视，及时向国调汇报。\n\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:44:70",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 44,
+        "end": 70,
+        "text": "2.1.1 尽快限制事故扩大，消除人身及设备危险。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:70:88",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 70,
+        "end": 88,
+        "text": "2.1.2 尽力保证恢复站用电源。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:88:125",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 88,
+        "end": 125,
+        "text": "2.1.3 及时处理设备事故，尽快恢复设备送电，处理事故时，严防误操作。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:125:164",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 125,
+        "end": 164,
+        "text": "2.1.4 事故发生和主要操作的时间应做记录，及时将情况报告有关领导和调度。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:164:234",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 164,
+        "end": 234,
+        "text": "2.1.5 事故发生时应根据表计、保护、报警信号及自动装置动作情况，进行分析判断，做出\n处理方案，处理中防止非同期并列和系统事故扩大。\n\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      }
+    ],
+    "context_extent": "source_inventory_and_explicit_dependencies_not_exhaustive",
+    "source_currency": "not_independently_certified",
+    "source_unit_ids": [
+      "d_98d56bcdf4e49412/clause/2.1.1",
+      "d_98d56bcdf4e49412/clause/2.1.2",
+      "d_98d56bcdf4e49412/clause/2.1.3",
+      "d_98d56bcdf4e49412/clause/2.1.4",
+      "d_98d56bcdf4e49412/clause/2.1.5"
+    ]
+  },
+  {
+    "id": "emergency_authority",
+    "title": "事故组织与应急权限：明确授权、安全前提与事后汇报",
+    "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 1.2、2.2.1、2.2.3—5，关联第三分册6.0版（2026年2月）5.7",
+    "facts": [
+      {
+        "id": "shift_leader",
+        "text": "本站当班值长是安全生产第一负责人，应掌握规定并组织全值人员贯彻执行；设备或系统异常、事故时积极组织处理。",
+        "source_quote": "1.2.1姑苏换流站当班值长是安全生产的第一负责人，应熟练掌握并组织全",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page11:140:213"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "operators",
+        "text": "各运行值班员是反事故措施与事故处理预案的具体实施人员，应遵守规章制度、认真学习并掌握措施和预案，及时发现缺陷异常，在当班值长组织下正确处理。",
+        "source_quote": "1.2.2各运行值班员是反事故措施和事故处理预案的具体实施人员，要严格",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page11:213:348"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "dispatch_commander",
+        "text": "国调管辖系统的事故处理由国调值班调度员指挥。",
+        "source_quote": "2.2.1国调值班调度员是国调管辖系统事故处理的指挥者。事故处理时，运",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:245:292"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "emergency_scope",
+        "text": "为了防止事故扩大，运行值班员可以不待调度指令自行实施本条明确列出的紧急操作。",
+        "source_quote": "2.2.5为防止事故扩大，运行值班员可不待调度指令自行进行以下紧急操作",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:669:706"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "danger_stop",
+        "text": "紧急操作包括：将对人身和设备安全有威胁的设备停电。",
+        "source_quote": "2.2.5.1对人身和设备安全有威胁的设备停电。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:706:739"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "damaged_isolation",
+        "text": "紧急操作包括：隔离已经故障停运且损坏的设备。",
+        "source_quote": "2.2.5.2将故障停运已损坏的设备隔离。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:739:769"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "aux_restore",
+        "text": "站用电部分或全部停电时，恢复其电源属于本条列出的紧急操作。",
+        "source_quote": "2.2.5.3当站用电部分或全部停电时，恢复其电源。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:769:804"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "other_explicit",
+        "text": "其他可以不待指令自行处理的情形，需要站规程另有明确规定；这不是对任何现场认为紧急的操作作无限授权。",
+        "source_quote": "2.2.5.4站规程中规定可以不待调度指令自行处理者。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:804:841"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "after_report",
+        "text": "第三分册6.0版（2026年2月）5.7明确：自行实施所列应急操作后，应立即向相关调控机构值班调度员汇报。",
+        "source_quote": "但事后应立即向相关调控机构值班调度员汇报",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp21938_21993:0:55"
+        ],
+        "source_id": "d_4b964d3ff677714b",
+        "source_scope": "姑苏站《运行方式及设备运行规定》第三分册6.0版（2026年2月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "safe_isolation",
+        "text": "第三分册5.7对故障停运已损坏设备的隔离另保留“确保安全”的前提。",
+        "source_quote": "确保安全的前提下",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp22016_22042:0:26"
+        ],
+        "source_id": "d_4b964d3ff677714b",
+        "source_scope": "姑苏站《运行方式及设备运行规定》第三分册6.0版（2026年2月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "national_report",
+        "text": "国调管辖系统事故应立即向国调汇报概况，查明后尽快详细汇报；内容包括时间及现象、跳闸开关、继电保护动作以及电压和潮流变化。",
+        "source_quote": "2.2.4国调管辖系统发生事故时，运行值班员应立即向国调汇报事故概况，",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:572:669"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "impact_report",
+        "text": "有关电网的事故影响国调管辖系统安全运行时，尽快汇报简要情况；处理完毕及时提交事故原始报告，并向国调值班调度员详细汇报。",
+        "source_quote": "2.2.3当有关电网发生影响国调管辖系统安全运行的事故时，运行值班员应",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:473:572"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      }
+    ],
+    "order_edges": [],
+    "branches": [],
+    "direct_spans": [
+      {
+        "id": "d_98d56bcdf4e49412/page11:140:213",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page11",
+        "start": 140,
+        "end": 213,
+        "text": "1.2.1 姑苏换流站当班值长是安全生产的第一负责人，应熟练掌握并组织全值人员贯彻执行\n本规定，在设备、系统出现异常或事故时，应积极组织处理。\n\n",
+        "locator": "PDF 物理页 11（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page11:213:348",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page11",
+        "start": 213,
+        "end": 348,
+        "text": "1.2.2 各运行值班员是反事故措施和事故处理预案的具体实施人员，要严格遵守各项规章制\n度，认真学习并熟练掌握换流站反事故措施和事故处理预案，及时发现设备缺陷和异常情况，\n在当班值长的组织下及时正确地进行事故处理。\n\n\n\n\n                     1\n",
+        "locator": "PDF 物理页 11（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:245:292",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 245,
+        "end": 292,
+        "text": "2.2.1 国调值班调度员是国调管辖系统事故处理的指挥者。事故处理时，运行值班人员应做\n到：\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:669:706",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 669,
+        "end": 706,
+        "text": "2.2.5 为防止事故扩大，运行值班员可不待调度指令自行进行以下紧急操作\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:706:739",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 706,
+        "end": 739,
+        "text": "     2.2.5.1   对人身和设备安全有威胁的设备停电。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:739:769",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 739,
+        "end": 769,
+        "text": "     2.2.5.2   将故障停运已损坏的设备隔离。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:769:804",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 769,
+        "end": 804,
+        "text": "     2.2.5.3   当站用电部分或全部停电时，恢复其电源。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:804:841",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 804,
+        "end": 841,
+        "text": "     2.2.5.4   站规程中规定可以不待调度指令自行处理者。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp21938_21993:0:55",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp21938_21993",
+        "start": 0,
+        "end": 55,
+        "text": "为防止故障范围扩大，厂站运行人员可不待国调指令自行进行以下应急操作，但事后应立即向相关调控机构值班调度员汇报：",
+        "locator": "Word 主正文 CP 21938–21993，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp22016_22042:0:26",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp22016_22042",
+        "start": 0,
+        "end": 26,
+        "text": "（2）确保安全的前提下，将故障停运已损坏的设备隔离；",
+        "locator": "Word 主正文 CP 22016–22042，不是页码"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:572:669",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 572,
+        "end": 669,
+        "text": "2.2.4 国调管辖系统发生事故时，运行值班员应立即向国调汇报事故概况，在查明情况后，\n应尽快详细汇报。汇报内容应包括事故发生的时间及现象、跳闸开关、继电保护动作情况及\n电压、潮流的变化等。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:473:572",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 473,
+        "end": 572,
+        "text": "2.2.3 当有关电网发生影响国调管辖系统安全运行的事故时，运行值班员应尽快将事故简要\n情况汇报国调值班调度员；事故处理完毕后，运行值班员应及时提交事故原始报告并向国调\n值班调度员汇报详细情况。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      }
+    ],
+    "context_spans": [
+      {
+        "id": "d_98d56bcdf4e49412/page12:44:70",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 44,
+        "end": 70,
+        "text": "2.1.1 尽快限制事故扩大，消除人身及设备危险。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:70:88",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 70,
+        "end": 88,
+        "text": "2.1.2 尽力保证恢复站用电源。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:88:125",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 88,
+        "end": 125,
+        "text": "2.1.3 及时处理设备事故，尽快恢复设备送电，处理事故时，严防误操作。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:125:164",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 125,
+        "end": 164,
+        "text": "2.1.4 事故发生和主要操作的时间应做记录，及时将情况报告有关领导和调度。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:164:234",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 164,
+        "end": 234,
+        "text": "2.1.5 事故发生时应根据表计、保护、报警信号及自动装置动作情况，进行分析判断，做出\n处理方案，处理中防止非同期并列和系统事故扩大。\n\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:292:341",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 292,
+        "end": 341,
+        "text": "     2.2.1.1   迅速限制事故发展，消除事故根源，解除对人身、设备和电网安全的威胁。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:341:390",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 341,
+        "end": 390,
+        "text": "     2.2.1.2   用一切可能的方法保持正常设备的运行和对重要设备及站用电的正常供电。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:390:421",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 390,
+        "end": 421,
+        "text": "     2.2.1.3   电网解列后要尽快恢复并列运行。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:421:452",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 421,
+        "end": 452,
+        "text": "     2.2.1.4   尽快恢复对已停电的设备供电。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:452:473",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 452,
+        "end": 473,
+        "text": "2.2.2 调整并恢复正常电网运行方式。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:841:894",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 841,
+        "end": 894,
+        "text": "2.2.6 电压互感器或电流互感器发生异常情况时，应迅速按规程规定进行处理，并向国调值\n班调度员汇报。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:894:969",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 894,
+        "end": 969,
+        "text": "2.2.7 事故处理时，只允许与事故处理有关的领导和工作人员留在控制室内，其他无关人员\n\n                            2\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:0:48",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 0,
+        "end": 48,
+        "text": "应迅速离开；非事故单位不应在事故处理当时向运行值班员询问事故原因和过程，以免影响\n事故处理。\n\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:48:81",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 48,
+        "end": 81,
+        "text": "2.2.8 事故处理完毕后，应将事故情况详细记录，并按规定报告。\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:81:114",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 81,
+        "end": 114,
+        "text": "2.2.9 事故调查工作按《国家电网公司安全事故调查规程》进行。\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:114:155",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 114,
+        "end": 155,
+        "text": "2.2.10 频率、电压发生异常情况时，运行值班员应加强监视，及时向国调汇报。\n\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp21994_22015:0:21",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp21994_22015",
+        "start": 0,
+        "end": 21,
+        "text": "（1）将对人身和设备安全有威胁的设备停电；",
+        "locator": "Word 主正文 CP 21994–22015，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp22043_22066:0:23",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp22043_22066",
+        "start": 0,
+        "end": 23,
+        "text": "（3）当厂站用电部分或全部停电时，恢复其电源；",
+        "locator": "Word 主正文 CP 22043–22066，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp22067_22091:0:24",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp22067_22091",
+        "start": 0,
+        "end": 24,
+        "text": "（4）厂站规程中规定可以不待调度指令自行处理者。",
+        "locator": "Word 主正文 CP 22067–22091，不是页码"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:335:417",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 335,
+        "end": 417,
+        "text": "     2.3.5.1   国调与换流站间的通信联系中断时，各方应积极采取措施，尽快恢复通信联系，\n如不能尽快恢复，国调可通过有关网省调的通信联系转达调度业务。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:417:448",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 417,
+        "end": 448,
+        "text": "     2.3.5.2   当调度与换流站间的通信中断时。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:448:481",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 448,
+        "end": 481,
+        "text": "     2.3.5.2.1 换流站的运行方式，尽可能保持不变。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:481:543",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 481,
+        "end": 543,
+        "text": "     2.3.5.2.2 正在进行检修的设备，在通信中断期间完工，可以恢复运行时，只能待通信\n恢复正常后，再恢复运行。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:543:720",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 543,
+        "end": 720,
+        "text": "     2.3.5.3   当国调值班调度员下达操作指令后，受令方未重复指令或虽已重复指令但未经\n国调值班调度员同意执行操作前，失去通信联系，则该操作指令不得执行；若已经国调值班\n调度员同意执行操作，可以将该操作指令全部执行完毕。国调值班调度员在下达了操作指令\n后而未接到完成操作指令的报告前，与受令单位失去通信联系，则仍认为该操作指令正在执\n行中。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:720:808",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 720,
+        "end": 808,
+        "text": "     2.3.5.4   凡涉及国调管辖系统安全问题或时间性没有特殊要求的调度业务联系，失去通\n信联系后，在与国调值班调度员联系前不得自行处理；紧急情况下按规程规定处理。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:808:861",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 808,
+        "end": 861,
+        "text": "     2.3.5.5   在通信恢复后，应立即向国调值班调度员补报在通信中断期间一切应汇报事\n项。\n\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp113_121:0:8",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp113_121",
+        "start": 0,
+        "end": 8,
+        "text": "版本号[6.0]",
+        "locator": "Word 主正文 CP 113–121，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp290_297:0:7",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp290_297",
+        "start": 0,
+        "end": 7,
+        "text": "二O二六年二月",
+        "locator": "Word 主正文 CP 290–297，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp2275_2313:0:14",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp2275_2313",
+        "start": 0,
+        "end": 14,
+        "text": "5.7 异常及故障处理\t12",
+        "locator": "Word 主正文 CP 2275–2313，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp20268_20275:0:7",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp20268_20275",
+        "start": 0,
+        "end": 7,
+        "text": "异常及故障处理",
+        "locator": "Word 主正文 CP 20268–20275，不是页码"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page11:140:213",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page11",
+        "start": 140,
+        "end": 213,
+        "text": "1.2.1 姑苏换流站当班值长是安全生产的第一负责人，应熟练掌握并组织全值人员贯彻执行\n本规定，在设备、系统出现异常或事故时，应积极组织处理。\n\n",
+        "locator": "PDF 物理页 11（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page11:213:348",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page11",
+        "start": 213,
+        "end": 348,
+        "text": "1.2.2 各运行值班员是反事故措施和事故处理预案的具体实施人员，要严格遵守各项规章制\n度，认真学习并熟练掌握换流站反事故措施和事故处理预案，及时发现设备缺陷和异常情况，\n在当班值长的组织下及时正确地进行事故处理。\n\n\n\n\n                     1\n",
+        "locator": "PDF 物理页 11（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:245:292",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 245,
+        "end": 292,
+        "text": "2.2.1 国调值班调度员是国调管辖系统事故处理的指挥者。事故处理时，运行值班人员应做\n到：\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:669:706",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 669,
+        "end": 706,
+        "text": "2.2.5 为防止事故扩大，运行值班员可不待调度指令自行进行以下紧急操作\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:706:739",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 706,
+        "end": 739,
+        "text": "     2.2.5.1   对人身和设备安全有威胁的设备停电。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:739:769",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 739,
+        "end": 769,
+        "text": "     2.2.5.2   将故障停运已损坏的设备隔离。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:769:804",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 769,
+        "end": 804,
+        "text": "     2.2.5.3   当站用电部分或全部停电时，恢复其电源。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:804:841",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 804,
+        "end": 841,
+        "text": "     2.2.5.4   站规程中规定可以不待调度指令自行处理者。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp21938_21993:0:55",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp21938_21993",
+        "start": 0,
+        "end": 55,
+        "text": "为防止故障范围扩大，厂站运行人员可不待国调指令自行进行以下应急操作，但事后应立即向相关调控机构值班调度员汇报：",
+        "locator": "Word 主正文 CP 21938–21993，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp22016_22042:0:26",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp22016_22042",
+        "start": 0,
+        "end": 26,
+        "text": "（2）确保安全的前提下，将故障停运已损坏的设备隔离；",
+        "locator": "Word 主正文 CP 22016–22042，不是页码"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:572:669",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 572,
+        "end": 669,
+        "text": "2.2.4 国调管辖系统发生事故时，运行值班员应立即向国调汇报事故概况，在查明情况后，\n应尽快详细汇报。汇报内容应包括事故发生的时间及现象、跳闸开关、继电保护动作情况及\n电压、潮流的变化等。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:473:572",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 473,
+        "end": 572,
+        "text": "2.2.3 当有关电网发生影响国调管辖系统安全运行的事故时，运行值班员应尽快将事故简要\n情况汇报国调值班调度员；事故处理完毕后，运行值班员应及时提交事故原始报告并向国调\n值班调度员汇报详细情况。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      }
+    ],
+    "context_extent": "source_inventory_and_explicit_dependencies_not_exhaustive",
+    "source_currency": "not_independently_certified",
+    "source_unit_ids": [
+      "d_98d56bcdf4e49412/clause/1.2.1",
+      "d_98d56bcdf4e49412/clause/1.2.2",
+      "d_98d56bcdf4e49412/clause/2.2.1",
+      "d_98d56bcdf4e49412/clause/2.2.5",
+      "d_98d56bcdf4e49412/clause/2.2.5.1",
+      "d_98d56bcdf4e49412/clause/2.2.5.2",
+      "d_98d56bcdf4e49412/clause/2.2.5.3",
+      "d_98d56bcdf4e49412/clause/2.2.5.4",
+      "d_4b964d3ff677714b/cp21938_21993",
+      "d_4b964d3ff677714b/cp22016_22042",
+      "d_98d56bcdf4e49412/clause/2.2.4",
+      "d_98d56bcdf4e49412/clause/2.2.3"
+    ]
+  },
+  {
+    "id": "incident_coordination",
+    "title": "事故现场协作与收尾：正常设备、异常监视、控制室及调查边界",
+    "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 2.2.1.1—4、2.2.2及2.2.6—10",
+    "facts": [
+      {
+        "id": "remove_threat",
+        "text": "迅速限制事故发展、消除事故根源，解除对人身、设备和电网安全的威胁。",
+        "source_quote": "2.2.1.1迅速限制事故发展，消除事故根源，解除对人身、设备和电网安",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:292:341"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "keep_normal",
+        "text": "尽可能保持正常设备运行，并维持重要设备和站用电的正常供电。",
+        "source_quote": "2.2.1.2用一切可能的方法保持正常设备的运行和对重要设备及站用电的",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:341:390"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "reparallel",
+        "text": "电网解列后应尽快恢复并列运行。",
+        "source_quote": "2.2.1.3电网解列后要尽快恢复并列运行。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:390:421"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "restore_supply",
+        "text": "尽快恢复已停电设备的供电。",
+        "source_quote": "2.2.1.4尽快恢复对已停电的设备供电。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:421:452"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "normal_grid",
+        "text": "调整并恢复正常电网运行方式。",
+        "source_quote": "2.2.2调整并恢复正常电网运行方式。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:452:473"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "transformers_abnormal",
+        "text": "电压或电流互感器异常时，迅速按规程处理，并向国调值班调度员汇报。",
+        "source_quote": "2.2.6电压互感器或电流互感器发生异常情况时，应迅速按规程规定进行处",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:841:894"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "control_room",
+        "text": "事故处理时，控制室只允许相关领导和工作人员留下；其他无关人员应迅速离开。非事故单位不应在处理当时询问值班员事故原因和过程，以免影响处置。",
+        "source_quote": "2.2.7事故处理时，只允许与事故处理有关的领导和工作人员留在控制室内",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:894:969"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "close_record",
+        "text": "事故处理完毕后，详细记录事故情况，并按规定报告。",
+        "source_quote": "2.2.8事故处理完毕后，应将事故情况详细记录，并按规定报告。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:48:81"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "investigation",
+        "text": "事故调查按《国家电网公司安全事故调查规程》开展，本条没有列出该规程的具体调查步骤。",
+        "source_quote": "2.2.9事故调查工作按《国家电网公司安全事故调查规程》进行。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:81:114"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "frequency_voltage",
+        "text": "频率或电压异常时，值班员加强监视，并及时向国调汇报。",
+        "source_quote": "2.2.10频率、电压发生异常情况时，运行值班员应加强监视，及时向国调",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:114:155"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      }
+    ],
+    "order_edges": [],
+    "branches": [],
+    "direct_spans": [
+      {
+        "id": "d_98d56bcdf4e49412/page12:292:341",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 292,
+        "end": 341,
+        "text": "     2.2.1.1   迅速限制事故发展，消除事故根源，解除对人身、设备和电网安全的威胁。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:341:390",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 341,
+        "end": 390,
+        "text": "     2.2.1.2   用一切可能的方法保持正常设备的运行和对重要设备及站用电的正常供电。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:390:421",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 390,
+        "end": 421,
+        "text": "     2.2.1.3   电网解列后要尽快恢复并列运行。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:421:452",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 421,
+        "end": 452,
+        "text": "     2.2.1.4   尽快恢复对已停电的设备供电。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:452:473",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 452,
+        "end": 473,
+        "text": "2.2.2 调整并恢复正常电网运行方式。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:841:894",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 841,
+        "end": 894,
+        "text": "2.2.6 电压互感器或电流互感器发生异常情况时，应迅速按规程规定进行处理，并向国调值\n班调度员汇报。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:894:969",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 894,
+        "end": 969,
+        "text": "2.2.7 事故处理时，只允许与事故处理有关的领导和工作人员留在控制室内，其他无关人员\n\n                            2\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:0:48",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 0,
+        "end": 48,
+        "text": "应迅速离开；非事故单位不应在事故处理当时向运行值班员询问事故原因和过程，以免影响\n事故处理。\n\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:48:81",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 48,
+        "end": 81,
+        "text": "2.2.8 事故处理完毕后，应将事故情况详细记录，并按规定报告。\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:81:114",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 81,
+        "end": 114,
+        "text": "2.2.9 事故调查工作按《国家电网公司安全事故调查规程》进行。\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:114:155",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 114,
+        "end": 155,
+        "text": "2.2.10 频率、电压发生异常情况时，运行值班员应加强监视，及时向国调汇报。\n\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      }
+    ],
+    "context_spans": [
+      {
+        "id": "d_98d56bcdf4e49412/page11:140:213",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page11",
+        "start": 140,
+        "end": 213,
+        "text": "1.2.1 姑苏换流站当班值长是安全生产的第一负责人，应熟练掌握并组织全值人员贯彻执行\n本规定，在设备、系统出现异常或事故时，应积极组织处理。\n\n",
+        "locator": "PDF 物理页 11（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page11:213:348",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page11",
+        "start": 213,
+        "end": 348,
+        "text": "1.2.2 各运行值班员是反事故措施和事故处理预案的具体实施人员，要严格遵守各项规章制\n度，认真学习并熟练掌握换流站反事故措施和事故处理预案，及时发现设备缺陷和异常情况，\n在当班值长的组织下及时正确地进行事故处理。\n\n\n\n\n                     1\n",
+        "locator": "PDF 物理页 11（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:44:70",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 44,
+        "end": 70,
+        "text": "2.1.1 尽快限制事故扩大，消除人身及设备危险。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:70:88",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 70,
+        "end": 88,
+        "text": "2.1.2 尽力保证恢复站用电源。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:88:125",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 88,
+        "end": 125,
+        "text": "2.1.3 及时处理设备事故，尽快恢复设备送电，处理事故时，严防误操作。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:125:164",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 125,
+        "end": 164,
+        "text": "2.1.4 事故发生和主要操作的时间应做记录，及时将情况报告有关领导和调度。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:164:234",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 164,
+        "end": 234,
+        "text": "2.1.5 事故发生时应根据表计、保护、报警信号及自动装置动作情况，进行分析判断，做出\n处理方案，处理中防止非同期并列和系统事故扩大。\n\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:245:292",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 245,
+        "end": 292,
+        "text": "2.2.1 国调值班调度员是国调管辖系统事故处理的指挥者。事故处理时，运行值班人员应做\n到：\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:473:572",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 473,
+        "end": 572,
+        "text": "2.2.3 当有关电网发生影响国调管辖系统安全运行的事故时，运行值班员应尽快将事故简要\n情况汇报国调值班调度员；事故处理完毕后，运行值班员应及时提交事故原始报告并向国调\n值班调度员汇报详细情况。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:572:669",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 572,
+        "end": 669,
+        "text": "2.2.4 国调管辖系统发生事故时，运行值班员应立即向国调汇报事故概况，在查明情况后，\n应尽快详细汇报。汇报内容应包括事故发生的时间及现象、跳闸开关、继电保护动作情况及\n电压、潮流的变化等。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:669:706",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 669,
+        "end": 706,
+        "text": "2.2.5 为防止事故扩大，运行值班员可不待调度指令自行进行以下紧急操作\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:706:739",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 706,
+        "end": 739,
+        "text": "     2.2.5.1   对人身和设备安全有威胁的设备停电。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:739:769",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 739,
+        "end": 769,
+        "text": "     2.2.5.2   将故障停运已损坏的设备隔离。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:769:804",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 769,
+        "end": 804,
+        "text": "     2.2.5.3   当站用电部分或全部停电时，恢复其电源。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:804:841",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 804,
+        "end": 841,
+        "text": "     2.2.5.4   站规程中规定可以不待调度指令自行处理者。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:335:417",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 335,
+        "end": 417,
+        "text": "     2.3.5.1   国调与换流站间的通信联系中断时，各方应积极采取措施，尽快恢复通信联系，\n如不能尽快恢复，国调可通过有关网省调的通信联系转达调度业务。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:417:448",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 417,
+        "end": 448,
+        "text": "     2.3.5.2   当调度与换流站间的通信中断时。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:448:481",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 448,
+        "end": 481,
+        "text": "     2.3.5.2.1 换流站的运行方式，尽可能保持不变。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:481:543",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 481,
+        "end": 543,
+        "text": "     2.3.5.2.2 正在进行检修的设备，在通信中断期间完工，可以恢复运行时，只能待通信\n恢复正常后，再恢复运行。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:543:720",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 543,
+        "end": 720,
+        "text": "     2.3.5.3   当国调值班调度员下达操作指令后，受令方未重复指令或虽已重复指令但未经\n国调值班调度员同意执行操作前，失去通信联系，则该操作指令不得执行；若已经国调值班\n调度员同意执行操作，可以将该操作指令全部执行完毕。国调值班调度员在下达了操作指令\n后而未接到完成操作指令的报告前，与受令单位失去通信联系，则仍认为该操作指令正在执\n行中。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:720:808",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 720,
+        "end": 808,
+        "text": "     2.3.5.4   凡涉及国调管辖系统安全问题或时间性没有特殊要求的调度业务联系，失去通\n信联系后，在与国调值班调度员联系前不得自行处理；紧急情况下按规程规定处理。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:808:861",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 808,
+        "end": 861,
+        "text": "     2.3.5.5   在通信恢复后，应立即向国调值班调度员补报在通信中断期间一切应汇报事\n项。\n\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:292:341",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 292,
+        "end": 341,
+        "text": "     2.2.1.1   迅速限制事故发展，消除事故根源，解除对人身、设备和电网安全的威胁。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:341:390",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 341,
+        "end": 390,
+        "text": "     2.2.1.2   用一切可能的方法保持正常设备的运行和对重要设备及站用电的正常供电。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:390:421",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 390,
+        "end": 421,
+        "text": "     2.2.1.3   电网解列后要尽快恢复并列运行。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:421:452",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 421,
+        "end": 452,
+        "text": "     2.2.1.4   尽快恢复对已停电的设备供电。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:452:473",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 452,
+        "end": 473,
+        "text": "2.2.2 调整并恢复正常电网运行方式。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:841:894",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 841,
+        "end": 894,
+        "text": "2.2.6 电压互感器或电流互感器发生异常情况时，应迅速按规程规定进行处理，并向国调值\n班调度员汇报。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:894:969",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 894,
+        "end": 969,
+        "text": "2.2.7 事故处理时，只允许与事故处理有关的领导和工作人员留在控制室内，其他无关人员\n\n                            2\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:0:48",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 0,
+        "end": 48,
+        "text": "应迅速离开；非事故单位不应在事故处理当时向运行值班员询问事故原因和过程，以免影响\n事故处理。\n\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:48:81",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 48,
+        "end": 81,
+        "text": "2.2.8 事故处理完毕后，应将事故情况详细记录，并按规定报告。\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:81:114",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 81,
+        "end": 114,
+        "text": "2.2.9 事故调查工作按《国家电网公司安全事故调查规程》进行。\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:114:155",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 114,
+        "end": 155,
+        "text": "2.2.10 频率、电压发生异常情况时，运行值班员应加强监视，及时向国调汇报。\n\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      }
+    ],
+    "context_extent": "source_inventory_and_explicit_dependencies_not_exhaustive",
+    "source_currency": "not_independently_certified",
+    "source_unit_ids": [
+      "d_98d56bcdf4e49412/clause/2.2.1.1",
+      "d_98d56bcdf4e49412/clause/2.2.1.2",
+      "d_98d56bcdf4e49412/clause/2.2.1.3",
+      "d_98d56bcdf4e49412/clause/2.2.1.4",
+      "d_98d56bcdf4e49412/clause/2.2.2",
+      "d_98d56bcdf4e49412/clause/2.2.6",
+      "d_98d56bcdf4e49412/clause/2.2.7",
+      "d_98d56bcdf4e49412/clause/2.2.8",
+      "d_98d56bcdf4e49412/clause/2.2.9",
+      "d_98d56bcdf4e49412/clause/2.2.10"
+    ]
+  },
+  {
+    "id": "dispatch_communication_loss",
+    "title": "调度通信中断：执行许可、检修复役与恢复后补报",
+    "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 2.3.5",
+    "facts": [
+      {
+        "id": "restore_communication",
+        "text": "国调与换流站通信中断时，各方积极采取措施尽快恢复联系；不能尽快恢复时，国调可通过有关网省调通信联系转达调度业务。",
+        "source_quote": "2.3.5.1国调与换流站间的通信联系中断时，各方应积极采取措施，尽快",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:335:417"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "stable_mode",
+        "text": "调度与换流站通信中断期间，换流站运行方式尽可能保持不变。",
+        "source_quote": "2.3.5.2.1换流站的运行方式，尽可能保持不变。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:448:481"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "repaired_wait",
+        "text": "检修设备在通信中断期间完工并具备恢复运行条件时，仍需等待通信恢复正常后再恢复运行。",
+        "source_quote": "2.3.5.2.2正在进行检修的设备，在通信中断期间完工，可以恢复运行",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:481:543"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "unapproved_command",
+        "text": "已下达指令，但受令方尚未重复，或虽已重复而未获国调值班调度员同意执行时失联，该指令不得执行。",
+        "source_quote": "受令方未重复指令或虽已重复指令但未经",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:543:720"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "approved_command",
+        "text": "若失联前已经得到国调值班调度员同意执行，可以将该操作指令全部执行完毕。",
+        "source_quote": "若已经国调值班",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:543:720"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "dispatch_view",
+        "text": "国调下达指令后，在未收到完成报告前与受令单位失联，仍认为该指令正在执行。",
+        "source_quote": "而未接到完成操作指令的报告前",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:543:720"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "no_arbitrary_action",
+        "text": "涉及国调管辖系统安全问题或时间性没有特殊要求的调度业务，失联后在与国调重新联系前不得自行处理；紧急情况按规程规定处理。",
+        "source_quote": "2.3.5.4凡涉及国调管辖系统安全问题或时间性没有特殊要求的调度业务",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:720:808"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "report_when_restored",
+        "text": "通信恢复后，立即向国调值班调度员补报中断期间所有应汇报事项。",
+        "source_quote": "2.3.5.5在通信恢复后，应立即向国调值班调度员补报在通信中断期间一",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:808:861"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      }
+    ],
+    "order_edges": [],
+    "branches": [
+      [
+        "unapproved_command",
+        "approved_command"
+      ]
+    ],
+    "direct_spans": [
+      {
+        "id": "d_98d56bcdf4e49412/page14:335:417",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 335,
+        "end": 417,
+        "text": "     2.3.5.1   国调与换流站间的通信联系中断时，各方应积极采取措施，尽快恢复通信联系，\n如不能尽快恢复，国调可通过有关网省调的通信联系转达调度业务。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:448:481",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 448,
+        "end": 481,
+        "text": "     2.3.5.2.1 换流站的运行方式，尽可能保持不变。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:481:543",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 481,
+        "end": 543,
+        "text": "     2.3.5.2.2 正在进行检修的设备，在通信中断期间完工，可以恢复运行时，只能待通信\n恢复正常后，再恢复运行。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:543:720",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 543,
+        "end": 720,
+        "text": "     2.3.5.3   当国调值班调度员下达操作指令后，受令方未重复指令或虽已重复指令但未经\n国调值班调度员同意执行操作前，失去通信联系，则该操作指令不得执行；若已经国调值班\n调度员同意执行操作，可以将该操作指令全部执行完毕。国调值班调度员在下达了操作指令\n后而未接到完成操作指令的报告前，与受令单位失去通信联系，则仍认为该操作指令正在执\n行中。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:720:808",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 720,
+        "end": 808,
+        "text": "     2.3.5.4   凡涉及国调管辖系统安全问题或时间性没有特殊要求的调度业务联系，失去通\n信联系后，在与国调值班调度员联系前不得自行处理；紧急情况下按规程规定处理。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:808:861",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 808,
+        "end": 861,
+        "text": "     2.3.5.5   在通信恢复后，应立即向国调值班调度员补报在通信中断期间一切应汇报事\n项。\n\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      }
+    ],
+    "context_spans": [
+      {
+        "id": "d_98d56bcdf4e49412/page14:417:448",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 417,
+        "end": 448,
+        "text": "     2.3.5.2   当调度与换流站间的通信中断时。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page11:140:213",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page11",
+        "start": 140,
+        "end": 213,
+        "text": "1.2.1 姑苏换流站当班值长是安全生产的第一负责人，应熟练掌握并组织全值人员贯彻执行\n本规定，在设备、系统出现异常或事故时，应积极组织处理。\n\n",
+        "locator": "PDF 物理页 11（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page11:213:348",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page11",
+        "start": 213,
+        "end": 348,
+        "text": "1.2.2 各运行值班员是反事故措施和事故处理预案的具体实施人员，要严格遵守各项规章制\n度，认真学习并熟练掌握换流站反事故措施和事故处理预案，及时发现设备缺陷和异常情况，\n在当班值长的组织下及时正确地进行事故处理。\n\n\n\n\n                     1\n",
+        "locator": "PDF 物理页 11（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:44:70",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 44,
+        "end": 70,
+        "text": "2.1.1 尽快限制事故扩大，消除人身及设备危险。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:70:88",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 70,
+        "end": 88,
+        "text": "2.1.2 尽力保证恢复站用电源。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:88:125",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 88,
+        "end": 125,
+        "text": "2.1.3 及时处理设备事故，尽快恢复设备送电，处理事故时，严防误操作。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:125:164",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 125,
+        "end": 164,
+        "text": "2.1.4 事故发生和主要操作的时间应做记录，及时将情况报告有关领导和调度。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:164:234",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 164,
+        "end": 234,
+        "text": "2.1.5 事故发生时应根据表计、保护、报警信号及自动装置动作情况，进行分析判断，做出\n处理方案，处理中防止非同期并列和系统事故扩大。\n\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:245:292",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 245,
+        "end": 292,
+        "text": "2.2.1 国调值班调度员是国调管辖系统事故处理的指挥者。事故处理时，运行值班人员应做\n到：\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:292:341",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 292,
+        "end": 341,
+        "text": "     2.2.1.1   迅速限制事故发展，消除事故根源，解除对人身、设备和电网安全的威胁。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:341:390",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 341,
+        "end": 390,
+        "text": "     2.2.1.2   用一切可能的方法保持正常设备的运行和对重要设备及站用电的正常供电。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:390:421",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 390,
+        "end": 421,
+        "text": "     2.2.1.3   电网解列后要尽快恢复并列运行。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:421:452",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 421,
+        "end": 452,
+        "text": "     2.2.1.4   尽快恢复对已停电的设备供电。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:452:473",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 452,
+        "end": 473,
+        "text": "2.2.2 调整并恢复正常电网运行方式。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:473:572",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 473,
+        "end": 572,
+        "text": "2.2.3 当有关电网发生影响国调管辖系统安全运行的事故时，运行值班员应尽快将事故简要\n情况汇报国调值班调度员；事故处理完毕后，运行值班员应及时提交事故原始报告并向国调\n值班调度员汇报详细情况。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:572:669",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 572,
+        "end": 669,
+        "text": "2.2.4 国调管辖系统发生事故时，运行值班员应立即向国调汇报事故概况，在查明情况后，\n应尽快详细汇报。汇报内容应包括事故发生的时间及现象、跳闸开关、继电保护动作情况及\n电压、潮流的变化等。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:669:706",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 669,
+        "end": 706,
+        "text": "2.2.5 为防止事故扩大，运行值班员可不待调度指令自行进行以下紧急操作\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:706:739",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 706,
+        "end": 739,
+        "text": "     2.2.5.1   对人身和设备安全有威胁的设备停电。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:739:769",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 739,
+        "end": 769,
+        "text": "     2.2.5.2   将故障停运已损坏的设备隔离。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:769:804",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 769,
+        "end": 804,
+        "text": "     2.2.5.3   当站用电部分或全部停电时，恢复其电源。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:804:841",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 804,
+        "end": 841,
+        "text": "     2.2.5.4   站规程中规定可以不待调度指令自行处理者。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:841:894",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 841,
+        "end": 894,
+        "text": "2.2.6 电压互感器或电流互感器发生异常情况时，应迅速按规程规定进行处理，并向国调值\n班调度员汇报。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:894:969",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 894,
+        "end": 969,
+        "text": "2.2.7 事故处理时，只允许与事故处理有关的领导和工作人员留在控制室内，其他无关人员\n\n                            2\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:0:48",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 0,
+        "end": 48,
+        "text": "应迅速离开；非事故单位不应在事故处理当时向运行值班员询问事故原因和过程，以免影响\n事故处理。\n\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:48:81",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 48,
+        "end": 81,
+        "text": "2.2.8 事故处理完毕后，应将事故情况详细记录，并按规定报告。\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:81:114",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 81,
+        "end": 114,
+        "text": "2.2.9 事故调查工作按《国家电网公司安全事故调查规程》进行。\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:114:155",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 114,
+        "end": 155,
+        "text": "2.2.10 频率、电压发生异常情况时，运行值班员应加强监视，及时向国调汇报。\n\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp21938_21993:0:55",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp21938_21993",
+        "start": 0,
+        "end": 55,
+        "text": "为防止故障范围扩大，厂站运行人员可不待国调指令自行进行以下应急操作，但事后应立即向相关调控机构值班调度员汇报：",
+        "locator": "Word 主正文 CP 21938–21993，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp21994_22015:0:21",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp21994_22015",
+        "start": 0,
+        "end": 21,
+        "text": "（1）将对人身和设备安全有威胁的设备停电；",
+        "locator": "Word 主正文 CP 21994–22015，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp22016_22042:0:26",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp22016_22042",
+        "start": 0,
+        "end": 26,
+        "text": "（2）确保安全的前提下，将故障停运已损坏的设备隔离；",
+        "locator": "Word 主正文 CP 22016–22042，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp22043_22066:0:23",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp22043_22066",
+        "start": 0,
+        "end": 23,
+        "text": "（3）当厂站用电部分或全部停电时，恢复其电源；",
+        "locator": "Word 主正文 CP 22043–22066，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp22067_22091:0:24",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp22067_22091",
+        "start": 0,
+        "end": 24,
+        "text": "（4）厂站规程中规定可以不待调度指令自行处理者。",
+        "locator": "Word 主正文 CP 22067–22091，不是页码"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:335:417",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 335,
+        "end": 417,
+        "text": "     2.3.5.1   国调与换流站间的通信联系中断时，各方应积极采取措施，尽快恢复通信联系，\n如不能尽快恢复，国调可通过有关网省调的通信联系转达调度业务。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:448:481",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 448,
+        "end": 481,
+        "text": "     2.3.5.2.1 换流站的运行方式，尽可能保持不变。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:481:543",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 481,
+        "end": 543,
+        "text": "     2.3.5.2.2 正在进行检修的设备，在通信中断期间完工，可以恢复运行时，只能待通信\n恢复正常后，再恢复运行。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:543:720",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 543,
+        "end": 720,
+        "text": "     2.3.5.3   当国调值班调度员下达操作指令后，受令方未重复指令或虽已重复指令但未经\n国调值班调度员同意执行操作前，失去通信联系，则该操作指令不得执行；若已经国调值班\n调度员同意执行操作，可以将该操作指令全部执行完毕。国调值班调度员在下达了操作指令\n后而未接到完成操作指令的报告前，与受令单位失去通信联系，则仍认为该操作指令正在执\n行中。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:720:808",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 720,
+        "end": 808,
+        "text": "     2.3.5.4   凡涉及国调管辖系统安全问题或时间性没有特殊要求的调度业务联系，失去通\n信联系后，在与国调值班调度员联系前不得自行处理；紧急情况下按规程规定处理。\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page14:808:861",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page14",
+        "start": 808,
+        "end": 861,
+        "text": "     2.3.5.5   在通信恢复后，应立即向国调值班调度员补报在通信中断期间一切应汇报事\n项。\n\n",
+        "locator": "PDF 物理页 14（可能不同于印刷页码）"
+      }
+    ],
+    "context_extent": "source_inventory_and_explicit_dependencies_not_exhaustive",
+    "source_currency": "not_independently_certified",
+    "source_unit_ids": [
+      "d_98d56bcdf4e49412/clause/2.3.5.1",
+      "d_98d56bcdf4e49412/clause/2.3.5.2.1",
+      "d_98d56bcdf4e49412/clause/2.3.5.2.2",
+      "d_98d56bcdf4e49412/clause/2.3.5.3",
+      "d_98d56bcdf4e49412/clause/2.3.5.4",
+      "d_98d56bcdf4e49412/clause/2.3.5.5"
+    ]
+  },
+  {
+    "id": "main_pump_no_backup",
+    "title": "主泵异常未切备用：成功切换与备用也故障的完整分支",
+    "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 10.5，关联10.4",
+    "facts": [
+      {
+        "id": "phenomenon",
+        "text": "本预案针对内水冷主循环泵异常、尚未成功切至备用泵运行的现象。",
+        "source_quote": "10.5.1.1内水冷主循环泵异常但未能切至备用泵运行。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:408:442"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "report",
+        "text": "汇报领导，通知检修人员处理。",
+        "source_quote": "10.5.2.1汇报领导，通知检修人员处理；",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:452:479"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "automatic",
+        "text": "在内水冷房检查备用循环泵控制方式；若不在自动位置，应立即切至自动位置。",
+        "source_quote": "10.5.2.2在内水冷房检查备用循环泵控制方式是否在自动位置，若不是",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:479:530"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "local_switch",
+        "text": "检查主泵电机运行；有严重发热、冒烟、声音异常或电源开关烧糊等现象时，立即就地切换主泵，并在现场监视备用泵投入运行正常。",
+        "source_quote": "10.5.2.3检查主泵电机运行情况，若有严重发热、冒烟、声音异常、电",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:530:608"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "fault_pump_isolation",
+        "text": "故障泵的隔离处置包括断开内水冷室软启动器控制柜上的电源开关、故障泵400V电源开关和安全开关，做好安措并通知检修。",
+        "source_quote": "10.5.2.4将内水冷室软启动器控制柜上故障泵的电源开关断开，断开故",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:608:682"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "backup_failed",
+        "text": "备用泵无法投入，或投入后也出现故障时，申请调度将对应换流阀停运；然后断开两台故障泵软启动器控制柜电源开关和400V配电室电源开关，再断开两台泵电机安全开关，做好安措并通知检修。",
+        "source_quote": "10.5.2.5若备用泵电机无法投入运行及投入运行后也有存在故障现象，",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:682:806"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "normal_backup_ban",
+        "text": "如果备用泵已投入正常、正在隔离检查故障主泵，10.4.2.2明确禁止相关站用电切换；不能把备用运行正常当作解除该限制。",
+        "source_quote": "10.4.2.2如果内水冷系统主循环泵故障，备用泵投入运行正常，对故障",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:0:67"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "single_pump_monitor",
+        "text": "只有一台泵运行时，10.4.2.6要求加强直流运行监视，严防运行泵丢失电源，尤其注意站用电倒换。",
+        "source_quote": "10.4.2.6一台泵运行的情况下，要加强监视直流系统的运行情况，严防",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:302:370"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      }
+    ],
+    "order_edges": [
+      [
+        "local_switch",
+        "fault_pump_isolation"
+      ]
+    ],
+    "branches": [
+      [
+        "fault_pump_isolation",
+        "backup_failed"
+      ]
+    ],
+    "direct_spans": [
+      {
+        "id": "d_98d56bcdf4e49412/page64:408:442",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 408,
+        "end": 442,
+        "text": "   10.5.1.1 内水冷主循环泵异常但未能切至备用泵运行。\n\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:452:479",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 452,
+        "end": 479,
+        "text": "   10.5.2.1 汇报领导，通知检修人员处理；\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:479:530",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 479,
+        "end": 530,
+        "text": "   10.5.2.2 在内水冷房检查备用循环泵控制方式是否在自动位置，若不是应立即切至自\n动位置；\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:530:608",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 530,
+        "end": 608,
+        "text": "   10.5.2.3 检查主泵电机运行情况，若有严重发热、冒烟、声音异常、电源开关烧糊现\n象，应立即在就地进行主泵切换操作，现场监视备用泵投入运行正常；\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:608:682",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 608,
+        "end": 682,
+        "text": "   10.5.2.4 将内水冷室软启动器控制柜上故障泵的电源开关断开，断开故障泵的 400V 电\n源开关和安全开关，做好安措，通知检修人员处理；\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:682:806",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 682,
+        "end": 806,
+        "text": "   10.5.2.5 若备用泵电机无法投入运行及投入运行后也有存在故障现象，申请调度将对\n应换流阀停运，然后将断开两台故障泵软启动器控制柜上的电源开关和 400V 配电室内的电\n源开关，断开两台故障泵电机安全开关，做好安措通知检修人员处理。\n\n\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:0:67",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 0,
+        "end": 67,
+        "text": "   10.4.2.2 如果内水冷系统主循环泵故障，备用泵投入运行正常，对故障主循环泵进行\n隔离检查期间禁止进行相关站用电切换操作。\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:302:370",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 302,
+        "end": 370,
+        "text": "   10.4.2.6 一台泵运行的情况下，要加强监视直流系统的运行情况，严防丢失该泵电源\n（特别是进行站用电系统的倒换操作时）。\n\n\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      }
+    ],
+    "context_spans": [
+      {
+        "id": "d_98d56bcdf4e49412/page11:140:213",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page11",
+        "start": 140,
+        "end": 213,
+        "text": "1.2.1 姑苏换流站当班值长是安全生产的第一负责人，应熟练掌握并组织全值人员贯彻执行\n本规定，在设备、系统出现异常或事故时，应积极组织处理。\n\n",
+        "locator": "PDF 物理页 11（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page11:213:348",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page11",
+        "start": 213,
+        "end": 348,
+        "text": "1.2.2 各运行值班员是反事故措施和事故处理预案的具体实施人员，要严格遵守各项规章制\n度，认真学习并熟练掌握换流站反事故措施和事故处理预案，及时发现设备缺陷和异常情况，\n在当班值长的组织下及时正确地进行事故处理。\n\n\n\n\n                     1\n",
+        "locator": "PDF 物理页 11（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:44:70",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 44,
+        "end": 70,
+        "text": "2.1.1 尽快限制事故扩大，消除人身及设备危险。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:70:88",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 70,
+        "end": 88,
+        "text": "2.1.2 尽力保证恢复站用电源。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:88:125",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 88,
+        "end": 125,
+        "text": "2.1.3 及时处理设备事故，尽快恢复设备送电，处理事故时，严防误操作。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:125:164",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 125,
+        "end": 164,
+        "text": "2.1.4 事故发生和主要操作的时间应做记录，及时将情况报告有关领导和调度。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:164:234",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 164,
+        "end": 234,
+        "text": "2.1.5 事故发生时应根据表计、保护、报警信号及自动装置动作情况，进行分析判断，做出\n处理方案，处理中防止非同期并列和系统事故扩大。\n\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:245:292",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 245,
+        "end": 292,
+        "text": "2.2.1 国调值班调度员是国调管辖系统事故处理的指挥者。事故处理时，运行值班人员应做\n到：\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:292:341",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 292,
+        "end": 341,
+        "text": "     2.2.1.1   迅速限制事故发展，消除事故根源，解除对人身、设备和电网安全的威胁。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:341:390",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 341,
+        "end": 390,
+        "text": "     2.2.1.2   用一切可能的方法保持正常设备的运行和对重要设备及站用电的正常供电。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:390:421",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 390,
+        "end": 421,
+        "text": "     2.2.1.3   电网解列后要尽快恢复并列运行。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:421:452",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 421,
+        "end": 452,
+        "text": "     2.2.1.4   尽快恢复对已停电的设备供电。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:452:473",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 452,
+        "end": 473,
+        "text": "2.2.2 调整并恢复正常电网运行方式。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:473:572",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 473,
+        "end": 572,
+        "text": "2.2.3 当有关电网发生影响国调管辖系统安全运行的事故时，运行值班员应尽快将事故简要\n情况汇报国调值班调度员；事故处理完毕后，运行值班员应及时提交事故原始报告并向国调\n值班调度员汇报详细情况。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:572:669",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 572,
+        "end": 669,
+        "text": "2.2.4 国调管辖系统发生事故时，运行值班员应立即向国调汇报事故概况，在查明情况后，\n应尽快详细汇报。汇报内容应包括事故发生的时间及现象、跳闸开关、继电保护动作情况及\n电压、潮流的变化等。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:669:706",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 669,
+        "end": 706,
+        "text": "2.2.5 为防止事故扩大，运行值班员可不待调度指令自行进行以下紧急操作\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:706:739",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 706,
+        "end": 739,
+        "text": "     2.2.5.1   对人身和设备安全有威胁的设备停电。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:739:769",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 739,
+        "end": 769,
+        "text": "     2.2.5.2   将故障停运已损坏的设备隔离。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:769:804",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 769,
+        "end": 804,
+        "text": "     2.2.5.3   当站用电部分或全部停电时，恢复其电源。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:804:841",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 804,
+        "end": 841,
+        "text": "     2.2.5.4   站规程中规定可以不待调度指令自行处理者。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:841:894",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 841,
+        "end": 894,
+        "text": "2.2.6 电压互感器或电流互感器发生异常情况时，应迅速按规程规定进行处理，并向国调值\n班调度员汇报。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:894:969",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 894,
+        "end": 969,
+        "text": "2.2.7 事故处理时，只允许与事故处理有关的领导和工作人员留在控制室内，其他无关人员\n\n                            2\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:0:48",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 0,
+        "end": 48,
+        "text": "应迅速离开；非事故单位不应在事故处理当时向运行值班员询问事故原因和过程，以免影响\n事故处理。\n\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:48:81",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 48,
+        "end": 81,
+        "text": "2.2.8 事故处理完毕后，应将事故情况详细记录，并按规定报告。\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:81:114",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 81,
+        "end": 114,
+        "text": "2.2.9 事故调查工作按《国家电网公司安全事故调查规程》进行。\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:114:155",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 114,
+        "end": 155,
+        "text": "2.2.10 频率、电压发生异常情况时，运行值班员应加强监视，及时向国调汇报。\n\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp21938_21993:0:55",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp21938_21993",
+        "start": 0,
+        "end": 55,
+        "text": "为防止故障范围扩大，厂站运行人员可不待国调指令自行进行以下应急操作，但事后应立即向相关调控机构值班调度员汇报：",
+        "locator": "Word 主正文 CP 21938–21993，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp21994_22015:0:21",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp21994_22015",
+        "start": 0,
+        "end": 21,
+        "text": "（1）将对人身和设备安全有威胁的设备停电；",
+        "locator": "Word 主正文 CP 21994–22015，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp22016_22042:0:26",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp22016_22042",
+        "start": 0,
+        "end": 26,
+        "text": "（2）确保安全的前提下，将故障停运已损坏的设备隔离；",
+        "locator": "Word 主正文 CP 22016–22042，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp22043_22066:0:23",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp22043_22066",
+        "start": 0,
+        "end": 23,
+        "text": "（3）当厂站用电部分或全部停电时，恢复其电源；",
+        "locator": "Word 主正文 CP 22043–22066，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp22067_22091:0:24",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp22067_22091",
+        "start": 0,
+        "end": 24,
+        "text": "（4）厂站规程中规定可以不待调度指令自行处理者。",
+        "locator": "Word 主正文 CP 22067–22091，不是页码"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page63:930:965",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page63",
+        "start": 930,
+        "end": 965,
+        "text": "   10.4.1.1 阀内水冷系统主泵故障，备用泵投入运行正常.\n\n",
+        "locator": "PDF 物理页 63（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page63:975:1035",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page63",
+        "start": 975,
+        "end": 1035,
+        "text": "   10.4.2.1 汇报领导，通知检修人员处理；\n                              53\n",
+        "locator": "PDF 物理页 63（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:67:169",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 67,
+        "end": 169,
+        "text": "   10.4.2.3 检查主泵电机，若主泵电机有严重发热、冒烟起火现象，立即将主循环泵相\n应 400V 配电室开关拉开，断开内冷水室主泵电机安全开关，做好安措通知检修人员处理；\n组织人员用灭火器灭火。\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:169:246",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 169,
+        "end": 246,
+        "text": "   10.4.2.4 若主泵电机外观检查正常，对主泵电机电源开关和安全开关进行检查，未发\n现异常，断开故障主泵电机安全开关，做好安措通知检修人员处理；\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:246:302",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 246,
+        "end": 302,
+        "text": "   10.4.2.5 若开关跳开则将跳开开关试合一次，若试合成功，加强监视，试合不成功，\n通知检修人员处理；\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp132092_132123:0:31",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp132092_132123",
+        "start": 0,
+        "end": 31,
+        "text": "阀冷却系统水泵、风机检修时，其电源开关及就地安全开关均应断开。",
+        "locator": "Word 主正文 CP 132092–132123，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp132430_132500:0:70",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp132430_132500",
+        "start": 0,
+        "end": 70,
+        "text": "换流阀停运一定时间后方可停运阀冷却系统，以确保换流阀晶闸管结温在正常范围内；恢复运行时须启动系统并循环内水冷直至电导率至符合换流阀投运条件。",
+        "locator": "Word 主正文 CP 132430–132500，不是页码"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:408:442",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 408,
+        "end": 442,
+        "text": "   10.5.1.1 内水冷主循环泵异常但未能切至备用泵运行。\n\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:452:479",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 452,
+        "end": 479,
+        "text": "   10.5.2.1 汇报领导，通知检修人员处理；\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:479:530",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 479,
+        "end": 530,
+        "text": "   10.5.2.2 在内水冷房检查备用循环泵控制方式是否在自动位置，若不是应立即切至自\n动位置；\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:530:608",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 530,
+        "end": 608,
+        "text": "   10.5.2.3 检查主泵电机运行情况，若有严重发热、冒烟、声音异常、电源开关烧糊现\n象，应立即在就地进行主泵切换操作，现场监视备用泵投入运行正常；\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:608:682",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 608,
+        "end": 682,
+        "text": "   10.5.2.4 将内水冷室软启动器控制柜上故障泵的电源开关断开，断开故障泵的 400V 电\n源开关和安全开关，做好安措，通知检修人员处理；\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:682:806",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 682,
+        "end": 806,
+        "text": "   10.5.2.5 若备用泵电机无法投入运行及投入运行后也有存在故障现象，申请调度将对\n应换流阀停运，然后将断开两台故障泵软启动器控制柜上的电源开关和 400V 配电室内的电\n源开关，断开两台故障泵电机安全开关，做好安措通知检修人员处理。\n\n\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:0:67",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 0,
+        "end": 67,
+        "text": "   10.4.2.2 如果内水冷系统主循环泵故障，备用泵投入运行正常，对故障主循环泵进行\n隔离检查期间禁止进行相关站用电切换操作。\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page64:302:370",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page64",
+        "start": 302,
+        "end": 370,
+        "text": "   10.4.2.6 一台泵运行的情况下，要加强监视直流系统的运行情况，严防丢失该泵电源\n（特别是进行站用电系统的倒换操作时）。\n\n\n",
+        "locator": "PDF 物理页 64（可能不同于印刷页码）"
+      }
+    ],
+    "context_extent": "source_inventory_and_explicit_dependencies_not_exhaustive",
+    "source_currency": "not_independently_certified",
+    "source_unit_ids": [
+      "d_98d56bcdf4e49412/clause/10.5.1.1",
+      "d_98d56bcdf4e49412/clause/10.5.2.1",
+      "d_98d56bcdf4e49412/clause/10.5.2.2",
+      "d_98d56bcdf4e49412/clause/10.5.2.3",
+      "d_98d56bcdf4e49412/clause/10.5.2.4",
+      "d_98d56bcdf4e49412/clause/10.5.2.5",
+      "d_98d56bcdf4e49412/clause/10.4.2.2",
+      "d_98d56bcdf4e49412/clause/10.4.2.6"
+    ]
+  },
+  {
+    "id": "coolant_conductivity",
+    "title": "电导率高报警：表计差异、水质验证与定值资料边界",
+    "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 10.7",
+    "facts": [
+      {
+        "id": "alarm",
+        "text": "本预案的现象是事件记录出现冷却水电导率高报警信号。",
+        "source_quote": "10.7.1.1事件记录发冷却水电导率高报警信号。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page65:10:41"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "report",
+        "text": "汇报领导，通知检修人员处理。",
+        "source_quote": "10.7.2.1汇报领导，通知检修人员处理；",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page65:51:78"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "compare",
+        "text": "到现场检查电导率表计指示是否正常，并比较两块表计的读数是否一致。",
+        "source_quote": "10.7.2.2现场检查电导率表计的指示是否正常,两块表计读数是否一致",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page65:78:119"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "large_difference",
+        "text": "两块表计偏差较大时，可能是表计故障，应通知检修人员检查处理分析；不能把“可能”改成已确认。",
+        "source_quote": "10.7.2.3若两块表计读数偏差较大，则可能为表计故障，通知检修人员",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page65:119:166"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "consistent",
+        "text": "两块表计读数基本一致时，检查水质电导率；若刚补过水，还检查所用补充水的电导率。",
+        "source_quote": "10.7.2.4如果表计读数基本一致则检查水质电导率，如果刚做过补水工",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page65:166:222"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      },
+      {
+        "id": "actual_result",
+        "text": "实际内水冷电导率正常时，检查测量装置报警值整定；实际电导率确实偏高时，立即联系检修处理。",
+        "source_quote": "10.7.2.5检查内水冷电导率实际正常，则检查电导率测量装置的报警值",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page65:222:289"
+        ],
+        "source_id": "d_98d56bcdf4e49412",
+        "source_scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+        "semantic_support_review": "pending"
+      }
+    ],
+    "order_edges": [
+      [
+        "compare",
+        "large_difference"
+      ],
+      [
+        "compare",
+        "consistent"
+      ]
+    ],
+    "branches": [
+      [
+        "large_difference",
+        "consistent"
+      ]
+    ],
+    "direct_spans": [
+      {
+        "id": "d_98d56bcdf4e49412/page65:10:41",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page65",
+        "start": 10,
+        "end": 41,
+        "text": "   10.7.1.1 事件记录发冷却水电导率高报警信号。\n\n",
+        "locator": "PDF 物理页 65（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page65:51:78",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page65",
+        "start": 51,
+        "end": 78,
+        "text": "   10.7.2.1 汇报领导，通知检修人员处理；\n",
+        "locator": "PDF 物理页 65（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page65:78:119",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page65",
+        "start": 78,
+        "end": 119,
+        "text": "   10.7.2.2 现场检查电导率表计的指示是否正常,两块表计读数是否一致；\n",
+        "locator": "PDF 物理页 65（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page65:119:166",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page65",
+        "start": 119,
+        "end": 166,
+        "text": "   10.7.2.3 若两块表计读数偏差较大，则可能为表计故障，通知检修人员检查处理分析；\n",
+        "locator": "PDF 物理页 65（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page65:166:222",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page65",
+        "start": 166,
+        "end": 222,
+        "text": "   10.7.2.4 如果表计读数基本一致则检查水质电导率，如果刚做过补水工作，检查所使\n用补充水的电导率；\n",
+        "locator": "PDF 物理页 65（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page65:222:289",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page65",
+        "start": 222,
+        "end": 289,
+        "text": "   10.7.2.5 检查内水冷电导率实际正常，则检查电导率测量装置的报警值整定，若电导\n率确实偏高，则立即联系检修人员处理。\n\n\n",
+        "locator": "PDF 物理页 65（可能不同于印刷页码）"
+      }
+    ],
+    "context_spans": [
+      {
+        "id": "d_98d56bcdf4e49412/page11:140:213",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page11",
+        "start": 140,
+        "end": 213,
+        "text": "1.2.1 姑苏换流站当班值长是安全生产的第一负责人，应熟练掌握并组织全值人员贯彻执行\n本规定，在设备、系统出现异常或事故时，应积极组织处理。\n\n",
+        "locator": "PDF 物理页 11（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page11:213:348",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page11",
+        "start": 213,
+        "end": 348,
+        "text": "1.2.2 各运行值班员是反事故措施和事故处理预案的具体实施人员，要严格遵守各项规章制\n度，认真学习并熟练掌握换流站反事故措施和事故处理预案，及时发现设备缺陷和异常情况，\n在当班值长的组织下及时正确地进行事故处理。\n\n\n\n\n                     1\n",
+        "locator": "PDF 物理页 11（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:44:70",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 44,
+        "end": 70,
+        "text": "2.1.1 尽快限制事故扩大，消除人身及设备危险。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:70:88",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 70,
+        "end": 88,
+        "text": "2.1.2 尽力保证恢复站用电源。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:88:125",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 88,
+        "end": 125,
+        "text": "2.1.3 及时处理设备事故，尽快恢复设备送电，处理事故时，严防误操作。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:125:164",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 125,
+        "end": 164,
+        "text": "2.1.4 事故发生和主要操作的时间应做记录，及时将情况报告有关领导和调度。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:164:234",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 164,
+        "end": 234,
+        "text": "2.1.5 事故发生时应根据表计、保护、报警信号及自动装置动作情况，进行分析判断，做出\n处理方案，处理中防止非同期并列和系统事故扩大。\n\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:245:292",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 245,
+        "end": 292,
+        "text": "2.2.1 国调值班调度员是国调管辖系统事故处理的指挥者。事故处理时，运行值班人员应做\n到：\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:292:341",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 292,
+        "end": 341,
+        "text": "     2.2.1.1   迅速限制事故发展，消除事故根源，解除对人身、设备和电网安全的威胁。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:341:390",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 341,
+        "end": 390,
+        "text": "     2.2.1.2   用一切可能的方法保持正常设备的运行和对重要设备及站用电的正常供电。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:390:421",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 390,
+        "end": 421,
+        "text": "     2.2.1.3   电网解列后要尽快恢复并列运行。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:421:452",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 421,
+        "end": 452,
+        "text": "     2.2.1.4   尽快恢复对已停电的设备供电。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:452:473",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 452,
+        "end": 473,
+        "text": "2.2.2 调整并恢复正常电网运行方式。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:473:572",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 473,
+        "end": 572,
+        "text": "2.2.3 当有关电网发生影响国调管辖系统安全运行的事故时，运行值班员应尽快将事故简要\n情况汇报国调值班调度员；事故处理完毕后，运行值班员应及时提交事故原始报告并向国调\n值班调度员汇报详细情况。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:572:669",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 572,
+        "end": 669,
+        "text": "2.2.4 国调管辖系统发生事故时，运行值班员应立即向国调汇报事故概况，在查明情况后，\n应尽快详细汇报。汇报内容应包括事故发生的时间及现象、跳闸开关、继电保护动作情况及\n电压、潮流的变化等。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:669:706",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 669,
+        "end": 706,
+        "text": "2.2.5 为防止事故扩大，运行值班员可不待调度指令自行进行以下紧急操作\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:706:739",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 706,
+        "end": 739,
+        "text": "     2.2.5.1   对人身和设备安全有威胁的设备停电。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:739:769",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 739,
+        "end": 769,
+        "text": "     2.2.5.2   将故障停运已损坏的设备隔离。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:769:804",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 769,
+        "end": 804,
+        "text": "     2.2.5.3   当站用电部分或全部停电时，恢复其电源。\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:804:841",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 804,
+        "end": 841,
+        "text": "     2.2.5.4   站规程中规定可以不待调度指令自行处理者。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:841:894",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 841,
+        "end": 894,
+        "text": "2.2.6 电压互感器或电流互感器发生异常情况时，应迅速按规程规定进行处理，并向国调值\n班调度员汇报。\n\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page12:894:969",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page12",
+        "start": 894,
+        "end": 969,
+        "text": "2.2.7 事故处理时，只允许与事故处理有关的领导和工作人员留在控制室内，其他无关人员\n\n                            2\n",
+        "locator": "PDF 物理页 12（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:0:48",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 0,
+        "end": 48,
+        "text": "应迅速离开；非事故单位不应在事故处理当时向运行值班员询问事故原因和过程，以免影响\n事故处理。\n\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:48:81",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 48,
+        "end": 81,
+        "text": "2.2.8 事故处理完毕后，应将事故情况详细记录，并按规定报告。\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:81:114",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 81,
+        "end": 114,
+        "text": "2.2.9 事故调查工作按《国家电网公司安全事故调查规程》进行。\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page13:114:155",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page13",
+        "start": 114,
+        "end": 155,
+        "text": "2.2.10 频率、电压发生异常情况时，运行值班员应加强监视，及时向国调汇报。\n\n",
+        "locator": "PDF 物理页 13（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp131664_131720:0:56",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp131664_131720",
+        "start": 0,
+        "end": 56,
+        "text": "正常运行时，定期监视流量、水温、水位、压力、电导率等主要运行参数，泵、电机及其电源回路变频器、接触器、电缆温度。",
+        "locator": "Word 主正文 CP 131664–131720，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp131861_131887:0:26",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp131861_131887",
+        "start": 0,
+        "end": 26,
+        "text": "（5）流量、水温、液位、压力及电导率等表计显示正常；",
+        "locator": "Word 主正文 CP 131861–131887，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp133265_133276:0:11",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp133265_133276",
+        "start": 0,
+        "end": 11,
+        "text": "（8）无电导率高报警；",
+        "locator": "Word 主正文 CP 133265–133276，不是页码"
+      },
+      {
+        "id": "d_4b964d3ff677714b/cp135560_135635:0:75",
+        "source_id": "d_4b964d3ff677714b",
+        "block_id": "cp135560_135635",
+        "start": 0,
+        "end": 75,
+        "text": "阀水冷系统保护跳闸出口采用“三取二”逻辑，阀进水温度保护、流量保护、微分泄漏保护、膨胀罐/高位水箱液位保护等投跳闸，阀出水温度保护、电导率保护投报警。",
+        "locator": "Word 主正文 CP 135560–135635，不是页码"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page65:10:41",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page65",
+        "start": 10,
+        "end": 41,
+        "text": "   10.7.1.1 事件记录发冷却水电导率高报警信号。\n\n",
+        "locator": "PDF 物理页 65（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page65:51:78",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page65",
+        "start": 51,
+        "end": 78,
+        "text": "   10.7.2.1 汇报领导，通知检修人员处理；\n",
+        "locator": "PDF 物理页 65（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page65:78:119",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page65",
+        "start": 78,
+        "end": 119,
+        "text": "   10.7.2.2 现场检查电导率表计的指示是否正常,两块表计读数是否一致；\n",
+        "locator": "PDF 物理页 65（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page65:119:166",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page65",
+        "start": 119,
+        "end": 166,
+        "text": "   10.7.2.3 若两块表计读数偏差较大，则可能为表计故障，通知检修人员检查处理分析；\n",
+        "locator": "PDF 物理页 65（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page65:166:222",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page65",
+        "start": 166,
+        "end": 222,
+        "text": "   10.7.2.4 如果表计读数基本一致则检查水质电导率，如果刚做过补水工作，检查所使\n用补充水的电导率；\n",
+        "locator": "PDF 物理页 65（可能不同于印刷页码）"
+      },
+      {
+        "id": "d_98d56bcdf4e49412/page65:222:289",
+        "source_id": "d_98d56bcdf4e49412",
+        "block_id": "page65",
+        "start": 222,
+        "end": 289,
+        "text": "   10.7.2.5 检查内水冷电导率实际正常，则检查电导率测量装置的报警值整定，若电导\n率确实偏高，则立即联系检修人员处理。\n\n\n",
+        "locator": "PDF 物理页 65（可能不同于印刷页码）"
+      }
+    ],
+    "context_extent": "source_inventory_and_explicit_dependencies_not_exhaustive",
+    "source_currency": "not_independently_certified",
+    "source_unit_ids": [
+      "d_98d56bcdf4e49412/clause/10.7.1.1",
+      "d_98d56bcdf4e49412/clause/10.7.2.1",
+      "d_98d56bcdf4e49412/clause/10.7.2.2",
+      "d_98d56bcdf4e49412/clause/10.7.2.3",
+      "d_98d56bcdf4e49412/clause/10.7.2.4",
+      "d_98d56bcdf4e49412/clause/10.7.2.5"
+    ]
+  }
+]

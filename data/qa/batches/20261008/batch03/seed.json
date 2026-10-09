@@ -1,0 +1,2287 @@
+{
+  "version": "20261008-quality-batch03-v4",
+  "construction": "source_inventory_first_authored_fact_and_question_plans",
+  "chains": [
+    {
+      "id": "accident_principles",
+      "title": "事故处理公共原则：诊断、安全、供电与记录",
+      "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 2.1",
+      "source_unit_ids": [
+        "d_98d56bcdf4e49412/clause/2.1.1",
+        "d_98d56bcdf4e49412/clause/2.1.2",
+        "d_98d56bcdf4e49412/clause/2.1.3",
+        "d_98d56bcdf4e49412/clause/2.1.4",
+        "d_98d56bcdf4e49412/clause/2.1.5"
+      ],
+      "source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 44,
+          "end": 70
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 70,
+          "end": 88
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 88,
+          "end": 125
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 125,
+          "end": 164
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 164,
+          "end": 234
+        }
+      ],
+      "context_source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page11",
+          "start": 140,
+          "end": 213
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page11",
+          "start": 213,
+          "end": 348
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 245,
+          "end": 292
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 292,
+          "end": 341
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 341,
+          "end": 390
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 390,
+          "end": 421
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 421,
+          "end": 452
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 452,
+          "end": 473
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 473,
+          "end": 572
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 572,
+          "end": 669
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 669,
+          "end": 706
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 706,
+          "end": 739
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 739,
+          "end": 769
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 769,
+          "end": 804
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 804,
+          "end": 841
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 841,
+          "end": 894
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 894,
+          "end": 969
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 0,
+          "end": 48
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 48,
+          "end": 81
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 81,
+          "end": 114
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 114,
+          "end": 155
+        }
+      ],
+      "facts": [
+        {
+          "id": "limit",
+          "quote": "2.1.1尽快限制事故扩大，消除人身及设备危险。",
+          "text": "事故处理中应尽快限制事故扩大，消除对人员和设备的危险。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.1.1"
+        },
+        {
+          "id": "station_supply",
+          "quote": "2.1.2尽力保证恢复站用电源。",
+          "text": "应尽力保证恢复站用电源。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.1.2"
+        },
+        {
+          "id": "restore_without_misoperation",
+          "quote": "2.1.3及时处理设备事故，尽快恢复设备送电，处理事故时，严防误操作。",
+          "text": "应及时处理设备事故、尽快恢复设备送电，同时严防误操作。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.1.3"
+        },
+        {
+          "id": "record_report",
+          "quote": "2.1.4事故发生和主要操作的时间应做记录，及时将情况报告有关领导和调",
+          "text": "记录事故发生及主要操作的时间，并及时向有关领导和调度报告情况。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.1.4"
+        },
+        {
+          "id": "diagnostic_basis",
+          "quote": "2.1.5事故发生时应根据表计、保护、报警信号及自动装置动作情况，进行",
+          "text": "根据表计、保护、报警信号和自动装置动作进行分析判断并制定处理方案；处置中防止非同期并列和系统事故扩大。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.1.5"
+        }
+      ],
+      "questions": [
+        {
+          "key": "whole",
+          "type": "full_chain",
+          "question": "依据2.1安排事故处理时，限制危险、站用电与设备供电、诊断、记录汇报和防误操作应怎样共同考虑？",
+          "required": [
+            "limit",
+            "station_supply",
+            "restore_without_misoperation",
+            "record_report",
+            "diagnostic_basis"
+          ],
+          "lead": "以下是共同遵循的事故处理原则，条目排列不表示规程规定了固定执行顺序。"
+        },
+        {
+          "key": "alarm_is_not_diagnosis",
+          "type": "false_premise",
+          "question": "发现一个报警后，能否只凭报警名称就确定事故原因和完整处理方案？2.1要求参考哪些信息、避免哪些后果？",
+          "required": [
+            "diagnostic_basis",
+            "limit",
+            "restore_without_misoperation"
+          ],
+          "lead": "不能只凭报警名称定因，应按2.1.5综合表计、保护、报警和自动装置动作进行判断。"
+        },
+        {
+          "key": "power_not_enough",
+          "type": "false_premise",
+          "question": "站用电已经恢复，是否就能认为2.1规定的事故处理要求全部完成？还应保留哪些工作？",
+          "required": [
+            "station_supply",
+            "limit",
+            "restore_without_misoperation",
+            "record_report",
+            "diagnostic_basis"
+          ],
+          "lead": "恢复站用电只是这些原则中的一项，不能据此省略其余要求。"
+        },
+        {
+          "key": "record_what",
+          "type": "evidence_submission",
+          "question": "事故处理忙碌时，哪些时间必须记录，情况应报告给谁？",
+          "required": [
+            "record_report"
+          ]
+        },
+        {
+          "key": "after_fault_cleared",
+          "type": "multiturn",
+          "question": "故障已被限制，送电时还应注意什么？",
+          "required": [
+            "restore_without_misoperation",
+            "diagnostic_basis"
+          ],
+          "history": [
+            {
+              "role": "user",
+              "content": "按姑苏站第五分册6.0版2.1，我们正在处理设备事故。"
+            },
+            {
+              "role": "assistant",
+              "content": "需要尽快限制事故扩大、消除人身和设备危险，并尽力保证恢复站用电源。"
+            }
+          ],
+          "standalone_question": "依据2.1，设备事故已被限制，恢复设备送电及制定处置方案时应保留哪些防误操作、诊断和系统安全要求？"
+        }
+      ],
+      "order_edges": [],
+      "branches": []
+    },
+    {
+      "id": "emergency_authority",
+      "title": "事故组织与应急权限：明确授权、安全前提与事后汇报",
+      "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 1.2、2.2.1、2.2.3—5，关联第三分册6.0版（2026年2月）5.7",
+      "source_unit_ids": [
+        "d_98d56bcdf4e49412/clause/1.2.1",
+        "d_98d56bcdf4e49412/clause/1.2.2",
+        "d_98d56bcdf4e49412/clause/2.2.1",
+        "d_98d56bcdf4e49412/clause/2.2.5",
+        "d_98d56bcdf4e49412/clause/2.2.5.1",
+        "d_98d56bcdf4e49412/clause/2.2.5.2",
+        "d_98d56bcdf4e49412/clause/2.2.5.3",
+        "d_98d56bcdf4e49412/clause/2.2.5.4",
+        "d_4b964d3ff677714b/cp21938_21993",
+        "d_4b964d3ff677714b/cp22016_22042",
+        "d_98d56bcdf4e49412/clause/2.2.4",
+        "d_98d56bcdf4e49412/clause/2.2.3"
+      ],
+      "source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page11",
+          "start": 140,
+          "end": 213
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page11",
+          "start": 213,
+          "end": 348
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 245,
+          "end": 292
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 669,
+          "end": 706
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 706,
+          "end": 739
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 739,
+          "end": 769
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 769,
+          "end": 804
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 804,
+          "end": 841
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21938_21993",
+          "start": 0,
+          "end": 55
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22016_22042",
+          "start": 0,
+          "end": 26
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 572,
+          "end": 669
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 473,
+          "end": 572
+        }
+      ],
+      "context_source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 44,
+          "end": 70
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 70,
+          "end": 88
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 88,
+          "end": 125
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 125,
+          "end": 164
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 164,
+          "end": 234
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 292,
+          "end": 341
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 341,
+          "end": 390
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 390,
+          "end": 421
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 421,
+          "end": 452
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 452,
+          "end": 473
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 841,
+          "end": 894
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 894,
+          "end": 969
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 0,
+          "end": 48
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 48,
+          "end": 81
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 81,
+          "end": 114
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 114,
+          "end": 155
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21994_22015",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22043_22066",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22067_22091",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 335,
+          "end": 417
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 417,
+          "end": 448
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 448,
+          "end": 481
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 481,
+          "end": 543
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 543,
+          "end": 720
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 720,
+          "end": 808
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 808,
+          "end": 861
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp113_121",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp290_297",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp2275_2313",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp20268_20275",
+          "start": 0,
+          "end": 7
+        }
+      ],
+      "facts": [
+        {
+          "id": "shift_leader",
+          "quote": "1.2.1姑苏换流站当班值长是安全生产的第一负责人，应熟练掌握并组织全",
+          "text": "本站当班值长是安全生产第一负责人，应掌握规定并组织全值人员贯彻执行；设备或系统异常、事故时积极组织处理。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/1.2.1"
+        },
+        {
+          "id": "operators",
+          "quote": "1.2.2各运行值班员是反事故措施和事故处理预案的具体实施人员，要严格",
+          "text": "各运行值班员是反事故措施与事故处理预案的具体实施人员，应遵守规章制度、认真学习并掌握措施和预案，及时发现缺陷异常，在当班值长组织下正确处理。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/1.2.2"
+        },
+        {
+          "id": "dispatch_commander",
+          "quote": "2.2.1国调值班调度员是国调管辖系统事故处理的指挥者。事故处理时，运",
+          "text": "国调管辖系统的事故处理由国调值班调度员指挥。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.1"
+        },
+        {
+          "id": "emergency_scope",
+          "quote": "2.2.5为防止事故扩大，运行值班员可不待调度指令自行进行以下紧急操作",
+          "text": "为了防止事故扩大，运行值班员可以不待调度指令自行实施本条明确列出的紧急操作。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.5"
+        },
+        {
+          "id": "danger_stop",
+          "quote": "2.2.5.1对人身和设备安全有威胁的设备停电。",
+          "text": "紧急操作包括：将对人身和设备安全有威胁的设备停电。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.5.1"
+        },
+        {
+          "id": "damaged_isolation",
+          "quote": "2.2.5.2将故障停运已损坏的设备隔离。",
+          "text": "紧急操作包括：隔离已经故障停运且损坏的设备。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.5.2"
+        },
+        {
+          "id": "aux_restore",
+          "quote": "2.2.5.3当站用电部分或全部停电时，恢复其电源。",
+          "text": "站用电部分或全部停电时，恢复其电源属于本条列出的紧急操作。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.5.3"
+        },
+        {
+          "id": "other_explicit",
+          "quote": "2.2.5.4站规程中规定可以不待调度指令自行处理者。",
+          "text": "其他可以不待指令自行处理的情形，需要站规程另有明确规定；这不是对任何现场认为紧急的操作作无限授权。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.5.4"
+        },
+        {
+          "id": "after_report",
+          "quote": "但事后应立即向相关调控机构值班调度员汇报",
+          "text": "第三分册6.0版（2026年2月）5.7明确：自行实施所列应急操作后，应立即向相关调控机构值班调度员汇报。",
+          "source_unit_id": "d_4b964d3ff677714b/cp21938_21993"
+        },
+        {
+          "id": "safe_isolation",
+          "quote": "确保安全的前提下",
+          "text": "第三分册5.7对故障停运已损坏设备的隔离另保留“确保安全”的前提。",
+          "source_unit_id": "d_4b964d3ff677714b/cp22016_22042"
+        },
+        {
+          "id": "national_report",
+          "quote": "2.2.4国调管辖系统发生事故时，运行值班员应立即向国调汇报事故概况，",
+          "text": "国调管辖系统事故应立即向国调汇报概况，查明后尽快详细汇报；内容包括时间及现象、跳闸开关、继电保护动作以及电压和潮流变化。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.4"
+        },
+        {
+          "id": "impact_report",
+          "quote": "2.2.3当有关电网发生影响国调管辖系统安全运行的事故时，运行值班员应",
+          "text": "有关电网的事故影响国调管辖系统安全运行时，尽快汇报简要情况；处理完毕及时提交事故原始报告，并向国调值班调度员详细汇报。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.3"
+        }
+      ],
+      "questions": [
+        {
+          "key": "whole",
+          "type": "full_chain",
+          "question": "按1.2、2.2.1及2.2.3—5并结合第三分册5.7，本站组织职责、国调指挥、紧急操作范围、安全条件及事故汇报如何衔接？",
+          "required": [
+            "shift_leader",
+            "operators",
+            "dispatch_commander",
+            "emergency_scope",
+            "danger_stop",
+            "damaged_isolation",
+            "aux_restore",
+            "other_explicit",
+            "after_report",
+            "safe_isolation",
+            "national_report",
+            "impact_report"
+          ]
+        },
+        {
+          "key": "who_commands",
+          "type": "source_scope",
+          "question": "本站值长负责组织事故处理，是否等于国调管辖系统的事故指挥权也转给本站？值班员承担什么职责？",
+          "required": [
+            "shift_leader",
+            "operators",
+            "dispatch_commander"
+          ],
+          "lead": "不等同。值长承担本站组织职责，国调管辖系统的事故指挥者仍为国调值班调度员。"
+        },
+        {
+          "key": "immediate_danger",
+          "type": "conditional_branch",
+          "question": "国调管辖系统事故中，某设备已经威胁人身和设备安全。是否必须等待调度指令才可对该设备停电，操作后有什么汇报义务？",
+          "required": [
+            "emergency_scope",
+            "danger_stop",
+            "after_report"
+          ],
+          "lead": "本题属于2.2.5列明的紧急操作范围，可以不待调度指令对威胁人身和设备安全的设备停电；事后仍须立即汇报。"
+        },
+        {
+          "key": "isolate_without_report",
+          "type": "false_premise",
+          "question": "设备已故障停运且损坏，能否认为自行隔离既无安全前提，也不必再汇报调度？",
+          "required": [
+            "emergency_scope",
+            "damaged_isolation",
+            "safe_isolation",
+            "after_report"
+          ],
+          "lead": "不能。自行应急操作的允许范围不等于免除安全条件和事后汇报。"
+        },
+        {
+          "key": "aux_outage",
+          "type": "conditional_branch",
+          "question": "站用电部分或全部停电，为防止事故扩大而恢复其电源，能否不待调度指令？恢复后是否还需汇报？",
+          "required": [
+            "emergency_scope",
+            "aux_restore",
+            "after_report"
+          ],
+          "lead": "可以在本条列明的紧急条件下不待指令恢复其电源，但不能省略事后立即汇报。"
+        },
+        {
+          "key": "all_emergencies",
+          "type": "false_premise",
+          "question": "现场认为问题很紧急，是否就能依据2.2.5跳过调度自行执行任何操作？这条授权具体涵盖哪些内容？",
+          "required": [
+            "emergency_scope",
+            "danger_stop",
+            "damaged_isolation",
+            "aux_restore",
+            "other_explicit",
+            "safe_isolation",
+            "after_report"
+          ],
+          "lead": "不能。紧急操作的允许范围以列举动作和站规程的明确授权为依据，不由现场“很紧急”的判断无限扩展。"
+        },
+        {
+          "key": "first_and_detailed",
+          "type": "evidence_submission",
+          "question": "事故原因尚未查清，能否等全部查明才首次向国调报告？事故概况和详细报告怎样安排？",
+          "required": [
+            "national_report",
+            "impact_report"
+          ],
+          "lead": "不能把查明后的详细汇报当作推迟立即概况汇报的理由。"
+        },
+        {
+          "key": "unnamed_operation",
+          "type": "source_gap",
+          "question": "拟执行的一项操作不属于已列的三类应急操作，现场也未找到站规程明确允许自行处理的条款。能否只凭2.2.5.4确认这项操作已获许可？",
+          "required": [
+            "other_explicit"
+          ],
+          "lead": "仅凭本条不能确认。需要核对拟操作对象、状态和明确授权条款，不能从概括性引用补造具体许可。"
+        }
+      ],
+      "order_edges": [],
+      "branches": []
+    },
+    {
+      "id": "incident_coordination",
+      "title": "事故现场协作与收尾：正常设备、异常监视、控制室及调查边界",
+      "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 2.2.1.1—4、2.2.2及2.2.6—10",
+      "source_unit_ids": [
+        "d_98d56bcdf4e49412/clause/2.2.1.1",
+        "d_98d56bcdf4e49412/clause/2.2.1.2",
+        "d_98d56bcdf4e49412/clause/2.2.1.3",
+        "d_98d56bcdf4e49412/clause/2.2.1.4",
+        "d_98d56bcdf4e49412/clause/2.2.2",
+        "d_98d56bcdf4e49412/clause/2.2.6",
+        "d_98d56bcdf4e49412/clause/2.2.7",
+        "d_98d56bcdf4e49412/clause/2.2.8",
+        "d_98d56bcdf4e49412/clause/2.2.9",
+        "d_98d56bcdf4e49412/clause/2.2.10"
+      ],
+      "source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 292,
+          "end": 341
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 341,
+          "end": 390
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 390,
+          "end": 421
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 421,
+          "end": 452
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 452,
+          "end": 473
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 841,
+          "end": 894
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 894,
+          "end": 969
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 0,
+          "end": 48
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 48,
+          "end": 81
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 81,
+          "end": 114
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 114,
+          "end": 155
+        }
+      ],
+      "context_source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page11",
+          "start": 140,
+          "end": 213
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page11",
+          "start": 213,
+          "end": 348
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 44,
+          "end": 70
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 70,
+          "end": 88
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 88,
+          "end": 125
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 125,
+          "end": 164
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 164,
+          "end": 234
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 245,
+          "end": 292
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 473,
+          "end": 572
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 572,
+          "end": 669
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 669,
+          "end": 706
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 706,
+          "end": 739
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 739,
+          "end": 769
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 769,
+          "end": 804
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 804,
+          "end": 841
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 335,
+          "end": 417
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 417,
+          "end": 448
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 448,
+          "end": 481
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 481,
+          "end": 543
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 543,
+          "end": 720
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 720,
+          "end": 808
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 808,
+          "end": 861
+        }
+      ],
+      "facts": [
+        {
+          "id": "remove_threat",
+          "quote": "2.2.1.1迅速限制事故发展，消除事故根源，解除对人身、设备和电网安",
+          "text": "迅速限制事故发展、消除事故根源，解除对人身、设备和电网安全的威胁。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.1.1"
+        },
+        {
+          "id": "keep_normal",
+          "quote": "2.2.1.2用一切可能的方法保持正常设备的运行和对重要设备及站用电的",
+          "text": "尽可能保持正常设备运行，并维持重要设备和站用电的正常供电。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.1.2"
+        },
+        {
+          "id": "reparallel",
+          "quote": "2.2.1.3电网解列后要尽快恢复并列运行。",
+          "text": "电网解列后应尽快恢复并列运行。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.1.3"
+        },
+        {
+          "id": "restore_supply",
+          "quote": "2.2.1.4尽快恢复对已停电的设备供电。",
+          "text": "尽快恢复已停电设备的供电。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.1.4"
+        },
+        {
+          "id": "normal_grid",
+          "quote": "2.2.2调整并恢复正常电网运行方式。",
+          "text": "调整并恢复正常电网运行方式。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.2"
+        },
+        {
+          "id": "transformers_abnormal",
+          "quote": "2.2.6电压互感器或电流互感器发生异常情况时，应迅速按规程规定进行处",
+          "text": "电压或电流互感器异常时，迅速按规程处理，并向国调值班调度员汇报。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.6"
+        },
+        {
+          "id": "control_room",
+          "quote": "2.2.7事故处理时，只允许与事故处理有关的领导和工作人员留在控制室内",
+          "text": "事故处理时，控制室只允许相关领导和工作人员留下；其他无关人员应迅速离开。非事故单位不应在处理当时询问值班员事故原因和过程，以免影响处置。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.7"
+        },
+        {
+          "id": "close_record",
+          "quote": "2.2.8事故处理完毕后，应将事故情况详细记录，并按规定报告。",
+          "text": "事故处理完毕后，详细记录事故情况，并按规定报告。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.8"
+        },
+        {
+          "id": "investigation",
+          "quote": "2.2.9事故调查工作按《国家电网公司安全事故调查规程》进行。",
+          "text": "事故调查按《国家电网公司安全事故调查规程》开展，本条没有列出该规程的具体调查步骤。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.9"
+        },
+        {
+          "id": "frequency_voltage",
+          "quote": "2.2.10频率、电压发生异常情况时，运行值班员应加强监视，及时向国调",
+          "text": "频率或电压异常时，值班员加强监视，并及时向国调汇报。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.2.10"
+        }
+      ],
+      "questions": [
+        {
+          "key": "whole",
+          "type": "full_chain",
+          "question": "依据2.2.1.1—4、2.2.2及2.2.6—10，事故处理中的设备供电与运行方式、特殊异常、控制室秩序、记录和调查有哪些公共要求？",
+          "required": [
+            "remove_threat",
+            "keep_normal",
+            "reparallel",
+            "restore_supply",
+            "normal_grid",
+            "transformers_abnormal",
+            "control_room",
+            "close_record",
+            "investigation",
+            "frequency_voltage"
+          ],
+          "lead": "以下是公共要求清单，其中部分要求按现场状态适用，不是每次事故都依次执行的操作票。"
+        },
+        {
+          "key": "normal_equipment",
+          "type": "preconditions",
+          "question": "事故中是否可以只处理故障设备，忽略仍正常运行设备和重要负荷的供电？电网解列或方式改变后的目标是什么？",
+          "required": [
+            "remove_threat",
+            "keep_normal",
+            "reparallel",
+            "restore_supply",
+            "normal_grid"
+          ],
+          "lead": "不可以忽略。事故处理还应保持正常设备运行及重要设备、站用电供电，并按相应现场状态恢复并列和正常运行方式。"
+        },
+        {
+          "key": "control_room",
+          "type": "false_premise",
+          "question": "事故处理中，无关人员能否留在控制室旁听，非事故单位能否即时询问值班员详细经过？",
+          "required": [
+            "control_room"
+          ],
+          "lead": "不能把控制室留人和即时询问视为不影响事故处理的默认安排。"
+        },
+        {
+          "key": "instrument_and_frequency",
+          "type": "conditional_branch",
+          "question": "电压或电流互感器异常，与系统频率或电压异常，分别要求怎样处理、监视和汇报？",
+          "required": [
+            "transformers_abnormal",
+            "frequency_voltage"
+          ]
+        },
+        {
+          "key": "finish_not_end",
+          "type": "restoration",
+          "question": "设备事故处理已经结束，是否就不再需要记录、报告或调查？2.2怎样规定？",
+          "required": [
+            "close_record",
+            "investigation"
+          ],
+          "lead": "仍然需要。处理结束后要详细记录、按规定报告，并依相应规程开展事故调查。"
+        },
+        {
+          "key": "investigation_details",
+          "type": "source_gap",
+          "question": "仅凭2.2.9，能否列出事故调查的完整取证顺序和各阶段固定时限？",
+          "required": [
+            "investigation"
+          ],
+          "lead": "不能。本条只指定应遵循的调查规程；完整步骤和时限需查对应规程，不能自行填写。"
+        }
+      ],
+      "order_edges": [],
+      "branches": []
+    },
+    {
+      "id": "dispatch_communication_loss",
+      "title": "调度通信中断：执行许可、检修复役与恢复后补报",
+      "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 2.3.5",
+      "source_unit_ids": [
+        "d_98d56bcdf4e49412/clause/2.3.5.1",
+        "d_98d56bcdf4e49412/clause/2.3.5.2.1",
+        "d_98d56bcdf4e49412/clause/2.3.5.2.2",
+        "d_98d56bcdf4e49412/clause/2.3.5.3",
+        "d_98d56bcdf4e49412/clause/2.3.5.4",
+        "d_98d56bcdf4e49412/clause/2.3.5.5"
+      ],
+      "source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 335,
+          "end": 417
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 448,
+          "end": 481
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 481,
+          "end": 543
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 543,
+          "end": 720
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 720,
+          "end": 808
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 808,
+          "end": 861
+        }
+      ],
+      "context_source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 417,
+          "end": 448
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page11",
+          "start": 140,
+          "end": 213
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page11",
+          "start": 213,
+          "end": 348
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 44,
+          "end": 70
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 70,
+          "end": 88
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 88,
+          "end": 125
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 125,
+          "end": 164
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 164,
+          "end": 234
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 245,
+          "end": 292
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 292,
+          "end": 341
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 341,
+          "end": 390
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 390,
+          "end": 421
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 421,
+          "end": 452
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 452,
+          "end": 473
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 473,
+          "end": 572
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 572,
+          "end": 669
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 669,
+          "end": 706
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 706,
+          "end": 739
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 739,
+          "end": 769
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 769,
+          "end": 804
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 804,
+          "end": 841
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 841,
+          "end": 894
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 894,
+          "end": 969
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 0,
+          "end": 48
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 48,
+          "end": 81
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 81,
+          "end": 114
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 114,
+          "end": 155
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21938_21993",
+          "start": 0,
+          "end": 55
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21994_22015",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22016_22042",
+          "start": 0,
+          "end": 26
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22043_22066",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22067_22091",
+          "start": 0,
+          "end": 24
+        }
+      ],
+      "facts": [
+        {
+          "id": "restore_communication",
+          "quote": "2.3.5.1国调与换流站间的通信联系中断时，各方应积极采取措施，尽快",
+          "text": "国调与换流站通信中断时，各方积极采取措施尽快恢复联系；不能尽快恢复时，国调可通过有关网省调通信联系转达调度业务。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.5.1"
+        },
+        {
+          "id": "stable_mode",
+          "quote": "2.3.5.2.1换流站的运行方式，尽可能保持不变。",
+          "text": "调度与换流站通信中断期间，换流站运行方式尽可能保持不变。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.5.2.1"
+        },
+        {
+          "id": "repaired_wait",
+          "quote": "2.3.5.2.2正在进行检修的设备，在通信中断期间完工，可以恢复运行",
+          "text": "检修设备在通信中断期间完工并具备恢复运行条件时，仍需等待通信恢复正常后再恢复运行。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.5.2.2"
+        },
+        {
+          "id": "unapproved_command",
+          "quote": "受令方未重复指令或虽已重复指令但未经",
+          "text": "已下达指令，但受令方尚未重复，或虽已重复而未获国调值班调度员同意执行时失联，该指令不得执行。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.5.3"
+        },
+        {
+          "id": "approved_command",
+          "quote": "若已经国调值班",
+          "text": "若失联前已经得到国调值班调度员同意执行，可以将该操作指令全部执行完毕。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.5.3"
+        },
+        {
+          "id": "dispatch_view",
+          "quote": "而未接到完成操作指令的报告前",
+          "text": "国调下达指令后，在未收到完成报告前与受令单位失联，仍认为该指令正在执行。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.5.3"
+        },
+        {
+          "id": "no_arbitrary_action",
+          "quote": "2.3.5.4凡涉及国调管辖系统安全问题或时间性没有特殊要求的调度业务",
+          "text": "涉及国调管辖系统安全问题或时间性没有特殊要求的调度业务，失联后在与国调重新联系前不得自行处理；紧急情况按规程规定处理。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.5.4"
+        },
+        {
+          "id": "report_when_restored",
+          "quote": "2.3.5.5在通信恢复后，应立即向国调值班调度员补报在通信中断期间一",
+          "text": "通信恢复后，立即向国调值班调度员补报中断期间所有应汇报事项。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.5.5"
+        }
+      ],
+      "questions": [
+        {
+          "key": "whole",
+          "type": "full_chain",
+          "question": "国调与换流站失联后，恢复联系、运行方式、检修设备复役、已下指令执行和补报有哪些完整规则？请区分执行同意状态。",
+          "required": [
+            "restore_communication",
+            "stable_mode",
+            "repaired_wait",
+            "unapproved_command",
+            "approved_command",
+            "dispatch_view",
+            "no_arbitrary_action",
+            "report_when_restored"
+          ]
+        },
+        {
+          "key": "repeated_not_approved",
+          "type": "false_premise",
+          "question": "操作指令已经重复，但尚未得到国调同意执行就失联，是否可凭已重复这一点开始操作？",
+          "required": [
+            "unapproved_command"
+          ],
+          "lead": "不能把重复指令等同于已经获准执行。"
+        },
+        {
+          "key": "approved_then_lost",
+          "type": "conditional_branch",
+          "question": "国调已经同意执行操作后才失联，是否必须一律放弃该指令？执行完毕后，通信恢复时还应做什么？",
+          "required": [
+            "approved_command",
+            "dispatch_view",
+            "report_when_restored"
+          ]
+        },
+        {
+          "key": "repair_complete",
+          "type": "false_premise",
+          "question": "通信中断期间检修设备已完工，现场确认可以恢复运行。能否只凭检修完成自行恢复？",
+          "required": [
+            "repaired_wait",
+            "stable_mode"
+          ],
+          "lead": "不能把具备恢复运行条件等同于已满足通信方面的恢复要求。"
+        },
+        {
+          "key": "indirect_contact",
+          "type": "conditional_branch",
+          "question": "各方已经尝试恢复通信但不能尽快恢复时，国调可通过什么渠道转达调度业务？是否由现场直接随意改变运行方式？",
+          "required": [
+            "restore_communication",
+            "stable_mode",
+            "no_arbitrary_action"
+          ],
+          "lead": "可由国调通过有关网省调转达业务，不表示现场可以随意改变运行方式。"
+        },
+        {
+          "key": "emergency_exception",
+          "type": "preconditions",
+          "question": "失去通信后，是否所有问题都能自行处理，或者所有紧急问题都必须原样等待？2.3.5.4的界限是什么？",
+          "required": [
+            "no_arbitrary_action"
+          ],
+          "tail": "具体紧急动作仍需核对2.2.5及相关设备预案；本条不列出每一项紧急操作的具体操作票。",
+          "lead": "两种概括都不准确：通常不得自行处理，紧急情况则按规程规定处理，仍须核对具体适用条款。"
+        },
+        {
+          "key": "missing_approval",
+          "type": "source_gap",
+          "question": "目前只知道一条指令已经下达和重复，记录未说明国调是否同意执行，随后失联。是否能直接给出“继续执行”的确定结论？",
+          "required": [
+            "unapproved_command",
+            "approved_command"
+          ],
+          "lead": "不能直接确定，应先核实失联前是否已经得到国调同意执行；两种状态对应不同处理。"
+        },
+        {
+          "key": "followup_after_command",
+          "type": "multiturn",
+          "question": "那通信恢复以后，还要报告哪些事情？",
+          "required": [
+            "report_when_restored"
+          ],
+          "history": [
+            {
+              "role": "user",
+              "content": "按姑苏站第五分册6.0版2.3.5，国调同意执行后才失联，这条指令还能做完吗？"
+            },
+            {
+              "role": "assistant",
+              "content": "失联前已经得到国调同意执行时，可以将该操作指令全部执行完毕。"
+            }
+          ],
+          "standalone_question": "按2.3.5，已同意执行的指令在失联期间执行后，通信恢复时需向国调补报哪些事项？"
+        }
+      ],
+      "order_edges": [],
+      "branches": [
+        [
+          "unapproved_command",
+          "approved_command"
+        ]
+      ]
+    },
+    {
+      "id": "main_pump_no_backup",
+      "title": "主泵异常未切备用：成功切换与备用也故障的完整分支",
+      "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 10.5，关联10.4",
+      "source_unit_ids": [
+        "d_98d56bcdf4e49412/clause/10.5.1.1",
+        "d_98d56bcdf4e49412/clause/10.5.2.1",
+        "d_98d56bcdf4e49412/clause/10.5.2.2",
+        "d_98d56bcdf4e49412/clause/10.5.2.3",
+        "d_98d56bcdf4e49412/clause/10.5.2.4",
+        "d_98d56bcdf4e49412/clause/10.5.2.5",
+        "d_98d56bcdf4e49412/clause/10.4.2.2",
+        "d_98d56bcdf4e49412/clause/10.4.2.6"
+      ],
+      "source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page64",
+          "start": 408,
+          "end": 442
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page64",
+          "start": 452,
+          "end": 479
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page64",
+          "start": 479,
+          "end": 530
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page64",
+          "start": 530,
+          "end": 608
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page64",
+          "start": 608,
+          "end": 682
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page64",
+          "start": 682,
+          "end": 806
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page64",
+          "start": 0,
+          "end": 67
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page64",
+          "start": 302,
+          "end": 370
+        }
+      ],
+      "context_source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page11",
+          "start": 140,
+          "end": 213
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page11",
+          "start": 213,
+          "end": 348
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 44,
+          "end": 70
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 70,
+          "end": 88
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 88,
+          "end": 125
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 125,
+          "end": 164
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 164,
+          "end": 234
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 245,
+          "end": 292
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 292,
+          "end": 341
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 341,
+          "end": 390
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 390,
+          "end": 421
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 421,
+          "end": 452
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 452,
+          "end": 473
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 473,
+          "end": 572
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 572,
+          "end": 669
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 669,
+          "end": 706
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 706,
+          "end": 739
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 739,
+          "end": 769
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 769,
+          "end": 804
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 804,
+          "end": 841
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 841,
+          "end": 894
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 894,
+          "end": 969
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 0,
+          "end": 48
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 48,
+          "end": 81
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 81,
+          "end": 114
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 114,
+          "end": 155
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21938_21993",
+          "start": 0,
+          "end": 55
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21994_22015",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22016_22042",
+          "start": 0,
+          "end": 26
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22043_22066",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22067_22091",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page63",
+          "start": 930,
+          "end": 965
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page63",
+          "start": 975,
+          "end": 1035
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page64",
+          "start": 67,
+          "end": 169
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page64",
+          "start": 169,
+          "end": 246
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page64",
+          "start": 246,
+          "end": 302
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp132092_132123",
+          "start": 0,
+          "end": 31
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp132430_132500",
+          "start": 0,
+          "end": 70
+        }
+      ],
+      "facts": [
+        {
+          "id": "phenomenon",
+          "quote": "10.5.1.1内水冷主循环泵异常但未能切至备用泵运行。",
+          "text": "本预案针对内水冷主循环泵异常、尚未成功切至备用泵运行的现象。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/10.5.1.1"
+        },
+        {
+          "id": "report",
+          "quote": "10.5.2.1汇报领导，通知检修人员处理；",
+          "text": "汇报领导，通知检修人员处理。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/10.5.2.1"
+        },
+        {
+          "id": "automatic",
+          "quote": "10.5.2.2在内水冷房检查备用循环泵控制方式是否在自动位置，若不是",
+          "text": "在内水冷房检查备用循环泵控制方式；若不在自动位置，应立即切至自动位置。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/10.5.2.2"
+        },
+        {
+          "id": "local_switch",
+          "quote": "10.5.2.3检查主泵电机运行情况，若有严重发热、冒烟、声音异常、电",
+          "text": "检查主泵电机运行；有严重发热、冒烟、声音异常或电源开关烧糊等现象时，立即就地切换主泵，并在现场监视备用泵投入运行正常。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/10.5.2.3"
+        },
+        {
+          "id": "fault_pump_isolation",
+          "quote": "10.5.2.4将内水冷室软启动器控制柜上故障泵的电源开关断开，断开故",
+          "text": "故障泵的隔离处置包括断开内水冷室软启动器控制柜上的电源开关、故障泵400V电源开关和安全开关，做好安措并通知检修。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/10.5.2.4"
+        },
+        {
+          "id": "backup_failed",
+          "quote": "10.5.2.5若备用泵电机无法投入运行及投入运行后也有存在故障现象，",
+          "text": "备用泵无法投入，或投入后也出现故障时，申请调度将对应换流阀停运；然后断开两台故障泵软启动器控制柜电源开关和400V配电室电源开关，再断开两台泵电机安全开关，做好安措并通知检修。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/10.5.2.5"
+        },
+        {
+          "id": "normal_backup_ban",
+          "quote": "10.4.2.2如果内水冷系统主循环泵故障，备用泵投入运行正常，对故障",
+          "text": "如果备用泵已投入正常、正在隔离检查故障主泵，10.4.2.2明确禁止相关站用电切换；不能把备用运行正常当作解除该限制。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/10.4.2.2"
+        },
+        {
+          "id": "single_pump_monitor",
+          "quote": "10.4.2.6一台泵运行的情况下，要加强监视直流系统的运行情况，严防",
+          "text": "只有一台泵运行时，10.4.2.6要求加强直流运行监视，严防运行泵丢失电源，尤其注意站用电倒换。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/10.4.2.6"
+        }
+      ],
+      "questions": [
+        {
+          "key": "whole",
+          "type": "full_chain",
+          "question": "主循环泵异常却未成功切到备用泵时，怎样检查控制方式、按主泵状态切换、隔离故障泵，并在备用泵也失败时转入对应阀停运分支？备用正常后有什么电源约束？",
+          "required": [
+            "phenomenon",
+            "report",
+            "automatic",
+            "local_switch",
+            "fault_pump_isolation",
+            "backup_failed",
+            "normal_backup_ban",
+            "single_pump_monitor"
+          ],
+          "lead": "分开看备用泵正常后的故障泵隔离，与备用泵无法投入或投入后也故障时的两泵处置。后一分支按10.5.2.5先申请调度将对应换流阀停运，然后处理两台故障泵电源。"
+        },
+        {
+          "key": "manual_mode",
+          "type": "conditional_branch",
+          "question": "备用循环泵未投入，检查发现控制方式不在自动位置，应先纠正什么状态？",
+          "required": [
+            "phenomenon",
+            "report",
+            "automatic"
+          ]
+        },
+        {
+          "key": "motor_abnormal",
+          "type": "conditional_branch",
+          "question": "主泵异常且备用泵尚未投入，现场发现主泵严重发热、冒烟、声音异常或开关烧糊，应怎样切换并确认？确认备用泵正常后隔离故障泵要保留什么限制？",
+          "required": [
+            "report",
+            "local_switch",
+            "fault_pump_isolation",
+            "normal_backup_ban",
+            "single_pump_monitor"
+          ]
+        },
+        {
+          "key": "both_faulty",
+          "type": "conditional_branch",
+          "question": "备用泵无法投入，或者投入后也有故障，接下来对换流阀和两台故障泵分别怎么处理？",
+          "required": [
+            "report",
+            "backup_failed"
+          ]
+        },
+        {
+          "key": "cut_both_first",
+          "type": "false_premise",
+          "question": "备用泵也故障时，能否把10.5.2.5改写为先断两台泵电源，再申请对应换流阀停运？",
+          "required": [
+            "backup_failed"
+          ],
+          "lead": "不能把原文“申请调度将对应换流阀停运，然后断开两台故障泵电源”的顺序倒置。"
+        },
+        {
+          "key": "normal_backup_changed",
+          "type": "multiturn",
+          "question": "现在备用泵已投入正常，隔离检查故障主泵时可以同时切换相关站用电吗？",
+          "required": [
+            "normal_backup_ban",
+            "single_pump_monitor"
+          ],
+          "history": [
+            {
+              "role": "user",
+              "content": "按姑苏站第五分册6.0版10.5，主泵异常而备用泵未投入，已经安排就地切换并现场监视。"
+            },
+            {
+              "role": "assistant",
+              "content": "应现场监视备用泵投入运行正常，再按对应状态检查后续故障泵处置和电源限制。"
+            }
+          ],
+          "standalone_question": "按10.5关联10.4，备用泵已投入正常，故障主泵隔离检查期间是否允许相关站用电切换，单泵状态还需监视什么？",
+          "lead": "不可以。现在的条件是备用泵已投入正常且故障主泵正在隔离检查，应保留10.4.2.2的相关站用电切换禁令。"
+        },
+        {
+          "key": "isolation_switches",
+          "type": "preconditions",
+          "question": "依据10.5.2.4，故障泵隔离是否只断就地安全开关即可？还列出了哪些开关和检修准备？",
+          "required": [
+            "fault_pump_isolation"
+          ],
+          "lead": "不够。本条还列出软启动器柜和400V电源开关，以及安措与检修要求。"
+        },
+        {
+          "key": "failed_backup_scope",
+          "type": "source_scope",
+          "question": "备用泵尚未成功投入时，能否直接把自己归入10.4“备用泵运行正常”的处置前提？失败后该走哪条路径？",
+          "required": [
+            "phenomenon",
+            "local_switch",
+            "backup_failed",
+            "normal_backup_ban"
+          ],
+          "lead": "不能把“备用泵尚未投入”和“备用泵投入正常”视为同一状态；后者的限制只在相应状态下适用。"
+        }
+      ],
+      "order_edges": [
+        [
+          "local_switch",
+          "fault_pump_isolation"
+        ]
+      ],
+      "branches": [
+        [
+          "fault_pump_isolation",
+          "backup_failed"
+        ]
+      ]
+    },
+    {
+      "id": "coolant_conductivity",
+      "title": "电导率高报警：表计差异、水质验证与定值资料边界",
+      "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 10.7",
+      "source_unit_ids": [
+        "d_98d56bcdf4e49412/clause/10.7.1.1",
+        "d_98d56bcdf4e49412/clause/10.7.2.1",
+        "d_98d56bcdf4e49412/clause/10.7.2.2",
+        "d_98d56bcdf4e49412/clause/10.7.2.3",
+        "d_98d56bcdf4e49412/clause/10.7.2.4",
+        "d_98d56bcdf4e49412/clause/10.7.2.5"
+      ],
+      "source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page65",
+          "start": 10,
+          "end": 41
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page65",
+          "start": 51,
+          "end": 78
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page65",
+          "start": 78,
+          "end": 119
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page65",
+          "start": 119,
+          "end": 166
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page65",
+          "start": 166,
+          "end": 222
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page65",
+          "start": 222,
+          "end": 289
+        }
+      ],
+      "context_source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page11",
+          "start": 140,
+          "end": 213
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page11",
+          "start": 213,
+          "end": 348
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 44,
+          "end": 70
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 70,
+          "end": 88
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 88,
+          "end": 125
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 125,
+          "end": 164
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 164,
+          "end": 234
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 245,
+          "end": 292
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 292,
+          "end": 341
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 341,
+          "end": 390
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 390,
+          "end": 421
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 421,
+          "end": 452
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 452,
+          "end": 473
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 473,
+          "end": 572
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 572,
+          "end": 669
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 669,
+          "end": 706
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 706,
+          "end": 739
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 739,
+          "end": 769
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 769,
+          "end": 804
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 804,
+          "end": 841
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 841,
+          "end": 894
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 894,
+          "end": 969
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 0,
+          "end": 48
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 48,
+          "end": 81
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 81,
+          "end": 114
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 114,
+          "end": 155
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp131664_131720",
+          "start": 0,
+          "end": 56
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp131861_131887",
+          "start": 0,
+          "end": 26
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp133265_133276",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp135560_135635",
+          "start": 0,
+          "end": 75
+        }
+      ],
+      "facts": [
+        {
+          "id": "alarm",
+          "quote": "10.7.1.1事件记录发冷却水电导率高报警信号。",
+          "text": "本预案的现象是事件记录出现冷却水电导率高报警信号。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/10.7.1.1"
+        },
+        {
+          "id": "report",
+          "quote": "10.7.2.1汇报领导，通知检修人员处理；",
+          "text": "汇报领导，通知检修人员处理。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/10.7.2.1"
+        },
+        {
+          "id": "compare",
+          "quote": "10.7.2.2现场检查电导率表计的指示是否正常,两块表计读数是否一致",
+          "text": "到现场检查电导率表计指示是否正常，并比较两块表计的读数是否一致。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/10.7.2.2"
+        },
+        {
+          "id": "large_difference",
+          "quote": "10.7.2.3若两块表计读数偏差较大，则可能为表计故障，通知检修人员",
+          "text": "两块表计偏差较大时，可能是表计故障，应通知检修人员检查处理分析；不能把“可能”改成已确认。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/10.7.2.3"
+        },
+        {
+          "id": "consistent",
+          "quote": "10.7.2.4如果表计读数基本一致则检查水质电导率，如果刚做过补水工",
+          "text": "两块表计读数基本一致时，检查水质电导率；若刚补过水，还检查所用补充水的电导率。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/10.7.2.4"
+        },
+        {
+          "id": "actual_result",
+          "quote": "10.7.2.5检查内水冷电导率实际正常，则检查电导率测量装置的报警值",
+          "text": "实际内水冷电导率正常时，检查测量装置报警值整定；实际电导率确实偏高时，立即联系检修处理。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/10.7.2.5"
+        }
+      ],
+      "questions": [
+        {
+          "key": "whole",
+          "type": "full_chain",
+          "question": "电导率高报警后，怎样区分两块表计读数不一致、基本一致、实际正常和实际偏高，并考虑刚补水的情况？",
+          "required": [
+            "alarm",
+            "report",
+            "compare",
+            "large_difference",
+            "consistent",
+            "actual_result"
+          ]
+        },
+        {
+          "key": "difference_is_certain",
+          "type": "false_premise",
+          "question": "两块电导率表计偏差很大，能否据此直接确认表计已经坏了，并忽略检修分析？",
+          "required": [
+            "compare",
+            "large_difference"
+          ],
+          "lead": "不能直接确认故障。偏差大只是本条给出的可能性，需要检修检查分析。"
+        },
+        {
+          "key": "consistent_after_refill",
+          "type": "conditional_branch",
+          "question": "两块表计读数基本一致，而且刚进行过补水，下一步需要检查哪些水的电导率？",
+          "required": [
+            "report",
+            "compare",
+            "consistent"
+          ]
+        },
+        {
+          "key": "actual_normal",
+          "type": "conditional_branch",
+          "question": "现场核查实际内水冷电导率正常，但仍报电导率高，10.7要求检查什么？",
+          "required": [
+            "actual_result"
+          ]
+        },
+        {
+          "key": "actual_high",
+          "type": "conditional_branch",
+          "question": "现场核查实际电导率确实偏高，还能只按表计误报处理吗？",
+          "required": [
+            "actual_result"
+          ],
+          "lead": "不能把实际偏高继续当作已经证明的表计误报。"
+        },
+        {
+          "key": "numeric_threshold",
+          "type": "source_gap",
+          "question": "仅依据10.7，能否给出“表计偏差较大”“实际电导率偏高”的固定数字阈值，以及确定的换水或加药方案？",
+          "required": [
+            "large_difference",
+            "actual_result"
+          ],
+          "lead": "10.7未列这些数字阈值，也未给出具体换水或加药方案；需要核对适用设备的定值与处理资料，不能自行补造。"
+        }
+      ],
+      "order_edges": [
+        [
+          "compare",
+          "large_difference"
+        ],
+        [
+          "compare",
+          "consistent"
+        ]
+      ],
+      "branches": [
+        [
+          "large_difference",
+          "consistent"
+        ]
+      ]
+    }
+  ]
+}

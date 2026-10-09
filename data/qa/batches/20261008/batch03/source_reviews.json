@@ -1,0 +1,1467 @@
+{
+  "reviewer": "Codex（AI来源核对，非业务专家）",
+  "scope": "逐题文档忠实性、条件分支与扩展来源复核；不认证来源现行性，不估计全量正确率",
+  "notes_origin_sha256": "4adcd22ec5d93f73ee5736d856febfcb0b7baf4a88744ab489a1bee61578f1a2",
+  "bound_files": {
+    "candidates.jsonl": "891f9b6554f2ab0bce4ca2e3e7adcc63a46bbbdb618043fb4f837016a0f4c6bd",
+    "chains.json": "c142d2a463235d497c30f6b4847009164384b9a10122f4999e7290f409676c18",
+    "seed.json": "246c034647393947e2e6b7adda33b1d71bb9248955e1ada9f875b05563923354",
+    "blind_prompts.jsonl": "91acd85eabef351eb5ff7c368477607cd941960f2cde1f5385e1694fa950ce65",
+    "fact_review/run.json": "2d878a4430edfd5470537b7b79a09c9439d89d1b71e14d73e4ef58f596c099e0",
+    "fact_review/responses.jsonl": "04618d06ce2ef439bd13244c5e0b1e8ca2667558510d3754946a17a5e5846bae",
+    "blind_reanswer/run.json": "c263539ec7b6fa21ad4c9d7213b732ae6fd49984ca9eb0b7762effadab033d04",
+    "blind_reanswer/responses.jsonl": "39487703229ede58cc3c729b74bde64e0bb7a19600093c32bfee948b8020caff",
+    "blind_reanswer/reuse.json": "563a751310bd74df9b3aa8146a6c8f84ba9b0c5f56172984114398dc0fc6db0b",
+    "semantic_review/run.json": "b9090cf927a414bce4be8c8be928f791ca45232306fb6352b10257a24b6fa3c9",
+    "semantic_review/responses.jsonl": "1f870d86959b89d64b1480f206e0d9a7080b004da707af8f5ff228b522530d6f",
+    "model_fact_reviews.json": "baa5b3e5f57e437ca9a8da4170bb6e5c532de45be427612ef708cbfa569a9b6b",
+    "model_semantic_reviews.json": "ffbf55c1291e0db185128b3e6af5fd4413c58341a805a024fe7e8bf2cd2c05cc"
+  },
+  "rows": [
+    {
+      "id": "accident_principles/whole",
+      "candidate_sha256": "27ff296dfafa954092b004f19565e080e06499c75e5429dbf8783214a80ad96c",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "limit",
+        "station_supply",
+        "restore_without_misoperation",
+        "record_report",
+        "diagnostic_basis"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page12:125:164",
+        "d_98d56bcdf4e49412/page12:164:234",
+        "d_98d56bcdf4e49412/page12:44:70",
+        "d_98d56bcdf4e49412/page12:70:88",
+        "d_98d56bcdf4e49412/page12:88:125"
+      ],
+      "unresolved_issues": [],
+      "notes": "逐条对照2.1.1—5，危险、站用电、设备供电、防误操作、记录汇报和综合诊断均保留；引导语说明这些是共同原则，未把编号排列当成规程规定的固定顺序。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "accident_principles/alarm_is_not_diagnosis",
+      "candidate_sha256": "e0f342956a5b731153f871654e589c55b1bcf0aad5c206754dccca0a5024e576",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "diagnostic_basis",
+        "limit",
+        "restore_without_misoperation"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page12:164:234",
+        "d_98d56bcdf4e49412/page12:44:70",
+        "d_98d56bcdf4e49412/page12:88:125"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.1.5明确要求综合表计、保护、报警和自动装置，不能仅凭报警名称定因；2.1.1安全目标和2.1.3防误操作均已补入，避免首轮仅核必答列表而遗漏问题所问后果。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "accident_principles/power_not_enough",
+      "candidate_sha256": "c3365bed666928575cb57d8a159e946250a9bcc2977ff8aa7fa38e3cdef4a3c4",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "station_supply",
+        "limit",
+        "restore_without_misoperation",
+        "record_report",
+        "diagnostic_basis"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page12:125:164",
+        "d_98d56bcdf4e49412/page12:164:234",
+        "d_98d56bcdf4e49412/page12:44:70",
+        "d_98d56bcdf4e49412/page12:70:88",
+        "d_98d56bcdf4e49412/page12:88:125"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.1.2只是五条原则之一，题问是否全部完成，答案明确否定并覆盖其余四项；未把站用电恢复推成事故处理结束。 模型证据ID/检查字段格式问题保留在原始响应和解析结果。Codex重新按真实原文位置及全部九项检查核对，不静默把模型hold改为pass。",
+      "model_advisory_verdict": "hold",
+      "model_format_issues": {
+        "missing_required_checks": [],
+        "unknown_evidence_ids": [
+          "d_98d56bcdf4e49412/page12:44:234"
+        ]
+      },
+      "model_fact_uncertainties": [],
+      "adjudication": [
+        "模型证据ID/检查字段格式问题保留在原始响应和解析结果。Codex重新按真实原文位置及全部九项检查核对，不静默把模型hold改为pass。"
+      ],
+      "training_eligible": false
+    },
+    {
+      "id": "accident_principles/record_what",
+      "candidate_sha256": "1eda125b7844247f571e0416af3fdc32e1087d964f1bf3900eed2343b4905fac",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "record_report"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page12:125:164"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.1.4事故发生时间和主要操作时间两对象及领导、调度两个报告对象均保留。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "accident_principles/after_fault_cleared",
+      "candidate_sha256": "c4a5fdbe9df7c5e34a890dd946ed73e1aea1492651922d1a0696d381b8e4b178",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "restore_without_misoperation",
+        "diagnostic_basis"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page12:164:234",
+        "d_98d56bcdf4e49412/page12:88:125"
+      ],
+      "unresolved_issues": [],
+      "notes": "核对真实多轮历史，只已说明限制事故及站用电原则，不代表设备可无条件送电；后续答复保留防误操作、综合判断、防非同期并列和事故扩大要求。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "emergency_authority/whole",
+      "candidate_sha256": "972ca16ff764e90405a117d04f67a24904a1f8fd2a3d713c1e1db08ab74dafdf",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "shift_leader",
+        "operators",
+        "dispatch_commander",
+        "emergency_scope",
+        "danger_stop",
+        "damaged_isolation",
+        "aux_restore",
+        "other_explicit",
+        "after_report",
+        "safe_isolation",
+        "national_report",
+        "impact_report"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp21938_21993:0:55",
+        "d_4b964d3ff677714b/cp22016_22042:0:26",
+        "d_98d56bcdf4e49412/page11:140:213",
+        "d_98d56bcdf4e49412/page11:213:348",
+        "d_98d56bcdf4e49412/page12:245:292",
+        "d_98d56bcdf4e49412/page12:473:572",
+        "d_98d56bcdf4e49412/page12:572:669",
+        "d_98d56bcdf4e49412/page12:669:706",
+        "d_98d56bcdf4e49412/page12:706:739",
+        "d_98d56bcdf4e49412/page12:739:769",
+        "d_98d56bcdf4e49412/page12:769:804",
+        "d_98d56bcdf4e49412/page12:804:841"
+      ],
+      "unresolved_issues": [],
+      "notes": "1.2职责、2.2.1国调管辖事故指挥、2.2.3/4两类汇报范围、2.2.5四类紧急授权均逐项核对；第三分册应急条款补充事后立即汇报和确保安全，分别注明来源。另查第三分册封面版本日期、5.7目录及正文标题，支持来源编号；不是用候选事实证明来源编号。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "emergency_authority/who_commands",
+      "candidate_sha256": "876e1890cb45fb4b65670a6b10abbee52c06a3507782e6fa12fe4f9c9e33e2da",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "shift_leader",
+        "operators",
+        "dispatch_commander"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page11:140:213",
+        "d_98d56bcdf4e49412/page11:213:348",
+        "d_98d56bcdf4e49412/page12:245:292"
+      ],
+      "unresolved_issues": [],
+      "notes": "1.2.1站内组织职责与2.2.1国调管辖事故指挥是不同职能，答案直接说明不转移，并完整保留1.2.2值班员实施、学习、发现缺陷和正确处理职责。删除了无须出现在事实中的全管辖范围推断。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "emergency_authority/immediate_danger",
+      "candidate_sha256": "a9c7a757f9dc99749df3158cd71095fcce67ac228a7f7a34ddf864cbcb056747",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "emergency_scope",
+        "danger_stop",
+        "after_report"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp21938_21993:0:55",
+        "d_98d56bcdf4e49412/page12:669:706",
+        "d_98d56bcdf4e49412/page12:706:739"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.2.5防止扩大范围及5.1人身设备安全威胁对应紧急停电，第三分册应急条款事后立即汇报仍保留；不把事后汇报写成等待事前批准的条件。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "emergency_authority/isolate_without_report",
+      "candidate_sha256": "417a90b94afefe1489a09ee7ea7d345bfeb7bc0cb651be620e95e4b5834e120f",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "emergency_scope",
+        "damaged_isolation",
+        "safe_isolation",
+        "after_report"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp21938_21993:0:55",
+        "d_4b964d3ff677714b/cp22016_22042:0:26",
+        "d_98d56bcdf4e49412/page12:669:706",
+        "d_98d56bcdf4e49412/page12:739:769"
+      ],
+      "unresolved_issues": [],
+      "notes": "故障停运且已损坏两个前提均有；第三分册追加确保安全条件及事后汇报。第五分册未列明安全字句不构成允许不安全隔离，两份规定共同解释，未伪称字面完全相同。 模型证据ID/检查字段格式问题保留在原始响应和解析结果。Codex重新按真实原文位置及全部九项检查核对，不静默把模型hold改为pass。",
+      "model_advisory_verdict": "hold",
+      "model_format_issues": {
+        "missing_required_checks": [],
+        "unknown_evidence_ids": [
+          "d_98d56bcdf4e49412/page12:669:769"
+        ]
+      },
+      "model_fact_uncertainties": [],
+      "adjudication": [
+        "模型证据ID/检查字段格式问题保留在原始响应和解析结果。Codex重新按真实原文位置及全部九项检查核对，不静默把模型hold改为pass。"
+      ],
+      "training_eligible": false
+    },
+    {
+      "id": "emergency_authority/aux_outage",
+      "candidate_sha256": "1b7ec66a040665f2a949e0f3c5b61887539c371bc93ab553b4d8287405133bdd",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "emergency_scope",
+        "aux_restore",
+        "after_report"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp21938_21993:0:55",
+        "d_98d56bcdf4e49412/page12:669:706",
+        "d_98d56bcdf4e49412/page12:769:804"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.2.5.3的部分/全部站用电失电和恢复电源对象正确，第三分册的事后立即汇报不丢；未用此规则授权没有停电前提的任意切换。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "emergency_authority/all_emergencies",
+      "candidate_sha256": "1ce904b4c6a5584d533f874b279ba7a62015bf8a93ab0fc35301d29cb84ac8bf",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "emergency_scope",
+        "danger_stop",
+        "damaged_isolation",
+        "aux_restore",
+        "other_explicit",
+        "safe_isolation",
+        "after_report"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp21938_21993:0:55",
+        "d_4b964d3ff677714b/cp22016_22042:0:26",
+        "d_98d56bcdf4e49412/page12:669:706",
+        "d_98d56bcdf4e49412/page12:706:739",
+        "d_98d56bcdf4e49412/page12:739:769",
+        "d_98d56bcdf4e49412/page12:769:804",
+        "d_98d56bcdf4e49412/page12:804:841"
+      ],
+      "unresolved_issues": [],
+      "notes": "保留防事故扩大、三类列举动作及其他站规程明确规定的引用性例外；不得由概括授权推成任意现场紧急判断即可操作。安全和事后汇报要求仍显示。 模型证据ID/检查字段格式问题保留在原始响应和解析结果。Codex重新按真实原文位置及全部九项检查核对，不静默把模型hold改为pass。",
+      "model_advisory_verdict": "hold",
+      "model_format_issues": {
+        "missing_required_checks": [],
+        "unknown_evidence_ids": [
+          "d_4b964d3ff677714b/cp21994_22091:0:24",
+          "d_98d56bcdf4e49412/page12:669:841"
+        ]
+      },
+      "model_fact_uncertainties": [],
+      "adjudication": [
+        "模型证据ID/检查字段格式问题保留在原始响应和解析结果。Codex重新按真实原文位置及全部九项检查核对，不静默把模型hold改为pass。"
+      ],
+      "training_eligible": false
+    },
+    {
+      "id": "emergency_authority/first_and_detailed",
+      "candidate_sha256": "af12393a78da2e8bad872b285fa19211a0681992e019a82a49048d2f707e3403",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "national_report",
+        "impact_report"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page12:473:572",
+        "d_98d56bcdf4e49412/page12:572:669"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.2.4立即概况与查明后尽快详细两阶段明确，2.2.3受影响电网范围及结束后原始报告亦保留；不能等原因查清再首报。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "emergency_authority/unnamed_operation",
+      "candidate_sha256": "019bccb1127347c02a1b20cb8d9da91a0dbc2e1fd465fc991dcbddf2193e2aa9",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "other_explicit"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page12:804:841"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.2.5.4引用其他授权条款，题设尚未找到授权；只能说明无法凭本条确认，未把缺资料结论写成所有未列动作永久禁止。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "incident_coordination/whole",
+      "candidate_sha256": "74e9d216fd357ec97312b157e6e3c1f33811ea84547f463881c1ad72c57be6b1",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "remove_threat",
+        "keep_normal",
+        "reparallel",
+        "restore_supply",
+        "normal_grid",
+        "transformers_abnormal",
+        "control_room",
+        "close_record",
+        "investigation",
+        "frequency_voltage"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page12:292:341",
+        "d_98d56bcdf4e49412/page12:341:390",
+        "d_98d56bcdf4e49412/page12:390:421",
+        "d_98d56bcdf4e49412/page12:421:452",
+        "d_98d56bcdf4e49412/page12:452:473",
+        "d_98d56bcdf4e49412/page12:841:894",
+        "d_98d56bcdf4e49412/page12:894:969",
+        "d_98d56bcdf4e49412/page13:114:155",
+        "d_98d56bcdf4e49412/page13:48:81",
+        "d_98d56bcdf4e49412/page13:81:114"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.2.1.1—4、.2、.6—.10逐条核对安全、正常设备/重要供电、并列/正常方式、互感器、控制室、收尾、调查与频压监视；条件各自适用，不生成每次必须全部执行的操作票。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "incident_coordination/normal_equipment",
+      "candidate_sha256": "bc6e7c34116ed53b467778a39173441bc13d094c6f20eff2a1dc3666a241a0dc",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "remove_threat",
+        "keep_normal",
+        "reparallel",
+        "restore_supply",
+        "normal_grid"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page12:292:341",
+        "d_98d56bcdf4e49412/page12:341:390",
+        "d_98d56bcdf4e49412/page12:390:421",
+        "d_98d56bcdf4e49412/page12:421:452",
+        "d_98d56bcdf4e49412/page12:452:473"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.2.1.2正常设备和重要/站用电供电不能忽略；并列恢复、停电设备供电及正常方式恢复是各自有前提的目标。修订后直接回答否定忽略，未补造并列操作细节。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "incident_coordination/control_room",
+      "candidate_sha256": "5bc88f7e1817498f109b1035c0e18ede113038fdd20d99b732fad0a309112e47",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "control_room"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page12:894:969"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.2.7跨物理页12/13续句完整核对：允许留下的相关人员、无关人员迅速离开以及非事故单位不即时询问三项均有，不因分页漏后半句。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "incident_coordination/instrument_and_frequency",
+      "candidate_sha256": "de7c4923a44c9ef16f3ca51803bb4b59c1d45dfece09637177ae1b029e5baa82",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "transformers_abnormal",
+        "frequency_voltage"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page12:841:894",
+        "d_98d56bcdf4e49412/page13:114:155"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.2.6互感器异常按规程处理并向国调报告，与2.2.10频压异常加强监视及时汇报分别回答；不编造测量异常即一次系统故障。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "incident_coordination/finish_not_end",
+      "candidate_sha256": "458543184744e000b534be238c4c4dab1d60f0a614cfc987e8a198f331cd90bf",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "close_record",
+        "investigation"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page13:48:81",
+        "d_98d56bcdf4e49412/page13:81:114"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.2.8结束后记录报告与2.2.9依规调查均保留；引导语直接回应仍需要，避免只有条款列表未答是否。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "incident_coordination/investigation_details",
+      "candidate_sha256": "2fee50246eb5de60a00bb238ad0f2ab9e78e3b253b4813f07f2419f4f7b4dd45",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "investigation"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page13:81:114"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.2.9只引用调查规程名称，具体步骤和时限未列；资料缺口限定本条，未断言全部文档没有调查规则。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "dispatch_communication_loss/whole",
+      "candidate_sha256": "bb8b7a37613a7ed12be17d43a6bdc5b9d0a065693d297060e4025c4937e4e18f",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "restore_communication",
+        "stable_mode",
+        "repaired_wait",
+        "unapproved_command",
+        "approved_command",
+        "dispatch_view",
+        "no_arbitrary_action",
+        "report_when_restored"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page14:335:417",
+        "d_98d56bcdf4e49412/page14:448:481",
+        "d_98d56bcdf4e49412/page14:481:543",
+        "d_98d56bcdf4e49412/page14:543:720",
+        "d_98d56bcdf4e49412/page14:720:808",
+        "d_98d56bcdf4e49412/page14:808:861"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.3.5全部实质规则核对，包括间接联系、尽量不改变方式、检修完工仍等通信、指令未同意/已同意两分支、调度视角、紧急例外及恢复后补报。分支按许可状态选择，不串为一套操作。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "dispatch_communication_loss/repeated_not_approved",
+      "candidate_sha256": "a1877cb28b14d037c332a0d95369fadf2fb07eab091cd3dbe8338ea1d5815e4d",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "unapproved_command"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page14:543:720"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.3.5.3重复指令和同意执行是两个节点；题设未同意则不得执行，不把重复当批准。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "dispatch_communication_loss/approved_then_lost",
+      "candidate_sha256": "a57663e7c588d361e0d436487fd1da9a60b980e8b7dbb11edb02153bf1b95362",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "approved_command",
+        "dispatch_view",
+        "report_when_restored"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page14:543:720",
+        "d_98d56bcdf4e49412/page14:808:861"
+      ],
+      "unresolved_issues": [],
+      "notes": "失联前已同意可执行完毕、调度尚未收到完成报告的判断和恢复后补报均依据原文；未据此免除实际事故中其他设备安全规则。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "dispatch_communication_loss/repair_complete",
+      "candidate_sha256": "be4a3f440060c4af51bec695186c2ee2c805ce191876d8c887ea73b57fa7d6d1",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "repaired_wait",
+        "stable_mode"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page14:448:481",
+        "d_98d56bcdf4e49412/page14:481:543"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.3.5.2.2明确检修完工且可恢复仍需等通信，2.1尽快恢复供电不取消这个具体条件。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "dispatch_communication_loss/indirect_contact",
+      "candidate_sha256": "cef5c4a5112ca92a0fb310145669496d65a92ce49c9476676df9e3a3821a553b",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "restore_communication",
+        "stable_mode",
+        "no_arbitrary_action"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page14:335:417",
+        "d_98d56bcdf4e49412/page14:448:481",
+        "d_98d56bcdf4e49412/page14:720:808"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.3.5.1由国调通过有关网省调转达，非现场自行另设调度渠道；.2.1尽可能保持方式与.4处理界限均保留。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "dispatch_communication_loss/emergency_exception",
+      "candidate_sha256": "9c405db649be734c1c03f515525795dce29aef21ae6790e06732f34f6171b7be",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "no_arbitrary_action"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page14:720:808"
+      ],
+      "unresolved_issues": [],
+      "notes": "2.3.5.4通常不得自行处理与紧急按规程处理同句完整保留；尾句指向2.2.5及设备预案，没有把紧急例外解释成无限授权。 模型证据ID/检查字段格式问题保留在原始响应和解析结果。Codex重新按真实原文位置及全部九项检查核对，不静默把模型hold改为pass。",
+      "model_advisory_verdict": "hold",
+      "model_format_issues": {
+        "missing_required_checks": [],
+        "unknown_evidence_ids": [
+          "d_98d56bcdf4e49412/page12:669:739",
+          "d_98d56bcdf4e49412/page12:739:804"
+        ]
+      },
+      "model_fact_uncertainties": [],
+      "adjudication": [
+        "模型证据ID/检查字段格式问题保留在原始响应和解析结果。Codex重新按真实原文位置及全部九项检查核对，不静默把模型hold改为pass。"
+      ],
+      "training_eligible": false
+    },
+    {
+      "id": "dispatch_communication_loss/missing_approval",
+      "candidate_sha256": "bdfcdb3e2971c965ec228c7250b75dd65536c489a406ae8aefe5ac835441b7d2",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "unapproved_command",
+        "approved_command"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page14:543:720"
+      ],
+      "unresolved_issues": [],
+      "notes": "题设许可记录未明，不填猜测结论；逐项显示.3的未同意/已同意条件，并先核实许可节点。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "dispatch_communication_loss/followup_after_command",
+      "candidate_sha256": "9e1a83177ba377e3469a6980e65f3bf2ed5cbd3f5afdac32f1c869f68f3a8e62",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "report_when_restored"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page14:808:861"
+      ],
+      "unresolved_issues": [],
+      "notes": "实际历史已经同意执行并在失联中处置，追问指代正确；.5要求补报期间一切应汇报事项，未自行构造本条没有的固定清单。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "main_pump_no_backup/whole",
+      "candidate_sha256": "8cd37497078ef7602229b673d918c3cbaa0c9e7521d6761b97f49cfd7448288b",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "phenomenon",
+        "report",
+        "automatic",
+        "local_switch",
+        "fault_pump_isolation",
+        "backup_failed",
+        "normal_backup_ban",
+        "single_pump_monitor"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page64:0:67",
+        "d_98d56bcdf4e49412/page64:302:370",
+        "d_98d56bcdf4e49412/page64:408:442",
+        "d_98d56bcdf4e49412/page64:452:479",
+        "d_98d56bcdf4e49412/page64:479:530",
+        "d_98d56bcdf4e49412/page64:530:608",
+        "d_98d56bcdf4e49412/page64:608:682",
+        "d_98d56bcdf4e49412/page64:682:806"
+      ],
+      "unresolved_issues": [],
+      "notes": "10.5六条实质文本及10.4.2.2/.6分别核对；备用控制自动、异常主泵就地切换并确认、故障泵三类开关隔离、备用不能投入或也故障时先申请对应阀停运再断两泵、正常单泵电源限制完整。引导语清楚分开备用正常和失败状态；未将故障泵隔离步骤误作失败分支的前置全部动作。 模型把“不能把备用运行正常当作解除该限制”判为无原文解读。10.4.2.2原句直接以备用泵投入运行正常为前提，仍禁止隔离检查期间相关切换；该否定误前提是同一条件命题的语义蕴含，未增加新的禁令或权限。按完整原文核对后保留。",
+      "model_advisory_verdict": "revise",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [
+        {
+          "fact_id": "normal_backup_ban",
+          "verdict": "ambiguous",
+          "reason": "原文10.4.2.2确实规定'对故障主循环泵进行隔离检查期间禁止进行相关站用电切换操作'，禁止本身有据；但'不能把备用运行正常当作解除该限制'一句为事实核验者的解读性补充，原文未作此明确表述。",
+          "evidence_ids": [
+            "d_98d56bcdf4e49412/page64:0:67"
+          ]
+        }
+      ],
+      "adjudication": [
+        "模型把“不能把备用运行正常当作解除该限制”判为无原文解读。10.4.2.2原句直接以备用泵投入运行正常为前提，仍禁止隔离检查期间相关切换；该否定误前提是同一条件命题的语义蕴含，未增加新的禁令或权限。按完整原文核对后保留。"
+      ],
+      "training_eligible": false
+    },
+    {
+      "id": "main_pump_no_backup/manual_mode",
+      "candidate_sha256": "a6c2bb17fe62f1141d754a91a3bdfc9a564c182c93ebe66c8b282be1e83da01b",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "phenomenon",
+        "report",
+        "automatic"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page64:408:442",
+        "d_98d56bcdf4e49412/page64:452:479",
+        "d_98d56bcdf4e49412/page64:479:530"
+      ],
+      "unresolved_issues": [],
+      "notes": "10.5.2.2只在非自动位置时立即切自动，不能把自动位置已正确情形也改成切换操作；报告与预案现象保留。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "main_pump_no_backup/motor_abnormal",
+      "candidate_sha256": "48356bc4dc056e24030e57c7190c3f204366174483376ff5a8bf295d5fd9713b",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "report",
+        "local_switch",
+        "fault_pump_isolation",
+        "normal_backup_ban",
+        "single_pump_monitor"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page64:0:67",
+        "d_98d56bcdf4e49412/page64:302:370",
+        "d_98d56bcdf4e49412/page64:452:479",
+        "d_98d56bcdf4e49412/page64:530:608",
+        "d_98d56bcdf4e49412/page64:608:682"
+      ],
+      "unresolved_issues": [],
+      "notes": "10.5.2.3严重发热、冒烟、声音异常、开关烧糊四类现象均有，立即就地切换并现场确认备用正常；该正常状态后保留故障泵隔离以及10.4隔离期间禁止站用电切换、单泵监视。 模型把“不能把备用运行正常当作解除该限制”判为无原文解读。10.4.2.2原句直接以备用泵投入运行正常为前提，仍禁止隔离检查期间相关切换；该否定误前提是同一条件命题的语义蕴含，未增加新的禁令或权限。按完整原文核对后保留。",
+      "model_advisory_verdict": "revise",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [
+        {
+          "fact_id": "normal_backup_ban",
+          "verdict": "ambiguous",
+          "reason": "原文10.4.2.2确实规定'对故障主循环泵进行隔离检查期间禁止进行相关站用电切换操作'，禁止本身有据；但'不能把备用运行正常当作解除该限制'一句为事实核验者的解读性补充，原文未作此明确表述。",
+          "evidence_ids": [
+            "d_98d56bcdf4e49412/page64:0:67"
+          ]
+        }
+      ],
+      "adjudication": [
+        "模型把“不能把备用运行正常当作解除该限制”判为无原文解读。10.4.2.2原句直接以备用泵投入运行正常为前提，仍禁止隔离检查期间相关切换；该否定误前提是同一条件命题的语义蕴含，未增加新的禁令或权限。按完整原文核对后保留。"
+      ],
+      "training_eligible": false
+    },
+    {
+      "id": "main_pump_no_backup/both_faulty",
+      "candidate_sha256": "e02515e4c4e6db8d5fdcb3671d8c99742cab35e73c9a0df471e5bbb2661676ad",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "report",
+        "backup_failed"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page64:452:479",
+        "d_98d56bcdf4e49412/page64:682:806"
+      ],
+      "unresolved_issues": [],
+      "notes": "10.5.2.5无法投入及投入也故障两种情况均覆盖；对应换流阀先申请停运，随后两台故障泵软启柜、400V和安全开关及安措检修完整，不推成仅故障主泵隔离。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "main_pump_no_backup/cut_both_first",
+      "candidate_sha256": "37ef8aec9102e174cc455a82cb8a9a854570d975cc2de90c0c85b67f03a967ac",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "backup_failed"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page64:682:806"
+      ],
+      "unresolved_issues": [],
+      "notes": "本题只核对10.5.2.5明确先停阀后两泵断电的流程，不能改成反向；没有声称其他人身设备威胁的紧急停电也一律延后等待。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "main_pump_no_backup/normal_backup_changed",
+      "candidate_sha256": "985ca3a4130579dae6561212a675ce44d44bd79d7d397cdea66226d2111c486d",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "normal_backup_ban",
+        "single_pump_monitor"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page64:0:67",
+        "d_98d56bcdf4e49412/page64:302:370"
+      ],
+      "unresolved_issues": [],
+      "notes": "多轮最新状态已更新为备用正常，适用10.4.2.2/.6的隔离禁令和单泵监视；不沿用上一轮备用未投入的状态。 模型把“不能把备用运行正常当作解除该限制”判为无原文解读。10.4.2.2原句直接以备用泵投入运行正常为前提，仍禁止隔离检查期间相关切换；该否定误前提是同一条件命题的语义蕴含，未增加新的禁令或权限。按完整原文核对后保留。",
+      "model_advisory_verdict": "revise",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [
+        {
+          "fact_id": "normal_backup_ban",
+          "verdict": "ambiguous",
+          "reason": "原文10.4.2.2确实规定'对故障主循环泵进行隔离检查期间禁止进行相关站用电切换操作'，禁止本身有据；但'不能把备用运行正常当作解除该限制'一句为事实核验者的解读性补充，原文未作此明确表述。",
+          "evidence_ids": [
+            "d_98d56bcdf4e49412/page64:0:67"
+          ]
+        }
+      ],
+      "adjudication": [
+        "模型把“不能把备用运行正常当作解除该限制”判为无原文解读。10.4.2.2原句直接以备用泵投入运行正常为前提，仍禁止隔离检查期间相关切换；该否定误前提是同一条件命题的语义蕴含，未增加新的禁令或权限。按完整原文核对后保留。"
+      ],
+      "training_eligible": false
+    },
+    {
+      "id": "main_pump_no_backup/isolation_switches",
+      "candidate_sha256": "0e2ccf436d36d629c449979e01e2bbd865214ca42601b8621ed14e4e9fb4ce78",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "fault_pump_isolation"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page64:608:682"
+      ],
+      "unresolved_issues": [],
+      "notes": "题目限定10.5.2.4的动作清单，软启柜电源、400V电源及安全开关、安措和检修都列明；不是只有就地安全开关即可。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "main_pump_no_backup/failed_backup_scope",
+      "candidate_sha256": "0c713141192392ba477efa8d40faf802ad1615996950bc534faf772fb64b32bc",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "phenomenon",
+        "local_switch",
+        "backup_failed",
+        "normal_backup_ban"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page64:0:67",
+        "d_98d56bcdf4e49412/page64:408:442",
+        "d_98d56bcdf4e49412/page64:530:608",
+        "d_98d56bcdf4e49412/page64:682:806"
+      ],
+      "unresolved_issues": [],
+      "notes": "区别10.5未切成功与10.4正常备用前提；失败分支按.5先停对应阀再两泵断电，同时明确10.4禁令只按相应状态使用。 模型把“不能把备用运行正常当作解除该限制”判为无原文解读。10.4.2.2原句直接以备用泵投入运行正常为前提，仍禁止隔离检查期间相关切换；该否定误前提是同一条件命题的语义蕴含，未增加新的禁令或权限。按完整原文核对后保留。",
+      "model_advisory_verdict": "revise",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [
+        {
+          "fact_id": "normal_backup_ban",
+          "verdict": "ambiguous",
+          "reason": "原文10.4.2.2确实规定'对故障主循环泵进行隔离检查期间禁止进行相关站用电切换操作'，禁止本身有据；但'不能把备用运行正常当作解除该限制'一句为事实核验者的解读性补充，原文未作此明确表述。",
+          "evidence_ids": [
+            "d_98d56bcdf4e49412/page64:0:67"
+          ]
+        }
+      ],
+      "adjudication": [
+        "模型把“不能把备用运行正常当作解除该限制”判为无原文解读。10.4.2.2原句直接以备用泵投入运行正常为前提，仍禁止隔离检查期间相关切换；该否定误前提是同一条件命题的语义蕴含，未增加新的禁令或权限。按完整原文核对后保留。"
+      ],
+      "training_eligible": false
+    },
+    {
+      "id": "coolant_conductivity/whole",
+      "candidate_sha256": "9a15952d1a98eb43ec1a5d7d10ee6753305b759f7fbe76631f35678372b16dff",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "alarm",
+        "report",
+        "compare",
+        "large_difference",
+        "consistent",
+        "actual_result"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page65:10:41",
+        "d_98d56bcdf4e49412/page65:119:166",
+        "d_98d56bcdf4e49412/page65:166:222",
+        "d_98d56bcdf4e49412/page65:222:289",
+        "d_98d56bcdf4e49412/page65:51:78",
+        "d_98d56bcdf4e49412/page65:78:119"
+      ],
+      "unresolved_issues": [],
+      "notes": "10.7现象及2.1—5全部核对，表计差异只推可能故障，读数一致后查实际水质与近期补水，实际正常/偏高两结果分开；不把高报警等同确认水质超限。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "coolant_conductivity/difference_is_certain",
+      "candidate_sha256": "decccf6c129a5ed9c8b1228809e82ce1219641c98c8fc4a123e7ead9100d1da4",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "compare",
+        "large_difference"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page65:119:166",
+        "d_98d56bcdf4e49412/page65:78:119"
+      ],
+      "unresolved_issues": [],
+      "notes": "10.7.2.3明确可能表计故障而非确认，仍通知检修检查分析；.2现场比较保留。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "coolant_conductivity/consistent_after_refill",
+      "candidate_sha256": "7abdad52f626630ab107dfa36fe296286045dd3a60e082fdfbe2c82c63f3e4b6",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "report",
+        "compare",
+        "consistent"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page65:166:222",
+        "d_98d56bcdf4e49412/page65:51:78",
+        "d_98d56bcdf4e49412/page65:78:119"
+      ],
+      "unresolved_issues": [],
+      "notes": "10.7.2.4同时检查系统水质与所用补充水电导率，不能只查其中一类；题设读数基本一致不是水质正常的证据。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "coolant_conductivity/actual_normal",
+      "candidate_sha256": "c28545bba190ed248ece093769273049e0cfa75305d97e4b2b318c907e3b930d",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "actual_result"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page65:222:289"
+      ],
+      "unresolved_issues": [],
+      "notes": "10.7.2.5实际正常对应测量装置报警值整定检查，与确实偏高联系检修的对照不混用；未指导擅改定值。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "coolant_conductivity/actual_high",
+      "candidate_sha256": "1237cf5901b0bd6ab5f948f9eefa031c931306ad3f51460c388fc3b914d0d3e4",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "actual_result"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page65:222:289"
+      ],
+      "unresolved_issues": [],
+      "notes": "实际确实偏高立即联系检修，不能仍按已经证实的误报处理；未自行给出加药、换水或停阀结论。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    },
+    {
+      "id": "coolant_conductivity/numeric_threshold",
+      "candidate_sha256": "c1432e753fd82b93fde9b693dec7fad048a5dcf2850b4342a7a418a7031390ed",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "large_difference",
+        "actual_result"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page65:119:166",
+        "d_98d56bcdf4e49412/page65:222:289"
+      ],
+      "unresolved_issues": [],
+      "notes": "完整10.7未给出偏差较大/偏高固定数值或换水加药方案，缺口明确仅指本节；定值表或厂家资料存在性另查，未泛化整个rawdoc缺失。",
+      "model_advisory_verdict": "pass",
+      "model_format_issues": {},
+      "model_fact_uncertainties": [],
+      "adjudication": [],
+      "training_eligible": false
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "kind": "qa_batch_snapshot",
+  "origin_directory": ".semantic/qa_quality_batch03_20261008_v4",
+  "namespace": "qa_quality_batch03_20261008_v4",
+  "files": {
+    "manifest.json": "3bd0b4d37ca44f90fef916ea8140e0ff5b87b7f4f24627c668dfa9c2db8d49f3",
+    "candidates.jsonl": "891f9b6554f2ab0bce4ca2e3e7adcc63a46bbbdb618043fb4f837016a0f4c6bd",
+    "chains.json": "c142d2a463235d497c30f6b4847009164384b9a10122f4999e7290f409676c18",
+    "source_reviews.json": "20c689763a3a39729385b9b56288d3d6be41a5820e1e1689588f0e02eead18ce",
+    "model_fact_reviews.json": "baa5b3e5f57e437ca9a8da4170bb6e5c532de45be427612ef708cbfa569a9b6b",
+    "model_semantic_reviews.json": "ffbf55c1291e0db185128b3e6af5fd4413c58341a805a024fe7e8bf2cd2c05cc",
+    "quality_status.json": "2f1f852d31dbfc9848baed9b895719fbe54c7af44fbdb9a449fdff4dadc54846",
+    "review.md": "2eff72466ab9ba50dd95e0c44034e493b163eab2e478dd8fd5afc1fd5410fe87",
+    "seed.json": "246c034647393947e2e6b7adda33b1d71bb9248955e1ada9f875b05563923354",
+    "source_review_notes.json": "4adcd22ec5d93f73ee5736d856febfcb0b7baf4a88744ab489a1bee61578f1a2",
+    "coverage_assessments.json": "f39da8c9767520fb1984cfd23dc3810fde2841bd1dba215f261dd9d247a586d0",
+    "index.html": "1508df03e52406f755325c6dc465951cb288c7be64dfdf7b518d2fcc7ce150f6"
+  },
+  "origin_files": {
+    "manifest.json": {
+      "origin": ".semantic/qa_quality_batch03_20261008_v4/manifest.json",
+      "sha256": "3bd0b4d37ca44f90fef916ea8140e0ff5b87b7f4f24627c668dfa9c2db8d49f3"
+    },
+    "candidates.jsonl": {
+      "origin": ".semantic/qa_quality_batch03_20261008_v4/candidates.jsonl",
+      "sha256": "891f9b6554f2ab0bce4ca2e3e7adcc63a46bbbdb618043fb4f837016a0f4c6bd"
+    },
+    "chains.json": {
+      "origin": ".semantic/qa_quality_batch03_20261008_v4/chains.json",
+      "sha256": "c142d2a463235d497c30f6b4847009164384b9a10122f4999e7290f409676c18"
+    },
+    "source_reviews.json": {
+      "origin": ".semantic/qa_quality_batch03_20261008_v4/source_reviews.json",
+      "sha256": "20c689763a3a39729385b9b56288d3d6be41a5820e1e1689588f0e02eead18ce"
+    },
+    "model_fact_reviews.json": {
+      "origin": ".semantic/qa_quality_batch03_20261008_v4/model_fact_reviews.json",
+      "sha256": "baa5b3e5f57e437ca9a8da4170bb6e5c532de45be427612ef708cbfa569a9b6b"
+    },
+    "model_semantic_reviews.json": {
+      "origin": ".semantic/qa_quality_batch03_20261008_v4/model_semantic_reviews.json",
+      "sha256": "ffbf55c1291e0db185128b3e6af5fd4413c58341a805a024fe7e8bf2cd2c05cc"
+    },
+    "quality_status.json": {
+      "origin": ".semantic/qa_quality_batch03_20261008_v4/quality_status.json",
+      "sha256": "2f1f852d31dbfc9848baed9b895719fbe54c7af44fbdb9a449fdff4dadc54846"
+    },
+    "review.md": {
+      "origin": ".semantic/qa_quality_batch03_20261008_v4/review.md",
+      "sha256": "2eff72466ab9ba50dd95e0c44034e493b163eab2e478dd8fd5afc1fd5410fe87"
+    },
+    "seed.json": {
+      "origin": ".semantic/qa_quality_batch03_20261008_v4/seed.json",
+      "sha256": "246c034647393947e2e6b7adda33b1d71bb9248955e1ada9f875b05563923354"
+    },
+    "source_review_notes.json": {
+      "origin": "scripts/qa_operations/source_review_notes_batch03.json",
+      "sha256": "4adcd22ec5d93f73ee5736d856febfcb0b7baf4a88744ab489a1bee61578f1a2"
+    },
+    "coverage_assessments.json": {
+      "origin": "scripts/qa_operations/coverage_assessments_batch03.json",
+      "sha256": "f39da8c9767520fb1984cfd23dc3810fde2841bd1dba215f261dd9d247a586d0"
+    },
+    "index.html": {
+      "origin": ".semantic/qa_quality_batch03_20261008_v4/index.html",
+      "sha256": "1508df03e52406f755325c6dc465951cb288c7be64dfdf7b518d2fcc7ce150f6"
+    }
+  },
+  "external_review_bindings": {
+    "blind_prompts.jsonl": "91acd85eabef351eb5ff7c368477607cd941960f2cde1f5385e1694fa950ce65",
+    "legacy_quality_inventory.jsonl": "415faa223a17cdc055681201864b4d7ca71b6c549e319f7791519dd9798a3855",
+    "fact_review/run.json": "2d878a4430edfd5470537b7b79a09c9439d89d1b71e14d73e4ef58f596c099e0",
+    "fact_review/responses.jsonl": "04618d06ce2ef439bd13244c5e0b1e8ca2667558510d3754946a17a5e5846bae",
+    "blind_reanswer/run.json": "c263539ec7b6fa21ad4c9d7213b732ae6fd49984ca9eb0b7762effadab033d04",
+    "blind_reanswer/responses.jsonl": "39487703229ede58cc3c729b74bde64e0bb7a19600093c32bfee948b8020caff",
+    "blind_reanswer/reuse.json": "563a751310bd74df9b3aa8146a6c8f84ba9b0c5f56172984114398dc0fc6db0b",
+    "semantic_review/run.json": "b9090cf927a414bce4be8c8be928f791ca45232306fb6352b10257a24b6fa3c9",
+    "semantic_review/responses.jsonl": "1f870d86959b89d64b1480f206e0d9a7080b004da707af8f5ff228b522530d6f"
+  },
+  "raw_model_calls_included": false,
+  "expert_review": "not_performed",
+  "training_eligible": false
+}

@@ -1,0 +1,92 @@
+{
+  "kind": "qa_batch_snapshot",
+  "origin_directory": ".semantic/qa_quality_batch05_20261008_v3",
+  "namespace": "qa_quality_batch05_20261008_v3",
+  "files": {
+    "manifest.json": "8463d6f5b4029e1fce9a47a19283a2088cd4f3bc23bb9387d977e59da69490aa",
+    "candidates.jsonl": "8eefd8c00ea111685397563e46ca99c03a73206a05fd67b8d70f383a6f0b6c99",
+    "chains.json": "10723cfcf3f53dba06aee3212424a8dcf81929f5468b035efcebc518c7c8e019",
+    "source_reviews.json": "1e3df3dafb2ee1cef881a4abd30d7ef59380f5443c290b37f810213fe17b0b46",
+    "model_fact_reviews.json": "01a879d32a162a14dcae817833bb176bb65916cf33be185d83217658dc667961",
+    "model_semantic_reviews.json": "208e3c36e5e187eff094e1cec8ceadc1a13e1a0c87e5fff2bab6d3b42905636b",
+    "quality_status.json": "f5fe414d29046e84cc1315cb876fc38180885bf73a576fe7447b8efcd42a5667",
+    "review.md": "508a6d4bb747cc522491093b689a0d9e784870a01a03fab1963f8a019049a9aa",
+    "pending_business_issues.json": "eb42340d3cda1806d6f55eaaf42c44c3ff3167afbe4513141d656cd890a20595",
+    "seed.json": "21a7485c07fc87bcb0b552172908eb74581414321c40c9691da1329543c48970",
+    "source_review_notes.json": "d4b4c8f8bba34bc8fc4b66b1022ae24149dbe1c86bde548706219a0626f9bf11",
+    "coverage_assessments.json": "d2921f43714c03f51e06abd86dcf6e08db1e790f71d6220b0d159a008452186d",
+    "coverage_review_notes.json": "26fde9caea31a3a120961eca855020db6d5c95015aebd9136055c2a0384bd68a",
+    "index.html": "a66773b74e0c51acb45d852f82d44d36c7bc74fd7d265f60db44cb634a768129"
+  },
+  "origin_files": {
+    "manifest.json": {
+      "origin": ".semantic/qa_quality_batch05_20261008_v3/manifest.json",
+      "sha256": "8463d6f5b4029e1fce9a47a19283a2088cd4f3bc23bb9387d977e59da69490aa"
+    },
+    "candidates.jsonl": {
+      "origin": ".semantic/qa_quality_batch05_20261008_v3/candidates.jsonl",
+      "sha256": "8eefd8c00ea111685397563e46ca99c03a73206a05fd67b8d70f383a6f0b6c99"
+    },
+    "chains.json": {
+      "origin": ".semantic/qa_quality_batch05_20261008_v3/chains.json",
+      "sha256": "10723cfcf3f53dba06aee3212424a8dcf81929f5468b035efcebc518c7c8e019"
+    },
+    "source_reviews.json": {
+      "origin": ".semantic/qa_quality_batch05_20261008_v3/source_reviews.json",
+      "sha256": "1e3df3dafb2ee1cef881a4abd30d7ef59380f5443c290b37f810213fe17b0b46"
+    },
+    "model_fact_reviews.json": {
+      "origin": ".semantic/qa_quality_batch05_20261008_v3/model_fact_reviews.json",
+      "sha256": "01a879d32a162a14dcae817833bb176bb65916cf33be185d83217658dc667961"
+    },
+    "model_semantic_reviews.json": {
+      "origin": ".semantic/qa_quality_batch05_20261008_v3/model_semantic_reviews.json",
+      "sha256": "208e3c36e5e187eff094e1cec8ceadc1a13e1a0c87e5fff2bab6d3b42905636b"
+    },
+    "quality_status.json": {
+      "origin": ".semantic/qa_quality_batch05_20261008_v3/quality_status.json",
+      "sha256": "f5fe414d29046e84cc1315cb876fc38180885bf73a576fe7447b8efcd42a5667"
+    },
+    "review.md": {
+      "origin": ".semantic/qa_quality_batch05_20261008_v3/review.md",
+      "sha256": "508a6d4bb747cc522491093b689a0d9e784870a01a03fab1963f8a019049a9aa"
+    },
+    "pending_business_issues.json": {
+      "origin": ".semantic/qa_quality_batch05_20261008_v3/pending_business_issues.json",
+      "sha256": "eb42340d3cda1806d6f55eaaf42c44c3ff3167afbe4513141d656cd890a20595"
+    },
+    "seed.json": {
+      "origin": ".semantic/qa_quality_batch05_20261008_v3/seed.json",
+      "sha256": "21a7485c07fc87bcb0b552172908eb74581414321c40c9691da1329543c48970"
+    },
+    "source_review_notes.json": {
+      "origin": "scripts/qa_operations/source_review_notes_batch05_v3.json",
+      "sha256": "d4b4c8f8bba34bc8fc4b66b1022ae24149dbe1c86bde548706219a0626f9bf11"
+    },
+    "coverage_assessments.json": {
+      "origin": "scripts/qa_operations/coverage_assessments_batch05_v3.json",
+      "sha256": "d2921f43714c03f51e06abd86dcf6e08db1e790f71d6220b0d159a008452186d"
+    },
+    "coverage_review_notes.json": {
+      "origin": "scripts/qa_operations/coverage_review_notes_batch05_v3.json",
+      "sha256": "26fde9caea31a3a120961eca855020db6d5c95015aebd9136055c2a0384bd68a"
+    },
+    "index.html": {
+      "origin": ".semantic/qa_quality_batch05_20261008_v3/index.html",
+      "sha256": "a66773b74e0c51acb45d852f82d44d36c7bc74fd7d265f60db44cb634a768129"
+    }
+  },
+  "external_review_bindings": {
+    "blind_prompts.jsonl": "8c9bfdfd8584320fcff395a5f4fcc88d9474b440b1f911a40c85103537a3277c",
+    "legacy_quality_inventory.jsonl": "415faa223a17cdc055681201864b4d7ca71b6c549e319f7791519dd9798a3855",
+    "fact_review/run.json": "a4f6eab1063fc95054f8d18ef2dee5ea22b87b3ec2bd5823689cbd64bc46ed8c",
+    "fact_review/responses.jsonl": "6f7c3d967329dee1372fe871c1b298fec34f1a6a55f6d001de404e4f9608b805",
+    "blind_reanswer/run.json": "fe9261c104cd2ce7e5ee05323a8607c38ee514b4ba19122a10e6742ca685f9a5",
+    "blind_reanswer/responses.jsonl": "81d9418fb349b082780bcdf9b4b9091fb10a3ce51f833c748a37b801517f7478",
+    "semantic_review/run.json": "4834b82512c36bcd02fd115c6da393a0f69b36907039daa10982015697b11bc7",
+    "semantic_review/responses.jsonl": "8503d60c477f0014c6ba7b8d0c31f7c06238078428afc236044777791afee85d"
+  },
+  "raw_model_calls_included": false,
+  "expert_review": "not_performed",
+  "training_eligible": false
+}

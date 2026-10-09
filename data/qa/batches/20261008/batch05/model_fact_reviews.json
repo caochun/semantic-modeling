@@ -1,0 +1,774 @@
+{
+  "bipole_block": {
+    "facts": [
+      {
+        "fact_id": "signal",
+        "verdict": "supported",
+        "reason": "原文3.2.1.1明确'OWS发相关保护动作信号，故障录波器启动'，与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:710:748"
+        ]
+      },
+      {
+        "fact_id": "bipole_block",
+        "verdict": "supported",
+        "reason": "原文3.2.1.2明确'双极闭锁'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:748:769"
+        ]
+      },
+      {
+        "fact_id": "ac_locked",
+        "verdict": "supported",
+        "reason": "原文3.2.1.3明确'所有换流器交流侧开关跳闸并锁定'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:769:801"
+        ]
+      },
+      {
+        "fact_id": "isolated",
+        "verdict": "supported",
+        "reason": "原文3.2.1.4明确'双极均退至隔离状态'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:801:827"
+        ]
+      },
+      {
+        "fact_id": "filters_out",
+        "verdict": "supported",
+        "reason": "原文3.2.1.5明确'交流滤波器全部退出运行'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:827:856"
+        ]
+      },
+      {
+        "fact_id": "ac_limits",
+        "verdict": "supported",
+        "reason": "原文3.2.2.1明确'检查交流系统潮流、电压、频率有无越限，汇报调度及领导'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:0:42"
+        ]
+      },
+      {
+        "fact_id": "verify_filters",
+        "verdict": "supported",
+        "reason": "原文3.2.2.2明确'检查交流滤波器是否全部退出运行'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:42:73"
+        ]
+      },
+      {
+        "fact_id": "primary_report",
+        "verdict": "supported",
+        "reason": "原文3.2.2.3明确'检查一次设备状态变化情况，检查动作保护范围内设备是否正常，并及时向调度及领导进行详细汇报'（引文因换行截断，原文完整存在）。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:73:134"
+        ]
+      },
+      {
+        "fact_id": "recording",
+        "verdict": "supported",
+        "reason": "原文3.2.2.4明确'查看保护装置动作情况，整理故障录波，并及时传真至调度和相关部门'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:134:181"
+        ]
+      },
+      {
+        "fact_id": "maintenance",
+        "verdict": "supported",
+        "reason": "原文3.2.2.5明确'将双极（故障设备）隔离并转检修，通知检修人员进行处理'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:181:225"
+        ]
+      }
+    ],
+    "source_conflicts": []
+  },
+  "single_converter_block": {
+    "facts": [
+      {
+        "fact_id": "signal",
+        "verdict": "supported",
+        "reason": "原文3.4.1.1完整表述'OWS发相关保护动作信号，故障录波器启动'，与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:687:724"
+        ]
+      },
+      {
+        "fact_id": "transfer",
+        "verdict": "supported",
+        "reason": "原文3.4.1.2'故障换流器闭锁，功率转移至运行换流器'与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:724:758"
+        ]
+      },
+      {
+        "fact_id": "ac_locked",
+        "verdict": "supported",
+        "reason": "原文3.4.1.3'故障换流器交流侧开关跳闸并锁定'与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:758:789"
+        ]
+      },
+      {
+        "fact_id": "isolated",
+        "verdict": "supported",
+        "reason": "原文3.4.1.4'故障换流器退至隔离状态'与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:789:817"
+        ]
+      },
+      {
+        "fact_id": "master_emergency",
+        "verdict": "supported",
+        "reason": "引文虽截断，但证据cp44192_44290原文完整：'一般情况下直流运行不使用过负荷能力，当直流系统发生单极或单换流器闭锁后，若出现直流过负荷情况，主控站值班员应不待调度指令立即将直流输送功率控制到当前电压水平下最大允许功率，并立即向值班调度员汇报'，事实的条件（单极或单换流器闭锁后出现过负荷）、对象（主控站值班员）、权限（不待调度指令）和后续汇报均一致。出自第三分册（运行方式及设备运行规定），属实。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp44192_44290:0:98"
+        ]
+      },
+      {
+        "fact_id": "power_filters",
+        "verdict": "supported",
+        "reason": "原文3.4.2.1与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:826:870"
+        ]
+      },
+      {
+        "fact_id": "overload_scope",
+        "verdict": "supported",
+        "reason": "原文3.4.2.2'若故障换流器闭锁引起本极另一台换流器或另一极过负荷，则申请调度进行运行方式调整'，事实涵盖本极另一台换流器和另一极两种情形，与原文一致；后半句'不能只关注另一极'为提示性归纳，未改变原意。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:870:926"
+        ]
+      },
+      {
+        "fact_id": "primary_report",
+        "verdict": "supported",
+        "reason": "原文3.4.2.3与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:926:1018"
+        ]
+      },
+      {
+        "fact_id": "recording",
+        "verdict": "supported",
+        "reason": "原文3.4.2.4与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page18:0:46"
+        ]
+      },
+      {
+        "fact_id": "maintenance",
+        "verdict": "supported",
+        "reason": "原文3.4.2.5与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page18:46:92"
+        ]
+      }
+    ],
+    "source_conflicts": [
+      "无实质冲突。两份证据来自不同分册：第五分册6.0版（2025年9月，国网江苏超高压分公司）与第三分册6.0版（2026年2月）；两册关于过负荷处理的表述（第五分册3.4.2.2申请调度调整方式、第三分册要求主控站值班员不待指令先控制功率再汇报）属不同程序层级，可并存，不构成矛盾。"
+    ]
+  },
+  "pole_block_and_ground_current": {
+    "facts": [
+      {
+        "fact_id": "signal",
+        "verdict": "supported",
+        "reason": "原文3.3.1.1逐句一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:248:285"
+        ]
+      },
+      {
+        "fact_id": "transfer",
+        "verdict": "supported",
+        "reason": "原文确为'功率全部或部分转移至另一极'，'全部或部分'本身即为不定表述，语义蕴含不能据此保证健康极不过负荷，未补造信息。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:285:320"
+        ]
+      },
+      {
+        "fact_id": "ac_locked",
+        "verdict": "supported",
+        "reason": "原文3.3.1.3逐句一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:320:353"
+        ]
+      },
+      {
+        "fact_id": "isolated",
+        "verdict": "supported",
+        "reason": "原文3.3.1.4逐句一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:353:379"
+        ]
+      },
+      {
+        "fact_id": "master_emergency",
+        "verdict": "supported",
+        "reason": "原文明确'一般不使用过负荷能力'、'主控站值班员应不待调度指令立即将功率控制到当前电压水平下最大允许功率，并立即向值班调度员汇报'，对象与时限均一致。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp44192_44290:0:98"
+        ]
+      },
+      {
+        "fact_id": "power_filters",
+        "verdict": "supported",
+        "reason": "原文3.3.2.1逐句一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:388:432"
+        ]
+      },
+      {
+        "fact_id": "overload_mode",
+        "verdict": "supported",
+        "reason": "原文3.3.2.2逐句一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:432:476"
+        ]
+      },
+      {
+        "fact_id": "primary_report",
+        "verdict": "supported",
+        "reason": "原文3.3.2.3逐句一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:476:537"
+        ]
+      },
+      {
+        "fact_id": "recording",
+        "verdict": "supported",
+        "reason": "原文3.3.2.4逐句一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:537:584"
+        ]
+      },
+      {
+        "fact_id": "maintenance",
+        "verdict": "supported",
+        "reason": "原文3.3.2.5逐句一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:584:627"
+        ]
+      },
+      {
+        "fact_id": "ground_attention",
+        "verdict": "supported",
+        "reason": "原文3.3.2.6逐句一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page17:627:663"
+        ]
+      },
+      {
+        "fact_id": "ground_limit",
+        "verdict": "supported",
+        "reason": "原文明确安全限值3000A、2小时内控制入地电流或消除入地电流（金属回线/恢复双极）；且对非线路故障和线路故障分支均另用'立即'措辞，语义上确为与2小时并列的即时要求，非补造。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp47550_47813:0:263"
+        ]
+      },
+      {
+        "fact_id": "metallic_conversion_checks",
+        "verdict": "supported",
+        "reason": "原文涵盖顺控、旁路接地刀闸步进、操作前两站确认设备状态及远方操作条件、操作后检查、转换中保持联系互报，全部要点一致。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp42776_42910:0:134"
+        ]
+      },
+      {
+        "fact_id": "shared_ground_check",
+        "verdict": "ambiguous",
+        "reason": "前半句（转换前确认共用接地极电流不超限值）有原文逐句支持；后半句'不能将核实转换条件简化成只看开关位置'为原文未出现的否定性推论，属使用者提示性表述，原文无此论断。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp42911_42940:0:29",
+          "d_4b964d3ff677714b/cp42776_42910:0:134"
+        ]
+      },
+      {
+        "fact_id": "nonline_branch",
+        "verdict": "supported",
+        "reason": "原文明确：因非线路故障闭锁，核实具备金属回线转换条件后立即转换；不具备或转换不成功则立即将入地电流控制到安全限值或以下，条件、后果、时点均一致。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp47550_47813:0:263"
+        ]
+      },
+      {
+        "fact_id": "metallic_conversion_failure",
+        "verdict": "supported",
+        "reason": "原文涵盖主控站协调返回原接线、不能返回时申请正常停运、转换后恢复运行，全部要点一致。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp43073_43165:0:92"
+        ]
+      },
+      {
+        "fact_id": "line_branch",
+        "verdict": "supported",
+        "reason": "原文明确线路故障分支：具备带线路OLT试验条件立即试验、成功后恢复闭锁极、否则立即控制入地电流；所提供上下文确无完整OLT操作票，缺失性陈述在给定材料范围内成立。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp47550_47813:0:263",
+          "d_98d56bcdf4e49412/page17:172188_172274"
+        ]
+      }
+    ],
+    "source_conflicts": [
+      "第五分册2.2.5（d_98d56bcdf4e49412）与第三分册（cp21938-22091）关于'不待调度指令自行操作'的内容基本一致，但第三分册第（2）项额外含'确保安全的前提下'限定，第五分册无此措辞，属同主体不同分册间的措辞差异，非实质性冲突。",
+      "第三分册封面日期为2026年2月、第五分册为2025年9月，系不同分册各自版本信息，不构成冲突。"
+    ]
+  },
+  "dc_power_rundown": {
+    "facts": [
+      {
+        "fact_id": "rundown_signal",
+        "verdict": "supported",
+        "reason": "3.5.1.1原文列出OWS发保护启动功率回降报警的来源（内水冷出阀温度高、绝对最小滤波器、接地极线路过负荷保护、安控装置）并启动故障录波；'不能由单一报警认定唯一原因'是列举多来源的直接蕴含。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page18:118:192"
+        ]
+      },
+      {
+        "fact_id": "current_power_down",
+        "verdict": "supported",
+        "reason": "与3.5.1.2原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page18:192:217"
+        ]
+      },
+      {
+        "fact_id": "reactive_filters",
+        "verdict": "supported",
+        "reason": "原文'交流滤波器自动退出（视无功情况而定）'直接支持滤波器退出以无功情况为条件，非必然全部退出。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page18:217:251"
+        ]
+      },
+      {
+        "fact_id": "report",
+        "verdict": "supported",
+        "reason": "与3.5.2.1原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page18:260:282"
+        ]
+      },
+      {
+        "fact_id": "overload_mode",
+        "verdict": "supported",
+        "reason": "与3.5.2.2原文一致（条件为其它换流器或另一极过负荷，动作为申请调度调整方式）。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page18:282:325"
+        ]
+      },
+      {
+        "fact_id": "temperature_check",
+        "verdict": "supported",
+        "reason": "与3.5.2.3原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page18:325:370"
+        ]
+      },
+      {
+        "fact_id": "cooling_branch",
+        "verdict": "supported",
+        "reason": "与3.5.2.4原文条件与动作一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page18:370:443"
+        ]
+      },
+      {
+        "fact_id": "ground_overload",
+        "verdict": "supported",
+        "reason": "与3.5.2.6原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page18:548:591"
+        ]
+      },
+      {
+        "fact_id": "bus_available",
+        "verdict": "supported",
+        "reason": "第三分册（1）款原文一致；该册封面及版本号证据支持source_scope。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp75721_75736:0:15"
+        ]
+      },
+      {
+        "fact_id": "hot_standby",
+        "verdict": "supported",
+        "reason": "与（2）款原文一致。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp75737_75755:0:18"
+        ]
+      },
+      {
+        "fact_id": "switch_available",
+        "verdict": "supported",
+        "reason": "与（3）款原文一致，四项条件齐全。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp75756_75797:0:41"
+        ]
+      },
+      {
+        "fact_id": "available_time",
+        "verdict": "supported",
+        "reason": "（4）款明确'超过10min'，'刚好10分钟不算'为'超过'的语义蕴含；四项为并列条件故单看一项不能证明全部满足。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp75798_75821:0:23"
+        ]
+      },
+      {
+        "fact_id": "manual_forbidden_during_ramp",
+        "verdict": "supported",
+        "reason": "原文明确功率升降及方式转换时不允许手动投切交流滤波器，直接支持该限制性结论。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp76488_76520:0:32"
+        ]
+      },
+      {
+        "fact_id": "manual_sequence_limits",
+        "verdict": "supported",
+        "reason": "原文含'先投后切'原则、备用数量检查、绝对最小组数/Umax/Qmax校核及不满足时申请调度调整功率，text各要点均有对应。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp76521_76641:0:120"
+        ]
+      },
+      {
+        "fact_id": "discharge_time",
+        "verdict": "supported",
+        "reason": "原文明确放电时间要求及姑苏站500kV交流滤波器放电时间10分钟。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp76642_76702:0:60"
+        ]
+      },
+      {
+        "fact_id": "small_group_request",
+        "verdict": "supported",
+        "reason": "6.15.2.2支持前半句；后半句'投入后再申请恢复功率'由3.5.2.5（page18:443:548）支持，text已明示来自3.5，跨条款引用属实。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page41:198:254",
+          "d_98d56bcdf4e49412/page18:443:548"
+        ]
+      },
+      {
+        "fact_id": "filter_branches",
+        "verdict": "supported",
+        "reason": "3.5.2.5原文完整支持两种分支及'先投备用再申请恢复功率'的先后顺序；'不能先恢复功率后补滤波器'为顺序规定的直接蕴含。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page18:443:548"
+        ]
+      },
+      {
+        "fact_id": "notify_master",
+        "verdict": "supported",
+        "reason": "与第三分册原文一致（条件：非主控站运行、可能引起N-1导致直流回降；动作：及时通知主控站）。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp74857_74904:0:47"
+        ]
+      }
+    ],
+    "source_conflicts": []
+  },
+  "minimum_filter_and_rpc": {
+    "facts": [
+      {
+        "fact_id": "alarm",
+        "verdict": "ambiguous",
+        "reason": "原文仅记载6.11.1.1'事件记录发最小滤波器不满足报警'及章节标题'运行中最小交流滤波器组数不满足处理预案'，可支持'该报警名称本身指最小滤波器'；但'不能仅凭报警名称认定为绝对最小滤波器不满足'这一结论属于跨条款推断（结合第三分册Min filter与ABS为不同控制模块可推出），原文未在本预案中直接表述。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page39:753:784",
+          "d_4b964d3ff677714b/cp206303_206482:0:179",
+          "d_4b964d3ff677714b/cp206781_206953:0:172"
+        ]
+      },
+      {
+        "fact_id": "monitor_report",
+        "verdict": "supported",
+        "reason": "与6.11.2.1原文完全一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page39:794:826"
+        ]
+      },
+      {
+        "fact_id": "rpc_check",
+        "verdict": "supported",
+        "reason": "与6.11.2.2原文完全一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page39:826:855"
+        ]
+      },
+      {
+        "fact_id": "switch_check",
+        "verdict": "supported",
+        "reason": "与6.11.2.3原文一致，引文中尾部'29'为页码残留，不影响事实内容。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page39:855:925"
+        ]
+      },
+      {
+        "fact_id": "normal_checks",
+        "verdict": "supported",
+        "reason": "与6.11.2.4原文完全一致，条件（以上检查均正常）与后续动作（加强监视、必要时申请调度投入备用交流滤波器）均相符。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page40:0:51"
+        ]
+      },
+      {
+        "fact_id": "no_backup",
+        "verdict": "supported",
+        "reason": "与6.11.2.5原文一致，引文截断处'备'后按原文为'用'，语义完整一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page40:51:107"
+        ]
+      },
+      {
+        "fact_id": "rpc_manual",
+        "verdict": "supported",
+        "reason": "原文明确：手动模式下最小滤波器和Q control/U control投切由运行人员手动完成；交流过电压控制、绝对最小滤波器、Umax、Qmax不受手动模式影响仍自动完成。事实各要素均获支持。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp75597_75709:0:112"
+        ]
+      },
+      {
+        "fact_id": "rpc_priorities",
+        "verdict": "supported",
+        "reason": "前半段（有效的高优先级策略清单及Min filter、Q/U控制手动模式下无效）与cp76794原文一致；末句'RPC手动时相关最小滤波器和Q/U投切由运行人员手动完成'由cp75597_75709原文直接支持，属跨条款组合且两处条款一致。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp76794_76995:0:201",
+          "d_4b964d3ff677714b/cp75597_75709:0:112"
+        ]
+      },
+      {
+        "fact_id": "abs_behavior",
+        "verdict": "supported",
+        "reason": "原文定义ABS为防止其余在运滤波器谐波过负荷所需最少组数；不满足时降低直流功率，降至最后一级仍不满足则在预设延时后停运直流；配置表见附件1，本段确未列具体延时和配置数值，事实的限定表述与原文相符。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp206303_206482:0:179"
+        ]
+      },
+      {
+        "fact_id": "min_behavior",
+        "verdict": "supported",
+        "reason": "原文明确Min filter依据直流功率、整流/逆变模式、解锁极个数及直流电压确定最少组数；不满足时可发投入指令直至满足；不能直接发切除指令，只能保证较低优先级模块可发切除指令。全部要素相符。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp206781_206953:0:172"
+        ]
+      },
+      {
+        "fact_id": "replacement_times",
+        "verdict": "supported",
+        "reason": "原文明确：属于绝对最小滤波器在1s内投入另一组，属于最小滤波器在5s内投入另一组，数字与条件均与事实一致。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp207082_207205:0:123"
+        ]
+      }
+    ],
+    "source_conflicts": [
+      "第五分册封面日期为二O二五年九月、版本6.0，第三分册封面日期为二O二六年二月、版本6.0，两册日期不同但属不同文件，各自版本证据独立，不构成冲突。",
+      "第五分册2.2.5允许运行值班员'不待调度指令自行'进行紧急操作（含站规程规定者），而6.11.2.4要求'必要时申请调度投入备用交流滤波器'；二者不矛盾（6.11.2.4的滤波器投入未列入可不待指令自行操作的范围），但提示滤波器投入需经调度，存在条款适用范围差异。"
+    ]
+  },
+  "dc_line_protection_trip": {
+    "facts": [
+      {
+        "fact_id": "y_block",
+        "verdict": "supported",
+        "reason": "原文9.7.1.1明确为'换流器Y闭锁'，与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:525:548"
+        ]
+      },
+      {
+        "fact_id": "ac_locked",
+        "verdict": "supported",
+        "reason": "原文9.7.1.2逐字一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:548:572"
+        ]
+      },
+      {
+        "fact_id": "pole_isolated",
+        "verdict": "supported",
+        "reason": "原文9.7.1.3逐字一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:572:591"
+        ]
+      },
+      {
+        "fact_id": "immediate_report",
+        "verdict": "supported",
+        "reason": "原文9.7.2.1为'立即汇报调度及领导'，事实为'向调度和领导汇报'并保留'立即'，语义一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:600:624"
+        ]
+      },
+      {
+        "fact_id": "healthy_pole",
+        "verdict": "supported",
+        "reason": "原文9.7.2.2包含检查另一极运行、直流过负荷情况及必要时申请调度调整运行方式，全部前提覆盖。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:624:677"
+        ]
+      },
+      {
+        "fact_id": "onsite_isolation_filters",
+        "verdict": "supported",
+        "reason": "原文9.7.2.3同时包含检查故障极隔离情况与交流滤波器投退情况。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:677:715"
+        ]
+      },
+      {
+        "fact_id": "records",
+        "verdict": "supported",
+        "reason": "原文9.7.2.4明确整理故障录波、事件记录并传真至相关调度和部门。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:715:753"
+        ]
+      },
+      {
+        "fact_id": "repair",
+        "verdict": "supported",
+        "reason": "原文9.7.2.5逐字一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:753:778"
+        ]
+      },
+      {
+        "fact_id": "line_fault_ground",
+        "verdict": "supported",
+        "reason": "该段原文明确：安全限值为3000A；'一极闭锁另一极过负荷情况下应在2小时内控制入地电流到安全限值以下或消除'为背景；因线路故障闭锁时，核实具备带线路OLT试验条件后应立即试验，成功后恢复闭锁极运行；不具备条件或试验不成功时应立即将入地电流控制到安全限值或以下。所引证据及全部关联上下文均未包含试验操作票，故'未给完整试验操作票'亦成立。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp47550_47813:0:263"
+        ]
+      }
+    ],
+    "source_conflicts": []
+  },
+  "dc_line_restart_boundary": {
+    "facts": [
+      {
+        "fact_id": "alarm",
+        "verdict": "supported",
+        "reason": "原文9.6.1.1逐字载明“事件记录发直流线路保护动作报警信号”。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:94:126"
+        ]
+      },
+      {
+        "fact_id": "recording_start",
+        "verdict": "supported",
+        "reason": "原文9.6.1.2载明“故障录波启动”。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:126:148"
+        ]
+      },
+      {
+        "fact_id": "immediate_report",
+        "verdict": "supported",
+        "reason": "原文9.6.2.1载明“立即汇报调度及领导”。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:157:181"
+        ]
+      },
+      {
+        "fact_id": "restart_overload",
+        "verdict": "supported",
+        "reason": "原文9.6.2.2完整表述与text一致：检查再启动动作、直流电压电流及过负荷，发生过负荷时汇报并申请调度调整直流功率。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:181:252"
+        ]
+      },
+      {
+        "fact_id": "protection_distance",
+        "verdict": "supported",
+        "reason": "原文9.6.2.3包含检查保护及安控装置动作、查看故障录波核对再启动动作、查看故障定位装置测距三项内容，与text一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:252:318"
+        ]
+      },
+      {
+        "fact_id": "pole_bus",
+        "verdict": "supported",
+        "reason": "原文9.6.2.4载明“检查极母线设备运行情况”。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:318:344"
+        ]
+      },
+      {
+        "fact_id": "flashover_ref",
+        "verdict": "supported",
+        "reason": "9.6.2.5确为“若设备有闪络，按照《直流场设备放电闪络处理预案》处理”；text所述7.8涉及天气观察、影像收集、申请停运及恢复全压条件，均见于page45-46的7.8条；text的谨慎限定（不能据此编造无条件恢复）与原文一致，未越权。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:344:385",
+          "d_98d56bcdf4e49412/page46:0:220"
+        ]
+      },
+      {
+        "fact_id": "abnormal_device",
+        "verdict": "supported",
+        "reason": "原文9.6.2.6含“经领导批准申请调度停运该极”及申请调整直流功率、隔离故障点、通知检修各要点，与text一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:385:453"
+        ]
+      },
+      {
+        "fact_id": "fifth_reduced_voltage",
+        "verdict": "supported",
+        "reason": "9.6.2.7原文为“建议调度将故障极降压运行”，text如实标注为“建议”而非指令，且未将其当作可直接执行的现场降压操作，语义与原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:453:497"
+        ]
+      },
+      {
+        "fact_id": "restart_attempts",
+        "verdict": "supported",
+        "reason": "cp107245_107341原文载明：重启功能投入下由整流站启动，姑苏站原压再启动2次（通信故障或融冰模式期间1次），降压启动0次，故障仍在闭锁该极；次数、条件、对象与text全部对应。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp107245_107341:0:96"
+        ]
+      },
+      {
+        "fact_id": "restart_permission",
+        "verdict": "supported",
+        "reason": "原文逐字载明“阀组自动重启功能和直流再启动功能都属于国调许可操作”。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp107342_107368:0:26"
+        ]
+      },
+      {
+        "fact_id": "disable_at_rectifier",
+        "verdict": "supported",
+        "reason": "原文载明“若需停用直流线路再启动功能，应由整流站操作”，权限归属与text一致。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp107369_107391:0:22"
+        ]
+      },
+      {
+        "fact_id": "live_work_disable",
+        "verdict": "supported",
+        "reason": "原文要求带电作业时两项功能“都应分别退出”，text准确表述了须两项均退出的语义，未添加原文之外的义务。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp107392_107436:0:44"
+        ]
+      },
+      {
+        "fact_id": "distance_peer",
+        "verdict": "supported",
+        "reason": "原文载明直流线路再启动、交流线路故障跳闸或重合成功时应及时查看测距、与对站核对并向调度汇报，三种触发情形与text一致。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp123914_123965:0:51"
+        ]
+      },
+      {
+        "fact_id": "no_reduced_voltage",
+        "verdict": "supported",
+        "reason": "第三分册D.3原文为“建苏直流无降压运行方式”；text如实指出与第五分册9.6.2.7建议降压表述存在适用边界未核实，未编造结论。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp176281_176301:0:20"
+        ]
+      }
+    ],
+    "source_conflicts": [
+      "第五分册9.6.2.7（频繁全压再启动成功时建议故障极降压运行，及7.8.2.3“恢复全压运行”的表述）与第三分册附录D.3“建苏直流无降压运行方式”之间的适用边界未在本批原文中核实，属两册间潜在张力而非同文件内部矛盾；各册版本日期不同（第五分册2025年9月、第三分册2026年2月）本身不构成冲突。"
+    ]
+  }
+}

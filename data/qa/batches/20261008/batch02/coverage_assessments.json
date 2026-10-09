@@ -1,0 +1,473 @@
+{
+  "review_basis": "先独立盘点原文，再逐条核对候选覆盖；不存在引文即全覆盖规则",
+  "rows": [
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.1.1.1",
+      "unit_sha256": "5f2bedf7825c966f14854bfa171fd426c7610668952699b2f937c3759dcaca3e",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:black_start/phenomenon"
+      ],
+      "facts_sha256": "45a8738d74bdd2fe449867ee5d56d6f579629cfdcce94265f08b00b5cca4a864",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "现象中的全站站用电、直流、交流及水冷/空调/消防等辅助停运全保留。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.1.2.1",
+      "unit_sha256": "2e9462334f7a3184eddd88122726fa10d1ca8b7821d20c24b57c52f618991671",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:black_start/report"
+      ],
+      "facts_sha256": "e5959aac26ff10bb7363e286f2e7d51f98edc9f402fb1cda934e57efbd20083d",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "调度与领导两个汇报对象均保留；3.1步骤首项未改成特定岗位审批。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.1.2.2",
+      "unit_sha256": "354d46f8e6aae5a06b4533a32783b3f09e0e45dc20910aded8caf0d04868c8fe",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:black_start/initial_state"
+      ],
+      "facts_sha256": "72f9647b964dd89834222abe7a5f09314185d7056e646753ffbf52f2198258f1",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "拉开对象限定为站内交流系统已合开关，且退出安控；两动作均有覆盖。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.1.2.3",
+      "unit_sha256": "b6da90670716550e1cada527a325cf8f18ede9754be7e7034e804b5f23f5a53a",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:black_start/external"
+      ],
+      "facts_sha256": "7702b7ccec20d192cb437b632445ad9551d8ce401aa6fefc7378dd2b16214cb7",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "外来站用电能恢复的条件、立即申请、调度对象和恢复目标均保留。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.1.2.4",
+      "unit_sha256": "bb44c037f77c77c5f43ce73c1fbc58f73dcd94b9db7fe11d89588e478eddec6a",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:black_start/ac_supply"
+      ],
+      "facts_sha256": "ce56ccd59dbddc2e7b6c5fea8a2de5081d94a3ed9a9c55f0564902d2e48a89a5",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "外来站用电不能恢复时联系相关调度、交流充电、经站内站用变恢复全部保留。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.1.2.5",
+      "unit_sha256": "831d032f5bc1a507ee53a5efbde70b960b80752c9ca57a2ff847df48b0b8fab7",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:black_start/emergency_vehicle"
+      ],
+      "facts_sha256": "88b0e2ab563f594f12e5eb577c076bf4337af8670719ceed7045d713792073fc",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "两类电源均不具备带电条件、当地供电公司、应急车及400V站用电恢复全部保留。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.1.2.6",
+      "unit_sha256": "992c446c028c764ee7233480540527ed2107d06e0dd99729c95d0f52065e1490",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:black_start/loads"
+      ],
+      "facts_sha256": "d93b975789935fed6e98ea416496d2bff5e86524e680d1610f963f606d17295e",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "站用电、220V直流、UPS与通讯电源四类负荷及运行正常要求完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.1.2.7",
+      "unit_sha256": "4954a4b00df2ece41ef43a987fc2eea22976cb90e8900c9b0c41aeee310d4718",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:black_start/protections"
+      ],
+      "facts_sha256": "5d139fd34106509a5173a5aee71e2b7d15a1ce1114d47d0bd0ac31b4e53fc15b",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "交直流控制保护和安控装置及运行正常要求完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.1.2.8",
+      "unit_sha256": "865827b541ad5471e45ad0f1fafdd720bf6f620443bdf66dbeeb5d3e383f7c3b",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:black_start/secondary"
+      ],
+      "facts_sha256": "0419cfe026da7cd2f21cc7f48fc91ef818b4f1fdf8195c333c27d455306538dd",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "服务器、OWS、录波、测距、规约转换屏、信息子站等二次对象和正常运行确认完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.1.2.9",
+      "unit_sha256": "9d947b4ee3371073a3b58770854e856abb3b3aea3ce69871d468f0d73081da8a",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:black_start/communications"
+      ],
+      "facts_sha256": "657628fdabc020b9b1bb54235ef1edc1e531e411874cd7948af87111bcd1b956",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "远动及通信两个系统的正常工作确认完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.1.2.10",
+      "unit_sha256": "32a27cc7e806f2d7dc6a7b5bf9380ed3850f1b012ffd1411e9e031548e6fb03a",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:black_start/auxiliary"
+      ],
+      "facts_sha256": "91d78e4166a71c495530a4b20729a0b4ddb1db90f2eac3074ca1a7df555cc44f",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "水冷、空调、消防三类供电正常检查与逐步恢复两动作完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.1.2.11",
+      "unit_sha256": "fcfd9e13428148521601d608dab1b58ed0a24ea090c3d49f50ea298a568a082b",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:black_start/ac_restore"
+      ],
+      "facts_sha256": "ffc5cf3981618240b53b58af2a9174147d41daf078a9bee814f949dd3f752e2e",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "现场一次状态确认、按调度指令、交流系统恢复三要素完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.1.2.12",
+      "unit_sha256": "63d3480abfc6591dc17b2663eaae6a0843eece6f91fd8f925cfe4ce7d66ae052",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:black_start/normal_supply"
+      ],
+      "facts_sha256": "ae37b2545c7d9fbe185d5b009b3e946abf83d009404cde6db4ab7bbcb9a468f5",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "恢复正常站用电方式完整，不只表述有电。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/3.1.2.13",
+      "unit_sha256": "0bb9df9cc7297bcbd220b2218af45e36d2fa41de40f30d347b7b9a36dd6d5607",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:black_start/dc_restore"
+      ],
+      "facts_sha256": "3775f8adcc8cd247fa9c9ea03e74170d4f165401f67b9c5d1b81b88ed27cde59",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "投入安控与恢复直流两动作完整；完整题保留在站用电正常方式之后的顺序。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.4.1.1",
+      "unit_sha256": "3cd4462e161910d58a1b1c0f1e75aa84fe85bc6397227c3fc85a52ad273c7a84",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:main_pump_failure/scope"
+      ],
+      "facts_sha256": "ffc2e3220de66480084d286cb7b3727b8e870872dfe366d749aacd6006e8640f",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "主泵故障与备用泵投入且正常两个前提完整；没有泛化备用泵故障。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.4.2.1",
+      "unit_sha256": "afc00e08700ac2cde494fce1bbb91b9021bc58cc7bfcdd6ebf510c048c41efcc",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:main_pump_failure/report"
+      ],
+      "facts_sha256": "34f21b48012a57750004d2473c794a683afd6a0d17fb8f7718310d55ad09e5ba",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "领导汇报和通知检修两对象/动作完整；保留原文分页与印刷页号作为定位信息。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.4.2.2",
+      "unit_sha256": "973209a0cbc10e1d22209ce0d76afc5829ada9435f13838241a12d28712b0137",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:main_pump_failure/power_ban"
+      ],
+      "facts_sha256": "9e9daa32c1a857861741695d193c63c0c6bbc2e1d9c47c0961f682277d880f0f",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "主泵故障、备用正常、故障主泵隔离检查期间和相关站用电切换禁止四要素完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.4.2.3",
+      "unit_sha256": "6986818eb141f1a3e187d86cbf15f266fdeef7192a9ba31334e68a3558c6b5a1",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:main_pump_failure/overheated"
+      ],
+      "facts_sha256": "9272e5dc09b6750e1e02f4ba5a5b6738700ecbbaf1d07d76122201b3e906c827",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "检查发现严重发热/冒烟起火时立即拉相应400V开关、断安全开关、安措及检修、灭火全部保留。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.4.2.4",
+      "unit_sha256": "d297d78dc1506e31e238367a50b6f736256e9ffda26ccd48efab9b59706ce422",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:main_pump_failure/normal_appearance"
+      ],
+      "facts_sha256": "7f703778b052f1f20e0f85671449ea4d4f5acf369c0aa32b4826cbd455b282fb",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "电机外观正常→检查电源和安全开关→未发现异常时断故障泵安全开关、安措检修，条件和动作均完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.4.2.5",
+      "unit_sha256": "28e55a54ee9b8f5e50eafa21a53d0d6f26a2efbdf19db844107f6f7990d2a1c9",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:main_pump_failure/tripped"
+      ],
+      "facts_sha256": "2e107f374bde71ceb6950713c58e1bc356fb13cd5bcc7cdd33f29b1f109a1fe8",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "跳开开关仅试合一次，成功监视、失败检修两结果均完整；没有把该条件与外观正常误作互斥分支。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.4.2.6",
+      "unit_sha256": "27e489a8e8249e4c134654d313259ddc6dac889fb976a2e65d9d5da84a7e5769",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:main_pump_failure/single_pump"
+      ],
+      "facts_sha256": "4d58a1e5cd0a5bc081020ea7643f5a631ddcb4e89d16f65a49da683ac92535b9",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "单泵时监视直流、防止丢泵电源以及特别注意站用电倒换全部保留。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp21224_21327",
+      "unit_sha256": "6b7db1cc64c9b9f4bf51215041996c4907b9ed321719d36da12c0e7b226d6e5b",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:national_dispatch_reporting/immediate"
+      ],
+      "facts_sha256": "6b61a7c02755c67f74c772bd53dc099faaf0abab87ce4fdd474b8810f776810c",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "国调直调故障范围、立即时限、发生时间/一次状态变化/电压电流功率越限/紧急控制/天气/直接现象全部保留。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp21328_21388",
+      "unit_sha256": "efa342a35f8e74d00677068add82513244a35c8af1f4ee1c7a0ac2d868b5e194",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:national_dispatch_reporting/five_minutes"
+      ],
+      "facts_sha256": "f02696ea5c886caae4cb31b9b2437bd3406438808eb391202188df4cd8d55519",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "5分钟时限、保护安控、故障类型、跳闸重合闸及依规处理五要素完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp21389_21469",
+      "unit_sha256": "68671839ef6cfcfa134595c8604c784bd4d0cf09f6c9bdb7f705feb0090558b7",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:national_dispatch_reporting/fifteen_minutes"
+      ],
+      "facts_sha256": "dea927e8f4c1dae7cd4c83b154b7694357df9d2f6ad97390b9e22d279a414811",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "15分钟时限、一二次检查、保护安控全部正确动作、合闸电阻、退出重合闸必要性、具备试送条件全部保留；未把确认条件改成试送许可。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp21470_21526",
+      "unit_sha256": "593c688f823f678a1b34cf5a727da8d59d940f602116441ecf216755f2c75b47",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:national_dispatch_reporting/station_configuration"
+      ],
+      "facts_sha256": "db20c1f4f10846a7f8d195ecb7bc65a24334535d414da249b08d220dc706f5b1",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "5032/5042合闸电阻、熟姑5W09/常苏5W08重合闸停用及汇报说明义务全部保留；版本限制完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp21527_21591",
+      "unit_sha256": "ee8e9705f21bfbd6ca60d8a829a0490a19f375b641ae37b9bf1e78a0ba26077b",
+      "fact_keys": [
+        "qa_quality_batch02_20261008_v2:national_dispatch_reporting/thirty_minutes"
+      ],
+      "facts_sha256": "2160465c9423def5d6314ddd98853a13f29daa00546ffbf2775bc7f7b38418dc",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "30分钟、全部保护动作、线路测距及按国调要求的记录/录波图/故障报告/照片等材料完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本；未认证原文件图表或现行性"
+    }
+  ]
+}

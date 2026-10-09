@@ -1,0 +1,88 @@
+{
+  "kind": "qa_batch_snapshot",
+  "origin_directory": ".semantic/qa_quality_batch04_20261008_v3",
+  "namespace": "qa_quality_batch04_20261008_v3",
+  "files": {
+    "manifest.json": "3feaf665ac94c745ed97d984d0c6cac5a8489da67b7f4a9134eba8ea8803d45d",
+    "candidates.jsonl": "56aabff027406f36a8f5c1fcec049031352ea9532e17ae17eb59a14cc6665668",
+    "chains.json": "e4b1a9301437168f8b4a78cfb19d83d48a5e1608b9245e06d588fe4d7a004643",
+    "source_reviews.json": "296971d2cc73bd43c6b864e098ab44baf9ca0107d3e786d0b6b361290197cbe1",
+    "model_fact_reviews.json": "5e33bd70f8b41dcfa0d308fb1f722e0ea15f9e99af46f7317ef0a2281da4884f",
+    "model_semantic_reviews.json": "8c169e4f8e1ae254dad1e3a4cdbf566ca2ce06199a97e02b876692be76837653",
+    "quality_status.json": "1cbd955652d95d10e65f2799c110aefc2fee9605fa30704019be695689e51cb9",
+    "review.md": "421c0b83693714003b247820f31ae20a1f93461de142217f662ccedd871e43a6",
+    "pending_business_issues.json": "dda168683e92013c6a42e76e149a5715c33c6dffba1851f50ee3d0751424bf8c",
+    "seed.json": "9fd58d1aa2ba2e81852bebd3bfe3b24afc479f28ab5fdf2bde6c3705f2bcefe0",
+    "source_review_notes.json": "e55f891871b49544f9bf4d081d50be523108948faadd956bc65b8bfe910872a3",
+    "coverage_assessments.json": "273331f91e235bb2c1b5e6b8f28207d924a89c9fa3606536b09d28103d55aad1",
+    "index.html": "0f824a9bb84b101e3c39cc4f0e067d7e3f5ab24fa0a94fca8621c270a58e1fd6"
+  },
+  "origin_files": {
+    "manifest.json": {
+      "origin": ".semantic/qa_quality_batch04_20261008_v3/manifest.json",
+      "sha256": "3feaf665ac94c745ed97d984d0c6cac5a8489da67b7f4a9134eba8ea8803d45d"
+    },
+    "candidates.jsonl": {
+      "origin": ".semantic/qa_quality_batch04_20261008_v3/candidates.jsonl",
+      "sha256": "56aabff027406f36a8f5c1fcec049031352ea9532e17ae17eb59a14cc6665668"
+    },
+    "chains.json": {
+      "origin": ".semantic/qa_quality_batch04_20261008_v3/chains.json",
+      "sha256": "e4b1a9301437168f8b4a78cfb19d83d48a5e1608b9245e06d588fe4d7a004643"
+    },
+    "source_reviews.json": {
+      "origin": ".semantic/qa_quality_batch04_20261008_v3/source_reviews.json",
+      "sha256": "296971d2cc73bd43c6b864e098ab44baf9ca0107d3e786d0b6b361290197cbe1"
+    },
+    "model_fact_reviews.json": {
+      "origin": ".semantic/qa_quality_batch04_20261008_v3/model_fact_reviews.json",
+      "sha256": "5e33bd70f8b41dcfa0d308fb1f722e0ea15f9e99af46f7317ef0a2281da4884f"
+    },
+    "model_semantic_reviews.json": {
+      "origin": ".semantic/qa_quality_batch04_20261008_v3/model_semantic_reviews.json",
+      "sha256": "8c169e4f8e1ae254dad1e3a4cdbf566ca2ce06199a97e02b876692be76837653"
+    },
+    "quality_status.json": {
+      "origin": ".semantic/qa_quality_batch04_20261008_v3/quality_status.json",
+      "sha256": "1cbd955652d95d10e65f2799c110aefc2fee9605fa30704019be695689e51cb9"
+    },
+    "review.md": {
+      "origin": ".semantic/qa_quality_batch04_20261008_v3/review.md",
+      "sha256": "421c0b83693714003b247820f31ae20a1f93461de142217f662ccedd871e43a6"
+    },
+    "pending_business_issues.json": {
+      "origin": ".semantic/qa_quality_batch04_20261008_v3/pending_business_issues.json",
+      "sha256": "dda168683e92013c6a42e76e149a5715c33c6dffba1851f50ee3d0751424bf8c"
+    },
+    "seed.json": {
+      "origin": ".semantic/qa_quality_batch04_20261008_v3/seed.json",
+      "sha256": "9fd58d1aa2ba2e81852bebd3bfe3b24afc479f28ab5fdf2bde6c3705f2bcefe0"
+    },
+    "source_review_notes.json": {
+      "origin": "scripts/qa_operations/source_review_notes_batch04.json",
+      "sha256": "e55f891871b49544f9bf4d081d50be523108948faadd956bc65b8bfe910872a3"
+    },
+    "coverage_assessments.json": {
+      "origin": "scripts/qa_operations/coverage_assessments_batch04.json",
+      "sha256": "273331f91e235bb2c1b5e6b8f28207d924a89c9fa3606536b09d28103d55aad1"
+    },
+    "index.html": {
+      "origin": ".semantic/qa_quality_batch04_20261008_v3/index.html",
+      "sha256": "0f824a9bb84b101e3c39cc4f0e067d7e3f5ab24fa0a94fca8621c270a58e1fd6"
+    }
+  },
+  "external_review_bindings": {
+    "blind_prompts.jsonl": "aa3aed37878306eced7324083583ef100c86c115c1e44a8118aa8c743011c287",
+    "legacy_quality_inventory.jsonl": "415faa223a17cdc055681201864b4d7ca71b6c549e319f7791519dd9798a3855",
+    "fact_review/run.json": "c5b43c712c73f60c749cd60178830528ae95c99223ccf92ff8f7b7ef16c7519f",
+    "fact_review/responses.jsonl": "4b746faee7c544d9efb0229aa84660b795c38faf60715dbff7730cf529c1188a",
+    "blind_reanswer/run.json": "e9935aa0e451362cc043987a582acd08d900d9f3ee30a12ff3d35a66666ca15d",
+    "blind_reanswer/responses.jsonl": "a31de97a99392a4613851241e5c95a6f5365b5f62ae554c039ba626e531f5504",
+    "blind_reanswer/reuse.json": "96c2cfc72ede130ff469d41918a1bd708be680f476278b602c151c83bb0fc50c",
+    "semantic_review/run.json": "21012afed248a986d4e18e449fbfc6d9040efc9ef6fe6d3241018c66d3cb0674",
+    "semantic_review/responses.jsonl": "62b0823054762158ddcb88fec166630d29150fb64df359abba903d2bceec5fe8"
+  },
+  "raw_model_calls_included": false,
+  "expert_review": "not_performed",
+  "training_eligible": false
+}

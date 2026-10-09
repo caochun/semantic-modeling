@@ -1,0 +1,3398 @@
+{
+  "version": "20261008-quality-batch04-v3",
+  "construction": "source_inventory_first_authored_fact_and_question_plans",
+  "chains": [
+    {
+      "id": "line_trip_and_trial",
+      "title": "线路跳闸：故障核查、试送权限与重合闸状态",
+      "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 2.3.1、9.3，关联第三分册线路运行与保护规定",
+      "source_unit_ids": [
+        "d_98d56bcdf4e49412/clause/2.3.1",
+        "d_98d56bcdf4e49412/clause/2.3.1.1",
+        "d_98d56bcdf4e49412/clause/2.3.1.1.1",
+        "d_98d56bcdf4e49412/clause/2.3.1.1.2",
+        "d_98d56bcdf4e49412/clause/2.3.1.1.3",
+        "d_98d56bcdf4e49412/clause/2.3.1.1.4",
+        "d_98d56bcdf4e49412/clause/9.3",
+        "d_98d56bcdf4e49412/clause/9.3.1",
+        "d_98d56bcdf4e49412/clause/9.3.1.1",
+        "d_98d56bcdf4e49412/clause/9.3.1.2",
+        "d_98d56bcdf4e49412/clause/9.3.2",
+        "d_98d56bcdf4e49412/clause/9.3.2.1",
+        "d_98d56bcdf4e49412/clause/9.3.2.2",
+        "d_98d56bcdf4e49412/clause/9.3.2.3",
+        "d_98d56bcdf4e49412/clause/9.3.2.4",
+        "d_98d56bcdf4e49412/clause/9.3.2.5",
+        "d_98d56bcdf4e49412/clause/9.3.2.6",
+        "d_98d56bcdf4e49412/clause/9.3.2.7",
+        "d_4b964d3ff677714b/cp21470_21526",
+        "d_4b964d3ff677714b/cp57313_57453",
+        "d_4b964d3ff677714b/cp89632_89685"
+      ],
+      "source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 168,
+          "end": 181
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 181,
+          "end": 310
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 310,
+          "end": 373
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 373,
+          "end": 436
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 436,
+          "end": 547
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 547,
+          "end": 605
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page53",
+          "start": 688,
+          "end": 703
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page53",
+          "start": 703,
+          "end": 712
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page53",
+          "start": 712,
+          "end": 740
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page53",
+          "start": 740,
+          "end": 770
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page53",
+          "start": 770,
+          "end": 779
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page53",
+          "start": 779,
+          "end": 801
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page53",
+          "start": 801,
+          "end": 854
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page53",
+          "start": 854,
+          "end": 929
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 0,
+          "end": 41
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 41,
+          "end": 79
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 79,
+          "end": 107
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 107,
+          "end": 196
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21470_21526",
+          "start": 0,
+          "end": 56
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp57313_57453",
+          "start": 0,
+          "end": 140
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp89632_89685",
+          "start": 0,
+          "end": 53
+        }
+      ],
+      "context_source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 33,
+          "end": 44
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 44,
+          "end": 70
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 70,
+          "end": 88
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 88,
+          "end": 125
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 125,
+          "end": 164
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 164,
+          "end": 234
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 669,
+          "end": 706
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 706,
+          "end": 739
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 739,
+          "end": 769
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 769,
+          "end": 804
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 804,
+          "end": 841
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 572,
+          "end": 669
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page2",
+          "start": 0,
+          "end": 312
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp74_93",
+          "start": 0,
+          "end": 19
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp94_98",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp99_112",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp113_121",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp290_297",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp2275_2313",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp20268_20275",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21938_21993",
+          "start": 0,
+          "end": 55
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21994_22015",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22016_22042",
+          "start": 0,
+          "end": 26
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22043_22066",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22067_22091",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp57109_57185",
+          "start": 0,
+          "end": 76
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp57254_57312",
+          "start": 0,
+          "end": 58
+        }
+      ],
+      "facts": [
+        {
+          "id": "initial_dispatch",
+          "quote": "2.3.1.1线路跳闸后，应立即按相关规定控制断面潮流和母线电压、更改安控方式，收集",
+          "text": "线路跳闸后立即按相关规定控制断面潮流和母线电压、更改安控方式，收集故障信息并汇报值班调度员；是否试送由值班调度员综合有关设备信息确定。有明显故障现象或特征时，须先查明原因，再考虑是否试送。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.1.1"
+        },
+        {
+          "id": "trial_count",
+          "quote": "2.3.1.1.1线路故障跳闸后，经调度下令后，一般允许试送一次。如试送不成功，需再",
+          "text": "经调度下令，一般允许试送一次；试送不成功而需再次试送，必须经主管生产领导同意。这项同意不能替代前述调度决定与下令要求。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.1.1.1"
+        },
+        {
+          "id": "breaker_life",
+          "quote": "2.3.1.1.2线路故障跳闸后，若开关的故障切除次数已达到规定次数，运行值班人员应",
+          "text": "开关故障切除次数已达到规定次数时，运行值班人员应按规定向调度提出停电检修建议；本条未给出该次数的具体数值。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.1.1.2"
+        },
+        {
+          "id": "live_work",
+          "quote": "2.3.1.1.3带电作业线路故障跳闸后，现场运行人员应视设备仍然带电并尽快联系值班",
+          "text": "带电作业线路故障跳闸后，现场仍按设备带电对待并尽快联系值班调度员；调度员未联系工作负责人前不得试送。调度员还须与相关单位确认具备试送条件，才能按试送规定进行。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.1.1.3"
+        },
+        {
+          "id": "possible_inside",
+          "quote": "2.3.1.1.4判断故障可能发生在站内时，应待现场确认站内相关一、二次设备检查无异",
+          "text": "判断故障可能在站内时，须待现场确认站内相关一次、二次设备检查无异常后，才可试送；只有一次设备检查正常还不满足该前提。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.1.1.4"
+        },
+        {
+          "id": "protection_signal",
+          "quote": "9.3.1.1事件记录发线路保护动作信号；",
+          "text": "线路保护动作预案的现象包括事件记录出现线路保护动作信号。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.3.1.1"
+        },
+        {
+          "id": "trip_reclose",
+          "quote": "9.3.1.2相应线路开关跳闸或跳闸后重合。",
+          "text": "相应线路开关可能跳闸，或跳闸后重合；这是现象描述，不能用来证明每条线路都启用了重合闸。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.3.1.2"
+        },
+        {
+          "id": "report",
+          "quote": "9.3.2.1汇报调度和领导；",
+          "text": "线路保护动作后汇报调度和领导。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.3.2.1"
+        },
+        {
+          "id": "secondary_info",
+          "quote": "9.3.2.2检查保护装置运行情况，并查看装置动作报告、故障录波及故障测距，记录报警",
+          "text": "检查保护装置运行情况，查看动作报告、故障录波及故障测距，并记录报警信息。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.3.2.2"
+        },
+        {
+          "id": "primary_photo",
+          "quote": "9.3.2.3检查一次设备动作情况，发现设备异常应使用照相机拍照收集故障信息；43",
+          "text": "检查一次设备动作情况；发现设备异常时，用照相机拍照收集故障信息。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.3.2.3"
+        },
+        {
+          "id": "detailed_report",
+          "quote": "9.3.2.4向调度和领导详细汇报设备检查情况、故障信息、故障测距；",
+          "text": "向调度和领导详细汇报设备检查情况、故障信息及故障测距。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.3.2.4"
+        },
+        {
+          "id": "transmit",
+          "quote": "9.3.2.5整理故障录波、事件记录，并传真至相关调度和部门；",
+          "text": "整理故障录波和事件记录，并传真至相关调度和部门。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.3.2.5"
+        },
+        {
+          "id": "reclose_success",
+          "quote": "9.3.2.6若线路重合闸成功则加强监视；",
+          "text": "若线路重合闸成功，应加强监视；该分支仅在实际发生且成功的重合闸情形下适用。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.3.2.6"
+        },
+        {
+          "id": "reclose_failure",
+          "quote": "9.3.2.7若线路重合闸不成功且故障点不在站内则根据调令进行相关操作；若线路重合闸",
+          "text": "若重合闸不成功且故障点不在站内，按调令进行相关操作；若不成功且故障点在站内，申请调度将线路转检修，做好安全措施并通知检修人员处理。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.3.2.7"
+        },
+        {
+          "id": "special_report",
+          "quote": "注：姑苏站5032、5042开关配置合闸电阻，熟姑5W09线、常苏5W08线线路重合",
+          "text": "第三分册5.7注记明确：姑苏站5032、5042开关配置合闸电阻，熟姑5W09线、常苏5W08线重合闸停用，向调度汇报时需说明。",
+          "source_unit_id": "d_4b964d3ff677714b/cp21470_21526"
+        },
+        {
+          "id": "middle_breaker",
+          "quote": "姑苏换流站熟姑5W09线、常苏5W08线线路中开关5032、5042开关均配置合闸电",
+          "text": "第三分册线路运行段落说明：熟姑5W09、常苏5W08线中开关5032、5042配置1500Ω合闸电阻。若使用中开关重合闸功能，线路故障重合闸时需参照调度要求汇报并考虑功能投退；该段同时注明这两条线路重合闸目前均停用，不涉及相关操作。",
+          "source_unit_id": "d_4b964d3ff677714b/cp57313_57453"
+        },
+        {
+          "id": "disabled_lines",
+          "quote": "姑苏换流站常姑5W07线、常苏5W08线、熟姑5W09线、姑常5W03线（常熟北）交",
+          "text": "第三分册交流线路保护段落列明：常姑5W07线、常苏5W08线、熟姑5W09线、姑常5W03线（常熟北）的交流线路重合闸保护停用。以上是所列文档版本的配置描述，未认证现场实时状态。",
+          "source_unit_id": "d_4b964d3ff677714b/cp89632_89685"
+        }
+      ],
+      "questions": [
+        {
+          "key": "whole",
+          "type": "full_chain",
+          "question": "线路故障跳闸后，故障信息、试送许可和次数、带电作业、站内外故障分支及姑苏站重合闸限制应怎样一起判断？",
+          "required": [
+            "initial_dispatch",
+            "trial_count",
+            "breaker_life",
+            "live_work",
+            "possible_inside",
+            "protection_signal",
+            "trip_reclose",
+            "report",
+            "secondary_info",
+            "primary_photo",
+            "detailed_report",
+            "transmit",
+            "reclose_success",
+            "reclose_failure",
+            "special_report",
+            "middle_breaker",
+            "disabled_lines"
+          ],
+          "lead": "本题概括所列专项条款；公共事故处理原则共同适用。 国调管辖系统事故还须按2.2.4立即汇报概况，查明后尽快详细汇报；下述查因后汇报检查结果不能替代事故初报。"
+        },
+        {
+          "key": "retry",
+          "type": "false_premise",
+          "question": "第一次试送失败，但现场觉得问题不大，能否连续再试一次？",
+          "required": [
+            "initial_dispatch",
+            "trial_count"
+          ],
+          "lead": "不能仅凭现场判断连续试送。"
+        },
+        {
+          "key": "live_work_open",
+          "type": "false_premise",
+          "question": "带电作业线路已经跳闸，是否可按无电设备处理并先试送，随后再联系工作负责人？",
+          "required": [
+            "live_work",
+            "trial_count"
+          ],
+          "lead": "不可以按题设顺序处理。"
+        },
+        {
+          "key": "one_side_checked",
+          "type": "preconditions",
+          "question": "怀疑故障在站内，一次设备看起来正常，但二次设备尚未检查，已满足试送条件吗？",
+          "required": [
+            "possible_inside",
+            "initial_dispatch"
+          ],
+          "lead": "尚未满足所问前提。"
+        },
+        {
+          "key": "inside_after_failure",
+          "type": "conditional_branch",
+          "question": "重合闸不成功，核查后确认故障点在站内，该按哪条分支处理，是否可直接沿用站外故障操作？",
+          "required": [
+            "reclose_failure"
+          ],
+          "lead": "应选择站内故障分支。"
+        },
+        {
+          "key": "disabled_reclose",
+          "type": "source_scope",
+          "question": "9.3写了“重合闸成功则加强监视”，是否说明熟姑5W09、常苏5W08已启用重合闸？还有哪些线路被第三分册列为停用？",
+          "required": [
+            "reclose_success",
+            "special_report",
+            "middle_breaker",
+            "disabled_lines"
+          ],
+          "lead": "不能这样认定。"
+        },
+        {
+          "key": "cutoff_count",
+          "type": "source_gap",
+          "question": "开关故障切除多少次后必须提出停电检修？仅凭2.3.1能给出固定数字吗？",
+          "required": [
+            "breaker_life"
+          ],
+          "lead": "仅凭本节不能给出固定次数。"
+        },
+        {
+          "key": "fault_report",
+          "type": "evidence_submission",
+          "question": "线路保护动作后，已有保护动作截图，向调度汇报和提交材料是否就够了？",
+          "required": [
+            "report",
+            "secondary_info",
+            "primary_photo",
+            "detailed_report",
+            "transmit"
+          ],
+          "lead": "还不够，应按规定补齐核查、汇报和材料。"
+        }
+      ],
+      "order_edges": [
+        [
+          "initial_dispatch",
+          "trial_count"
+        ],
+        [
+          "secondary_info",
+          "detailed_report"
+        ],
+        [
+          "primary_photo",
+          "detailed_report"
+        ]
+      ],
+      "branches": [
+        "明显故障先查因；可能站内故障先核一次、二次设备",
+        "带电作业线路保留带电判断和工作负责人联系前提",
+        "重合成功/失败及故障在站内/站外分别处理；停用重合闸线路不能套用成功分支"
+      ]
+    },
+    {
+      "id": "bus_fault_and_protection",
+      "title": "母线失压与母差保护：真实故障、误动确认和恢复",
+      "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 2.3.3、9.5",
+      "source_unit_ids": [
+        "d_98d56bcdf4e49412/clause/2.3.3",
+        "d_98d56bcdf4e49412/clause/2.3.3.1",
+        "d_98d56bcdf4e49412/clause/2.3.3.2",
+        "d_98d56bcdf4e49412/clause/2.3.3.2.1",
+        "d_98d56bcdf4e49412/clause/2.3.3.2.2",
+        "d_98d56bcdf4e49412/clause/2.3.3.2.3",
+        "d_98d56bcdf4e49412/clause/2.3.3.2.4",
+        "d_98d56bcdf4e49412/clause/2.3.3.2.5",
+        "d_98d56bcdf4e49412/clause/9.5",
+        "d_98d56bcdf4e49412/clause/9.5.1",
+        "d_98d56bcdf4e49412/clause/9.5.1.1",
+        "d_98d56bcdf4e49412/clause/9.5.1.2",
+        "d_98d56bcdf4e49412/clause/9.5.2",
+        "d_98d56bcdf4e49412/clause/9.5.2.1",
+        "d_98d56bcdf4e49412/clause/9.5.2.2",
+        "d_98d56bcdf4e49412/clause/9.5.2.3",
+        "d_98d56bcdf4e49412/clause/9.5.2.4",
+        "d_98d56bcdf4e49412/clause/9.5.2.5",
+        "d_98d56bcdf4e49412/clause/9.5.2.6",
+        "d_98d56bcdf4e49412/clause/9.5.2.7"
+      ],
+      "source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 807,
+          "end": 820
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 820,
+          "end": 881
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 881,
+          "end": 963
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 963,
+          "end": 1005
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 1005,
+          "end": 1042
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page13",
+          "start": 1042,
+          "end": 1109
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 0,
+          "end": 36
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 36,
+          "end": 90
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 593,
+          "end": 608
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 608,
+          "end": 617
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 617,
+          "end": 645
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 645,
+          "end": 669
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 669,
+          "end": 678
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 678,
+          "end": 700
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 700,
+          "end": 747
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 747,
+          "end": 781
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 781,
+          "end": 828
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 828,
+          "end": 866
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 866,
+          "end": 960
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page55",
+          "start": 0,
+          "end": 68
+        }
+      ],
+      "context_source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 33,
+          "end": 44
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 44,
+          "end": 70
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 70,
+          "end": 88
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 88,
+          "end": 125
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 125,
+          "end": 164
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 164,
+          "end": 234
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 669,
+          "end": 706
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 706,
+          "end": 739
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 739,
+          "end": 769
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 769,
+          "end": 804
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 804,
+          "end": 841
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 572,
+          "end": 669
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page2",
+          "start": 0,
+          "end": 312
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp74_93",
+          "start": 0,
+          "end": 19
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp94_98",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp99_112",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp113_121",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp290_297",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp2275_2313",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp20268_20275",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21938_21993",
+          "start": 0,
+          "end": 55
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21994_22015",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22016_22042",
+          "start": 0,
+          "end": 26
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22043_22066",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22067_22091",
+          "start": 0,
+          "end": 24
+        }
+      ],
+      "facts": [
+        {
+          "id": "immediate",
+          "quote": "2.3.3.1当母线发生故障或失压后，运行值班员应立即报告国调值班调度员，并同时将故",
+          "text": "母线发生故障或失压后，立即报告国调值班调度员，同时将故障母线上的开关全部断开。报告与断开是同时要求，不能写成等待报告批准后才断开。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.3.1"
+        },
+        {
+          "id": "external_check",
+          "quote": "2.3.3.2当母线故障停电后，运行值班员应立即对停电的母线进行外部检查，并把检查情",
+          "text": "母线故障停电后，立即外部检查停电母线并向国调汇报检查情况，在国调值班调度员指挥下按相应原则处理。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.3.2"
+        },
+        {
+          "id": "quick_isolation",
+          "quote": "2.3.3.2.1找到故障点并能迅速隔离的，在隔离故障后对停电母线恢复运行。",
+          "text": "找到故障点且能迅速隔离时，先隔离故障，再恢复停电母线运行。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.3.2.1"
+        },
+        {
+          "id": "slow_isolation",
+          "quote": "2.3.3.2.2找到故障点但不能很快隔离的，应将该母线转为检修。",
+          "text": "找到故障点但不能很快隔离时，将该母线转为检修。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.3.2.2"
+        },
+        {
+          "id": "unlocated_real_fault",
+          "quote": "2.3.3.2.3确认母线故障但找不到故障点的，一般不得对停电母线试送。3",
+          "text": "已经确认母线故障却找不到故障点时，一般不得对停电母线试送；“一般不得”不能删成无条件允许或改成绝对永久禁止。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.3.2.3"
+        },
+        {
+          "id": "trial_supply",
+          "quote": "2.3.3.2.4对停电母线进行试送，应尽可能用外来电源。",
+          "text": "对停电母线进行试送时，应尽可能使用外来电源；本条不构成绕过故障判断和调度指挥的独立试送许可。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.3.2.4"
+        },
+        {
+          "id": "trial_equipment",
+          "quote": "2.3.3.2.5试送开关必须完好，并有完备的继电保护。有条件者可对故障母线进行零起",
+          "text": "试送开关必须完好且有完备继电保护；有条件时，可对故障母线零起升压。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.3.2.5"
+        },
+        {
+          "id": "signal",
+          "quote": "9.5.1.1事件记录发母差保护动作信号；",
+          "text": "母差保护动作预案的现象包括事件记录出现母差保护动作信号。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.5.1.1"
+        },
+        {
+          "id": "trip",
+          "quote": "9.5.1.2相应开关动作跳闸。",
+          "text": "相应开关动作跳闸。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.5.1.2"
+        },
+        {
+          "id": "report",
+          "quote": "9.5.2.1汇报调度和领导；",
+          "text": "母差保护动作后汇报调度和领导。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.5.2.1"
+        },
+        {
+          "id": "secondary_info",
+          "quote": "9.5.2.2检查保护装置运行情况，并查看装置动作报告、故障录波，记录报警信息；",
+          "text": "检查保护装置运行情况，查看动作报告、故障录波并记录报警信息。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.5.2.2"
+        },
+        {
+          "id": "actual_position",
+          "quote": "9.5.2.3检查一次设备动作情况，确认开关实际位置；",
+          "text": "检查一次设备动作情况，确认开关实际位置。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.5.2.3"
+        },
+        {
+          "id": "mode_and_report",
+          "quote": "9.5.2.4向调度、领导详细汇报设备检查情况，并根据调度命令调整系统运行方式；",
+          "text": "向调度和领导详细汇报设备检查情况，并根据调度命令调整系统运行方式。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.5.2.4"
+        },
+        {
+          "id": "transmit",
+          "quote": "9.5.2.5整理故障录波、事件记录，并传真至相关调度和部门；",
+          "text": "整理故障录波和事件记录，传真至相关调度和部门。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.5.2.5"
+        },
+        {
+          "id": "located_fault",
+          "quote": "9.5.2.6现场检查母线保护范围内设备，若发现故障点，则申请调度将故障点隔离并做好",
+          "text": "现场检查母线保护范围内设备；发现故障点时，申请调度隔离故障点，做好安全措施并通知检修人员处理。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.5.2.6"
+        },
+        {
+          "id": "confirmed_misoperation",
+          "quote": "9.5.2.7若未发现故障点，经检修人员确认为保护误动，经主管生产领导批准后，向调度",
+          "text": "未发现故障点时，只有经检修人员确认为保护误动、经主管生产领导批准后，才向调度申请退出误动保护、恢复母线运行；未发现故障点本身不能代替误动确认或批准。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.5.2.7"
+        }
+      ],
+      "questions": [
+        {
+          "key": "whole",
+          "type": "full_chain",
+          "question": "母线故障或失压、母差保护动作后，检查、隔离、试送和确认误动后的恢复有哪些条件与权限？",
+          "required": [
+            "immediate",
+            "external_check",
+            "quick_isolation",
+            "slow_isolation",
+            "unlocated_real_fault",
+            "trial_supply",
+            "trial_equipment",
+            "signal",
+            "trip",
+            "report",
+            "secondary_info",
+            "actual_position",
+            "mode_and_report",
+            "transmit",
+            "located_fault",
+            "confirmed_misoperation"
+          ],
+          "lead": "本题概括所列专项条款；公共事故处理原则共同适用。 国调管辖系统事故还须按2.2.4立即汇报概况，查明后尽快详细汇报；下述查因后汇报检查结果不能替代事故初报。"
+        },
+        {
+          "key": "not_found",
+          "type": "false_premise",
+          "question": "母差动作后暂未找到故障点，是否可以直接判定误动，退出保护恢复母线？",
+          "required": [
+            "confirmed_misoperation",
+            "unlocated_real_fault"
+          ],
+          "lead": "不能直接这样处理。"
+        },
+        {
+          "key": "real_fault_followup",
+          "type": "multiturn",
+          "question": "现在确认确有母线故障，只是还没定位。还能沿用刚才的“申请退出误动保护恢复”建议吗？",
+          "required": [
+            "external_check",
+            "unlocated_real_fault",
+            "confirmed_misoperation"
+          ],
+          "lead": "不能沿用，当前诊断已改为确认存在母线故障。",
+          "history": [
+            {
+              "role": "user",
+              "content": "母差动作，未发现故障点，检修人员已确认保护误动，主管生产领导也批准了。接下来呢？"
+            },
+            {
+              "role": "assistant",
+              "content": "向调度申请退出误动保护，恢复母线运行。"
+            }
+          ],
+          "standalone_question": "先前按保护误动获准申请恢复，现又确认真实母线故障但未找到故障点，应否继续按误动恢复，当前按什么条件处理？"
+        },
+        {
+          "key": "isolation_timing",
+          "type": "conditional_branch",
+          "question": "已找到母线故障点，能否不管隔离需要多久，都先恢复母线？",
+          "required": [
+            "external_check",
+            "quick_isolation",
+            "slow_isolation"
+          ],
+          "lead": "不能这样统一处理。"
+        },
+        {
+          "key": "leader_not_dispatch",
+          "type": "preconditions",
+          "question": "检修已确认母差保护误动，主管生产领导也批准了，这是否已经替代向调度申请，可以自行退出保护送电？",
+          "required": [
+            "confirmed_misoperation"
+          ],
+          "lead": "没有替代向调度申请。"
+        },
+        {
+          "key": "trial_checks",
+          "type": "preconditions",
+          "question": "已经具备按国调指挥试送停电母线的前提，试送电源、开关、保护和升压方式有哪些要求？",
+          "required": [
+            "trial_supply",
+            "trial_equipment"
+          ]
+        },
+        {
+          "key": "report_then_open",
+          "type": "false_premise",
+          "question": "母线失压后应先汇报、等国调答复，再断开故障母线上所有开关吗？",
+          "required": [
+            "immediate"
+          ],
+          "lead": "不是题设的等待顺序；本条要求立即报告并同时断开。"
+        },
+        {
+          "key": "protection_material",
+          "type": "evidence_submission",
+          "question": "母差动作后的检查和报告应保留哪些材料，是否只看监控显示开关已跳就够了？",
+          "required": [
+            "report",
+            "secondary_info",
+            "actual_position",
+            "mode_and_report",
+            "transmit",
+            "located_fault"
+          ],
+          "lead": "只看监控显示还不够。"
+        }
+      ],
+      "order_edges": [
+        [
+          "external_check",
+          "quick_isolation"
+        ],
+        [
+          "external_check",
+          "slow_isolation"
+        ],
+        [
+          "external_check",
+          "unlocated_real_fault"
+        ],
+        [
+          "secondary_info",
+          "mode_and_report"
+        ],
+        [
+          "actual_position",
+          "mode_and_report"
+        ]
+      ],
+      "branches": [
+        "真实母线故障：已找到且可迅速隔离/不能很快隔离/已确认但未找到",
+        "母差动作：有故障点申请隔离；无故障点且检修确认误动并主管生产领导批准后申请退出保护恢复"
+      ]
+    },
+    {
+      "id": "breaker_states_and_gis_incomplete",
+      "title": "开关异常状态公共规则与GIS动作不到位专项要求",
+      "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 2.3.4、5.8",
+      "source_unit_ids": [
+        "d_98d56bcdf4e49412/clause/2.3.4",
+        "d_98d56bcdf4e49412/clause/2.3.4.1",
+        "d_98d56bcdf4e49412/clause/2.3.4.2",
+        "d_98d56bcdf4e49412/clause/2.3.4.3",
+        "d_98d56bcdf4e49412/clause/5.8",
+        "d_98d56bcdf4e49412/clause/5.8.1",
+        "d_98d56bcdf4e49412/clause/5.8.1.1",
+        "d_98d56bcdf4e49412/clause/5.8.1.2",
+        "d_98d56bcdf4e49412/clause/5.8.1.3",
+        "d_98d56bcdf4e49412/clause/5.8.2",
+        "d_98d56bcdf4e49412/clause/5.8.2.1",
+        "d_98d56bcdf4e49412/clause/5.8.2.2",
+        "d_98d56bcdf4e49412/clause/5.8.2.3",
+        "d_98d56bcdf4e49412/clause/5.8.2.4",
+        "d_98d56bcdf4e49412/clause/5.8.2.5"
+      ],
+      "source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 90,
+          "end": 103
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 103,
+          "end": 177
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 177,
+          "end": 237
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 237,
+          "end": 319
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 146,
+          "end": 167
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 167,
+          "end": 178
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 178,
+          "end": 207
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 207,
+          "end": 237
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 237,
+          "end": 263
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 263,
+          "end": 272
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 272,
+          "end": 299
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 299,
+          "end": 346
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 346,
+          "end": 378
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 378,
+          "end": 415
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 415,
+          "end": 475
+        }
+      ],
+      "context_source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 33,
+          "end": 44
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 44,
+          "end": 70
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 70,
+          "end": 88
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 88,
+          "end": 125
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 125,
+          "end": 164
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 164,
+          "end": 234
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 669,
+          "end": 706
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 706,
+          "end": 739
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 739,
+          "end": 769
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 769,
+          "end": 804
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 804,
+          "end": 841
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 572,
+          "end": 669
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page2",
+          "start": 0,
+          "end": 312
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp74_93",
+          "start": 0,
+          "end": 19
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp94_98",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp99_112",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp113_121",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp290_297",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp2275_2313",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp20268_20275",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21938_21993",
+          "start": 0,
+          "end": 55
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21994_22015",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22016_22042",
+          "start": 0,
+          "end": 26
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22043_22066",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22067_22091",
+          "start": 0,
+          "end": 24
+        }
+      ],
+      "facts": [
+        {
+          "id": "local_three_phase",
+          "quote": "2.3.4.1开关远方操作失灵时，若允许就地操作，必须三相同时操作，不得分相操作；开",
+          "text": "远方操作失灵时，仅在允许就地操作的前提下，必须三相同时操作，不得分相操作；开关操作中发生非全相运行，应立即拉开该开关。远方失灵本身不是就地操作许可。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.4.1"
+        },
+        {
+          "id": "inconsistent_running",
+          "quote": "2.3.4.2开关运行时发生单相或两相断开且三相不一致保护未跳开开关运行相，应立即将",
+          "text": "运行中单相或两相断开、三相不一致保护又未跳开剩余运行相时，应立即将该开关三相拉开。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.4.2"
+        },
+        {
+          "id": "lockout_branches",
+          "quote": "2.3.4.3开关异常出现“合闸闭锁”尚未出现“分闸闭锁”时，应立即拉开异常开关；出",
+          "text": "出现合闸闭锁、尚未出现分闸闭锁时，立即拉开异常开关；出现分闸闭锁时，停用操作电源并按规程处理。两种状态不能混作同一拉开操作。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/2.3.4.3"
+        },
+        {
+          "id": "alarm_recording",
+          "quote": "5.8.1.1事件记录报警，故障录波启动；",
+          "text": "GIS断路器动作不到位的现象包括事件记录报警及故障录波启动。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.8.1.1"
+        },
+        {
+          "id": "state_current",
+          "quote": "5.8.1.2有关状态指示、电流读数不正常；",
+          "text": "有关状态指示和电流读数不正常。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.8.1.2"
+        },
+        {
+          "id": "noise",
+          "quote": "5.8.1.3现场设备有异常声音；",
+          "text": "现场设备有异常声音。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.8.1.3"
+        },
+        {
+          "id": "report",
+          "quote": "5.8.2.1立即将有关情况汇报领导；",
+          "text": "GIS动作不到位时，立即向领导汇报有关情况。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.8.2.1"
+        },
+        {
+          "id": "onsite_video",
+          "quote": "5.8.2.2现场检查设备具体情况，如果声音异常，应做好摄像并汇报调度和领导；",
+          "text": "现场检查设备具体情况；若声音异常，应摄像记录并汇报调度和领导。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.8.2.2"
+        },
+        {
+          "id": "approved_open",
+          "quote": "5.8.2.3经领导批准，申请调度拉开该断路器；",
+          "text": "GIS动作不到位专项条款要求：经领导批准，申请调度拉开该断路器。该条没有把领导批准等同于现场自行拉开许可。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.8.2.3"
+        },
+        {
+          "id": "cannot_open",
+          "quote": "5.8.2.4如果断路器拉不开，应申请调度将该断路器隔离；",
+          "text": "若断路器拉不开，申请调度将该断路器隔离。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.8.2.4"
+        },
+        {
+          "id": "isolate_repair",
+          "quote": "5.8.2.5在故障隔离过程中，应考虑负荷的倒换、滤波器的切换等；做好安全措施，联系",
+          "text": "故障隔离过程中考虑负荷倒换、滤波器切换等，做好安全措施并联系检修人员处理。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.8.2.5"
+        }
+      ],
+      "questions": [
+        {
+          "key": "whole",
+          "type": "full_chain",
+          "question": "远方操作失灵、非全相、分合闸闭锁与GIS动作不到位，各自有哪些操作限制和专项处理要求？",
+          "required": [
+            "local_three_phase",
+            "inconsistent_running",
+            "lockout_branches",
+            "alarm_recording",
+            "state_current",
+            "noise",
+            "report",
+            "onsite_video",
+            "approved_open",
+            "cannot_open",
+            "isolate_repair"
+          ],
+          "lead": "这是不同异常状态的规则对照，不能代替具体状态下的操作票；两节未逐一说明规则同时触发时的衔接。 国调管辖系统事故还须按2.2.4立即汇报概况，查明后尽快详细汇报；下述查因后汇报检查结果不能替代事故初报。"
+        },
+        {
+          "key": "remote_failed_permission",
+          "type": "false_premise",
+          "question": "远方操作失败是否自动允许就地逐相试操作，哪相能动作就先操作哪相？",
+          "required": [
+            "local_three_phase"
+          ],
+          "lead": "不自动允许，也不得逐相试操作。"
+        },
+        {
+          "key": "remaining_phase",
+          "type": "conditional_branch",
+          "question": "运行中两相已断开，但三相不一致保护没跳开剩余相，应只等保护再次动作吗？",
+          "required": [
+            "inconsistent_running"
+          ],
+          "lead": "不能仅等待；本条要求立即将三相拉开。"
+        },
+        {
+          "key": "lockout_changed",
+          "type": "multiturn",
+          "question": "现在又出现“分闸闭锁”，还继续执行刚才立即拉开的建议吗？",
+          "required": [
+            "lockout_branches"
+          ],
+          "lead": "应按当前分闸闭锁状态改用相应分支。",
+          "history": [
+            {
+              "role": "user",
+              "content": "开关合闸闭锁，暂未出现分闸闭锁，按2.3.4怎么处理？"
+            },
+            {
+              "role": "assistant",
+              "content": "立即拉开异常开关。"
+            }
+          ],
+          "standalone_question": "开关先仅合闸闭锁，随后又分闸闭锁，应否继续拉开建议，当前按2.3.4如何处理？"
+        },
+        {
+          "key": "gis_isolation",
+          "type": "conditional_branch",
+          "question": "GIS断路器动作不到位，按专项预案申请拉开后仍拉不开，下一步是否只反复操作？",
+          "required": [
+            "cannot_open",
+            "isolate_repair"
+          ],
+          "lead": "应转为申请隔离，并考虑相关运行影响。"
+        },
+        {
+          "key": "gis_noise",
+          "type": "preconditions",
+          "question": "GIS动作不到位且有异常声音，向领导汇报后，能否只凭领导同意就现场自行拉开？专项预案还列了哪些现象，声音异常应怎样留证和汇报？",
+          "required": [
+            "alarm_recording",
+            "state_current",
+            "noise",
+            "report",
+            "onsite_video",
+            "approved_open"
+          ],
+          "lead": "不能只凭领导同意按题设自行拉开。"
+        }
+      ],
+      "order_edges": [],
+      "branches": [
+        "远方失灵并允许就地/操作中非全相/运行中三相不一致",
+        "合闸闭锁尚无分闸闭锁/已分闸闭锁",
+        "GIS动作不到位按专项批准申请；拉不开转申请隔离"
+      ]
+    },
+    {
+      "id": "gis_refuses_open",
+      "title": "保护动作后GIS断路器拒分：零电流不代表分位",
+      "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 5.10",
+      "source_unit_ids": [
+        "d_98d56bcdf4e49412/clause/5.10",
+        "d_98d56bcdf4e49412/clause/5.10.1",
+        "d_98d56bcdf4e49412/clause/5.10.1.1",
+        "d_98d56bcdf4e49412/clause/5.10.1.2",
+        "d_98d56bcdf4e49412/clause/5.10.2",
+        "d_98d56bcdf4e49412/clause/5.10.2.1",
+        "d_98d56bcdf4e49412/clause/5.10.2.2",
+        "d_98d56bcdf4e49412/clause/5.10.2.3",
+        "d_98d56bcdf4e49412/clause/5.10.2.4"
+      ],
+      "source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 100,
+          "end": 124
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 124,
+          "end": 134
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 134,
+          "end": 181
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 181,
+          "end": 214
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 214,
+          "end": 224
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 224,
+          "end": 257
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 257,
+          "end": 300
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 300,
+          "end": 449
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 449,
+          "end": 519
+        }
+      ],
+      "context_source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 33,
+          "end": 44
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 44,
+          "end": 70
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 70,
+          "end": 88
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 88,
+          "end": 125
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 125,
+          "end": 164
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 164,
+          "end": 234
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 669,
+          "end": 706
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 706,
+          "end": 739
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 739,
+          "end": 769
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 769,
+          "end": 804
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 804,
+          "end": 841
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 572,
+          "end": 669
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page2",
+          "start": 0,
+          "end": 312
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp74_93",
+          "start": 0,
+          "end": 19
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp94_98",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp99_112",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp113_121",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp290_297",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp2275_2313",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp20268_20275",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21938_21993",
+          "start": 0,
+          "end": 55
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21994_22015",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22016_22042",
+          "start": 0,
+          "end": 26
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22043_22066",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22067_22091",
+          "start": 0,
+          "end": 24
+        }
+      ],
+      "facts": [
+        {
+          "id": "backup_clears",
+          "quote": "5.10.1.1故障间隔保护动作，断路器拒分。后备保护动作切除故障，相应断路器跳闸。",
+          "text": "故障间隔保护动作而断路器拒分，后备保护动作切除故障，相应断路器跳闸。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.10.1.1"
+        },
+        {
+          "id": "still_closed",
+          "quote": "5.10.1.2拒分断路器在合位，电流、功率显示为零。",
+          "text": "拒分断路器仍在合位，电流和功率可显示为零；零电流、零功率不能据此证明拒分断路器已分闸。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.10.1.2"
+        },
+        {
+          "id": "monitoring",
+          "quote": "5.10.2.1检查监控系统断路器跳闸情况及告警等信息。",
+          "text": "检查监控系统断路器跳闸情况及告警信息。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.10.2.1"
+        },
+        {
+          "id": "actual_position",
+          "quote": "5.10.2.2结合保护装置动作情况，核对断路器的实际位置，确定拒动断路器。",
+          "text": "结合保护装置动作，核对断路器实际位置，确定拒动断路器。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.10.2.2"
+        },
+        {
+          "id": "checklist",
+          "quote": "5.10.2.3检查断路器保护出口压板是否按规定投入、控制电源是否正常、控制回路接线",
+          "text": "检查保护出口压板投入、控制电源、控制接线是否松动、直流回路绝缘、气动或液压机构压力、弹簧机构储能、SF6压力是否合格、汇控柜或机构箱远方/就地把手是否在远方，以及分闸线圈有无烧损；各机构项目按设备类型检查。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.10.2.3"
+        },
+        {
+          "id": "isolate_restore",
+          "quote": "5.10.2.4向值班调控人员汇报一、二次设备检查结果，按照值班调控人员指令隔离故障",
+          "text": "向值班调控人员汇报一次、二次设备检查结果，按其指令隔离故障点及拒动断路器，并恢复非故障设备运行。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.10.2.4"
+        }
+      ],
+      "questions": [
+        {
+          "key": "whole",
+          "type": "full_chain",
+          "question": "故障由后备保护切除、拒分开关电流功率为零时，怎样核实状态、查拒分原因并隔离恢复？",
+          "required": [
+            "backup_clears",
+            "still_closed",
+            "monitoring",
+            "actual_position",
+            "checklist",
+            "isolate_restore"
+          ],
+          "lead": "本题概括所列专项条款；公共事故处理原则共同适用。 国调管辖系统事故还须按2.2.4立即汇报概况，查明后尽快详细汇报；下述查因后汇报检查结果不能替代事故初报。"
+        },
+        {
+          "key": "zero_means_open",
+          "type": "false_premise",
+          "question": "后备保护已经切故障，拒分开关电流、功率均为零，可以跳过实际位置核对并当作分位吗？",
+          "required": [
+            "backup_clears",
+            "still_closed",
+            "actual_position"
+          ],
+          "lead": "不可以。"
+        },
+        {
+          "key": "control_power_only",
+          "type": "preconditions",
+          "question": "拒分时检查控制电源正常就够了吗，还应查哪些控制和机构因素？",
+          "required": [
+            "checklist"
+          ],
+          "lead": "还不够，应按设备类型补齐以下检查。"
+        },
+        {
+          "key": "isolate_both",
+          "type": "restoration",
+          "question": "准备隔离恢复时，只隔离故障点而保留拒动断路器，并自行恢复正常设备，是否符合5.10？",
+          "required": [
+            "isolate_restore"
+          ],
+          "lead": "不符合题设做法。"
+        },
+        {
+          "key": "pressure_value",
+          "type": "source_gap",
+          "question": "仅凭5.10能否写出所有型号机构和SF6压力统一的合格数值？",
+          "required": [
+            "checklist"
+          ],
+          "lead": "不能；本节未列出统一压力数值。"
+        }
+      ],
+      "order_edges": [
+        [
+          "monitoring",
+          "actual_position"
+        ],
+        [
+          "actual_position",
+          "isolate_restore"
+        ],
+        [
+          "checklist",
+          "isolate_restore"
+        ]
+      ],
+      "branches": []
+    },
+    {
+      "id": "gis_mistrip",
+      "title": "GIS偷跳：原因消除与同期恢复",
+      "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 5.11",
+      "source_unit_ids": [
+        "d_98d56bcdf4e49412/clause/5.11",
+        "d_98d56bcdf4e49412/clause/5.11.1",
+        "d_98d56bcdf4e49412/clause/5.11.1.1",
+        "d_98d56bcdf4e49412/clause/5.11.1.2",
+        "d_98d56bcdf4e49412/clause/5.11.2",
+        "d_98d56bcdf4e49412/clause/5.11.2.1",
+        "d_98d56bcdf4e49412/clause/5.11.2.2",
+        "d_98d56bcdf4e49412/clause/5.11.2.3",
+        "d_98d56bcdf4e49412/clause/5.11.2.4",
+        "d_98d56bcdf4e49412/clause/5.11.2.5"
+      ],
+      "source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 519,
+          "end": 542
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 542,
+          "end": 552
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 552,
+          "end": 573
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 573,
+          "end": 608
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 608,
+          "end": 618
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 618,
+          "end": 654
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 654,
+          "end": 685
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 685,
+          "end": 785
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 785,
+          "end": 856
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 856,
+          "end": 904
+        }
+      ],
+      "context_source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 33,
+          "end": 44
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 44,
+          "end": 70
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 70,
+          "end": 88
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 88,
+          "end": 125
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 125,
+          "end": 164
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 164,
+          "end": 234
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 669,
+          "end": 706
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 706,
+          "end": 739
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 739,
+          "end": 769
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 769,
+          "end": 804
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 804,
+          "end": 841
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 572,
+          "end": 669
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page2",
+          "start": 0,
+          "end": 312
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp74_93",
+          "start": 0,
+          "end": 19
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp94_98",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp99_112",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp113_121",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp290_297",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp2275_2313",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp20268_20275",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21938_21993",
+          "start": 0,
+          "end": 55
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21994_22015",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22016_22042",
+          "start": 0,
+          "end": 26
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22043_22066",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22067_22091",
+          "start": 0,
+          "end": 24
+        }
+      ],
+      "facts": [
+        {
+          "id": "no_system_fault",
+          "quote": "5.11.1.1无系统故障特征。",
+          "text": "GIS偷跳预案的现象之一是无系统故障特征。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.11.1.1"
+        },
+        {
+          "id": "no_protection_signal",
+          "quote": "5.11.1.2无保护动作信号，监控系统有断路器变位信息。",
+          "text": "另一现象是无保护动作信号，但监控有断路器变位信息；只有“无保护信号”并不能替代全部现象和原因检查。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.11.1.2"
+        },
+        {
+          "id": "monitoring",
+          "quote": "5.11.2.1检查监控系统断路器跳闸情况及光字、告警等信息。",
+          "text": "检查监控系统断路器跳闸情况、光字和告警等信息。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.11.2.1"
+        },
+        {
+          "id": "work_weather",
+          "quote": "5.11.2.2结合现场工作情况及天气状况分析判断。",
+          "text": "结合现场工作情况和天气状况分析判断。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.11.2.2"
+        },
+        {
+          "id": "remove_cause",
+          "quote": "5.11.2.3对由于人员误碰、断路器受机械外力振动，保护屏受外力振动、二次回路故障",
+          "text": "人员误碰、断路器或保护屏受到外力振动、二次回路故障等引起的偷跳，应查明原因、排除故障后，再汇报值班调控人员、恢复送电。不能仅因像误碰而跳过查因和排故。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.11.2.3"
+        },
+        {
+          "id": "not_restorable",
+          "quote": "5.11.2.4对由于其他电气或机械部分故障，无法立即恢复送电的，应汇报值班调控人员",
+          "text": "其他电气或机械故障导致无法立即恢复送电时，汇报值班调控人员，隔离偷跳断路器并联系检修人员处理。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.11.2.4"
+        },
+        {
+          "id": "synchronism",
+          "quote": "5.11.2.5恢复送电时，应根据调令及现场运行方式使用同期装置，防止非同期合闸。",
+          "text": "恢复送电时，根据调令及现场运行方式使用同期装置，防止非同期合闸。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.11.2.5"
+        }
+      ],
+      "questions": [
+        {
+          "key": "whole",
+          "type": "full_chain",
+          "question": "怀疑GIS断路器偷跳时，应如何从现象、工作和天气分析走到排故或检修，以及恢复同期要求？",
+          "required": [
+            "no_system_fault",
+            "no_protection_signal",
+            "monitoring",
+            "work_weather",
+            "remove_cause",
+            "not_restorable",
+            "synchronism"
+          ],
+          "lead": "本题概括所列专项条款；公共事故处理原则共同适用。 国调管辖系统事故还须按2.2.4立即汇报概况，查明后尽快详细汇报；下述查因后汇报检查结果不能替代事故初报。"
+        },
+        {
+          "key": "no_signal_restore",
+          "type": "false_premise",
+          "question": "没有保护动作信号，就能认定是无害误跳直接合闸吗？",
+          "required": [
+            "no_system_fault",
+            "no_protection_signal",
+            "monitoring",
+            "work_weather",
+            "remove_cause",
+            "synchronism"
+          ],
+          "lead": "不能仅凭这一项直接恢复。"
+        },
+        {
+          "key": "vibration_not_removed",
+          "type": "preconditions",
+          "question": "已判断跳闸与保护屏振动有关，但尚未查清并排除故障，能否先恢复再处理原因？",
+          "required": [
+            "remove_cause",
+            "synchronism"
+          ],
+          "lead": "不符合本条恢复前提。"
+        },
+        {
+          "key": "mechanical_fault",
+          "type": "conditional_branch",
+          "question": "已确认机械故障导致不能立即恢复送电，是否还按“排除后马上送电”的分支继续尝试？",
+          "required": [
+            "not_restorable"
+          ],
+          "lead": "应改按无法立即恢复的分支处理。"
+        },
+        {
+          "key": "after_repair_followup",
+          "type": "multiturn",
+          "question": "原因已查明且故障排除了，恢复送电还有什么要求？",
+          "required": [
+            "remove_cause",
+            "synchronism"
+          ],
+          "history": [
+            {
+              "role": "user",
+              "content": "检查发现可能是人员误碰造成GIS断路器偷跳，准备恢复。"
+            },
+            {
+              "role": "assistant",
+              "content": "先查明原因、排除故障，再汇报值班调控人员恢复；不能只凭可能误碰就合闸。"
+            }
+          ],
+          "standalone_question": "GIS偷跳已查明原因并排除故障，恢复送电还需哪些汇报、调令与同期条件？"
+        }
+      ],
+      "order_edges": [
+        [
+          "monitoring",
+          "remove_cause"
+        ],
+        [
+          "work_weather",
+          "remove_cause"
+        ],
+        [
+          "remove_cause",
+          "synchronism"
+        ]
+      ],
+      "branches": [
+        "已查因且排故后汇报恢复",
+        "电气或机械故障无法立即恢复时汇报隔离检修"
+      ]
+    },
+    {
+      "id": "gis_low_mechanism_pressure",
+      "title": "操动机构低压闭锁：机构检查与两类电源切断",
+      "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 5.12，关联2.3.4.3",
+      "source_unit_ids": [
+        "d_98d56bcdf4e49412/clause/5.12",
+        "d_98d56bcdf4e49412/clause/5.12.1",
+        "d_98d56bcdf4e49412/clause/5.12.1.1",
+        "d_98d56bcdf4e49412/clause/5.12.1.2",
+        "d_98d56bcdf4e49412/clause/5.12.2",
+        "d_98d56bcdf4e49412/clause/5.12.2.1",
+        "d_98d56bcdf4e49412/clause/5.12.2.2",
+        "d_98d56bcdf4e49412/clause/5.12.2.3",
+        "d_98d56bcdf4e49412/clause/5.12.2.4"
+      ],
+      "source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 904,
+          "end": 926
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 926,
+          "end": 967
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page32",
+          "start": 0,
+          "end": 84
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page32",
+          "start": 84,
+          "end": 116
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page32",
+          "start": 116,
+          "end": 126
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page32",
+          "start": 126,
+          "end": 155
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page32",
+          "start": 155,
+          "end": 218
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page32",
+          "start": 218,
+          "end": 306
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page32",
+          "start": 306,
+          "end": 393
+        }
+      ],
+      "context_source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 33,
+          "end": 44
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 44,
+          "end": 70
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 70,
+          "end": 88
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 88,
+          "end": 125
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 125,
+          "end": 164
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 164,
+          "end": 234
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 669,
+          "end": 706
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 706,
+          "end": 739
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 739,
+          "end": 769
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 769,
+          "end": 804
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 804,
+          "end": 841
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 572,
+          "end": 669
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page2",
+          "start": 0,
+          "end": 312
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp74_93",
+          "start": 0,
+          "end": 19
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp94_98",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp99_112",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp113_121",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp290_297",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp2275_2313",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp20268_20275",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21938_21993",
+          "start": 0,
+          "end": 55
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21994_22015",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22016_22042",
+          "start": 0,
+          "end": 26
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22043_22066",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22067_22091",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 237,
+          "end": 319
+        }
+      ],
+      "facts": [
+        {
+          "id": "alarms",
+          "quote": "5.12.1.1监控系统或保护装置发出操动机构油（气）压力低告警、闭锁重合闸、闭锁合",
+          "text": "可出现操动机构油或气压力低、闭锁重合闸、闭锁合闸、闭锁分闸、控制回路断线等告警，并可能伴随油泵运转超时告警；可能伴随不能改成必然全部同时出现。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.12.1.1"
+        },
+        {
+          "id": "gauge_abnormal",
+          "quote": "5.12.1.2现场检查发现油（气）压力表指示异常。",
+          "text": "现场可见油或气压力表指示异常。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.12.1.2"
+        },
+        {
+          "id": "read_gauge",
+          "quote": "5.12.2.1现场检查设备压力表指示是否正常。",
+          "text": "现场检查设备压力表指示是否正常。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.12.2.1"
+        },
+        {
+          "id": "power_motor",
+          "quote": "5.12.2.2检查断路器储能操动机构电源是否正常、机构箱内二次元件有无过热烧损现象",
+          "text": "检查储能操动机构电源、机构箱二次元件过热烧损情况，以及油泵或空压机运行是否正常。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.12.2.2"
+        },
+        {
+          "id": "leaks_valves",
+          "quote": "5.12.2.3检查储能操动机构手动释压阀是否关闭到位，液压操动机构油位是否正常，有",
+          "text": "检查手动释压阀是否关闭到位；按机构类型检查液压油位与严重漏油，或气动漏气、排水阀及气水分离器电磁排污阀是否关闭严密。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.12.2.3"
+        },
+        {
+          "id": "below_lockout",
+          "quote": "5.12.2.4运行中储能操动机构压力值降至闭锁值以下时，应立即断开储能操动电机电源",
+          "text": "运行中储能操动机构压力降至闭锁值以下，立即断开储能操动电机电源，汇报值班调控人员，断开断路器操作电源，再按值班调控人员指令隔离该断路器。储能电机电源与断路器操作电源是两个明确对象。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.12.2.4"
+        }
+      ],
+      "questions": [
+        {
+          "key": "whole",
+          "type": "full_chain",
+          "question": "操动机构低压闭锁有哪些现象和核查项目，确认压力低于闭锁值后怎样处理？",
+          "required": [
+            "alarms",
+            "gauge_abnormal",
+            "read_gauge",
+            "power_motor",
+            "leaks_valves",
+            "below_lockout"
+          ],
+          "lead": "下述检查按机构类型适用；一旦运行压力已低于闭锁值，立即执行相应断电要求，不能因清单排列而等待全部检查结束。 国调管辖系统事故还须按2.2.4立即汇报概况，查明后尽快详细汇报；下述查因后汇报检查结果不能替代事故初报。"
+        },
+        {
+          "key": "only_motor_power",
+          "type": "false_premise",
+          "question": "压力已低于闭锁值，断了储能电机电源就算完成，操作电源可以保留并继续试拉吗？",
+          "required": [
+            "below_lockout"
+          ],
+          "lead": "不能只断储能电机电源或继续按题设试拉。"
+        },
+        {
+          "key": "leak_checks",
+          "type": "preconditions",
+          "question": "压力异常时，除了看压力表，还应查哪些供电、泵、阀和泄漏因素？",
+          "required": [
+            "read_gauge",
+            "power_motor",
+            "leaks_valves"
+          ]
+        },
+        {
+          "key": "timeout_required",
+          "type": "false_premise",
+          "question": "没有油泵运转超时告警，是否就能排除操动机构低压闭锁，不必看压力表？",
+          "required": [
+            "alarms",
+            "gauge_abnormal",
+            "read_gauge"
+          ],
+          "lead": "不能仅凭缺少这项告警排除。"
+        },
+        {
+          "key": "lockout_numeric",
+          "type": "source_gap",
+          "question": "5.12说降到闭锁值以下就处理，这个值统一是多少MPa？是否能凭本节确定？",
+          "required": [
+            "below_lockout"
+          ],
+          "lead": "本节没有给出统一MPa数值，不能自行补造。"
+        }
+      ],
+      "order_edges": [],
+      "branches": []
+    },
+    {
+      "id": "gis_interrupter_explosion",
+      "title": "GIS灭弧室爆炸：室内检查前提、隔离和恢复",
+      "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 5.9",
+      "source_unit_ids": [
+        "d_98d56bcdf4e49412/clause/5.9",
+        "d_98d56bcdf4e49412/clause/5.9.1",
+        "d_98d56bcdf4e49412/clause/5.9.1.1",
+        "d_98d56bcdf4e49412/clause/5.9.1.2",
+        "d_98d56bcdf4e49412/clause/5.9.2",
+        "d_98d56bcdf4e49412/clause/5.9.2.1",
+        "d_98d56bcdf4e49412/clause/5.9.2.2",
+        "d_98d56bcdf4e49412/clause/5.9.2.3",
+        "d_98d56bcdf4e49412/clause/5.9.2.4",
+        "d_98d56bcdf4e49412/clause/5.9.2.5",
+        "d_98d56bcdf4e49412/clause/5.9.2.6",
+        "d_98d56bcdf4e49412/clause/5.9.2.7",
+        "d_98d56bcdf4e49412/clause/5.9.2.8"
+      ],
+      "source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 475,
+          "end": 496
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 496,
+          "end": 505
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 505,
+          "end": 549
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 549,
+          "end": 587
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 587,
+          "end": 596
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 596,
+          "end": 631
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 631,
+          "end": 681
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 681,
+          "end": 754
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 754,
+          "end": 788
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 788,
+          "end": 843
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 843,
+          "end": 891
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page30",
+          "start": 891,
+          "end": 971
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 0,
+          "end": 100
+        }
+      ],
+      "context_source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 33,
+          "end": 44
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 44,
+          "end": 70
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 70,
+          "end": 88
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 88,
+          "end": 125
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 125,
+          "end": 164
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 164,
+          "end": 234
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 669,
+          "end": 706
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 706,
+          "end": 739
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 739,
+          "end": 769
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 769,
+          "end": 804
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 804,
+          "end": 841
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 572,
+          "end": 669
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page2",
+          "start": 0,
+          "end": 312
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp74_93",
+          "start": 0,
+          "end": 19
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp94_98",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp99_112",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp113_121",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp290_297",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp2275_2313",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp20268_20275",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21938_21993",
+          "start": 0,
+          "end": 55
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21994_22015",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22016_22042",
+          "start": 0,
+          "end": 26
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22043_22066",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22067_22091",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 100,
+          "end": 124
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 124,
+          "end": 134
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 134,
+          "end": 181
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 181,
+          "end": 214
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 214,
+          "end": 224
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 224,
+          "end": 257
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 257,
+          "end": 300
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 300,
+          "end": 449
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page31",
+          "start": 449,
+          "end": 519
+        }
+      ],
+      "facts": [
+        {
+          "id": "trip_open_zero",
+          "quote": "5.9.1.1保护动作，相应断路器在分位，故障断路器电流、功率显示为零。",
+          "text": "灭弧室爆炸预案描述保护动作、相应断路器在分位，故障断路器电流功率显示为零；仍应按处理条款核对实际位置。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.9.1.1"
+        },
+        {
+          "id": "rupture",
+          "quote": "5.9.1.2现场检查发现断路器灭弧室炸裂，绝缘介质逸出；",
+          "text": "现场发现灭弧室炸裂、绝缘介质逸出。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.9.1.2"
+        },
+        {
+          "id": "entry_prerequisites",
+          "quote": "5.9.2.8现场检查时，检查人员应按规定使用安全防护用品。检查时如需进入室内，应开",
+          "text": "现场检查人员按规定使用安全防护用品。需要进入室内检查时，先开启所有排风机强制排风15分钟，并用检漏仪确认SF6气体测量合格、用仪器确认含氧量合格，再进入检查；通风时间和两项合格检测不可互相替代。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.9.2.8"
+        },
+        {
+          "id": "monitoring",
+          "quote": "5.9.2.1检查监控系统断路器跳闸情况及告警等信息；",
+          "text": "检查监控系统断路器跳闸情况和告警等信息。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.9.2.1"
+        },
+        {
+          "id": "locate",
+          "quote": "5.9.2.2结合保护装置动作情况，核对断路器的实际位置，确定故障区域，查找故障点；",
+          "text": "结合保护动作，核对断路器实际位置，确定故障区域并查找故障点。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.9.2.2"
+        },
+        {
+          "id": "associated_damage",
+          "quote": "5.9.2.3找出故障点后，对故障间隔及关联设备进行全面检查，重点检查爆炸断路器相邻",
+          "text": "找到故障点后，全面检查故障间隔及关联设备，重点查爆炸断路器相邻设备是否受损、引线是否受力拉伤或损坏；需要进入室内的这些检查受入室前提约束。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.9.2.3"
+        },
+        {
+          "id": "report",
+          "quote": "5.9.2.4汇报值班调控人员一、二次设备检查结果；",
+          "text": "向值班调控人员汇报一次、二次设备检查结果。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.9.2.4"
+        },
+        {
+          "id": "fire",
+          "quote": "5.9.2.5若爆炸现场引起火灾，应立即对火灾点进行隔离，然后进行扑救，必要时联系消",
+          "text": "爆炸引起火灾时，立即隔离火灾点，再扑救，必要时联系消防部门。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.9.2.5"
+        },
+        {
+          "id": "neighbor_unsafe",
+          "quote": "5.9.2.6若相邻设备受损，无法继续安全运行时，应立即向值班调控人员申请停运；",
+          "text": "相邻设备受损且无法继续安全运行时，立即向值班调控人员申请停运。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.9.2.6"
+        },
+        {
+          "id": "restore_healthy",
+          "quote": "5.9.2.7隔离故障断路器，按照值班调控人员指令将非故障设备恢复运行；20",
+          "text": "隔离故障断路器，按值班调控人员指令恢复非故障设备运行。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/5.9.2.7"
+        }
+      ],
+      "questions": [
+        {
+          "key": "whole",
+          "type": "full_chain",
+          "question": "GIS灭弧室爆炸后，怎样安排故障识别、室内检查安全、火灾和相邻设备分支及非故障恢复？",
+          "required": [
+            "trip_open_zero",
+            "rupture",
+            "entry_prerequisites",
+            "monitoring",
+            "locate",
+            "associated_damage",
+            "report",
+            "fire",
+            "neighbor_unsafe",
+            "restore_healthy"
+          ],
+          "lead": "入室前提必须在需要入室的检查之前满足；火灾分支的“立即隔离”不能因答案列表位置被推迟。 国调管辖系统事故还须按2.2.4立即汇报概况，查明后尽快详细汇报；下述查因后汇报检查结果不能替代事故初报。"
+        },
+        {
+          "key": "ventilation_only",
+          "type": "false_premise",
+          "question": "排风机已运行15分钟，但还没测SF6和含氧量，是否可以先进室内检查？",
+          "required": [
+            "entry_prerequisites"
+          ],
+          "lead": "尚未满足本条入室检查要求。"
+        },
+        {
+          "key": "safe_last_clause",
+          "type": "false_premise",
+          "question": "防护与排风检测写在5.9最后一条，能否先进入室内找故障，再补这条？",
+          "required": [
+            "entry_prerequisites",
+            "associated_damage"
+          ],
+          "lead": "不能把这条当作检查结束后的补办事项。"
+        },
+        {
+          "key": "fire_order",
+          "type": "conditional_branch",
+          "question": "爆炸引起火灾，是否可先扑救，再隔离火灾点，最后看是否联系消防？",
+          "required": [
+            "fire"
+          ],
+          "lead": "本条要求先隔离火灾点，再扑救。"
+        },
+        {
+          "key": "neighbor_restore",
+          "type": "restoration",
+          "question": "故障开关已隔离，邻近设备也受损不能安全运行，能否把所有其他设备都算非故障直接恢复？",
+          "required": [
+            "associated_damage",
+            "neighbor_unsafe",
+            "restore_healthy"
+          ],
+          "lead": "不能这样认定和恢复。"
+        },
+        {
+          "key": "zero_compare",
+          "type": "clarification",
+          "question": "同样显示电流功率为零，5.9能证明爆炸开关分位，那拒分开关也必然在分位吗？",
+          "required": [
+            "trip_open_zero",
+            "locate"
+          ],
+          "lead": "不能将爆炸预案的现象外推到拒分断路器。",
+          "tail": "关联5.10.1.2明确：拒分断路器可在合位而电流、功率为零。因此位置判断须核对实际位置，不能只看零值。"
+        },
+        {
+          "key": "gas_thresholds",
+          "type": "source_gap",
+          "question": "仅凭5.9能否给出SF6检测与含氧量“合格”的具体浓度、百分比，并据此代替实际检测？",
+          "required": [
+            "entry_prerequisites"
+          ],
+          "lead": "不能。本节只列出检测合格要求，未列具体浓度或含氧量数值；实际检测仍须完成。"
+        }
+      ],
+      "order_edges": [
+        [
+          "entry_prerequisites",
+          "associated_damage"
+        ],
+        [
+          "locate",
+          "associated_damage"
+        ],
+        [
+          "associated_damage",
+          "report"
+        ]
+      ],
+      "branches": [
+        "室内检查必须先满足防护、强制排风15分钟和SF6/含氧量检测合格",
+        "有火灾先隔离火灾点再扑救；相邻设备受损不安全申请停运；健康设备按指令恢复"
+      ]
+    },
+    {
+      "id": "breaker_protection_action",
+      "title": "断路器保护动作：无明显异常不等于保护误动",
+      "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月） 9.4",
+      "source_unit_ids": [
+        "d_98d56bcdf4e49412/clause/9.4",
+        "d_98d56bcdf4e49412/clause/9.4.1",
+        "d_98d56bcdf4e49412/clause/9.4.1.1",
+        "d_98d56bcdf4e49412/clause/9.4.1.2",
+        "d_98d56bcdf4e49412/clause/9.4.2",
+        "d_98d56bcdf4e49412/clause/9.4.2.1",
+        "d_98d56bcdf4e49412/clause/9.4.2.2",
+        "d_98d56bcdf4e49412/clause/9.4.2.3",
+        "d_98d56bcdf4e49412/clause/9.4.2.4",
+        "d_98d56bcdf4e49412/clause/9.4.2.5",
+        "d_98d56bcdf4e49412/clause/9.4.2.6",
+        "d_98d56bcdf4e49412/clause/9.4.2.7"
+      ],
+      "source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 196,
+          "end": 212
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 212,
+          "end": 221
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 221,
+          "end": 250
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 250,
+          "end": 275
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 275,
+          "end": 284
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 284,
+          "end": 306
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 306,
+          "end": 353
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 353,
+          "end": 387
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 387,
+          "end": 434
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 434,
+          "end": 472
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 472,
+          "end": 536
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page54",
+          "start": 536,
+          "end": 593
+        }
+      ],
+      "context_source_spans": [
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 33,
+          "end": 44
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 44,
+          "end": 70
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 70,
+          "end": 88
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 88,
+          "end": 125
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 125,
+          "end": 164
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 164,
+          "end": 234
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 669,
+          "end": 706
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 706,
+          "end": 739
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 739,
+          "end": 769
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 769,
+          "end": 804
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 804,
+          "end": 841
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page12",
+          "start": 572,
+          "end": 669
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page2",
+          "start": 0,
+          "end": 312
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp74_93",
+          "start": 0,
+          "end": 19
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp94_98",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp99_112",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp113_121",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp290_297",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp2275_2313",
+          "start": 0,
+          "end": 14
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp20268_20275",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21938_21993",
+          "start": 0,
+          "end": 55
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp21994_22015",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22016_22042",
+          "start": 0,
+          "end": 26
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22043_22066",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "source_id": "d_4b964d3ff677714b",
+          "block_id": "cp22067_22091",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 90,
+          "end": 103
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 103,
+          "end": 177
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 177,
+          "end": 237
+        },
+        {
+          "source_id": "d_98d56bcdf4e49412",
+          "block_id": "page14",
+          "start": 237,
+          "end": 319
+        }
+      ],
+      "facts": [
+        {
+          "id": "signal",
+          "quote": "9.4.1.1事件记录发断路器保护动作信号；",
+          "text": "事件记录出现断路器保护动作信号。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.4.1.1"
+        },
+        {
+          "id": "trip",
+          "quote": "9.4.1.2相应断路器动作跳闸。",
+          "text": "相应断路器动作跳闸。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.4.1.2"
+        },
+        {
+          "id": "report",
+          "quote": "9.4.2.1汇报调度和领导；",
+          "text": "汇报调度和领导。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.4.2.1"
+        },
+        {
+          "id": "secondary_info",
+          "quote": "9.4.2.2检查保护装置运行情况，并查看装置动作报告、故障录波，记录报警信息；",
+          "text": "检查保护装置运行情况，查看动作报告和故障录波，记录报警信息。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.4.2.2"
+        },
+        {
+          "id": "actual_position",
+          "quote": "9.4.2.3检查一次设备动作情况，确认开关实际位置；",
+          "text": "检查一次设备动作情况，确认开关实际位置。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.4.2.3"
+        },
+        {
+          "id": "mode_report",
+          "quote": "9.4.2.4向调度、领导详细汇报设备检查情况，并根据调度命令调整系统运行方式；",
+          "text": "向调度和领导详细汇报设备检查情况，根据调度命令调整系统运行方式。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.4.2.4"
+        },
+        {
+          "id": "transmit",
+          "quote": "9.4.2.5整理故障录波、事件记录，并传真至相关调度和部门；",
+          "text": "整理故障录波和事件记录，传真至相关调度和部门。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.4.2.5"
+        },
+        {
+          "id": "misoperation",
+          "quote": "9.4.2.6若检查站内一次设备无明显异常，经检修人员确认为开关保护误动，则申请调度",
+          "text": "站内一次设备无明显异常，并经检修人员确认为开关保护误动时，申请调度退出该保护，由检修人员处理；无明显异常只是其中一个前提，不代替检修确认。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.4.2.6"
+        },
+        {
+          "id": "primary_fault",
+          "quote": "9.4.2.7若检查站内一次设备异常，则申请调度将该开关转检修并做好安全措施通知检修",
+          "text": "检查发现站内一次设备异常时，申请调度将该开关转检修，做好安全措施并通知检修人员处理。",
+          "source_unit_id": "d_98d56bcdf4e49412/clause/9.4.2.7"
+        }
+      ],
+      "questions": [
+        {
+          "key": "whole",
+          "type": "full_chain",
+          "question": "断路器保护动作后，如何核查、提交材料，并区分保护误动与一次设备异常处理？",
+          "required": [
+            "signal",
+            "trip",
+            "report",
+            "secondary_info",
+            "actual_position",
+            "mode_report",
+            "transmit",
+            "misoperation",
+            "primary_fault"
+          ],
+          "lead": "本题概括所列专项条款；公共事故处理原则共同适用。 国调管辖系统事故还须按2.2.4立即汇报概况，查明后尽快详细汇报；下述查因后汇报检查结果不能替代事故初报。"
+        },
+        {
+          "key": "normal_not_confirmed",
+          "type": "false_premise",
+          "question": "一次设备检查无明显异常，尚未由检修确认误动，可以直接退出开关保护吗？",
+          "required": [
+            "misoperation"
+          ],
+          "lead": "尚不满足本条误动处理前提，也不能据此直接退出保护。"
+        },
+        {
+          "key": "abnormal_primary",
+          "type": "conditional_branch",
+          "question": "保护动作后发现一次设备异常，应继续按保护误动退出保护，还是按另一分支？",
+          "required": [
+            "primary_fault"
+          ],
+          "lead": "应按一次设备异常分支处理。"
+        },
+        {
+          "key": "report_material",
+          "type": "evidence_submission",
+          "question": "保护动作后，只有开关跳闸的监控截图，应补哪些检查、报告与材料？",
+          "required": [
+            "report",
+            "secondary_info",
+            "actual_position",
+            "mode_report",
+            "transmit"
+          ]
+        },
+        {
+          "key": "reclose_after_withdraw",
+          "type": "source_gap",
+          "question": "已按调度申请退出误动开关保护，9.4是否就完整给出了检修后复役操作票，可以直接合闸？",
+          "required": [
+            "misoperation"
+          ],
+          "lead": "不能从这一步推出直接合闸。9.4未给出完整检修后复役操作票，须另查相应运行规定和操作票。"
+        },
+        {
+          "key": "dispatch_mode",
+          "type": "false_premise",
+          "question": "故障录波整理好了，值班人员是否可以自行按经验调整系统运行方式，再报告调度？",
+          "required": [
+            "mode_report",
+            "transmit"
+          ],
+          "lead": "不能仅因资料已整理而把本条要求的调度命令改成事后报告。"
+        }
+      ],
+      "order_edges": [
+        [
+          "secondary_info",
+          "mode_report"
+        ],
+        [
+          "actual_position",
+          "mode_report"
+        ]
+      ],
+      "branches": [
+        "一次设备无明显异常且检修确认误动才申请退出保护",
+        "一次设备异常申请开关转检修、安全措施及检修处理"
+      ]
+    }
+  ]
+}

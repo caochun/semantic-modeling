@@ -1,0 +1,234 @@
+{
+  "operation_abnormal": {
+    "facts": [
+      {
+        "fact_id": "stop",
+        "verdict": "supported",
+        "reason": "原文明确'应立即停止操作，禁止跳项操作'，与事实一致。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp20383_20567:0:184"
+        ]
+      },
+      {
+        "fact_id": "check_report",
+        "verdict": "supported",
+        "reason": "原文完整覆盖核对内容、汇报对象（当值调控人员和班组长或运维专职）、现场等待上级指令、暂停录音、备注栏记录及通知检修人员到场，各要素一致。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp20383_20567:0:184"
+        ]
+      },
+      {
+        "fact_id": "affected_report",
+        "verdict": "supported",
+        "reason": "原文明确按调度管辖范围向相应值班调度员汇报，且影响其他设备安全运行时还需向受影响设备对应调度汇报。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp20276_20373:0:97"
+        ]
+      },
+      {
+        "fact_id": "permit",
+        "verdict": "supported",
+        "reason": "原文明确检修人员到场后填写工作单，运行人员做好安全措施并许可（录音）后方可开始工作。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp20568_20627:0:59"
+        ]
+      },
+      {
+        "fact_id": "copies",
+        "verdict": "supported",
+        "reason": "原文明确一式两份、运维检修各存一份，填写使用保存参照工作票管理。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp20628_20682:0:54"
+        ]
+      },
+      {
+        "fact_id": "supervise",
+        "verdict": "supported",
+        "reason": "原文明确双监护及设备试操作由检修人员在当班运行正值监护下进行。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp20683_20726:0:43"
+        ]
+      },
+      {
+        "fact_id": "unlock",
+        "verdict": "supported",
+        "reason": "原文明确由现场运行人员履行解锁操作程序后解锁，禁止任何人擅自使用万能钥匙解锁。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp20727_20805:0:78"
+        ]
+      },
+      {
+        "fact_id": "conclusion",
+        "verdict": "supported",
+        "reason": "原文明确检修工作负责人填写结论、明确是否可继续操作意见，许可人与检修工作负责人分别签名。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp20806_20881:0:75"
+        ]
+      },
+      {
+        "fact_id": "restore",
+        "verdict": "supported",
+        "reason": "原文完整覆盖：结论为异常已消除设备恢复正常操作、汇报调度得到许可、重新核对、重新开启录音、恢复操作、备注栏记录恢复时间，各要素一致。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp20882_20996:0:114"
+        ]
+      },
+      {
+        "fact_id": "unresolved",
+        "verdict": "supported",
+        "reason": "原文明确结论为异常暂时无法消除设备不能继续操作时，向调度申请转检修，转为缺陷处理程序。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp20997_21076:0:79"
+        ]
+      }
+    ],
+    "source_conflicts": []
+  },
+  "control_single_failure": {
+    "facts": [
+      {
+        "fact_id": "report",
+        "verdict": "supported",
+        "reason": "原文8.2.2.1明确'汇报调度及领导'，事实表述一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page50:583:972"
+        ]
+      },
+      {
+        "fact_id": "standby",
+        "verdict": "supported",
+        "reason": "原文明确'只能有一个系统是ACTIVE状态''只能切换至正处于STANDBY状态的系统，不能切换至处于其他状态的系统'。",
+        "evidence_ids": [
+          "d_c4cb0963bdc8968a/p1353:0:96"
+        ]
+      },
+      {
+        "fact_id": "switch",
+        "verdict": "supported",
+        "reason": "原文8.2.2.2内容与事实一致，'切换目标的状态限制另见前述《设备概况》规定'为跨文档补充说明，与《设备概况》原文相符。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page50:583:972",
+          "d_c4cb0963bdc8968a/p1353:0:96"
+        ]
+      },
+      {
+        "fact_id": "unavailable",
+        "verdict": "supported",
+        "reason": "原文8.2.2.3'若B系统不可用（未处于备用状态），则A系统继续在运行状态'，与事实表述一致；'不能把B当作可用切换目标'是对原文的合理转述。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page50:583:972"
+        ]
+      },
+      {
+        "fact_id": "inspect",
+        "verdict": "supported",
+        "reason": "原文8.2.2.4与事实表述一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page50:583:972"
+        ]
+      },
+      {
+        "fact_id": "restart",
+        "verdict": "supported",
+        "reason": "原文8.2.2.5明确'若为主机故障，通知检修人员到场进行一次重启'，'一次'次数表述一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page50:583:972"
+        ]
+      },
+      {
+        "fact_id": "test",
+        "verdict": "supported",
+        "reason": "原文8.2.2.6'重启不成功或板卡故障，向调度申请将故障系统换至试验状态，通知检修人员处理'，与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page51:0:54"
+        ]
+      }
+    ],
+    "source_conflicts": []
+  },
+  "internal_cooling_leak": {
+    "facts": [
+      {
+        "fact_id": "stable",
+        "verdict": "supported",
+        "reason": "与10.3.2.1一致：水位正常且无下降趋势时通知检修人员查找报警原因。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page63:159:898"
+        ]
+      },
+      {
+        "fact_id": "slow",
+        "verdict": "supported",
+        "reason": "与10.3.2.2完全一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page63:159:898"
+        ]
+      },
+      {
+        "fact_id": "valve_hall",
+        "verdict": "supported",
+        "reason": "与10.3.2.3一致，包括两个分支的领导批准条件。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page63:159:898"
+        ]
+      },
+      {
+        "fact_id": "leak_isolation",
+        "verdict": "supported",
+        "reason": "与10.3.2.4一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page63:159:898"
+        ]
+      },
+      {
+        "fact_id": "tower",
+        "verdict": "supported",
+        "reason": "与10.3.2.5一致，含备用冗余条件和隔离后通知检修。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page63:159:898"
+        ]
+      },
+      {
+        "fact_id": "pump",
+        "verdict": "supported",
+        "reason": "与10.3.2.6一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page63:159:898"
+        ]
+      },
+      {
+        "fact_id": "pump_power",
+        "verdict": "supported",
+        "reason": "10.4.2.2与10.4.2.6支持该限制条件；fact对10.4其他分支的排除性说明为限定表述，未引入矛盾。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:0:368"
+        ]
+      },
+      {
+        "fact_id": "restore",
+        "verdict": "supported",
+        "reason": "与10.3.2.8一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page63:159:898"
+        ]
+      },
+      {
+        "fact_id": "rapid",
+        "verdict": "supported",
+        "reason": "与10.3.2.9一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page63:159:898"
+        ]
+      },
+      {
+        "fact_id": "duplicate",
+        "verdict": "supported",
+        "reason": "原文10.3.2.7明确标注与10.3.2.3重复，未定义新动作。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page63:159:898"
+        ]
+      }
+    ],
+    "source_conflicts": []
+  }
+}

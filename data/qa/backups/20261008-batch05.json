@@ -1,0 +1,13 @@
+{
+  "path": ".semantic/qa_quality_coverage_20261008_batch05_bundle.zip",
+  "bytes": 34481281,
+  "sha256": "e3c541939f8351b7bae9fb3fa4feaed8bab0a22d17f15a60bc725763f5dc63a7",
+  "entries": 431,
+  "verified_current_files": 94,
+  "qa": 180,
+  "new_batch_qa": 53,
+  "whole_source_units_reviewed": 235,
+  "raw_documents_included": false,
+  "credentials_included": false,
+  "new_training_export": false
+}

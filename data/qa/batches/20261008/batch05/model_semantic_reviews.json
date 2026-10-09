@@ -1,0 +1,1472 @@
+[
+  {
+    "id": "bipole_block/whole",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答补充'2.2.5紧急操作是否适用以规程规定为准'的说明，属扩展限定，候选未含，不算遗漏"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page16:710:748",
+      "d_98d56bcdf4e49412/page16:748:769",
+      "d_98d56bcdf4e49412/page16:769:801",
+      "d_98d56bcdf4e49412/page16:801:827",
+      "d_98d56bcdf4e49412/page16:827:856",
+      "d_98d56bcdf4e49412/page17:0:42",
+      "d_98d56bcdf4e49412/page17:42:73",
+      "d_98d56bcdf4e49412/page17:73:134",
+      "d_98d56bcdf4e49412/page17:134:181",
+      "d_98d56bcdf4e49412/page17:181:225"
+    ],
+    "reason": "答案各段均有3.2.1、3.2.2原文对应；现象与处理顺序与原文一致。引导语'不同状态分别选择分支'表述与full_chain题型不完全贴切但无实质错误。",
+    "suggested_revision": "可将引导语改为'依据3.2双极闭锁处理预案，现象与处理要点如下'，避免无分支却称'选择分支'。"
+  },
+  {
+    "id": "bipole_block/filters_assumed",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page16:827:856",
+      "d_98d56bcdf4e49412/page17:42:73"
+    ],
+    "reason": "现象条款与核查条款均有原文依据，结论'应按检查要求核实'与原文一致；复答结论一致。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "bipole_block/dc_power_only",
+    "verdict": "revise",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "fail",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [
+      "verify_filters"
+    ],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答补出'检查交流滤波器是否全部退出运行（3.2.2.2）'，该条属于交流侧检查要求，候选遗漏"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page17:0:42",
+      "d_98d56bcdf4e49412/page17:42:73",
+      "d_98d56bcdf4e49412/page17:73:134",
+      "d_98d56bcdf4e49412/page17:134:181"
+    ],
+    "reason": "问题问交流侧还需检查什么，3.2.2.2交流滤波器核查属交流侧检查项，候选未列入，覆盖不全。",
+    "suggested_revision": "在答案中增加'检查交流滤波器是否全部退出运行'（对应fact verify_filters）。"
+  },
+  {
+    "id": "bipole_block/not_single_pole",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答引用3.3.1.2（功率转移至另一极）作对比，该内容在扩展上下文中有原文依据（page17:285:320），候选虽未引用但不构成遗漏"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page16:748:769",
+      "d_98d56bcdf4e49412/page16:769:801",
+      "d_98d56bcdf4e49412/page16:801:827"
+    ],
+    "reason": "结论'不能套用单极分支'由双极闭锁、双极均隔离、所有交流开关跳闸的事实支撑，与3.3现象区分成立。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "bipole_block/restore_without_repair",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答补充2.1.3'尽快恢复设备送电'原则性讨论并说明推断边界，属额外限定说明，候选保守表述'不能补写恢复操作'可接受"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page17:181:225",
+      "d_98d56bcdf4e49412/page17:73:134",
+      "d_98d56bcdf4e49412/page17:134:181"
+    ],
+    "reason": "3.2节处置终点为隔离、转检修、通知检修人员，原文无恢复送电步骤，候选'不支持直接恢复'结论忠实；尾句为查阅指引而非事实断言。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "bipole_block/blackstart_not_implied",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page16:748:769",
+      "d_98d56bcdf4e49412/page17:0:42",
+      "d_98d56bcdf4e49412/page17:73:134",
+      "d_98d56bcdf4e49412/page16:59:113"
+    ],
+    "reason": "候选仅断言'不能仅凭双极闭锁认定全站失电'，与3.1.1.1黑启动现象（站用电全停、交流系统失电）和3.2.2检查要求相符；3.2现象确无站用电全停表述。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "single_converter_block/whole",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答补充了3.4.2各步骤的原文编号引用及主控站临时转换等背景，与候选事实一致，无实质分歧"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page17:687:724",
+      "d_98d56bcdf4e49412/page17:724:758",
+      "d_98d56bcdf4e49412/page17:758:789",
+      "d_98d56bcdf4e49412/page17:789:817",
+      "d_98d56bcdf4e49412/page17:826:870",
+      "d_4b964d3ff677714b/cp44192_44290:0:98",
+      "d_98d56bcdf4e49412/page17:870:926",
+      "d_98d56bcdf4e49412/page17:926:1018",
+      "d_98d56bcdf4e49412/page18:0:46",
+      "d_98d56bcdf4e49412/page18:46:92"
+    ],
+    "reason": "全部10条事实均被原文逐条支持；master_emergency→overload_scope顺序在答案第6、7条满足；引导语明确区分现象核对、条件分支与紧急操作的不可延迟性，编号不当作操作票的提示恰当；引导语中‘国调管辖系统事故立即首报’出自2.2.4（page12:572:669），在提供上下文内，未构成无依据扩展；未发现无依据的数字、权限或恢复结论。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "single_converter_block/only_other_pole",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答补充3.4.2.1为无条件检查项，候选未列该条，但对本题（是否需查本极换流器负荷）非必需事实，属增强而非矛盾"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page17:724:758",
+      "d_98d56bcdf4e49412/page17:870:926"
+    ],
+    "reason": "假前提问题纠正正确：3.4.2.2原文明确并列‘本极另一台换流器或另一极’两类过负荷对象，候选答案‘还要考虑本极仍运行的换流器’及所引两条事实均有原文支持，未越权扩大结论。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "single_converter_block/all_filters_out",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "无实质分歧；复答详细对比3.2与3.4现象范围及滤波器措辞差异，均有原文依据"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page17:758:789",
+      "d_98d56bcdf4e49412/page17:789:817",
+      "d_98d56bcdf4e49412/page17:826:870",
+      "d_98d56bcdf4e49412/page16:748:856",
+      "d_98d56bcdf4e49412/page16:827:856"
+    ],
+    "reason": "假前提问题纠正正确：单换流器闭锁（3.4.1）仅故障换流器开关跳闸锁定并退至隔离，3.4.2.1仅要求‘检查滤波器退出情况’而非认定全部退出，候选答案与事实及原文一致；复答引用的3.2.1.3/3.2.1.5等对比条目均在提供上下文内。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "single_converter_block/master_overload",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "无实质分歧；复答补充主控站上半年归属及国调可下令非主控站的背景均出自提供上下文cp41379_41474、cp41578_41671，有依据"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp44192_44290:0:98",
+      "d_98d56bcdf4e49412/page17:870:926"
+    ],
+    "reason": "答案明确‘不待调度指令立即控制功率并立即汇报’优先于等待方式调整，与第三分册原文完全一致；master_emergency→overload_scope顺序满足；两分册条款被正确表述为衔接关系而非替代，未发生版本/实体混淆。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "single_converter_block/maintenance_scope",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "无实质分歧；复答对比3.2.2.5、3.3.2.5的转检修范围均有原文依据"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page18:46:92",
+      "d_98d56bcdf4e49412/page17:789:817",
+      "d_98d56bcdf4e49412/page17:181:225",
+      "d_98d56bcdf4e49412/page17:584:627",
+      "d_98d56bcdf4e49412/page17:870:926"
+    ],
+    "reason": "3.4.2.5原文明确仅‘故障换流器（设备）转至检修’，候选答案正确限定范围并以3.4.1.4隔离状态佐证；复答中过负荷处理‘调功率而非扩大检修范围’的结论为对两条款的正确归纳，无无依据权限或恢复结论。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "single_converter_block/restore_after_isolation",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "无实质分歧；复答补充第三分册在线投入功率条件（cp49000_49096）恰当地说明了3.4之外的缺口，并明示在线投入详细操作不在片段内、建议查规程相应章节，未杜撰恢复步骤"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page18:46:92",
+      "d_4b964d3ff677714b/cp49000_49096:0:96",
+      "d_4b964d3ff677714b/cp44192_44290:0:98"
+    ],
+    "reason": "source_gap问题处理正确：候选仅凭maintenance事实回答‘不能给出完整重新投入流程’，引导语直接回应；复答列出3.4终点为转检修并引用第三分册在线投入功率条件证明3.4未涵盖，同时标注‘本检索片段中未见’操作细节，属诚实的缺口声明而非编造。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "pole_block_and_ground_current/whole",
+    "verdict": "revise",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "fail",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [
+      "第14条含‘不能将核实转换条件简化成只看开关位置’，该否定性推论在原文无出处，事实核验亦判ambiguous；第5条‘该授权对象是主控站值班员’后半句为原文隐含，可接受但需以原文‘主控站值班员应不待调度指令’锚定；引导语中‘国调管辖系统事故立即首报概况，查明后尽快详细汇报’有2.2.4原文支持，属允许的扩展"
+    ],
+    "reanswer_disagreements": [
+      "独立复答补充了接地极线路3300A/3000A/2700A支路断线规定（cp47442），非本链必答事实，不构成候选缺失"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page17:248:663",
+      "d_4b964d3ff677714b/cp44192_44290:0:98",
+      "d_4b964d3ff677714b/cp47550_47813:0:263",
+      "d_4b964d3ff677714b/cp42776_42910:0:134",
+      "d_4b964d3ff677714b/cp43073_43165:0:92",
+      "d_98d56bcdf4e49412/page12:572:669"
+    ],
+    "reason": "全链覆盖完整、分支标注清晰、顺序边满足；但答案第14条沿用shared_ground_check事实中被核验为ambiguous的推论‘不能将核实转换条件简化成只看开关位置’，原文无此论断，属无据否定性表述，须删除或改为仅保留‘转换前应确认共用接地极电流不超限值’。",
+    "suggested_revision": "删除第14条后半句推论；引导语保留原文支持内容即可。"
+  },
+  {
+    "id": "pole_block_and_ground_current/transfer_is_safe",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "独立复答额外引用第三分册主控站不待指令控功率、3000A限值及2小时要求，属题干关联背景的合理补充而非候选缺失；候选在聚焦题范围内已覆盖前提驳斥与必查项，无须复述全链。"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page17:285:320",
+      "d_98d56bcdf4e49412/page17:388:432",
+      "d_98d56bcdf4e49412/page17:432:476",
+      "d_98d56bcdf4e49412/page17:627:663"
+    ],
+    "reason": "假前提被正确否定，‘全部或部分’不定表述的驳斥有原文语义支撑，必答四项事实齐备且均supported。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "pole_block_and_ground_current/master_waits",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答补充3.3.2.6及接地极关联要求，属补充而非分歧；候选已含顺序边要求的先不待指令控功率、后申请方式调整。"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp44192_44290:0:98",
+      "d_98d56bcdf4e49412/page17:432:476"
+    ],
+    "reason": "条件分支题答案正确：不待指令立即控功率并汇报，方式调整另行申请，权限与时限与原文一致。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "pole_block_and_ground_current/unknown_master",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答引用主控轮换（cp41379）、国调直接下令非主控站（cp41578）具体条款，与候选尾句概括一致，无实质分歧。"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp44192_44290:0:98",
+      "d_4b964d3ff677714b/cp41379_41474:0:107",
+      "d_4b964d3ff677714b/cp41578_41671:0:93"
+    ],
+    "reason": "前提题处理正确：不能仅凭站名套用主控站授权；尾句关于主控轮换与国调直接下令/临时转换的表述均有第三分册原文支持。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "pole_block_and_ground_current/two_hours_not_wait",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答对‘2小时为完成时限上限而非等待期’的解释与候选‘立即动作不能被2小时时限替代’语义一致。"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp47550_47813:0:263"
+    ],
+    "reason": "假前提正确否定：该分支终点为立即限流，2小时为上限，与原文措辞一致。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "pole_block_and_ground_current/line_fault_olt",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答补充3.3.2.5、master_emergency等背景，与候选一致：恢复闭锁极以OLT试验成功为前提，否则立即限流。"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp47550_47813:0:263"
+    ],
+    "reason": "分支条件处理正确，未编造‘直接恢复’依据，恢复结论限定于试验成功前提。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "pole_block_and_ground_current/changed_failure_cause",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答与候选结论一致：按最新信息切换至线路故障分支，立即限流，不可沿用金属回线建议。"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp47550_47813:0:263"
+    ],
+    "reason": "多轮题正确依赖历史并按新条件重选分支，standalone_question已重写为可独立理解，处理结论与原文一致。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "pole_block_and_ground_current/maximum_power_number",
+    "verdict": "hold",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答进一步引用OLT状态条款（cp45773、cp172188）佐证操作票不完整，与候选‘未给出完整OLT操作票’结论一致。"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp44192_44290:0:98",
+      "d_4b964d3ff677714b/cp47550_47813:0:263"
+    ],
+    "reason": "source_gap题正确：给定条款无统一MW值与完整OLT操作票，候选未编造数字，两处事实均有原文支持。",
+    "suggested_revision": "",
+    "format_issues": {
+      "unknown_check_fields": {
+        "restoration_note": "不适用"
+      }
+    },
+    "provider_checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "restoration_note": "不适用",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    }
+  },
+  {
+    "id": "dc_line_restart_boundary/whole",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答补充了7.8细节、重启非故障阀组4条件及2.2.5事后汇报要求，属扩展非矛盾；候选已声明不展开7.8细节，边界一致"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page55:94:497",
+      "d_4b964d3ff677714b/cp107245_107436",
+      "d_4b964d3ff677714b/cp123914_123965",
+      "d_4b964d3ff677714b/cp176281_176301"
+    ],
+    "reason": "15条必答事实全部有原文支持；开头明确分支选择而非串行执行；降压冲突以边界声明处理，未编造操作；引导语与尾句无越权结论",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_line_restart_boundary/restart_success_is_end",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答一致并补充测距核对要求，与候选不矛盾"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page55:157:344"
+    ],
+    "reason": "假前提题正确否定；4条事实覆盖题干要求的录波、过负荷、极母线核查；未添加无依据内容",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_line_restart_boundary/communication_attempts",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答结论一致：通信故障1次原压、0次降压；候选为忠实原文表述"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp107245_107341"
+    ],
+    "reason": "分支题正确按通信故障例外回答；未引入无依据次数",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_line_restart_boundary/live_work_one_function",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答推断reboot退出对带电作业人身安全构成威胁，属合理风险解释且未改变结论"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp107392_107436",
+      "d_4b964d3ff677714b/cp107342_107368",
+      "d_4b964d3ff677714b/cp107369_107391"
+    ],
+    "reason": "假前提题正确判定不满足；权限归属（国调许可、整流站操作）均有原文依据",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_line_restart_boundary/local_disable",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答推断建昌为整流站（依据D.4潮流方向），属合理关联且标注了推理来源，不构成候选遗漏"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp107342_107368",
+      "d_4b964d3ff677714b/cp107369_107391"
+    ],
+    "reason": "前置条件题正确回答本站不可自行操作；两条事实均有原文逐字支持；候选谨慎不越权",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_line_restart_boundary/obvious_equipment",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答一致并引2.1原则佐证，候选以文档边界处理7.8引用更稳妥"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page55:318:453"
+    ],
+    "reason": "分支题正确按明显异常分支回答；停运申请权限表述（经领导批准申请调度）与原文一致",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_line_restart_boundary/reduced_voltage_conflict",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答明确指出两册矛盾并给出'建议到调度为止'的处理，与候选边界声明一致"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page55:453:497",
+      "d_4b964d3ff677714b/cp176281_176301",
+      "d_4b964d3ff677714b/cp107245_107341"
+    ],
+    "reason": "来源缺口题正确拒绝给出降压操作步骤；三条事实原文支持；未编造裁决结论",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_line_restart_boundary/measurement_peer",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答结论一致：仅本站测距不满足，须与对站核对并汇报调度"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page55:252:318",
+      "d_4b964d3ff677714b/cp123914_123965"
+    ],
+    "reason": "两条事实分别对应第五分册测距查看和第三分册核对汇报要求，覆盖完整",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_line_restart_boundary/frequency_numeric",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答结论一致：9.6无量化判据，降压为建议且建苏无降压方式"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page55:453:497",
+      "d_4b964d3ff677714b/cp176281_176301"
+    ],
+    "reason": "正确指出9.6无固定秒数/次数判据，且不能把'建议调度'当作自动启用许可；未编造数字",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_power_rundown/whole",
+    "verdict": "revise",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "fail",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [
+      "尾句中'ABS等限制变化'：原文（cp50255）仅表述为'绝对最小滤波器不满足等导致直流系统限制发生变化'，未出现'ABS'术语；且该尾句内容（功率计划曲线预设值核查）不在已列事实内，虽可由上下文cp50255支持，但属于计划外补充"
+    ],
+    "reanswer_disagreements": [
+      "独立复答补充了2.1、6.15.1、9.15等上下文内容并有'第三分册未提供建苏直流接地极电流限值之外相关恢复数值要求'的说明，与候选结构不同但结论一致；复答自身未构成错误"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page18:118:192",
+      "d_98d56bcdf4e49412/page18:192:217",
+      "d_98d56bcdf4e49412/page18:217:251",
+      "d_98d56bcdf4e49412/page18:260:282",
+      "d_98d56bcdf4e49412/page18:282:325",
+      "d_98d56bcdf4e49412/page18:325:370",
+      "d_98d56bcdf4e49412/page18:370:443",
+      "d_98d56bcdf4e49412/page18:548:591",
+      "d_98d56bcdf4e49412/page41:198:254",
+      "d_98d56bcdf4e49412/page18:443:548",
+      "d_4b964d3ff677714b/cp75721_75736:0:15",
+      "d_4b964d3ff677714b/cp75737_75755:0:18",
+      "d_4b964d3ff677714b/cp75756_75797:0:41",
+      "d_4b964d3ff677714b/cp75798_75821:0:23",
+      "d_4b964d3ff677714b/cp76488_76520:0:32",
+      "d_4b964d3ff677714b/cp76521_76641:0:120",
+      "d_4b964d3ff677714b/cp76642_76702:0:60",
+      "d_4b964d3ff677714b/cp74857_74904:0:47"
+    ],
+    "reason": "18条事实全部有原文支持，分支与顺序表述正确，多册未混用版本。但尾句出现原文没有的'ABS'术语，且功率计划曲线核查内容超出事实清单（可由cp50255支持但未列入事实），构成无来源术语和计划外补充。",
+    "suggested_revision": "尾句删除'ABS'改为'绝对最小滤波器等限制变化'，并将该句对应evidence（d_4b964d3ff677714b/cp50255_50335:0:80）补入或直接删去尾句。"
+  },
+  {
+    "id": "dc_power_rundown/recover_before_filter",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答补充'先恢复功率再补投将出现绝对最小滤波器组数不满足'属合理蕴含性推断，候选本身无此问题"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page18:443:548",
+      "d_98d56bcdf4e49412/page41:198:254"
+    ],
+    "reason": "题设条件明确排除禁令与前提不符项，答案正确给出先投后申请恢复的顺序及不可用分支；尾句同上题应修正'ABS'术语问题在本题同样存在（尾句内容一致）。",
+    "suggested_revision": "如需严格，将尾句'ABS'改为'绝对最小滤波器'；不影响核心结论。"
+  },
+  {
+    "id": "dc_power_rundown/hot_standby_five_min",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答进一步建议走'备用不可用→申请降功率至报警复归'分支，属合理延伸，候选仅回答能否立即投入亦正确"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp75721_75736:0:15",
+      "d_4b964d3ff677714b/cp75737_75755:0:18",
+      "d_4b964d3ff677714b/cp75756_75797:0:41",
+      "d_4b964d3ff677714b/cp75798_75821:0:23",
+      "d_4b964d3ff677714b/cp76642_76702:0:60"
+    ],
+    "reason": "退出5分钟不满足'超过10min'与放电时间10分钟要求，四项可用条件列举齐全，均有原文支持。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_power_rundown/still_ramping",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答补充'功率回降属功率升降过程'的语义解释及待回降结束再操作的处置路径，与候选'不能在功率升降期间手动投切'结论一致"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp76488_76520:0:32",
+      "d_98d56bcdf4e49412/page18:443:548"
+    ],
+    "reason": "第三分册明文禁止功率升降期间手动投切交流滤波器，答案正确；并补充正常分支顺序。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_power_rundown/no_available_backup",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "无实质分歧"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page18:443:548"
+    ],
+    "reason": "备用不可用分支明确为'向调度申请降低功率直至报警复归'，答案正确否定了恢复原功率的做法。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_power_rundown/water_not_confirmed",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "无实质分歧；复答明确指出未提供主泵故障判定条文，候选答案同样未做无依据推断"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page18:325:370",
+      "d_98d56bcdf4e49412/page18:370:443"
+    ],
+    "reason": "3.5.2.3/3.5.2.4规定的顺序是先检查阀水冷系统，确认异常后才执行对应预案；不能由温度偏高直接判定主泵故障，答案与原文一致且未越权。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_power_rundown/ground_not_filter",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "无实质分歧"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page18:548:591",
+      "d_98d56bcdf4e49412/page18:443:548"
+    ],
+    "reason": "3.5.2.6明确接地极过负荷应汇报调度调整运行方式，投备用滤波器仅适用于滤波器跳闸分支，答案正确区分分支。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_power_rundown/backup_failed_followup",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答补充6.15.2.1、2.1.3、2.2.4关联要求，属上下文合理延伸；候选答案核心结论一致"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp75756_75797:0:41",
+      "d_98d56bcdf4e49412/page18:443:548"
+    ],
+    "reason": "开关锁定信号违反第三分册可用条件（3），该备用不可用；正确改选申请降功率至报警复归分支。历史对话与standalone_question一致，多轮依赖处理正确。尾句'ABS'术语问题与whole题相同。",
+    "suggested_revision": "如需严格，将尾句'ABS'改为'绝对最小滤波器'。"
+  },
+  {
+    "id": "dc_power_rundown/nonmaster_reports",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "无实质分歧"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page18:260:282",
+      "d_4b964d3ff677714b/cp74857_74904:0:47"
+    ],
+    "reason": "第三分册明文规定非主控站应及时通知主控站，答案完整覆盖汇报对象，无多余无据内容。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "minimum_filter_and_rpc/whole",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "独立复答补充了N-1汇报国调/通知主控站、3.5.2.5先投备用再申请恢复功率等关联内容，候选未纳入，但候选已覆盖required_fact_ids全部事实，属可选扩展，不构成遗漏"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page39:743:784",
+      "d_98d56bcdf4e49412/page39:794:925",
+      "d_98d56bcdf4e49412/page40:0:107",
+      "d_4b964d3ff677714b/cp75597_75709:0:112",
+      "d_4b964d3ff677714b/cp76794_76995:0:201",
+      "d_4b964d3ff677714b/cp206303_206482:0:179",
+      "d_4b964d3ff677714b/cp206781_206953:0:172",
+      "d_4b964d3ff677714b/cp207082_207205:0:123",
+      "d_4b964d3ff677714b/cp76488_76520:0:32",
+      "d_4b964d3ff677714b/cp75710_75821:0:23",
+      "d_4b964d3ff677714b/cp76642_76702:0:60"
+    ],
+    "reason": "答案覆盖全部required_fact_ids；分支未串行执行；尾句的手动投切限制（功率升降/方式转换禁止、可用条件、10min、放电时间）均见于第三分册对应段落，有原文依据。事实alarm属跨条款审慎推断，第五分册报警名称与章节标题及第三分册Min/ABS分列定义共同支持，且表述为'不能仅凭'的限定性提醒，风险低。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "minimum_filter_and_rpc/min_equals_abs",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "独立复答一处误写'5.0版第五分册6.11'，实际为6.0版，属复答自身笔误，不来自候选答案；候选无此错误"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp206303_206482:0:179",
+      "d_4b964d3ff677714b/cp206781_206953:0:172",
+      "d_98d56bcdf4e49412/page39:718:925",
+      "d_98d56bcdf4e49412/page40:0:107"
+    ],
+    "reason": "假前提被正确否定：Min与ABS定义、后果、手动模式有效性均由第三分册原文区分；'不能仅凭报警名称认定'为限定性推断且方向正确；未出现无依据的必然回降/停运结论。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "minimum_filter_and_rpc/manual_no_protection",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "独立复答末段推测'1s/5s替换逻辑是否受手动模式影响文档未明确'并自行标注不确定，候选未包含该推测，候选更严谨"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp75597_75709:0:112",
+      "d_4b964d3ff677714b/cp76794_76995:0:201"
+    ],
+    "reason": "假前提正确否定：手动模式下ABS、过电压、Umax/Umin、Qmax仍自动有效，两条事实原文直接支持；候选未越界推断替换时限在手动模式下的适用性。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "minimum_filter_and_rpc/all_checks_normal",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "独立复答额外引用2.2.5紧急操作清单论证投备用不在免申请范围，属扩展论证，与候选结论一致，不冲突"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page39:826:925",
+      "d_98d56bcdf4e49412/page40:0:51",
+      "d_98d56bcdf4e49412/page12:669:841",
+      "d_4b964d3ff677714b/cp21938_22091:0:24",
+      "d_4b964d3ff677714b/cp75710_75821:0:23",
+      "d_4b964d3ff677714b/cp76642_76702:0:60"
+    ],
+    "reason": "6.11.2.4明确'必要时申请调度投入备用交流滤波器'，候选正确指出检查正常不构成免申请许可；紧急操作清单（2.2.5）确认投备用不在自行操作范围，权限结论有据。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "minimum_filter_and_rpc/no_backup",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "独立复答补充3.5.2.5'申请降低功率直至报警复归'说明无固定MW，属有益扩展；候选引导语'未给统一MW值'与两册原文一致"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page39:794:826",
+      "d_98d56bcdf4e49412/page40:51:107",
+      "d_98d56bcdf4e49412/page18:443:548"
+    ],
+    "reason": "6.11.2.5原文要求加快检修恢复备用；候选正确说明本节无统一降功率MW值，未编造数值；分支条件（无备用）正确对应。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "minimum_filter_and_rpc/one_or_five_seconds",
+    "verdict": "hold",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [],
+    "reason": "替换时限按ABS/Min分类（1s/5s）与cp207082原文数字完全一致；候选明确'按需求类型区分'，正确否定'一律'表述。",
+    "suggested_revision": "",
+    "format_issues": {
+      "malformed_provider_json": true
+    }
+  },
+  {
+    "id": "minimum_filter_and_rpc/fixed_groups_delay",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "独立复答补充可确认的时间数值清单（1s/5s、10min）并明确不能混用，与候选结论一致"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp206303_206482:0:179",
+      "d_4b964d3ff677714b/cp206781_206953:0:172",
+      "d_4b964d3ff677714b/cp207206_207263:0:57"
+    ],
+    "reason": "source_gap类问题答案正确：组数按功率等级等查表确定且表未提供；ABS停运延时原文仅称'预先设定的延时'，无固定秒数；候选未虚构数值，并明确区分了已有时间数值的适用边界。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "minimum_filter_and_rpc/manual_changed",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "独立复答补充6.11处置流程收尾，候选以模式限制解释为主，两者一致"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp206781_206953:0:172",
+      "d_4b964d3ff677714b/cp75597_75709:0:112",
+      "d_4b964d3ff677714b/cp76794_76995:0:201",
+      "d_98d56bcdf4e49412/page39:826:925"
+    ],
+    "reason": "多轮历史依赖正确：前轮已埋设'需结合无功控制模式'伏笔，本轮确认RPC手动后正确撤回Min自动补投预期，Min模块手动模式下无效、运行人员承担投切、ABS等高优先级仍有效均有原文依据；standalone_question改写保留了条件与追问语义。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_line_protection_trip/whole",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "独立复答补充了金属回线转换路径（适用于非线路故障情形）及OLT试验VSC状态条件（cp45773、cp172188），候选未包含，但候选答案已覆盖问题所问的恢复依赖条件（OLT试验成功），无冲突"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page55:497:778",
+      "d_4b964d3ff677714b/cp47550_47813:0:263",
+      "d_98d56bcdf4e49412/page12:572:669"
+    ],
+    "reason": "全部9项事实经核验supported；顺序边line_fault_ground→records在答案第6→8步满足；引导语中的分支提示（立即执行不等录波/检修、国调首报后详报）分别有cp47550和page12:572:669原文支撑；分支以条件形式呈现，未串行执行。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_line_protection_trip/signal_isolation_enough",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "独立复答补充2.1.5综合分析判断与2.1.3严防误操作等一般原则，以及现场检查是核实OLT条件的依据，属合理扩展，不与候选冲突"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page55:572:591",
+      "d_98d56bcdf4e49412/page55:677:715"
+    ],
+    "reason": "问题为false_premise型，答案明确否定省略现场检查并引用9.7.2.3原文，引导语准确。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_line_protection_trip/restart_success_branch",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "独立复答明确对比9.6与9.7的差异并引用9.6原文，候选仅隐含区分（lead'应按当前跳闸和隔离状态处理'），语义方向一致但候选可更明确"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page55:525:591",
+      "d_98d56bcdf4e49412/page55:624:677",
+      "d_98d56bcdf4e49412/page55:753:778",
+      "d_98d56bcdf4e49412/page55:94:148"
+    ],
+    "reason": "答案基于9.7现象（Y闭锁/开关跳闸锁定/极隔离）按跳闸预案处理，隐含否定沿用9.6再启动判断；所需事实齐备且与9.6现象差异可由原文确认。",
+    "suggested_revision": "可在引导语中明确'不能沿用9.6再启动成功继续运行的状态判断'，与独立复答结论对齐。"
+  },
+  {
+    "id": "dc_line_protection_trip/other_pole_check",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答补充2小时时限、3000A限值及过负荷不待调度指令控制功率（cp44192），候选lead已含核心否定，无冲突"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page55:624:677",
+      "d_4b964d3ff677714b/cp47550_47813:0:263"
+    ],
+    "reason": "preconditions型题，答案明确否定'不再关注另一极'，引用9.7.2.2原文，覆盖充分。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_line_protection_trip/olt_failure",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "无实质分歧；复答补充'2小时是最迟时限、试验失败要求立即'的解释，与候选lead一致"
+    ],
+    "evidence_ids": [
+      "d_4b964d3ff677714b/cp47550_47813:0:263"
+    ],
+    "reason": "conditional_branch型题，答案准确区分'试验成功才恢复'与'失败立即控制入地电流'，且强调立即性优先于2小时时限，均有原文依据。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_line_protection_trip/return_to_service_ticket",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答详述缺失项（锁定解除步骤、复役操作序列），候选结论一致：不能编写完整操作票"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page55:600:778",
+      "d_4b964d3ff677714b/cp47550_47813:0:263",
+      "d_4b964d3ff677714b/cp172188_172274:0:86",
+      "d_4b964d3ff677714b/cp45773_45796:0:23"
+    ],
+    "reason": "source_gap型题，答案正确声明仅有分支条件与目标状态、无操作票所需具体步骤，与复答结论一致。",
+    "suggested_revision": ""
+  },
+  {
+    "id": "dc_line_protection_trip/submission",
+    "verdict": "pass",
+    "checks": {
+      "question_clear": "pass",
+      "source_support": "pass",
+      "required_coverage": "pass",
+      "condition_branches": "pass",
+      "step_order": "pass",
+      "prohibitions_and_permissions": "pass",
+      "restoration": "pass",
+      "expanded_context": "pass",
+      "history_dependency": "pass"
+    },
+    "missing_fact_ids": [],
+    "unsupported_claims": [],
+    "reanswer_disagreements": [
+      "复答末句'将来地电流'为笔误（应为'入地电流'），不影响候选；复答补充2.1.4时间记录要求及第三分册时限，候选未含但候选答案已覆盖问题所问的报告、记录提交与检修通知"
+    ],
+    "evidence_ids": [
+      "d_98d56bcdf4e49412/page55:600:778",
+      "d_98d56bcdf4e49412/page12:125:164",
+      "d_4b964d3ff677714b/cp47550_47813:0:263"
+    ],
+    "reason": "evidence_submission型题，四个必要事实（汇报、现场检查、录波事件记录传真、通知检修）齐备且顺序合理，lead准确。",
+    "suggested_revision": ""
+  }
+]

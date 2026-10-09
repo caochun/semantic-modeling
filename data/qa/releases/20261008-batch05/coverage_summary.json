@@ -1,0 +1,87 @@
+{
+  "registered_documents": 174,
+  "available_extracted_documents": 17,
+  "independently_cataloged_documents": 2,
+  "documents_with_reviewed_fact_evidence": 3,
+  "reviewed_qa": 180,
+  "reviewed_chain_plans": 27,
+  "fact_plan_entries": 274,
+  "fact_entries_are_not_deduplicated_knowledge": true,
+  "source_units": 19332,
+  "unit_coverage": {
+    "not_applicable": 138,
+    "missing_reviewed_qa": 18932,
+    "reviewed_fact_quote_overlap_partial": 27,
+    "reviewed_against_extracted_unit": 235
+  },
+  "unlinked_reviewed_fact_entries": 1,
+  "business_fact_denominator_status": "not_established",
+  "global_coverage_rate": null,
+  "source_structure_completeness_certified": false,
+  "expert_review": "not_performed",
+  "sources": [
+    {
+      "source_id": "d_98d56bcdf4e49412",
+      "scope": "姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）",
+      "units": 1913,
+      "kinds": {
+        "front_matter": 4,
+        "preface_business_candidate": 1,
+        "table_of_contents": 5,
+        "numbered_container": 626,
+        "numbered_clause": 1277
+      },
+      "unit_coverage": {
+        "not_applicable": 9,
+        "missing_reviewed_qa": 1684,
+        "reviewed_fact_quote_overlap_partial": 18,
+        "reviewed_against_extracted_unit": 202
+      },
+      "toc_entries": 194,
+      "toc_missing_body_heading": [],
+      "unresolved_source_issues": [
+        "sparse_pages_need_visual_check_or_ocr",
+        "pdf_tables_and_diagrams_not_semantically_verified"
+      ],
+      "independent_catalog_findings": [
+        {
+          "block_id": "page5",
+          "finding": "preface_self_description_conflicts_with_volume_title",
+          "note": "前言称本册为设备概况分册，与姑苏站《设备异常及故障应急处置》第五分册6.0版（2025年9月）标题不一致，待核实来源。"
+        }
+      ]
+    },
+    {
+      "source_id": "d_4b964d3ff677714b",
+      "scope": "姑苏站《运行方式及设备运行规定》第三分册6.0版（2026年2月）",
+      "units": 17419,
+      "kinds": {
+        "front_matter": 21,
+        "preface_business_candidate": 8,
+        "table_of_contents": 108,
+        "body_paragraph": 3495,
+        "uninterpreted_table_cell": 13785,
+        "uninterpreted_object_paragraph": 2
+      },
+      "unit_coverage": {
+        "not_applicable": 129,
+        "missing_reviewed_qa": 17248,
+        "reviewed_fact_quote_overlap_partial": 9,
+        "reviewed_against_extracted_unit": 33
+      },
+      "toc_entries": 106,
+      "toc_missing_body_heading": [],
+      "unresolved_source_issues": [
+        "legacy_tables_and_figures_not_interpreted",
+        "automatic_numbering_not_reconstructed"
+      ],
+      "independent_catalog_findings": [
+        {
+          "block_id": "cp1271_1376",
+          "finding": "preface_self_description_conflicts_with_volume_title",
+          "note": "前言称本册为设备概况分册，与姑苏站《运行方式及设备运行规定》第三分册6.0版（2026年2月）标题不一致，待核实来源。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,432 @@
+{
+  "accident_principles": {
+    "facts": [
+      {
+        "fact_id": "limit",
+        "verdict": "supported",
+        "reason": "原文2.1.1明确表述'尽快限制事故扩大，消除人身及设备危险'，与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:44:70"
+        ]
+      },
+      {
+        "fact_id": "station_supply",
+        "verdict": "supported",
+        "reason": "原文2.1.2明确表述'尽力保证恢复站用电源'，与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:70:88"
+        ]
+      },
+      {
+        "fact_id": "restore_without_misoperation",
+        "verdict": "supported",
+        "reason": "原文2.1.3包含及时处理、尽快恢复送电、严防误操作三个要素，事实完整转述。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:88:125"
+        ]
+      },
+      {
+        "fact_id": "record_report",
+        "verdict": "supported",
+        "reason": "原文2.1.4要求记录事故发生和主要操作时间并及时报告有关领导和调度，与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:125:164"
+        ]
+      },
+      {
+        "fact_id": "diagnostic_basis",
+        "verdict": "supported",
+        "reason": "原文2.1.5明确列出表计、保护、报警信号及自动装置动作情况作为分析判断依据并做出处理方案，且要求防止非同期并列和系统事故扩大，事实转述完整。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:164:234"
+        ]
+      }
+    ],
+    "source_conflicts": []
+  },
+  "emergency_authority": {
+    "facts": [
+      {
+        "fact_id": "shift_leader",
+        "verdict": "supported",
+        "reason": "原文1.2.1明确当班值长是安全生产第一负责人，应熟练掌握并组织全值人员贯彻执行本规定，异常或事故时积极组织处理，与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page11:140:213"
+        ]
+      },
+      {
+        "fact_id": "operators",
+        "verdict": "supported",
+        "reason": "原文1.2.2完整支持该表述。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page11:213:348"
+        ]
+      },
+      {
+        "fact_id": "dispatch_commander",
+        "verdict": "supported",
+        "reason": "原文2.2.1首句明确国调值班调度员是国调管辖系统事故处理的指挥者。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:245:292"
+        ]
+      },
+      {
+        "fact_id": "emergency_scope",
+        "verdict": "supported",
+        "reason": "原文2.2.5明确为防止事故扩大可不待调度指令自行进行以下紧急操作。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:669:706"
+        ]
+      },
+      {
+        "fact_id": "danger_stop",
+        "verdict": "supported",
+        "reason": "2.2.5.1原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:706:739"
+        ]
+      },
+      {
+        "fact_id": "damaged_isolation",
+        "verdict": "supported",
+        "reason": "2.2.5.2原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:739:769"
+        ]
+      },
+      {
+        "fact_id": "aux_restore",
+        "verdict": "supported",
+        "reason": "2.2.5.3原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:769:804"
+        ]
+      },
+      {
+        "fact_id": "other_explicit",
+        "verdict": "supported",
+        "reason": "2.2.5.4规定需站规程中明确规定可自行处理者；'非无限授权'是对封闭列举的合理概括，与列举式条文结构一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:804:841"
+        ]
+      },
+      {
+        "fact_id": "after_report",
+        "verdict": "supported",
+        "reason": "另一文档原文明确'可不待国调指令自行进行以下应急操作，但事后应立即向相关调控机构值班调度员汇报'；事实所称文档章节与版本（第三分册6.0版、5.7）与上下文（版本号6.0、二O二六年二月、'5.7 异常及故障处理'）吻合。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp21938_21993:0:55",
+          "d_4b964d3ff677714b/cp113_121:0:8",
+          "d_4b964d3ff677714b/cp290_297:0:7",
+          "d_4b964d3ff677714b/cp2275_2313:0:14"
+        ]
+      },
+      {
+        "fact_id": "safe_isolation",
+        "verdict": "supported",
+        "reason": "原文'（2）确保安全的前提下，将故障停运已损坏的设备隔离'支持该事实。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp22016_22042:0:26"
+        ]
+      },
+      {
+        "fact_id": "national_report",
+        "verdict": "supported",
+        "reason": "原文2.2.4完整支持'立即汇报概况、查明后尽快详细汇报'及所列汇报内容。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:572:669"
+        ]
+      },
+      {
+        "fact_id": "impact_report",
+        "verdict": "supported",
+        "reason": "原文2.2.3完整支持。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:473:572"
+        ]
+      }
+    ],
+    "source_conflicts": [
+      "第五分册2.2.5（2.2.5.1-2.2.5.4）列举可不待调度指令自行处理的事项时未包含'事后立即向调度员汇报'要求，而第三分册5.7的对应列举增加了事后汇报要求且第(2)项增加'确保安全的前提下'限定，两文档对同一事项的表述存在细节差异，属版本/分册间措辞不一致。"
+    ]
+  },
+  "incident_coordination": {
+    "facts": [
+      {
+        "fact_id": "remove_threat",
+        "verdict": "supported",
+        "reason": "原文2.2.1.1完全一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:292:341"
+        ]
+      },
+      {
+        "fact_id": "keep_normal",
+        "verdict": "supported",
+        "reason": "与2.2.1.2表述一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:341:390"
+        ]
+      },
+      {
+        "fact_id": "reparallel",
+        "verdict": "supported",
+        "reason": "与2.2.1.3一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:390:421"
+        ]
+      },
+      {
+        "fact_id": "restore_supply",
+        "verdict": "supported",
+        "reason": "与2.2.1.4一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:421:452"
+        ]
+      },
+      {
+        "fact_id": "normal_grid",
+        "verdict": "supported",
+        "reason": "与2.2.2一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:452:473"
+        ]
+      },
+      {
+        "fact_id": "transformers_abnormal",
+        "verdict": "supported",
+        "reason": "与2.2.6一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:841:894"
+        ]
+      },
+      {
+        "fact_id": "control_room",
+        "verdict": "supported",
+        "reason": "2.2.7及page13开头内容均一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page12:894:969",
+          "d_98d56bcdf4e49412/page13:0:48"
+        ]
+      },
+      {
+        "fact_id": "close_record",
+        "verdict": "supported",
+        "reason": "与2.2.8一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:48:81"
+        ]
+      },
+      {
+        "fact_id": "investigation",
+        "verdict": "supported",
+        "reason": "原文仅引用规程名称，未列具体步骤，事实表述与之一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:81:114"
+        ]
+      },
+      {
+        "fact_id": "frequency_voltage",
+        "verdict": "supported",
+        "reason": "与2.2.10一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:114:155"
+        ]
+      }
+    ],
+    "source_conflicts": []
+  },
+  "dispatch_communication_loss": {
+    "facts": [
+      {
+        "fact_id": "restore_communication",
+        "verdict": "supported",
+        "reason": "原文2.3.5.1完整表述了各方积极恢复通信、不能恢复时国调可通过网省调转达调度业务，与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:335:417"
+        ]
+      },
+      {
+        "fact_id": "stable_mode",
+        "verdict": "supported",
+        "reason": "原文2.3.5.2.1明确换流站运行方式尽可能保持不变，与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:448:481"
+        ]
+      },
+      {
+        "fact_id": "repaired_wait",
+        "verdict": "supported",
+        "reason": "原文2.3.5.2.2规定检修设备在通信中断期间完工可恢复运行时，只能待通信恢复正常后再恢复，事实表述一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:481:543"
+        ]
+      },
+      {
+        "fact_id": "unapproved_command",
+        "verdict": "supported",
+        "reason": "原文2.3.5.3规定未重复指令或虽重复但未经国调值班调度员同意执行前失联，该操作指令不得执行，一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:543:720"
+        ]
+      },
+      {
+        "fact_id": "approved_command",
+        "verdict": "supported",
+        "reason": "原文明确'若已经国调值班调度员同意执行操作，可以将该操作指令全部执行完毕'，事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:543:720"
+        ]
+      },
+      {
+        "fact_id": "dispatch_view",
+        "verdict": "supported",
+        "reason": "原文明确国调下达指令后未接到完成操作报告前失联，仍认为该指令正在执行中，事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:543:720"
+        ]
+      },
+      {
+        "fact_id": "no_arbitrary_action",
+        "verdict": "supported",
+        "reason": "原文2.3.5.4规定涉及国调管辖系统安全问题或时间性无特殊要求的调度业务，失联后与国调联系前不得自行处理，紧急情况下按规程规定处理，事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:720:808"
+        ]
+      },
+      {
+        "fact_id": "report_when_restored",
+        "verdict": "supported",
+        "reason": "原文2.3.5.5规定通信恢复后立即向国调值班调度员补报中断期间一切应汇报事项，事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:808:861"
+        ]
+      }
+    ],
+    "source_conflicts": []
+  },
+  "main_pump_no_backup": {
+    "facts": [
+      {
+        "fact_id": "phenomenon",
+        "verdict": "supported",
+        "reason": "10.5.1.1原文明确为'内水冷主循环泵异常但未能切至备用泵运行'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:408:442"
+        ]
+      },
+      {
+        "fact_id": "report",
+        "verdict": "supported",
+        "reason": "与10.5.2.1原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:452:479"
+        ]
+      },
+      {
+        "fact_id": "automatic",
+        "verdict": "supported",
+        "reason": "原文明确检查控制方式是否在自动位置，若不是立即切至自动。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:479:530"
+        ]
+      },
+      {
+        "fact_id": "local_switch",
+        "verdict": "supported",
+        "reason": "10.5.2.3列明严重发热、冒烟、声音异常、电源开关烧糊时立即就地进行主泵切换，现场监视备用泵投入正常。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:530:608"
+        ]
+      },
+      {
+        "fact_id": "fault_pump_isolation",
+        "verdict": "supported",
+        "reason": "与10.5.2.4操作步骤一致（软启动器柜电源开关、400V电源开关、安全开关、安措、通知检修）。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:608:682"
+        ]
+      },
+      {
+        "fact_id": "backup_failed",
+        "verdict": "supported",
+        "reason": "与10.5.2.5一致：申请调度停运对应换流阀，断开两台泵软启动器电源开关及400V配电室电源开关、安全开关，做好安措通知检修。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:682:806"
+        ]
+      },
+      {
+        "fact_id": "normal_backup_ban",
+        "verdict": "ambiguous",
+        "reason": "原文10.4.2.2确实规定'对故障主循环泵进行隔离检查期间禁止进行相关站用电切换操作'，禁止本身有据；但'不能把备用运行正常当作解除该限制'一句为事实核验者的解读性补充，原文未作此明确表述。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:0:67"
+        ]
+      },
+      {
+        "fact_id": "single_pump_monitor",
+        "verdict": "supported",
+        "reason": "与10.4.2.6一致：一台泵运行时加强监视直流系统运行，严防丢失该泵电源，特别是站用电倒换操作时。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:302:370"
+        ]
+      }
+    ],
+    "source_conflicts": [
+      "d_4b964d3ff677714b中'厂站运行人员可不待国调指令自行应急操作'与姑苏站规程的紧急操作条款内容一致，均涉及威胁设备停电、故障设备隔离、厂站用电恢复，未见实质冲突；但10.5.2.5换流阀停运需'申请调度'，与国调条款中站用电恢复可不待指令自行操作适用范围不同，不构成冲突。"
+    ]
+  },
+  "coolant_conductivity": {
+    "facts": [
+      {
+        "fact_id": "alarm",
+        "verdict": "supported",
+        "reason": "原文10.7.1.1与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page65:10:41"
+        ]
+      },
+      {
+        "fact_id": "report",
+        "verdict": "supported",
+        "reason": "与10.7.2.1一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page65:51:78"
+        ]
+      },
+      {
+        "fact_id": "compare",
+        "verdict": "supported",
+        "reason": "与10.7.2.2一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page65:78:119"
+        ]
+      },
+      {
+        "fact_id": "large_difference",
+        "verdict": "supported",
+        "reason": "原文用“可能为表计故障”，事实保留“可能”，未改为确认。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page65:119:166"
+        ]
+      },
+      {
+        "fact_id": "consistent",
+        "verdict": "supported",
+        "reason": "与10.7.2.4一致，含补水后检查补充水电导率的条件。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page65:166:222"
+        ]
+      },
+      {
+        "fact_id": "actual_result",
+        "verdict": "supported",
+        "reason": "与10.7.2.5一致，两个条件分支均正确。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page65:222:289"
+        ]
+      }
+    ],
+    "source_conflicts": []
+  }
+}

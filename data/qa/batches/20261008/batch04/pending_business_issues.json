@@ -1,0 +1,64 @@
+{
+  "reviewer": "Codex（AI来源核对，非业务专家）",
+  "items": [
+    {
+      "id": "transformer_trial_wording",
+      "status": "pending_cross_source_closure",
+      "source_units": [
+        {
+          "unit_id": "d_98d56bcdf4e49412/clause/2.3.2.1.1",
+          "unit_sha256": "09bfa68f361e56a1c2dc911415b60b23333cd0b4603113afaac02e0905ca4cb3",
+          "text": "  2.3.2.1.1 变压器的重瓦斯保护或差动保护动作跳闸，不得进行试送电；在检查变压器\n外部无明显故障，检查瓦斯气体和故障录波器动作情况，确认变压器内部无故障者，可以试\n送一次，有条件时应进行零起升压。\n"
+        }
+      ],
+      "reason": "同一条先说重瓦斯/差动跳闸不得试送，又写外部无明显故障、气体和录波检查确认内部无故障可试送一次。适用边界尚未跨册核实，未生成确定试送操作题。",
+      "next_step": "补查变压器专门预案、运行方式规定和操作票；不能先删掉禁止句或许可句。"
+    },
+    {
+      "id": "simultaneous_breaker_rules",
+      "status": "pending_cross_source_closure",
+      "source_units": [
+        {
+          "unit_id": "d_98d56bcdf4e49412/clause/2.3.4.1",
+          "unit_sha256": "0524e3c5e50ea9666dcf9087228d4053b22dc4f553cbf193d51ac6229e14da48",
+          "text": "     2.3.4.1   开关远方操作失灵时，若允许就地操作，必须三相同时操作，不得分相操作；\n开关操作时，发生非全相运行，应立即拉开该开关。\n"
+        },
+        {
+          "unit_id": "d_98d56bcdf4e49412/clause/2.3.4.2",
+          "unit_sha256": "b21dcfdc97345f17485c7ec1659621d338a21c3fa29b12e8f659020b80915da9",
+          "text": "     2.3.4.2   开关运行时发生单相或两相断开且三相不一致保护未跳开开关运行相，应立即\n将该开关三相拉开。\n"
+        },
+        {
+          "unit_id": "d_98d56bcdf4e49412/clause/5.8.2.3",
+          "unit_sha256": "65767b1846522e85ff6cf8a2fb9bb7363a0c8b22d966f7575b5e20ce8e966399",
+          "text": "    5.8.2.3   经领导批准，申请调度拉开该断路器；\n"
+        }
+      ],
+      "reason": "公共非全相/三相不一致规则要求立即拉开，GIS动作不到位专项要求领导批准后申请调度；本批分别表述，未推断同时触发时的一套优先流程。",
+      "next_step": "继续核查适用设备状态与紧急授权；未明确衔接前不生成无条件合并操作票。"
+    },
+    {
+      "id": "repair_return_to_service",
+      "status": "pending_cross_source_closure",
+      "source_units": [
+        {
+          "unit_id": "d_98d56bcdf4e49412/clause/5.8.2.5",
+          "unit_sha256": "3683f49b9b5eb5ff4d1bf110ac1cd33ee4dc9e4a5ebecfc130e80e49638f1063",
+          "text": "    5.8.2.5   在故障隔离过程中，应考虑负荷的倒换、滤波器的切换等；做好安全措施，联\n系检修人员处理。\n\n\n"
+        },
+        {
+          "unit_id": "d_98d56bcdf4e49412/clause/5.10.2.4",
+          "unit_sha256": "914aa1332c7f1933d4d6d455a9ad05d2a8e2169a043fb5132276c9a73c2bed96",
+          "text": "   5.10.2.4 向值班调控人员汇报一、二次设备检查结果，按照值班调控人员指令隔离故\n障点及拒动断路器，并将非故障设备恢复运行。\n\n\n"
+        },
+        {
+          "unit_id": "d_98d56bcdf4e49412/clause/9.4.2.6",
+          "unit_sha256": "e4b5fb36866dd41cfb25ec686aeb8793d9848ece08020978d46c71e495837b5e",
+          "text": "   9.4.2.6   若检查站内一次设备无明显异常，经检修人员确认为开关保护误动，则申请调\n度退出该保护，由检修人员处理；\n"
+        }
+      ],
+      "reason": "本批覆盖所列专项预案及健康设备恢复，不等于故障设备检修后复役的完整操作票。",
+      "next_step": "查第三分册启停要求、典型操作票、保护恢复和顺控，补完整复役前提。"
+    }
+  ]
+}

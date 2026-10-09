@@ -12,3 +12,8 @@ rawdoc/
 .DS_Store
 dist/
 build/
+
+# Model and experiment runtime artifacts; experiment source code is versioned.
+models/
+checkpoints/
+experiments/**/runs/

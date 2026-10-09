@@ -1,0 +1,12 @@
+{
+  "state": "small_pilot_document_fidelity_reviewed",
+  "qa": 53,
+  "chains": 7,
+  "source_reviewer": "Codex（AI来源核对，非业务专家）",
+  "expert_review": "not_performed",
+  "semantic_accuracy_rate": "not_estimated",
+  "source_currency_certified": false,
+  "training_eligible": false,
+  "training_export_created": false,
+  "note": "Small purposefully selected pilot; review records bound to exact inputs. Not a whole-corpus quality estimate."
+}

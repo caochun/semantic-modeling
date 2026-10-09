@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>直流站运行问题 QA</title>
+<style>
+body{font:16px/1.65 system-ui,sans-serif;margin:24px auto;max-width:1100px;padding:0 20px;color:#172530;background:#f6f8fa}h1{font-size:26px}input,select,button{font:inherit;padding:8px;margin:4px;border:1px solid #bdcbd5;border-radius:5px}article{background:white;border:1px solid #dce4e9;border-radius:8px;padding:18px;margin:16px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.7 system-ui,sans-serif}summary{cursor:pointer;color:#176482}#search{width:min(600px,90%)}.note{background:#edf4fa;padding:12px;border-radius:6px}
+</style>
+<h1>直流站运行问题 QA 候选</h1>
+<p class="note">保留文档的条件、步骤与来源。未经业务专家审核；历史案例限定在原记录范围。文档筛选、待核实条款和使用说明见同目录 README.md。</p>
+<input id="search" placeholder="搜索问题、设备、故障或答案">
+<select id="family"><option value="">全部题型</option></select>
+<label><input id="solutions" type="checkbox" checked>优先浏览诊断与处置（隐藏批量操作票）</label>
+<p id="count"></p><button id="prev">上一页</button><button id="next">下一页</button>
+<main id="list"></main>
+<script id="data" type="application/json">PAYLOAD</script>
+<script>
+const data=JSON.parse(document.getElementById('data').textContent),rows=data.rows;let page=0;
+const labels={incident_general_rules:'事故处理通则',incident_full_chain:'完整故障预案',operating_constraints:'运行要求与限制',operation_sequence:'完整操作票',protection_action_mapping:'保护出口对应关系',historical_case_analysis:'历史案例原文',manufacturer_fault_guidance:'厂家异常处理',workflow_solution:'处置流程',false_premise_correction:'错误前提纠正',restoration_conditions:'恢复条件',conditional_diagnosis:'条件诊断',conditional_workflow:'条件分支处置',comparison:'处置对比',insufficient_evidence:'证据或条件不足',workflow_order:'操作先后顺序',workflow_preconditions:'操作前提',source_conflict:'条款歧义',cross_document_scope:'跨文档适用范围',historical_diagnosis:'历史原因分析',source_scope:'来源适用范围',cross_document_workflow:'跨文档完整链路',clarification:'补充诊断信息'};
+const types=[...new Set(rows.map(r=>r.family))];
+types.forEach(t=>{const o=document.createElement('option');o.value=t;o.textContent=labels[t]||t;document.getElementById('family').append(o)});
+function element(tag,text){const e=document.createElement(tag);e.textContent=text;return e}
+function detail(title,text){const e=document.createElement('details');e.append(element('summary',title),element('pre',text));return e}
+function sourceText(ids){return ids.map(id=>data.spans[id]).map(e=>`[${e.id}] ${data.scopes[e.source_id]}
+${e.locator}
+${e.text}`).join('\n\n')}
+function render(){
+ const q=document.getElementById('search').value.toLowerCase(),family=document.getElementById('family').value,solutions=document.getElementById('solutions').checked;
+ const filtered=rows.filter(r=>(!solutions||r.family!=='operation_sequence')&&(!family||r.family===family)&&(!q||(r.question+r.answer+r.topic).toLowerCase().includes(q))),max=Math.max(0,Math.ceil(filtered.length/20)-1);
+ page=Math.min(page,max);document.getElementById('count').textContent=`共 ${rows.length} 条；匹配 ${filtered.length} 条；第 ${page+1}/${max+1} 页`;
+ const list=document.getElementById('list');list.replaceChildren();
+ filtered.slice(page*20,page*20+20).forEach(r=>{
+  const a=document.createElement('article');a.append(element('div',r.id+' · '+(labels[r.family]||r.family)),element('h3',r.question),element('pre',r.answer));
+  a.append(detail('答案检查项',r.answer_checklist.map((x,i)=>`${i+1}. ${x}`).join('\n')),detail('直接证据',sourceText(r.evidence_ids)),detail('完整上下文与关联来源',sourceText(data.contexts[r.context_id].span_ids)),detail('来源与审核状态',JSON.stringify({source_ids:r.source_ids,chain_id:r.chain_id,flags:r.flags,review:r.review},null,2)));
+  list.append(a);
+ });
+}
+document.getElementById('search').oninput=document.getElementById('family').onchange=document.getElementById('solutions').onchange=()=>{page=0;render()};
+document.getElementById('prev').onclick=()=>{page=Math.max(0,page-1);render()};document.getElementById('next').onclick=()=>{page++;render()};render();
+</script>
+</html>

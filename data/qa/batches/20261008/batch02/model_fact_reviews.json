@@ -1,0 +1,225 @@
+{
+  "black_start": {
+    "facts": [
+      {
+        "fact_id": "phenomenon",
+        "verdict": "supported",
+        "reason": "原文3.1.1.1明确列出站用电全停、直流系统停运、交流系统失电，水冷、空调、消防等辅助系统停运。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:34:686"
+        ]
+      },
+      {
+        "fact_id": "report",
+        "verdict": "supported",
+        "reason": "原文3.1.2.1为'汇报调度和领导'，且为处理步骤第一条。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:34:686"
+        ]
+      },
+      {
+        "fact_id": "initial_state",
+        "verdict": "supported",
+        "reason": "原文3.1.2.2'拉开站内交流系统处于合闸位置的开关，退出安控装置'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:34:686"
+        ]
+      },
+      {
+        "fact_id": "external",
+        "verdict": "supported",
+        "reason": "原文3.1.2.3'若外来站用电源能够恢复，立即申请调度恢复外来站用电源运行'，条件与动作一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:34:686"
+        ]
+      },
+      {
+        "fact_id": "ac_supply",
+        "verdict": "supported",
+        "reason": "原文3.1.2.4'若外来站用电源不能恢复，联系相关调度对交流系统进行充电，通过站内站用变恢复站用电运行'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:34:686"
+        ]
+      },
+      {
+        "fact_id": "emergency_vehicle",
+        "verdict": "supported",
+        "reason": "原文3.1.2.5'若外来电源及交流系统均不具备带电条件，联系当地供电公司请求应急电源车进行支援，恢复站用电400V系统运行'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:34:686"
+        ]
+      },
+      {
+        "fact_id": "loads",
+        "verdict": "supported",
+        "reason": "原文3.1.2.6与text一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:34:686"
+        ]
+      },
+      {
+        "fact_id": "protections",
+        "verdict": "supported",
+        "reason": "原文3.1.2.7与text一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:34:686"
+        ]
+      },
+      {
+        "fact_id": "secondary",
+        "verdict": "supported",
+        "reason": "原文3.1.2.8列出服务器、OWS、故障录波、故障测距、规约转换屏、信息子站等二次设备。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:34:686"
+        ]
+      },
+      {
+        "fact_id": "communications",
+        "verdict": "supported",
+        "reason": "原文3.1.2.9'查远动、通信系统工作正常'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:34:686"
+        ]
+      },
+      {
+        "fact_id": "auxiliary",
+        "verdict": "supported",
+        "reason": "原文3.1.2.10'查水冷、空调、消防系统供电正常，逐步恢复系统正常运行'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:34:686"
+        ]
+      },
+      {
+        "fact_id": "ac_restore",
+        "verdict": "supported",
+        "reason": "原文3.1.2.11与text一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:34:686"
+        ]
+      },
+      {
+        "fact_id": "normal_supply",
+        "verdict": "supported",
+        "reason": "原文3.1.2.12一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:34:686"
+        ]
+      },
+      {
+        "fact_id": "dc_restore",
+        "verdict": "supported",
+        "reason": "原文3.1.2.13'投入安控装置，恢复直流系统运行'，为处理步骤最后一条，text中'最后'表述与顺序一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page16:34:686"
+        ]
+      }
+    ],
+    "source_conflicts": []
+  },
+  "main_pump_failure": {
+    "facts": [
+      {
+        "fact_id": "scope",
+        "verdict": "supported",
+        "reason": "原文现象10.4.1.1明确为'主泵故障，备用泵投入运行正常'，事实准确限定前提范围。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page63:898:1035"
+        ]
+      },
+      {
+        "fact_id": "report",
+        "verdict": "supported",
+        "reason": "与10.4.2.1原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page63:898:1035"
+        ]
+      },
+      {
+        "fact_id": "power_ban",
+        "verdict": "supported",
+        "reason": "与10.4.2.2原文一致，条件与禁止内容均符合。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:0:368"
+        ]
+      },
+      {
+        "fact_id": "overheated",
+        "verdict": "supported",
+        "reason": "与10.4.2.3原文一致，含400V开关、安全开关、安措通知检修、灭火器灭火。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:0:368"
+        ]
+      },
+      {
+        "fact_id": "normal_appearance",
+        "verdict": "supported",
+        "reason": "与10.4.2.4原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:0:368"
+        ]
+      },
+      {
+        "fact_id": "tripped",
+        "verdict": "supported",
+        "reason": "与10.4.2.5原文一致，试合一次及后续处置均符合，'不能反复试合'的限定符合'试合一次'的表述。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:0:368"
+        ]
+      },
+      {
+        "fact_id": "single_pump",
+        "verdict": "supported",
+        "reason": "与10.4.2.6原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page64:0:368"
+        ]
+      }
+    ],
+    "source_conflicts": []
+  },
+  "national_dispatch_reporting": {
+    "facts": [
+      {
+        "fact_id": "immediate",
+        "verdict": "supported",
+        "reason": "text与原文cp21224_21327内容一致：立即汇报故障时间、一次设备状态变化、电压电流功率越限、需紧急控制设备、周边天气及其他直接可观测现象。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp21224_21327:0:103"
+        ]
+      },
+      {
+        "fact_id": "five_minutes",
+        "verdict": "supported",
+        "reason": "text与cp21328_21388一致：5分钟内汇报保护、安控动作、线路故障类型、开关跳闸及重合闸动作情况，并依规程采取措施。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp21328_21388:0:59"
+        ]
+      },
+      {
+        "fact_id": "fifteen_minutes",
+        "verdict": "supported",
+        "reason": "text与cp21389_21469一致：15分钟内汇报一、二次设备检查情况，确认保护、安控正确动作，开关合闸电阻配备，明确是否退出重合闸及是否具备试送条件。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp21389_21469:0:80"
+        ]
+      },
+      {
+        "fact_id": "station_configuration",
+        "verdict": "supported",
+        "reason": "text与cp21470_21526注记一致：5032、5042开关配置合闸电阻，熟姑5W09线、常苏5W08线重合闸停用，汇报调度时需说明。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp21470_21526:0:56"
+        ]
+      },
+      {
+        "fact_id": "thirty_minutes",
+        "verdict": "supported",
+        "reason": "text与cp21527_21591一致：30分钟内汇报站内全部保护动作、线路故障测距，按国调要求传送事件记录、故障录波图、故障情况报告、现场照片等材料。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp21527_21591:0:64"
+        ]
+      }
+    ],
+    "source_conflicts": []
+  }
+}

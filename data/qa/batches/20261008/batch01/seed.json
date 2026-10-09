@@ -1,0 +1,87 @@
+{
+  "version": "20261008-quality-pilot-v3",
+  "chains": [
+    {
+      "id": "operation_abnormal",
+      "title": "倒闸操作异常：停止、处理、恢复或转检修",
+      "source_rows": ["OPS01948"],
+      "evidence_blocks": ["cp20276_20373", "cp20383_20567", "cp20568_20627", "cp20628_20682", "cp20683_20726", "cp20727_20805", "cp20806_20881", "cp20882_20996", "cp20997_21076"],
+      "scope": "姑苏站《运行方式及设备运行规定》6.0版（2026年2月）",
+      "facts": [
+        {"id": "stop", "quote": "应立即停止操作，禁止跳项操作", "text": "发生操作异常，立即停止操作，禁止跳项。"},
+        {"id": "check_report", "quote": "对操作设备双重名称、实际位置、操作内容、操作步骤和设备外观、环境进行核对检查", "text": "核对设备双重名称、实际位置、操作内容、步骤、外观和环境；确认自身操作无误、预判为设备本身问题后，汇报当值调控人员和班组长或运维专职，等待指令，同时暂停录音、在操作票备注栏记录暂停时间及原因，并通知检修到场。"},
+        {"id": "affected_report", "quote": "若异常情况影响到其它设备安全运行", "text": "设备异常按调度管辖范围向相应调度汇报；若影响其他设备安全运行，除向该设备对应调度汇报外，还须向受影响设备对应调度汇报。"},
+        {"id": "permit", "quote": "待运行人员做好安全措施并许可（录音）后方可开始工作", "text": "检修到场后填写《变电站操作异常处理工作单》；运行人员做好安全措施并许可（录音）后，方可开始工作。"},
+        {"id": "copies", "quote": "一式两份，运维、检修班组各存一份", "text": "工作单一式两份，运维、检修班组各存一份；填写、使用和保存参照工作票有关规定。"},
+        {"id": "supervise", "quote": "实行检修、运维双监护", "text": "异常处理实行检修、运维双监护；设备试操作由检修人员在当班运行正值监护下进行。"},
+        {"id": "unlock", "quote": "禁止任何人擅自使用万能钥匙解锁", "text": "检修人员确认防误装置故障需要解锁处理，或需要解锁试操作时，由现场运行人员履行解锁程序后进行；禁止擅自使用万能钥匙解锁。"},
+        {"id": "conclusion", "quote": "明确是否可以继续操作的意见，许可人与检修工作负责人分别签名", "text": "工作结束后，检修工作负责人填写处理结论，明确是否可以继续操作，许可人与检修工作负责人分别签名。"},
+        {"id": "restore", "quote": "经处理，异常情况消除", "text": "异常消除且结论明确设备恢复正常操作后，运行人员汇报调度取得许可，重新核对设备和操作步骤；确认无误后重新开启录音、恢复操作，并在操作票备注栏记录恢复时间。"},
+        {"id": "unresolved", "quote": "异常暂时无法消除，设备不能继续操作", "text": "异常未消除、结论为设备不能继续操作时，向调度申请设备转检修，转入缺陷处理流程。"}
+      ],
+      "order_edges": [["stop", "check_report"], ["check_report", "permit"], ["permit", "supervise"], ["conclusion", "restore"], ["conclusion", "unresolved"]],
+      "branches": [["restore", "unresolved"]],
+      "questions": [
+        {"key": "whole", "type": "full_chain", "question": "倒闸操作中发现设备异常，从停止操作、通知检修到恢复操作或转检修，完整处置链路是什么？", "required": ["stop", "check_report", "affected_report", "permit", "copies", "supervise", "unlock", "conclusion", "restore", "unresolved"]},
+        {"key": "skip", "type": "false_premise", "question": "倒闸操作某一步出现设备异常，能否跳过这一步完成后续操作，再通知检修？现场人员首先需要做什么？", "lead": "不能跳项，也不能先继续后续操作。", "required": ["stop", "check_report"]},
+        {"key": "repair_permission", "type": "preconditions", "question": "操作异常后检修人员已到场，是否可以立即开始处理？工作许可、试操作监护和解锁各有什么要求？", "lead": "检修到场本身不等于已经具备开工或解锁条件。", "required": ["permit", "copies", "supervise", "unlock"]},
+        {"key": "restore", "type": "restoration", "question": "设备异常经处理已消除，能否直接接着操作？恢复操作前后还必须完成哪些确认、许可和记录？", "lead": "不能只凭异常消除就直接续做操作。", "required": ["conclusion", "restore"]},
+        {"key": "unresolved", "type": "conditional_branch", "question": "异常处理结束，但结论仍是设备不能继续操作。此时应怎样结束异常处理并转入后续流程？", "required": ["conclusion", "unresolved"]},
+        {"key": "follow_up", "type": "context_follow_up", "history": [{"role": "user", "content": "我们正在讨论姑苏站倒闸操作异常。检修已处理完，现场异常已消除。"}, {"role": "assistant", "content": "恢复操作还需核查工作结论并履行规定的许可、设备核对及记录步骤。"}], "question": "那我现在就能接着操作了吗？还缺哪些步骤？", "standalone_question": "倒闸操作异常经检修处理后已消除，恢复操作前还必须完成哪些工作结论、许可、核对和记录？", "lead": "仅知道异常已消除，还不能直接恢复操作。", "required": ["conclusion", "restore"]}
+      ]
+    },
+    {
+      "id": "control_single_failure",
+      "title": "控制A系统严重故障：B可用性、切换与检修",
+      "source_rows": ["OPS01959"],
+      "scope": "姑苏站《设备异常及故障应急处置》6.0版（2025年9月）8.2及《设备概况》6.0版控制系统状态规定",
+      "facts": [
+        {"id": "report", "quote": "汇报调度及领导", "text": "控制A系统发生严重故障时，汇报调度及领导。"},
+        {"id": "standby", "quote": "只能切换至正处于STANDBY状态的系统", "text": "《设备概况》限定：只有一个系统处于ACTIVE；切换目标必须正处于STANDBY，不能切到其他状态。"},
+        {"id": "switch", "quote": "若B系统无故障或轻微故障", "text": "8.2.2.2规定：若B无故障或轻微故障，在OWS后台或控制主机面板手动切换，将B切至运行、A切至服务，并按下现场屏柜禁止切换按钮；切换目标的状态限制另见前述《设备概况》规定。"},
+        {"id": "unavailable", "quote": "若B系统不可用（未处于备用状态）", "text": "B不可用、未处于备用状态时，A继续保持运行，不能把B当作可用切换目标。"},
+        {"id": "inspect", "quote": "现场检查主机及相关板卡有无异常", "text": "现场检查主机和相关板卡有无异常。"},
+        {"id": "restart", "quote": "若为主机故障，通知检修人员到场进行一次重启", "text": "若确认是主机故障，通知检修人员到场进行一次重启。"},
+        {"id": "test", "quote": "重启不成功或板卡故障，向调度申请将故障系统换至试验状态", "text": "重启不成功或板卡故障时，向调度申请将故障系统换至试验状态，并通知检修人员处理。"}
+      ],
+      "order_edges": [["report", "switch"], ["report", "unavailable"], ["inspect", "restart"], ["restart", "test"]],
+      "branches": [["switch", "unavailable"]],
+      "questions": [
+        {"key": "whole", "type": "full_chain", "question": "控制A系统严重故障时，怎样根据B系统状态选择处置分支，并继续完成主机或板卡检查和后续检修？请保留汇报、切换前提和权限。", "required": ["report", "standby", "switch", "unavailable", "inspect", "restart", "test"]},
+        {"key": "healthy_standby", "type": "conditional_branch", "question": "A发生严重故障，B无故障且已确认处于STANDBY。现场手动切换前后需如何汇报、操作及处理故障A？", "required": ["report", "standby", "switch", "inspect", "restart", "test"]},
+        {"key": "not_standby", "type": "false_premise", "question": "A发生严重故障，B没有严重故障，但未处于备用状态。能否直接将B切到运行？该分支的处理链路是什么？", "lead": "不能仅凭B没有严重故障就直接切换。", "required": ["report", "standby", "unavailable", "inspect", "restart", "test"]},
+        {"key": "restart_failed", "type": "source_gap", "question": "A主机故障，经检修到场进行一次重启仍不成功；或者已确认是板卡故障。规程规定的下一步是什么，谁有申请职责？", "required": ["test"], "tail": "引用的8.2条款仅规定向调度申请，未明确具体申请岗位，不能据此指定某岗位。该条要求申请，不能自行把故障系统改为试验状态。"},
+        {"key": "restart_scope", "type": "false_premise", "question": "控制A系统严重故障时，是否可以不区分主机与板卡，反复重启直到恢复？", "lead": "不能把本预案概括成所有故障都反复重启。", "required": ["inspect", "restart", "test"]},
+        {"key": "missing_state", "type": "clarification", "question": "只知道A严重故障、B没有严重故障，尚未核实B是否处于备用状态，能否立即决定切换？还需要核实什么？", "lead": "现有信息不足以作出立即切换的结论，需要先核实B的可用性及是否正处于STANDBY。", "required": ["report", "standby", "switch", "unavailable"]}
+      ]
+    },
+    {
+      "id": "internal_cooling_leak",
+      "title": "内水冷泄漏：水位趋势、查漏、隔离与保护恢复",
+      "source_rows": ["OPS01969", "OPS01970"],
+      "scope": "姑苏站《设备异常及故障应急处置》6.0版（2025年9月）10.3，并结合10.4中故障主泵隔离检查限制",
+      "facts": [
+        {"id": "stable", "quote": "若水位正常且无下降趋势", "text": "膨胀水箱水位正常且无下降趋势时，通知检修查找报警原因。"},
+        {"id": "slow", "quote": "但缓慢下降,达到补水液位", "text": "水位在正常范围但缓慢下降，达到补水液位时，检查补水泵是否启动；未启动则手动启动，保持水位正常并查找内冷水回路漏点。"},
+        {"id": "valve_hall", "quote": "若发现阀塔漏水，经领导批准申请调度停电处理", "text": "检查阀厅地面水迹；发现阀塔漏水，经领导批准申请调度停电处理。若未发现阀厅设备漏水，经领导批准退出微分泄露保护。"},
+        {"id": "leak_isolation", "quote": "若发现漏点且能有效封堵的", "text": "漏点能有效封堵则立即封堵；不能封堵但能隔离则隔离漏水部分；不能隔离则及时申请调度停电。"},
+        {"id": "tower", "quote": "以上部位都未检查到漏水，而且冷却塔有备用冗余", "text": "前述部位未发现漏水且冷却塔有备用冗余时，可关闭一组冷却塔内水冷进出水阀门，观察膨胀罐水位是否下降；确认该组塔内管道漏水且有备用冗余时，隔离该组并通知检修。"},
+        {"id": "pump", "quote": "如果主循环泵漏水", "text": "主循环泵漏水时，立即切换备用泵，断开故障泵软启动器控制柜电源开关和安全开关，关闭故障泵进出水阀门，做好安措并通知检修。"},
+        {"id": "pump_power", "quote": "对故障主循环泵进行隔离检查期间禁止进行相关站用电切换操作", "text": "关联10.4规定：主循环泵故障、备用泵运行正常且对故障主泵隔离检查期间，禁止相关站用电切换；一台泵运行时加强监视，严防丢失该泵电源，特别注意站用电倒换。这是该状态的附加限制，不将10.4其他故障分支当作泄漏原因。"},
+        {"id": "restore", "quote": "在处理完毕后投入，并复归24小时泄漏报警", "text": "处理中必要时可停用微分泄漏保护；处理完毕后投入保护，并复归24小时泄漏报警。"},
+        {"id": "rapid", "quote": "若水位迅速下降，立即申请调度停电处理", "text": "水位迅速下降时，立即申请调度停电处理。"},
+        {"id": "duplicate", "quote": "（与10.3.2.3重复）", "text": "10.3.2.7原文注明与10.3.2.3重复，不将其解释成新的独立处置动作。"}
+      ],
+      "order_edges": [["slow", "leak_isolation"], ["leak_isolation", "restore"], ["pump", "restore"]],
+      "branches": [["stable", "slow", "rapid"]],
+      "questions": [
+        {"key": "whole", "type": "full_chain", "question": "出现内水冷泄漏报警或水位异常降低时，应怎样根据水位趋势、漏点位置和可隔离性选择完整处置路径，并恢复保护？请保留冗余、批准及主泵隔离期间的站用电限制。", "lead": "若水位正在迅速下降，立即申请调度停电；不能把其他分支的检查或观察作为等待这一步的前置条件。", "required": ["stable", "slow", "valve_hall", "leak_isolation", "tower", "pump", "pump_power", "restore", "rapid", "duplicate"]},
+        {"key": "stable", "type": "conditional_branch", "question": "已发泄漏报警，但确认膨胀水箱水位正常且没有下降趋势。该水位分支要求做什么，是否仅凭报警就能认定有实际漏水并停电？", "required": ["stable"], "tail": "该分支只要求查找报警原因，不能仅凭报警认定实际漏水；若另有阀塔漏水或水位迅速下降等事实，应转入相应分支。"},
+        {"key": "slow", "type": "conditional_branch", "question": "水位仍在正常范围，但缓慢下降并达到补水液位，补水泵没有启动。下一步怎样维持水位并按漏点可封堵、可隔离性处置？", "required": ["slow", "valve_hall", "leak_isolation", "restore"]},
+        {"key": "rapid", "type": "false_premise", "question": "水位正在迅速下降，能否仍按缓慢下降分支先补水、继续观察，再决定是否申请停电？", "lead": "不能把迅速下降沿用为缓慢下降分支。", "required": ["rapid"]},
+        {"key": "tower", "type": "preconditions", "question": "阀厅等前述部位均未发现漏水，是否可以直接关一组冷却塔阀门来查漏？采用这一方法和确认漏水后的隔离各有什么前提？", "lead": "还必须核实冷却塔具有备用冗余。", "required": ["tower", "restore"]},
+        {"key": "restore", "type": "restoration", "question": "内水冷泄漏处理期间曾停用微分泄漏保护，漏点处置完毕后还必须恢复什么？10.3.2.7能否作为另一项独立操作？", "required": ["restore", "duplicate"]}
+      ]
+    }
+  ]
+}

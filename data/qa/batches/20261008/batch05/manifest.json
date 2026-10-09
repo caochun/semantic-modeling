@@ -1,0 +1,22 @@
+{
+  "version": "20261008-quality-batch05-v3",
+  "qa": 53,
+  "chains": 7,
+  "legacy_candidates": 1997,
+  "legacy_training_eligible_under_new_gate": 0,
+  "training_export_created": false,
+  "status": "source_reviewed",
+  "structure_checked": true,
+  "semantic_quality_passed": true,
+  "builder_sha256": "616bf0d41c43ffe0a9aeca36f82186ae7f670ef78fddb265cf4b26f0b6e6b570",
+  "seed_sha256": "21a7485c07fc87bcb0b552172908eb74581414321c40c9691da1329543c48970",
+  "source_qa_sha256": "35ef0dd4ace9a1a40666d8ab257f2171937809c071df544fb2f184da7effa2f8",
+  "files": {
+    "candidates.jsonl": "8eefd8c00ea111685397563e46ca99c03a73206a05fd67b8d70f383a6f0b6c99",
+    "chains.json": "10723cfcf3f53dba06aee3212424a8dcf81929f5468b035efcebc518c7c8e019",
+    "seed.json": "21a7485c07fc87bcb0b552172908eb74581414321c40c9691da1329543c48970",
+    "blind_prompts.jsonl": "8c9bfdfd8584320fcff395a5f4fcc88d9474b440b1f911a40c85103537a3277c",
+    "legacy_quality_inventory.jsonl": "415faa223a17cdc055681201864b4d7ca71b6c549e319f7791519dd9798a3855"
+  },
+  "semantic_quality_basis": "Codex source binding; model advisory retained; expert review not performed"
+}

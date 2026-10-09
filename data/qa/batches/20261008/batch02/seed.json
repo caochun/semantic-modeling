@@ -1,0 +1,85 @@
+{
+  "version": "20261008-quality-batch02-v2",
+  "chains": [
+    {
+      "id": "black_start",
+      "title": "换流站全站失电黑启动：恢复路径与系统确认",
+      "source_rows": ["OPS00004"],
+      "scope": "姑苏站《设备异常及故障应急处置》6.0版（2025年9月）3.1",
+      "facts": [
+        {"id": "phenomenon", "quote": "站用电全停，直流系统停运，交流系统失电", "text": "该预案现象为站用电全停、直流停运、交流失电，水冷、空调、消防等辅助系统停运。"},
+        {"id": "report", "quote": "汇报调度和领导", "text": "先汇报调度和领导。"},
+        {"id": "initial_state", "quote": "拉开站内交流系统处于合闸位置的开关，退出安控装置", "text": "拉开站内交流系统处于合闸位置的开关，退出安控装置。"},
+        {"id": "external", "quote": "若外来站用电源能够恢复", "text": "外来站用电源能够恢复时，立即申请调度恢复外来站用电源运行。"},
+        {"id": "ac_supply", "quote": "若外来站用电源不能恢复", "text": "外来站用电源不能恢复时，联系相关调度对交流系统充电，通过站内站用变恢复站用电。"},
+        {"id": "emergency_vehicle", "quote": "若外来电源及交流系统均不具备带电条件", "text": "外来电源及交流系统均不具备带电条件时，联系当地供电公司请求应急电源车支援，恢复站用电400V系统。"},
+        {"id": "loads", "quote": "检查站用电负荷、直流220V负荷、UPS负荷、通讯电源运行正常", "text": "检查站用电负荷、直流220V负荷、UPS负荷和通讯电源运行正常。"},
+        {"id": "protections", "quote": "检查交直流控制保护装置、安控装置运行正常", "text": "检查交直流控制保护装置和安控装置运行正常。"},
+        {"id": "secondary", "quote": "检查服务器、OWS、故障录波、故障测距、规约转换屏、信息子站", "text": "检查服务器、OWS、故障录波、故障测距、规约转换屏、信息子站等有关二次设备运行正常。"},
+        {"id": "communications", "quote": "查远动、通信系统工作正常", "text": "检查远动和通信系统工作正常。"},
+        {"id": "auxiliary", "quote": "查水冷、空调、消防系统供电正常", "text": "检查水冷、空调和消防系统供电正常，逐步恢复这些系统正常运行。"},
+        {"id": "ac_restore", "quote": "检查并确认现场一次设备状态，按照调度指令进行交流系统恢复", "text": "检查并确认现场一次设备状态，按照调度指令恢复交流系统。"},
+        {"id": "normal_supply", "quote": "恢复站用电系统正常方式运行", "text": "恢复站用电系统正常方式运行。"},
+        {"id": "dc_restore", "quote": "投入安控装置，恢复直流系统运行", "text": "最后投入安控装置，恢复直流系统运行。"}
+      ],
+      "order_edges": [["report", "initial_state"], ["initial_state", "external"], ["initial_state", "ac_supply"], ["initial_state", "emergency_vehicle"], ["loads", "ac_restore"], ["protections", "ac_restore"], ["secondary", "ac_restore"], ["communications", "ac_restore"], ["auxiliary", "ac_restore"], ["ac_restore", "normal_supply"], ["normal_supply", "dc_restore"]],
+      "branches": [["external", "ac_supply", "emergency_vehicle"]],
+      "questions": [
+        {"key": "whole", "type": "full_chain", "question": "全站失电符合黑启动预案现象时，从识别、汇报、恢复站用电到恢复直流的完整路径是什么？请区分电源可恢复条件并保留系统确认。", "required": ["phenomenon", "report", "initial_state", "external", "ac_supply", "emergency_vehicle", "loads", "protections", "secondary", "communications", "auxiliary", "ac_restore", "normal_supply", "dc_restore"]},
+        {"key": "external_available", "type": "conditional_branch", "question": "全站失电，已确认外来站用电源能够恢复。最初如何汇报和处置，再通过哪条路径恢复站用电？", "required": ["report", "initial_state", "external"]},
+        {"key": "external_unavailable", "type": "conditional_branch", "question": "全站失电，外来站用电源不能恢复，但交流系统具备充电条件。如何恢复站用电，是否直接请求应急电源车？", "lead": "该条件应选择交流系统充电、经站用变恢复站用电的路径，不把两类条件混为一谈。", "required": ["report", "initial_state", "ac_supply"]},
+        {"key": "both_unavailable", "type": "conditional_branch", "question": "外来电源和交流系统均不具备带电条件时，向谁请求支援，恢复的是哪个站用电系统？", "required": ["emergency_vehicle"], "tail": "本条未给出应急电源车容量、接口接线和具体接入操作票，不能自行补造。"},
+        {"key": "restore_checks", "type": "restoration", "question": "站用电恢复后，是否可以马上恢复直流？此前还需确认哪些负荷、保护、二次和辅助系统，以及一次设备状态？", "lead": "不能将站用电恢复直接等同于已完成恢复直流所需的全部检查。", "required": ["loads", "protections", "secondary", "communications", "auxiliary", "ac_restore", "normal_supply", "dc_restore"]},
+        {"key": "safety_control", "type": "false_premise", "question": "黑启动时退出安控装置后，恢复直流是否就不需要再投入安控？规程怎样安排退出与重新投入的先后？", "lead": "不能把黑启动初期退出安控当作恢复直流时继续退出的依据。", "required": ["initial_state", "ac_restore", "normal_supply", "dc_restore"]}
+      ]
+    },
+    {
+      "id": "main_pump_failure",
+      "title": "内水冷主循环泵故障：备用运行、隔离、电源限制与单次试合",
+      "source_rows": ["OPS01970"],
+      "scope": "姑苏站《设备异常及故障应急处置》6.0版（2025年9月）10.4",
+      "facts": [
+        {"id": "scope", "quote": "阀内水冷系统主泵故障，备用泵投入运行正常", "text": "本预案对应主泵故障、备用泵投入运行正常的现象，不能把备用泵失效场景自动套入该前提。"},
+        {"id": "report", "quote": "汇报领导，通知检修人员处理", "text": "汇报领导，通知检修人员处理。"},
+        {"id": "power_ban", "quote": "对故障主循环泵进行隔离检查期间禁止进行相关站用电切换操作", "text": "主循环泵故障、备用泵运行正常时，对故障主泵隔离检查期间禁止相关站用电切换。"},
+        {"id": "overheated", "quote": "若主泵电机有严重发热、冒烟起火现象", "text": "主泵电机严重发热、冒烟起火时，立即拉开该主泵相应400V配电室开关，断开内冷水室主泵电机安全开关，做好安措并通知检修，组织人员用灭火器灭火。"},
+        {"id": "normal_appearance", "quote": "若主泵电机外观检查正常", "text": "主泵电机外观正常时，检查该电机电源开关和安全开关；未发现异常，则断开故障主泵电机安全开关，做好安措并通知检修。"},
+        {"id": "tripped", "quote": "若开关跳开则将跳开开关试合一次", "text": "该检查中若开关跳开，则对跳开的开关试合一次；试合成功加强监视，试合不成功通知检修处理。不能把次数改成反复试合。"},
+        {"id": "single_pump", "quote": "一台泵运行的情况下，要加强监视直流系统的运行情况", "text": "一台泵运行时，加强监视直流系统运行，严防丢失该泵电源，特别注意站用电系统倒换。"}
+      ],
+      "order_edges": [["scope", "report"], ["report", "overheated"], ["report", "normal_appearance"]],
+      "branches": [["overheated", "normal_appearance"]],
+      "questions": [
+        {"key": "whole", "type": "full_chain", "question": "主泵故障、备用泵已投入且运行正常时，应怎样汇报、根据电机与开关检查选择处置分支，并保留隔离期间电源限制和单泵运行要求？", "required": ["scope", "report", "power_ban", "overheated", "normal_appearance", "tripped", "single_pump"]},
+        {"key": "power_ban", "type": "false_premise", "question": "故障主泵正在隔离检查，备用泵运行正常，能否据此认为相关站用电切换已没有限制？", "lead": "不能。备用泵正常并不解除该状态下的站用电限制。", "required": ["power_ban", "single_pump"]},
+        {"key": "motor_hot", "type": "conditional_branch", "question": "在备用泵运行正常的前提下，检查发现故障主泵电机严重发热、冒烟起火，应怎样切断故障泵电源并处置？", "required": ["report", "overheated", "power_ban", "single_pump"]},
+        {"key": "appearance_normal", "type": "conditional_branch", "question": "备用泵运行正常，故障主泵电机外观正常，且检查电源开关和安全开关未发现异常，是否即可把故障泵继续留在运行状态？", "lead": "该条并未将外观正常和开关无异常作为故障主泵继续运行的结论。", "required": ["normal_appearance", "power_ban", "single_pump"]},
+        {"key": "one_reclose", "type": "false_premise", "question": "故障主泵检查中发现开关跳开，是否可以多次试合直到成功？试合成功或失败后分别做什么？", "lead": "规程只给出一次试合，不允许把本条改写成反复试合。", "required": ["tripped", "power_ban", "single_pump"]},
+        {"key": "repaired_restore", "type": "source_gap", "question": "检修称故障主泵已经修好，能否仅依据10.4给出重新投入该泵的完整操作顺序及相关站用电切换许可？", "lead": "10.4未列出修复后重新投入故障泵的完整操作顺序，也未给出解除相关切换限制的独立验收条款；不能据此补造确定的复役流程或许可。", "required": ["power_ban", "single_pump"], "tail": "本回答仅说明10.4的资料范围，不能据此断言全部rawdoc都没有复役规程。"}
+      ]
+    },
+    {
+      "id": "national_dispatch_reporting",
+      "title": "国调直调系统故障汇报：立即、5/15/30分钟与现场设备配置",
+      "source_rows": ["OPS01951"],
+      "scope": "姑苏站《运行方式及设备运行规定》6.0版（2026年2月）5.7中的国调直调系统故障汇报规定",
+      "facts": [
+        {"id": "immediate", "quote": "国调直调系统发生故障时，相关厂站应立即向国调汇报", "text": "国调直调系统故障时，立即汇报故障时间、故障后站内一次设备状态变化、是否有电压电流功率越限、是否有需紧急控制的设备、周边天气及其他直接可观测现象。"},
+        {"id": "five_minutes", "quote": "5分钟内，汇报保护、安控动作情况", "text": "5分钟内汇报保护和安控动作、线路故障类型、开关跳闸与重合闸动作情况，并依据相关规程采取处理措施。"},
+        {"id": "fifteen_minutes", "quote": "15分钟内，汇报相关一、二次设备检查基本情况", "text": "15分钟内汇报一二次设备检查基本情况，确认保护与安控是否全部正确动作、相关开关合闸电阻配备，明确是否需要退出重合闸及是否具备试送条件。"},
+        {"id": "station_configuration", "quote": "姑苏站5032、5042开关配置合闸电阻", "text": "该版注记：姑苏站5032、5042开关配置合闸电阻，熟姑5W09线和常苏5W08线重合闸停用，汇报调度时须说明。"},
+        {"id": "thirty_minutes", "quote": "30分钟内，汇报站内全部保护动作情况", "text": "30分钟内汇报站内全部保护动作及线路故障测距，按国调要求传送事件记录、故障录波图、故障情况报告和现场照片等材料。"}
+      ],
+      "order_edges": [["immediate", "five_minutes"], ["five_minutes", "fifteen_minutes"], ["fifteen_minutes", "thirty_minutes"]],
+      "branches": [],
+      "questions": [
+        {"key": "whole", "type": "full_chain", "question": "国调直调系统发生故障后，立即以及5、15、30分钟内分别汇报什么？涉及本站开关和线路配置时须补充哪些信息？", "lead": "各时限分别规定相应汇报内容，不能把30分钟作为等待第一次汇报的时间。", "required": ["immediate", "five_minutes", "fifteen_minutes", "station_configuration", "thirty_minutes"]},
+        {"key": "wait_recording", "type": "false_premise", "question": "故障录波和保护动作细节还未整理齐全，能否等30分钟材料准备好后再第一次向国调汇报？首次和5分钟内分别要汇报什么？", "lead": "不能以等待完整录波或材料为由推迟规定的立即汇报。", "required": ["immediate", "five_minutes"]},
+        {"key": "fifteen", "type": "preconditions", "question": "15分钟内的汇报是否只要说明设备外观正常？还须确认哪些保护、开关和试送相关事项？", "lead": "不能只用设备外观正常代替该阶段要求。", "required": ["fifteen_minutes", "station_configuration"]},
+        {"key": "station_notes", "type": "source_scope", "question": "按该版本站注记，哪些开关配置合闸电阻，哪些线路重合闸停用，汇报时需要说明什么？", "required": ["station_configuration"], "tail": "该注记限定本站及所列版本，不泛化为其他站点或未来配置。"},
+        {"key": "thirty", "type": "evidence_submission", "question": "故障后30分钟内需要汇报哪些信息，按国调要求传送哪些材料？", "required": ["thirty_minutes"]},
+        {"key": "dispatch_scope", "type": "source_scope", "question": "本题列出的立即、5、15、30分钟汇报安排，能否直接说成所有调度管辖设备和所有换流站的统一时限？", "lead": "不能直接泛化。这组条款明确针对该版所列的国调直调系统故障，本题不替其他调度管辖范围或其他站点规定时限。", "required": ["immediate", "five_minutes", "fifteen_minutes", "thirty_minutes"]}
+      ]
+    }
+  ]
+}

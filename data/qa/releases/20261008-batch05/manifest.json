@@ -1,0 +1,54 @@
+{
+  "qa": 180,
+  "business_units": 27,
+  "question_types": {
+    "full_chain": 27,
+    "false_premise": 42,
+    "preconditions": 20,
+    "restoration": 7,
+    "conditional_branch": 37,
+    "context_follow_up": 1,
+    "source_gap": 17,
+    "clarification": 4,
+    "source_scope": 7,
+    "evidence_submission": 9,
+    "multiturn": 9
+  },
+  "builder_sha256": "4faddde4000d8e192523948246a9c6b5ae47bc4dda56d55bad07a88aa053b8b3",
+  "batches": [
+    {
+      "directory": ".semantic/qa_quality_20261008_v3",
+      "manifest_sha256": "ca9baacda16d39e7f41af6d50d10becdc2baee7e9aabe911e0b8ba5727e70f68",
+      "source_reviews_sha256": "c956fd626aff945be626682e54899c862e1ba551321483a619da2093a0183e86"
+    },
+    {
+      "directory": ".semantic/qa_quality_batch02_20261008_v2",
+      "manifest_sha256": "7886c1feb87d09b4996f7b28e5711444af7d0e10d44a647b0627bc9a3208553d",
+      "source_reviews_sha256": "4e9fd6a83c8a22dcc488b73846ceb0e1e0869fdf7e754f753eebfe5f7f34b25f"
+    },
+    {
+      "directory": ".semantic/qa_quality_batch03_20261008_v4",
+      "manifest_sha256": "3bd0b4d37ca44f90fef916ea8140e0ff5b87b7f4f24627c668dfa9c2db8d49f3",
+      "source_reviews_sha256": "20c689763a3a39729385b9b56288d3d6be41a5820e1e1689588f0e02eead18ce"
+    },
+    {
+      "directory": ".semantic/qa_quality_batch04_20261008_v3",
+      "manifest_sha256": "3feaf665ac94c745ed97d984d0c6cac5a8489da67b7f4a9134eba8ea8803d45d",
+      "source_reviews_sha256": "296971d2cc73bd43c6b864e098ab44baf9ca0107d3e786d0b6b361290197cbe1"
+    },
+    {
+      "directory": ".semantic/qa_quality_batch05_20261008_v3",
+      "manifest_sha256": "8463d6f5b4029e1fce9a47a19283a2088cd4f3bc23bb9387d977e59da69490aa",
+      "source_reviews_sha256": "1e3df3dafb2ee1cef881a4abd30d7ef59380f5443c290b37f810213fe17b0b46"
+    }
+  ],
+  "files": {
+    "qa.jsonl": "ca5afaaced4c9adcab8b95908c4acc42629cc5d700676b96fea0d62e95ac3924",
+    "chains.json": "ee0f93bab202acc02dcce08631a7bb958adfcd4b786b6cff0eb5037aaf0d7020",
+    "source_reviews.json": "e32662ecc3c6b27af8c62f6879e7ad8e7eef9c9d6c58b79fa1588a6a120db5a1"
+  },
+  "training_eligible": false,
+  "training_export_created": false,
+  "expert_review": "not_performed",
+  "global_coverage_rate": null
+}

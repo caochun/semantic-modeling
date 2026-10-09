@@ -1,0 +1,716 @@
+{
+  "line_trip_and_trial": {
+    "facts": [
+      {
+        "fact_id": "initial_dispatch",
+        "verdict": "supported",
+        "reason": "原文2.3.1.1完整表述：线路跳闸后应立即按相关规定控制断面潮流和母线电压、更改安控方式，收集故障相关信息并汇报值班调度员，由值班调度员综合考虑设备信息确定是否试送；有明显故障现象或特征应查明原因后再考虑是否试送。事实各要点均与原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:181:310"
+        ]
+      },
+      {
+        "fact_id": "trial_count",
+        "verdict": "supported",
+        "reason": "核心内容（经调度下令后一般允许试送一次；再试送须经主管生产领导同意）与原文2.3.1.1.1一致。末句'同意不能替代调度决定与下令要求'为逻辑提示，未新增权限，与原文调度下令前提一致，不构成补造权限。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:310:373"
+        ]
+      },
+      {
+        "fact_id": "breaker_life",
+        "verdict": "supported",
+        "reason": "原文明确'向调度提出停电检修建议'，且本条款未给出具体次数数值，事实表述准确。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:373:436"
+        ]
+      },
+      {
+        "fact_id": "live_work",
+        "verdict": "supported",
+        "reason": "原文完整支持：视设备仍带电、尽快联系值班调度员、调度员未与工作负责人联系前不得试送、须与相关单位确认具备试送条件后按上述规定试送。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:436:547"
+        ]
+      },
+      {
+        "fact_id": "possible_inside",
+        "verdict": "supported",
+        "reason": "原文要求'站内相关一、二次设备检查无异常后方可试送'，事实明确一、二次均需检查无异常，末句为该前提的正确逻辑展开，未额外造条件。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:547:605"
+        ]
+      },
+      {
+        "fact_id": "protection_signal",
+        "verdict": "supported",
+        "reason": "与原文9.3.1.1完全一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page53:712:740"
+        ]
+      },
+      {
+        "fact_id": "trip_reclose",
+        "verdict": "supported",
+        "reason": "原文为现象描述'跳闸或跳闸后重合'，事实明确限定其为现象描述、不能证明重合闸启用，该限定与原文及第三分册'重合闸停用'描述相容且审慎，未补造事实。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page53:740:770"
+        ]
+      },
+      {
+        "fact_id": "report",
+        "verdict": "supported",
+        "reason": "与原文9.3.2.1一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page53:779:801"
+        ]
+      },
+      {
+        "fact_id": "secondary_info",
+        "verdict": "supported",
+        "reason": "与原文9.3.2.2一致：检查保护装置运行情况、查看动作报告/故障录波/故障测距、记录报警信息。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page53:801:854"
+        ]
+      },
+      {
+        "fact_id": "primary_photo",
+        "verdict": "supported",
+        "reason": "与原文9.3.2.3一致；引文中'43'为页码噪声，不影响事实。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page53:854:929"
+        ]
+      },
+      {
+        "fact_id": "detailed_report",
+        "verdict": "supported",
+        "reason": "与原文9.3.2.4一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:0:41"
+        ]
+      },
+      {
+        "fact_id": "transmit",
+        "verdict": "supported",
+        "reason": "与原文9.3.2.5一致：整理故障录波、事件记录并传真至相关调度和部门。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:41:79"
+        ]
+      },
+      {
+        "fact_id": "reclose_success",
+        "verdict": "supported",
+        "reason": "与原文9.3.2.6一致；事实对适用条件的限定（仅实际发生且成功的重合闸情形）符合原文字面'若…成功则'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:79:107"
+        ]
+      },
+      {
+        "fact_id": "reclose_failure",
+        "verdict": "supported",
+        "reason": "与原文9.3.2.7一致：不成功且故障点不在站内按调令操作；在站内则申请调度转检修、做好安全措施并通知检修人员。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:107:196"
+        ]
+      },
+      {
+        "fact_id": "special_report",
+        "verdict": "supported",
+        "reason": "第三分册原文注记完整支持：5032、5042开关配置合闸电阻，熟姑5W09、常苏5W08线重合闸停用，汇报调度时需说明。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp21470_21526:0:56"
+        ]
+      },
+      {
+        "fact_id": "middle_breaker",
+        "verdict": "supported",
+        "reason": "原文完整支持：5032、5042配置1500Ω合闸电阻；使用中开关重合闸功能时需参照调度要求汇报并考虑投退；当前两条线路重合闸均停用，不涉及相关操作。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp57313_57443:0:140",
+          "d_4b964d3ff677714b/cp57313_57453:0:140"
+        ]
+      },
+      {
+        "fact_id": "disabled_lines",
+        "verdict": "supported",
+        "reason": "原文列明常姑5W07、常苏5W08、熟姑5W09、姑常5W03（常熟北）四条线路交流重合闸保护停用；事实限定为文档版本配置描述、未认证实时状态，表述审慎准确。",
+        "evidence_ids": [
+          "d_4b964d3ff677714b/cp89632_89685:0:53"
+        ]
+      }
+    ],
+    "source_conflicts": [
+      "未发现实质冲突。两处第三分册段落（注记与线路运行段落）均载明熟姑5W09、常苏5W08线重合闸停用，cp89632的交流线路保护段落将停用范围扩展至常姑5W07、姑常5W03（常熟北），为范围补充而非矛盾；各册日期与版本以各自封面/标题证据为准，不构成冲突。"
+    ]
+  },
+  "bus_fault_and_protection": {
+    "facts": [
+      {
+        "fact_id": "immediate",
+        "verdict": "supported",
+        "reason": "原文2.3.3.1'应立即报告国调值班调度员，并同时将故障母线上的开关全部断开'，'同时'表明报告与断开并行，text未引入额外内容。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:820:881"
+        ]
+      },
+      {
+        "fact_id": "external_check",
+        "verdict": "supported",
+        "reason": "与2.3.3.2原文一致：立即外部检查、汇报国调、在国调值班调度员指挥下处理。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:881:963"
+        ]
+      },
+      {
+        "fact_id": "quick_isolation",
+        "verdict": "supported",
+        "reason": "2.3.3.2.1原文'在隔离故障后对停电母线恢复运行'，先后顺序一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:963:1005"
+        ]
+      },
+      {
+        "fact_id": "slow_isolation",
+        "verdict": "supported",
+        "reason": "与2.3.3.2.2原文完全一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:1005:1042"
+        ]
+      },
+      {
+        "fact_id": "unlocated_real_fault",
+        "verdict": "supported",
+        "reason": "2.3.3.2.3原文为'一般不得对停电母线试送'，text如实保留'一般不得'的限定语义。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page13:1042:1109"
+        ]
+      },
+      {
+        "fact_id": "trial_supply",
+        "verdict": "ambiguous",
+        "reason": "前半句'应尽可能用外来电源'有原文支持；后半句'本条不构成绕过故障判断和调度指挥的独立试送许可'为text附加的解释性限定，原文该条未明文表述此排除性结论（尽管结合2.3.3.2在调度指挥下处理可推知试送应在调度指挥下进行，但'不构成独立许可'的具体表述属推断性引申）。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:0:36",
+          "d_98d56bcdf4e49412/page13:881:963"
+        ]
+      },
+      {
+        "fact_id": "trial_equipment",
+        "verdict": "supported",
+        "reason": "与2.3.3.2.5原文一致：开关完好、完备继电保护、有条件者可零起升压。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:36:90"
+        ]
+      },
+      {
+        "fact_id": "signal",
+        "verdict": "supported",
+        "reason": "与9.5.1.1原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:617:645"
+        ]
+      },
+      {
+        "fact_id": "trip",
+        "verdict": "supported",
+        "reason": "与9.5.1.2原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:645:669"
+        ]
+      },
+      {
+        "fact_id": "report",
+        "verdict": "supported",
+        "reason": "与9.5.2.1原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:678:700"
+        ]
+      },
+      {
+        "fact_id": "secondary_info",
+        "verdict": "supported",
+        "reason": "与9.5.2.2原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:700:747"
+        ]
+      },
+      {
+        "fact_id": "actual_position",
+        "verdict": "supported",
+        "reason": "与9.5.2.3原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:747:781"
+        ]
+      },
+      {
+        "fact_id": "mode_and_report",
+        "verdict": "supported",
+        "reason": "与9.5.2.4原文一致：详细汇报、根据调度命令调整运行方式。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:781:828"
+        ]
+      },
+      {
+        "fact_id": "transmit",
+        "verdict": "supported",
+        "reason": "与9.5.2.5原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:828:866"
+        ]
+      },
+      {
+        "fact_id": "located_fault",
+        "verdict": "supported",
+        "reason": "与9.5.2.6原文一致：检查保护范围内设备、发现故障点申请调度隔离、做好安全措施通知检修。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:866:960"
+        ]
+      },
+      {
+        "fact_id": "confirmed_misoperation",
+        "verdict": "supported",
+        "reason": "9.5.2.7原文明确双重前置条件（检修人员确认误动＋主管生产领导批准），text的限定性表述与原文语义一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page55:0:68"
+        ]
+      }
+    ],
+    "source_conflicts": [
+      "context中存在两个不同文件：d_98d56bcdf4e49412为姑苏站第五分册（设备异常及故障应急处置）6.0版，2025年9月；d_4b964d3ff677714b为第三分册（运行方式及设备运行规定）6.0版，2026年2月。所有待核验事实均引用第五分册，未混用另一册。两册关于不待调度指令自行操作的规定内容基本一致（第五分册2.2.5增加'事后立即汇报'由第三分册明文写出，第五分册片段未含该句，但属不同册规定，不构成冲突。"
+    ]
+  },
+  "breaker_states_and_gis_incomplete": {
+    "facts": [
+      {
+        "fact_id": "local_three_phase",
+        "verdict": "supported",
+        "reason": "原文2.3.4.1明确：远方操作失灵时'若允许就地操作，必须三相同时操作，不得分相操作'，即就地操作以'允许'为前提条件；'开关操作时发生非全相运行，应立即拉开该开关'亦原文照录。'远方失灵本身不是就地操作许可'为原文条件句的合理蕴含（条件'若允许'未由失灵事实满足）。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:103:177"
+        ]
+      },
+      {
+        "fact_id": "inconsistent_running",
+        "verdict": "supported",
+        "reason": "与原文2.3.4.2完全一致：单相或两相断开且三相不一致保护未跳开运行相时，立即将该开关三相拉开。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:177:237"
+        ]
+      },
+      {
+        "fact_id": "lockout_branches",
+        "verdict": "supported",
+        "reason": "原文2.3.4.3分两种状态：仅合闸闭锁时应立即拉开异常开关；出现分闸闭锁时应停用操作电源并按规程处理。两种状态处理不同，事实陈述的分支区分为原文直接内容；'不能混作同一拉开操作'由分闸闭锁时措施不同合理蕴含。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page14:237:319"
+        ]
+      },
+      {
+        "fact_id": "alarm_recording",
+        "verdict": "supported",
+        "reason": "5.8.1.1原文照录：事件记录报警，故障录波启动。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:178:207"
+        ]
+      },
+      {
+        "fact_id": "state_current",
+        "verdict": "supported",
+        "reason": "5.8.1.2原文照录。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:207:237"
+        ]
+      },
+      {
+        "fact_id": "noise",
+        "verdict": "supported",
+        "reason": "5.8.1.3原文照录。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:237:263"
+        ]
+      },
+      {
+        "fact_id": "report",
+        "verdict": "supported",
+        "reason": "5.8.2.1原文照录：立即将有关情况汇报领导。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:272:299"
+        ]
+      },
+      {
+        "fact_id": "onsite_video",
+        "verdict": "supported",
+        "reason": "5.8.2.2原文照录：现场检查设备具体情况，如果声音异常，应做好摄像并汇报调度和领导。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:299:346"
+        ]
+      },
+      {
+        "fact_id": "approved_open",
+        "verdict": "supported",
+        "reason": "5.8.2.3原文：'经领导批准，申请调度拉开该断路器'，即拉开需向调度申请，领导批准是申请前提而非现场自行拉开许可，该区分由原文操作路径直接蕴含。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:346:378"
+        ]
+      },
+      {
+        "fact_id": "cannot_open",
+        "verdict": "supported",
+        "reason": "5.8.2.4原文照录：如果断路器拉不开，应申请调度将该断路器隔离。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:378:415"
+        ]
+      },
+      {
+        "fact_id": "isolate_repair",
+        "verdict": "supported",
+        "reason": "5.8.2.5原文照录：考虑负荷倒换、滤波器切换等，做好安全措施，联系检修人员处理。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:415:475"
+        ]
+      }
+    ],
+    "source_conflicts": [
+      "d_98d56bcdf4e49412（第五分册，封面日期二O二五年九月）与d_4b964d3ff677714b（第三分册，二O二六年二月）为不同分册文件，日期差异不构成冲突；2.2.5与第三分册5.7的紧急操作条款内容一致（后者附加'事后应立即汇报'及'确保安全的前提下'条件），不构成矛盾。"
+    ]
+  },
+  "gis_refuses_open": {
+    "facts": [
+      {
+        "fact_id": "backup_clears",
+        "verdict": "supported",
+        "reason": "引文5.10.1.1与事实表述完全一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page31:134:181"
+        ]
+      },
+      {
+        "fact_id": "still_closed",
+        "verdict": "supported",
+        "reason": "原文明确'拒分断路器在合位，电流、功率显示为零'，即合位下电流功率为零，蕴含零电流零功率不能证明已分闸；语义未超出原文。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page31:181:214"
+        ]
+      },
+      {
+        "fact_id": "monitoring",
+        "verdict": "supported",
+        "reason": "引文5.10.2.1直接支持。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page31:224:257"
+        ]
+      },
+      {
+        "fact_id": "actual_position",
+        "verdict": "supported",
+        "reason": "引文5.10.2.2直接支持。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page31:257:300"
+        ]
+      },
+      {
+        "fact_id": "checklist",
+        "verdict": "supported",
+        "reason": "原文5.10.2.3完整列举了事实所列各检查项（引文截断但同evidence完整段含全部内容）；'各机构项目按设备类型检查'为原文并列列举气动/液压/弹簧机构项目的合理蕴含。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page31:300:449"
+        ]
+      },
+      {
+        "fact_id": "isolate_restore",
+        "verdict": "supported",
+        "reason": "原文5.10.2.4与事实一致：汇报一、二次设备检查结果，按值班调控人员指令隔离故障点及拒动断路器，恢复非故障设备运行。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page31:449:519"
+        ]
+      }
+    ],
+    "source_conflicts": [
+      "上下文含另一册（第三分册，2026年2月）及2.1/2.2节条款，与所核事实（第五分册5.10节）不构成冲突，各册分别独立。"
+    ]
+  },
+  "gis_mistrip": {
+    "facts": [
+      {
+        "fact_id": "no_system_fault",
+        "verdict": "supported",
+        "reason": "原文5.11.1.1明确列出“无系统故障特征”作为GIS断路器偷跳（误跳）现象之一。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page31:552:573"
+        ]
+      },
+      {
+        "fact_id": "no_protection_signal",
+        "verdict": "supported",
+        "reason": "原文5.11.1.2明确“无保护动作信号，监控系统有断路器变位信息”；text后半句“只有无保护信号并不能替代全部现象和原因检查”与处理条款5.11.2.1-5.11.2.3要求逐项检查、查明原因的语义一致，属合理蕴含。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page31:573:608",
+          "d_98d56bcdf4e49412/page31:618:654",
+          "d_98d56bcdf4e49412/page31:685:785"
+        ]
+      },
+      {
+        "fact_id": "monitoring",
+        "verdict": "supported",
+        "reason": "与5.11.2.1原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page31:618:654"
+        ]
+      },
+      {
+        "fact_id": "work_weather",
+        "verdict": "supported",
+        "reason": "与5.11.2.2原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page31:654:685"
+        ]
+      },
+      {
+        "fact_id": "remove_cause",
+        "verdict": "supported",
+        "reason": "5.11.2.3规定人员误碰、机械外力振动、保护屏受外力振动、二次回路故障等原因引起的偷跳应查明原因、排除故障后汇报值班调控人员并恢复送电；先后顺序（查明排除→汇报→恢复）与text一致，后半句为对顺序的合理强调。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page31:685:785"
+        ]
+      },
+      {
+        "fact_id": "not_restorable",
+        "verdict": "supported",
+        "reason": "5.11.2.4规定其他电气或机械部分故障无法立即恢复送电时，汇报值班调控人员，隔离偷跳（误跳）断路器，联系检修处理，与text一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page31:785:856"
+        ]
+      },
+      {
+        "fact_id": "synchronism",
+        "verdict": "supported",
+        "reason": "与5.11.2.5原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page31:856:904"
+        ]
+      }
+    ],
+    "source_conflicts": [
+      "第五分册封面日期为二O二五年九月（d_98d56bcdf4e49412/page2），第三分册封面日期为二O二六年二月（d_4b964d3ff677714b/cp290_297），两册日期版本不同但属不同分册文件，不构成同一事实的冲突。"
+    ]
+  },
+  "gis_low_mechanism_pressure": {
+    "facts": [
+      {
+        "fact_id": "alarms",
+        "verdict": "supported",
+        "reason": "5.12.1.1原文列出油（气）压力低告警、闭锁重合闸、闭锁合闸、闭锁分闸、控制回路断线等告警，并明确'可能伴随油泵运转超时等告警'，与事实表述一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page32:0:84"
+        ]
+      },
+      {
+        "fact_id": "gauge_abnormal",
+        "verdict": "supported",
+        "reason": "5.12.1.2原文'现场检查发现油（气）压力表指示异常'直接支持。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page32:84:116"
+        ]
+      },
+      {
+        "fact_id": "read_gauge",
+        "verdict": "supported",
+        "reason": "5.12.2.1原文'现场检查设备压力表指示是否正常'直接支持。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page32:126:155"
+        ]
+      },
+      {
+        "fact_id": "power_motor",
+        "verdict": "supported",
+        "reason": "5.12.2.2原文检查储能操动机构电源、机构箱内二次元件有无过热烧损、油泵（空压机）运转是否正常，与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page32:155:218"
+        ]
+      },
+      {
+        "fact_id": "leaks_valves",
+        "verdict": "supported",
+        "reason": "5.12.2.3原文涵盖手动释压阀关闭到位、液压机构油位/严重漏油、气动机构漏气及排水阀、气水分离器电磁排污阀关闭严密，与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page32:218:306"
+        ]
+      },
+      {
+        "fact_id": "below_lockout",
+        "verdict": "supported",
+        "reason": "5.12.2.4原文顺序为：断开储能操动电机电源→汇报值班调控人员→断开断路器操作电源→按值班调控人员指令隔离断路器。储能电机电源与断路器操作电源在原文中确为两个先后断开的不同对象，先后关系和区分均成立。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page32:306:393"
+        ]
+      }
+    ],
+    "source_conflicts": []
+  },
+  "gis_interrupter_explosion": {
+    "facts": [
+      {
+        "fact_id": "trip_open_zero",
+        "verdict": "supported",
+        "reason": "5.9.1.1原文明确该现象；'仍应核对实际位置'由5.9.2.2'结合保护装置动作情况，核对断路器的实际位置'支持，跨条款成立。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:505:549",
+          "d_98d56bcdf4e49412/page30:631:681"
+        ]
+      },
+      {
+        "fact_id": "rupture",
+        "verdict": "supported",
+        "reason": "与5.9.1.2原文完全一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:549:587"
+        ]
+      },
+      {
+        "fact_id": "entry_prerequisites",
+        "verdict": "ambiguous",
+        "reason": "原文要求使用防护用品、进入室内前强制排风15分钟、SF6检漏合格、含氧量合格，这些前提均被支持；但'通风时间和两项合格检测不可互相替代'为原文未明示的表述，原文只以并列句列出全部要求，未明确说明可否替代或顺序豁免。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page31:0:100"
+        ]
+      },
+      {
+        "fact_id": "monitoring",
+        "verdict": "supported",
+        "reason": "与5.9.2.1原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:596:631"
+        ]
+      },
+      {
+        "fact_id": "locate",
+        "verdict": "supported",
+        "reason": "与5.9.2.2原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:631:681"
+        ]
+      },
+      {
+        "fact_id": "associated_damage",
+        "verdict": "supported",
+        "reason": "检查内容与5.9.2.3原文一致；'需要进入室内的检查受入室前提约束'由5.9.2.8对'现场检查时如需进入室内'的一般性规定合理推出。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:681:754",
+          "d_98d56bcdf4e49412/page31:0:100"
+        ]
+      },
+      {
+        "fact_id": "report",
+        "verdict": "supported",
+        "reason": "与5.9.2.4原文一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:754:788"
+        ]
+      },
+      {
+        "fact_id": "fire",
+        "verdict": "supported",
+        "reason": "与5.9.2.5原文一致，隔离→扑救→必要时联系消防的先后顺序与原文'立即对火灾点进行隔离，然后进行扑救，必要时联系消防部门'相符。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:788:843"
+        ]
+      },
+      {
+        "fact_id": "neighbor_unsafe",
+        "verdict": "supported",
+        "reason": "与5.9.2.6原文一致，条件（相邻设备受损且无法继续安全运行）和动作（立即向值班调控人员申请停运）均吻合。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:843:891"
+        ]
+      },
+      {
+        "fact_id": "restore_healthy",
+        "verdict": "supported",
+        "reason": "与5.9.2.7原文一致；引文末尾的'20'为页码混入，不影响事实本身。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page30:891:971"
+        ]
+      }
+    ],
+    "source_conflicts": [
+      "上下文含第五分册（2025年9月，6.0版）与第三分册（2026年2月，6.0版）两份文件；2.2.5条（第五分册）与第三分册'不待国调指令自行操作'条款内容相近但分属不同册，且第三分册额外要求'事后应立即向相关调控机构值班调度员汇报'，本组待核验事实均出自第五分册，未发生跨册误引，不构成冲突。"
+    ]
+  },
+  "breaker_protection_action": {
+    "facts": [
+      {
+        "fact_id": "signal",
+        "verdict": "supported",
+        "reason": "原文9.4.1.1明确'事件记录发断路器保护动作信号'，与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:221:250"
+        ]
+      },
+      {
+        "fact_id": "trip",
+        "verdict": "supported",
+        "reason": "原文9.4.1.2明确'相应断路器动作跳闸'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:250:275"
+        ]
+      },
+      {
+        "fact_id": "report",
+        "verdict": "supported",
+        "reason": "原文9.4.2.1明确'汇报调度和领导'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:284:306"
+        ]
+      },
+      {
+        "fact_id": "secondary_info",
+        "verdict": "supported",
+        "reason": "原文9.4.2.2含检查保护装置运行情况、查看动作报告和故障录波、记录报警信息，与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:306:353"
+        ]
+      },
+      {
+        "fact_id": "actual_position",
+        "verdict": "supported",
+        "reason": "原文9.4.2.3明确'检查一次设备动作情况，确认开关实际位置'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:353:387"
+        ]
+      },
+      {
+        "fact_id": "mode_report",
+        "verdict": "supported",
+        "reason": "原文9.4.2.4明确'向调度、领导详细汇报设备检查情况，并根据调度命令调整系统运行方式'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:387:434"
+        ]
+      },
+      {
+        "fact_id": "transmit",
+        "verdict": "supported",
+        "reason": "原文9.4.2.5明确'整理故障录波、事件记录，并传真至相关调度和部门'。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:434:472"
+        ]
+      },
+      {
+        "fact_id": "misoperation",
+        "verdict": "supported",
+        "reason": "原文9.4.2.6为'若检查站内一次设备无明显异常，经检修人员确认为开关保护误动，则申请调度退出该保护，由检修人员处理'，事实正确表达了两个前提（无明显异常+检修人员确认）缺一不可，text补充说明与原文条件结构一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:472:536"
+        ]
+      },
+      {
+        "fact_id": "primary_fault",
+        "verdict": "supported",
+        "reason": "原文9.4.2.7明确'若检查站内一次设备异常，则申请调度将该开关转检修并做好安全措施通知检修人员处理'，与事实一致。",
+        "evidence_ids": [
+          "d_98d56bcdf4e49412/page54:536:593"
+        ]
+      }
+    ],
+    "source_conflicts": []
+  }
+}

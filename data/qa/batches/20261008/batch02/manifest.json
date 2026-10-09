@@ -1,0 +1,20 @@
+{
+  "version": "20261008-quality-batch02-v2",
+  "qa": 18,
+  "chains": 3,
+  "legacy_candidates": 1997,
+  "legacy_training_eligible_under_new_gate": 0,
+  "training_export_created": false,
+  "status": "semantic_review_pending",
+  "structure_checked": true,
+  "semantic_quality_passed": false,
+  "builder_sha256": "0dc2fb9082a625e5f1f47e86f69c8c8ce8a1db74b4c3a8f800b2942316e12628",
+  "seed_sha256": "f6dac167cba1c5c758d8bde2b894a6400191e2b140755e29ab0e04098080dcc1",
+  "source_qa_sha256": "35ef0dd4ace9a1a40666d8ab257f2171937809c071df544fb2f184da7effa2f8",
+  "files": {
+    "candidates.jsonl": "c2c01385354ad93b36fbd7b6055be7e4bb871a5cc7e52b5a91775a479fa074df",
+    "chains.json": "b9a2333c63422f28d8511605cf865cefc291ed9541dae2b698c82b85a38d446a",
+    "blind_prompts.jsonl": "e4a473e4391a66f1f4385024862d4c52e03bfb2370e0e9e6124654e6bd485562",
+    "legacy_quality_inventory.jsonl": "415faa223a17cdc055681201864b4d7ca71b6c549e319f7791519dd9798a3855"
+  }
+}

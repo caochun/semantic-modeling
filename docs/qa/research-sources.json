@@ -1,0 +1,192 @@
+{
+  "accessed_date": "2026-10-08",
+  "scope": "document-grounded QA generation",
+  "papers": [
+    {
+      "id": "1906.05416",
+      "version_seen": "1906.05416v1",
+      "title": "Synthetic QA Corpora Generation with Roundtrip Consistency",
+      "published": "2019-06-12T22:50:31Z",
+      "updated": "2019-06-12T22:50:31Z",
+      "author_comment": null,
+      "url": "https://arxiv.org/abs/1906.05416",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2102.07033",
+      "version_seen": "2102.07033v1",
+      "title": "PAQ: 65 Million Probably-Asked Questions and What You Can Do With Them",
+      "published": "2021-02-13T23:43:45Z",
+      "updated": "2021-02-13T23:43:45Z",
+      "author_comment": null,
+      "url": "https://arxiv.org/abs/2102.07033",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2309.09530",
+      "version_seen": "2309.09530v4",
+      "title": "Adapting Large Language Models to Domains via Reading Comprehension",
+      "published": "2023-09-18T07:17:52Z",
+      "updated": "2024-07-25T03:08:18Z",
+      "author_comment": "ICLR 2024 Conference",
+      "url": "https://arxiv.org/abs/2309.09530",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2401.14367",
+      "version_seen": "2401.14367v1",
+      "title": "Genie: Achieving Human Parity in Content-Grounded Datasets Generation",
+      "published": "2024-01-25T18:14:57Z",
+      "updated": "2024-01-25T18:14:57Z",
+      "author_comment": "Accepted to ICLR24",
+      "url": "https://arxiv.org/abs/2401.14367",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2402.18334",
+      "version_seen": "2402.18334v3",
+      "title": "Learning to Generate Instruction Tuning Datasets for Zero-Shot Task Adaptation",
+      "published": "2024-02-28T13:54:57Z",
+      "updated": "2024-09-11T16:28:29Z",
+      "author_comment": "ACL Findings 2024",
+      "url": "https://arxiv.org/abs/2402.18334",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2403.01081",
+      "version_seen": "2403.01081v3",
+      "title": "LAB: Large-Scale Alignment for ChatBots",
+      "published": "2024-03-02T03:48:37Z",
+      "updated": "2024-04-29T18:55:34Z",
+      "author_comment": "Corresponding Author: Akash Srivastava. Equal Contribution: Shivchander Sudalairaj, Abhishek Bhandwaldar, Aldo Pareja, Akash Srivastava, Code: https://github.com/instructlab",
+      "url": "https://arxiv.org/abs/2403.01081",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2505.20416",
+      "version_seen": "2505.20416v1",
+      "title": "GraphGen: Enhancing Supervised Fine-Tuning for LLMs with Knowledge-Driven Synthetic Data Generation",
+      "published": "2025-05-26T18:06:50Z",
+      "updated": "2025-05-26T18:06:50Z",
+      "author_comment": null,
+      "url": "https://arxiv.org/abs/2505.20416",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2605.18261",
+      "version_seen": "2605.18261v1",
+      "title": "Knowledge-to-Verification: Exploring RLVR for LLMs in Knowledge-Intensive Domains",
+      "published": "2026-05-18T11:59:31Z",
+      "updated": "2026-05-18T11:59:31Z",
+      "author_comment": null,
+      "url": "https://arxiv.org/abs/2605.18261",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2601.14160",
+      "version_seen": "2601.14160v1",
+      "title": "Domain-Adaptation through Synthetic Data: Fine-Tuning Large Language Models for German Law",
+      "published_date_from_pdf": "2026-01-20",
+      "url": "https://arxiv.org/abs/2601.14160",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2601.02285",
+      "version_seen": "2601.02285v2",
+      "title": "pdfQA: Diverse, Challenging, and Realistic Question Answering over PDFs",
+      "published": "2026-01-05T17:15:26Z",
+      "updated": "2026-01-06T13:22:59Z",
+      "author_comment": null,
+      "url": "https://arxiv.org/abs/2601.02285",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2412.07030",
+      "version_seen": "2412.07030v5",
+      "title": "FM2DS: Few-Shot Multimodal Multihop Data Synthesis with Knowledge Distillation for Question Answering",
+      "published": "2024-12-09T22:35:44Z",
+      "updated": "2025-09-13T20:47:08Z",
+      "author_comment": "Findings of EMNLP 2025",
+      "url": "https://arxiv.org/abs/2412.07030",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2608.21558",
+      "version_seen": "2608.21558v1",
+      "title": "Automating Multi-Hop RAG Evaluation via TRIAD: From Context Extraction to Validated Dataset Generation",
+      "published": "2026-08-21T18:46:55Z",
+      "updated": "2026-08-21T18:46:55Z",
+      "author_comment": "Accepted at the 19th International Natural Language Generation Conference (INLG 2026)",
+      "url": "https://arxiv.org/abs/2608.21558",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2507.04884",
+      "version_seen": "2507.04884v2",
+      "title": "Building Open-Retrieval Conversational Question Answering Systems by Generating Synthetic Data and Decontextualizing User Questions",
+      "published": "2025-07-07T11:16:44Z",
+      "updated": "2026-08-06T11:48:40Z",
+      "author_comment": "Accepted at SIGDIAL 2025",
+      "url": "https://arxiv.org/abs/2507.04884",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2606.32002",
+      "version_seen": "2606.32002v1",
+      "title": "Self-Study Reconsidered: The Hidden Fragility of Learning from Self-Generated QA",
+      "published": "2026-06-30T17:35:14Z",
+      "updated": "2026-06-30T17:35:14Z",
+      "author_comment": null,
+      "url": "https://arxiv.org/abs/2606.32002",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2606.12789",
+      "version_seen": "2606.12789v1",
+      "title": "How Fine-Grained Should a RAG Benchmark Be? A Hierarchical Framework for Synthetic Question Generation",
+      "published": "2026-06-11T01:14:07Z",
+      "updated": "2026-06-11T01:14:07Z",
+      "author_comment": null,
+      "url": "https://arxiv.org/abs/2606.12789",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2608.00712",
+      "version_seen": "2608.00712v1",
+      "title": "Exploiting Intrinsic Duality for Multi-Hop Question Generation",
+      "published": "2026-08-01T15:20:16Z",
+      "updated": "2026-08-01T15:20:16Z",
+      "author_comment": "14 pages, 9 figures, 9 tables",
+      "url": "https://arxiv.org/abs/2608.00712",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2509.25736",
+      "version_seen": "2509.25736v2",
+      "title": "Think Less, Label Better: Multi-Stage Domain-Grounded Synthetic Data Generation for Fine-Tuning Large Language Models in Telecommunications",
+      "published": "2025-09-30T03:49:57Z",
+      "updated": "2026-01-30T03:11:39Z",
+      "author_comment": "6 pages, 6 figures, 5 tables, IEEE ICC 2026",
+      "url": "https://arxiv.org/abs/2509.25736",
+      "evidence": "paper_full_text"
+    },
+    {
+      "id": "2609.12171",
+      "version_seen": "2609.12171v1",
+      "title": "WinSyn: An Automated Pipeline for Realistic Enterprise Question-Answering Evaluation",
+      "published": "2026-09-10T19:59:22Z",
+      "updated": "2026-09-10T19:59:22Z",
+      "author_comment": null,
+      "url": "https://arxiv.org/abs/2609.12171",
+      "evidence": "paper_full_text"
+    }
+  ],
+  "engineering_sources": [
+    "https://github.com/open-sciencelab/GraphGen",
+    "https://github.com/BatsResearch/bonito",
+    "https://github.com/instructlab/sdg",
+    "https://github.com/Red-Hat-AI-Innovation-Team/sdg_hub",
+    "https://docs.ragas.io/en/stable/concepts/test_data_generation/rag/"
+  ],
+  "note": "Publication status in author_comment is author-reported. Version metadata records arXiv entries observed during research; claims in the report distinguish experiments from project recommendations."
+}

@@ -1,0 +1,780 @@
+{
+  "review_basis": "独立原文台账逐条对照已复核QA；共有条件分支和长条款的多命题单独核查",
+  "rows": [
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.1.1",
+      "unit_sha256": "c1304d8aa6ea1e68cba633c2491cd4748ebae5dc04b1810934d95c2496bcf12f",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:accident_principles/limit"
+      ],
+      "facts_sha256": "3e96128a542d0b20ce42879a88e810e0c037f5e4edf5e5291f884ca491f8fe27",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "尽快限制事故扩大与消除人身、设备危险均完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.1.2",
+      "unit_sha256": "46e6072c65d17610027f4e95ec4af98871c97edaf1651e7c8fe3022f3d3852a0",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:accident_principles/station_supply"
+      ],
+      "facts_sha256": "558211b86f4b5305292cb8185955f1af47182f415abb8e68ae1a96a0f1333382",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "尽力保证恢复站用电源目标完整，未改成已恢复即结束事故处理。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.1.3",
+      "unit_sha256": "f153f1ae987d710d826203693d10c288449e994dacd5158c097c9af7b9dee13c",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:accident_principles/restore_without_misoperation"
+      ],
+      "facts_sha256": "198b2b2821d2093845a8c6b0d0e6b8c7eb95ce3ac0cb7b19d1b68049c2fb6566",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "及时处理事故、尽快送电及严防误操作三项完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.1.4",
+      "unit_sha256": "aac6bea7148b9a477fec4990a74307d363a3d2a0162f60b4607d2467df1ccdce",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:accident_principles/record_report"
+      ],
+      "facts_sha256": "664558b4a4eaf4e44d90d90012ade2b2611e28beba691fefd4d0c11f5e1adf7e",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "事故发生和主要操作两个时间、领导和调度两个对象及及时报告要求完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.1.5",
+      "unit_sha256": "7b80d1e182b032b59627f12e1fd6ed428555a4a2532fcbd1865a6e6f5d3219fe",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:accident_principles/diagnostic_basis"
+      ],
+      "facts_sha256": "421b56ac7656ceaad88679789f9c7cd7dee9e2e2db535326ba7d14723659d269",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "表计/保护/报警/自动装置四类依据，分析判断与方案制定、防非同期并列及事故扩大均完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.5",
+      "unit_sha256": "979b5acff633a94041dffef591fd8d8a57dc2036fc6246165eaa8c069a926477",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:emergency_authority/emergency_scope"
+      ],
+      "facts_sha256": "6e36dfef76d1a4e16ca7c5181c21864036508311ccc20355292395be3423cbb9",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "防止事故扩大、运行值班员、不待指令、自行紧急操作及引用明确列举范围完整；四类子项另逐条核对。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.5.1",
+      "unit_sha256": "abb648f391366fa2d13a2353df38d6f658a0a27ebe0be978e265ed8c1e2350d7",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:emergency_authority/danger_stop"
+      ],
+      "facts_sha256": "dd6e98de1044daf40f1562ee92f8ceabef86d14c385056c3d05d8a882b2538f0",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "威胁人身设备安全的对象和停电动作完整；未扩展到任意现场感觉紧急。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.5.2",
+      "unit_sha256": "1736d89dc3d561b26e52b3bfc99efb5fcf663513db41713e9f1e141a3187b2cc",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:emergency_authority/damaged_isolation"
+      ],
+      "facts_sha256": "e0e4a9b7bd182d3aa6ed5a599a001b241a202cbb38482ec93e90b74bbe481158",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "故障停运且已损坏两个前提及隔离动作完整；关联第三分册确保安全条件另核对。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.5.3",
+      "unit_sha256": "4c9cb7b0d45ddb5155314a4a6e5d6e5090c60ad060672617c20213b5826c5209",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:emergency_authority/aux_restore"
+      ],
+      "facts_sha256": "eb777d8a4b8f0c0a9d58d02739bacc61316a84cf3adb4636ede522a0763b4b9f",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "站用电部分/全部停电及恢复其电源完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.5.4",
+      "unit_sha256": "eb027ffcacba58a073a5fb10e986ee835bed80e017b9f793dfd616d84c757c8c",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:emergency_authority/other_explicit"
+      ],
+      "facts_sha256": "8d09e17012d079c5af2414b2b4897209247c45ddf624161cbb893d1e32e2b6e6",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "站规程明确允许自行处理的引用性例外完整；未知授权保留待核。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp21938_21993",
+      "unit_sha256": "7a8142da58541969e2f4017793a0de48f4b4f809e008de0c16ff75e605bc9c2b",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:emergency_authority/after_report"
+      ],
+      "facts_sha256": "b824c5f2612dbc3d61c363718c15932cfb08ba73ebd0f142ed61a9d886e2bb6c",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "厂站应急操作以防故障扩大为目的、可不待国调指令自行处理、事后立即向相关调控机构值班调度员汇报三层关系完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_4b964d3ff677714b/cp22016_22042",
+      "unit_sha256": "62dc543562ee2a9f559a01522723616d21a75591989e39502724b3d7ad6e5555",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:emergency_authority/safe_isolation"
+      ],
+      "facts_sha256": "b5e3b5c081282524fa34627744232599ee68d8fbf2ae27957e22fc3681138740",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "第三分册对故障停运且损坏设备隔离的确保安全前提与隔离动作完整；第五分册引用点另保留，不混成同一原句。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.4",
+      "unit_sha256": "a2bf8c47af86815f4b31511730798e711c1eb8197ac3b200d352c0812c54c060",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:emergency_authority/national_report"
+      ],
+      "facts_sha256": "462da7b5191b031c376c5f7932e78107036b9ec5327875a00e5e81e4e7730319",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "国调管辖范围、立即概况与查明后尽快详细两阶段、时间现象/跳闸/保护/电压潮流全部保留。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.3",
+      "unit_sha256": "5ef4ba5f05fb00796b729e6704ea30197004e4e6e165087d08ac4177b7af2528",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:emergency_authority/impact_report"
+      ],
+      "facts_sha256": "f1730a919f0f252fec3076142a33563f87eb42ac77bf486be5a48a5da998c1a5",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "有关电网事故影响国调管辖安全的范围，尽快简要报告、结束后及时原始报告及详细汇报均完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.1.1",
+      "unit_sha256": "26271256aa5f5aff2ff7a72ca13329f5a849fe888e6858a2a2364477600504d2",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:incident_coordination/remove_threat"
+      ],
+      "facts_sha256": "23a345d70bc8c0eddb4508e0a97799fa0dd09052ef7f15d911d42aef47cfd93c",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "迅速限制发展、消除根源及人身/设备/电网三类威胁解除完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.1.2",
+      "unit_sha256": "699e48dc8352f9d6f42189c7f3bc423bebbe671636003a51c21b73839779db26",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:incident_coordination/keep_normal"
+      ],
+      "facts_sha256": "688f15864c2d969f24eaf11b2e8fc7200b9d508d9ac0d63b1546a4c26cc5836f",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "正常设备运行、重要设备和站用电的正常供电均完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.1.3",
+      "unit_sha256": "b458e1d52a9ec77463ae313b61264cb8d149991fc163b7c450047bad835e5302",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:incident_coordination/reparallel"
+      ],
+      "facts_sha256": "4a6585370bf9f3b699844e990cd3a947b6d7c52a5b16f4c5a099b48c3bd7c48b",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "电网解列前提及尽快恢复并列目标完整，未编造并列操作票。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.1.4",
+      "unit_sha256": "0d601f6d24b0ac23afd043a680ea6fbcd744afe3c7146fd9e4ad5e9c3901e9d6",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:incident_coordination/restore_supply"
+      ],
+      "facts_sha256": "33b8bc8a951360064d3c6215c6ff6789fc79789456d4052922df82d0860b75fe",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "尽快恢复已停电设备供电目标完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.2",
+      "unit_sha256": "df1db707a0ce371b1a1edbea249673448dd739061ae62a672fb8e02dfe17c6b7",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:incident_coordination/normal_grid"
+      ],
+      "facts_sha256": "6638b6546859bdfe546b62258c83911b4ad320981103da67cbf62964ae4ab809",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "调整及恢复正常电网方式两动作完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.6",
+      "unit_sha256": "0b438029fe01b04748a3e61dd04568ac2ef4906c20b4f8d52bf1a9e4a3d5074d",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:incident_coordination/transformers_abnormal"
+      ],
+      "facts_sha256": "00304f1439d7e86466fae7d9a79004331f67065079816232b154956438c3f086",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "电压/电流互感器异常、迅速按规程处理及国调汇报全部完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.7",
+      "unit_sha256": "782857ced5ac525a303de1b0666a3061bdd9a904174214f8cb16f0e0e26a08db",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:incident_coordination/control_room"
+      ],
+      "facts_sha256": "c6f882d7c910e3fe387958393d186dff04e8cd2081ae3f8be4ac44c4151ca59a",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "跨页续句完整：相关领导和工作人员可留、其他人迅速离开、非事故单位不即时询问原因过程及避免影响处置完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.8",
+      "unit_sha256": "bfcc0fa2895fb322180f929f8f40f73ab8895e174e4b95868369b7792fc768ad",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:incident_coordination/close_record"
+      ],
+      "facts_sha256": "5d212553dbb786a3696babe5e5114cd3624df8c64cdda552428bdda503c828cb",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "事故处理完毕后的详细记录与按规定报告两项完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.9",
+      "unit_sha256": "056ea7e0cfcc8c3f55d59393aa27cee337d312ede667931481bab218c524c899",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:incident_coordination/investigation"
+      ],
+      "facts_sha256": "c07f7b82a4cb66077a4a5ec7ce9cc0644d3d01b74d909cbb5af49f2cbc9ed82d",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "调查按所列规程开展完整；引用名称不是本条提供完整调查流程。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.10",
+      "unit_sha256": "2cf7701f69d7bb67f9ad4fd1454398d61757b743fcb4d5feddcfbf0cb3ccca1f",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:incident_coordination/frequency_voltage"
+      ],
+      "facts_sha256": "10b0ab0122d2ce1a63e5059ffe947daf8c3e2ca6a7bbdc1af178142589dfd6e2",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "频率/电压异常、值班员监视加强及及时国调汇报完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.3.5.1",
+      "unit_sha256": "d9706478d032b81e2a5f0b9fdc6b4fd2775066acef4101a831dd456a3b898750",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:dispatch_communication_loss/restore_communication"
+      ],
+      "facts_sha256": "92e0c7c864a3d2bcc17e10e31702a3cf33220baac93d278bde4f904a56323d6b",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "通信失联各方积极恢复，不能尽快恢复时由国调通过有关网省调转达业务的条件与主体完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.3.5.2.1",
+      "unit_sha256": "ca0d9072e07979a4b76e99231bcf4dd51d7d40689eb7bd83c3636bb0a40029dc",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:dispatch_communication_loss/stable_mode"
+      ],
+      "facts_sha256": "107efd146e9f70284f5670e53ac941cc4f8af98dd7aff37321111879f28a19ef",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "调度失联期间的运行方式尽可能不变要求完整，未去掉尽可能限定。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.3.5.2.2",
+      "unit_sha256": "8f0c4344adfb8bbaf1b287552a8155d9ca2c23b250a838bcc5b6efc1467b241a",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:dispatch_communication_loss/repaired_wait"
+      ],
+      "facts_sha256": "0c5b5dadf046a18302f76c622d7a7a6380e05adf84f2a948125d1ffc1c4f3b49",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "检修中设备通信期间完工且可恢复，仍需等通信正常后再恢复的三个条件与动作完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.3.5.3",
+      "unit_sha256": "d97295fe2631b8a77efb7b3f890695804e813209b50f78368f22feffbd0765f5",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:dispatch_communication_loss/unapproved_command",
+        "qa_quality_batch03_20261008_v4:dispatch_communication_loss/approved_command",
+        "qa_quality_batch03_20261008_v4:dispatch_communication_loss/dispatch_view"
+      ],
+      "facts_sha256": "5b8a2dce964e1ddec02e6119e92864706437fcff1ebf5a850274cb38c3f95818",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "同一长条款三项分别映射：未重复或虽重复未同意不得执行、已同意可执行全部、调度未收完成报告失联仍视正在执行，完整保留许可节点。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.3.5.4",
+      "unit_sha256": "b2c44978f235286511187ee25ffc6d64233ed6c829e5f314cd76530aef22be98",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:dispatch_communication_loss/no_arbitrary_action"
+      ],
+      "facts_sha256": "e6486135ccd60ca01a6ba15342dab7bb1c91d33d8f0fc0a4c50505d3c5487ef6",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "国调安全问题或无特殊时限业务、恢复联系前不得自行处理及紧急按规程的例外全部保留。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.3.5.5",
+      "unit_sha256": "0439fd231c260de13a680c3386978b8a1c07f798ee8b427bc6ff2cdf048ffd6d",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:dispatch_communication_loss/report_when_restored"
+      ],
+      "facts_sha256": "94e5edfc4c846ac0b9e71f966a3911a51c33532a5b78f777087a997488d795c7",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "通信恢复后立即向国调补报中断期间一切应报事项完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.5.1.1",
+      "unit_sha256": "99ef1f890f5bc5b786e2df73e53dc026d8cb43043b0e3f5c728255a07b840bbd",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:main_pump_no_backup/phenomenon"
+      ],
+      "facts_sha256": "d59013b14b1438b5e65e2292a2764de77a8fb3b6afa2980d99730285326482c6",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "主循环泵异常与尚未切至备用的前提完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.5.2.1",
+      "unit_sha256": "9db23ee94ce18d185e02c58acf5b34ff23477e17a5b9cc12e8be253016ec2a06",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:main_pump_no_backup/report"
+      ],
+      "facts_sha256": "ec32b2a6ad3d47b1427de09b583e88beb74036dbaf62af0ddd4c758752e0c599",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "领导汇报和通知检修两项完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.5.2.2",
+      "unit_sha256": "ce28d74bd413b0e741c703f9a5e63e95b2137fd63144c3890b54c97fe4cb9e3e",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:main_pump_no_backup/automatic"
+      ],
+      "facts_sha256": "8d7fa9d3cd7f976e03b5b7debd2bdfe62ff4e835f8b2192f302b4e91ca9a2759",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "内水冷房、备用循环泵控制方式检查及非自动时立即切自动条件完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.5.2.3",
+      "unit_sha256": "1eadd624a9283dca1ba38e73f60a6ee764f4065dabb51794c012e0f1b56afb9d",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:main_pump_no_backup/local_switch"
+      ],
+      "facts_sha256": "58a2259140c1cad5d9ff498f67d0e6c1bd3077a68fcbc86cc00fbcf8851c0786",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "主泵运行检查、严重发热/冒烟/声音异常/开关烧糊四现象、立即就地切换及现场监视备用投入正常完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.5.2.4",
+      "unit_sha256": "21df64ac2ca79f8721492bcae9da9672900e597f9ffb54c16edd2427285ed26b",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:main_pump_no_backup/fault_pump_isolation"
+      ],
+      "facts_sha256": "fbdcd26a40470840492a7eb56b1fba345e45707e10d3d43f17c9153f3acc7231",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "内水冷室软启柜电源、故障泵400V电源和安全开关，安措及检修全部完整；不同备用状态由全链题分开。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.5.2.5",
+      "unit_sha256": "2c53eb1897fb5cd85686fcb2dde05d6d7dddbf20b2edd17f0aac5e5dba76c57a",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:main_pump_no_backup/backup_failed"
+      ],
+      "facts_sha256": "3a7bc9afba79f7ab1acc8fb212a89be4aa2b501645011eaf891c8bbd4880af94",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "备用不能投入或投入也故障、对应阀先申请调度停运、随后两台故障泵软启柜/400V/安全开关断开、安措检修完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.7.1.1",
+      "unit_sha256": "eb7c18090ce1865e305364deb4067ca2370c031b8dede3575495983a259dedfa",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:coolant_conductivity/alarm"
+      ],
+      "facts_sha256": "ddeb474a7bbc2a52b207a17ca8b1bb6318f2953f5b3ccc340ff2c5c6b95a7fa3",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "事件记录发冷却水电导率高报警现象完整，后续诊断由处理条款单列。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.7.2.1",
+      "unit_sha256": "1401b52b966dd6d20a271c336af6948359aa02b6eb2e1c9d4ffb860e3fefc868",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:coolant_conductivity/report"
+      ],
+      "facts_sha256": "bad05c831502f0286dd24560bed763db8ebd8028aa4868b21c7c7e54a806e100",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "领导汇报与通知检修完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.7.2.2",
+      "unit_sha256": "f304fc64638201a5a6a28668436d0fded0c44f9a25d5aec6af3947ef74791c15",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:coolant_conductivity/compare"
+      ],
+      "facts_sha256": "88486b6db6d5a640bf1a20b5546d300ff5ef8a71e1eb3db7d3a1c35b960e1d6c",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "现场表计指示是否正常和两块读数一致性检查完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.7.2.3",
+      "unit_sha256": "c12bca98fbbaaabbc3be79f92d2eca5c45082d95eb0c49f8b3a5639ad36301b8",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:coolant_conductivity/large_difference"
+      ],
+      "facts_sha256": "836ab54f40d935c2f62426bb46818291dc9dd0809f8c76e4568508937921d25f",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "偏差较大条件、可能表计故障的或然性、检修检查处理分析完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.7.2.4",
+      "unit_sha256": "1e54b08ef074d7419873a2073b49508873bab68f32c578eeff9aefbdae8f83c2",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:coolant_conductivity/consistent"
+      ],
+      "facts_sha256": "1e12bedeaee56855c39bb1cb039ab505f32b6c451b0f66c4bf0c398de2fb05dc",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "读数基本一致时查水质电导率，刚补水时还查所用补充水两条件与对象完整。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/10.7.2.5",
+      "unit_sha256": "0a3b18774ba9e643aca604284fa88e7161aa39d947affa251a1af786a6339d6f",
+      "fact_keys": [
+        "qa_quality_batch03_20261008_v4:coolant_conductivity/actual_result"
+      ],
+      "facts_sha256": "981013845d523b20229d662e2049ea0533ed542843ca66c1d22ab8d84695a099",
+      "checks": {
+        "all_propositions": "pass",
+        "conditions": "pass",
+        "permissions_prohibitions": "pass",
+        "order_outcomes_restoration": "pass",
+        "scope_numbers": "pass"
+      },
+      "notes": "实际电导率正常查报警值整定、确实偏高立即检修两结果完整，未自行赋值或提出换水加药。",
+      "reviewer": "Codex（AI来源核对，非业务专家）",
+      "scope": "整条提取文本语义；未认证原文件图表或来源现行性"
+    }
+  ],
+  "deferred_units": [
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/1.2.1",
+      "state": "reviewed_fact_quote_overlap_partial",
+      "reason": "岗位与指挥题已核对所问职责；整条能力要求和总领句与下属义务关系未在本次另行确认全部命题覆盖，保持部分关联。"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/1.2.2",
+      "state": "reviewed_fact_quote_overlap_partial",
+      "reason": "岗位与指挥题已核对所问职责；整条能力要求和总领句与下属义务关系未在本次另行确认全部命题覆盖，保持部分关联。"
+    },
+    {
+      "unit_id": "d_98d56bcdf4e49412/clause/2.2.1",
+      "state": "reviewed_fact_quote_overlap_partial",
+      "reason": "岗位与指挥题已核对所问职责；整条能力要求和总领句与下属义务关系未在本次另行确认全部命题覆盖，保持部分关联。"
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "reviewer": "Codex（AI来源核对，非业务专家）",
+  "scope": "逐题文档忠实性与完整链路复核；不确认来源现行性，也不估计全量正确率",
+  "bound_files": {
+    "candidates.jsonl": "d2732f4f9721cc5b9d214c26b908a5371a684944f1ee721d6a719f014f0c6c81",
+    "chains.json": "aa4485387322b3f5db95414a6da5b2c1f1c26532a89d1eb80bce7652668e6521",
+    "blind_prompts.jsonl": "0a5afad2c14b4e2b0890a334384df0d0507c909b860856695e334d280e938c0c",
+    "fact_review/run.json": "6cb527b09c7a7e8b9c72ed91e4eb9ff7e29f5099f6154856b4c4e64b3e1224b6",
+    "fact_review/responses.jsonl": "5fe9ab64440a87607f49b76bc4e46dd9ee385316503b91a0f0b1b91827cb44b3",
+    "blind_reanswer/run.json": "149686fbaa96939610b68f3e52b51b0d98ca066100269e37328496ea4719f26f",
+    "blind_reanswer/responses.jsonl": "3197bb306a5fc071255bc9461388f8dde6a099da2cf67851691990eb05a138c5",
+    "semantic_review/run.json": "b173bdbe26ec27e647f2d4f3af2a5284f4277105fd040b181b7b606336f36dfa",
+    "semantic_review/responses.jsonl": "161eaf7d581be14afe6cecdca25a4ecbd8fbd4f596e48f82bcd06719cb14015f",
+    "model_fact_reviews.json": "4f198ef8a8db9a8d391759b46193973f869f38b71d4d1860eb0c040e502b86a3",
+    "model_semantic_reviews.json": "3a0e1ffad298d1bb6fe2d956b3ccb6bb931f320abde46ce5789bf4cfb6681092"
+  },
+  "rows": [
+    {
+      "id": "operation_abnormal/whole",
+      "candidate_sha256": "f0375d2d80647b0de2791833f5ba397f46ee125382aa325c848feccd182ceb9f",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "stop",
+        "check_report",
+        "affected_report",
+        "permit",
+        "copies",
+        "supervise",
+        "unlock",
+        "conclusion",
+        "restore",
+        "unresolved"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp20276_20373:0:97",
+        "d_4b964d3ff677714b/cp20383_20567:0:184",
+        "d_4b964d3ff677714b/cp20568_20627:0:59",
+        "d_4b964d3ff677714b/cp20628_20682:0:54",
+        "d_4b964d3ff677714b/cp20683_20726:0:43",
+        "d_4b964d3ff677714b/cp20727_20805:0:78",
+        "d_4b964d3ff677714b/cp20806_20881:0:75",
+        "d_4b964d3ff677714b/cp20882_20996:0:114",
+        "d_4b964d3ff677714b/cp20997_21076:0:79"
+      ],
+      "unresolved_issues": [],
+      "notes": "核对5.7倒闸异常各阶段；补入cp20276_20373中影响其他设备时的汇报要求。恢复与未消除为条件分支，工作许可、监护、解锁角色与结论签名未遗漏。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "operation_abnormal/skip",
+      "candidate_sha256": "72bc2b6711ef457a07b7d03540bdbf968b46ed851ae03d245da4191fc19b510a",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "stop",
+        "check_report"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp20383_20567:0:184"
+      ],
+      "unresolved_issues": [],
+      "notes": "聚焦停止与检查汇报；原文禁止跳项。未将修复或调度许可的后续阶段写成可跳过异常的许可。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "operation_abnormal/repair_permission",
+      "candidate_sha256": "b152779187b79c8848f4108d56a6938869352c096443038fbc4a4c0aa29a0a23",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "permit",
+        "copies",
+        "supervise",
+        "unlock"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp20568_20627:0:59",
+        "d_4b964d3ff677714b/cp20628_20682:0:54",
+        "d_4b964d3ff677714b/cp20683_20726:0:43",
+        "d_4b964d3ff677714b/cp20727_20805:0:78"
+      ],
+      "unresolved_issues": [],
+      "notes": "对照工作单、安全措施、许可录音、双监护、试操作主体和解锁两类角色；补明检修人员确认，禁止擅用万能钥匙。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "operation_abnormal/restore",
+      "candidate_sha256": "ad0e7709ce6556a37eb09a433472ffe3f2fb518ad86babc67123e61a65bf1a8b",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "conclusion",
+        "restore"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp20806_20881:0:75",
+        "d_4b964d3ff677714b/cp20882_20996:0:114"
+      ],
+      "unresolved_issues": [],
+      "notes": "结论与分别签名在恢复前；调度许可后重新核对，确认无误后重开录音，恢复并记录时间。未省略申请或提前恢复。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "operation_abnormal/unresolved",
+      "candidate_sha256": "f0ab018c6f12af90b78e69b6b09832c32b6ddfc765ffb0f611c079a0159457e3",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "conclusion",
+        "unresolved"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp20806_20881:0:75",
+        "d_4b964d3ff677714b/cp20997_21076:0:79"
+      ],
+      "unresolved_issues": [],
+      "notes": "结论仍不能继续操作时转检修、启动缺陷流程；不执行异常消除的恢复分支。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "operation_abnormal/follow_up",
+      "candidate_sha256": "4b217525432120b866d7e5762a01cf8cef97602d30888961e9d89ae56d892b31",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "conclusion",
+        "restore"
+      ],
+      "evidence_ids": [
+        "d_4b964d3ff677714b/cp20806_20881:0:75",
+        "d_4b964d3ff677714b/cp20882_20996:0:114"
+      ],
+      "unresolved_issues": [],
+      "notes": "历史只给出检修处理和异常消除，没有声称结论签名或调度许可已完成；回答保留尚待核实的步骤。复答引用cp20882_20999有笔误，已对照实际cp20882_20996，未写入候选。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "control_single_failure/whole",
+      "candidate_sha256": "509e2b581ee16d1308e1b1dc0c6f9a560cff4ea5de838db7c1e519b86ecddbb0",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "report",
+        "standby",
+        "switch",
+        "unavailable",
+        "inspect",
+        "restart",
+        "test"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page50:583:972",
+        "d_98d56bcdf4e49412/page51:0:54",
+        "d_c4cb0963bdc8968a/p1353:0:96"
+      ],
+      "unresolved_issues": [],
+      "notes": "分别核对8.2与设备概况p1353：切换仅限STANDBY，无可用备用时A继续运行。一次重启只适用主机故障；板卡故障不先要求重启。未增加本段未定义的检修后恢复流程。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "control_single_failure/healthy_standby",
+      "candidate_sha256": "5363dfce20b92161c5f93e956799a8882c38d75d3b449a8499f48f496e259479",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "report",
+        "standby",
+        "switch",
+        "inspect",
+        "restart",
+        "test"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page50:583:972",
+        "d_98d56bcdf4e49412/page51:0:54",
+        "d_c4cb0963bdc8968a/p1353:0:96"
+      ],
+      "unresolved_issues": [],
+      "notes": "问题已明确B无故障且STANDBY；执行切换分支、按禁止切换按钮，再按故障检查分支处理A。未把运行/服务直接替换成未核实的跨文档术语。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "control_single_failure/not_standby",
+      "candidate_sha256": "e88e6186ac05bb05c3e1b0afdbe3dbcec08a716be2e7b5309f0b08492c91bbbd",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "report",
+        "standby",
+        "unavailable",
+        "inspect",
+        "restart",
+        "test"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page50:583:972",
+        "d_98d56bcdf4e49412/page51:0:54",
+        "d_c4cb0963bdc8968a/p1353:0:96"
+      ],
+      "unresolved_issues": [],
+      "notes": "B未处于备用时不满足切换前提，A保持运行；保留后续检查及申请，未推断允许绕过状态限制。复答追加试验状态后不可切回的规则未采纳。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "control_single_failure/restart_failed",
+      "candidate_sha256": "48b35ae483d1dabd97e28e9274ea4990eb4ad197b9173b0caac4a571f6d5c7ba",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "test"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page51:0:54"
+      ],
+      "unresolved_issues": [],
+      "notes": "8.2.2.6只规定向调度申请及通知检修，不指定具体岗位。候选明确条款缺口；复答自行指派运维值班人员及汇报链条的推断拒绝采纳。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "control_single_failure/restart_scope",
+      "candidate_sha256": "b4b365d5fb8d57abe9842bcc79296fe731af7d2462a6d5a2e361e3d54d1e4a60",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "inspect",
+        "restart",
+        "test"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page50:583:972",
+        "d_98d56bcdf4e49412/page51:0:54"
+      ],
+      "unresolved_issues": [],
+      "notes": "8.2.2.5为主机故障、检修到场、一次重启；8.2.2.6为重启失败或板卡故障。未以常识补充反复重启后果。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "control_single_failure/missing_state",
+      "candidate_sha256": "228fe1b6014f05c5258fb738efce3a36f87096a376db09691acba2515c2bc95b",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "report",
+        "standby",
+        "switch",
+        "unavailable"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page50:583:972",
+        "d_c4cb0963bdc8968a/p1353:0:96"
+      ],
+      "unresolved_issues": [],
+      "notes": "信息缺B的实际备用状态，先核实再选分支；不同分支保留条件，不能因为没有严重故障就直接切换。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "internal_cooling_leak/whole",
+      "candidate_sha256": "bb8b89b0f5a1cd2aca43b33d4ab7c5a9359d45f6e37e1140f7eb1069041c0e7c",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "stable",
+        "slow",
+        "valve_hall",
+        "leak_isolation",
+        "tower",
+        "pump",
+        "pump_power",
+        "restore",
+        "rapid",
+        "duplicate"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page63:159:898",
+        "d_98d56bcdf4e49412/page64:0:368"
+      ],
+      "unresolved_issues": [],
+      "notes": "逐项对照10.3并阅读相邻10.4。补明迅速下降优先，禁止用其他检查延迟立即申请停电；补充10.4故障泵隔离检查和备用正常条件下的站用电限制，不合并电机发热等其他故障原因。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "internal_cooling_leak/stable",
+      "candidate_sha256": "8a0dbed12fe3365525ca59d7729c9d2616c340ac9c75d3a66467fb2f63682167",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "stable"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page63:159:898"
+      ],
+      "unresolved_issues": [],
+      "notes": "题设水位正常无下降，原文该分支为查找报警原因；没有证明实际漏水。尾句保留出现其他证据时转分支，不能作正常水位下永久无需停电的结论。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "internal_cooling_leak/slow",
+      "candidate_sha256": "40bead2b8d60c61d224ee4a3a630684458a3de56abf38afc7f40a544271ee379",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "slow",
+        "valve_hall",
+        "leak_isolation",
+        "restore"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page63:159:898"
+      ],
+      "unresolved_issues": [],
+      "notes": "按缓慢下降且达到补水液位、泵未启动条件回答；补回阀厅检查、阀塔漏水领导批准停电及无阀厅设备漏水时的退保护条件，再按漏点可封堵/可隔离性选分支。恢复保护保留。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "internal_cooling_leak/rapid",
+      "candidate_sha256": "f6a50d7b7e7903e7ebd771dbd5e7b61efc288bfe90c54eaf85dff28dc27009f6",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "rapid"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page63:159:898"
+      ],
+      "unresolved_issues": [],
+      "notes": "原文10.3.2.9明确立即申请调度停电；不能借缓慢下降分支替代。未生成未定义的下降速度数字或现场测量值。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "internal_cooling_leak/tower",
+      "candidate_sha256": "1abe03325f846a959a0d6f9bc6628c776b18eaa141a5cff9c975d07051a7fd68",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "tower",
+        "restore"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page63:159:898"
+      ],
+      "unresolved_issues": [],
+      "notes": "关阀排查和确认后隔离都保留备用冗余条件；前述部位未发现漏水作为排查前提。原文未给冗余判定标准，候选不补造。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    },
+    {
+      "id": "internal_cooling_leak/restore",
+      "candidate_sha256": "ad8e33368fde3302eaf81b9444763499d13d770c6ebaead1baf57c1ee86489f8",
+      "verdict": "reviewed_against_listed_documents",
+      "checks": {
+        "condition_branches": "pass",
+        "expanded_context": "pass",
+        "history_dependency": "pass",
+        "prohibitions_and_permissions": "pass",
+        "question_clear": "pass",
+        "required_coverage": "pass",
+        "restoration": "pass",
+        "source_support": "pass",
+        "step_order": "pass"
+      },
+      "required_facts_reviewed": [
+        "restore",
+        "duplicate"
+      ],
+      "evidence_ids": [
+        "d_98d56bcdf4e49412/page63:159:898"
+      ],
+      "unresolved_issues": [],
+      "notes": "问题明确曾停用保护，处理完毕投入并复归24小时报警；10.3.2.7标注重复，不扩成独立动作。",
+      "model_advisory_verdict": "pass",
+      "training_eligible": false
+    }
+  ]
+}

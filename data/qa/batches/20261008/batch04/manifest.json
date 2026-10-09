@@ -1,0 +1,21 @@
+{
+  "version": "20261008-quality-batch04-v3",
+  "qa": 50,
+  "chains": 8,
+  "legacy_candidates": 1997,
+  "legacy_training_eligible_under_new_gate": 0,
+  "training_export_created": false,
+  "status": "semantic_review_pending",
+  "structure_checked": true,
+  "semantic_quality_passed": false,
+  "builder_sha256": "616bf0d41c43ffe0a9aeca36f82186ae7f670ef78fddb265cf4b26f0b6e6b570",
+  "seed_sha256": "9fd58d1aa2ba2e81852bebd3bfe3b24afc479f28ab5fdf2bde6c3705f2bcefe0",
+  "source_qa_sha256": "35ef0dd4ace9a1a40666d8ab257f2171937809c071df544fb2f184da7effa2f8",
+  "files": {
+    "candidates.jsonl": "56aabff027406f36a8f5c1fcec049031352ea9532e17ae17eb59a14cc6665668",
+    "chains.json": "e4b1a9301437168f8b4a78cfb19d83d48a5e1608b9245e06d588fe4d7a004643",
+    "seed.json": "9fd58d1aa2ba2e81852bebd3bfe3b24afc479f28ab5fdf2bde6c3705f2bcefe0",
+    "blind_prompts.jsonl": "aa3aed37878306eced7324083583ef100c86c115c1e44a8118aa8c743011c287",
+    "legacy_quality_inventory.jsonl": "415faa223a17cdc055681201864b4d7ca71b6c549e319f7791519dd9798a3855"
+  }
+}

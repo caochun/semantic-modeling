@@ -1,0 +1,20 @@
+{
+  "version": "20261008-quality-pilot-v3",
+  "qa": 18,
+  "chains": 3,
+  "legacy_candidates": 1997,
+  "legacy_training_eligible_under_new_gate": 0,
+  "training_export_created": false,
+  "status": "semantic_review_pending",
+  "structure_checked": true,
+  "semantic_quality_passed": false,
+  "builder_sha256": "759e302908fb9b3b1708ebdb3e99c44cb6f8f50d60923e7cf9c5bceb09519400",
+  "seed_sha256": "eada1c02e93e92e509d032cc2163691c1fe73dcd423df701a954744632154ead",
+  "source_qa_sha256": "35ef0dd4ace9a1a40666d8ab257f2171937809c071df544fb2f184da7effa2f8",
+  "files": {
+    "candidates.jsonl": "d2732f4f9721cc5b9d214c26b908a5371a684944f1ee721d6a719f014f0c6c81",
+    "chains.json": "aa4485387322b3f5db95414a6da5b2c1f1c26532a89d1eb80bce7652668e6521",
+    "blind_prompts.jsonl": "0a5afad2c14b4e2b0890a334384df0d0507c909b860856695e334d280e938c0c",
+    "legacy_quality_inventory.jsonl": "415faa223a17cdc055681201864b4d7ca71b6c549e319f7791519dd9798a3855"
+  }
+}
