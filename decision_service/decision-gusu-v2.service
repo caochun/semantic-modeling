@@ -1,0 +1,21 @@
+[Unit]
+Description=Gusu procedure state decision model experimental service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/chun/semantic-decision/experiments/gusu_valve_v2_20261009/service
+Environment=HF_HUB_OFFLINE=1
+Environment=HF_HOME=/home/chun/semantic-decision/cache/huggingface
+Environment=TORCHINDUCTOR_CACHE_DIR=/home/chun/semantic-decision/cache/torchinductor
+Environment=OMP_NUM_THREADS=4
+Environment=MKL_NUM_THREADS=4
+Environment=DECISION_PORT=9120
+EnvironmentFile=-/home/chun/semantic-decision/.env
+Environment=DECISION_ADAPTER=/home/chun/semantic-decision/experiments/gusu_procedure_20261010/formal/adapter
+ExecStart=/home/chun/semantic-decision/venv/bin/python app.py --host 0.0.0.0 --port 9120
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

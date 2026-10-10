@@ -1,0 +1,878 @@
+[
+  {
+    "id": "pcs974-table-01",
+    "split": "train",
+    "source": "pcs974",
+    "pages": [
+      58,
+      59
+    ],
+    "locator": "表7.2-1第1行；7.4节",
+    "anchors": {
+      "58": [
+        "查看其它详细自检信"
+      ],
+      "59": [
+        "不要轻易按保护大屏上的复归按钮"
+      ]
+    },
+    "rule_context": "PCS-974FG-D说明书表7.2-1第1行：自检报警元件“装置闭锁”；是否闭锁装置：是。处理意见：检查其他详细自检信息，继续定位原因。",
+    "options": {
+      "follow_alarm_guidance": "检查其他详细自检信息，继续定位原因。",
+      "verify_applicability": "先核对装置完整型号、软件/手册版本及该规则是否适用。",
+      "reset_first": "不核查原因，先简单复归或重启装置。",
+      "assume_healthy": "把该事件直接解释为全系统健康，停止检查。"
+    },
+    "block_question": true,
+    "cases": [
+      {
+        "name": "identified",
+        "observations": "装置为PCS-974FG-D，已确认所给手册适用。自检报告明确记录“装置闭锁”当前出现。尚未完成对应检查。",
+        "gold": {
+          "blocking": "blocks_device",
+          "next_check": "follow_alarm_guidance"
+        },
+        "reason": "适用性已确认，按表7.2-1第1行；不推断全系统状态。"
+      },
+      {
+        "name": "unknown-device",
+        "observations": "事件摘录为“装置闭锁”出现。来源装置的完整型号及手册版本尚未核对，无法确认是否为PCS-974FG-D。",
+        "gold": {
+          "blocking": "insufficient_evidence",
+          "next_check": "verify_applicability"
+        },
+        "reason": "证据适用条件未确认；不能把特定型号的规则泛化到未知装置。"
+      }
+    ],
+    "annotation_note": "闭锁是表中该项信号的作用，不等同于系统诊断；处理选项为规则约束下的核查建议。"
+  },
+  {
+    "id": "pcs974-table-02",
+    "split": "train",
+    "source": "pcs974",
+    "pages": [
+      58,
+      59
+    ],
+    "locator": "表7.2-1第2行；7.4节",
+    "anchors": {
+      "58": [
+        "板卡配置错误"
+      ],
+      "59": [
+        "不要轻易按保护大屏上的复归按钮"
+      ]
+    },
+    "rule_context": "PCS-974FG-D说明书表7.2-1第2行：自检报警元件“板卡配置错误”；是否闭锁装置：是。处理意见：查看板卡信息和异常信息，检查板卡安装及工作状态。",
+    "options": {
+      "follow_alarm_guidance": "查看板卡信息和异常信息，检查板卡安装及工作状态。",
+      "verify_applicability": "先核对装置完整型号、软件/手册版本及该规则是否适用。",
+      "reset_first": "不核查原因，先简单复归或重启装置。",
+      "assume_healthy": "把该事件直接解释为全系统健康，停止检查。"
+    },
+    "block_question": true,
+    "cases": [
+      {
+        "name": "identified",
+        "observations": "装置为PCS-974FG-D，已确认所给手册适用。自检报告明确记录“板卡配置错误”当前出现。尚未完成对应检查。",
+        "gold": {
+          "blocking": "blocks_device",
+          "next_check": "follow_alarm_guidance"
+        },
+        "reason": "适用性已确认，按表7.2-1第2行；不推断全系统状态。"
+      },
+      {
+        "name": "unknown-device",
+        "observations": "事件摘录为“板卡配置错误”出现。来源装置的完整型号及手册版本尚未核对，无法确认是否为PCS-974FG-D。",
+        "gold": {
+          "blocking": "insufficient_evidence",
+          "next_check": "verify_applicability"
+        },
+        "reason": "证据适用条件未确认；不能把特定型号的规则泛化到未知装置。"
+      }
+    ],
+    "annotation_note": "闭锁是表中该项信号的作用，不等同于系统诊断；处理选项为规则约束下的核查建议。"
+  },
+  {
+    "id": "pcs974-table-03",
+    "split": "test",
+    "source": "pcs974",
+    "pages": [
+      58,
+      59
+    ],
+    "locator": "表7.2-1第3行；7.4节",
+    "anchors": {
+      "58": [
+        "定值超出可整定的范围"
+      ],
+      "59": [
+        "不要轻易按保护大屏上的复归按钮"
+      ]
+    },
+    "rule_context": "PCS-974FG-D说明书表7.2-1第3行：自检报警元件“定值超范围”；是否闭锁装置：是。处理意见：对照说明书核查定值范围，按规定处理超范围项。",
+    "options": {
+      "follow_alarm_guidance": "对照说明书核查定值范围，按规定处理超范围项。",
+      "verify_applicability": "先核对装置完整型号、软件/手册版本及该规则是否适用。",
+      "reset_first": "不核查原因，先简单复归或重启装置。",
+      "assume_healthy": "把该事件直接解释为全系统健康，停止检查。"
+    },
+    "block_question": true,
+    "cases": [
+      {
+        "name": "identified",
+        "observations": "装置为PCS-974FG-D，已确认所给手册适用。自检报告明确记录“定值超范围”当前出现。尚未完成对应检查。",
+        "gold": {
+          "blocking": "blocks_device",
+          "next_check": "follow_alarm_guidance"
+        },
+        "reason": "适用性已确认，按表7.2-1第3行；不推断全系统状态。"
+      },
+      {
+        "name": "unknown-device",
+        "observations": "事件摘录为“定值超范围”出现。来源装置的完整型号及手册版本尚未核对，无法确认是否为PCS-974FG-D。",
+        "gold": {
+          "blocking": "insufficient_evidence",
+          "next_check": "verify_applicability"
+        },
+        "reason": "证据适用条件未确认；不能把特定型号的规则泛化到未知装置。"
+      }
+    ],
+    "annotation_note": "闭锁是表中该项信号的作用，不等同于系统诊断；处理选项为规则约束下的核查建议。"
+  },
+  {
+    "id": "pcs974-table-04",
+    "split": "calibration",
+    "source": "pcs974",
+    "pages": [
+      58,
+      59
+    ],
+    "locator": "表7.2-1第4行；7.4节",
+    "anchors": {
+      "58": [
+        "定值项变化报警"
+      ],
+      "59": [
+        "不要轻易按保护大屏上的复归按钮"
+      ]
+    },
+    "rule_context": "PCS-974FG-D说明书表7.2-1第4行：自检报警元件“定值项变化报警”；是否闭锁装置：是。处理意见：在定值设置中核对定值确认，并通知厂家处理。",
+    "options": {
+      "follow_alarm_guidance": "在定值设置中核对定值确认，并通知厂家处理。",
+      "verify_applicability": "先核对装置完整型号、软件/手册版本及该规则是否适用。",
+      "reset_first": "不核查原因，先简单复归或重启装置。",
+      "assume_healthy": "把该事件直接解释为全系统健康，停止检查。"
+    },
+    "block_question": true,
+    "cases": [
+      {
+        "name": "identified",
+        "observations": "装置为PCS-974FG-D，已确认所给手册适用。自检报告明确记录“定值项变化报警”当前出现。尚未完成对应检查。",
+        "gold": {
+          "blocking": "blocks_device",
+          "next_check": "follow_alarm_guidance"
+        },
+        "reason": "适用性已确认，按表7.2-1第4行；不推断全系统状态。"
+      },
+      {
+        "name": "unknown-device",
+        "observations": "事件摘录为“定值项变化报警”出现。来源装置的完整型号及手册版本尚未核对，无法确认是否为PCS-974FG-D。",
+        "gold": {
+          "blocking": "insufficient_evidence",
+          "next_check": "verify_applicability"
+        },
+        "reason": "证据适用条件未确认；不能把特定型号的规则泛化到未知装置。"
+      }
+    ],
+    "annotation_note": "闭锁是表中该项信号的作用，不等同于系统诊断；处理选项为规则约束下的核查建议。"
+  },
+  {
+    "id": "pcs974-table-05",
+    "split": "train",
+    "source": "pcs974",
+    "pages": [
+      58,
+      59
+    ],
+    "locator": "表7.2-1第5行；7.4节",
+    "anchors": {
+      "58": [
+        "装置报警总信号"
+      ],
+      "59": [
+        "不要轻易按保护大屏上的复归按钮"
+      ]
+    },
+    "rule_context": "PCS-974FG-D说明书表7.2-1第5行：自检报警元件“装置报警”；是否闭锁装置：否。处理意见：查看其他详细报警信息，继续定位原因。",
+    "options": {
+      "follow_alarm_guidance": "查看其他详细报警信息，继续定位原因。",
+      "verify_applicability": "先核对装置完整型号、软件/手册版本及该规则是否适用。",
+      "reset_first": "不核查原因，先简单复归或重启装置。",
+      "assume_healthy": "把该事件直接解释为全系统健康，停止检查。"
+    },
+    "block_question": true,
+    "cases": [
+      {
+        "name": "identified",
+        "observations": "装置为PCS-974FG-D，已确认所给手册适用。自检报告明确记录“装置报警”当前出现。尚未完成对应检查。",
+        "gold": {
+          "blocking": "does_not_block",
+          "next_check": "follow_alarm_guidance"
+        },
+        "reason": "适用性已确认，按表7.2-1第5行；不推断全系统状态。"
+      },
+      {
+        "name": "unknown-device",
+        "observations": "事件摘录为“装置报警”出现。来源装置的完整型号及手册版本尚未核对，无法确认是否为PCS-974FG-D。",
+        "gold": {
+          "blocking": "insufficient_evidence",
+          "next_check": "verify_applicability"
+        },
+        "reason": "证据适用条件未确认；不能把特定型号的规则泛化到未知装置。"
+      }
+    ],
+    "annotation_note": "闭锁是表中该项信号的作用，不等同于系统诊断；处理选项为规则约束下的核查建议。"
+  },
+  {
+    "id": "pcs974-table-06",
+    "split": "train",
+    "source": "pcs974",
+    "pages": [
+      58,
+      59
+    ],
+    "locator": "表7.2-1第6行；7.4节",
+    "anchors": {
+      "58": [
+        "装置在通讯传动试验状"
+      ],
+      "59": [
+        "不要轻易按保护大屏上的复归按钮"
+      ]
+    },
+    "rule_context": "PCS-974FG-D说明书表7.2-1第6行：自检报警元件“通讯传动报警”；是否闭锁装置：否。处理意见：针对已确认的通讯传动试验报警无需特别处理，核对试验结束后报警消失。",
+    "options": {
+      "follow_alarm_guidance": "针对已确认的通讯传动试验报警无需特别处理，核对试验结束后报警消失。",
+      "verify_applicability": "先核对装置完整型号、软件/手册版本及该规则是否适用。",
+      "reset_first": "不核查原因，先简单复归或重启装置。",
+      "assume_healthy": "把该事件直接解释为全系统健康，停止检查。"
+    },
+    "block_question": true,
+    "cases": [
+      {
+        "name": "identified",
+        "observations": "装置为PCS-974FG-D，已确认所给手册适用。自检报告明确记录“通讯传动报警”当前出现。尚未完成对应检查。已确认正在进行通讯传动试验。",
+        "gold": {
+          "blocking": "does_not_block",
+          "next_check": "follow_alarm_guidance"
+        },
+        "reason": "适用性已确认，按表7.2-1第6行；不推断全系统状态。"
+      },
+      {
+        "name": "unknown-device",
+        "observations": "事件摘录为“通讯传动报警”出现。来源装置的完整型号及手册版本尚未核对，无法确认是否为PCS-974FG-D。",
+        "gold": {
+          "blocking": "insufficient_evidence",
+          "next_check": "verify_applicability"
+        },
+        "reason": "证据适用条件未确认；不能把特定型号的规则泛化到未知装置。"
+      }
+    ],
+    "annotation_note": "闭锁是表中该项信号的作用，不等同于系统诊断；处理选项为规则约束下的核查建议。"
+  },
+  {
+    "id": "pcs974-table-07",
+    "split": "test",
+    "source": "pcs974",
+    "pages": [
+      58,
+      59
+    ],
+    "locator": "表7.2-1第7行；7.4节",
+    "anchors": {
+      "58": [
+        "定值区不一致"
+      ],
+      "59": [
+        "不要轻易按保护大屏上的复归按钮"
+      ]
+    },
+    "rule_context": "PCS-974FG-D说明书表7.2-1第7行：自检报警元件“定值区不一致”；是否闭锁装置：否。处理意见：检查区号开入与装置定值区号，核对两者一致性。",
+    "options": {
+      "follow_alarm_guidance": "检查区号开入与装置定值区号，核对两者一致性。",
+      "verify_applicability": "先核对装置完整型号、软件/手册版本及该规则是否适用。",
+      "reset_first": "不核查原因，先简单复归或重启装置。",
+      "assume_healthy": "把该事件直接解释为全系统健康，停止检查。"
+    },
+    "block_question": true,
+    "cases": [
+      {
+        "name": "identified",
+        "observations": "装置为PCS-974FG-D，已确认所给手册适用。自检报告明确记录“定值区不一致”当前出现。尚未完成对应检查。已确认该装置采用表内华东地区定值区开入规则。",
+        "gold": {
+          "blocking": "does_not_block",
+          "next_check": "follow_alarm_guidance"
+        },
+        "reason": "适用性已确认，按表7.2-1第7行；不推断全系统状态。"
+      },
+      {
+        "name": "unknown-device",
+        "observations": "事件摘录为“定值区不一致”出现。来源装置的完整型号及手册版本尚未核对，无法确认是否为PCS-974FG-D。",
+        "gold": {
+          "blocking": "insufficient_evidence",
+          "next_check": "verify_applicability"
+        },
+        "reason": "证据适用条件未确认；不能把特定型号的规则泛化到未知装置。"
+      }
+    ],
+    "annotation_note": "闭锁是表中该项信号的作用，不等同于系统诊断；处理选项为规则约束下的核查建议。"
+  },
+  {
+    "id": "pcs974-table-09",
+    "split": "train",
+    "source": "pcs974",
+    "pages": [
+      58,
+      59
+    ],
+    "locator": "表7.2-1第9行；7.4节",
+    "anchors": {
+      "58": [
+        "投运时报警通知厂家"
+      ],
+      "59": [
+        "不要轻易按保护大屏上的复归按钮"
+      ]
+    },
+    "rule_context": "PCS-974FG-D说明书表7.2-1第9行：自检报警元件“版本校验出错”；是否闭锁装置：否。处理意见：投运阶段通知厂家处理；工程调试阶段按规定核对打包程序。",
+    "options": {
+      "follow_alarm_guidance": "投运阶段通知厂家处理；工程调试阶段按规定核对打包程序。",
+      "verify_applicability": "先核对装置完整型号、软件/手册版本及该规则是否适用。",
+      "reset_first": "不核查原因，先简单复归或重启装置。",
+      "assume_healthy": "把该事件直接解释为全系统健康，停止检查。"
+    },
+    "block_question": true,
+    "cases": [
+      {
+        "name": "identified",
+        "observations": "装置为PCS-974FG-D，已确认所给手册适用。自检报告明确记录“版本校验出错”当前出现。尚未完成对应检查。装置已投运，当前不处于工程调试阶段。",
+        "gold": {
+          "blocking": "does_not_block",
+          "next_check": "follow_alarm_guidance"
+        },
+        "reason": "适用性已确认，按表7.2-1第9行；不推断全系统状态。"
+      },
+      {
+        "name": "unknown-device",
+        "observations": "事件摘录为“版本校验出错”出现。来源装置的完整型号及手册版本尚未核对，无法确认是否为PCS-974FG-D。",
+        "gold": {
+          "blocking": "insufficient_evidence",
+          "next_check": "verify_applicability"
+        },
+        "reason": "证据适用条件未确认；不能把特定型号的规则泛化到未知装置。"
+      }
+    ],
+    "annotation_note": "闭锁是表中该项信号的作用，不等同于系统诊断；处理选项为规则约束下的核查建议。"
+  },
+  {
+    "id": "pcs974-table-10",
+    "split": "calibration",
+    "source": "pcs974",
+    "pages": [
+      58,
+      59
+    ],
+    "locator": "表7.2-1第10行；7.4节",
+    "anchors": {
+      "58": [
+        "对时模式是否一致"
+      ],
+      "59": [
+        "不要轻易按保护大屏上的复归按钮"
+      ]
+    },
+    "rule_context": "PCS-974FG-D说明书表7.2-1第10行：自检报警元件“对时异常”；是否闭锁装置：否。处理意见：检查时钟源、对时模式、接线和网络对时参数。",
+    "options": {
+      "follow_alarm_guidance": "检查时钟源、对时模式、接线和网络对时参数。",
+      "verify_applicability": "先核对装置完整型号、软件/手册版本及该规则是否适用。",
+      "reset_first": "不核查原因，先简单复归或重启装置。",
+      "assume_healthy": "把该事件直接解释为全系统健康，停止检查。"
+    },
+    "block_question": true,
+    "cases": [
+      {
+        "name": "identified",
+        "observations": "装置为PCS-974FG-D，已确认所给手册适用。自检报告明确记录“对时异常”当前出现。尚未完成对应检查。",
+        "gold": {
+          "blocking": "does_not_block",
+          "next_check": "follow_alarm_guidance"
+        },
+        "reason": "适用性已确认，按表7.2-1第10行；不推断全系统状态。"
+      },
+      {
+        "name": "unknown-device",
+        "observations": "事件摘录为“对时异常”出现。来源装置的完整型号及手册版本尚未核对，无法确认是否为PCS-974FG-D。",
+        "gold": {
+          "blocking": "insufficient_evidence",
+          "next_check": "verify_applicability"
+        },
+        "reason": "证据适用条件未确认；不能把特定型号的规则泛化到未知装置。"
+      }
+    ],
+    "annotation_note": "闭锁是表中该项信号的作用，不等同于系统诊断；处理选项为规则约束下的核查建议。"
+  },
+  {
+    "id": "pcs974-table-11",
+    "split": "train",
+    "source": "pcs974",
+    "pages": [
+      58,
+      59
+    ],
+    "locator": "表7.2-1第11行；7.4节",
+    "anchors": {
+      "58": [
+        "CT 二次回路异常报警"
+      ],
+      "59": [
+        "不要轻易按保护大屏上的复归按钮"
+      ]
+    },
+    "rule_context": "PCS-974FG-D说明书表7.2-1第11行：自检报警元件“CT异常报警”；是否闭锁装置：否。处理意见：检查CT二次回路是否正确。",
+    "options": {
+      "follow_alarm_guidance": "检查CT二次回路是否正确。",
+      "verify_applicability": "先核对装置完整型号、软件/手册版本及该规则是否适用。",
+      "reset_first": "不核查原因，先简单复归或重启装置。",
+      "assume_healthy": "把该事件直接解释为全系统健康，停止检查。"
+    },
+    "block_question": true,
+    "cases": [
+      {
+        "name": "identified",
+        "observations": "装置为PCS-974FG-D，已确认所给手册适用。自检报告明确记录“CT异常报警”当前出现。尚未完成对应检查。",
+        "gold": {
+          "blocking": "does_not_block",
+          "next_check": "follow_alarm_guidance"
+        },
+        "reason": "适用性已确认，按表7.2-1第11行；不推断全系统状态。"
+      },
+      {
+        "name": "unknown-device",
+        "observations": "事件摘录为“CT异常报警”出现。来源装置的完整型号及手册版本尚未核对，无法确认是否为PCS-974FG-D。",
+        "gold": {
+          "blocking": "insufficient_evidence",
+          "next_check": "verify_applicability"
+        },
+        "reason": "证据适用条件未确认；不能把特定型号的规则泛化到未知装置。"
+      }
+    ],
+    "annotation_note": "闭锁是表中该项信号的作用，不等同于系统诊断；处理选项为规则约束下的核查建议。"
+  },
+  {
+    "id": "pcs974-table-13",
+    "split": "train",
+    "source": "pcs974",
+    "pages": [
+      58,
+      59
+    ],
+    "locator": "表7.2-1第13行；7.4节",
+    "anchors": {
+      "58": [
+        "动电路损坏"
+      ],
+      "59": [
+        "不要轻易按保护大屏上的复归按钮"
+      ]
+    },
+    "rule_context": "PCS-974FG-D说明书表7.2-1第13行：自检报警元件“Bxx跳闸出口异常”；是否闭锁装置：是。处理意见：按手册板卡故障处理意见联系检修，安排板卡处理。",
+    "options": {
+      "follow_alarm_guidance": "按手册板卡故障处理意见联系检修，安排板卡处理。",
+      "verify_applicability": "先核对装置完整型号、软件/手册版本及该规则是否适用。",
+      "reset_first": "不核查原因，先简单复归或重启装置。",
+      "assume_healthy": "把该事件直接解释为全系统健康，停止检查。"
+    },
+    "block_question": true,
+    "cases": [
+      {
+        "name": "identified",
+        "observations": "装置为PCS-974FG-D，已确认所给手册适用。自检报告明确记录“Bxx跳闸出口异常”当前出现。尚未完成对应检查。",
+        "gold": {
+          "blocking": "blocks_device",
+          "next_check": "follow_alarm_guidance"
+        },
+        "reason": "适用性已确认，按表7.2-1第13行；不推断全系统状态。"
+      },
+      {
+        "name": "unknown-device",
+        "observations": "事件摘录为“Bxx跳闸出口异常”出现。来源装置的完整型号及手册版本尚未核对，无法确认是否为PCS-974FG-D。",
+        "gold": {
+          "blocking": "insufficient_evidence",
+          "next_check": "verify_applicability"
+        },
+        "reason": "证据适用条件未确认；不能把特定型号的规则泛化到未知装置。"
+      }
+    ],
+    "annotation_note": "闭锁是表中该项信号的作用，不等同于系统诊断；处理选项为规则约束下的核查建议。"
+  },
+  {
+    "id": "pcs974-table-14",
+    "split": "test",
+    "source": "pcs974",
+    "pages": [
+      58,
+      59
+    ],
+    "locator": "表7.2-1第14行；7.4节",
+    "anchors": {
+      "58": [
+        "确认是否人员主动操"
+      ],
+      "59": [
+        "不要轻易按保护大屏上的复归按钮"
+      ]
+    },
+    "rule_context": "PCS-974FG-D说明书表7.2-1第14行：自检报警元件“投检修态”；是否闭锁装置：否。处理意见：先确认投检修态是否为人员主动操作；非主动操作需检查开入回路。",
+    "options": {
+      "follow_alarm_guidance": "先确认投检修态是否为人员主动操作；非主动操作需检查开入回路。",
+      "verify_applicability": "先核对装置完整型号、软件/手册版本及该规则是否适用。",
+      "reset_first": "不核查原因，先简单复归或重启装置。",
+      "assume_healthy": "把该事件直接解释为全系统健康，停止检查。"
+    },
+    "block_question": true,
+    "cases": [
+      {
+        "name": "identified",
+        "observations": "装置为PCS-974FG-D，已确认所给手册适用。自检报告明确记录“投检修态”当前出现。尚未完成对应检查。",
+        "gold": {
+          "blocking": "does_not_block",
+          "next_check": "follow_alarm_guidance"
+        },
+        "reason": "适用性已确认，按表7.2-1第14行；不推断全系统状态。"
+      },
+      {
+        "name": "unknown-device",
+        "observations": "事件摘录为“投检修态”出现。来源装置的完整型号及手册版本尚未核对，无法确认是否为PCS-974FG-D。",
+        "gold": {
+          "blocking": "insufficient_evidence",
+          "next_check": "verify_applicability"
+        },
+        "reason": "证据适用条件未确认；不能把特定型号的规则泛化到未知装置。"
+      }
+    ],
+    "annotation_note": "闭锁是表中该项信号的作用，不等同于系统诊断；处理选项为规则约束下的核查建议。"
+  },
+  {
+    "id": "pcs9586-dsp",
+    "split": "train",
+    "source": "pcs9586",
+    "pages": [
+      29
+    ],
+    "locator": "7.1.2装置功能报警，DSP板卡功能报警",
+    "anchors": {
+      "29": [
+        "投入阀测试模式时",
+        "运行情况下",
+        "将故障系统切为非值班状态"
+      ]
+    },
+    "rule_context": "PCS-9586A的DSP板卡功能报警：将故障系统切为非值班状态后排查。投入阀测试模式时该报警为正常现象，不需处理；运行情况下需上招装置运行日志，并按程序重启复位。",
+    "options": {
+      "confirm_mode": "先核对阀测试模式是否投入。",
+      "expected_test": "按已确认的阀测试模式解释该报警，不增加故障处理。",
+      "collect_logs": "上招装置运行日志，分析运行情况下的软件异常。",
+      "replace_fiber": "直接更换对时光纤。"
+    },
+    "block_question": false,
+    "cases": [
+      {
+        "name": "test",
+        "observations": "已确认PCS-9586A手册适用；故障系统已处于非值班状态。DSP板卡功能报警出现，阀测试模式明确已投入。",
+        "gold": {
+          "next_check": "expected_test"
+        },
+        "reason": "原文明确测试模式分支。"
+      },
+      {
+        "name": "running",
+        "observations": "已确认PCS-9586A手册适用；故障系统已切为非值班。报警发生于运行情况下，阀测试模式未投入；运行日志尚未上招。",
+        "gold": {
+          "next_check": "collect_logs"
+        },
+        "reason": "运行分支需查看运行日志，不能套用测试模式无需处理。"
+      },
+      {
+        "name": "unknown-mode",
+        "observations": "已确认PCS-9586A手册适用；故障系统已处于非值班。DSP板卡功能报警出现，阀测试模式投入状态未知。",
+        "gold": {
+          "next_check": "confirm_mode"
+        },
+        "reason": "区分两个分支所需模式信息缺失。"
+      }
+    ],
+    "annotation_note": "按条件分支选择当前尚未完成的核查；属于规则派生模拟场景。"
+  },
+  {
+    "id": "pcs9586-power",
+    "split": "test",
+    "source": "pcs9586",
+    "pages": [
+      30
+    ],
+    "locator": "7.1.2第6项装置A(B)路电源故障",
+    "anchors": {
+      "30": [
+        "屏柜电源故障、空开故障或 NR2304 板卡硬件故障",
+        "若端子电压",
+        "将故障系统切为非值班状态"
+      ]
+    },
+    "rule_context": "PCS-9586A装置A(B)路电源故障可能由屏柜电源、空开或NR2304板卡故障引起。将故障系统切为非值班后，先查屏柜电源与空开，再查NR2304端子A/B两路电源输入；端子电压正常时，按板卡故障处理。",
+    "options": {
+      "confirm_role": "先核对故障系统是否已满足非值班排查前提。",
+      "inspect_supply": "检查屏柜电源、空开是否正常。",
+      "measure_terminals": "检查NR2304端子A/B两路输入电压。",
+      "board_followup": "依据端子电压正常的结果，联系检修按NR2304板卡故障处理。"
+    },
+    "block_question": false,
+    "cases": [
+      {
+        "name": "role-missing",
+        "observations": "已确认PCS-9586A手册适用。A路电源故障出现；故障系统当前是否非值班尚未确认，尚未检查电源。",
+        "gold": {
+          "next_check": "confirm_role"
+        },
+        "reason": "必须先确认非值班前提。"
+      },
+      {
+        "name": "supply-unchecked",
+        "observations": "已确认PCS-9586A手册适用，故障系统为非值班；A路电源故障持续。屏柜电源、空开及端子电压均未检查。",
+        "gold": {
+          "next_check": "inspect_supply"
+        },
+        "reason": "从原文第一步开始，不能直接归因板卡。"
+      },
+      {
+        "name": "terminals-unchecked",
+        "observations": "已确认PCS-9586A手册适用，故障系统为非值班；电源故障持续。已检查屏柜电源及空开正常，NR2304端子输入电压尚未测量。",
+        "gold": {
+          "next_check": "measure_terminals"
+        },
+        "reason": "前一步完成，继续查端子输入。"
+      },
+      {
+        "name": "terminals-normal",
+        "observations": "已确认PCS-9586A手册适用，故障系统为非值班；电源故障持续。屏柜电源、空开及NR2304端子A/B两路输入电压都已检查正常。",
+        "gold": {
+          "next_check": "board_followup"
+        },
+        "reason": "端子电压正常是进一步指向板卡的必要观测。"
+      }
+    ],
+    "annotation_note": "按条件分支选择当前尚未完成的核查；属于规则派生模拟场景。"
+  },
+  {
+    "id": "pcs9586-process",
+    "split": "train",
+    "source": "pcs9586",
+    "pages": [
+      30
+    ],
+    "locator": "7.1.2第7项进程退出",
+    "anchors": {
+      "30": [
+        "短时间内报警消失",
+        "长时间报警不消失"
+      ]
+    },
+    "rule_context": "PCS-9586A进程退出：故障系统切为非值班后排查。进程退出后短时间内报警消失，说明进程重启成功，不需处理；长时间不消失，需上招运行日志分析并按程序重启。原文未给出短/长时间的数值界限。",
+    "options": {
+      "check_recovery": "先核对报警是否恢复及持续情况，不能凭空设定秒数阈值。",
+      "recovered": "按已确认的短时间恢复分支，不增加该项故障处理。",
+      "collect_logs": "上招运行日志，分析长期未恢复的退出事件。",
+      "replace_board": "不查看恢复情况，直接认定板卡硬件损坏。"
+    },
+    "block_question": false,
+    "cases": [
+      {
+        "name": "short",
+        "observations": "PCS-9586A适用性已确认，故障系统为非值班。进程退出后报警已经消失，现场按该条款确认属于短时间恢复，进程重启成功。",
+        "gold": {
+          "next_check": "recovered"
+        },
+        "reason": "沿用已确认的原文定性条件，不虚构数字阈值。"
+      },
+      {
+        "name": "long",
+        "observations": "PCS-9586A适用性已确认，故障系统为非值班。现场按该条款确认进程退出后报警长时间不消失，运行日志未上招。",
+        "gold": {
+          "next_check": "collect_logs"
+        },
+        "reason": "长时间不恢复分支。"
+      },
+      {
+        "name": "unknown-duration",
+        "observations": "PCS-9586A适用性已确认，故障系统为非值班。仅有一次进程退出事件，没有恢复事件或持续情况记录。",
+        "gold": {
+          "next_check": "check_recovery"
+        },
+        "reason": "缺少区分分支的恢复情况。"
+      }
+    ],
+    "annotation_note": "按条件分支选择当前尚未完成的核查；属于规则派生模拟场景。"
+  },
+  {
+    "id": "pcs9586-time",
+    "split": "calibration",
+    "source": "pcs9586",
+    "pages": [
+      30
+    ],
+    "locator": "7.1.2第8项对时故障",
+    "anchors": {
+      "30": [
+        "若站内多台装置同时报对时故障",
+        "若单台装置报对时故障"
+      ]
+    },
+    "rule_context": "PCS-9586A对时故障：多台装置同时报对时故障，基本可判断对时源故障；只有单台报对时故障，需要排除该装置对时光纤故障。多台同时故障的描述是优先排查线索，不保证唯一根因。",
+    "options": {
+      "inspect_source": "优先核查共同对时源；暂不宣称唯一根因已确认。",
+      "inspect_fiber": "先排查该单台装置的对时光纤。",
+      "check_extent": "先核查是否还有其他装置同时报对时故障。",
+      "replace_all": "直接更换站内所有装置板卡。"
+    },
+    "block_question": false,
+    "cases": [
+      {
+        "name": "multiple",
+        "observations": "已确认PCS-9586A手册适用；已核对站内多台装置同时报告对时故障。对时源尚未检查。",
+        "gold": {
+          "next_check": "inspect_source"
+        },
+        "reason": "多台同时故障指向共同对时源的排查优先级。"
+      },
+      {
+        "name": "single",
+        "observations": "已确认PCS-9586A手册适用；核查后只有该单台装置报告对时故障，其他装置对时正常；该装置对时光纤未检查。",
+        "gold": {
+          "next_check": "inspect_fiber"
+        },
+        "reason": "单台故障分支。"
+      },
+      {
+        "name": "unknown-extent",
+        "observations": "已确认PCS-9586A手册适用；收到该装置对时故障，尚不知道其他装置是否也在同一时刻报警。",
+        "gold": {
+          "next_check": "check_extent"
+        },
+        "reason": "先补齐故障范围，不能直接认定源故障。"
+      }
+    ],
+    "annotation_note": "按条件分支选择当前尚未完成的核查；属于规则派生模拟场景。"
+  },
+  {
+    "id": "reg5-sf6",
+    "split": "train",
+    "source": "reg5",
+    "pages": [
+      36
+    ],
+    "locator": "6.1.2.1、6.1.2.4",
+    "anchors": {
+      "36": [
+        "现场检查交流滤波器断路器三相 SF6 压力",
+        "如果压力正常",
+        "检查交流滤波器备用情况"
+      ]
+    },
+    "rule_context": "规程五6.1：交流滤波器断路器SF6压力低报警后，现场检查三相压力；现场压力正常时通知检修人员进一步检查。后续隔离方案需检查备用滤波器情况；若备用能力不能满足大组退出后的运行条件，经领导批准申请调度降低直流功率。",
+    "options": {
+      "check_pressure": "现场核查该交流滤波器断路器三相SF6压力。",
+      "maintenance_check": "按现场压力正常分支，通知检修进一步检查。",
+      "check_reserve": "核查备用滤波器能否满足大组退出后的直流运行条件。",
+      "reduce_without_approval": "不核对备用情况和批准条件，直接降低直流功率。"
+    },
+    "block_question": false,
+    "cases": [
+      {
+        "name": "unverified-pressure",
+        "observations": "已确认规程五适用于本场景。交流滤波器断路器SF6压力低报警出现；没有现场三相压力数据，尚未开展该项检查。",
+        "gold": {
+          "next_check": "check_pressure"
+        },
+        "reason": "报警本身不能替代现场压力。"
+      },
+      {
+        "name": "normal-pressure",
+        "observations": "已确认规程五适用。SF6压力低报警出现后，现场检查该交流滤波器断路器三相压力均正常；尚未联系检修。",
+        "gold": {
+          "next_check": "maintenance_check"
+        },
+        "reason": "原文压力正常分支。"
+      },
+      {
+        "name": "reserve-unknown",
+        "observations": "已确认规程五适用。前序压力检查及故障分支处理已完成，现在进入大组隔离方案的备用能力核查阶段；备用滤波器能否满足大组退出后的运行条件尚未确定。",
+        "gold": {
+          "next_check": "check_reserve"
+        },
+        "reason": "不越过备用能力及批准条件直接降功率。"
+      }
+    ],
+    "annotation_note": "按条件分支选择当前尚未完成的核查；属于规则派生模拟场景。"
+  },
+  {
+    "id": "reg5-spring",
+    "split": "test",
+    "source": "reg5",
+    "pages": [
+      36
+    ],
+    "locator": "6.2.2.1、6.2.2.2",
+    "anchors": {
+      "36": [
+        "现场检查交流滤波器断路器弹簧储能指示",
+        "储能监视回路是否正常",
+        "操作机构电源是否正常"
+      ]
+    },
+    "rule_context": "规程五6.2交流滤波器断路器储能不正常：先检查弹簧储能指示是否正常；若正常，联系检修检查储能监视回路。另需检查操作机构电源；电源开关跳开时只允许试合一次，试合不成功联系检修。",
+    "options": {
+      "check_spring": "现场检查该断路器弹簧储能指示是否处于正常范围。",
+      "check_monitor": "联系检修检查弹簧储能监视回路。",
+      "contact_maintenance": "试合一次仍不成功，联系检修处理。",
+      "retry_repeatedly": "继续反复试合电源开关直至成功。"
+    },
+    "block_question": false,
+    "cases": [
+      {
+        "name": "unchecked",
+        "observations": "已确认规程五适用。本事件已归入交流滤波器断路器储能不正常预案；只收到断路器告警，弹簧储能指示尚未现场检查。",
+        "gold": {
+          "next_check": "check_spring"
+        },
+        "reason": "第一步核实指示。"
+      },
+      {
+        "name": "normal",
+        "observations": "已确认规程五适用，正在处理该断路器储能异常。现场弹簧储能指示检查正常，监视回路尚未检查。",
+        "gold": {
+          "next_check": "check_monitor"
+        },
+        "reason": "指示正常分支指向监视回路。"
+      },
+      {
+        "name": "retry-failed",
+        "observations": "已确认规程五适用。操作机构电源开关跳开，已按规定试合一次但未成功；没有进行第二次试合。",
+        "gold": {
+          "next_check": "contact_maintenance"
+        },
+        "reason": "原文限制一次，不能训练为重复试合。"
+      }
+    ],
+    "annotation_note": "按条件分支选择当前尚未完成的核查；属于规则派生模拟场景。"
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "scanned_lines": 241745,
+  "direct_context_event_ids": [
+    "e-aa6bdae759646b45edc8",
+    "e-bd21fdb04356ffcf56e3",
+    "e-6ecc77fcd0cc5e2cc00a",
+    "e-e4105c4a8373ab7ebe5a",
+    "e-5f904f23167492056c23",
+    "e-70399f756f1dbf13458c",
+    "e-41d32dc52ebe403837ed",
+    "e-bba2d4d170fc4bbf64e6",
+    "e-6530614a99c8424b4553",
+    "e-833458fcb44baef70695",
+    "e-763bfd56228771d89520",
+    "e-4d853767cbf6ef4a4530",
+    "e-0cbdebfe31816a96d8f7",
+    "e-b84672ebec8352e4231c",
+    "e-ef17e7cbbfe38e75d513",
+    "e-01b697ca208f98b15c83",
+    "e-a7a710fbdc277cb4a05b",
+    "e-fb85e826578e7f5bd452",
+    "e-64838d50f98a01fbdbee",
+    "e-4003466e11865c72cced",
+    "e-3ccbb726180053d958cd",
+    "e-a9e04304715609593d20",
+    "e-f1ab96357eaebccae5ab",
+    "e-e6c8816c6f1087121645",
+    "e-e01bed2fd4be23666857",
+    "e-518b4a653220fb3fbff3",
+    "e-de2bef0f0ee9bd0748ba",
+    "e-0d3fefdbe368ffd40239",
+    "e-b6f5403c6e7949c2e90d",
+    "e-cce1dc131d3f9bf60075",
+    "e-567e97e58a62128ad7f0",
+    "e-e4a9d46023860051c2ff",
+    "e-2cd3f8b134228929b50c",
+    "e-f21fbec2803c575f1085",
+    "e-9db15f14fc8893823546",
+    "e-3e2c3b647e514919be5a",
+    "e-5448815afbe06719c72f",
+    "e-8bc950a7a4cfa9b2f381",
+    "e-858e04dc56297d9270f5",
+    "e-2ffce2ef143ac8211b3b",
+    "e-e910dbcbb5083838b68e",
+    "e-d849b0866fdd3068588d",
+    "e-86a1326559c222221ee9",
+    "e-e35f34a7912d7568fb4e",
+    "e-d548ea6fb2046f59b022",
+    "e-22b8bf81de948cd33f8c"
+  ],
+  "related_host_candidates": [],
+  "matching_unparsed_lines": [],
+  "search": {
+    "equipment": "(?:极(?:2|Ⅱ|II|二)低端(?:阀1|VSC1)|P221VCC[12])",
+    "intent": "命令|操作|切换|试验|测试|调试|手动|自动"
+  },
+  "conclusion": "存在目标主机调试/在线测试模式及主泵切换命令异常记录；不等于操作成功或窗口符合预期。",
+  "document_review": [
+    {
+      "source_id": "D176",
+      "locator": "正文块7146–7164",
+      "finding": "极II低端VSC1两套保护投退和无异常检查的典型操作票模板；不是已执行票"
+    },
+    {
+      "source_id": "D157/D158/D166",
+      "finding": "相关低端试验/温度记录描述建昌站，排除作为姑苏样本依据"
+    },
+    {
+      "source_id": "D159/D165",
+      "finding": "姑苏相关试验为高端设备，不能标注本批低端过程正常"
+    }
+  ],
+  "limitations": "可提取文本和上述词法范围；非OCR或全部语义表达穷举。未找到目标设备正常操作完整闭环。"
+}

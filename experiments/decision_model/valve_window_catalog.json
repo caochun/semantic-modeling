@@ -1,0 +1,185 @@
+{
+  "dataset": "gusu-valve-windows-v1-candidates",
+  "scope": {
+    "station": "姑苏",
+    "hosts": [
+      "P221VCC1",
+      "P221VCC2"
+    ],
+    "physical_scope": "极2低端VSC1阀冷两套控制系统；A/B均保留，精确点表映射待确认"
+  },
+  "selection_method": "人工选择覆盖风机/屏蔽、明确故障、恢复、缺失上下文的事件窗口；非随机抽样，不代表现场发生率",
+  "window_boundary": "start inclusive, end exclusive",
+  "preceding_context_seconds": 300,
+  "split_unit": "event_date across both hosts and all channels; rules are shared, no unseen-rule-generalization claim",
+  "windows": [
+    {
+      "id": "gusu-valve-20220528-1400",
+      "start": "2022-05-28T14:00:00",
+      "end": "2022-05-28T14:30:00",
+      "proposed_split": "train",
+      "group_id": "gusu-commissioning-2022-05-28"
+    },
+    {
+      "id": "gusu-valve-20220528-1430",
+      "start": "2022-05-28T14:30:00",
+      "end": "2022-05-28T15:00:00",
+      "proposed_split": "train",
+      "group_id": "gusu-commissioning-2022-05-28"
+    },
+    {
+      "id": "gusu-valve-20220528-1700",
+      "start": "2022-05-28T17:00:00",
+      "end": "2022-05-28T18:00:00",
+      "proposed_split": "train",
+      "group_id": "gusu-commissioning-2022-05-28"
+    },
+    {
+      "id": "gusu-valve-20220603-1630",
+      "start": "2022-06-03T16:30:00",
+      "end": "2022-06-03T17:30:00",
+      "proposed_split": "calibration",
+      "group_id": "gusu-commissioning-2022-06-03"
+    },
+    {
+      "id": "gusu-valve-20220604-1030",
+      "start": "2022-06-04T10:30:00",
+      "end": "2022-06-04T11:05:00",
+      "proposed_split": "train",
+      "group_id": "gusu-commissioning-2022-06-04"
+    },
+    {
+      "id": "gusu-valve-20220604-1230",
+      "start": "2022-06-04T12:30:00",
+      "end": "2022-06-04T13:00:00",
+      "proposed_split": "train",
+      "group_id": "gusu-commissioning-2022-06-04"
+    },
+    {
+      "id": "gusu-valve-20220604-1430",
+      "start": "2022-06-04T14:30:00",
+      "end": "2022-06-04T15:00:00",
+      "proposed_split": "train",
+      "group_id": "gusu-commissioning-2022-06-04"
+    },
+    {
+      "id": "gusu-valve-20220604-2200",
+      "start": "2022-06-04T22:00:00",
+      "end": "2022-06-04T23:00:00",
+      "proposed_split": "train",
+      "group_id": "gusu-commissioning-2022-06-04"
+    },
+    {
+      "id": "gusu-valve-20220605-0300",
+      "start": "2022-06-05T03:00:00",
+      "end": "2022-06-05T03:30:00",
+      "proposed_split": "calibration",
+      "group_id": "gusu-commissioning-2022-06-05"
+    },
+    {
+      "id": "gusu-valve-20220605-0830",
+      "start": "2022-06-05T08:30:00",
+      "end": "2022-06-05T09:30:00",
+      "proposed_split": "calibration",
+      "group_id": "gusu-commissioning-2022-06-05"
+    },
+    {
+      "id": "gusu-valve-20220605-1625",
+      "start": "2022-06-05T16:25:00",
+      "end": "2022-06-05T17:25:00",
+      "proposed_split": "calibration",
+      "group_id": "gusu-commissioning-2022-06-05"
+    },
+    {
+      "id": "gusu-valve-20220606-0900",
+      "start": "2022-06-06T09:00:00",
+      "end": "2022-06-06T09:55:00",
+      "proposed_split": "train",
+      "group_id": "gusu-commissioning-2022-06-06"
+    },
+    {
+      "id": "gusu-valve-20220606-1000",
+      "start": "2022-06-06T10:00:00",
+      "end": "2022-06-06T10:40:00",
+      "proposed_split": "train",
+      "group_id": "gusu-commissioning-2022-06-06"
+    },
+    {
+      "id": "gusu-valve-20220606-1100",
+      "start": "2022-06-06T11:00:00",
+      "end": "2022-06-06T11:16:00",
+      "proposed_split": "train",
+      "group_id": "gusu-commissioning-2022-06-06"
+    },
+    {
+      "id": "gusu-valve-20220606-1525",
+      "start": "2022-06-06T15:25:00",
+      "end": "2022-06-06T16:20:00",
+      "proposed_split": "train",
+      "group_id": "gusu-commissioning-2022-06-06"
+    },
+    {
+      "id": "gusu-valve-20220606-1630",
+      "start": "2022-06-06T16:30:00",
+      "end": "2022-06-06T17:10:00",
+      "proposed_split": "train",
+      "group_id": "gusu-commissioning-2022-06-06"
+    },
+    {
+      "id": "gusu-valve-20220606-1745",
+      "start": "2022-06-06T17:45:00",
+      "end": "2022-06-06T18:15:00",
+      "proposed_split": "train",
+      "group_id": "gusu-commissioning-2022-06-06"
+    },
+    {
+      "id": "gusu-valve-20220608-0900",
+      "start": "2022-06-08T09:00:00",
+      "end": "2022-06-08T09:40:00",
+      "proposed_split": "test",
+      "group_id": "gusu-commissioning-2022-06-08"
+    },
+    {
+      "id": "gusu-valve-20220608-1100",
+      "start": "2022-06-08T11:00:00",
+      "end": "2022-06-08T11:40:00",
+      "proposed_split": "test",
+      "group_id": "gusu-commissioning-2022-06-08"
+    },
+    {
+      "id": "gusu-valve-20220608-1400",
+      "start": "2022-06-08T14:00:00",
+      "end": "2022-06-08T14:40:00",
+      "proposed_split": "test",
+      "group_id": "gusu-commissioning-2022-06-08"
+    },
+    {
+      "id": "gusu-valve-20220608-1500",
+      "start": "2022-06-08T15:00:00",
+      "end": "2022-06-08T15:40:00",
+      "proposed_split": "test",
+      "group_id": "gusu-commissioning-2022-06-08"
+    },
+    {
+      "id": "gusu-valve-20220608-1915",
+      "start": "2022-06-08T19:15:00",
+      "end": "2022-06-08T19:55:00",
+      "proposed_split": "test",
+      "group_id": "gusu-commissioning-2022-06-08"
+    },
+    {
+      "id": "gusu-valve-20220612-1500",
+      "start": "2022-06-12T15:00:00",
+      "end": "2022-06-12T16:05:00",
+      "proposed_split": "test",
+      "group_id": "gusu-commissioning-2022-06-12"
+    },
+    {
+      "id": "gusu-valve-20220612-1700",
+      "start": "2022-06-12T17:00:00",
+      "end": "2022-06-12T17:50:00",
+      "proposed_split": "test",
+      "group_id": "gusu-commissioning-2022-06-12"
+    }
+  ]
+}

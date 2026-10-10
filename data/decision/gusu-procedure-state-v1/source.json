@@ -1,0 +1,35 @@
+{
+  "procedure_inventory": "data/decision/gusu-procedure-five-inventory-v1/procedure_inventory.json",
+  "source": {
+    "path": "output/markdown/姑苏站/规程五：±800kV姑苏换流站运行规程（设备异常与事故处理）.md",
+    "sha256": "45bd5e2dd8b249ca42c1acc8b7dbb1a9d6338c5fb21d180acc9762eef8ef93a4",
+    "version": "6.0",
+    "pdf_pages": 96,
+    "printed_pages": "1-86"
+  },
+  "clauses": {
+    "10.3": [
+      "10.3.1.1",
+      "10.3.1.2",
+      "10.3.2.1",
+      "10.3.2.3",
+      "10.3.2.9"
+    ],
+    "10.4": [
+      "10.4.1.1",
+      "10.4.2.1"
+    ],
+    "10.5": [
+      "10.5.1.1",
+      "10.5.2.1",
+      "10.5.2.5"
+    ],
+    "11.3": [
+      "11.3.1.1",
+      "11.3.1.2",
+      "11.3.2.1",
+      "11.3.2.3",
+      "11.3.2.4"
+    ]
+  }
+}

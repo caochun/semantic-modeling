@@ -1,0 +1,73 @@
+{
+  "schema_version": "gusu-explicit-state-decision.v1",
+  "state_input": "natural_language_only",
+  "questions": {
+    "14.1": {
+      "title": "阀厅空调室外机故障",
+      "instructions": "依据已完成的复归核查，判断规程14.1当前应进入哪个分支。只能使用状态中明确记录的报警复归结果，不把未知当作复归。",
+      "criteria": {
+        "monitor_after_recovery": "报警已复归，继续加强监视",
+        "switch_backup_and_maintenance": "报警未复归，切换备用机组并通知检修",
+        "needs_recovery_check": "尚未获得报警复归结果，不能选择上述分支"
+      }
+    },
+    "14.2": {
+      "title": "压差传感器报警",
+      "instructions": "依据传感器健康状态和读数与设定值的关系，判断规程14.2当前分支。没有完成测量时保留待核查。",
+      "criteria": {
+        "sensor_maintenance": "传感器异常，通知检修处理",
+        "switch_unit_and_replace_filter": "传感器正常且读数超过设定值，切换空调机组并更换过滤网",
+        "needs_measurement": "传感器状态或读数关系尚未明确，继续完成核查"
+      }
+    },
+    "13.4": {
+      "title": "泵房漏水",
+      "instructions": "依据现场是否发现明显管网破损漏水，判断规程13.4当前分支。未发现漏点不能推断没有漏水。",
+      "criteria": {
+        "isolate_leak_and_repair": "发现明显管网破损漏水，隔离漏水点并联系检修",
+        "maintenance_inspection": "未发现明显漏水点，联系检修进一步检查分析",
+        "needs_field_check": "尚未完成漏水点现场检查"
+      }
+    },
+    "13.5": {
+      "title": "生活泵故障",
+      "instructions": "依据故障泵以外的生活泵自动运行能力，判断规程13.5当前分支。",
+      "criteria": {
+        "secure_failed_pump_and_use_other": "另一台生活泵自动状态正常，做好故障泵安措并联系检修",
+        "manual_start_other_and_water_supply": "另一台生活泵不能自动运行，切手动启动并联系储水",
+        "inspect_both_pumps": "两台生活泵均故障，通知检修检查处理",
+        "needs_pump_status_check": "另一台生活泵状态尚未核实"
+      }
+    },
+    "15.12.6": {
+      "title": "消防水池缺水",
+      "instructions": "依据现场液位显示核查结果，判断规程15.12.6当前分支。后台低报警本身不能替代现场液位核对。",
+      "criteria": {
+        "replenish_and_find_refill_fault": "现场实际液位低告警属实，补水并查找自动补水原因",
+        "record_sensor_fault_and_repair": "现场实际液位正常，判断为液位传感器故障并记录检修",
+        "needs_level_check": "现场液位核查尚未完成"
+      }
+    },
+    "15.13.1": {
+      "title": "火灾自动报警系统误动作",
+      "instructions": "依据现场火情确认和复位后的重复报警结果，判断规程15.13.1当前分支。",
+      "criteria": {
+        "fire_response": "现场存在火情，进入相应火灾处置预案",
+        "false_alarm_monitor": "现场无火情且复位后不再报警，按误报警加强巡视",
+        "isolate_faulty_loop_and_repair": "现场无火情但复位后重复报警，屏蔽相应回路或装置并维修",
+        "needs_fire_check": "现场火情或复位结果尚未明确"
+      }
+    },
+    "10.5": {
+      "title": "内水冷主循环泵异常且未切至备用泵",
+      "instructions": "依据备用泵控制/投入结果以及主泵现场严重异常情况，判断规程10.5当前分支。这里输出的是规程分支候选，不授权现场操作。",
+      "criteria": {
+        "set_auto_and_monitor_backup": "备用泵控制方式不在自动，切至自动并核对备用泵投入",
+        "switch_from_severely_abnormal_main_pump": "主泵存在严重发热、冒烟、异常声音或电源烧糊，执行主泵切换并确认备用泵",
+        "request_converter_valve_shutdown": "备用泵无法投入或投入后仍故障，申请对应换流阀停运并隔离故障泵",
+        "needs_pump_condition_check": "备用泵或主泵现场条件尚未明确"
+      }
+    }
+  },
+  "state_builder_version": "gusu-explicit-state-renderer.v1"
+}

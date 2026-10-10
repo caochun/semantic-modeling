@@ -1,0 +1,27 @@
+{
+  "dataset": "gusu-procedure-state-v1",
+  "schema_version": "gusu-procedure-typed-decisions.v1",
+  "purpose": "procedure_derived_semantic_state_typed_decision_seed",
+  "review_status": "source_checked_synthetic_not_expert_approved",
+  "state_input": "natural_language_semantic_state_only",
+  "audit_excluded_from_model_input": true,
+  "state_builder_version": "gusu-state-builder.v1",
+  "scenario_scope": [
+    "10.3",
+    "10.4",
+    "10.5",
+    "11.3"
+  ],
+  "split_unit": "case_id; generated variants are grouped and never duplicated across splits",
+  "files": {
+    "audit.jsonl": "c38e924b884b9c8e062185bcd10acbf6f00045cfb008dda09605fa4086cd3de6",
+    "calibration.jsonl": "8b43e63ef1132978880fbcfcc141ce23ac88f65145021be67854d37241416654",
+    "schema.json": "82999d6612cf7da7f2f2f232d76526ffa92344724c8d4d4706402e140755f2ed",
+    "source.json": "97fa49cb05d154bc08968960146cf3b9f49440b90c58ee5ee129e0a9e29a9e27",
+    "test.jsonl": "ae62253cc7bb1cee4280f075155e03c265a52f5302114ce69e68208cbba88be4",
+    "train.jsonl": "272c49c632c0c03b03a2416ecde996bf27b5774efec971011580ec043b7bc4b3",
+    "validation.json": "81ca80bb7156b8d1539deb6f38ba083b3fe83415fb18c3f26ed6e4d457102ace",
+    "upstream_validation.json": "dd0a4649b1f62af8c3ad9598d5a67e8df9016018af518c59ef04b4e892b0dc6a"
+  },
+  "source_sha256": "45bd5e2dd8b249ca42c1acc8b7dbb1a9d6338c5fb21d180acc9762eef8ef93a4"
+}

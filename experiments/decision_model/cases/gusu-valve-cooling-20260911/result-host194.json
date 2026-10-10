@@ -1,0 +1,168 @@
+{
+  "created_at": "2026-10-09T06:33:01.443999+00:00",
+  "adapter": "/mnt/data/chun-semantic-decision/experiments/gusu_alarm_20261009/attempt02/pilot/adapter",
+  "adapter_files_sha256": {
+    "adapter_config.json": "e2601c43bf753e97a026aa3d8ac7c87fcbfa0f448d6940d2854479e14e37400a",
+    "adapter_model.safetensors": "1d123eb972afd5014903547ac7fd8a08fdb981d9e0845391db720a3d16acbb76",
+    "joint_head.safetensors": "88182f18a51cefd289a492c7cf12aeb187adc7ca44a3cf701811960163bb6181",
+    "joint_head_config.json": "99f65ef462b1c92d9304ad1acecbbab93506efc0ba8227c46582b4264d27aa30",
+    "processor_config.json": "3814737f2d4bfdd153a82364b3850f1be5dbc6f074a55c8d5fbf4d40127c3e87",
+    "tokenizer.json": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+    "tokenizer_config.json": "33af9dee078f3f7e863cc082d5efceaa63a149eea25f76da8decdb0fff26e6c6",
+    "training_args.bin": "98a7d7d14fe4f8b85642cfb57ce493f2d3bb4f157183ad99245cb038f8ed6651",
+    "unsloth_decision_config.json": "001e8c91bf2fe71a7fc0c782cdfc1a9709b11500fb9fcf5090b83bb487724f0d"
+  },
+  "requests_sha256": "00918a1cfad1baa83ccb1a85a65eca563b78c8b9e0e4a2497a01dd4c44e173be",
+  "unsloth_revision": "cc9128134156cc51f94eeb76d3d19f80bddbc8a7",
+  "device": "NVIDIA TITAN V",
+  "decision_config": {
+    "layout": "clef",
+    "max_len": 4096,
+    "temperature": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "base_model": "/mnt/data/chun-semantic-decision/models/Qwen3.5-0.8B-23c69c5",
+    "base_revision": "23c69c53358a07516b5827588b3fdb12ae78fd65",
+    "load_in_4bit": true,
+    "head_temperature": 0.09735891968011856,
+    "fine_tuned": true
+  },
+  "expert_gold_available": false,
+  "scope": "External, unseen task schema; choices only; no accuracy claim.",
+  "probes": [
+    {
+      "id": "raw_logs/rotation-0",
+      "tokens": 1734,
+      "exceeds_training_max_length": false,
+      "truncated": false,
+      "predictions": {
+        "system_status": {
+          "type": "choice",
+          "choice": "c1",
+          "confidence": 0.8296,
+          "probabilities": {
+            "c0": 0.1637,
+            "c1": 0.8296,
+            "c2": 0.0067
+          },
+          "answer": "c1"
+        }
+      },
+      "semantic_choices": {
+        "system_status": "expected_transition"
+      }
+    },
+    {
+      "id": "raw_logs/rotation-1",
+      "tokens": 1734,
+      "exceeds_training_max_length": false,
+      "truncated": false,
+      "predictions": {
+        "system_status": {
+          "type": "choice",
+          "choice": "c2",
+          "confidence": 0.9917,
+          "probabilities": {
+            "c0": 0.0019,
+            "c1": 0.0064,
+            "c2": 0.9917
+          },
+          "answer": "c2"
+        }
+      },
+      "semantic_choices": {
+        "system_status": "confirmed_abnormal"
+      }
+    },
+    {
+      "id": "raw_logs/rotation-2",
+      "tokens": 1734,
+      "exceeds_training_max_length": false,
+      "truncated": false,
+      "predictions": {
+        "system_status": {
+          "type": "choice",
+          "choice": "c1",
+          "confidence": 0.9996,
+          "probabilities": {
+            "c0": 0.0,
+            "c1": 0.9996,
+            "c2": 0.0004
+          },
+          "answer": "c1"
+        }
+      },
+      "semantic_choices": {
+        "system_status": "confirmed_abnormal"
+      }
+    },
+    {
+      "id": "with_document_evidence/rotation-0",
+      "tokens": 2227,
+      "exceeds_training_max_length": false,
+      "truncated": false,
+      "predictions": {
+        "system_status": {
+          "type": "choice",
+          "choice": "c1",
+          "confidence": 0.9969,
+          "probabilities": {
+            "c0": 0.0025,
+            "c1": 0.9969,
+            "c2": 0.0005
+          },
+          "answer": "c1"
+        }
+      },
+      "semantic_choices": {
+        "system_status": "expected_transition"
+      }
+    },
+    {
+      "id": "with_document_evidence/rotation-1",
+      "tokens": 2227,
+      "exceeds_training_max_length": false,
+      "truncated": false,
+      "predictions": {
+        "system_status": {
+          "type": "choice",
+          "choice": "c2",
+          "confidence": 0.992,
+          "probabilities": {
+            "c0": 0.0052,
+            "c1": 0.0027,
+            "c2": 0.992
+          },
+          "answer": "c2"
+        }
+      },
+      "semantic_choices": {
+        "system_status": "confirmed_abnormal"
+      }
+    },
+    {
+      "id": "with_document_evidence/rotation-2",
+      "tokens": 2227,
+      "exceeds_training_max_length": false,
+      "truncated": false,
+      "predictions": {
+        "system_status": {
+          "type": "choice",
+          "choice": "c1",
+          "confidence": 0.7948,
+          "probabilities": {
+            "c0": 0.0,
+            "c1": 0.7948,
+            "c2": 0.2052
+          },
+          "answer": "c1"
+        }
+      },
+      "semantic_choices": {
+        "system_status": "confirmed_abnormal"
+      }
+    }
+  ]
+}

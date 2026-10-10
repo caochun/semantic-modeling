@@ -1,0 +1,226 @@
+[
+  {
+    "case_id": "14.1-recovered",
+    "family_id": "14.1",
+    "task_id": "procedure_14_1",
+    "title": "阀厅空调室外机故障",
+    "gold_decision": "monitor_after_recovery",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-14.1\tA\t阀厅空调室外机故障\t后台热泵机组故障报警 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-14.1\tA\t阀厅空调室外机故障\t后台热泵机组故障报警复归 消失\t3"
+  },
+  {
+    "case_id": "14.1-not_recovered",
+    "family_id": "14.1",
+    "task_id": "procedure_14_1",
+    "title": "阀厅空调室外机故障",
+    "gold_decision": "switch_backup_and_maintenance",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-14.1\tA\t阀厅空调室外机故障\t后台热泵机组故障报警 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-14.1\tA\t阀厅空调室外机故障\t后台热泵机组故障报警仍存在 出现\t3"
+  },
+  {
+    "case_id": "14.1-unknown_recovery",
+    "family_id": "14.1",
+    "task_id": "procedure_14_1",
+    "title": "阀厅空调室外机故障",
+    "gold_decision": "needs_recovery_check",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-14.1\tA\t阀厅空调室外机故障\t后台热泵机组故障报警 出现\t3"
+  },
+  {
+    "case_id": "14.1-repeat_after_recovery",
+    "family_id": "14.1",
+    "task_id": "procedure_14_1",
+    "title": "阀厅空调室外机故障",
+    "gold_decision": "switch_backup_and_maintenance",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-14.1\tA\t阀厅空调室外机故障\t后台热泵机组故障报警 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-14.1\tA\t阀厅空调室外机故障\t后台热泵机组故障报警复归 消失\t3\n2026-10-01T08:00:10.000\t姑苏\tPROC-14.1\tA\t阀厅空调室外机故障\t后台热泵机组故障报警再次出现 出现\t3"
+  },
+  {
+    "case_id": "14.2-sensor_fault",
+    "family_id": "14.2",
+    "task_id": "procedure_14_2",
+    "title": "压差传感器报警",
+    "gold_decision": "sensor_maintenance",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-14.2\tA\t压差传感器报警\t压差传感器报警 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-14.2\tA\t压差传感器报警\t压差传感器自检异常，读数不可信 出现\t3"
+  },
+  {
+    "case_id": "14.2-high_with_healthy_sensor",
+    "family_id": "14.2",
+    "task_id": "procedure_14_2",
+    "title": "压差传感器报警",
+    "gold_decision": "switch_unit_and_replace_filter",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-14.2\tA\t压差传感器报警\t压差传感器报警 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-14.2\tA\t压差传感器报警\t压差传感器工作正常 出现\t3\n2026-10-01T08:00:10.000\t姑苏\tPROC-14.2\tA\t压差传感器报警\t压差读数超过设定值 出现\t3"
+  },
+  {
+    "case_id": "14.2-normal_below_setpoint",
+    "family_id": "14.2",
+    "task_id": "procedure_14_2",
+    "title": "压差传感器报警",
+    "gold_decision": "needs_measurement",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-14.2\tA\t压差传感器报警\t压差传感器报警 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-14.2\tA\t压差传感器报警\t压差传感器工作正常 出现\t3\n2026-10-01T08:00:10.000\t姑苏\tPROC-14.2\tA\t压差传感器报警\t压差读数未超过设定值 出现\t3"
+  },
+  {
+    "case_id": "14.2-sensor_status_unknown",
+    "family_id": "14.2",
+    "task_id": "procedure_14_2",
+    "title": "压差传感器报警",
+    "gold_decision": "needs_measurement",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-14.2\tA\t压差传感器报警\t压差传感器报警 出现\t3"
+  },
+  {
+    "case_id": "13.4-leak_found",
+    "family_id": "13.4",
+    "task_id": "procedure_13_4",
+    "title": "泵房漏水",
+    "gold_decision": "isolate_leak_and_repair",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-13.4\tA\t泵房漏水\t泵房排污泵连续运行 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-13.4\tA\t泵房漏水\t泵房内出现积水 出现\t3\n2026-10-01T08:00:10.000\t姑苏\tPROC-13.4\tA\t泵房漏水\t现场发现明显管网破损漏水位置 出现\t3"
+  },
+  {
+    "case_id": "13.4-no_leak_found",
+    "family_id": "13.4",
+    "task_id": "procedure_13_4",
+    "title": "泵房漏水",
+    "gold_decision": "maintenance_inspection",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-13.4\tA\t泵房漏水\t泵房排污泵频繁启动 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-13.4\tA\t泵房漏水\t泵房内出现积水 出现\t3\n2026-10-01T08:00:10.000\t姑苏\tPROC-13.4\tA\t泵房漏水\t现场检查未发现明显漏水点 出现\t3"
+  },
+  {
+    "case_id": "13.4-field_check_pending",
+    "family_id": "13.4",
+    "task_id": "procedure_13_4",
+    "title": "泵房漏水",
+    "gold_decision": "needs_field_check",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-13.4\tA\t泵房漏水\t泵房内出现积水 出现\t3"
+  },
+  {
+    "case_id": "13.4-leak_point_not_obvious",
+    "family_id": "13.4",
+    "task_id": "procedure_13_4",
+    "title": "泵房漏水",
+    "gold_decision": "maintenance_inspection",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-13.4\tA\t泵房漏水\t泵房排污泵连续运行 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-13.4\tA\t泵房漏水\t现场检查未发现明显漏水点 出现\t3"
+  },
+  {
+    "case_id": "13.5-other_auto_ok",
+    "family_id": "13.5",
+    "task_id": "procedure_13_5",
+    "title": "生活泵故障",
+    "gold_decision": "secure_failed_pump_and_use_other",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-13.5\tA\t生活泵故障\t1号生活泵故障 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-13.5\tA\t生活泵故障\t2号生活泵处于自动状态且运行正常 出现\t3"
+  },
+  {
+    "case_id": "13.5-other_auto_failed",
+    "family_id": "13.5",
+    "task_id": "procedure_13_5",
+    "title": "生活泵故障",
+    "gold_decision": "manual_start_other_and_water_supply",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-13.5\tA\t生活泵故障\t1号生活泵故障 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-13.5\tA\t生活泵故障\t2号生活泵不能自动运行 出现\t3"
+  },
+  {
+    "case_id": "13.5-both_failed",
+    "family_id": "13.5",
+    "task_id": "procedure_13_5",
+    "title": "生活泵故障",
+    "gold_decision": "inspect_both_pumps",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-13.5\tA\t生活泵故障\t1号生活泵故障 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-13.5\tA\t生活泵故障\t2号生活泵故障 出现\t3"
+  },
+  {
+    "case_id": "13.5-other_status_unknown",
+    "family_id": "13.5",
+    "task_id": "procedure_13_5",
+    "title": "生活泵故障",
+    "gold_decision": "needs_pump_status_check",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-13.5\tA\t生活泵故障\t1号生活泵故障 出现\t3"
+  },
+  {
+    "case_id": "15.12.6-actual_low",
+    "family_id": "15.12.6",
+    "task_id": "procedure_15_12_6",
+    "title": "消防水池缺水",
+    "gold_decision": "replenish_and_find_refill_fault",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-15.12.6\tA\t消防水池缺水\t后台消防水池液位低报警 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-15.12.6\tA\t消防水池缺水\t现场显示器和磁翻板均确认实际液位低 出现\t3"
+  },
+  {
+    "case_id": "15.12.6-sensor_fault",
+    "family_id": "15.12.6",
+    "task_id": "procedure_15_12_6",
+    "title": "消防水池缺水",
+    "gold_decision": "record_sensor_fault_and_repair",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-15.12.6\tA\t消防水池缺水\t后台消防水池液位低报警 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-15.12.6\tA\t消防水池缺水\t现场显示器和磁翻板显示实际液位正常 出现\t3\n2026-10-01T08:00:10.000\t姑苏\tPROC-15.12.6\tA\t消防水池缺水\t后台低液位信号与现场不一致，液位传感器疑似故障 出现\t3"
+  },
+  {
+    "case_id": "15.12.6-field_check_pending",
+    "family_id": "15.12.6",
+    "task_id": "procedure_15_12_6",
+    "title": "消防水池缺水",
+    "gold_decision": "needs_level_check",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-15.12.6\tA\t消防水池缺水\t后台消防水池液位低报警 出现\t3"
+  },
+  {
+    "case_id": "15.12.6-actual_low_one_display",
+    "family_id": "15.12.6",
+    "task_id": "procedure_15_12_6",
+    "title": "消防水池缺水",
+    "gold_decision": "needs_level_check",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-15.12.6\tA\t消防水池缺水\t后台消防水池液位低报警 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-15.12.6\tA\t消防水池缺水\t磁翻板显示液位低，综合水泵房显示器尚未核对 出现\t3"
+  },
+  {
+    "case_id": "15.13.1-fire_confirmed",
+    "family_id": "15.13.1",
+    "task_id": "procedure_15_13_1",
+    "title": "火灾自动报警系统误动作",
+    "gold_decision": "fire_response",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-15.13.1\tA\t火灾自动报警系统误动作\t火灾报警控制系统报火警 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-15.13.1\tA\t火灾自动报警系统误动作\t视频和现场人员确认对应部位存在火情 出现\t3"
+  },
+  {
+    "case_id": "15.13.1-false_alarm_once",
+    "family_id": "15.13.1",
+    "task_id": "procedure_15_13_1",
+    "title": "火灾自动报警系统误动作",
+    "gold_decision": "false_alarm_monitor",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-15.13.1\tA\t火灾自动报警系统误动作\t火灾报警控制系统报火警 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-15.13.1\tA\t火灾自动报警系统误动作\t现场确认无火情 出现\t3\n2026-10-01T08:00:10.000\t姑苏\tPROC-15.13.1\tA\t火灾自动报警系统误动作\t按下复位键后不再报警 消失\t3"
+  },
+  {
+    "case_id": "15.13.1-false_alarm_repeat",
+    "family_id": "15.13.1",
+    "task_id": "procedure_15_13_1",
+    "title": "火灾自动报警系统误动作",
+    "gold_decision": "isolate_faulty_loop_and_repair",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-15.13.1\tA\t火灾自动报警系统误动作\t火灾报警控制系统报火警 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-15.13.1\tA\t火灾自动报警系统误动作\t现场确认无火情 出现\t3\n2026-10-01T08:00:10.000\t姑苏\tPROC-15.13.1\tA\t火灾自动报警系统误动作\t按下复位键后仍多次重复报警 出现\t3"
+  },
+  {
+    "case_id": "15.13.1-fire_check_pending",
+    "family_id": "15.13.1",
+    "task_id": "procedure_15_13_1",
+    "title": "火灾自动报警系统误动作",
+    "gold_decision": "needs_fire_check",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-15.13.1\tA\t火灾自动报警系统误动作\t火灾报警控制系统报火警 出现\t3"
+  },
+  {
+    "case_id": "10.5-backup_not_auto",
+    "family_id": "10.5",
+    "task_id": "procedure_10_5",
+    "title": "内水冷主循环泵异常且未切至备用泵",
+    "gold_decision": "set_auto_and_monitor_backup",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-10.5\tA\t内水冷主循环泵异常且未切至备用泵\t内水冷主循环泵异常 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-10.5\tA\t内水冷主循环泵异常且未切至备用泵\t备用循环泵控制方式为手动，不在自动位置 出现\t3"
+  },
+  {
+    "case_id": "10.5-main_severe",
+    "family_id": "10.5",
+    "task_id": "procedure_10_5",
+    "title": "内水冷主循环泵异常且未切至备用泵",
+    "gold_decision": "switch_from_severely_abnormal_main_pump",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-10.5\tA\t内水冷主循环泵异常且未切至备用泵\t内水冷主循环泵异常 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-10.5\tA\t内水冷主循环泵异常且未切至备用泵\t主泵现场严重发热并有异常声音 出现\t3\n2026-10-01T08:00:10.000\t姑苏\tPROC-10.5\tA\t内水冷主循环泵异常且未切至备用泵\t备用泵可以投入运行 出现\t3"
+  },
+  {
+    "case_id": "10.5-backup_failed",
+    "family_id": "10.5",
+    "task_id": "procedure_10_5",
+    "title": "内水冷主循环泵异常且未切至备用泵",
+    "gold_decision": "request_converter_valve_shutdown",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-10.5\tA\t内水冷主循环泵异常且未切至备用泵\t内水冷主循环泵异常 出现\t3\n2026-10-01T08:00:05.000\t姑苏\tPROC-10.5\tA\t内水冷主循环泵异常且未切至备用泵\t备用泵无法投入运行或投入后再次故障 出现\t3"
+  },
+  {
+    "case_id": "10.5-condition_unknown",
+    "family_id": "10.5",
+    "task_id": "procedure_10_5",
+    "title": "内水冷主循环泵异常且未切至备用泵",
+    "gold_decision": "needs_pump_condition_check",
+    "raw_tsv": "event_time\tstation\thost\tsystem_alarm\tdevice\tcontent\talarm_level\n2026-10-01T08:00:00.000\t姑苏\tPROC-10.5\tA\t内水冷主循环泵异常且未切至备用泵\t内水冷主循环泵异常 出现\t3"
+  }
+]

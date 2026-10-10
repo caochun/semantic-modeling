@@ -1,0 +1,78 @@
+{
+  "options": {
+    "during_window": {
+      "abnormal_evidence": "窗口内有明确异常信号或异常现象证据；可能来自试验，不等于设备实际损坏。",
+      "insufficient_evidence": "现有记录不足以确认异常或符合预期，需补充状态或操作背景。"
+    },
+    "at_window_end": {
+      "abnormal_evidence": "末端仍有未见复归的明确异常证据；这是记录中的最后已知状态，现场持续性待核实。",
+      "insufficient_evidence": "末端状态证据不足；个别信号复归或没有新报警，不能证明整个评估范围正常。"
+    },
+    "observed_recovery": {
+      "all_observed_cleared": "本窗口及前置上下文中已观察到出现的目标异常信号，在窗口末均有后续复归记录。",
+      "some_unresolved": "部分已观察到出现的目标异常信号已复归，另有部分未见后续复归。",
+      "all_unresolved": "已观察到出现的目标异常信号均未见后续复归记录。",
+      "not_observed": "未观察到目标异常信号出现，不能据此判断系统正常或确认其恢复。",
+      "indeterminate": "同一信号同一时刻有矛盾边沿，无法确定其复归状态。"
+    }
+  },
+  "signal_families": [
+    [
+      "fan_fault",
+      "E\\d+\\.M\\d+风机(?:变频器|变频回路|工频回路)?故障",
+      "reg5-11.1"
+    ],
+    [
+      "cooling_redundancy_lost",
+      "冷却系统失去冗余冷却能力",
+      "reg5-11.1"
+    ],
+    [
+      "low_tank_level",
+      "(?:膨胀罐|高位水箱)(?:水位|液位)(?:低|超低)",
+      "reg5-10.3"
+    ],
+    [
+      "leak_alarm",
+      "(?:24小时泄漏报警|渗漏报警|泄漏报警)",
+      "reg5-10.3"
+    ],
+    [
+      "cooling_flow",
+      "冷却水流量(?:低|超低)",
+      "reg1-3.5.5"
+    ],
+    [
+      "inlet_temperature",
+      "进阀温度(?:高|超高)",
+      "reg1-3.5.5"
+    ],
+    [
+      "inlet_pressure",
+      "进阀压力(?:低|超低|高|超高)",
+      "reg1-3.5.5"
+    ],
+    [
+      "sensor_circuit",
+      ".+仪表回路(?:异常|故障)",
+      "reg5-10.14"
+    ],
+    [
+      "sensor_disagreement",
+      ".+冗余超差",
+      "reg5-10.14"
+    ],
+    [
+      "conductivity",
+      "(?:冷却水|去离子水)电导率(?:高|超高)",
+      "reg5-10.7"
+    ],
+    [
+      "cooling_trip_request",
+      "(?:进阀温度超高|膨胀罐液位超低|进阀压力超低且冷却水流量低|冷却水流量超低且进阀压力低)跳闸",
+      "reg1-3.5.5"
+    ]
+  ],
+  "scope": "目标词表内异常证据与复归；无正常分类，无现场金标",
+  "history_horizon": "same_event_day_only"
+}

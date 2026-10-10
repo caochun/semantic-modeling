@@ -1,0 +1,125 @@
+[
+  {
+    "id": "reg5-11.3-fan-feedback-loss",
+    "title": "阀冷风机运行反馈丢失后的核查",
+    "trigger_fact_ids": [
+      "fan_running_feedback_loss",
+      "outer_cooling_fan_group_loss:*"
+    ],
+    "procedure_refs": ["规程五第11.1节", "规程五第11.3节", "规程三第10章"],
+    "checks": [
+      {
+        "id": "fan_control_context",
+        "title": "核对风机控制模式和启停/轮换命令",
+        "priority": "high",
+        "evidence_signal_ids": [],
+        "missing_evidence": "日志未提供风机控制模式、启停命令或整组切换背景"
+      },
+      {
+        "id": "fan_drive_or_power_fault",
+        "title": "核对变频器、电源及风机故障信号",
+        "priority": "high",
+        "evidence_signal_ids": ["fan_converter_failure", "fan_power_failure", "fan_fault"],
+        "missing_evidence": "日志未提供变频器、电源或风机故障信号"
+      },
+      {
+        "id": "cooling_redundancy",
+        "title": "核对冷却系统冗余能力和其他风机运行状态",
+        "priority": "high",
+        "evidence_signal_ids": ["cooling_redundancy_lost"],
+        "missing_evidence": "日志未提供冗余冷却能力或其他风机的完整状态"
+      },
+      {
+        "id": "cooling_thermal_hydraulic_state",
+        "title": "核对进阀温度、流量和压力趋势",
+        "priority": "medium",
+        "evidence_signal_ids": ["cooling_flow_low", "inlet_temperature_high", "inlet_pressure_low", "inlet_pressure_high"],
+        "missing_evidence": "日志未提供水温、流量和压力趋势"
+      }
+    ]
+  },
+  {
+    "id": "reg5-10.3-leak-evidence",
+    "title": "内水冷泄漏候选的证据核查",
+    "trigger_fact_ids": [
+      "leak_protection_masked",
+      "inner_cooling_water_leak"
+    ],
+    "procedure_refs": ["规程五第10.3节"],
+    "checks": [
+      {
+        "id": "leak_alarm_or_level",
+        "title": "核对24小时泄漏报警和高位水箱/膨胀罐液位",
+        "priority": "high",
+        "evidence_signal_ids": ["inner_cooling_leak_alarm", "expansion_tank_low_level"],
+        "missing_evidence": "日志未提供泄漏报警或水位低信号"
+      },
+      {
+        "id": "hydraulic_trend",
+        "title": "核对水位、流量、压力和温度变化趋势",
+        "priority": "high",
+        "evidence_signal_ids": ["cooling_flow_low", "inlet_pressure_low", "inlet_temperature_high"],
+        "missing_evidence": "当前输入没有连续模拟量趋势"
+      },
+      {
+        "id": "field_leak_check",
+        "title": "现场检查阀厅、冷却塔和主循环泵是否漏水",
+        "priority": "high",
+        "evidence_signal_ids": ["physical_cooling_water_leak"],
+        "missing_evidence": "日志未提供现场漏水检查结果"
+      }
+    ]
+  },
+  {
+    "id": "reg5-10.4-main-pump",
+    "title": "内水冷主循环泵故障后的核查",
+    "trigger_fact_ids": ["inner_cooling_main_pump_branch"],
+    "procedure_refs": ["规程五第10.4节"],
+    "checks": [
+      {
+        "id": "backup_pump_status",
+        "title": "核对备用循环泵是否投入并运行正常",
+        "priority": "urgent",
+        "evidence_signal_ids": ["backup_pump_running", "backup_pump_not_running"],
+        "missing_evidence": "日志未提供备用泵投入状态"
+      },
+      {
+        "id": "main_pump_local_condition",
+        "title": "检查主循环泵电机和电源现场状态",
+        "priority": "high",
+        "evidence_signal_ids": [],
+        "missing_evidence": "日志未提供主泵电机发热、冒烟、声音和电源开关检查结果"
+      },
+      {
+        "id": "dc_and_auxiliary_power",
+        "title": "加强直流系统和站用电倒换监视",
+        "priority": "medium",
+        "evidence_signal_ids": [],
+        "missing_evidence": "日志未提供运行泵电源和站用电状态"
+      }
+    ]
+  },
+  {
+    "id": "reg5-10.5-backup-not-running",
+    "title": "主泵异常且备用泵未投入的核查",
+    "trigger_fact_ids": ["inner_cooling_main_pump_branch"],
+    "when": {"details.backup_status": "not_running"},
+    "procedure_refs": ["规程五第10.5节"],
+    "checks": [
+      {
+        "id": "backup_pump_control_mode",
+        "title": "在内水冷房核对备用泵控制方式是否为自动",
+        "priority": "urgent",
+        "evidence_signal_ids": [],
+        "missing_evidence": "日志未提供备用泵控制方式"
+      },
+      {
+        "id": "backup_pump_failure_confirmation",
+        "title": "确认备用泵无法投入或投入后再次故障",
+        "priority": "urgent",
+        "evidence_signal_ids": ["backup_pump_not_running"],
+        "missing_evidence": "日志未提供备用泵投入试验或故障结果"
+      }
+    ]
+  }
+]

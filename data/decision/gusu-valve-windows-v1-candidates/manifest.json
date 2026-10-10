@@ -1,0 +1,551 @@
+{
+  "dataset": "gusu-valve-windows-v1-candidates",
+  "status": "candidate_review",
+  "training_ready": false,
+  "source_scope": {
+    "station": "姑苏",
+    "hosts": [
+      "P221VCC1",
+      "P221VCC2"
+    ],
+    "physical_scope": "极2低端VSC1阀冷两套控制系统；A/B均保留，精确点表映射待确认"
+  },
+  "review_status": "not_expert_approved",
+  "window_count": 24,
+  "event_count": 4855,
+  "event_day_groups": 7,
+  "candidate_label_counts": {
+    "during_window": {
+      "abnormal_evidence": 13,
+      "insufficient_evidence": 11
+    },
+    "at_window_end": {
+      "insufficient_evidence": 15,
+      "abnormal_evidence": 9
+    },
+    "observed_recovery": {
+      "all_observed_cleared": 4,
+      "not_observed": 11,
+      "some_unresolved": 7,
+      "all_unresolved": 2
+    }
+  },
+  "export_files": [
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0528.txt",
+      "sha256": "729d24898d3a8189e0a61610324d102277479db51f2795aad49a91022a2dcbe8",
+      "encoding": "gb18030",
+      "target_records": 1030,
+      "event_dates": [
+        "2022-05-28"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0529.txt",
+      "sha256": "44484cd6cc747f4dd1a930228fd8cbcea2c4a416e46b053d8c1a694e70a065f0",
+      "encoding": "gb18030",
+      "target_records": 0,
+      "event_dates": [],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0530.txt",
+      "sha256": "7f50a946f761964c7ff1460df4ad1c3ed8a407af2e19c14f4f0e56c851eecdb9",
+      "encoding": "gb18030",
+      "target_records": 298,
+      "event_dates": [
+        "2022-05-30"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0531.txt",
+      "sha256": "1018e3faf1cb6656855b88d189ec95726e926e6357ebad8b529eac9ea45143ac",
+      "encoding": "gb18030",
+      "target_records": 0,
+      "event_dates": [],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0603.txt",
+      "sha256": "7be4a43e2f46f391e4385561b5acba08ea5b55c4d295edb8643953f1fffa2f7b",
+      "encoding": "gb18030",
+      "target_records": 400,
+      "event_dates": [
+        "2022-06-03"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0604 0800-1200.txt",
+      "sha256": "141210ec5fcf9e1df0cb61ba64ddd955df22a2b4e3652fc9292fc5e528fc27e5",
+      "encoding": "gb18030",
+      "target_records": 636,
+      "event_dates": [
+        "2022-06-04"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0604 1200-1800.txt",
+      "sha256": "cff1da1b475a3fa1b11e9518020413ebe634961fa1a162040d859517e3c617ce",
+      "encoding": "gb18030",
+      "target_records": 458,
+      "event_dates": [
+        "2022-06-04"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0604 1800-2400.txt",
+      "sha256": "d38fba1b71a1994f7890cffe85629fa7070d42d578c28d0fefb88cb88bf72756",
+      "encoding": "gb18030",
+      "target_records": 64,
+      "event_dates": [
+        "2022-06-04"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0605 0000-0130.txt",
+      "sha256": "65cf84826d837fb2e2669304ac0b1230e176f4f75f85c9341e3c90f2ad60369a",
+      "encoding": "gb18030",
+      "target_records": 0,
+      "event_dates": [],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0605 00_00-12_00.txt",
+      "sha256": "1d89496770392aef72d07c031a09a76412a5b63d14c797bf595363c50404d8b3",
+      "encoding": "gb18030",
+      "target_records": 764,
+      "event_dates": [
+        "2022-06-05"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0605 12_00-18_00.txt",
+      "sha256": "1acc18761fbfe68d5ca3bed18eb0e2f98398148705132a63c8e7481625941cf5",
+      "encoding": "gb18030",
+      "target_records": 1080,
+      "event_dates": [
+        "2022-06-05"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0605 18_00-24_00.txt",
+      "sha256": "0481230c6281996056fd654458d047dcb5d83cc2812c8226d2d237c0b92d1ae6",
+      "encoding": "gb18030",
+      "target_records": 36,
+      "event_dates": [
+        "2022-06-05"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0606 00_00-12_00.txt",
+      "sha256": "25656da4c0f12e0b9609ad77db6648de74ebaa83d05586dd265964b632016150",
+      "encoding": "gb18030",
+      "target_records": 422,
+      "event_dates": [
+        "2022-06-06"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0606 12_00-18_00.txt",
+      "sha256": "c27cb35594d579304756ce2370834188c783a305e319df4033c5207509643936",
+      "encoding": "gb18030",
+      "target_records": 664,
+      "event_dates": [
+        "2022-06-06"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0606 18_00-24_00.txt",
+      "sha256": "4c905604cd33b18ed4db2964dbc03f38c9e78e9bb9952a82cd225127567c9fc8",
+      "encoding": "gb18030",
+      "target_records": 94,
+      "event_dates": [
+        "2022-06-06"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0607 00-08.txt",
+      "sha256": "2ea0cbbc18ee4f5822989dc22c5a1a0d1b70b20e5cf6d5e66ab50b2c61b44c3e",
+      "encoding": "gb18030",
+      "target_records": 282,
+      "event_dates": [
+        "2022-06-08"
+      ],
+      "filename_date_hint_differs": true
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0607 09-13.txt",
+      "sha256": "9a3a4a559edd5da2acd34e21889ec6de757d75c0f2d531e24cb3ed2cb86bb770",
+      "encoding": "gb18030",
+      "target_records": 1477,
+      "event_dates": [
+        "2022-06-08"
+      ],
+      "filename_date_hint_differs": true
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0607 14-16.txt",
+      "sha256": "7c35dd781f476fd453b07d6da96a1a94fd0a7d3f022b63ec0d3eaba06b851549",
+      "encoding": "gb18030",
+      "target_records": 1220,
+      "event_dates": [
+        "2022-06-08"
+      ],
+      "filename_date_hint_differs": true
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0607 17-20.txt",
+      "sha256": "77257b122711ca64ed5bdfd30c8de358ad6f2fea71cbf619b64475e0ea182a03",
+      "encoding": "gb18030",
+      "target_records": 472,
+      "event_dates": [
+        "2022-06-08"
+      ],
+      "filename_date_hint_differs": true
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0612 12~15.txt",
+      "sha256": "6970814cfb1f3e1de2001475e5ed9b38e170d86e93a3b153751685269d89bf69",
+      "encoding": "gb18030",
+      "target_records": 766,
+      "event_dates": [
+        "2022-06-12"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0612 15~16.30.txt",
+      "sha256": "63f8ba30289f772339e5e65d703bbd82b93763dc51e248d8f1455140ab64165a",
+      "encoding": "gb18030",
+      "target_records": 704,
+      "event_dates": [
+        "2022-06-12"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0612 16.30~19.txt",
+      "sha256": "af51e61529ef74d1299bef00197b3089acc69e739544868ad9e8ed194aed7e56",
+      "encoding": "gb18030",
+      "target_records": 82,
+      "event_dates": [
+        "2022-06-12"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0613 00-05.txt",
+      "sha256": "d99185ff99586c175259c70c3cd0c3c49bdac4d4300ce56614e2179404d1a1b2",
+      "encoding": "gb18030",
+      "target_records": 2,
+      "event_dates": [
+        "2022-06-14"
+      ],
+      "filename_date_hint_differs": true
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0613 05-08.txt",
+      "sha256": "9fbd1c69a2df84221eb353a462681365ba4ef0914792806146ea14bf331273b7",
+      "encoding": "gb18030",
+      "target_records": 122,
+      "event_dates": [
+        "2022-06-14"
+      ],
+      "filename_date_hint_differs": true
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0613 08-10.txt",
+      "sha256": "f0c99764927737c24a0c2edcf87fb0445358e0fa28f71c80ea95356fe7e18d90",
+      "encoding": "gb18030",
+      "target_records": 68,
+      "event_dates": [
+        "2022-06-14"
+      ],
+      "filename_date_hint_differs": true
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0613 14~15.txt",
+      "sha256": "6665cf61bacada66e99d973dd3a2f8017aca2a9de80eb1d95e54d325f76b0626",
+      "encoding": "gb18030",
+      "target_records": 48,
+      "event_dates": [
+        "2022-06-13"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0613 15~17.txt",
+      "sha256": "6ca2040c4a4257a56e62e93c4e10c8b1e863ab5ab25379709a989c2e5def4244",
+      "encoding": "gb18030",
+      "target_records": 84,
+      "event_dates": [
+        "2022-06-13"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0613 17~22.txt",
+      "sha256": "cc6ec082402c3e5e9247cc6880f1d5882334f896b94804116d7a71242e71d23d",
+      "encoding": "gb18030",
+      "target_records": 12,
+      "event_dates": [
+        "2022-06-13"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0613 22-00.txt",
+      "sha256": "7d453759932cfcffb4f74bf575b490140ca5573350b260afb90b25b51d0e741b",
+      "encoding": "gb18030",
+      "target_records": 0,
+      "event_dates": [],
+      "filename_date_hint_differs": false
+    }
+  ],
+  "identical_duplicate_records_merged": 0,
+  "selection": {
+    "dataset": "gusu-valve-windows-v1-candidates",
+    "scope": {
+      "station": "姑苏",
+      "hosts": [
+        "P221VCC1",
+        "P221VCC2"
+      ],
+      "physical_scope": "极2低端VSC1阀冷两套控制系统；A/B均保留，精确点表映射待确认"
+    },
+    "selection_method": "人工选择覆盖风机/屏蔽、明确故障、恢复、缺失上下文的事件窗口；非随机抽样，不代表现场发生率",
+    "window_boundary": "start inclusive, end exclusive",
+    "preceding_context_seconds": 300,
+    "split_unit": "event_date across both hosts and all channels; rules are shared, no unseen-rule-generalization claim",
+    "windows": [
+      {
+        "id": "gusu-valve-20220528-1400",
+        "start": "2022-05-28T14:00:00",
+        "end": "2022-05-28T14:30:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-05-28"
+      },
+      {
+        "id": "gusu-valve-20220528-1430",
+        "start": "2022-05-28T14:30:00",
+        "end": "2022-05-28T15:00:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-05-28"
+      },
+      {
+        "id": "gusu-valve-20220528-1700",
+        "start": "2022-05-28T17:00:00",
+        "end": "2022-05-28T18:00:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-05-28"
+      },
+      {
+        "id": "gusu-valve-20220603-1630",
+        "start": "2022-06-03T16:30:00",
+        "end": "2022-06-03T17:30:00",
+        "proposed_split": "calibration",
+        "group_id": "gusu-commissioning-2022-06-03"
+      },
+      {
+        "id": "gusu-valve-20220604-1030",
+        "start": "2022-06-04T10:30:00",
+        "end": "2022-06-04T11:05:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-04"
+      },
+      {
+        "id": "gusu-valve-20220604-1230",
+        "start": "2022-06-04T12:30:00",
+        "end": "2022-06-04T13:00:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-04"
+      },
+      {
+        "id": "gusu-valve-20220604-1430",
+        "start": "2022-06-04T14:30:00",
+        "end": "2022-06-04T15:00:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-04"
+      },
+      {
+        "id": "gusu-valve-20220604-2200",
+        "start": "2022-06-04T22:00:00",
+        "end": "2022-06-04T23:00:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-04"
+      },
+      {
+        "id": "gusu-valve-20220605-0300",
+        "start": "2022-06-05T03:00:00",
+        "end": "2022-06-05T03:30:00",
+        "proposed_split": "calibration",
+        "group_id": "gusu-commissioning-2022-06-05"
+      },
+      {
+        "id": "gusu-valve-20220605-0830",
+        "start": "2022-06-05T08:30:00",
+        "end": "2022-06-05T09:30:00",
+        "proposed_split": "calibration",
+        "group_id": "gusu-commissioning-2022-06-05"
+      },
+      {
+        "id": "gusu-valve-20220605-1625",
+        "start": "2022-06-05T16:25:00",
+        "end": "2022-06-05T17:25:00",
+        "proposed_split": "calibration",
+        "group_id": "gusu-commissioning-2022-06-05"
+      },
+      {
+        "id": "gusu-valve-20220606-0900",
+        "start": "2022-06-06T09:00:00",
+        "end": "2022-06-06T09:55:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-06"
+      },
+      {
+        "id": "gusu-valve-20220606-1000",
+        "start": "2022-06-06T10:00:00",
+        "end": "2022-06-06T10:40:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-06"
+      },
+      {
+        "id": "gusu-valve-20220606-1100",
+        "start": "2022-06-06T11:00:00",
+        "end": "2022-06-06T11:16:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-06"
+      },
+      {
+        "id": "gusu-valve-20220606-1525",
+        "start": "2022-06-06T15:25:00",
+        "end": "2022-06-06T16:20:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-06"
+      },
+      {
+        "id": "gusu-valve-20220606-1630",
+        "start": "2022-06-06T16:30:00",
+        "end": "2022-06-06T17:10:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-06"
+      },
+      {
+        "id": "gusu-valve-20220606-1745",
+        "start": "2022-06-06T17:45:00",
+        "end": "2022-06-06T18:15:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-06"
+      },
+      {
+        "id": "gusu-valve-20220608-0900",
+        "start": "2022-06-08T09:00:00",
+        "end": "2022-06-08T09:40:00",
+        "proposed_split": "test",
+        "group_id": "gusu-commissioning-2022-06-08"
+      },
+      {
+        "id": "gusu-valve-20220608-1100",
+        "start": "2022-06-08T11:00:00",
+        "end": "2022-06-08T11:40:00",
+        "proposed_split": "test",
+        "group_id": "gusu-commissioning-2022-06-08"
+      },
+      {
+        "id": "gusu-valve-20220608-1400",
+        "start": "2022-06-08T14:00:00",
+        "end": "2022-06-08T14:40:00",
+        "proposed_split": "test",
+        "group_id": "gusu-commissioning-2022-06-08"
+      },
+      {
+        "id": "gusu-valve-20220608-1500",
+        "start": "2022-06-08T15:00:00",
+        "end": "2022-06-08T15:40:00",
+        "proposed_split": "test",
+        "group_id": "gusu-commissioning-2022-06-08"
+      },
+      {
+        "id": "gusu-valve-20220608-1915",
+        "start": "2022-06-08T19:15:00",
+        "end": "2022-06-08T19:55:00",
+        "proposed_split": "test",
+        "group_id": "gusu-commissioning-2022-06-08"
+      },
+      {
+        "id": "gusu-valve-20220612-1500",
+        "start": "2022-06-12T15:00:00",
+        "end": "2022-06-12T16:05:00",
+        "proposed_split": "test",
+        "group_id": "gusu-commissioning-2022-06-12"
+      },
+      {
+        "id": "gusu-valve-20220612-1700",
+        "start": "2022-06-12T17:00:00",
+        "end": "2022-06-12T17:50:00",
+        "proposed_split": "test",
+        "group_id": "gusu-commissioning-2022-06-12"
+      }
+    ]
+  },
+  "no_truncation": true,
+  "blockers": [
+    "缺少verified_expected正常/符合预期候选",
+    "现场及试验背景尚未逐窗核验",
+    "缺少初始/末端全量状态、历史软件逻辑/点表和屏蔽计时规则",
+    "需要实际token长度核对，长窗口不得静默截断"
+  ],
+  "code_sha256": {
+    "valve_windows.py": "24baf68eb8ca61d4ce918c472d53f2834724814cf7faffd5118248f14365cb8f",
+    "valve_window_catalog.json": "8712864597eb3c320ad7bc142de111920b4acc35616f4eb6499c188ed41017c3",
+    "valve_window_sources.json": "f1220343022bd85c9b8793976b251b3104386b4c2bce547f3b364a079b82f2f8"
+  },
+  "files": {
+    "README.md": "89dcfc2e1bc1453ddb374a11160a032921a8bdfee225f95f59b28b2ceaeedeb9",
+    "audit.jsonl": "107bfa011cb1a9ac0baddb1a6a963283e875ece4830ca306a6880d09187485c5",
+    "candidate_rows.jsonl": "66f83932d2b529220431346320327eb0d0f226ff30a960ce99ddab5928decc0a",
+    "documents.json": "f1220343022bd85c9b8793976b251b3104386b4c2bce547f3b364a079b82f2f8",
+    "events.jsonl": "72b1dfffa2c39e101c395650b7b3c67ce59040f03dbaa6db0679f24fcb1da46d",
+    "review/gusu-valve-20220528-1400.md": "fa7edf626413ee04340005bde39a50b6ad4208f952fdf6e446ebadd9dee8a1cd",
+    "review/gusu-valve-20220528-1430.md": "1f6c202bffa6738eee3fac853bd7120640f3b88252155b7abcba2cfa1e635b16",
+    "review/gusu-valve-20220528-1700.md": "90b0d78940ac2c4a79fd58ca7eec676a97a839635aeef6d6fd4cacaa111e15c8",
+    "review/gusu-valve-20220603-1630.md": "f03de049eaafb75fb832f4622373ace3bf6de54213eaf068f82a44be81046cf3",
+    "review/gusu-valve-20220604-1030.md": "606ff3a27043afc9fe6c0592805dc3152435ff98a1a4bce18375e76301589d68",
+    "review/gusu-valve-20220604-1230.md": "b32292d539e798057c7509d1de796b01301a17ae9a8207371c5d52262ca126e0",
+    "review/gusu-valve-20220604-1430.md": "0231573c95b7d4497bdf14ffdf0ceb9b4972716119c3cfbeda92a1d4afaf4919",
+    "review/gusu-valve-20220604-2200.md": "dab7036cd7c6727ad8bc607ed82a63aba0c2ef57da50e1a17357b3983a029af9",
+    "review/gusu-valve-20220605-0300.md": "e722f913dbe1594ca5616164c3b321c57f898b1bf0e41cc44a98dc53e6520da6",
+    "review/gusu-valve-20220605-0830.md": "11377a611b1cd93d87708565613a7bda9d4d4d5ad96e9e9807afdbaa492783e5",
+    "review/gusu-valve-20220605-1625.md": "1fd112ba5efb2f0e65a69d282f72d6c803077c651f9e1784ad383d6c1e3d76d0",
+    "review/gusu-valve-20220606-0900.md": "026bc145ee91982b034970f6907d13297ceb87556749f9f6b30863ff40b83dbe",
+    "review/gusu-valve-20220606-1000.md": "b4e5dad7cde17bc8c724a85afe988fa77b03f83ba640d3ac340ffecf6575b35c",
+    "review/gusu-valve-20220606-1100.md": "8fd7f4424f5c9c37e33b951e9ef2cca000ea8a7b794820c444ebd828ecb67a34",
+    "review/gusu-valve-20220606-1525.md": "cbf3af1a9d2365dc91b5f1e5b534ab310b9d529668ed56835af49a5e083e0a9d",
+    "review/gusu-valve-20220606-1630.md": "d189ec682726cfe7c7f7a03d2d96f0d1ad6dcf2154c9f098ec855adf27cf65b4",
+    "review/gusu-valve-20220606-1745.md": "e5004df16d0d7abd0dd27b68f9041523bc8482dd255b31cb17234a39189c4dfd",
+    "review/gusu-valve-20220608-0900.md": "83b0f7522ca1bcff4f0991f645b39db01f90ba64074aea290baa6e41ce19910b",
+    "review/gusu-valve-20220608-1100.md": "4df42f8707286d664b45901b6cd40626e7fe7d3980a9a403a7007cab7d5c4c1b",
+    "review/gusu-valve-20220608-1400.md": "c8593669dc4c129d7289f9d154d9654ddb1820893f3129e967015421c87825d8",
+    "review/gusu-valve-20220608-1500.md": "af23be3c4eca807defb1bfecce1aa558c175bb88d394f973e6e588e621eedeb2",
+    "review/gusu-valve-20220608-1915.md": "cea93efed5c474ce3923d95d34832b8a35f31cb4b8fee266635fb7c5b08ad253",
+    "review/gusu-valve-20220612-1500.md": "94a3be0c45c4d92fb370a6f2077fb626d74af35fd7252aeb2713ffb91646ba19",
+    "review/gusu-valve-20220612-1700.md": "fbeb129634f12430efa36840497ee97fb8b26879028942719307cfea6017f525",
+    "robustness_requests.jsonl": "42f348f9918e439a59c414600b48d58efebd9fb7a29b128b94cb05830d1c2971",
+    "rules.json": "0b1ed78a8a5812f875edbddb6cf7c90a4e023fe82613126f481a0564977440d4",
+    "schema.json": "c83dd03e2bee9e157a4c51918b429be1ce37e48710073eb5280d3a3a2c70b764",
+    "signal_families.json": "805fa7c9276a8f6028265d07a9476c4a6eb7119ae289bbb883595b528e6cdbae",
+    "windows.jsonl": "f51bbedff98578213cc607fafa6bfd1f038b0909e6d51ecb12db27e95883152d"
+  }
+}

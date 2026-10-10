@@ -1,0 +1,490 @@
+{
+  "questions": {
+    "scenario_10_3_applicable": {
+      "type": "noul",
+      "instructions": "根据任务级状态，判断是否存在需要按内水冷泄漏预案核查的候选现象。保护屏蔽本身不能证明实际漏水。",
+      "criteria": {
+        "false": "没有足够的内水冷泄漏候选现象",
+        "true": "存在需要按内水冷泄漏预案继续核查的候选现象"
+      }
+    },
+    "scenario_10_4_applicable": {
+      "type": "noul",
+      "instructions": "根据任务级状态，判断是否存在内水冷主循环泵故障候选。",
+      "criteria": {
+        "false": "没有观察到主循环泵故障候选",
+        "true": "观察到主循环泵故障候选，需要核对备用泵和泵体状态"
+      }
+    },
+    "scenario_10_5_applicable": {
+      "type": "noul",
+      "instructions": "判断是否已经同时具备主循环泵异常和备用泵未投入这两个条件。",
+      "criteria": {
+        "false": "两个条件没有同时成立或信息不足",
+        "true": "主循环泵异常且备用泵未投入的条件同时成立"
+      }
+    },
+    "scenario_11_3_applicable": {
+      "type": "noul",
+      "instructions": "根据任务级状态，判断是否存在阀外水冷冷却塔风机全停候选现象。部分风机反馈丢失不能直接等同于全停。",
+      "criteria": {
+        "false": "没有足够证据表明冷却塔风机全停",
+        "true": "多个风机组的运行反馈在窗口内全部丢失，形成全停候选"
+      }
+    },
+    "physical_fault": {
+      "type": "choice",
+      "instructions": "根据当前语义状态判断物理设备故障是否已经确认。信号异常或保护状态变化不等于物理故障确认。",
+      "criteria": {
+        "confirmed": "已有直接现场或独立测量证据确认物理故障",
+        "candidate": "存在异常现象，但物理故障尚未确认",
+        "insufficient": "现有信息不足以判断物理故障状态"
+      }
+    },
+    "evidence_sufficiency": {
+      "type": "choice",
+      "instructions": "判断当前证据是否足以进入人工规程处置审核。这里不授权执行现场操作。",
+      "criteria": {
+        "sufficient": "现象和关键状态足以进入人工规程处置审核",
+        "insufficient": "仍缺少关键状态、趋势或现场核查结果",
+        "contradictory": "存在相互冲突的状态证据，不能直接判断"
+      }
+    },
+    "needs_human_review": {
+      "type": "noul",
+      "instructions": "判断当前状态是否必须由运行人员复核。",
+      "criteria": {
+        "false": "当前判断可以在已有证据范围内继续自动处理",
+        "true": "需要运行人员复核证据、规程条件或授权前置条件"
+      }
+    },
+    "next_check": {
+      "type": "choice",
+      "instructions": "在不补造缺失观测、不授权现场操作的前提下，选择当前最优先的核查类别。",
+      "criteria": {
+        "leak_alarm_or_level": "核对泄漏报警和膨胀罐/高位水箱液位",
+        "field_leak": "现场检查阀厅、冷却塔或主循环泵是否实际漏水",
+        "pump_backup": "核对备用循环泵是否投入并运行正常",
+        "pump_local": "检查主循环泵电机、电源及现场状态",
+        "fan_power": "核对风机控制、电源和变频器状态",
+        "cooling_redundancy": "核对其他风机和冷却冗余能力",
+        "thermal_hydraulic": "核对进阀温度、流量和压力趋势",
+        "manual_review": "提交运行人员进行规程和授权条件复核"
+      }
+    }
+  },
+  "results": [
+    {
+      "case": "all_recovered",
+      "decision_response": {
+        "model": "gusu-procedure-v1",
+        "answers": {
+          "scenario_10_3_applicable": {
+            "type": "noul",
+            "noul": 0.2217,
+            "answer": false,
+            "probabilities": {
+              "true": 0.2217,
+              "false": 0.7783
+            }
+          },
+          "scenario_10_4_applicable": {
+            "type": "noul",
+            "noul": 0.1443,
+            "answer": false,
+            "probabilities": {
+              "true": 0.1443,
+              "false": 0.8557
+            }
+          },
+          "scenario_10_5_applicable": {
+            "type": "noul",
+            "noul": 0.046,
+            "answer": false,
+            "probabilities": {
+              "true": 0.046,
+              "false": 0.954
+            }
+          },
+          "scenario_11_3_applicable": {
+            "type": "noul",
+            "noul": 0.0493,
+            "answer": false,
+            "probabilities": {
+              "true": 0.0493,
+              "false": 0.9507
+            }
+          },
+          "physical_fault": {
+            "type": "choice",
+            "choice": "insufficient",
+            "confidence": 0.5961,
+            "probabilities": {
+              "confirmed": 0.0433,
+              "candidate": 0.3606,
+              "insufficient": 0.5961
+            },
+            "answer": "insufficient"
+          },
+          "evidence_sufficiency": {
+            "type": "choice",
+            "choice": "insufficient",
+            "confidence": 0.6551,
+            "probabilities": {
+              "sufficient": 0.231,
+              "insufficient": 0.6551,
+              "contradictory": 0.1139
+            },
+            "answer": "insufficient"
+          },
+          "needs_human_review": {
+            "type": "noul",
+            "noul": 0.9623,
+            "answer": true,
+            "probabilities": {
+              "true": 0.9623,
+              "false": 0.0377
+            }
+          },
+          "next_check": {
+            "type": "choice",
+            "choice": "pump_backup",
+            "confidence": 0.3298,
+            "probabilities": {
+              "leak_alarm_or_level": 0.0407,
+              "field_leak": 0.1081,
+              "pump_backup": 0.3298,
+              "pump_local": 0.1659,
+              "fan_power": 0.0657,
+              "cooling_redundancy": 0.1363,
+              "thermal_hydraulic": 0.0218,
+              "manual_review": 0.1317
+            },
+            "answer": "pump_backup"
+          }
+        },
+        "usage": {
+          "input_tokens": 1247,
+          "output_tokens": 0
+        },
+        "limits": {
+          "trained_max_tokens": 4096,
+          "served_max_tokens": 16384,
+          "over_training_length": false
+        },
+        "experimental": true,
+        "field_validity_claimed": false,
+        "backend": "Unsloth FastDecisionModel / PyTorch"
+      }
+    },
+    {
+      "case": "partially_recovered",
+      "decision_response": {
+        "model": "gusu-procedure-v1",
+        "answers": {
+          "scenario_10_3_applicable": {
+            "type": "noul",
+            "noul": 0.2308,
+            "answer": false,
+            "probabilities": {
+              "true": 0.2308,
+              "false": 0.7692
+            }
+          },
+          "scenario_10_4_applicable": {
+            "type": "noul",
+            "noul": 0.16,
+            "answer": false,
+            "probabilities": {
+              "true": 0.16,
+              "false": 0.84
+            }
+          },
+          "scenario_10_5_applicable": {
+            "type": "noul",
+            "noul": 0.0449,
+            "answer": false,
+            "probabilities": {
+              "true": 0.0449,
+              "false": 0.9551
+            }
+          },
+          "scenario_11_3_applicable": {
+            "type": "noul",
+            "noul": 0.0467,
+            "answer": false,
+            "probabilities": {
+              "true": 0.0467,
+              "false": 0.9533
+            }
+          },
+          "physical_fault": {
+            "type": "choice",
+            "choice": "insufficient",
+            "confidence": 0.576,
+            "probabilities": {
+              "confirmed": 0.0429,
+              "candidate": 0.3811,
+              "insufficient": 0.576
+            },
+            "answer": "insufficient"
+          },
+          "evidence_sufficiency": {
+            "type": "choice",
+            "choice": "insufficient",
+            "confidence": 0.6403,
+            "probabilities": {
+              "sufficient": 0.2368,
+              "insufficient": 0.6403,
+              "contradictory": 0.1229
+            },
+            "answer": "insufficient"
+          },
+          "needs_human_review": {
+            "type": "noul",
+            "noul": 0.9604,
+            "answer": true,
+            "probabilities": {
+              "true": 0.9604,
+              "false": 0.0396
+            }
+          },
+          "next_check": {
+            "type": "choice",
+            "choice": "pump_backup",
+            "confidence": 0.3395,
+            "probabilities": {
+              "leak_alarm_or_level": 0.0442,
+              "field_leak": 0.1056,
+              "pump_backup": 0.3395,
+              "pump_local": 0.1597,
+              "fan_power": 0.0627,
+              "cooling_redundancy": 0.1297,
+              "thermal_hydraulic": 0.022,
+              "manual_review": 0.1367
+            },
+            "answer": "pump_backup"
+          }
+        },
+        "usage": {
+          "input_tokens": 1222,
+          "output_tokens": 0
+        },
+        "limits": {
+          "trained_max_tokens": 4096,
+          "served_max_tokens": 16384,
+          "over_training_length": false
+        },
+        "experimental": true,
+        "field_validity_claimed": false,
+        "backend": "Unsloth FastDecisionModel / PyTorch"
+      }
+    },
+    {
+      "case": "unresolved_pump_and_backup",
+      "decision_response": {
+        "model": "gusu-procedure-v1",
+        "answers": {
+          "scenario_10_3_applicable": {
+            "type": "noul",
+            "noul": 0.2266,
+            "answer": false,
+            "probabilities": {
+              "true": 0.2266,
+              "false": 0.7734
+            }
+          },
+          "scenario_10_4_applicable": {
+            "type": "noul",
+            "noul": 0.1397,
+            "answer": false,
+            "probabilities": {
+              "true": 0.1397,
+              "false": 0.8603
+            }
+          },
+          "scenario_10_5_applicable": {
+            "type": "noul",
+            "noul": 0.0373,
+            "answer": false,
+            "probabilities": {
+              "true": 0.0373,
+              "false": 0.9627
+            }
+          },
+          "scenario_11_3_applicable": {
+            "type": "noul",
+            "noul": 0.0605,
+            "answer": false,
+            "probabilities": {
+              "true": 0.0605,
+              "false": 0.9395
+            }
+          },
+          "physical_fault": {
+            "type": "choice",
+            "choice": "insufficient",
+            "confidence": 0.5897,
+            "probabilities": {
+              "confirmed": 0.0427,
+              "candidate": 0.3676,
+              "insufficient": 0.5897
+            },
+            "answer": "insufficient"
+          },
+          "evidence_sufficiency": {
+            "type": "choice",
+            "choice": "insufficient",
+            "confidence": 0.621,
+            "probabilities": {
+              "sufficient": 0.2598,
+              "insufficient": 0.621,
+              "contradictory": 0.1191
+            },
+            "answer": "insufficient"
+          },
+          "needs_human_review": {
+            "type": "noul",
+            "noul": 0.963,
+            "answer": true,
+            "probabilities": {
+              "true": 0.963,
+              "false": 0.037
+            }
+          },
+          "next_check": {
+            "type": "choice",
+            "choice": "pump_backup",
+            "confidence": 0.3563,
+            "probabilities": {
+              "leak_alarm_or_level": 0.0431,
+              "field_leak": 0.0923,
+              "pump_backup": 0.3563,
+              "pump_local": 0.1692,
+              "fan_power": 0.0627,
+              "cooling_redundancy": 0.1229,
+              "thermal_hydraulic": 0.0189,
+              "manual_review": 0.1344
+            },
+            "answer": "pump_backup"
+          }
+        },
+        "usage": {
+          "input_tokens": 1231,
+          "output_tokens": 0
+        },
+        "limits": {
+          "trained_max_tokens": 4096,
+          "served_max_tokens": 16384,
+          "over_training_length": false
+        },
+        "experimental": true,
+        "field_validity_claimed": false,
+        "backend": "Unsloth FastDecisionModel / PyTorch"
+      }
+    },
+    {
+      "case": "confirmed_leak_evidence",
+      "decision_response": {
+        "model": "gusu-procedure-v1",
+        "answers": {
+          "scenario_10_3_applicable": {
+            "type": "noul",
+            "noul": 0.2266,
+            "answer": false,
+            "probabilities": {
+              "true": 0.2266,
+              "false": 0.7734
+            }
+          },
+          "scenario_10_4_applicable": {
+            "type": "noul",
+            "noul": 0.1693,
+            "answer": false,
+            "probabilities": {
+              "true": 0.1693,
+              "false": 0.8307
+            }
+          },
+          "scenario_10_5_applicable": {
+            "type": "noul",
+            "noul": 0.0462,
+            "answer": false,
+            "probabilities": {
+              "true": 0.0462,
+              "false": 0.9538
+            }
+          },
+          "scenario_11_3_applicable": {
+            "type": "noul",
+            "noul": 0.0563,
+            "answer": false,
+            "probabilities": {
+              "true": 0.0563,
+              "false": 0.9437
+            }
+          },
+          "physical_fault": {
+            "type": "choice",
+            "choice": "insufficient",
+            "confidence": 0.5687,
+            "probabilities": {
+              "confirmed": 0.038,
+              "candidate": 0.3933,
+              "insufficient": 0.5687
+            },
+            "answer": "insufficient"
+          },
+          "evidence_sufficiency": {
+            "type": "choice",
+            "choice": "insufficient",
+            "confidence": 0.6389,
+            "probabilities": {
+              "sufficient": 0.2359,
+              "insufficient": 0.6389,
+              "contradictory": 0.1252
+            },
+            "answer": "insufficient"
+          },
+          "needs_human_review": {
+            "type": "noul",
+            "noul": 0.9656,
+            "answer": true,
+            "probabilities": {
+              "true": 0.9656,
+              "false": 0.0344
+            }
+          },
+          "next_check": {
+            "type": "choice",
+            "choice": "pump_backup",
+            "confidence": 0.331,
+            "probabilities": {
+              "leak_alarm_or_level": 0.0431,
+              "field_leak": 0.0978,
+              "pump_backup": 0.331,
+              "pump_local": 0.1625,
+              "fan_power": 0.0657,
+              "cooling_redundancy": 0.1375,
+              "thermal_hydraulic": 0.0232,
+              "manual_review": 0.139
+            },
+            "answer": "pump_backup"
+          }
+        },
+        "usage": {
+          "input_tokens": 1242,
+          "output_tokens": 0
+        },
+        "limits": {
+          "trained_max_tokens": 4096,
+          "served_max_tokens": 16384,
+          "over_training_length": false
+        },
+        "experimental": true,
+        "field_validity_claimed": false,
+        "backend": "Unsloth FastDecisionModel / PyTorch"
+      }
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "id": "gusu-log-window-e6a963af8ae09f07",
+  "gold_origin": "manual_self_teacher_consensus",
+  "teacher_id": "current-assistant-gpt6",
+  "sample_count": 3,
+  "samples": [
+    {
+      "sample_id": "self-1",
+      "answers": {
+        "scenario_10_3_applicable": "true",
+        "scenario_10_4_applicable": "false",
+        "scenario_10_5_applicable": "false",
+        "scenario_11_3_applicable": "true",
+        "physical_fault": "candidate",
+        "evidence_sufficiency": "insufficient",
+        "needs_human_review": "true",
+        "next_check": "fan_power",
+        "urgency": "2"
+      },
+      "rationale": {
+        "scenario_10_3_applicable": "保护屏蔽条件是需要核查泄漏的候选线索，但不能确认漏水。",
+        "scenario_11_3_applicable": "多个设备和通道内同一风机组成员的运行反馈均丢失，形成全停候选。",
+        "physical_fault": "存在明确异常观测，但没有现场或独立测量确认机械故障。",
+        "evidence_sufficiency": "缺少泄漏、液位、控制电源和热工趋势，不能进入完整处置判断。",
+        "next_check": "风机反馈全部丢失时，优先核对控制、电源和变频器状态。",
+        "urgency": "需要尽快补充证据并加强监视，尚未看到温度持续上升或接近跳闸。"
+      }
+    },
+    {
+      "sample_id": "self-2",
+      "answers": {
+        "scenario_10_3_applicable": "true",
+        "scenario_10_4_applicable": "false",
+        "scenario_10_5_applicable": "false",
+        "scenario_11_3_applicable": "true",
+        "physical_fault": "candidate",
+        "evidence_sufficiency": "insufficient",
+        "needs_human_review": "true",
+        "next_check": "fan_power",
+        "urgency": "3"
+      },
+      "rationale": {
+        "scenario_10_3_applicable": "屏蔽条件出现并消失，仍需按泄漏候选补查独立水位或漏水证据。",
+        "scenario_11_3_applicable": "跨A/B和两套主机均出现风机组反馈丢失，影响范围较大。",
+        "physical_fault": "反馈丢失可能来自控制、供电或采集链路，物理故障没有被直接证实。",
+        "evidence_sufficiency": "现有事件只有离散反馈，没有控制命令、冗余能力和温度趋势。",
+        "next_check": "先查风机控制、电源和变频器，区分设备问题与反馈链路问题。",
+        "urgency": "多个风机组同时失去反馈，潜在冷却风险较高，需近期升级人工复核。"
+      }
+    },
+    {
+      "sample_id": "self-3",
+      "answers": {
+        "scenario_10_3_applicable": "true",
+        "scenario_10_4_applicable": "false",
+        "scenario_10_5_applicable": "false",
+        "scenario_11_3_applicable": "true",
+        "physical_fault": "insufficient",
+        "evidence_sufficiency": "insufficient",
+        "needs_human_review": "true",
+        "next_check": "manual_review",
+        "urgency": "2"
+      },
+      "rationale": {
+        "scenario_10_3_applicable": "保护屏蔽只支持继续核查，不足以推出内水冷实际泄漏。",
+        "scenario_11_3_applicable": "日志表达了风机运行反馈全部丢失，但尚无现场检查确认风机全停。",
+        "physical_fault": "也可能是信号采集或控制链路异常，当前信息不足以确认物理故障候选等级。",
+        "evidence_sufficiency": "缺少关键状态和趋势，证据链不完整。",
+        "next_check": "事件覆盖范围较大且存在多项缺失，先提交运行人员复核规程条件。",
+        "urgency": "没有进阀温度上升或跳闸接近信息，保持加强监视并补充证据。"
+      }
+    }
+  ],
+  "aggregated_gold": {
+    "evidence_sufficiency": {
+      "type": "choice",
+      "label": "insufficient",
+      "probabilities": {
+        "contradictory": 0.0,
+        "insufficient": 1.0,
+        "sufficient": 0.0
+      }
+    },
+    "needs_human_review": {
+      "type": "noul",
+      "label": "true",
+      "probabilities": {
+        "true": 1.0,
+        "false": 0.0
+      },
+      "probability_true": 1.0
+    },
+    "next_check": {
+      "type": "choice",
+      "label": "fan_power",
+      "probabilities": {
+        "cooling_redundancy": 0.0,
+        "fan_power": 0.666667,
+        "field_leak": 0.0,
+        "leak_alarm_or_level": 0.0,
+        "manual_review": 0.333333,
+        "pump_backup": 0.0,
+        "pump_local": 0.0,
+        "thermal_hydraulic": 0.0
+      }
+    },
+    "physical_fault": {
+      "type": "choice",
+      "label": "candidate",
+      "probabilities": {
+        "candidate": 0.666667,
+        "confirmed": 0.0,
+        "insufficient": 0.333333
+      }
+    },
+    "scenario_10_3_applicable": {
+      "type": "noul",
+      "label": "true",
+      "probabilities": {
+        "true": 1.0,
+        "false": 0.0
+      },
+      "probability_true": 1.0
+    },
+    "scenario_10_4_applicable": {
+      "type": "noul",
+      "label": "false",
+      "probabilities": {
+        "true": 0.0,
+        "false": 1.0
+      },
+      "probability_true": 0.0
+    },
+    "scenario_10_5_applicable": {
+      "type": "noul",
+      "label": "false",
+      "probabilities": {
+        "true": 0.0,
+        "false": 1.0
+      },
+      "probability_true": 0.0
+    },
+    "scenario_11_3_applicable": {
+      "type": "noul",
+      "label": "true",
+      "probabilities": {
+        "true": 1.0,
+        "false": 0.0
+      },
+      "probability_true": 1.0
+    },
+    "urgency": {
+      "type": "score",
+      "label": "2",
+      "score": 2.333333,
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.666667,
+        "3": 0.333333
+      }
+    }
+  },
+  "limitations": [
+    "教师判断由当前助手手工独立生成，不是运行人员审核。",
+    "三次判断共享同一模型和同一状态，不能估计现场故障概率。",
+    "该分布表示教师在当前证据下的判断不确定性。"
+  ]
+}

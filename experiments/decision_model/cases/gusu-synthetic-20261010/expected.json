@@ -1,0 +1,48 @@
+{
+  "all_recovered": {
+    "purpose": "三台同组风机运行反馈均先出现后消失，验证 all_observed_cleared。",
+    "expected_state_facts": [
+      "三台风机运行反馈均出现",
+      "三台风机运行反馈随后均消失"
+    ],
+    "expected_decision": {
+      "observed_recovery": "all_observed_cleared",
+      "during_window": "abnormal_evidence"
+    }
+  },
+  "partially_recovered": {
+    "purpose": "三台风机均出现，但仅两台消失，验证 some_unresolved。",
+    "expected_state_facts": [
+      "M01、M03、M05运行反馈出现",
+      "M01、M03随后消失",
+      "M05未见后续消失"
+    ],
+    "expected_decision": {
+      "observed_recovery": "some_unresolved",
+      "during_window": "abnormal_evidence"
+    }
+  },
+  "unresolved_pump_and_backup": {
+    "purpose": "主循环泵故障与备用泵未投入同时出现，验证明确异常分支。",
+    "expected_state_facts": [
+      "主循环泵故障信号出现",
+      "备用循环泵未投入信号出现"
+    ],
+    "expected_decision": {
+      "during_window": "abnormal_evidence",
+      "at_window_end": "abnormal_evidence"
+    }
+  },
+  "confirmed_leak_evidence": {
+    "purpose": "泄漏报警、液位低和现场漏水证据同时出现，验证强异常证据。",
+    "expected_state_facts": [
+      "24小时泄漏报警出现",
+      "膨胀罐液位低报警出现",
+      "现场检查发现实际漏水"
+    ],
+    "expected_decision": {
+      "during_window": "abnormal_evidence",
+      "at_window_end": "abnormal_evidence"
+    }
+  }
+}

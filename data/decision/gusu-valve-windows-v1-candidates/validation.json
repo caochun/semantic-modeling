@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "windows": 24,
+  "unique_events": 4855,
+  "event_day_groups": 7,
+  "candidate_decisions": 72,
+  "source_lines_and_scope_completeness_checked": true,
+  "training_ready": false,
+  "expert_gold_available": false,
+  "label_counts": {
+    "during_window": {
+      "abnormal_evidence": 13,
+      "insufficient_evidence": 11
+    },
+    "at_window_end": {
+      "insufficient_evidence": 15,
+      "abnormal_evidence": 9
+    },
+    "observed_recovery": {
+      "all_observed_cleared": 4,
+      "not_observed": 11,
+      "some_unresolved": 7,
+      "all_unresolved": 2
+    }
+  }
+}

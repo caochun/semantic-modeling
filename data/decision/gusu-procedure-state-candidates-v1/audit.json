@@ -1,0 +1,2409 @@
+{
+  "id": "gusu-log-window-e6a963af8ae09f07",
+  "source_type": "real-log-window-candidate",
+  "gold_status": "not_available_pending_operator_review",
+  "state_builder_version": "gusu-task-state-builder.v1",
+  "structured_state": {
+    "schema_version": "task-semantic-state.v1",
+    "state_builder_version": "gusu-task-state-builder.v1",
+    "window": {
+      "start": "2026-09-11T12:36:14.040",
+      "end": "2026-09-11T12:48:35.860",
+      "event_count": 20
+    },
+    "observed_facts": [
+      "日志明确表达了一个或多个风机运行反馈丢失",
+      "日志明确表达泄漏保护短时被屏蔽条件出现",
+      "阀冷风机组运行反馈全部丢失"
+    ],
+    "insufficient_facts": [
+      "当前证据不足以确认内水冷泄漏处置预案的现象候选"
+    ],
+    "missing_evidence": [
+      "实际泄漏或水位变化的独立证据",
+      "24小时泄漏报警或高位水箱/膨胀罐水位低",
+      "实际漏水或水位变化趋势",
+      "阀厅、冷却塔或主循环泵现场检查结果",
+      "日志未提供冗余冷却能力或其他风机的完整状态",
+      "日志未提供风机控制模式、启停命令或整组切换背景",
+      "日志未提供变频器、电源或风机故障信号",
+      "日志未提供现场漏水检查结果",
+      "当前输入没有连续模拟量趋势",
+      "日志未提供泄漏报警或水位低信号",
+      "日志未提供水温、流量和压力趋势"
+    ],
+    "uncertainty": [
+      "内容表达的运行反馈丢失与事件记录的报警边沿分开保存；报警消失不等于物理状态已恢复",
+      "保护屏蔽条件是运行/保护状态事实，不直接证明发生泄漏",
+      "没有泄漏现象证据时，不因保护屏蔽条件或风机反馈丢失直接确认内水冷泄漏"
+    ],
+    "procedure_disposition": "not_ready_for_disposition",
+    "physical_fault_confirmed": false,
+    "source_event_ids": [
+      "event-60b3b89c7b5f906f",
+      "event-80d208533ae0070c",
+      "event-aa9a6df1f7553973",
+      "event-5d6c7f36041b6784",
+      "event-2f5344bb41ca4055",
+      "event-4ed16a24609a68d4",
+      "event-175584ffb18dcf82",
+      "event-68b8be5334cdea08",
+      "event-4fadce691f829e26",
+      "event-bd481bdf6d590dd9",
+      "event-ff2c8fa6784bb253",
+      "event-a56c946f6ae3374a",
+      "event-c00e1d5104415f22",
+      "event-44b1235dbcb3e0aa",
+      "event-811d69e03396c6f3",
+      "event-bc0ac1eaf8585028",
+      "event-5aeb85655e05001b",
+      "event-f997d160891f080f",
+      "event-3662782ebe5b32d0",
+      "event-b26d955f90ffd669"
+    ]
+  },
+  "recognition": {
+    "schema_version": "phenomenon-recognition.v1",
+    "source": "procedure-five-derived-prototype",
+    "physical_fault_confirmed": false,
+    "state": {
+      "scope": "姑苏阀冷日志现象识别原型",
+      "window": {
+        "start": "2026-09-11T12:36:14.040",
+        "end": "2026-09-11T12:48:35.860",
+        "event_count": 20
+      },
+      "devices": [
+        "极2低端阀1许继阀冷A1",
+        "极2低端阀1许继阀冷A2",
+        "极2低端阀1许继阀冷B1",
+        "极2低端阀1许继阀冷B2"
+      ],
+      "hosts_channels": [
+        "P221VCC1/A",
+        "P221VCC1/B",
+        "P221VCC2/A",
+        "P221VCC2/B"
+      ],
+      "observed_signals": [
+        {
+          "signal_id": "fan_running_feedback",
+          "observation": "not_running",
+          "component": "E4.M01",
+          "host": "P221VCC2",
+          "channel": "B",
+          "event_time": "2026-09-11T12:36:14.040",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-60b3b89c7b5f906f"
+        },
+        {
+          "signal_id": "leak_protection_mask",
+          "observation": "masked",
+          "component": null,
+          "host": "P221VCC2",
+          "channel": "B",
+          "event_time": "2026-09-11T12:36:14.040",
+          "alarm_edge": "出现",
+          "evidence_event_id": "event-80d208533ae0070c"
+        },
+        {
+          "signal_id": "fan_running_feedback",
+          "observation": "not_running",
+          "component": "E4.M01",
+          "host": "P221VCC2",
+          "channel": "A",
+          "event_time": "2026-09-11T12:36:14.858",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-aa9a6df1f7553973"
+        },
+        {
+          "signal_id": "leak_protection_mask",
+          "observation": "masked",
+          "component": null,
+          "host": "P221VCC2",
+          "channel": "A",
+          "event_time": "2026-09-11T12:36:14.929",
+          "alarm_edge": "出现",
+          "evidence_event_id": "event-5d6c7f36041b6784"
+        },
+        {
+          "signal_id": "fan_running_feedback",
+          "observation": "not_running",
+          "component": "E4.M03",
+          "host": "P221VCC2",
+          "channel": "B",
+          "event_time": "2026-09-11T12:36:23.365",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-2f5344bb41ca4055"
+        },
+        {
+          "signal_id": "fan_running_feedback",
+          "observation": "not_running",
+          "component": "E4.M03",
+          "host": "P221VCC2",
+          "channel": "A",
+          "event_time": "2026-09-11T12:36:24.135",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-4ed16a24609a68d4"
+        },
+        {
+          "signal_id": "fan_running_feedback",
+          "observation": "not_running",
+          "component": "E4.M05",
+          "host": "P221VCC2",
+          "channel": "B",
+          "event_time": "2026-09-11T12:36:33.760",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-175584ffb18dcf82"
+        },
+        {
+          "signal_id": "fan_running_feedback",
+          "observation": "not_running",
+          "component": "E4.M05",
+          "host": "P221VCC2",
+          "channel": "A",
+          "event_time": "2026-09-11T12:36:34.745",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-68b8be5334cdea08"
+        },
+        {
+          "signal_id": "leak_protection_mask",
+          "observation": "masked",
+          "component": null,
+          "host": "P221VCC1",
+          "channel": "A",
+          "event_time": "2026-09-11T12:38:15.547",
+          "alarm_edge": "出现",
+          "evidence_event_id": "event-4fadce691f829e26"
+        },
+        {
+          "signal_id": "fan_running_feedback",
+          "observation": "not_running",
+          "component": "E2.M02",
+          "host": "P221VCC1",
+          "channel": "A",
+          "event_time": "2026-09-11T12:38:15.547",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-bd481bdf6d590dd9"
+        },
+        {
+          "signal_id": "fan_running_feedback",
+          "observation": "not_running",
+          "component": "E2.M02",
+          "host": "P221VCC1",
+          "channel": "B",
+          "event_time": "2026-09-11T12:38:17.189",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-ff2c8fa6784bb253"
+        },
+        {
+          "signal_id": "leak_protection_mask",
+          "observation": "masked",
+          "component": null,
+          "host": "P221VCC1",
+          "channel": "B",
+          "event_time": "2026-09-11T12:38:17.280",
+          "alarm_edge": "出现",
+          "evidence_event_id": "event-a56c946f6ae3374a"
+        },
+        {
+          "signal_id": "fan_running_feedback",
+          "observation": "not_running",
+          "component": "E2.M04",
+          "host": "P221VCC1",
+          "channel": "A",
+          "event_time": "2026-09-11T12:38:25.877",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-c00e1d5104415f22"
+        },
+        {
+          "signal_id": "fan_running_feedback",
+          "observation": "not_running",
+          "component": "E2.M04",
+          "host": "P221VCC1",
+          "channel": "B",
+          "event_time": "2026-09-11T12:38:26.792",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-44b1235dbcb3e0aa"
+        },
+        {
+          "signal_id": "fan_running_feedback",
+          "observation": "not_running",
+          "component": "E2.M06",
+          "host": "P221VCC1",
+          "channel": "A",
+          "event_time": "2026-09-11T12:38:36.158",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-811d69e03396c6f3"
+        },
+        {
+          "signal_id": "fan_running_feedback",
+          "observation": "not_running",
+          "component": "E2.M06",
+          "host": "P221VCC1",
+          "channel": "B",
+          "event_time": "2026-09-11T12:38:37.269",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-bc0ac1eaf8585028"
+        },
+        {
+          "signal_id": "leak_protection_mask",
+          "observation": "unmasked",
+          "component": null,
+          "host": "P221VCC2",
+          "channel": "B",
+          "event_time": "2026-09-11T12:46:33.529",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-5aeb85655e05001b"
+        },
+        {
+          "signal_id": "leak_protection_mask",
+          "observation": "unmasked",
+          "component": null,
+          "host": "P221VCC2",
+          "channel": "A",
+          "event_time": "2026-09-11T12:46:33.839",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-f997d160891f080f"
+        },
+        {
+          "signal_id": "leak_protection_mask",
+          "observation": "unmasked",
+          "component": null,
+          "host": "P221VCC1",
+          "channel": "A",
+          "event_time": "2026-09-11T12:48:35.038",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-3662782ebe5b32d0"
+        },
+        {
+          "signal_id": "leak_protection_mask",
+          "observation": "unmasked",
+          "component": null,
+          "host": "P221VCC1",
+          "channel": "B",
+          "event_time": "2026-09-11T12:48:35.860",
+          "alarm_edge": "消失",
+          "evidence_event_id": "event-b26d955f90ffd669"
+        }
+      ],
+      "fan_groups": [
+        {
+          "id": "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+          "status": "supported",
+          "host": "P221VCC1",
+          "channel": "A",
+          "device": "极2低端阀1许继阀冷A1",
+          "group": "M02_M04_M06",
+          "components_seen": [
+            "M02",
+            "M04",
+            "M06"
+          ],
+          "missing": [],
+          "evidence_event_ids": [
+            "event-bd481bdf6d590dd9",
+            "event-c00e1d5104415f22",
+            "event-811d69e03396c6f3"
+          ]
+        },
+        {
+          "id": "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+          "status": "supported",
+          "host": "P221VCC1",
+          "channel": "B",
+          "device": "极2低端阀1许继阀冷B1",
+          "group": "M02_M04_M06",
+          "components_seen": [
+            "M02",
+            "M04",
+            "M06"
+          ],
+          "missing": [],
+          "evidence_event_ids": [
+            "event-ff2c8fa6784bb253",
+            "event-44b1235dbcb3e0aa",
+            "event-bc0ac1eaf8585028"
+          ]
+        },
+        {
+          "id": "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+          "status": "supported",
+          "host": "P221VCC2",
+          "channel": "A",
+          "device": "极2低端阀1许继阀冷A2",
+          "group": "M01_M03_M05",
+          "components_seen": [
+            "M01",
+            "M03",
+            "M05"
+          ],
+          "missing": [],
+          "evidence_event_ids": [
+            "event-aa9a6df1f7553973",
+            "event-4ed16a24609a68d4",
+            "event-68b8be5334cdea08"
+          ]
+        },
+        {
+          "id": "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05",
+          "status": "supported",
+          "host": "P221VCC2",
+          "channel": "B",
+          "device": "极2低端阀1许继阀冷B2",
+          "group": "M01_M03_M05",
+          "components_seen": [
+            "M01",
+            "M03",
+            "M05"
+          ],
+          "missing": [],
+          "evidence_event_ids": [
+            "event-60b3b89c7b5f906f",
+            "event-2f5344bb41ca4055",
+            "event-175584ffb18dcf82"
+          ]
+        }
+      ],
+      "unknown_event_ids": [],
+      "data_completeness": {
+        "raw_events_preserved": true,
+        "initial_full_state_available": false,
+        "terminal_full_state_available": false,
+        "telemetry_trends_available": false
+      }
+    },
+    "events": [
+      {
+        "id": "event-60b3b89c7b5f906f",
+        "event_time": "2026-09-11T12:36:14.040",
+        "station": "姑苏",
+        "host": "P221VCC2",
+        "channel": "B",
+        "device": "极2低端阀1许继阀冷B2",
+        "content": "极2低端阀1许继阀冷B2_E4.M01风机运行消失 消失",
+        "message": "E4.M01风机运行消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "fan_running_feedback",
+        "observation": "not_running",
+        "component": "E4.M01",
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:36:14.040000",
+          "station": "姑苏",
+          "host": "P221VCC2",
+          "system_alarm": "B",
+          "device": "极2低端阀1许继阀冷B2",
+          "content": "极2低端阀1许继阀冷B2_E4.M01风机运行消失 消失",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-80d208533ae0070c",
+        "event_time": "2026-09-11T12:36:14.040",
+        "station": "姑苏",
+        "host": "P221VCC2",
+        "channel": "B",
+        "device": "极2低端阀1许继阀冷B2",
+        "content": "极2低端阀1许继阀冷B2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+        "message": "泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+        "alarm_level": "3",
+        "alarm_edge": "出现",
+        "signal_id": "leak_protection_mask",
+        "observation": "masked",
+        "component": null,
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:36:14.040000",
+          "station": "姑苏",
+          "host": "P221VCC2",
+          "system_alarm": "B",
+          "device": "极2低端阀1许继阀冷B2",
+          "content": "极2低端阀1许继阀冷B2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-aa9a6df1f7553973",
+        "event_time": "2026-09-11T12:36:14.858",
+        "station": "姑苏",
+        "host": "P221VCC2",
+        "channel": "A",
+        "device": "极2低端阀1许继阀冷A2",
+        "content": "极2低端阀1许继阀冷A2_E4.M01风机运行消失 消失",
+        "message": "E4.M01风机运行消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "fan_running_feedback",
+        "observation": "not_running",
+        "component": "E4.M01",
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:36:14.858000",
+          "station": "姑苏",
+          "host": "P221VCC2",
+          "system_alarm": "A",
+          "device": "极2低端阀1许继阀冷A2",
+          "content": "极2低端阀1许继阀冷A2_E4.M01风机运行消失 消失",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-5d6c7f36041b6784",
+        "event_time": "2026-09-11T12:36:14.929",
+        "station": "姑苏",
+        "host": "P221VCC2",
+        "channel": "A",
+        "device": "极2低端阀1许继阀冷A2",
+        "content": "极2低端阀1许继阀冷A2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+        "message": "泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+        "alarm_level": "3",
+        "alarm_edge": "出现",
+        "signal_id": "leak_protection_mask",
+        "observation": "masked",
+        "component": null,
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:36:14.929000",
+          "station": "姑苏",
+          "host": "P221VCC2",
+          "system_alarm": "A",
+          "device": "极2低端阀1许继阀冷A2",
+          "content": "极2低端阀1许继阀冷A2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-2f5344bb41ca4055",
+        "event_time": "2026-09-11T12:36:23.365",
+        "station": "姑苏",
+        "host": "P221VCC2",
+        "channel": "B",
+        "device": "极2低端阀1许继阀冷B2",
+        "content": "极2低端阀1许继阀冷B2_E4.M03风机运行消失 消失",
+        "message": "E4.M03风机运行消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "fan_running_feedback",
+        "observation": "not_running",
+        "component": "E4.M03",
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:36:23.365000",
+          "station": "姑苏",
+          "host": "P221VCC2",
+          "system_alarm": "B",
+          "device": "极2低端阀1许继阀冷B2",
+          "content": "极2低端阀1许继阀冷B2_E4.M03风机运行消失 消失",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-4ed16a24609a68d4",
+        "event_time": "2026-09-11T12:36:24.135",
+        "station": "姑苏",
+        "host": "P221VCC2",
+        "channel": "A",
+        "device": "极2低端阀1许继阀冷A2",
+        "content": "极2低端阀1许继阀冷A2_E4.M03风机运行消失 消失",
+        "message": "E4.M03风机运行消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "fan_running_feedback",
+        "observation": "not_running",
+        "component": "E4.M03",
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:36:24.135000",
+          "station": "姑苏",
+          "host": "P221VCC2",
+          "system_alarm": "A",
+          "device": "极2低端阀1许继阀冷A2",
+          "content": "极2低端阀1许继阀冷A2_E4.M03风机运行消失 消失",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-175584ffb18dcf82",
+        "event_time": "2026-09-11T12:36:33.760",
+        "station": "姑苏",
+        "host": "P221VCC2",
+        "channel": "B",
+        "device": "极2低端阀1许继阀冷B2",
+        "content": "极2低端阀1许继阀冷B2_E4.M05风机运行消失 消失",
+        "message": "E4.M05风机运行消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "fan_running_feedback",
+        "observation": "not_running",
+        "component": "E4.M05",
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:36:33.760000",
+          "station": "姑苏",
+          "host": "P221VCC2",
+          "system_alarm": "B",
+          "device": "极2低端阀1许继阀冷B2",
+          "content": "极2低端阀1许继阀冷B2_E4.M05风机运行消失 消失",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-68b8be5334cdea08",
+        "event_time": "2026-09-11T12:36:34.745",
+        "station": "姑苏",
+        "host": "P221VCC2",
+        "channel": "A",
+        "device": "极2低端阀1许继阀冷A2",
+        "content": "极2低端阀1许继阀冷A2_E4.M05风机运行消失 消失",
+        "message": "E4.M05风机运行消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "fan_running_feedback",
+        "observation": "not_running",
+        "component": "E4.M05",
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:36:34.745000",
+          "station": "姑苏",
+          "host": "P221VCC2",
+          "system_alarm": "A",
+          "device": "极2低端阀1许继阀冷A2",
+          "content": "极2低端阀1许继阀冷A2_E4.M05风机运行消失 消失",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-4fadce691f829e26",
+        "event_time": "2026-09-11T12:38:15.547",
+        "station": "姑苏",
+        "host": "P221VCC1",
+        "channel": "A",
+        "device": "极2低端阀1许继阀冷A1",
+        "content": "极2低端阀1许继阀冷A1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+        "message": "泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+        "alarm_level": "3",
+        "alarm_edge": "出现",
+        "signal_id": "leak_protection_mask",
+        "observation": "masked",
+        "component": null,
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:38:15.547000",
+          "station": "姑苏",
+          "host": "P221VCC1",
+          "system_alarm": "A",
+          "device": "极2低端阀1许继阀冷A1",
+          "content": "极2低端阀1许继阀冷A1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-bd481bdf6d590dd9",
+        "event_time": "2026-09-11T12:38:15.547",
+        "station": "姑苏",
+        "host": "P221VCC1",
+        "channel": "A",
+        "device": "极2低端阀1许继阀冷A1",
+        "content": "极2低端阀1许继阀冷A1_E2.M02风机运行消失 消失",
+        "message": "E2.M02风机运行消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "fan_running_feedback",
+        "observation": "not_running",
+        "component": "E2.M02",
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:38:15.547000",
+          "station": "姑苏",
+          "host": "P221VCC1",
+          "system_alarm": "A",
+          "device": "极2低端阀1许继阀冷A1",
+          "content": "极2低端阀1许继阀冷A1_E2.M02风机运行消失 消失",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-ff2c8fa6784bb253",
+        "event_time": "2026-09-11T12:38:17.189",
+        "station": "姑苏",
+        "host": "P221VCC1",
+        "channel": "B",
+        "device": "极2低端阀1许继阀冷B1",
+        "content": "极2低端阀1许继阀冷B1_E2.M02风机运行消失 消失",
+        "message": "E2.M02风机运行消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "fan_running_feedback",
+        "observation": "not_running",
+        "component": "E2.M02",
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:38:17.189000",
+          "station": "姑苏",
+          "host": "P221VCC1",
+          "system_alarm": "B",
+          "device": "极2低端阀1许继阀冷B1",
+          "content": "极2低端阀1许继阀冷B1_E2.M02风机运行消失 消失",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-a56c946f6ae3374a",
+        "event_time": "2026-09-11T12:38:17.280",
+        "station": "姑苏",
+        "host": "P221VCC1",
+        "channel": "B",
+        "device": "极2低端阀1许继阀冷B1",
+        "content": "极2低端阀1许继阀冷B1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+        "message": "泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+        "alarm_level": "3",
+        "alarm_edge": "出现",
+        "signal_id": "leak_protection_mask",
+        "observation": "masked",
+        "component": null,
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:38:17.280000",
+          "station": "姑苏",
+          "host": "P221VCC1",
+          "system_alarm": "B",
+          "device": "极2低端阀1许继阀冷B1",
+          "content": "极2低端阀1许继阀冷B1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-c00e1d5104415f22",
+        "event_time": "2026-09-11T12:38:25.877",
+        "station": "姑苏",
+        "host": "P221VCC1",
+        "channel": "A",
+        "device": "极2低端阀1许继阀冷A1",
+        "content": "极2低端阀1许继阀冷A1_E2.M04风机运行消失 消失",
+        "message": "E2.M04风机运行消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "fan_running_feedback",
+        "observation": "not_running",
+        "component": "E2.M04",
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:38:25.877000",
+          "station": "姑苏",
+          "host": "P221VCC1",
+          "system_alarm": "A",
+          "device": "极2低端阀1许继阀冷A1",
+          "content": "极2低端阀1许继阀冷A1_E2.M04风机运行消失 消失",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-44b1235dbcb3e0aa",
+        "event_time": "2026-09-11T12:38:26.792",
+        "station": "姑苏",
+        "host": "P221VCC1",
+        "channel": "B",
+        "device": "极2低端阀1许继阀冷B1",
+        "content": "极2低端阀1许继阀冷B1_E2.M04风机运行消失 消失",
+        "message": "E2.M04风机运行消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "fan_running_feedback",
+        "observation": "not_running",
+        "component": "E2.M04",
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:38:26.792000",
+          "station": "姑苏",
+          "host": "P221VCC1",
+          "system_alarm": "B",
+          "device": "极2低端阀1许继阀冷B1",
+          "content": "极2低端阀1许继阀冷B1_E2.M04风机运行消失 消失",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-811d69e03396c6f3",
+        "event_time": "2026-09-11T12:38:36.158",
+        "station": "姑苏",
+        "host": "P221VCC1",
+        "channel": "A",
+        "device": "极2低端阀1许继阀冷A1",
+        "content": "极2低端阀1许继阀冷A1_E2.M06风机运行消失 消失",
+        "message": "E2.M06风机运行消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "fan_running_feedback",
+        "observation": "not_running",
+        "component": "E2.M06",
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:38:36.158000",
+          "station": "姑苏",
+          "host": "P221VCC1",
+          "system_alarm": "A",
+          "device": "极2低端阀1许继阀冷A1",
+          "content": "极2低端阀1许继阀冷A1_E2.M06风机运行消失 消失",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-bc0ac1eaf8585028",
+        "event_time": "2026-09-11T12:38:37.269",
+        "station": "姑苏",
+        "host": "P221VCC1",
+        "channel": "B",
+        "device": "极2低端阀1许继阀冷B1",
+        "content": "极2低端阀1许继阀冷B1_E2.M06风机运行消失 消失",
+        "message": "E2.M06风机运行消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "fan_running_feedback",
+        "observation": "not_running",
+        "component": "E2.M06",
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:38:37.269000",
+          "station": "姑苏",
+          "host": "P221VCC1",
+          "system_alarm": "B",
+          "device": "极2低端阀1许继阀冷B1",
+          "content": "极2低端阀1许继阀冷B1_E2.M06风机运行消失 消失",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-5aeb85655e05001b",
+        "event_time": "2026-09-11T12:46:33.529",
+        "station": "姑苏",
+        "host": "P221VCC2",
+        "channel": "B",
+        "device": "极2低端阀1许继阀冷B2",
+        "content": "极2低端阀1许继阀冷B2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+        "message": "泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "leak_protection_mask",
+        "observation": "unmasked",
+        "component": null,
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:46:33.529000",
+          "station": "姑苏",
+          "host": "P221VCC2",
+          "system_alarm": "B",
+          "device": "极2低端阀1许继阀冷B2",
+          "content": "极2低端阀1许继阀冷B2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-f997d160891f080f",
+        "event_time": "2026-09-11T12:46:33.839",
+        "station": "姑苏",
+        "host": "P221VCC2",
+        "channel": "A",
+        "device": "极2低端阀1许继阀冷A2",
+        "content": "极2低端阀1许继阀冷A2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+        "message": "泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "leak_protection_mask",
+        "observation": "unmasked",
+        "component": null,
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:46:33.839000",
+          "station": "姑苏",
+          "host": "P221VCC2",
+          "system_alarm": "A",
+          "device": "极2低端阀1许继阀冷A2",
+          "content": "极2低端阀1许继阀冷A2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-3662782ebe5b32d0",
+        "event_time": "2026-09-11T12:48:35.038",
+        "station": "姑苏",
+        "host": "P221VCC1",
+        "channel": "A",
+        "device": "极2低端阀1许继阀冷A1",
+        "content": "极2低端阀1许继阀冷A1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+        "message": "泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "leak_protection_mask",
+        "observation": "unmasked",
+        "component": null,
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:48:35.038000",
+          "station": "姑苏",
+          "host": "P221VCC1",
+          "system_alarm": "A",
+          "device": "极2低端阀1许继阀冷A1",
+          "content": "极2低端阀1许继阀冷A1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+          "alarm_level": "3"
+        }
+      },
+      {
+        "id": "event-b26d955f90ffd669",
+        "event_time": "2026-09-11T12:48:35.860",
+        "station": "姑苏",
+        "host": "P221VCC1",
+        "channel": "B",
+        "device": "极2低端阀1许继阀冷B1",
+        "content": "极2低端阀1许继阀冷B1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+        "message": "泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+        "alarm_level": "3",
+        "alarm_edge": "消失",
+        "signal_id": "leak_protection_mask",
+        "observation": "unmasked",
+        "component": null,
+        "mapping_status": "exact",
+        "raw": {
+          "event_time": "2026-09-11T12:48:35.860000",
+          "station": "姑苏",
+          "host": "P221VCC1",
+          "system_alarm": "B",
+          "device": "极2低端阀1许继阀冷B1",
+          "content": "极2低端阀1许继阀冷B1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+          "alarm_level": "3"
+        }
+      }
+    ],
+    "phenomena": [
+      {
+        "id": "fan_running_feedback_loss",
+        "status": "supported",
+        "description": "日志明确表达了一个或多个风机运行反馈丢失",
+        "evidence_event_ids": [
+          "event-60b3b89c7b5f906f",
+          "event-aa9a6df1f7553973",
+          "event-2f5344bb41ca4055",
+          "event-4ed16a24609a68d4",
+          "event-175584ffb18dcf82",
+          "event-68b8be5334cdea08",
+          "event-bd481bdf6d590dd9",
+          "event-ff2c8fa6784bb253",
+          "event-c00e1d5104415f22",
+          "event-44b1235dbcb3e0aa",
+          "event-811d69e03396c6f3",
+          "event-bc0ac1eaf8585028"
+        ],
+        "missing": [],
+        "details": {
+          "components": [
+            "E2.M02",
+            "E2.M04",
+            "E2.M06",
+            "E4.M01",
+            "E4.M03",
+            "E4.M05"
+          ],
+          "host_channels": [
+            "P221VCC1/A",
+            "P221VCC1/B",
+            "P221VCC2/A",
+            "P221VCC2/B"
+          ],
+          "alarm_edges": [
+            "消失"
+          ],
+          "interpretation": "内容表达的运行反馈丢失与事件记录的报警边沿分开保存；报警消失不等于物理状态已恢复。"
+        },
+        "source_refs": [
+          "规程三第10章变频风机运行规定",
+          "规程五第11.1/11.3节"
+        ]
+      },
+      {
+        "id": "leak_protection_masked",
+        "status": "supported",
+        "description": "日志明确表达泄漏保护短时被屏蔽条件出现",
+        "evidence_event_ids": [
+          "event-80d208533ae0070c",
+          "event-5d6c7f36041b6784",
+          "event-4fadce691f829e26",
+          "event-a56c946f6ae3374a",
+          "event-5aeb85655e05001b",
+          "event-f997d160891f080f",
+          "event-3662782ebe5b32d0",
+          "event-b26d955f90ffd669"
+        ],
+        "missing": [
+          "实际泄漏或水位变化的独立证据"
+        ],
+        "details": {
+          "assertion_count": 4,
+          "clear_count": 4,
+          "cleared_in_window": true,
+          "interpretation": "保护屏蔽条件是运行/保护状态事实，不直接证明发生泄漏。"
+        },
+        "source_refs": [
+          "规程五第10.3节",
+          "规程五第11.3节"
+        ]
+      },
+      {
+        "id": "inner_cooling_water_leak",
+        "status": "insufficient_evidence",
+        "description": "内水冷泄漏处置预案的现象候选",
+        "evidence_event_ids": [],
+        "missing": [
+          "24小时泄漏报警或高位水箱/膨胀罐水位低",
+          "实际漏水或水位变化趋势",
+          "阀厅、冷却塔或主循环泵现场检查结果"
+        ],
+        "details": {
+          "procedure": "规程五 10.3 内水冷泄漏处理预案",
+          "interpretation": "没有泄漏现象证据时，不因保护屏蔽条件或风机反馈丢失直接确认内水冷泄漏。"
+        },
+        "source_refs": [
+          "规程五第10.3节"
+        ]
+      },
+      {
+        "id": "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+        "status": "supported",
+        "description": "阀冷风机组运行反馈全部丢失",
+        "evidence_event_ids": [
+          "event-bd481bdf6d590dd9",
+          "event-c00e1d5104415f22",
+          "event-811d69e03396c6f3"
+        ],
+        "missing": [],
+        "details": {
+          "host": "P221VCC1",
+          "channel": "A",
+          "device": "极2低端阀1许继阀冷A1",
+          "group": "M02_M04_M06",
+          "components_seen": [
+            "M02",
+            "M04",
+            "M06"
+          ]
+        },
+        "source_refs": [
+          "规程三第10章变频风机运行规定",
+          "规程五第11.3节"
+        ]
+      },
+      {
+        "id": "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+        "status": "supported",
+        "description": "阀冷风机组运行反馈全部丢失",
+        "evidence_event_ids": [
+          "event-ff2c8fa6784bb253",
+          "event-44b1235dbcb3e0aa",
+          "event-bc0ac1eaf8585028"
+        ],
+        "missing": [],
+        "details": {
+          "host": "P221VCC1",
+          "channel": "B",
+          "device": "极2低端阀1许继阀冷B1",
+          "group": "M02_M04_M06",
+          "components_seen": [
+            "M02",
+            "M04",
+            "M06"
+          ]
+        },
+        "source_refs": [
+          "规程三第10章变频风机运行规定",
+          "规程五第11.3节"
+        ]
+      },
+      {
+        "id": "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+        "status": "supported",
+        "description": "阀冷风机组运行反馈全部丢失",
+        "evidence_event_ids": [
+          "event-aa9a6df1f7553973",
+          "event-4ed16a24609a68d4",
+          "event-68b8be5334cdea08"
+        ],
+        "missing": [],
+        "details": {
+          "host": "P221VCC2",
+          "channel": "A",
+          "device": "极2低端阀1许继阀冷A2",
+          "group": "M01_M03_M05",
+          "components_seen": [
+            "M01",
+            "M03",
+            "M05"
+          ]
+        },
+        "source_refs": [
+          "规程三第10章变频风机运行规定",
+          "规程五第11.3节"
+        ]
+      },
+      {
+        "id": "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05",
+        "status": "supported",
+        "description": "阀冷风机组运行反馈全部丢失",
+        "evidence_event_ids": [
+          "event-60b3b89c7b5f906f",
+          "event-2f5344bb41ca4055",
+          "event-175584ffb18dcf82"
+        ],
+        "missing": [],
+        "details": {
+          "host": "P221VCC2",
+          "channel": "B",
+          "device": "极2低端阀1许继阀冷B2",
+          "group": "M01_M03_M05",
+          "components_seen": [
+            "M01",
+            "M03",
+            "M05"
+          ]
+        },
+        "source_refs": [
+          "规程三第10章变频风机运行规定",
+          "规程五第11.3节"
+        ]
+      }
+    ],
+    "evidence_graph": {
+      "nodes": [
+        {
+          "id": "event-60b3b89c7b5f906f",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷B2_E4.M01风机运行消失 消失"
+        },
+        {
+          "id": "event-80d208533ae0070c",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷B2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现"
+        },
+        {
+          "id": "event-aa9a6df1f7553973",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷A2_E4.M01风机运行消失 消失"
+        },
+        {
+          "id": "event-5d6c7f36041b6784",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷A2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现"
+        },
+        {
+          "id": "event-2f5344bb41ca4055",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷B2_E4.M03风机运行消失 消失"
+        },
+        {
+          "id": "event-4ed16a24609a68d4",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷A2_E4.M03风机运行消失 消失"
+        },
+        {
+          "id": "event-175584ffb18dcf82",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷B2_E4.M05风机运行消失 消失"
+        },
+        {
+          "id": "event-68b8be5334cdea08",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷A2_E4.M05风机运行消失 消失"
+        },
+        {
+          "id": "event-4fadce691f829e26",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷A1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现"
+        },
+        {
+          "id": "event-bd481bdf6d590dd9",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷A1_E2.M02风机运行消失 消失"
+        },
+        {
+          "id": "event-ff2c8fa6784bb253",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷B1_E2.M02风机运行消失 消失"
+        },
+        {
+          "id": "event-a56c946f6ae3374a",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷B1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现"
+        },
+        {
+          "id": "event-c00e1d5104415f22",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷A1_E2.M04风机运行消失 消失"
+        },
+        {
+          "id": "event-44b1235dbcb3e0aa",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷B1_E2.M04风机运行消失 消失"
+        },
+        {
+          "id": "event-811d69e03396c6f3",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷A1_E2.M06风机运行消失 消失"
+        },
+        {
+          "id": "event-bc0ac1eaf8585028",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷B1_E2.M06风机运行消失 消失"
+        },
+        {
+          "id": "event-5aeb85655e05001b",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷B2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失"
+        },
+        {
+          "id": "event-f997d160891f080f",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷A2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失"
+        },
+        {
+          "id": "event-3662782ebe5b32d0",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷A1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失"
+        },
+        {
+          "id": "event-b26d955f90ffd669",
+          "type": "raw_event",
+          "label": "极2低端阀1许继阀冷B1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失"
+        },
+        {
+          "id": "fan_running_feedback_loss",
+          "type": "phenomenon",
+          "label": "日志明确表达了一个或多个风机运行反馈丢失"
+        },
+        {
+          "id": "leak_protection_masked",
+          "type": "phenomenon",
+          "label": "日志明确表达泄漏保护短时被屏蔽条件出现"
+        },
+        {
+          "id": "inner_cooling_water_leak",
+          "type": "phenomenon",
+          "label": "内水冷泄漏处置预案的现象候选"
+        },
+        {
+          "id": "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+          "type": "phenomenon",
+          "label": "阀冷风机组运行反馈全部丢失"
+        },
+        {
+          "id": "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+          "type": "phenomenon",
+          "label": "阀冷风机组运行反馈全部丢失"
+        },
+        {
+          "id": "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+          "type": "phenomenon",
+          "label": "阀冷风机组运行反馈全部丢失"
+        },
+        {
+          "id": "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05",
+          "type": "phenomenon",
+          "label": "阀冷风机组运行反馈全部丢失"
+        }
+      ],
+      "edges": [
+        {
+          "source": "event-60b3b89c7b5f906f",
+          "target": "fan_running_feedback_loss",
+          "relation": "supports"
+        },
+        {
+          "source": "event-aa9a6df1f7553973",
+          "target": "fan_running_feedback_loss",
+          "relation": "supports"
+        },
+        {
+          "source": "event-2f5344bb41ca4055",
+          "target": "fan_running_feedback_loss",
+          "relation": "supports"
+        },
+        {
+          "source": "event-4ed16a24609a68d4",
+          "target": "fan_running_feedback_loss",
+          "relation": "supports"
+        },
+        {
+          "source": "event-175584ffb18dcf82",
+          "target": "fan_running_feedback_loss",
+          "relation": "supports"
+        },
+        {
+          "source": "event-68b8be5334cdea08",
+          "target": "fan_running_feedback_loss",
+          "relation": "supports"
+        },
+        {
+          "source": "event-bd481bdf6d590dd9",
+          "target": "fan_running_feedback_loss",
+          "relation": "supports"
+        },
+        {
+          "source": "event-ff2c8fa6784bb253",
+          "target": "fan_running_feedback_loss",
+          "relation": "supports"
+        },
+        {
+          "source": "event-c00e1d5104415f22",
+          "target": "fan_running_feedback_loss",
+          "relation": "supports"
+        },
+        {
+          "source": "event-44b1235dbcb3e0aa",
+          "target": "fan_running_feedback_loss",
+          "relation": "supports"
+        },
+        {
+          "source": "event-811d69e03396c6f3",
+          "target": "fan_running_feedback_loss",
+          "relation": "supports"
+        },
+        {
+          "source": "event-bc0ac1eaf8585028",
+          "target": "fan_running_feedback_loss",
+          "relation": "supports"
+        },
+        {
+          "source": "event-80d208533ae0070c",
+          "target": "leak_protection_masked",
+          "relation": "supports"
+        },
+        {
+          "source": "event-5d6c7f36041b6784",
+          "target": "leak_protection_masked",
+          "relation": "supports"
+        },
+        {
+          "source": "event-4fadce691f829e26",
+          "target": "leak_protection_masked",
+          "relation": "supports"
+        },
+        {
+          "source": "event-a56c946f6ae3374a",
+          "target": "leak_protection_masked",
+          "relation": "supports"
+        },
+        {
+          "source": "event-5aeb85655e05001b",
+          "target": "leak_protection_masked",
+          "relation": "supports"
+        },
+        {
+          "source": "event-f997d160891f080f",
+          "target": "leak_protection_masked",
+          "relation": "supports"
+        },
+        {
+          "source": "event-3662782ebe5b32d0",
+          "target": "leak_protection_masked",
+          "relation": "supports"
+        },
+        {
+          "source": "event-b26d955f90ffd669",
+          "target": "leak_protection_masked",
+          "relation": "supports"
+        },
+        {
+          "source": "event-bd481bdf6d590dd9",
+          "target": "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+          "relation": "supports"
+        },
+        {
+          "source": "event-c00e1d5104415f22",
+          "target": "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+          "relation": "supports"
+        },
+        {
+          "source": "event-811d69e03396c6f3",
+          "target": "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+          "relation": "supports"
+        },
+        {
+          "source": "event-ff2c8fa6784bb253",
+          "target": "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+          "relation": "supports"
+        },
+        {
+          "source": "event-44b1235dbcb3e0aa",
+          "target": "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+          "relation": "supports"
+        },
+        {
+          "source": "event-bc0ac1eaf8585028",
+          "target": "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+          "relation": "supports"
+        },
+        {
+          "source": "event-aa9a6df1f7553973",
+          "target": "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+          "relation": "supports"
+        },
+        {
+          "source": "event-4ed16a24609a68d4",
+          "target": "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+          "relation": "supports"
+        },
+        {
+          "source": "event-68b8be5334cdea08",
+          "target": "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+          "relation": "supports"
+        },
+        {
+          "source": "event-60b3b89c7b5f906f",
+          "target": "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05",
+          "relation": "supports"
+        },
+        {
+          "source": "event-2f5344bb41ca4055",
+          "target": "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05",
+          "relation": "supports"
+        },
+        {
+          "source": "event-175584ffb18dcf82",
+          "target": "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05",
+          "relation": "supports"
+        }
+      ]
+    },
+    "summary": {
+      "known_event_count": 20,
+      "unknown_event_count": 0,
+      "phenomenon_ids": [
+        "fan_running_feedback_loss",
+        "leak_protection_masked",
+        "inner_cooling_water_leak",
+        "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+        "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+        "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+        "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05"
+      ],
+      "physical_fault_confirmed": false,
+      "interpretation": "现象证据识别结果，不是现场故障确认或自动操作指令。"
+    },
+    "procedure_reasoning": {
+      "schema_version": "procedure-reasoning.v1",
+      "ruleset": "procedure_rules_v1.json",
+      "rules_applied": [
+        {
+          "id": "reg5-11.3-fan-feedback-loss",
+          "title": "阀冷风机运行反馈丢失后的核查",
+          "trigger_fact_ids": [
+            "fan_running_feedback_loss",
+            "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05"
+          ],
+          "procedure_refs": [
+            "规程五第11.1节",
+            "规程五第11.3节",
+            "规程三第10章"
+          ]
+        },
+        {
+          "id": "reg5-10.3-leak-evidence",
+          "title": "内水冷泄漏候选的证据核查",
+          "trigger_fact_ids": [
+            "leak_protection_masked"
+          ],
+          "procedure_refs": [
+            "规程五第10.3节"
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "id": "cooling_redundancy",
+          "title": "核对冷却系统冗余能力和其他风机运行状态",
+          "priority": "high",
+          "status": "missing",
+          "evidence_signal_ids": [
+            "cooling_redundancy_lost"
+          ],
+          "evidence_event_ids": [],
+          "missing_evidence": "日志未提供冗余冷却能力或其他风机的完整状态",
+          "trigger_fact_ids": [
+            "fan_running_feedback_loss",
+            "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05"
+          ],
+          "procedure_rule_ids": [
+            "reg5-11.3-fan-feedback-loss"
+          ],
+          "procedure_refs": [
+            "规程五第11.1节",
+            "规程五第11.3节",
+            "规程三第10章"
+          ]
+        },
+        {
+          "id": "fan_control_context",
+          "title": "核对风机控制模式和启停/轮换命令",
+          "priority": "high",
+          "status": "missing",
+          "evidence_signal_ids": [],
+          "evidence_event_ids": [],
+          "missing_evidence": "日志未提供风机控制模式、启停命令或整组切换背景",
+          "trigger_fact_ids": [
+            "fan_running_feedback_loss",
+            "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05"
+          ],
+          "procedure_rule_ids": [
+            "reg5-11.3-fan-feedback-loss"
+          ],
+          "procedure_refs": [
+            "规程五第11.1节",
+            "规程五第11.3节",
+            "规程三第10章"
+          ]
+        },
+        {
+          "id": "fan_drive_or_power_fault",
+          "title": "核对变频器、电源及风机故障信号",
+          "priority": "high",
+          "status": "missing",
+          "evidence_signal_ids": [
+            "fan_converter_failure",
+            "fan_power_failure",
+            "fan_fault"
+          ],
+          "evidence_event_ids": [],
+          "missing_evidence": "日志未提供变频器、电源或风机故障信号",
+          "trigger_fact_ids": [
+            "fan_running_feedback_loss",
+            "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05"
+          ],
+          "procedure_rule_ids": [
+            "reg5-11.3-fan-feedback-loss"
+          ],
+          "procedure_refs": [
+            "规程五第11.1节",
+            "规程五第11.3节",
+            "规程三第10章"
+          ]
+        },
+        {
+          "id": "field_leak_check",
+          "title": "现场检查阀厅、冷却塔和主循环泵是否漏水",
+          "priority": "high",
+          "status": "missing",
+          "evidence_signal_ids": [
+            "physical_cooling_water_leak"
+          ],
+          "evidence_event_ids": [],
+          "missing_evidence": "日志未提供现场漏水检查结果",
+          "trigger_fact_ids": [
+            "leak_protection_masked"
+          ],
+          "procedure_rule_ids": [
+            "reg5-10.3-leak-evidence"
+          ],
+          "procedure_refs": [
+            "规程五第10.3节"
+          ]
+        },
+        {
+          "id": "hydraulic_trend",
+          "title": "核对水位、流量、压力和温度变化趋势",
+          "priority": "high",
+          "status": "missing",
+          "evidence_signal_ids": [
+            "cooling_flow_low",
+            "inlet_pressure_low",
+            "inlet_temperature_high"
+          ],
+          "evidence_event_ids": [],
+          "missing_evidence": "当前输入没有连续模拟量趋势",
+          "trigger_fact_ids": [
+            "leak_protection_masked"
+          ],
+          "procedure_rule_ids": [
+            "reg5-10.3-leak-evidence"
+          ],
+          "procedure_refs": [
+            "规程五第10.3节"
+          ]
+        },
+        {
+          "id": "leak_alarm_or_level",
+          "title": "核对24小时泄漏报警和高位水箱/膨胀罐液位",
+          "priority": "high",
+          "status": "missing",
+          "evidence_signal_ids": [
+            "inner_cooling_leak_alarm",
+            "expansion_tank_low_level"
+          ],
+          "evidence_event_ids": [],
+          "missing_evidence": "日志未提供泄漏报警或水位低信号",
+          "trigger_fact_ids": [
+            "leak_protection_masked"
+          ],
+          "procedure_rule_ids": [
+            "reg5-10.3-leak-evidence"
+          ],
+          "procedure_refs": [
+            "规程五第10.3节"
+          ]
+        },
+        {
+          "id": "cooling_thermal_hydraulic_state",
+          "title": "核对进阀温度、流量和压力趋势",
+          "priority": "medium",
+          "status": "missing",
+          "evidence_signal_ids": [
+            "cooling_flow_low",
+            "inlet_temperature_high",
+            "inlet_pressure_low",
+            "inlet_pressure_high"
+          ],
+          "evidence_event_ids": [],
+          "missing_evidence": "日志未提供水温、流量和压力趋势",
+          "trigger_fact_ids": [
+            "fan_running_feedback_loss",
+            "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05"
+          ],
+          "procedure_rule_ids": [
+            "reg5-11.3-fan-feedback-loss"
+          ],
+          "procedure_refs": [
+            "规程五第11.1节",
+            "规程五第11.3节",
+            "规程三第10章"
+          ]
+        }
+      ],
+      "next_checks": [
+        {
+          "id": "cooling_redundancy",
+          "title": "核对冷却系统冗余能力和其他风机运行状态",
+          "priority": "high",
+          "status": "missing",
+          "evidence_signal_ids": [
+            "cooling_redundancy_lost"
+          ],
+          "evidence_event_ids": [],
+          "missing_evidence": "日志未提供冗余冷却能力或其他风机的完整状态",
+          "trigger_fact_ids": [
+            "fan_running_feedback_loss",
+            "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05"
+          ],
+          "procedure_rule_ids": [
+            "reg5-11.3-fan-feedback-loss"
+          ],
+          "procedure_refs": [
+            "规程五第11.1节",
+            "规程五第11.3节",
+            "规程三第10章"
+          ]
+        },
+        {
+          "id": "fan_control_context",
+          "title": "核对风机控制模式和启停/轮换命令",
+          "priority": "high",
+          "status": "missing",
+          "evidence_signal_ids": [],
+          "evidence_event_ids": [],
+          "missing_evidence": "日志未提供风机控制模式、启停命令或整组切换背景",
+          "trigger_fact_ids": [
+            "fan_running_feedback_loss",
+            "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05"
+          ],
+          "procedure_rule_ids": [
+            "reg5-11.3-fan-feedback-loss"
+          ],
+          "procedure_refs": [
+            "规程五第11.1节",
+            "规程五第11.3节",
+            "规程三第10章"
+          ]
+        },
+        {
+          "id": "fan_drive_or_power_fault",
+          "title": "核对变频器、电源及风机故障信号",
+          "priority": "high",
+          "status": "missing",
+          "evidence_signal_ids": [
+            "fan_converter_failure",
+            "fan_power_failure",
+            "fan_fault"
+          ],
+          "evidence_event_ids": [],
+          "missing_evidence": "日志未提供变频器、电源或风机故障信号",
+          "trigger_fact_ids": [
+            "fan_running_feedback_loss",
+            "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05"
+          ],
+          "procedure_rule_ids": [
+            "reg5-11.3-fan-feedback-loss"
+          ],
+          "procedure_refs": [
+            "规程五第11.1节",
+            "规程五第11.3节",
+            "规程三第10章"
+          ]
+        },
+        {
+          "id": "field_leak_check",
+          "title": "现场检查阀厅、冷却塔和主循环泵是否漏水",
+          "priority": "high",
+          "status": "missing",
+          "evidence_signal_ids": [
+            "physical_cooling_water_leak"
+          ],
+          "evidence_event_ids": [],
+          "missing_evidence": "日志未提供现场漏水检查结果",
+          "trigger_fact_ids": [
+            "leak_protection_masked"
+          ],
+          "procedure_rule_ids": [
+            "reg5-10.3-leak-evidence"
+          ],
+          "procedure_refs": [
+            "规程五第10.3节"
+          ]
+        },
+        {
+          "id": "hydraulic_trend",
+          "title": "核对水位、流量、压力和温度变化趋势",
+          "priority": "high",
+          "status": "missing",
+          "evidence_signal_ids": [
+            "cooling_flow_low",
+            "inlet_pressure_low",
+            "inlet_temperature_high"
+          ],
+          "evidence_event_ids": [],
+          "missing_evidence": "当前输入没有连续模拟量趋势",
+          "trigger_fact_ids": [
+            "leak_protection_masked"
+          ],
+          "procedure_rule_ids": [
+            "reg5-10.3-leak-evidence"
+          ],
+          "procedure_refs": [
+            "规程五第10.3节"
+          ]
+        },
+        {
+          "id": "leak_alarm_or_level",
+          "title": "核对24小时泄漏报警和高位水箱/膨胀罐液位",
+          "priority": "high",
+          "status": "missing",
+          "evidence_signal_ids": [
+            "inner_cooling_leak_alarm",
+            "expansion_tank_low_level"
+          ],
+          "evidence_event_ids": [],
+          "missing_evidence": "日志未提供泄漏报警或水位低信号",
+          "trigger_fact_ids": [
+            "leak_protection_masked"
+          ],
+          "procedure_rule_ids": [
+            "reg5-10.3-leak-evidence"
+          ],
+          "procedure_refs": [
+            "规程五第10.3节"
+          ]
+        },
+        {
+          "id": "cooling_thermal_hydraulic_state",
+          "title": "核对进阀温度、流量和压力趋势",
+          "priority": "medium",
+          "status": "missing",
+          "evidence_signal_ids": [
+            "cooling_flow_low",
+            "inlet_temperature_high",
+            "inlet_pressure_low",
+            "inlet_pressure_high"
+          ],
+          "evidence_event_ids": [],
+          "missing_evidence": "日志未提供水温、流量和压力趋势",
+          "trigger_fact_ids": [
+            "fan_running_feedback_loss",
+            "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05"
+          ],
+          "procedure_rule_ids": [
+            "reg5-11.3-fan-feedback-loss"
+          ],
+          "procedure_refs": [
+            "规程五第11.1节",
+            "规程五第11.3节",
+            "规程三第10章"
+          ]
+        }
+      ],
+      "evidence_graph": {
+        "nodes": [
+          {
+            "id": "event-60b3b89c7b5f906f",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷B2_E4.M01风机运行消失 消失"
+          },
+          {
+            "id": "event-80d208533ae0070c",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷B2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现"
+          },
+          {
+            "id": "event-aa9a6df1f7553973",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷A2_E4.M01风机运行消失 消失"
+          },
+          {
+            "id": "event-5d6c7f36041b6784",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷A2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现"
+          },
+          {
+            "id": "event-2f5344bb41ca4055",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷B2_E4.M03风机运行消失 消失"
+          },
+          {
+            "id": "event-4ed16a24609a68d4",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷A2_E4.M03风机运行消失 消失"
+          },
+          {
+            "id": "event-175584ffb18dcf82",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷B2_E4.M05风机运行消失 消失"
+          },
+          {
+            "id": "event-68b8be5334cdea08",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷A2_E4.M05风机运行消失 消失"
+          },
+          {
+            "id": "event-4fadce691f829e26",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷A1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现"
+          },
+          {
+            "id": "event-bd481bdf6d590dd9",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷A1_E2.M02风机运行消失 消失"
+          },
+          {
+            "id": "event-ff2c8fa6784bb253",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷B1_E2.M02风机运行消失 消失"
+          },
+          {
+            "id": "event-a56c946f6ae3374a",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷B1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现"
+          },
+          {
+            "id": "event-c00e1d5104415f22",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷A1_E2.M04风机运行消失 消失"
+          },
+          {
+            "id": "event-44b1235dbcb3e0aa",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷B1_E2.M04风机运行消失 消失"
+          },
+          {
+            "id": "event-811d69e03396c6f3",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷A1_E2.M06风机运行消失 消失"
+          },
+          {
+            "id": "event-bc0ac1eaf8585028",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷B1_E2.M06风机运行消失 消失"
+          },
+          {
+            "id": "event-5aeb85655e05001b",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷B2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失"
+          },
+          {
+            "id": "event-f997d160891f080f",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷A2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失"
+          },
+          {
+            "id": "event-3662782ebe5b32d0",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷A1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失"
+          },
+          {
+            "id": "event-b26d955f90ffd669",
+            "type": "raw_event",
+            "label": "极2低端阀1许继阀冷B1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失"
+          },
+          {
+            "id": "fan_running_feedback_loss",
+            "type": "phenomenon",
+            "label": "日志明确表达了一个或多个风机运行反馈丢失"
+          },
+          {
+            "id": "leak_protection_masked",
+            "type": "phenomenon",
+            "label": "日志明确表达泄漏保护短时被屏蔽条件出现"
+          },
+          {
+            "id": "inner_cooling_water_leak",
+            "type": "phenomenon",
+            "label": "内水冷泄漏处置预案的现象候选"
+          },
+          {
+            "id": "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "type": "phenomenon",
+            "label": "阀冷风机组运行反馈全部丢失"
+          },
+          {
+            "id": "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "type": "phenomenon",
+            "label": "阀冷风机组运行反馈全部丢失"
+          },
+          {
+            "id": "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "type": "phenomenon",
+            "label": "阀冷风机组运行反馈全部丢失"
+          },
+          {
+            "id": "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05",
+            "type": "phenomenon",
+            "label": "阀冷风机组运行反馈全部丢失"
+          },
+          {
+            "id": "check:cooling_redundancy",
+            "type": "procedure_check",
+            "label": "核对冷却系统冗余能力和其他风机运行状态"
+          },
+          {
+            "id": "check:fan_control_context",
+            "type": "procedure_check",
+            "label": "核对风机控制模式和启停/轮换命令"
+          },
+          {
+            "id": "check:fan_drive_or_power_fault",
+            "type": "procedure_check",
+            "label": "核对变频器、电源及风机故障信号"
+          },
+          {
+            "id": "check:field_leak_check",
+            "type": "procedure_check",
+            "label": "现场检查阀厅、冷却塔和主循环泵是否漏水"
+          },
+          {
+            "id": "check:hydraulic_trend",
+            "type": "procedure_check",
+            "label": "核对水位、流量、压力和温度变化趋势"
+          },
+          {
+            "id": "check:leak_alarm_or_level",
+            "type": "procedure_check",
+            "label": "核对24小时泄漏报警和高位水箱/膨胀罐液位"
+          },
+          {
+            "id": "check:cooling_thermal_hydraulic_state",
+            "type": "procedure_check",
+            "label": "核对进阀温度、流量和压力趋势"
+          }
+        ],
+        "edges": [
+          {
+            "source": "event-60b3b89c7b5f906f",
+            "target": "fan_running_feedback_loss",
+            "relation": "supports"
+          },
+          {
+            "source": "event-aa9a6df1f7553973",
+            "target": "fan_running_feedback_loss",
+            "relation": "supports"
+          },
+          {
+            "source": "event-2f5344bb41ca4055",
+            "target": "fan_running_feedback_loss",
+            "relation": "supports"
+          },
+          {
+            "source": "event-4ed16a24609a68d4",
+            "target": "fan_running_feedback_loss",
+            "relation": "supports"
+          },
+          {
+            "source": "event-175584ffb18dcf82",
+            "target": "fan_running_feedback_loss",
+            "relation": "supports"
+          },
+          {
+            "source": "event-68b8be5334cdea08",
+            "target": "fan_running_feedback_loss",
+            "relation": "supports"
+          },
+          {
+            "source": "event-bd481bdf6d590dd9",
+            "target": "fan_running_feedback_loss",
+            "relation": "supports"
+          },
+          {
+            "source": "event-ff2c8fa6784bb253",
+            "target": "fan_running_feedback_loss",
+            "relation": "supports"
+          },
+          {
+            "source": "event-c00e1d5104415f22",
+            "target": "fan_running_feedback_loss",
+            "relation": "supports"
+          },
+          {
+            "source": "event-44b1235dbcb3e0aa",
+            "target": "fan_running_feedback_loss",
+            "relation": "supports"
+          },
+          {
+            "source": "event-811d69e03396c6f3",
+            "target": "fan_running_feedback_loss",
+            "relation": "supports"
+          },
+          {
+            "source": "event-bc0ac1eaf8585028",
+            "target": "fan_running_feedback_loss",
+            "relation": "supports"
+          },
+          {
+            "source": "event-80d208533ae0070c",
+            "target": "leak_protection_masked",
+            "relation": "supports"
+          },
+          {
+            "source": "event-5d6c7f36041b6784",
+            "target": "leak_protection_masked",
+            "relation": "supports"
+          },
+          {
+            "source": "event-4fadce691f829e26",
+            "target": "leak_protection_masked",
+            "relation": "supports"
+          },
+          {
+            "source": "event-a56c946f6ae3374a",
+            "target": "leak_protection_masked",
+            "relation": "supports"
+          },
+          {
+            "source": "event-5aeb85655e05001b",
+            "target": "leak_protection_masked",
+            "relation": "supports"
+          },
+          {
+            "source": "event-f997d160891f080f",
+            "target": "leak_protection_masked",
+            "relation": "supports"
+          },
+          {
+            "source": "event-3662782ebe5b32d0",
+            "target": "leak_protection_masked",
+            "relation": "supports"
+          },
+          {
+            "source": "event-b26d955f90ffd669",
+            "target": "leak_protection_masked",
+            "relation": "supports"
+          },
+          {
+            "source": "event-bd481bdf6d590dd9",
+            "target": "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "relation": "supports"
+          },
+          {
+            "source": "event-c00e1d5104415f22",
+            "target": "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "relation": "supports"
+          },
+          {
+            "source": "event-811d69e03396c6f3",
+            "target": "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "relation": "supports"
+          },
+          {
+            "source": "event-ff2c8fa6784bb253",
+            "target": "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "relation": "supports"
+          },
+          {
+            "source": "event-44b1235dbcb3e0aa",
+            "target": "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "relation": "supports"
+          },
+          {
+            "source": "event-bc0ac1eaf8585028",
+            "target": "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "relation": "supports"
+          },
+          {
+            "source": "event-aa9a6df1f7553973",
+            "target": "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "relation": "supports"
+          },
+          {
+            "source": "event-4ed16a24609a68d4",
+            "target": "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "relation": "supports"
+          },
+          {
+            "source": "event-68b8be5334cdea08",
+            "target": "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "relation": "supports"
+          },
+          {
+            "source": "event-60b3b89c7b5f906f",
+            "target": "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05",
+            "relation": "supports"
+          },
+          {
+            "source": "event-2f5344bb41ca4055",
+            "target": "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05",
+            "relation": "supports"
+          },
+          {
+            "source": "event-175584ffb18dcf82",
+            "target": "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05",
+            "relation": "supports"
+          },
+          {
+            "source": "fan_running_feedback_loss",
+            "target": "check:cooling_redundancy",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "target": "check:cooling_redundancy",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "target": "check:cooling_redundancy",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "target": "check:cooling_redundancy",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05",
+            "target": "check:cooling_redundancy",
+            "relation": "requires_check"
+          },
+          {
+            "source": "fan_running_feedback_loss",
+            "target": "check:fan_control_context",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "target": "check:fan_control_context",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "target": "check:fan_control_context",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "target": "check:fan_control_context",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05",
+            "target": "check:fan_control_context",
+            "relation": "requires_check"
+          },
+          {
+            "source": "fan_running_feedback_loss",
+            "target": "check:fan_drive_or_power_fault",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "target": "check:fan_drive_or_power_fault",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "target": "check:fan_drive_or_power_fault",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "target": "check:fan_drive_or_power_fault",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05",
+            "target": "check:fan_drive_or_power_fault",
+            "relation": "requires_check"
+          },
+          {
+            "source": "leak_protection_masked",
+            "target": "check:field_leak_check",
+            "relation": "requires_check"
+          },
+          {
+            "source": "leak_protection_masked",
+            "target": "check:hydraulic_trend",
+            "relation": "requires_check"
+          },
+          {
+            "source": "leak_protection_masked",
+            "target": "check:leak_alarm_or_level",
+            "relation": "requires_check"
+          },
+          {
+            "source": "fan_running_feedback_loss",
+            "target": "check:cooling_thermal_hydraulic_state",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC1:A:M02_M04_M06",
+            "target": "check:cooling_thermal_hydraulic_state",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC1:B:M02_M04_M06",
+            "target": "check:cooling_thermal_hydraulic_state",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC2:A:M01_M03_M05",
+            "target": "check:cooling_thermal_hydraulic_state",
+            "relation": "requires_check"
+          },
+          {
+            "source": "outer_cooling_fan_group_loss:P221VCC2:B:M01_M03_M05",
+            "target": "check:cooling_thermal_hydraulic_state",
+            "relation": "requires_check"
+          }
+        ]
+      },
+      "summary": {
+        "applied_rule_count": 2,
+        "check_count": 7,
+        "missing_check_count": 7,
+        "observed_check_count": 0,
+        "disposition": "not_ready_for_disposition",
+        "physical_fault_confirmed": false,
+        "interpretation": "输出下一项核查建议，不是自动处置指令或现场故障确认。"
+      }
+    }
+  },
+  "raw_rows": [
+    {
+      "event_time": "2026-09-11T12:36:14.040000",
+      "station": "姑苏",
+      "host": "P221VCC2",
+      "system_alarm": "B",
+      "device": "极2低端阀1许继阀冷B2",
+      "content": "极2低端阀1许继阀冷B2_E4.M01风机运行消失 消失",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:36:14.040000",
+      "station": "姑苏",
+      "host": "P221VCC2",
+      "system_alarm": "B",
+      "device": "极2低端阀1许继阀冷B2",
+      "content": "极2低端阀1许继阀冷B2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:36:14.858000",
+      "station": "姑苏",
+      "host": "P221VCC2",
+      "system_alarm": "A",
+      "device": "极2低端阀1许继阀冷A2",
+      "content": "极2低端阀1许继阀冷A2_E4.M01风机运行消失 消失",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:36:14.929000",
+      "station": "姑苏",
+      "host": "P221VCC2",
+      "system_alarm": "A",
+      "device": "极2低端阀1许继阀冷A2",
+      "content": "极2低端阀1许继阀冷A2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:36:23.365000",
+      "station": "姑苏",
+      "host": "P221VCC2",
+      "system_alarm": "B",
+      "device": "极2低端阀1许继阀冷B2",
+      "content": "极2低端阀1许继阀冷B2_E4.M03风机运行消失 消失",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:36:24.135000",
+      "station": "姑苏",
+      "host": "P221VCC2",
+      "system_alarm": "A",
+      "device": "极2低端阀1许继阀冷A2",
+      "content": "极2低端阀1许继阀冷A2_E4.M03风机运行消失 消失",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:36:33.760000",
+      "station": "姑苏",
+      "host": "P221VCC2",
+      "system_alarm": "B",
+      "device": "极2低端阀1许继阀冷B2",
+      "content": "极2低端阀1许继阀冷B2_E4.M05风机运行消失 消失",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:36:34.745000",
+      "station": "姑苏",
+      "host": "P221VCC2",
+      "system_alarm": "A",
+      "device": "极2低端阀1许继阀冷A2",
+      "content": "极2低端阀1许继阀冷A2_E4.M05风机运行消失 消失",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:38:15.547000",
+      "station": "姑苏",
+      "host": "P221VCC1",
+      "system_alarm": "A",
+      "device": "极2低端阀1许继阀冷A1",
+      "content": "极2低端阀1许继阀冷A1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:38:15.547000",
+      "station": "姑苏",
+      "host": "P221VCC1",
+      "system_alarm": "A",
+      "device": "极2低端阀1许继阀冷A1",
+      "content": "极2低端阀1许继阀冷A1_E2.M02风机运行消失 消失",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:38:17.189000",
+      "station": "姑苏",
+      "host": "P221VCC1",
+      "system_alarm": "B",
+      "device": "极2低端阀1许继阀冷B1",
+      "content": "极2低端阀1许继阀冷B1_E2.M02风机运行消失 消失",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:38:17.280000",
+      "station": "姑苏",
+      "host": "P221VCC1",
+      "system_alarm": "B",
+      "device": "极2低端阀1许继阀冷B1",
+      "content": "极2低端阀1许继阀冷B1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽出现 出现",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:38:25.877000",
+      "station": "姑苏",
+      "host": "P221VCC1",
+      "system_alarm": "A",
+      "device": "极2低端阀1许继阀冷A1",
+      "content": "极2低端阀1许继阀冷A1_E2.M04风机运行消失 消失",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:38:26.792000",
+      "station": "姑苏",
+      "host": "P221VCC1",
+      "system_alarm": "B",
+      "device": "极2低端阀1许继阀冷B1",
+      "content": "极2低端阀1许继阀冷B1_E2.M04风机运行消失 消失",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:38:36.158000",
+      "station": "姑苏",
+      "host": "P221VCC1",
+      "system_alarm": "A",
+      "device": "极2低端阀1许继阀冷A1",
+      "content": "极2低端阀1许继阀冷A1_E2.M06风机运行消失 消失",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:38:37.269000",
+      "station": "姑苏",
+      "host": "P221VCC1",
+      "system_alarm": "B",
+      "device": "极2低端阀1许继阀冷B1",
+      "content": "极2低端阀1许继阀冷B1_E2.M06风机运行消失 消失",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:46:33.529000",
+      "station": "姑苏",
+      "host": "P221VCC2",
+      "system_alarm": "B",
+      "device": "极2低端阀1许继阀冷B2",
+      "content": "极2低端阀1许继阀冷B2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:46:33.839000",
+      "station": "姑苏",
+      "host": "P221VCC2",
+      "system_alarm": "A",
+      "device": "极2低端阀1许继阀冷A2",
+      "content": "极2低端阀1许继阀冷A2_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:48:35.038000",
+      "station": "姑苏",
+      "host": "P221VCC1",
+      "system_alarm": "A",
+      "device": "极2低端阀1许继阀冷A1",
+      "content": "极2低端阀1许继阀冷A1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+      "alarm_level": "3"
+    },
+    {
+      "event_time": "2026-09-11T12:48:35.860000",
+      "station": "姑苏",
+      "host": "P221VCC1",
+      "system_alarm": "B",
+      "device": "极2低端阀1许继阀冷B1",
+      "content": "极2低端阀1许继阀冷B1_泄漏保护屏蔽条件满足，泄漏保护短时被屏蔽消失 消失",
+      "alarm_level": "3"
+    }
+  ]
+}

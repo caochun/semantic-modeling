@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "unsloth_revision": "cc9128134156cc51f94eeb76d3d19f80bddbc8a7",
+  "tokenizer": {
+    "name": "unsloth/Qwen3.5-0.8B",
+    "revision": "23c69c53358a07516b5827588b3fdb12ae78fd65"
+  },
+  "checks": [
+    "original upstream build_dataset/_clef_items",
+    "original upstream gold conversion",
+    "original Clef encode_record with real tokenizer",
+    "complete state preserved",
+    "option ID/label alignment"
+  ],
+  "splits": {
+    "train": {
+      "total": 74,
+      "skipped": 0,
+      "reason": null,
+      "truncated": 0,
+      "rows": 46,
+      "max_tokens": 496,
+      "min_tokens": 322,
+      "mean_tokens": 421.7
+    },
+    "calibration": {
+      "total": 22,
+      "skipped": 0,
+      "reason": null,
+      "truncated": 0,
+      "rows": 14,
+      "max_tokens": 487,
+      "min_tokens": 328,
+      "mean_tokens": 417.9
+    },
+    "test": {
+      "total": 38,
+      "skipped": 0,
+      "reason": null,
+      "truncated": 0,
+      "rows": 26,
+      "max_tokens": 503,
+      "min_tokens": 310,
+      "mean_tokens": 408.9
+    }
+  },
+  "model_training_tested": false,
+  "scope": "CPU data contract check; no model weights loaded, no forward/backward or Trainer execution"
+}

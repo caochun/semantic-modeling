@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>State → Decision · 任务级监盘工作台</title>
+  <link rel="stylesheet" href="/static/style.css?v=20261010-case-picker">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand-mark">S</span>
+      <span><strong>State → Decision</strong><small>任务级语义状态决策工作台</small></span>
+    </a>
+    <div class="top-status">
+      <span class="scope">实验性研究服务</span>
+      <span id="health" class="health">连接中…</span>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">RAW INPUT · LLM STATE · TYPED DECISION</p>
+        <h1>先理解日志，<em>再做决策。</em></h1>
+        <p class="hero-copy">原始日志不会直接进入 Decision Model。系统先用 GLM 生成一个可核对的任务级 State，再基于这个 State 输出结构化候选判断。</p>
+      </div>
+      <aside class="contract">
+        <span>固定流程</span>
+        <b>01 输入<br>02 生成 State<br>03 运行决策</b>
+        <small>State 不是故障结论，也不是操作指令。</small>
+      </aside>
+    </section>
+
+    <nav class="flow" aria-label="处理流程">
+      <div class="flow-item active" data-flow="input"><i>01</i><span>原始日志</span></div>
+      <div class="flow-line"></div>
+      <div class="flow-item" data-flow="state"><i>02</i><span>任务级 State</span></div>
+      <div class="flow-line"></div>
+      <div class="flow-item" data-flow="decision"><i>03</i><span>Decision Model</span></div>
+    </nav>
+
+    <section class="input-layout">
+      <div class="panel input-panel">
+        <div class="panel-title">
+          <div><span class="label">01 / RAW LOGS</span><h2>输入原始日志</h2></div>
+          <div class="button-row"><button id="sample" class="button quiet">填入示例</button><button id="clear" class="button quiet">清空</button></div>
+        </div>
+        <div class="case-picker">
+          <label>从规程案例载入日志
+            <select id="case-sample">
+              <option value="">选择一个与训练案例对应的合成日志…</option>
+            </select>
+          </label>
+          <span id="case-sample-hint">选择后会自动填入日志、任务描述，并在决策阶段选中对应规程条款。</span>
+        </div>
+        <div class="form-grid">
+          <label>站点<input id="station" value="姑苏"></label>
+          <label>任务描述<input id="task" value="换流站监盘：根据原始日志归纳当前任务级状态，并判断证据和下一项核查"></label>
+        </div>
+        <label class="textarea-label">日志 / TSV / JSON / JSONL<textarea id="logs" spellcheck="false" placeholder="粘贴事件日志、表格或 JSON 数组。系统会保留时间、主机、通道、设备和出现/消失边沿。"></textarea></label>
+        <div class="input-meta"><span id="log-count">0 字符</span><span>建议保留原始事件顺序和字段名</span></div>
+        <button id="build" class="primary wide"><span>生成任务级 State</span><b>→</b></button>
+      </div>
+
+      <aside class="side-panel">
+        <div class="side-section">
+          <span class="label">为什么分两层？</span>
+          <p>Decision Model 学习的是任务状态和问题之间的映射。原始日志需要先经过语义归纳，才能把事件边沿、观察事实、缺失证据和不确定性组织在一起。</p>
+        </div>
+        <div class="side-section boundary">
+          <span class="label">State 构建边界</span>
+          <ul>
+            <li>报警消失不等于设备恢复</li>
+            <li>保护屏蔽不等于真实泄漏</li>
+            <li>未出现的信号不解释为正常</li>
+            <li>A/B 通道和主机保持独立</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section id="state-section" class="panel state-panel hidden">
+      <div class="panel-title">
+        <div><span class="label">02 / LLM STATE</span><h2>核对任务级 State</h2></div>
+        <div id="state-model" class="muted"></div>
+      </div>
+      <div id="progress" class="progress hidden"><span class="spinner"></span><span id="progress-text">准备中…</span></div>
+      <details id="glm-stream-panel" class="model-stream" open>
+        <summary><span>GLM 实时输出</span><span id="glm-stream-status">等待开始</span></summary>
+        <pre id="glm-stream-output">点击“生成任务级 State”后，这里会显示 GLM 返回的流式片段。</pre>
+      </details>
+      <div id="state-warning" class="warning hidden"></div>
+      <div class="state-grid">
+        <div class="state-editor">
+          <label class="textarea-label">自然语言 State <span class="hint">可编辑；编辑后的文本将作为 Decision Model 输入</span><textarea id="state-text" class="state-text" spellcheck="false"></textarea></label>
+          <div class="state-actions"><button id="regenerate" class="button quiet">重新生成</button><button id="confirm" class="primary">确认 State，进入决策 <b>→</b></button></div>
+        </div>
+        <div id="state-details" class="details"></div>
+      </div>
+      <div class="state-note"><strong>核对提示</strong><span>请确认 State 是否保留了日志中的通道、主机、时间边沿和缺失证据。它描述“观察到什么”，不替代运行人员对“设备是否故障”的确认。</span></div>
+    </section>
+
+    <section id="decision-section" class="panel decision-panel hidden">
+      <div class="panel-title">
+        <div><span class="label">03 / DECISION MODEL</span><h2>选择问题并运行决策</h2></div>
+        <div id="decision-state-ref" class="muted"></div>
+      </div>
+      <p class="section-copy">问题定义来自当前 Decision Model 任务协议。若模型按规程场景训练，请先选择一个对应条款；输出是候选选项概率，不是现场结论。</p>
+      <div id="tasks" class="task-list"></div>
+      <div class="decision-actions"><button id="run-decision" class="primary">运行 Decision Model <b>→</b></button></div>
+      <div id="decision-progress" class="progress hidden"><span class="spinner"></span><span>正在计算选项概率…</span></div>
+      <div id="results" class="results hidden"></div>
+      <div id="decision-meta" class="decision-meta"></div>
+      <div id="decision-note" class="state-note hidden"><strong>输出边界</strong><span>模型概率表示对当前问题选项的偏好。请沿 State 中的 evidence_event_ids 回看原始日志，并由运行人员完成规程和授权复核。</span></div>
+    </section>
+
+    <div id="notice" class="notice hidden"></div>
+  </main>
+  <footer>State → Decision · GLM State Builder + Unsloth FastDecisionModel · 研究原型</footer>
+  <script src="/static/app.js?v=20261010-procedure-v3"></script>
+</body>
+</html>

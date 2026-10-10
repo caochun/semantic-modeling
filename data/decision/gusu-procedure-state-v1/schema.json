@@ -1,0 +1,87 @@
+{
+  "schema_version": "gusu-procedure-typed-decisions.v1",
+  "questions": {
+    "scenario_10_3_applicable": {
+      "type": "noul",
+      "instructions": "根据任务级状态，判断是否存在需要按内水冷泄漏预案核查的候选现象。保护屏蔽本身不能证明实际漏水。",
+      "criteria": {
+        "false": "没有足够的内水冷泄漏候选现象",
+        "true": "存在需要按内水冷泄漏预案继续核查的候选现象"
+      }
+    },
+    "scenario_10_4_applicable": {
+      "type": "noul",
+      "instructions": "根据任务级状态，判断是否存在内水冷主循环泵故障候选。",
+      "criteria": {
+        "false": "没有观察到主循环泵故障候选",
+        "true": "观察到主循环泵故障候选，需要核对备用泵和泵体状态"
+      }
+    },
+    "scenario_10_5_applicable": {
+      "type": "noul",
+      "instructions": "判断是否已经同时具备主循环泵异常和备用泵未投入这两个条件。",
+      "criteria": {
+        "false": "两个条件没有同时成立或信息不足",
+        "true": "主循环泵异常且备用泵未投入的条件同时成立"
+      }
+    },
+    "scenario_11_3_applicable": {
+      "type": "noul",
+      "instructions": "根据任务级状态，判断是否存在阀外水冷冷却塔风机全停候选现象。部分风机反馈丢失不能直接等同于全停。",
+      "criteria": {
+        "false": "没有足够证据表明冷却塔风机全停",
+        "true": "多个风机组的运行反馈在窗口内全部丢失，形成全停候选"
+      }
+    },
+    "physical_fault": {
+      "type": "choice",
+      "instructions": "根据当前语义状态判断物理设备故障是否已经确认。信号异常或保护状态变化不等于物理故障确认。",
+      "criteria": {
+        "confirmed": "已有直接现场或独立测量证据确认物理故障",
+        "candidate": "存在异常现象，但物理故障尚未确认",
+        "insufficient": "现有信息不足以判断物理故障状态"
+      }
+    },
+    "evidence_sufficiency": {
+      "type": "choice",
+      "instructions": "判断当前证据是否足以进入人工规程处置审核。这里不授权执行现场操作。",
+      "criteria": {
+        "sufficient": "现象和关键状态足以进入人工规程处置审核",
+        "insufficient": "仍缺少关键状态、趋势或现场核查结果",
+        "contradictory": "存在相互冲突的状态证据，不能直接判断"
+      }
+    },
+    "needs_human_review": {
+      "type": "noul",
+      "instructions": "判断当前状态是否必须由运行人员复核。",
+      "criteria": {
+        "false": "当前判断可以在已有证据范围内继续自动处理",
+        "true": "需要运行人员复核证据、规程条件或授权前置条件"
+      }
+    },
+    "next_check": {
+      "type": "choice",
+      "instructions": "在不补造缺失观测、不授权现场操作的前提下，选择当前最优先的核查类别。",
+      "criteria": {
+        "leak_alarm_or_level": "核对泄漏报警和膨胀罐/高位水箱液位",
+        "field_leak": "现场检查阀厅、冷却塔或主循环泵是否实际漏水",
+        "pump_backup": "核对备用循环泵是否投入并运行正常",
+        "pump_local": "检查主循环泵电机、电源及现场状态",
+        "fan_power": "核对风机控制、电源和变频器状态",
+        "cooling_redundancy": "核对其他风机和冷却冗余能力",
+        "thermal_hydraulic": "核对进阀温度、流量和压力趋势",
+        "manual_review": "提交运行人员进行规程和授权条件复核"
+      }
+    },
+    "urgency": {
+      "type": "score",
+      "instructions": "按照当前已知状态评估监盘核查紧迫程度，不把缺失信息自动解释为正常。",
+      "criteria": [
+        "常规观察，没有明确异常证据",
+        "需要加强监视并尽快补充证据",
+        "需要在近期完成人工核查",
+        "存在持续恶化或冷却能力风险，需要立即升级复核"
+      ]
+    }
+  }
+}

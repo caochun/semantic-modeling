@@ -1,0 +1,22 @@
+{
+  "id": "gusu-valve-cooling-20260911",
+  "source": "User-provided 20 events in this conversation, 2026-10-09",
+  "raw_format": "TSV; all supplied cell strings preserved, only quoting and whitespace separators normalized",
+  "raw_sha256": "b75fa3f0b2bedbadf3d7144a25c117b3de1ef448d72ccafb9d0bb8b28d24af72",
+  "event_count": 20,
+  "expert_gold": null,
+  "training_membership": "External probe only; not added to frozen v1 train/calibration/test",
+  "question": "根据以下日志数据判断系统是否存在异常",
+  "decision_labels": {
+    "confirmed_abnormal": "已有足够证据确认阀冷系统发生设备故障、真实泄漏或保护异常。",
+    "expected_transition": "已有足够证据确认这是符合控制逻辑的风机调节与短时屏蔽，所给事件过程未见异常。",
+    "insufficient_evidence": "现有日志或资料不足以在前两种结论中确定一项，需要补充相关状态或适用控制逻辑。"
+  },
+  "evidence_scope": "Retrieved regulation extracts only; no analyst conclusion or timing features added to model inputs",
+  "notes": [
+    "New task schema, unlike training blocking/next_check",
+    "All three cyclic option-key permutations are probed",
+    "No field-validated label or operating context supplied",
+    "Numeric alarm_level 3 is not mapped to a severity label"
+  ]
+}

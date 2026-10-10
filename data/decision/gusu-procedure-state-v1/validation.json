@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "counts": {
+    "train": {
+      "rows": 8,
+      "decisions": 72
+    },
+    "calibration": {
+      "rows": 4,
+      "decisions": 36
+    },
+    "test": {
+      "rows": 4,
+      "decisions": 36
+    }
+  },
+  "total_rows": 16,
+  "decisions_per_row": 9,
+  "source_sha256": "45bd5e2dd8b249ca42c1acc8b7dbb1a9d6338c5fb21d180acc9762eef8ef93a4",
+  "limitations": [
+    "Synthetic procedure-derived cases; no expert approval or field fault-rate claim.",
+    "Gold is a deterministic procedure oracle, not a teacher-model probability distribution.",
+    "State compiler is deterministic in this seed; LLM paraphrase variants are not included."
+  ]
+}

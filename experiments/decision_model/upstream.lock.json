@@ -1,0 +1,57 @@
+{
+  "revision": "cc9128134156cc51f94eeb76d3d19f80bddbc8a7",
+  "sources": [
+    {
+      "path": "unsloth/models/decision.py",
+      "url": "https://raw.githubusercontent.com/unslothai/unsloth/cc9128134156cc51f94eeb76d3d19f80bddbc8a7/unsloth/models/decision.py",
+      "sha256": "4b538ffda29f7b2af74a13a21b7bb520f112c035efe69d8e9b7b20a6011ec5ee",
+      "bytes": 74294
+    },
+    {
+      "path": "unsloth/models/_decision_common.py",
+      "url": "https://raw.githubusercontent.com/unslothai/unsloth/cc9128134156cc51f94eeb76d3d19f80bddbc8a7/unsloth/models/_decision_common.py",
+      "sha256": "e9658970c183ef617d43c5482c5b0f40c37be0d05611105f4100870ef8094d83",
+      "bytes": 18652
+    },
+    {
+      "path": "unsloth/models/decision_from_lm.py",
+      "url": "https://raw.githubusercontent.com/unslothai/unsloth/cc9128134156cc51f94eeb76d3d19f80bddbc8a7/unsloth/models/decision_from_lm.py",
+      "sha256": "1236b0ec42c05687702e3ef813eaf0ae44b9280477d2ec6df2a1828754455153",
+      "bytes": 8840
+    },
+    {
+      "path": "unsloth/models/clef.py",
+      "url": "https://raw.githubusercontent.com/unslothai/unsloth/cc9128134156cc51f94eeb76d3d19f80bddbc8a7/unsloth/models/clef.py",
+      "sha256": "60b1931b4bf35e044dcc8620e2b4a30ed10b625b7957359affb5ac4941abb75f",
+      "bytes": 23574
+    },
+    {
+      "path": "unsloth/_vendor/clef/joint_schema_model.py",
+      "url": "https://raw.githubusercontent.com/unslothai/unsloth/cc9128134156cc51f94eeb76d3d19f80bddbc8a7/unsloth/_vendor/clef/joint_schema_model.py",
+      "sha256": "0e304cf7c6500e8bb59bef7e2afd2c6373f82596dfb3b57d1aa93c175e2dc3a3",
+      "bytes": 23263
+    },
+    {
+      "path": "unsloth/__init__.py",
+      "url": "https://raw.githubusercontent.com/unslothai/unsloth/cc9128134156cc51f94eeb76d3d19f80bddbc8a7/unsloth/__init__.py",
+      "sha256": "a9cd163722e6db98eb59d499862241ecdb7bacf54afd847d31a67171250b8c52",
+      "bytes": 71542
+    },
+    {
+      "path": "pyproject.toml",
+      "url": "https://raw.githubusercontent.com/unslothai/unsloth/cc9128134156cc51f94eeb76d3d19f80bddbc8a7/pyproject.toml",
+      "sha256": "1dc7d08f2b1ae74c4b95fb25bf12f181ba90925d0d2116af8cb422c0f20c3700",
+      "bytes": 156414
+    }
+  ],
+  "retrieved_date": "2026-10-09",
+  "documentation": [
+    "https://unsloth.ai/docs/basics/train-your-own-decision-model-with-unsloth",
+    "https://unsloth.ai/docs/models/decision-laya",
+    "https://huggingface.co/datasets/LocalLLaMA/typed-decisions"
+  ],
+  "pilot_model": {
+    "name": "unsloth/Qwen3.5-0.8B",
+    "revision": "23c69c53358a07516b5827588b3fdb12ae78fd65"
+  }
+}

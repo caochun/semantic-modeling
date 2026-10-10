@@ -1,0 +1,23 @@
+{
+  "dataset": "gusu-explicit-state-v2",
+  "schema_version": "gusu-explicit-state-decision.v2",
+  "purpose": "branch_balanced_procedure_state_paraphrase_seed",
+  "review_status": "source_checked_synthetic_not_expert_approved",
+  "state_input": "natural_language_semantic_state_only",
+  "audit_excluded_from_model_input": true,
+  "split_unit": "controlled_paraphrase_variant",
+  "files": {
+    "README.md": "f67c302b02f26a6a4048e14daa712d3a815e155071ea41d55d906f5c9aa0cad2",
+    "audit.jsonl": "1aa101ee36f6780d129c9ba64e63eafa862ef35d216d81be2a4070698e9bb551",
+    "calibration.jsonl": "c188edbb1a2d0e6fa111a0aed9ccdde7941aaa5cba24fdcc8f3068e759be0558",
+    "schema.json": "ec6911a8c5e0ae3079fbc79e5436a6e09280934f3a44ac698e33c5cda7af46c2",
+    "source.json": "4ca01f0422916cbfc78471d6a3550eedc0fa14687ef2cc1986ffae67d2f79909",
+    "test.jsonl": "fb4f5916fb2503203ff3f3299289c552a20ca33c71c153aa18802e9f9c69c48e",
+    "train.jsonl": "bf963b7dc118cb7dc0643b2223bd0aaf80ed5c98dab426abb36bc6be780df139",
+    "validation.json": "1f67dfd71c546d28d7f5e3ce11f19b6b5c1732c98a0a8cf8c81e9838be935118"
+  },
+  "source_sha256": "45bd5e2dd8b249ca42c1acc8b7dbb1a9d6338c5fb21d180acc9762eef8ef93a4",
+  "family_count": 7,
+  "base_case_count": 28,
+  "variant_count": 140
+}

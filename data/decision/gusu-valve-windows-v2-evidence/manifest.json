@@ -1,0 +1,585 @@
+{
+  "dataset": "gusu-valve-windows-v2-evidence",
+  "task": "rule_supervised_evidence_tracking_pilot",
+  "expert_approved": false,
+  "full_health_classifier_ready": false,
+  "evidence_pilot_ready": true,
+  "max_length": 4096,
+  "v1_manifest_sha256": "a30ed0755bc1c845c75e5306266e8a21a934c6e645cef47589b5f97607c6ab33",
+  "parent_catalog": {
+    "dataset": "gusu-valve-windows-v1-candidates",
+    "scope": {
+      "station": "姑苏",
+      "hosts": [
+        "P221VCC1",
+        "P221VCC2"
+      ],
+      "physical_scope": "极2低端VSC1阀冷两套控制系统；A/B均保留，精确点表映射待确认"
+    },
+    "selection_method": "人工选择覆盖风机/屏蔽、明确故障、恢复、缺失上下文的事件窗口；非随机抽样，不代表现场发生率",
+    "window_boundary": "start inclusive, end exclusive",
+    "preceding_context_seconds": 300,
+    "split_unit": "event_date across both hosts and all channels; rules are shared, no unseen-rule-generalization claim",
+    "windows": [
+      {
+        "id": "gusu-valve-20220528-1400",
+        "start": "2022-05-28T14:00:00",
+        "end": "2022-05-28T14:30:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-05-28"
+      },
+      {
+        "id": "gusu-valve-20220528-1430",
+        "start": "2022-05-28T14:30:00",
+        "end": "2022-05-28T15:00:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-05-28"
+      },
+      {
+        "id": "gusu-valve-20220528-1700",
+        "start": "2022-05-28T17:00:00",
+        "end": "2022-05-28T18:00:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-05-28"
+      },
+      {
+        "id": "gusu-valve-20220603-1630",
+        "start": "2022-06-03T16:30:00",
+        "end": "2022-06-03T17:30:00",
+        "proposed_split": "calibration",
+        "group_id": "gusu-commissioning-2022-06-03"
+      },
+      {
+        "id": "gusu-valve-20220604-1030",
+        "start": "2022-06-04T10:30:00",
+        "end": "2022-06-04T11:05:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-04"
+      },
+      {
+        "id": "gusu-valve-20220604-1230",
+        "start": "2022-06-04T12:30:00",
+        "end": "2022-06-04T13:00:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-04"
+      },
+      {
+        "id": "gusu-valve-20220604-1430",
+        "start": "2022-06-04T14:30:00",
+        "end": "2022-06-04T15:00:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-04"
+      },
+      {
+        "id": "gusu-valve-20220604-2200",
+        "start": "2022-06-04T22:00:00",
+        "end": "2022-06-04T23:00:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-04"
+      },
+      {
+        "id": "gusu-valve-20220605-0300",
+        "start": "2022-06-05T03:00:00",
+        "end": "2022-06-05T03:30:00",
+        "proposed_split": "calibration",
+        "group_id": "gusu-commissioning-2022-06-05"
+      },
+      {
+        "id": "gusu-valve-20220605-0830",
+        "start": "2022-06-05T08:30:00",
+        "end": "2022-06-05T09:30:00",
+        "proposed_split": "calibration",
+        "group_id": "gusu-commissioning-2022-06-05"
+      },
+      {
+        "id": "gusu-valve-20220605-1625",
+        "start": "2022-06-05T16:25:00",
+        "end": "2022-06-05T17:25:00",
+        "proposed_split": "calibration",
+        "group_id": "gusu-commissioning-2022-06-05"
+      },
+      {
+        "id": "gusu-valve-20220606-0900",
+        "start": "2022-06-06T09:00:00",
+        "end": "2022-06-06T09:55:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-06"
+      },
+      {
+        "id": "gusu-valve-20220606-1000",
+        "start": "2022-06-06T10:00:00",
+        "end": "2022-06-06T10:40:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-06"
+      },
+      {
+        "id": "gusu-valve-20220606-1100",
+        "start": "2022-06-06T11:00:00",
+        "end": "2022-06-06T11:16:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-06"
+      },
+      {
+        "id": "gusu-valve-20220606-1525",
+        "start": "2022-06-06T15:25:00",
+        "end": "2022-06-06T16:20:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-06"
+      },
+      {
+        "id": "gusu-valve-20220606-1630",
+        "start": "2022-06-06T16:30:00",
+        "end": "2022-06-06T17:10:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-06"
+      },
+      {
+        "id": "gusu-valve-20220606-1745",
+        "start": "2022-06-06T17:45:00",
+        "end": "2022-06-06T18:15:00",
+        "proposed_split": "train",
+        "group_id": "gusu-commissioning-2022-06-06"
+      },
+      {
+        "id": "gusu-valve-20220608-0900",
+        "start": "2022-06-08T09:00:00",
+        "end": "2022-06-08T09:40:00",
+        "proposed_split": "test",
+        "group_id": "gusu-commissioning-2022-06-08"
+      },
+      {
+        "id": "gusu-valve-20220608-1100",
+        "start": "2022-06-08T11:00:00",
+        "end": "2022-06-08T11:40:00",
+        "proposed_split": "test",
+        "group_id": "gusu-commissioning-2022-06-08"
+      },
+      {
+        "id": "gusu-valve-20220608-1400",
+        "start": "2022-06-08T14:00:00",
+        "end": "2022-06-08T14:40:00",
+        "proposed_split": "test",
+        "group_id": "gusu-commissioning-2022-06-08"
+      },
+      {
+        "id": "gusu-valve-20220608-1500",
+        "start": "2022-06-08T15:00:00",
+        "end": "2022-06-08T15:40:00",
+        "proposed_split": "test",
+        "group_id": "gusu-commissioning-2022-06-08"
+      },
+      {
+        "id": "gusu-valve-20220608-1915",
+        "start": "2022-06-08T19:15:00",
+        "end": "2022-06-08T19:55:00",
+        "proposed_split": "test",
+        "group_id": "gusu-commissioning-2022-06-08"
+      },
+      {
+        "id": "gusu-valve-20220612-1500",
+        "start": "2022-06-12T15:00:00",
+        "end": "2022-06-12T16:05:00",
+        "proposed_split": "test",
+        "group_id": "gusu-commissioning-2022-06-12"
+      },
+      {
+        "id": "gusu-valve-20220612-1700",
+        "start": "2022-06-12T17:00:00",
+        "end": "2022-06-12T17:50:00",
+        "proposed_split": "test",
+        "group_id": "gusu-commissioning-2022-06-12"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0528.txt",
+      "sha256": "729d24898d3a8189e0a61610324d102277479db51f2795aad49a91022a2dcbe8",
+      "encoding": "gb18030",
+      "target_records": 1030,
+      "event_dates": [
+        "2022-05-28"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0529.txt",
+      "sha256": "44484cd6cc747f4dd1a930228fd8cbcea2c4a416e46b053d8c1a694e70a065f0",
+      "encoding": "gb18030",
+      "target_records": 0,
+      "event_dates": [],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0530.txt",
+      "sha256": "7f50a946f761964c7ff1460df4ad1c3ed8a407af2e19c14f4f0e56c851eecdb9",
+      "encoding": "gb18030",
+      "target_records": 298,
+      "event_dates": [
+        "2022-05-30"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0531.txt",
+      "sha256": "1018e3faf1cb6656855b88d189ec95726e926e6357ebad8b529eac9ea45143ac",
+      "encoding": "gb18030",
+      "target_records": 0,
+      "event_dates": [],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0603.txt",
+      "sha256": "7be4a43e2f46f391e4385561b5acba08ea5b55c4d295edb8643953f1fffa2f7b",
+      "encoding": "gb18030",
+      "target_records": 400,
+      "event_dates": [
+        "2022-06-03"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0604 0800-1200.txt",
+      "sha256": "141210ec5fcf9e1df0cb61ba64ddd955df22a2b4e3652fc9292fc5e528fc27e5",
+      "encoding": "gb18030",
+      "target_records": 636,
+      "event_dates": [
+        "2022-06-04"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0604 1200-1800.txt",
+      "sha256": "cff1da1b475a3fa1b11e9518020413ebe634961fa1a162040d859517e3c617ce",
+      "encoding": "gb18030",
+      "target_records": 458,
+      "event_dates": [
+        "2022-06-04"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0604 1800-2400.txt",
+      "sha256": "d38fba1b71a1994f7890cffe85629fa7070d42d578c28d0fefb88cb88bf72756",
+      "encoding": "gb18030",
+      "target_records": 64,
+      "event_dates": [
+        "2022-06-04"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0605 0000-0130.txt",
+      "sha256": "65cf84826d837fb2e2669304ac0b1230e176f4f75f85c9341e3c90f2ad60369a",
+      "encoding": "gb18030",
+      "target_records": 0,
+      "event_dates": [],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0605 00_00-12_00.txt",
+      "sha256": "1d89496770392aef72d07c031a09a76412a5b63d14c797bf595363c50404d8b3",
+      "encoding": "gb18030",
+      "target_records": 764,
+      "event_dates": [
+        "2022-06-05"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0605 12_00-18_00.txt",
+      "sha256": "1acc18761fbfe68d5ca3bed18eb0e2f98398148705132a63c8e7481625941cf5",
+      "encoding": "gb18030",
+      "target_records": 1080,
+      "event_dates": [
+        "2022-06-05"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0605 18_00-24_00.txt",
+      "sha256": "0481230c6281996056fd654458d047dcb5d83cc2812c8226d2d237c0b92d1ae6",
+      "encoding": "gb18030",
+      "target_records": 36,
+      "event_dates": [
+        "2022-06-05"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0606 00_00-12_00.txt",
+      "sha256": "25656da4c0f12e0b9609ad77db6648de74ebaa83d05586dd265964b632016150",
+      "encoding": "gb18030",
+      "target_records": 422,
+      "event_dates": [
+        "2022-06-06"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0606 12_00-18_00.txt",
+      "sha256": "c27cb35594d579304756ce2370834188c783a305e319df4033c5207509643936",
+      "encoding": "gb18030",
+      "target_records": 664,
+      "event_dates": [
+        "2022-06-06"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0606 18_00-24_00.txt",
+      "sha256": "4c905604cd33b18ed4db2964dbc03f38c9e78e9bb9952a82cd225127567c9fc8",
+      "encoding": "gb18030",
+      "target_records": 94,
+      "event_dates": [
+        "2022-06-06"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0607 00-08.txt",
+      "sha256": "2ea0cbbc18ee4f5822989dc22c5a1a0d1b70b20e5cf6d5e66ab50b2c61b44c3e",
+      "encoding": "gb18030",
+      "target_records": 282,
+      "event_dates": [
+        "2022-06-08"
+      ],
+      "filename_date_hint_differs": true
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0607 09-13.txt",
+      "sha256": "9a3a4a559edd5da2acd34e21889ec6de757d75c0f2d531e24cb3ed2cb86bb770",
+      "encoding": "gb18030",
+      "target_records": 1477,
+      "event_dates": [
+        "2022-06-08"
+      ],
+      "filename_date_hint_differs": true
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0607 14-16.txt",
+      "sha256": "7c35dd781f476fd453b07d6da96a1a94fd0a7d3f022b63ec0d3eaba06b851549",
+      "encoding": "gb18030",
+      "target_records": 1220,
+      "event_dates": [
+        "2022-06-08"
+      ],
+      "filename_date_hint_differs": true
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0607 17-20.txt",
+      "sha256": "77257b122711ca64ed5bdfd30c8de358ad6f2fea71cbf619b64475e0ea182a03",
+      "encoding": "gb18030",
+      "target_records": 472,
+      "event_dates": [
+        "2022-06-08"
+      ],
+      "filename_date_hint_differs": true
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0612 12~15.txt",
+      "sha256": "6970814cfb1f3e1de2001475e5ed9b38e170d86e93a3b153751685269d89bf69",
+      "encoding": "gb18030",
+      "target_records": 766,
+      "event_dates": [
+        "2022-06-12"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0612 15~16.30.txt",
+      "sha256": "63f8ba30289f772339e5e65d703bbd82b93763dc51e248d8f1455140ab64165a",
+      "encoding": "gb18030",
+      "target_records": 704,
+      "event_dates": [
+        "2022-06-12"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0612 16.30~19.txt",
+      "sha256": "af51e61529ef74d1299bef00197b3089acc69e739544868ad9e8ed194aed7e56",
+      "encoding": "gb18030",
+      "target_records": 82,
+      "event_dates": [
+        "2022-06-12"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0613 00-05.txt",
+      "sha256": "d99185ff99586c175259c70c3cd0c3c49bdac4d4300ce56614e2179404d1a1b2",
+      "encoding": "gb18030",
+      "target_records": 2,
+      "event_dates": [
+        "2022-06-14"
+      ],
+      "filename_date_hint_differs": true
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0613 05-08.txt",
+      "sha256": "9fbd1c69a2df84221eb353a462681365ba4ef0914792806146ea14bf331273b7",
+      "encoding": "gb18030",
+      "target_records": 122,
+      "event_dates": [
+        "2022-06-14"
+      ],
+      "filename_date_hint_differs": true
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0613 08-10.txt",
+      "sha256": "f0c99764927737c24a0c2edcf87fb0445358e0fa28f71c80ea95356fe7e18d90",
+      "encoding": "gb18030",
+      "target_records": 68,
+      "event_dates": [
+        "2022-06-14"
+      ],
+      "filename_date_hint_differs": true
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0613 14~15.txt",
+      "sha256": "6665cf61bacada66e99d973dd3a2f8017aca2a9de80eb1d95e54d325f76b0626",
+      "encoding": "gb18030",
+      "target_records": 48,
+      "event_dates": [
+        "2022-06-13"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0613 15~17.txt",
+      "sha256": "6ca2040c4a4257a56e62e93c4e10c8b1e863ab5ab25379709a989c2e5def4244",
+      "encoding": "gb18030",
+      "target_records": 84,
+      "event_dates": [
+        "2022-06-13"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0613 17~22.txt",
+      "sha256": "cc6ec082402c3e5e9247cc6880f1d5882334f896b94804116d7a71242e71d23d",
+      "encoding": "gb18030",
+      "target_records": 12,
+      "event_dates": [
+        "2022-06-13"
+      ],
+      "filename_date_hint_differs": false
+    },
+    {
+      "path": "rawdoc/姑苏站/调试日报/事件汇总（第一阶段）/saveevent0613 22-00.txt",
+      "sha256": "7d453759932cfcffb4f74bf575b490140ca5573350b260afb90b25b51d0e741b",
+      "encoding": "gb18030",
+      "target_records": 0,
+      "event_dates": [],
+      "filename_date_hint_differs": false
+    }
+  ],
+  "tokenizer": {
+    "name": "unsloth/Qwen3.5-0.8B",
+    "revision": "23c69c53358a07516b5827588b3fdb12ae78fd65"
+  },
+  "transformers_version": "5.17.0",
+  "tokenizer_files": {
+    "tokenizer_config.json": "50470511708577d43f7c18c2d8e2ab02fb8abf3add1c40f60b74579d6d16e27e",
+    "config.json": "f8745ebb3cf9d980cb746a4b09f700954975357e468e8321c8fa33cdd57acb55",
+    "tokenizer.json": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4"
+  },
+  "unsloth_revision": "cc9128134156cc51f94eeb76d3d19f80bddbc8a7",
+  "builder_sha256": "2157bccfc5662161d2a04024c03d534c19bf4c49b2d672623c68418260e55d82",
+  "summary": {
+    "windows": 69,
+    "parents": 24,
+    "core_events": 4314,
+    "max_tokens": 4076,
+    "min_tokens": 1436,
+    "splits": {
+      "train": {
+        "windows": 25,
+        "days": [
+          "2022-05-28",
+          "2022-06-04",
+          "2022-06-06"
+        ],
+        "labels": {
+          "during_window": {
+            "abnormal_evidence": 15,
+            "insufficient_evidence": 10
+          },
+          "at_window_end": {
+            "insufficient_evidence": 12,
+            "abnormal_evidence": 13
+          },
+          "observed_recovery": {
+            "all_observed_cleared": 2,
+            "not_observed": 10,
+            "some_unresolved": 3,
+            "all_unresolved": 10
+          }
+        }
+      },
+      "calibration": {
+        "windows": 8,
+        "days": [
+          "2022-06-03",
+          "2022-06-05"
+        ],
+        "labels": {
+          "during_window": {
+            "abnormal_evidence": 6,
+            "insufficient_evidence": 2
+          },
+          "at_window_end": {
+            "abnormal_evidence": 4,
+            "insufficient_evidence": 4
+          },
+          "observed_recovery": {
+            "some_unresolved": 2,
+            "all_observed_cleared": 2,
+            "not_observed": 2,
+            "all_unresolved": 2
+          }
+        }
+      },
+      "test": {
+        "windows": 36,
+        "days": [
+          "2022-06-08",
+          "2022-06-12"
+        ],
+        "labels": {
+          "during_window": {
+            "abnormal_evidence": 31,
+            "insufficient_evidence": 5
+          },
+          "at_window_end": {
+            "abnormal_evidence": 30,
+            "insufficient_evidence": 6
+          },
+          "observed_recovery": {
+            "all_unresolved": 13,
+            "some_unresolved": 17,
+            "not_observed": 5,
+            "all_observed_cleared": 1
+          }
+        }
+      }
+    },
+    "normal_examples": 0
+  },
+  "files": {
+    "README.md": "291a8f2a36124dc5c1eb0960ac2f56b5a6923b4fa87dcf39a245ff1c69666985",
+    "audit.jsonl": "4073414fab6a0b36ed99db0986b8970ce07f1c84c9450a0b85a4569afba46ba8",
+    "calibration.jsonl": "56250c3cf6b1ef0b3618e0ce9b41f930d31b2dc1f85bed0ae97eeb34c9701b9d",
+    "context_search.json": "318a6480437111ac2b928f04e200eab62ccbaaa3c0f5908c4dd9c9c9e1aadf0e",
+    "documents.json": "f1220343022bd85c9b8793976b251b3104386b4c2bce547f3b364a079b82f2f8",
+    "events.jsonl": "7cf33d6a3be52b4e678e0d5aed6c1d0a3cc7ab565d092e8bdaf500b988b98b61",
+    "robustness_requests.jsonl": "c72af92bd4b05bb6bcb11beaa72e1d91801603eb89ab0c4bf68ba389d3f859b2",
+    "rules.json": "0b1ed78a8a5812f875edbddb6cf7c90a4e023fe82613126f481a0564977440d4",
+    "schema.json": "7e645f0d706f54b8120d25e747e51d1e2d976c17ef1fb6563af659fdb4873cfb",
+    "summary.json": "6fd3c50292214d8112e83ee076a152c172795a77b1959cac25eba27dc1c28d25",
+    "test.jsonl": "48a968b35693654abce3924a1df075f456c3d8ae018e903392bb41fb282cceec",
+    "train.jsonl": "62e9d2e0568c848162bce33d5f2839c0cbf073785676dcdc53368ba2e1704a26",
+    "windows.jsonl": "38921c1d226babae60f894bda1177b13dc7b8dc618f6d74941758fb4ebc199a3"
+  }
+}

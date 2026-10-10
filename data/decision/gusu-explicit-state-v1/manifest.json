@@ -1,0 +1,21 @@
+{
+  "dataset": "gusu-explicit-state-v1",
+  "schema_version": "gusu-explicit-state-decision.v1",
+  "purpose": "explicit_procedure_branch_state_seed",
+  "review_status": "source_checked_synthetic_not_expert_approved",
+  "state_input": "natural_language_semantic_state_only",
+  "audit_excluded_from_model_input": true,
+  "split_unit": "branch_case",
+  "files": {
+    "audit.jsonl": "c13d760ee97f416283b32ceab30034d705f50cbda51dad482b15b662f07854b1",
+    "calibration.jsonl": "373d9ef28e64ee4c74ef2a0c09f87d6c7faf19137f9cc226e1d4061af7d47f9a",
+    "schema.json": "56f10873ec0a92d95c6d6e2940cfbb3e8511aa0e5c0e6c8df4252763541fd46d",
+    "source.json": "6699440582fa54cc8b1de55bc09f45437a40af1d6eb299385a7c2b1c4d0bdeb5",
+    "test.jsonl": "6c04decba02ced12c1ff853797b7576c1e13ab95b1545f94da0c86f3ad6166ee",
+    "train.jsonl": "712aeb77bd2f6233a69e39a714f69e8d6cf0c5660124615e810a1f497fd50309",
+    "validation.json": "4d150a3a026cd47fcc8a81f81e47959a9af611fd0db54ce378820cd5315f27ef"
+  },
+  "source_sha256": "45bd5e2dd8b249ca42c1acc8b7dbb1a9d6338c5fb21d180acc9762eef8ef93a4",
+  "family_count": 7,
+  "case_count": 28
+}

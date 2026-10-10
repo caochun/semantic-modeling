@@ -1,0 +1,80 @@
+{
+  "windows": 69,
+  "parents": 24,
+  "core_events": 4314,
+  "max_tokens": 4076,
+  "min_tokens": 1436,
+  "splits": {
+    "train": {
+      "windows": 25,
+      "days": [
+        "2022-05-28",
+        "2022-06-04",
+        "2022-06-06"
+      ],
+      "labels": {
+        "during_window": {
+          "abnormal_evidence": 15,
+          "insufficient_evidence": 10
+        },
+        "at_window_end": {
+          "insufficient_evidence": 12,
+          "abnormal_evidence": 13
+        },
+        "observed_recovery": {
+          "all_observed_cleared": 2,
+          "not_observed": 10,
+          "some_unresolved": 3,
+          "all_unresolved": 10
+        }
+      }
+    },
+    "calibration": {
+      "windows": 8,
+      "days": [
+        "2022-06-03",
+        "2022-06-05"
+      ],
+      "labels": {
+        "during_window": {
+          "abnormal_evidence": 6,
+          "insufficient_evidence": 2
+        },
+        "at_window_end": {
+          "abnormal_evidence": 4,
+          "insufficient_evidence": 4
+        },
+        "observed_recovery": {
+          "some_unresolved": 2,
+          "all_observed_cleared": 2,
+          "not_observed": 2,
+          "all_unresolved": 2
+        }
+      }
+    },
+    "test": {
+      "windows": 36,
+      "days": [
+        "2022-06-08",
+        "2022-06-12"
+      ],
+      "labels": {
+        "during_window": {
+          "abnormal_evidence": 31,
+          "insufficient_evidence": 5
+        },
+        "at_window_end": {
+          "abnormal_evidence": 30,
+          "insufficient_evidence": 6
+        },
+        "observed_recovery": {
+          "all_unresolved": 13,
+          "some_unresolved": 17,
+          "not_observed": 5,
+          "all_observed_cleared": 1
+        }
+      }
+    }
+  },
+  "normal_examples": 0
+}

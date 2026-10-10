@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "counts": {
+    "train": {
+      "rows": 46,
+      "decisions": 74,
+      "families": 10,
+      "scenarios": 23
+    },
+    "calibration": {
+      "rows": 14,
+      "decisions": 22,
+      "families": 3,
+      "scenarios": 7
+    },
+    "test": {
+      "rows": 26,
+      "decisions": 38,
+      "families": 5,
+      "scenarios": 13
+    }
+  },
+  "total_rows": 86,
+  "canonical_scenarios": 43,
+  "rule_families": 18,
+  "label_counts": {
+    "train": {
+      "blocking:blocks_device": 6,
+      "blocking:does_not_block": 8,
+      "blocking:insufficient_evidence": 14,
+      "next_check:check_pressure": 2,
+      "next_check:check_recovery": 2,
+      "next_check:check_reserve": 2,
+      "next_check:collect_logs": 4,
+      "next_check:confirm_mode": 2,
+      "next_check:expected_test": 2,
+      "next_check:follow_alarm_guidance": 14,
+      "next_check:maintenance_check": 2,
+      "next_check:recovered": 2,
+      "next_check:verify_applicability": 14
+    },
+    "calibration": {
+      "blocking:blocks_device": 2,
+      "blocking:does_not_block": 2,
+      "blocking:insufficient_evidence": 4,
+      "next_check:check_extent": 2,
+      "next_check:follow_alarm_guidance": 4,
+      "next_check:inspect_fiber": 2,
+      "next_check:inspect_source": 2,
+      "next_check:verify_applicability": 4
+    },
+    "test": {
+      "blocking:blocks_device": 2,
+      "blocking:does_not_block": 4,
+      "blocking:insufficient_evidence": 6,
+      "next_check:board_followup": 2,
+      "next_check:check_monitor": 2,
+      "next_check:check_spring": 2,
+      "next_check:confirm_role": 2,
+      "next_check:contact_maintenance": 2,
+      "next_check:follow_alarm_guidance": 6,
+      "next_check:inspect_supply": 2,
+      "next_check:measure_terminals": 2,
+      "next_check:verify_applicability": 6
+    }
+  },
+  "source_hashes_checked": true,
+  "upstream_tokenization_checked": false,
+  "limitations": [
+    "Synthetic pilot, no independent field events or expert approval.",
+    "Two renderings are not independent cases; metrics must also count canonical scenarios.",
+    "Rule-family isolation does not imply station/document independence."
+  ]
+}

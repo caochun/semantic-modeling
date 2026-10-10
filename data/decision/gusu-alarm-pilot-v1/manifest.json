@@ -1,0 +1,36 @@
+{
+  "dataset": "gusu-alarm-pilot-v1",
+  "created_date": "2026-10-09",
+  "purpose": "evidence_conditioned_decision_protocol_pilot",
+  "source_scope": "rawdoc/姑苏站",
+  "review_status": "source_checked_candidate_not_expert_approved",
+  "split_unit": "rule_family; all scenarios and both renderings stay together",
+  "test_interpretation": "held-out rule-family application with evidence supplied; not closed-book knowledge retention or real-event generalization",
+  "independent_events": 0,
+  "sources": {
+    "pcs974": {
+      "path": "rawdoc/姑苏站/产品说明书/PCS-974FG-D非电量及辅助保护装置说明书.pdf",
+      "sha256": "3fc7e8d19c2067bb077f122a61f9d98e5dbfa0a35eacaac66f12ba448f098439"
+    },
+    "pcs9586": {
+      "path": "rawdoc/姑苏站/产品说明书/PCS-9586A阀控制单元说明书.pdf",
+      "sha256": "26cbcbb315e894899255cedabbc41cc7f8b1e5ed6c49320f5a17b30838f1ff05"
+    },
+    "reg5": {
+      "path": "rawdoc/姑苏站/运行规程/规程五：±800kV姑苏换流站运行规程（设备异常与事故处理）.pdf",
+      "sha256": "98d56bcdf4e494127af59c3e5cd4f535d0324d0f6832827eac0a6fb473074bd3"
+    }
+  },
+  "files": {
+    "audit.jsonl": "29659b0c4664886dfba03476776f3f050ab59ce74480b954b6b5a23698745050",
+    "calibration.jsonl": "fb3c29306e767b2c130d37e762ad8356ed7fdf150259c68ea3f124ba25e9a1d2",
+    "rules.json": "8137b21566459fd89326bd7ad4ef49dc85604f649495900195f021df5021ac27",
+    "source_pages.json": "e96a259466b5577e57515b16aed512b612ab5c0da1817a0e54c265f2f8021651",
+    "test.jsonl": "bdec74195c5497572ec1aedc67aa8851bf9d77e517e4a583f493127ba7180341",
+    "train.jsonl": "9aef7bb67cd5074a8ae9b41a035916e88107b7b009305b7820e1476d9e290185"
+  },
+  "build_code": {
+    "catalog.py": "4c79a476a3190ce0a47317a3339d1ea1bd321f2d3cc758846927a53445b3a7ff",
+    "data.py": "3b27d38f00fa53371a89e617de88b85d6149d1ec2215d4602e7a9d8bd991a13f"
+  }
+}

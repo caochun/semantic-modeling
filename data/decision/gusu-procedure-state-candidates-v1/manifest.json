@@ -1,0 +1,22 @@
+{
+  "dataset": "gusu-procedure-state-candidates-v1",
+  "purpose": "real_log_state_builder_candidate",
+  "review_status": "teacher_consensus_only",
+  "training_ready": false,
+  "gold_status": "manual_self_teacher_consensus",
+  "state_builder_version": "gusu-task-state-builder.v1",
+  "source": "experiments/decision_model/cases/gusu-valve-cooling-20260911/raw.tsv",
+  "source_sha256": "b75fa3f0b2bedbadf3d7144a25c117b3de1ef448d72ccafb9d0bb8b28d24af72",
+  "request_id": "gusu-log-window-e6a963af8ae09f07",
+  "files": {
+    "request.json": "c3159810d01c232f35123d28487724b495c410eab16d71925b1612e5255425ef",
+    "audit.json": "b77f4dc909c1f9c56a89d4466c6205d0da275d8b6ad66e055ea67982507cae1a",
+    "teacher_samples.json": "4780659b4f19d8e030ba4a69f18f4bff4171df611f971a8fdc33f2d23c4b72ab",
+    "teacher_gold.json": "3aa81af4251ce7ef8a4d1216bf33db18561ed31840f2d4575facdad0f687fae1",
+    "labeled_row.json": "8a09e346d7135e97b97c8bcae41ad57eea91a963d33e7e269b092d913a9e04d8",
+    "teacher_gold_audit.json": "ac19538920d4afa41bacc67431e78959f71d705d8a8d85d61fe9a07a92f1c067"
+  },
+  "gold_available": true,
+  "teacher_id": "current-assistant-gpt6",
+  "training_readiness_reason": "single real-log candidate; teacher gold only; operator review unavailable"
+}

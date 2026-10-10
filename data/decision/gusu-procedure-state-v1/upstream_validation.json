@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "dataset_validation": {
+    "status": "passed",
+    "counts": {
+      "train": {
+        "rows": 8,
+        "decisions": 72
+      },
+      "calibration": {
+        "rows": 4,
+        "decisions": 36
+      },
+      "test": {
+        "rows": 4,
+        "decisions": 36
+      }
+    },
+    "total_rows": 16,
+    "decisions_per_row": 9,
+    "source_sha256": "45bd5e2dd8b249ca42c1acc8b7dbb1a9d6338c5fb21d180acc9762eef8ef93a4",
+    "limitations": [
+      "Synthetic procedure-derived cases; no expert approval or field fault-rate claim.",
+      "Gold is a deterministic procedure oracle, not a teacher-model probability distribution.",
+      "State compiler is deterministic in this seed; LLM paraphrase variants are not included."
+    ]
+  },
+  "upstream_revision": "cc9128134156cc51f94eeb76d3d19f80bddbc8a7",
+  "checks": [
+    "Procedure Five dataset manifest and audit hashes",
+    "upstream question type validation",
+    "upstream gold probability normalization",
+    "upstream option ordering and gold mapping",
+    "pinned tokenizer complete-state encoding",
+    "pinned upstream Clef build_dataset",
+    "no context truncation"
+  ],
+  "semantic_contract": {
+    "train": {
+      "rows": 8,
+      "decisions": 72,
+      "question_types": {
+        "noul": 40,
+        "choice": 24,
+        "score": 8
+      }
+    },
+    "calibration": {
+      "rows": 4,
+      "decisions": 36,
+      "question_types": {
+        "noul": 20,
+        "choice": 12,
+        "score": 4
+      }
+    },
+    "test": {
+      "rows": 4,
+      "decisions": 36,
+      "question_types": {
+        "noul": 20,
+        "choice": 12,
+        "score": 4
+      }
+    }
+  },
+  "model_training_tested": false,
+  "scope": "CPU data contract only; no model weights, forward/backward or Trainer",
+  "tokenizer_contract": {
+    "status": "passed",
+    "tokenizer": {
+      "name": "unsloth/Qwen3.5-0.8B",
+      "revision": "23c69c53358a07516b5827588b3fdb12ae78fd65"
+    },
+    "max_length": 4096,
+    "splits": {
+      "train": {
+        "total": 72,
+        "skipped": 0,
+        "reason": null,
+        "truncated": 0,
+        "rows": 8,
+        "min_tokens": 1321,
+        "max_tokens": 1339,
+        "mean_tokens": 1331.5
+      },
+      "calibration": {
+        "total": 36,
+        "skipped": 0,
+        "reason": null,
+        "truncated": 0,
+        "rows": 4,
+        "min_tokens": 1322,
+        "max_tokens": 1332,
+        "mean_tokens": 1326.2
+      },
+      "test": {
+        "total": 36,
+        "skipped": 0,
+        "reason": null,
+        "truncated": 0,
+        "rows": 4,
+        "min_tokens": 1328,
+        "max_tokens": 1336,
+        "mean_tokens": 1332.5
+      }
+    }
+  }
+}

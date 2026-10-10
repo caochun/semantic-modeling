@@ -1,0 +1,680 @@
+{
+  "base": "http://192.168.30.134:9120",
+  "questions": {
+    "during_window": {
+      "type": "choice",
+      "instructions": "区分信号证据、试验注入与设备真实损坏；不能用事件等级或单条消失记录推断系统健康。",
+      "criteria": {
+        "abnormal_evidence": "窗口内有明确异常信号或异常现象证据",
+        "verified_expected": "有完整且适用的依据确认过程符合预期",
+        "insufficient_evidence": "记录不足以确认异常或符合预期"
+      }
+    },
+    "at_window_end": {
+      "type": "choice",
+      "instructions": "无复归只是最后已知记录；个别信号复归或没有新报警，不能证明整个评估范围正常。",
+      "criteria": {
+        "abnormal_evidence": "末端仍有未见复归的明确异常证据",
+        "verified_expected": "有充分末端状态和操作依据确认符合预期",
+        "insufficient_evidence": "末端状态证据不足"
+      }
+    },
+    "observed_recovery": {
+      "type": "choice",
+      "instructions": "只检查明确观察到出现的目标信号；单独消失不能补造此前出现，也不能把通道混合。",
+      "criteria": {
+        "all_observed_cleared": "已见目标信号均有后续复归记录",
+        "some_unresolved": "部分已见目标信号已复归，部分未见复归",
+        "all_unresolved": "已见目标信号均未见后续复归",
+        "not_observed": "未观察到目标信号出现",
+        "indeterminate": "存在矛盾边沿，无法确定复归状态"
+      }
+    }
+  },
+  "results": [
+    {
+      "case": "all_recovered",
+      "state_response": {
+        "state": "在2026-09-11T12:00:00至12:00:09窗口内，姑苏站P221VCC2主机A系统极2低端阀1许继阀冷A2设备的E4.M01、E4.M03、E4.M05三台风机运行信号（级别3）先后出现，约8秒后按原顺序依次消失，三组出现-消失边沿对完整。信号消失仅表明报警边沿消失，不代表设备恢复或风机实际状态，其短时出现后复归的原因不明。缺少阀冷系统其他设备、B通道及独立测量数据，无法进一步判定。该状态只描述日志证据，不等同于物理故障确认或操作指令。",
+        "structured_state": {
+          "schema_version": "task-semantic-state.v2",
+          "window": {
+            "start": "2026-09-11T12:00:00.000",
+            "end": "2026-09-11T12:00:09.000",
+            "event_count": 6
+          },
+          "observations": [
+            {
+              "id": "obs-1",
+              "description": "极2低端阀1许继阀冷A2（系统A，主机P221VCC2）E4.M01风机运行信号出现，报警级别3",
+              "entity": "姑苏/P221VCC2/A/极2低端阀1许继阀冷A2/E4.M01",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-1"
+              ],
+              "evidence_type": "single"
+            },
+            {
+              "id": "obs-2",
+              "description": "同设备E4.M03风机运行信号出现，报警级别3",
+              "entity": "姑苏/P221VCC2/A/极2低端阀1许继阀冷A2/E4.M03",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-2"
+              ],
+              "evidence_type": "single"
+            },
+            {
+              "id": "obs-3",
+              "description": "同设备E4.M05风机运行信号出现，报警级别3",
+              "entity": "姑苏/P221VCC2/A/极2低端阀1许继阀冷A2/E4.M05",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-3"
+              ],
+              "evidence_type": "single"
+            },
+            {
+              "id": "obs-4",
+              "description": "E4.M01风机运行信号消失（报警边沿消失）",
+              "entity": "姑苏/P221VCC2/A/极2低端阀1许继阀冷A2/E4.M01",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-4"
+              ],
+              "evidence_type": "single"
+            },
+            {
+              "id": "obs-5",
+              "description": "E4.M03风机运行信号消失（报警边沿消失）",
+              "entity": "姑苏/P221VCC2/A/极2低端阀1许继阀冷A2/E4.M03",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-5"
+              ],
+              "evidence_type": "single"
+            },
+            {
+              "id": "obs-6",
+              "description": "E4.M05风机运行信号消失（报警边沿消失）",
+              "entity": "姑苏/P221VCC2/A/极2低端阀1许继阀冷A2/E4.M05",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-6"
+              ],
+              "evidence_type": "single"
+            }
+          ],
+          "transitions": [
+            {
+              "description": "E4.M01风机运行信号先出现（row-1）后消失（row-4），间隔约8秒，构成完整出现-消失边沿对",
+              "evidence_event_ids": [
+                "row-1",
+                "row-4"
+              ]
+            },
+            {
+              "description": "E4.M03风机运行信号先出现（row-2）后消失（row-5），间隔约8秒",
+              "evidence_event_ids": [
+                "row-2",
+                "row-5"
+              ]
+            },
+            {
+              "description": "E4.M05风机运行信号先出现（row-3）后消失（row-6），间隔约8秒",
+              "evidence_event_ids": [
+                "row-3",
+                "row-6"
+              ]
+            }
+          ],
+          "aggregated_phenomena": [
+            "姑苏站极2低端阀1许继阀冷A2（A系统）E4.M01、E4.M03、E4.M05三台风机运行信号在12:00:00至12:00:01间先后出现，并在12:00:08至12:00:09间以相同顺序先后消失，三台风机信号变化时序一致"
+          ],
+          "missing_evidence": [
+            "无阀冷系统其他设备（如其他风机、泵、温度、流量等）信号记录",
+            "无B系统通道对应信号记录",
+            "无风机实际启停或电流等独立测量数据"
+          ],
+          "uncertainties": [
+            "风机运行信号消失仅表示报警边沿消失，不能据此判定风机实际停机或设备状态恢复",
+            "三台风机运行信号短时出现后消失的原因（如信号抖动、实际启停）无法由现有记录判定"
+          ],
+          "data_quality": {
+            "unknown_event_count": 0,
+            "has_initial_full_state": false,
+            "has_terminal_full_state": false,
+            "has_continuous_trends": false
+          },
+          "physical_fault_status": "not_confirmed_by_state_builder"
+        },
+        "warnings": [],
+        "usage": {
+          "completion_tokens": 1136,
+          "completion_tokens_details": {
+            "reasoning_tokens": 7
+          },
+          "prompt_tokens": 954,
+          "prompt_tokens_details": {
+            "cached_tokens": 896
+          },
+          "total_tokens": 2090
+        },
+        "model": "glm-5.3"
+      },
+      "decision_response": {
+        "model": "gusu-procedure-v1",
+        "answers": {
+          "during_window": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "confidence": 0.6703,
+            "probabilities": {
+              "abnormal_evidence": 0.1524,
+              "verified_expected": 0.1772,
+              "insufficient_evidence": 0.6703
+            },
+            "answer": "insufficient_evidence"
+          },
+          "at_window_end": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "confidence": 0.6615,
+            "probabilities": {
+              "abnormal_evidence": 0.2149,
+              "verified_expected": 0.1236,
+              "insufficient_evidence": 0.6615
+            },
+            "answer": "insufficient_evidence"
+          },
+          "observed_recovery": {
+            "type": "choice",
+            "choice": "some_unresolved",
+            "confidence": 0.322,
+            "probabilities": {
+              "all_observed_cleared": 0.0584,
+              "some_unresolved": 0.322,
+              "all_unresolved": 0.2149,
+              "not_observed": 0.2042,
+              "indeterminate": 0.2004
+            },
+            "answer": "some_unresolved"
+          }
+        },
+        "usage": {
+          "input_tokens": 659,
+          "output_tokens": 0
+        },
+        "limits": {
+          "trained_max_tokens": 4096,
+          "served_max_tokens": 16384,
+          "over_training_length": false
+        },
+        "experimental": true,
+        "field_validity_claimed": false,
+        "backend": "Unsloth FastDecisionModel / PyTorch"
+      }
+    },
+    {
+      "case": "partially_recovered",
+      "state_response": {
+        "state": "姑苏站P221VCC2主机A系统，极2低端阀1许继阀冷A2的E4.M01、M03、M05风机运行报警（级别3）于12:05:00-12:05:01集中出现；M01与M03报警约8秒后消失，仅表示报警边沿消失，不构成设备状态恢复或故障结论；M05报警至窗口结束未见消失记录。窗口前初始状态、连续趋势及通道冗余证据缺失，异常原因无法判定。该状态只描述日志证据，不等同于物理故障确认或操作指令。",
+        "structured_state": {
+          "schema_version": "task-semantic-state.v2",
+          "window": {
+            "start": "2026-09-11T12:05:00.000",
+            "end": "2026-09-11T12:05:08.500",
+            "event_count": 5
+          },
+          "observations": [
+            {
+              "id": "obs-1",
+              "description": "E4.M01风机运行报警出现",
+              "entity": "姑苏/P221VCC2/极2低端阀1许继阀冷A2/E4.M01",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-1"
+              ],
+              "evidence_type": "transition"
+            },
+            {
+              "id": "obs-2",
+              "description": "E4.M03风机运行报警出现",
+              "entity": "姑苏/P221VCC2/极2低端阀1许继阀冷A2/E4.M03",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-2"
+              ],
+              "evidence_type": "transition"
+            },
+            {
+              "id": "obs-3",
+              "description": "E4.M05风机运行报警出现",
+              "entity": "姑苏/P221VCC2/极2低端阀1许继阀冷A2/E4.M05",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-3"
+              ],
+              "evidence_type": "transition"
+            },
+            {
+              "id": "obs-4",
+              "description": "E4.M01风机运行报警消失（仅报警边沿消失）",
+              "entity": "姑苏/P221VCC2/极2低端阀1许继阀冷A2/E4.M01",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-4"
+              ],
+              "evidence_type": "transition"
+            },
+            {
+              "id": "obs-5",
+              "description": "E4.M03风机运行报警消失（仅报警边沿消失）",
+              "entity": "姑苏/P221VCC2/极2低端阀1许继阀冷A2/E4.M03",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-5"
+              ],
+              "evidence_type": "transition"
+            },
+            {
+              "id": "obs-6",
+              "description": "E4.M05风机运行报警在窗口内未见消失记录",
+              "entity": "姑苏/P221VCC2/极2低端阀1许继阀冷A2/E4.M05",
+              "status": "unknown",
+              "evidence_event_ids": [
+                "row-3"
+              ],
+              "evidence_type": "single"
+            }
+          ],
+          "transitions": [
+            {
+              "description": "E4.M01风机运行报警先出现后消失（间隔约8秒）",
+              "evidence_event_ids": [
+                "row-1",
+                "row-4"
+              ]
+            },
+            {
+              "description": "E4.M03风机运行报警先出现后消失（间隔约8秒）",
+              "evidence_event_ids": [
+                "row-2",
+                "row-5"
+              ]
+            },
+            {
+              "description": "E4.M05风机运行报警出现后至窗口结束无消失记录",
+              "evidence_event_ids": [
+                "row-3"
+              ]
+            }
+          ],
+          "aggregated_phenomena": [
+            "极2低端阀1许继阀冷A2系统E4组M01/M03/M05三台风机运行报警在约1秒内集中出现（报警级别3）",
+            "M01与M03报警约8秒后成对消失，M05未见复归记录"
+          ],
+          "missing_evidence": [
+            "E4.M05报警消失边沿缺失",
+            "窗口前是否存在初始报警状态未知",
+            "无A/B系统通道级冗余对照数据",
+            "无风机电流、温度等模拟量连续趋势数据"
+          ],
+          "uncertainties": [
+            "报警消失仅表示信号边沿消失，不能推断设备实际状态恢复或异常",
+            "M01/M03/M05报警短暂出现又消失的原因在现有证据下无法判定"
+          ],
+          "data_quality": {
+            "unknown_event_count": 0,
+            "has_initial_full_state": false,
+            "has_terminal_full_state": false,
+            "has_continuous_trends": false
+          },
+          "physical_fault_status": "not_confirmed_by_state_builder"
+        },
+        "warnings": [],
+        "usage": {
+          "completion_tokens": 1027,
+          "completion_tokens_details": {
+            "reasoning_tokens": 21
+          },
+          "prompt_tokens": 892,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "total_tokens": 1919
+        },
+        "model": "glm-5.3"
+      },
+      "decision_response": {
+        "model": "gusu-procedure-v1",
+        "answers": {
+          "during_window": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "confidence": 0.6785,
+            "probabilities": {
+              "abnormal_evidence": 0.172,
+              "verified_expected": 0.1495,
+              "insufficient_evidence": 0.6785
+            },
+            "answer": "insufficient_evidence"
+          },
+          "at_window_end": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "confidence": 0.6367,
+            "probabilities": {
+              "abnormal_evidence": 0.2352,
+              "verified_expected": 0.1281,
+              "insufficient_evidence": 0.6367
+            },
+            "answer": "insufficient_evidence"
+          },
+          "observed_recovery": {
+            "type": "choice",
+            "choice": "some_unresolved",
+            "confidence": 0.3286,
+            "probabilities": {
+              "all_observed_cleared": 0.057,
+              "some_unresolved": 0.3286,
+              "all_unresolved": 0.2191,
+              "not_observed": 0.2166,
+              "indeterminate": 0.1787
+            },
+            "answer": "some_unresolved"
+          }
+        },
+        "usage": {
+          "input_tokens": 634,
+          "output_tokens": 0
+        },
+        "limits": {
+          "trained_max_tokens": 4096,
+          "served_max_tokens": 16384,
+          "over_training_length": false
+        },
+        "experimental": true,
+        "field_validity_claimed": false,
+        "backend": "Unsloth FastDecisionModel / PyTorch"
+      }
+    },
+    {
+      "case": "unresolved_pump_and_backup",
+      "state_response": {
+        "state": "姑苏站P221VCC2主机A通道极2低端阀1许继阀冷A2于2026-09-11 12:10:00.000出现内水冷主循环泵故障报警（级别3），0.3秒后出现备用循环泵未投入报警（级别3）。窗口内仅有报警出现边沿，无复归边沿，报警信号在窗口结束时仍为出现状态，但报警存在不等于设备实际故障确认。缺少B通道信号、泵运行工况数据及初始全量状态，无法判断报警后续变化与设备真实状态。该状态只描述日志证据，不等同于物理故障确认或操作指令。",
+        "structured_state": {
+          "schema_version": "task-semantic-state.v2",
+          "window": {
+            "start": "2026-09-11T12:10:00.000",
+            "end": "2026-09-11T12:10:00.300",
+            "event_count": 2
+          },
+          "observations": [
+            {
+              "id": "obs-1",
+              "description": "极2低端阀1许继阀冷A2 内水冷主循环泵故障 报警出现，级别3",
+              "entity": "姑苏/P221VCC2/A通道/极2低端阀1许继阀冷A2",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-1"
+              ],
+              "evidence_type": "single"
+            },
+            {
+              "id": "obs-2",
+              "description": "极2低端阀1许继阀冷A2 备用循环泵未投入 报警出现，级别3",
+              "entity": "姑苏/P221VCC2/A通道/极2低端阀1许继阀冷A2",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-2"
+              ],
+              "evidence_type": "single"
+            }
+          ],
+          "transitions": [
+            {
+              "description": "内水冷主循环泵故障报警由无到有（出现边沿）",
+              "evidence_event_ids": [
+                "row-1"
+              ]
+            },
+            {
+              "description": "备用循环泵未投入报警由无到有（出现边沿），时间上紧跟主循环泵故障报警",
+              "evidence_event_ids": [
+                "row-1",
+                "row-2"
+              ]
+            }
+          ],
+          "aggregated_phenomena": [
+            "极2低端阀1许继阀冷A2 系统在0.3秒内连续出现主循环泵故障与备用循环泵未投入两条级别3报警"
+          ],
+          "missing_evidence": [
+            "无两条报警的复归（消失）边沿记录",
+            "无B通道对应信号记录",
+            "无主循环泵电流、备用泵状态等模拟量或工况数据",
+            "无12:10:00之前该系统的初始报警状态"
+          ],
+          "uncertainties": [
+            "主循环泵故障报警出现仅表示报警边沿出现，实际泵故障与否需其他证据",
+            "备用循环泵未投入原因未知，与主循环泵故障之间的联动关系无法由现有记录确定"
+          ],
+          "data_quality": {
+            "unknown_event_count": 0,
+            "has_initial_full_state": false,
+            "has_terminal_full_state": false,
+            "has_continuous_trends": false
+          },
+          "physical_fault_status": "not_confirmed_by_state_builder"
+        },
+        "warnings": [],
+        "usage": {
+          "completion_tokens": 666,
+          "completion_tokens_details": {
+            "reasoning_tokens": 3
+          },
+          "prompt_tokens": 709,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "total_tokens": 1375
+        },
+        "model": "glm-5.3"
+      },
+      "decision_response": {
+        "model": "gusu-procedure-v1",
+        "answers": {
+          "during_window": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "confidence": 0.6878,
+            "probabilities": {
+              "abnormal_evidence": 0.1657,
+              "verified_expected": 0.1466,
+              "insufficient_evidence": 0.6878
+            },
+            "answer": "insufficient_evidence"
+          },
+          "at_window_end": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "confidence": 0.6396,
+            "probabilities": {
+              "abnormal_evidence": 0.223,
+              "verified_expected": 0.1375,
+              "insufficient_evidence": 0.6396
+            },
+            "answer": "insufficient_evidence"
+          },
+          "observed_recovery": {
+            "type": "choice",
+            "choice": "some_unresolved",
+            "confidence": 0.3331,
+            "probabilities": {
+              "all_observed_cleared": 0.0587,
+              "some_unresolved": 0.3331,
+              "all_unresolved": 0.2304,
+              "not_observed": 0.2043,
+              "indeterminate": 0.1736
+            },
+            "answer": "some_unresolved"
+          }
+        },
+        "usage": {
+          "input_tokens": 643,
+          "output_tokens": 0
+        },
+        "limits": {
+          "trained_max_tokens": 4096,
+          "served_max_tokens": 16384,
+          "over_training_length": false
+        },
+        "experimental": true,
+        "field_validity_claimed": false,
+        "backend": "Unsloth FastDecisionModel / PyTorch"
+      }
+    },
+    {
+      "case": "confirmed_leak_evidence",
+      "state_response": {
+        "state": "姑苏站P221VCC2主机，极2低端阀1许继阀冷A2（系统A）于12:15:00.000出现24小时泄漏报警，12:15:00.200出现膨胀罐液位低报警，均为级别3报警出现边沿；12:15:30.000记录现场检查发现阀厅实际漏水。三条记录仅含报警出现边沿，窗口内无任何报警消失边沿，信号复归情况未知；无系统B通道记录、无初始全量状态、无液位连续趋势，漏水与阀冷泄漏的物理关联尚不能确认。该状态只描述日志证据，不等同于物理故障确认或操作指令。",
+        "structured_state": {
+          "schema_version": "task-semantic-state.v2",
+          "window": {
+            "start": "2026-09-11T12:15:00.000",
+            "end": "2026-09-11T12:15:30.000",
+            "event_count": 3
+          },
+          "observations": [
+            {
+              "id": "obs-1",
+              "description": "极2低端阀1许继阀冷A2 24小时泄漏报警信号边沿出现（系统A，主机P221VCC2，报警级别3）",
+              "entity": "姑苏/极2低端阀1/许继阀冷A2/系统A",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-1"
+              ],
+              "evidence_type": "transition"
+            },
+            {
+              "id": "obs-2",
+              "description": "极2低端阀1许继阀冷A2 膨胀罐液位低报警信号边沿出现（系统A，主机P221VCC2，报警级别3）",
+              "entity": "姑苏/极2低端阀1/许继阀冷A2/系统A",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-2"
+              ],
+              "evidence_type": "transition"
+            },
+            {
+              "id": "obs-3",
+              "description": "现场检查发现阀厅实际漏水（事件记录出现，系统A，主机P221VCC2，报警级别3）",
+              "entity": "姑苏/极2低端/阀厅",
+              "status": "observed",
+              "evidence_event_ids": [
+                "row-3"
+              ],
+              "evidence_type": "single"
+            }
+          ],
+          "transitions": [
+            {
+              "description": "12:15:00.000 至 12:15:30.000 期间，同一设备（极2低端阀1许继阀冷A2）先后出现24小时泄漏报警、膨胀罐液位低报警，随后记录现场检查发现阀厅实际漏水",
+              "evidence_event_ids": [
+                "row-1",
+                "row-2",
+                "row-3"
+              ]
+            }
+          ],
+          "aggregated_phenomena": [
+            "极2低端阀1许继阀冷A2通道A在30秒内连续出现泄漏相关与液位低报警，并有现场漏水记录作为旁证"
+          ],
+          "missing_evidence": [
+            "无报警复归（消失）边沿记录，信号复归情况未知",
+            "无系统B通道对应信号记录",
+            "无12:15:00之前该设备是否存在报警的初始状态记录",
+            "无膨胀罐液位具体测量值或趋势数据"
+          ],
+          "uncertainties": [
+            "报警均为出现边沿，未观察到消失边沿，不能判断信号是否复归",
+            "现场漏水与阀冷系统泄漏的物理关联未经进一步证据确认，仅有时间先后关系"
+          ],
+          "data_quality": {
+            "unknown_event_count": 0,
+            "has_initial_full_state": false,
+            "has_terminal_full_state": false,
+            "has_continuous_trends": false
+          },
+          "physical_fault_status": "not_confirmed_by_state_builder"
+        },
+        "warnings": [],
+        "usage": {
+          "completion_tokens": 767,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens": 770,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "total_tokens": 1537
+        },
+        "model": "glm-5.3"
+      },
+      "decision_response": {
+        "model": "gusu-procedure-v1",
+        "answers": {
+          "during_window": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "confidence": 0.6748,
+            "probabilities": {
+              "abnormal_evidence": 0.1642,
+              "verified_expected": 0.1611,
+              "insufficient_evidence": 0.6748
+            },
+            "answer": "insufficient_evidence"
+          },
+          "at_window_end": {
+            "type": "choice",
+            "choice": "insufficient_evidence",
+            "confidence": 0.6354,
+            "probabilities": {
+              "abnormal_evidence": 0.2328,
+              "verified_expected": 0.1318,
+              "insufficient_evidence": 0.6354
+            },
+            "answer": "insufficient_evidence"
+          },
+          "observed_recovery": {
+            "type": "choice",
+            "choice": "some_unresolved",
+            "confidence": 0.3217,
+            "probabilities": {
+              "all_observed_cleared": 0.0582,
+              "some_unresolved": 0.3217,
+              "all_unresolved": 0.2337,
+              "not_observed": 0.203,
+              "indeterminate": 0.1834
+            },
+            "answer": "some_unresolved"
+          }
+        },
+        "usage": {
+          "input_tokens": 654,
+          "output_tokens": 0
+        },
+        "limits": {
+          "trained_max_tokens": 4096,
+          "served_max_tokens": 16384,
+          "over_training_length": false
+        },
+        "experimental": true,
+        "field_validity_claimed": false,
+        "backend": "Unsloth FastDecisionModel / PyTorch"
+      }
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "counts": {
+    "train": {
+      "rows": 56,
+      "decisions": 56
+    },
+    "calibration": {
+      "rows": 28,
+      "decisions": 28
+    },
+    "test": {
+      "rows": 56,
+      "decisions": 56
+    }
+  },
+  "labels": {
+    "train": [
+      "false_alarm_monitor",
+      "fire_response",
+      "inspect_both_pumps",
+      "isolate_faulty_loop_and_repair",
+      "isolate_leak_and_repair",
+      "maintenance_inspection",
+      "manual_start_other_and_water_supply",
+      "monitor_after_recovery",
+      "needs_field_check",
+      "needs_fire_check",
+      "needs_level_check",
+      "needs_measurement",
+      "needs_pump_condition_check",
+      "needs_pump_status_check",
+      "needs_recovery_check",
+      "record_sensor_fault_and_repair",
+      "replenish_and_find_refill_fault",
+      "request_converter_valve_shutdown",
+      "secure_failed_pump_and_use_other",
+      "sensor_maintenance",
+      "set_auto_and_monitor_backup",
+      "switch_backup_and_maintenance",
+      "switch_from_severely_abnormal_main_pump",
+      "switch_unit_and_replace_filter"
+    ],
+    "calibration": [
+      "false_alarm_monitor",
+      "fire_response",
+      "inspect_both_pumps",
+      "isolate_faulty_loop_and_repair",
+      "isolate_leak_and_repair",
+      "maintenance_inspection",
+      "manual_start_other_and_water_supply",
+      "monitor_after_recovery",
+      "needs_field_check",
+      "needs_fire_check",
+      "needs_level_check",
+      "needs_measurement",
+      "needs_pump_condition_check",
+      "needs_pump_status_check",
+      "needs_recovery_check",
+      "record_sensor_fault_and_repair",
+      "replenish_and_find_refill_fault",
+      "request_converter_valve_shutdown",
+      "secure_failed_pump_and_use_other",
+      "sensor_maintenance",
+      "set_auto_and_monitor_backup",
+      "switch_backup_and_maintenance",
+      "switch_from_severely_abnormal_main_pump",
+      "switch_unit_and_replace_filter"
+    ],
+    "test": [
+      "false_alarm_monitor",
+      "fire_response",
+      "inspect_both_pumps",
+      "isolate_faulty_loop_and_repair",
+      "isolate_leak_and_repair",
+      "maintenance_inspection",
+      "manual_start_other_and_water_supply",
+      "monitor_after_recovery",
+      "needs_field_check",
+      "needs_fire_check",
+      "needs_level_check",
+      "needs_measurement",
+      "needs_pump_condition_check",
+      "needs_pump_status_check",
+      "needs_recovery_check",
+      "record_sensor_fault_and_repair",
+      "replenish_and_find_refill_fault",
+      "request_converter_valve_shutdown",
+      "secure_failed_pump_and_use_other",
+      "sensor_maintenance",
+      "set_auto_and_monitor_backup",
+      "switch_backup_and_maintenance",
+      "switch_from_severely_abnormal_main_pump",
+      "switch_unit_and_replace_filter"
+    ]
+  },
+  "total_rows": 140,
+  "family_count": 7,
+  "base_case_count": 28,
+  "limitations": [
+    "Controlled paraphrases of synthetic procedure-derived states; no expert approval or field fault-rate claim.",
+    "The state renderer is deterministic and does not test raw-log recognition.",
+    "A branch label represents the procedure text, not permission to execute an operation."
+  ]
+}

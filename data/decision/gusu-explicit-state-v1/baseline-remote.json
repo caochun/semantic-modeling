@@ -1,0 +1,157 @@
+{
+  "dataset": "data/decision/gusu-explicit-state-v1",
+  "model": "remote:/v1/decision",
+  "rows": [
+    {
+      "id": "14.1-repeat_after_recovery",
+      "pred": "needs_recovery_check",
+      "gold": "switch_backup_and_maintenance",
+      "hit": false,
+      "answer": {
+        "type": "choice",
+        "choice": "needs_recovery_check",
+        "confidence": 0.5672,
+        "probabilities": {
+          "monitor_after_recovery": 0.0625,
+          "needs_recovery_check": 0.5672,
+          "switch_backup_and_maintenance": 0.3703
+        },
+        "answer": "needs_recovery_check"
+      },
+      "usage": {
+        "input_tokens": 287,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "14.2-sensor_status_unknown",
+      "pred": "sensor_maintenance",
+      "gold": "needs_measurement",
+      "hit": false,
+      "answer": {
+        "type": "choice",
+        "choice": "sensor_maintenance",
+        "confidence": 0.5132,
+        "probabilities": {
+          "needs_measurement": 0.3779,
+          "sensor_maintenance": 0.5132,
+          "switch_unit_and_replace_filter": 0.1089
+        },
+        "answer": "sensor_maintenance"
+      },
+      "usage": {
+        "input_tokens": 279,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "13.4-leak_point_not_obvious",
+      "pred": "needs_field_check",
+      "gold": "maintenance_inspection",
+      "hit": false,
+      "answer": {
+        "type": "choice",
+        "choice": "needs_field_check",
+        "confidence": 0.5408,
+        "probabilities": {
+          "isolate_leak_and_repair": 0.1005,
+          "maintenance_inspection": 0.3587,
+          "needs_field_check": 0.5408
+        },
+        "answer": "needs_field_check"
+      },
+      "usage": {
+        "input_tokens": 264,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "13.5-other_status_unknown",
+      "pred": "needs_pump_status_check",
+      "gold": "needs_pump_status_check",
+      "hit": true,
+      "answer": {
+        "type": "choice",
+        "choice": "needs_pump_status_check",
+        "confidence": 0.4923,
+        "probabilities": {
+          "inspect_both_pumps": 0.1143,
+          "manual_start_other_and_water_supply": 0.1895,
+          "needs_pump_status_check": 0.4923,
+          "secure_failed_pump_and_use_other": 0.2039
+        },
+        "answer": "needs_pump_status_check"
+      },
+      "usage": {
+        "input_tokens": 301,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "15.12.6-actual_low_one_display",
+      "pred": "record_sensor_fault_and_repair",
+      "gold": "needs_level_check",
+      "hit": false,
+      "answer": {
+        "type": "choice",
+        "choice": "record_sensor_fault_and_repair",
+        "confidence": 0.3905,
+        "probabilities": {
+          "needs_level_check": 0.3855,
+          "record_sensor_fault_and_repair": 0.3905,
+          "replenish_and_find_refill_fault": 0.2241
+        },
+        "answer": "record_sensor_fault_and_repair"
+      },
+      "usage": {
+        "input_tokens": 285,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "15.13.1-fire_check_pending",
+      "pred": "needs_fire_check",
+      "gold": "needs_fire_check",
+      "hit": true,
+      "answer": {
+        "type": "choice",
+        "choice": "needs_fire_check",
+        "confidence": 0.4994,
+        "probabilities": {
+          "false_alarm_monitor": 0.0885,
+          "fire_response": 0.1483,
+          "isolate_faulty_loop_and_repair": 0.2639,
+          "needs_fire_check": 0.4994
+        },
+        "answer": "needs_fire_check"
+      },
+      "usage": {
+        "input_tokens": 309,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "10.5-condition_unknown",
+      "pred": "set_auto_and_monitor_backup",
+      "gold": "needs_pump_condition_check",
+      "hit": false,
+      "answer": {
+        "type": "choice",
+        "choice": "set_auto_and_monitor_backup",
+        "confidence": 0.33,
+        "probabilities": {
+          "needs_pump_condition_check": 0.2535,
+          "request_converter_valve_shutdown": 0.2923,
+          "set_auto_and_monitor_backup": 0.33,
+          "switch_from_severely_abnormal_main_pump": 0.1242
+        },
+        "answer": "set_auto_and_monitor_backup"
+      },
+      "usage": {
+        "input_tokens": 365,
+        "output_tokens": 0
+      }
+    }
+  ],
+  "accuracy": 0.2857142857142857
+}
